@@ -1,0 +1,40 @@
+import React from 'react';
+import TopBar from './components/layout/TopBar';
+import Header from './components/layout/Header';
+import Hero from './components/home/Hero';
+import BelieveBrilliance from './components/home/BelieveBrilliance';
+import Solutions from './components/home/Solutions';
+import AgeGroups from './components/home/AgeGroups';
+import CorporatePartners from './components/home/CorporatePartners';
+import Counters from './components/home/Counters';
+import Awards from './components/home/Awards';
+import Team from './components/home/Team';
+import Blogs from './components/home/Blogs';
+import WorkingParents from './components/home/WorkingParents';
+import Footer from './components/layout/Footer';
+
+function App() {
+  return (
+    <div className="font-averia text-gray-800 bg-[#f7f9fc] min-h-screen">
+      <TopBar />
+      <Header />
+      
+      <main>
+        <Hero />
+        <BelieveBrilliance />
+        <Solutions />
+        <WorkingParents />
+        <CorporatePartners />
+        <AgeGroups />
+        <Counters />
+        <Awards />
+        <Team />
+        <Blogs />
+      </main>
+
+      <Footer />
+    </div>
+  );
+}
+
+export default App;
