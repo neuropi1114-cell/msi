@@ -3,19 +3,19 @@ import { motion } from 'framer-motion';
 const stats = [
   {
     title: "Awesome Careers",
-    icon: "/images/misc/adb3cd00-e7ee-4869-9932-4e7253c3cdd4.png" 
+    icon: "/images/counters/adb3cd00-e7ee-4869-9932-4e7253c3cdd4.png" 
   },
   {
     title: "Global Certificate",
-    icon: "/scraped/images/images-2.png.bv.webp"
+    icon: "/images/counters/images-2.png.bv.webp"
   },
   {
     title: "Best Program",
-    icon: "/scraped/images/atom.png.bv.webp"
+    icon: "/images/counters/atom.png.bv.webp"
   },
   {
     title: "Child Support",
-    icon: "/scraped/images/school-bag.png.bv.webp"
+    icon: "/images/counters/school-bag.png.bv.webp"
   }
 ];
 

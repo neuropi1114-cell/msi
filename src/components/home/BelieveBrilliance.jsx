@@ -48,7 +48,7 @@ const BelieveBrilliance = () => {
             transition={{ duration: 0.8 }}
             className="absolute right-0 top-0 w-[80%] h-[400px] rounded-3xl overflow-hidden shadow-2xl border-4 border-white"
           >
-            <img src="/images/hero/DSC00795-1024x684-1.jpeg.bv_resized_ipad.jpeg.bv.webp" alt="Children learning" className="w-full h-full object-cover" />
+            <img src="/images/believe/DSC00795-1024x684-1.jpeg.bv_resized_ipad.jpeg.bv.webp" alt="Children learning" className="w-full h-full object-cover" />
           </motion.div>
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -57,7 +57,7 @@ const BelieveBrilliance = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="absolute left-0 bottom-0 w-[60%] h-[300px] rounded-3xl overflow-hidden shadow-2xl border-4 border-white z-10"
           >
-            <img src="/images/hero/DSC01240-684x1024-1.jpeg.bv.webp" alt="Happy child" className="w-full h-full object-cover" />
+            <img src="/images/believe/DSC01240-684x1024-1.jpeg.bv.webp" alt="Happy child" className="w-full h-full object-cover" />
           </motion.div>
         </div>
       </div>

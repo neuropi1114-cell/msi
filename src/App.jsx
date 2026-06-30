@@ -18,7 +18,6 @@ function App() {
     <div className="font-averia text-gray-800 bg-[#f7f9fc] min-h-screen">
       <TopBar />
       <Header />
-      
       <main>
         <Hero />
         <BelieveBrilliance />
@@ -31,7 +30,6 @@ function App() {
         <Team />
         <Blogs />
       </main>
-
       <Footer />
     </div>
   );

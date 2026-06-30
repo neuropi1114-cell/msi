@@ -6,22 +6,22 @@ const AgeGroups = () => {
     {
       title: "CIAO BABY",
       age: "0 TO 1 YRS",
-      img: "/scraped/images/msi-pre-school-60-qe02ffm6dp65shw5feu5k38prjcjsofqe1825w4kcq.png.bv.webp"
+      img: "/images/age-groups/msi-pre-school-60-qe02ffm6dp65shw5feu5k38prjcjsofqe1825w4kcq.png.bv.webp"
     },
     {
       title: "SPROUTLINGS",
       age: "1 TO 2 YRS",
-      img: "/scraped/images/msi-pre-school-37-qe02feob0bpp518u5m7i7nsjocjir3373kpqb0hsma.png.bv.webp"
+      img: "/images/age-groups/msi-pre-school-37-qe02feob0bpp518u5m7i7nsjocjir3373kpqb0hsma.png.bv.webp"
     },
     {
       title: "MINI MAESTROS",
       age: "2 TO 3 YRS",
-      img: "/scraped/images/msi-pre-school-41-qe02feob0bpewqkozkv9y3vjhfbf453lstytaj8b3i.png.bv.webp"
+      img: "/images/age-groups/msi-pre-school-41-qe02feob0bpewqkozkv9y3vjhfbf453lstytaj8b3i.png.bv.webp"
     },
     {
       title: "ASTRO ARCHITECTS",
       age: "3 TO 4 YRS",
-      img: "/scraped/images/msi-pre-school-48-qe02feob0bp4vt2skawyytpu3fvk6utxbto9wdtyys.png.bv.webp"
+      img: "/images/age-groups/msi-pre-school-48-qe02feob0bp4vt2skawyytpu3fvk6utxbto9wdtyys.png.bv.webp"
     }
   ];
 

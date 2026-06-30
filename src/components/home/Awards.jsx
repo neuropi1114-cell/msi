@@ -3,10 +3,10 @@ import { motion } from 'framer-motion';
 const awards = [
   { id: 1, image: "/images/awards/Iconic-Brand.png.bv_resized_ipad.png.bv.webp", alt: "Iconic Brand" },
   { id: 2, image: "/images/awards/ida-awards.png.bv_resized_ipad.png.bv.webp", alt: "IDA Awards" },
-  { id: 3, image: "/scraped/images/press16.png.bv.webp", alt: "Press Award" },
-  { id: 4, image: "/scraped/images/press24.png.bv.webp", alt: "Press Recognition" },
-  { id: 5, image: "/scraped/images/press25.png.bv.webp", alt: "Award" },
-  { id: 6, image: "/scraped/images/press29.png.bv.webp", alt: "Recognition" }
+  { id: 3, image: "/images/awards/press16.png.bv.webp", alt: "Press Award" },
+  { id: 4, image: "/images/awards/press24.png.bv.webp", alt: "Press Recognition" },
+  { id: 5, image: "/images/awards/press25.png.bv.webp", alt: "Award" },
+  { id: 6, image: "/images/awards/press29.png.bv.webp", alt: "Recognition" }
 ];
 
 export default function Awards() {

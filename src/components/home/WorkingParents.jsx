@@ -27,10 +27,10 @@ export default function WorkingParents() {
               className="rounded-3xl overflow-hidden shadow-2xl relative"
             >
               <img 
-              src="/images/hero/IMG_20221103_120159-1024x768-1.jpg.bv_resized_ipad.jpg.bv.webp" 
+              src="/images/working-parents/IMG_20221103_120159-1024x768-1.jpg.bv_resized_ipad.jpg.bv.webp" 
                 alt="Working Parents" 
                 className="w-full h-auto object-cover"
-                onError={(e) => { e.target.src = '/images/hero/IMG_20241209_130110183_HDR_PORTRAIT-scaled-e1762244260784-1024x741.jpg.bv_resized_ipad.jpg.bv.webp'; }}
+                onError={(e) => { e.target.src = '/images/working-parents/IMG_20241209_130110183_HDR_PORTRAIT-scaled-e1762244260784-1024x741.jpg.bv_resized_ipad.jpg.bv.webp'; }}
               />
             </motion.div>
           </div>

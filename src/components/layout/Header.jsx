@@ -1,75 +1,137 @@
-import React, { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import React, { useState } from 'react';
+import { Menu, X, Search } from 'lucide-react';
 import mainLogo from '../../logo/The-Neuroscientific-European-Childcare-PDF_12-x-4-ft_Backside-1.png.bv_resized_desktop.png.bv.webp';
 
 const Header = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 0);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [expandedSection, setExpandedSection] = useState(null);
 
   const navLinks = [
     { name: 'Home', href: '#' },
-    { name: 'About Us', href: '#' },
+    {
+      name: 'About Us',
+      children: [
+        { name: 'People Behind', href: '#' },
+        { name: 'PRASAD GARAPATI', href: '#' },
+        { name: 'Dr Aperna Volluru-Founder', href: '#' },
+        { name: 'Message from Founder', href: '#' },
+        { name: 'Dr Dr Peter Gseller-Venture Philanthropist', href: '#' },
+      ],
+    },
     { name: 'Early Childhood Program', href: '#' },
     { name: 'Franchise', href: '#' },
+    { name: 'Our Team', href: '#' },
     { name: 'Login', href: '#' },
+    { name: 'Enrol', href: '#' },
+    { name: 'Book Your Tour', href: '#' },
+    { name: 'Work With us', href: '#' },
+    { name: 'HR', href: '#' },
+    { name: 'Shop', href: '#' },
+    { name: 'Blog', href: '#' },
+    { name: 'Social Media', href: '#' },
+    { name: 'Media Coverage', href: '#' },
+    { name: 'Handbook', href: '#' },
+    { name: 'Handbook Video', href: '#' },
+    { name: 'Video Gallery', href: '#' },
+    { name: 'Testimonials', href: '#' },
+    { name: 'Contact Us', href: '#' },
+    { name: 'Hitex', href: '#' },
+    { name: 'Kavuri Hills', href: '#' },
+    { name: 'Qcity', href: '#' },
+    { name: 'Mindspace', href: '#' },
+    { name: 'Avance 2', href: '#' },
+    { name: 'Avance', href: '#' },
   ];
 
   return (
-    <header className={`sticky top-0 z-40 w-full transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-2' : 'bg-white/95 py-3'}`}>
+    <header className="sticky top-0 z-40 w-full bg-transparent py-2">
       <div className="container mx-auto px-4 md:px-12 flex justify-between items-center">
-        {/* Logo */}
         <div className="flex items-center">
-          <img src={mainLogo} alt="My School ITALY Logo" className="h-16 w-auto" />
+          <img src={mainLogo} alt="My School ITALY Logo" className="h-12 w-auto" />
         </div>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-6">
-          {navLinks.map((link) => (
-            <a 
-              key={link.name} 
-              href={link.href}
-              className="font-bold text-gray-700 hover:text-msi-blue transition-colors text-[15px] uppercase tracking-wide"
-            >
-              {link.name}
-            </a>
-          ))}
-          <button className="text-gray-700 hover:text-msi-orange transition-colors">
-            <Menu className="w-7 h-7" />
-          </button>
-        </nav>
-
-        {/* Mobile Menu Button */}
-        <button 
-          className="md:hidden text-gray-700"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+        <button
+          className="text-gray-700 hover:text-msi-orange transition-colors"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
-          {isMobileMenuOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
+          {isMenuOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
         </button>
       </div>
 
-      {/* Mobile Navigation */}
-      {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg py-4 px-4 flex flex-col space-y-4">
-          {navLinks.map((link) => (
-            <a 
-              key={link.name} 
-              href={link.href}
-              className="font-bold text-gray-700 hover:text-msi-blue px-2 py-1 border-b border-gray-100"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              {link.name}
-            </a>
-          ))}
+      <div className={`fixed inset-0 z-50 transition-opacity duration-300 ${isMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
+        <div className="absolute inset-0 bg-black/40" onClick={() => setIsMenuOpen(false)} />
+        <div className={`absolute top-0 right-0 h-full w-72 md:w-80 shadow-xl overflow-y-auto transition-transform duration-300 ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`} style={{ backgroundColor: 'rgb(225, 135, 43)' }}>
+          <div className="flex justify-end p-4">
+            <button onClick={() => setIsMenuOpen(false)} className="text-white hover:opacity-80">
+              <X className="w-7 h-7" />
+            </button>
+          </div>
+          <div className="px-4 mb-2">
+            <img src="/images/navbar/7xm.xyz669204.jpg.bv.webp" alt="Nav banner" className="w-full h-auto rounded-lg" />
+          </div>
+          <div className="px-4 mb-3">
+            <div className="e-search-input-wrapper relative">
+              <input
+                id="search-b067dab"
+                placeholder="Looking for something specific?"
+                className="e-search-input w-full bg-white/20 text-white placeholder-white/60 px-3 py-2 rounded-none outline-none focus:ring-2 focus:ring-white/40 text-sm"
+                type="search"
+                name="s"
+                autoComplete="off"
+                role="combobox"
+                aria-autocomplete="list"
+                aria-expanded="false"
+                aria-controls="results-b067dab"
+                aria-haspopup="listbox"
+              />
+              <div className="absolute right-0 top-0 h-full flex items-center px-3 bg-[#351C5A] rounded-none pointer-events-none">
+                <Search className="w-4 h-4 text-white" />
+              </div>
+              <output id="results-b067dab" className="e-search-results-container hide-loader" aria-live="polite" aria-atomic="true" aria-label="Results for search" tabIndex="0">
+                <div className="e-search-results"></div>
+              </output>
+            </div>
+          </div>
+          <nav className="px-4 pb-4 flex flex-col gap-1">
+            {navLinks.map((link) =>
+              link.children ? (
+                <div key={link.name}>
+                  <button
+                    className="w-full flex justify-between items-center font-bold text-white px-2 py-2 border-b border-white/20 text-sm uppercase tracking-wide hover:bg-[#351C5A] hover:text-white transition-colors"
+                    onClick={() => setExpandedSection(expandedSection === link.name ? null : link.name)}
+                  >
+                    {link.name}
+                    <span className={`transition-transform duration-200 ${expandedSection === link.name ? 'rotate-90' : ''}`}>{'>'}</span>
+                  </button>
+                  <div className={`overflow-hidden transition-all duration-200 ${expandedSection === link.name ? 'max-h-96' : 'max-h-0'}`}>
+                    <div className="pl-4 flex flex-col">
+                      {link.children.map((child) => (
+                        <a
+                          key={child.name}
+                          href={child.href}
+                          className="text-white/90 px-2 py-1.5 border-b border-white/10 text-xs uppercase tracking-wide hover:bg-[#351C5A] hover:text-white transition-colors"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                          {child.name}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  className="font-bold text-white px-2 py-2 border-b border-white/20 text-sm uppercase tracking-wide hover:bg-[#351C5A] hover:text-white transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {link.name}
+                </a>
+              )
+            )}
+          </nav>
         </div>
-      )}
+      </div>
     </header>
   );
 };
