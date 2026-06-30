@@ -11,6 +11,7 @@ import Awards from './components/home/Awards';
 import Team from './components/home/Team';
 import Blogs from './components/home/Blogs';
 import WorkingParents from './components/home/WorkingParents';
+import StepIntoADay from './components/home/StepIntoADay';
 import Footer from './components/layout/Footer';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <main>
         <Hero />
         <BelieveBrilliance />
+        <StepIntoADay />
         <Solutions />
         <WorkingParents />
         <CorporatePartners />

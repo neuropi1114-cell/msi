@@ -20,18 +20,9 @@ const slides = [
 ];
 
 const slideVariants = {
-  enter: (direction) => ({
-    rotateY: direction > 0 ? 90 : -90,
-    opacity: 0,
-  }),
-  center: {
-    rotateY: 0,
-    opacity: 1,
-  },
-  exit: (direction) => ({
-    rotateY: direction > 0 ? -90 : 90,
-    opacity: 0,
-  })
+  enter: { opacity: 0 },
+  center: { opacity: 1 },
+  exit: { opacity: 0 }
 };
 
 const Hero = () => {
@@ -53,7 +44,7 @@ const Hero = () => {
   const slide = slides[current];
 
   return (
-    <section className="relative -mt-16 pt-16 h-[calc(85vh+4rem)] min-h-[calc(600px+4rem)] w-full flex items-center" style={{ perspective: "1200px", perspectiveOrigin: "50% 50%" }}>
+    <section className="relative -mt-16 pt-16 h-[calc(85vh+4rem)] min-h-[calc(600px+4rem)] w-full flex items-center">
       {/* Background Image with Overlay */}
       <AnimatePresence initial={false} custom={direction} mode="wait">
         <motion.div
@@ -63,9 +54,9 @@ const Hero = () => {
           initial="enter"
           animate="center"
           exit="exit"
-           transition={{ duration: 0.7, ease: "easeInOut" }}
-           className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url("${slide.image}")`, transformStyle: "preserve-3d", backfaceVisibility: "hidden" }}
+            transition={{ duration: 0.7, ease: "easeInOut" }}
+            className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: `url("${slide.image}")` }}
         >
           <div className="absolute inset-0 bg-black/20" />
         </motion.div>
@@ -83,7 +74,6 @@ const Hero = () => {
             exit="exit"
             transition={{ duration: 0.7, ease: "easeInOut" }}
             className="max-w-xl w-full"
-            style={{ transformStyle: "preserve-3d", backfaceVisibility: "hidden" }}
           >
             <h1 className="text-5xl md:text-7xl font-schoolbell text-msi-orange font-bold uppercase mb-4 drop-shadow-md">
               {slide.title}

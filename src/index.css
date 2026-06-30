@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Schoolbell&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  font-family: 'Averia Libre', cursive;
+  font-family: 'Averia Libre', sans-serif;
   margin: 0;
   background-color: #f7f9fc;
 }
@@ -16,7 +16,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Schoolbell', cursive;
+  font-family: 'Averia Libre', sans-serif;
 }
 
 @keyframes marquee {

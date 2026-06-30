@@ -5,7 +5,29 @@ const BelieveBrilliance = () => {
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4 md:px-12 flex flex-col md:flex-row items-center gap-12">
-        {/* Left Content */}
+        {/* Left Images Collage */}
+        <div className="md:w-1/2 relative min-h-[500px] w-full mt-10 md:mt-0">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="absolute left-0 top-0 w-[80%] h-[400px] rounded-3xl overflow-hidden shadow-2xl border-4 border-white"
+          >
+            <img src="/images/believe/DSC00795-1024x684-1.jpeg.bv_resized_ipad.jpeg.bv.webp" alt="Children learning" className="w-full h-full object-cover" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="absolute right-0 bottom-0 w-[60%] h-[300px] rounded-3xl overflow-hidden shadow-2xl border-4 border-white z-10"
+          >
+            <img src="/images/believe/DSC01240-684x1024-1.jpeg.bv.webp" alt="Happy child" className="w-full h-full object-cover" />
+          </motion.div>
+        </div>
+
+        {/* Right Content */}
         <div className="md:w-1/2">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -36,28 +58,6 @@ const BelieveBrilliance = () => {
             <button className="bg-msi-orange text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-msi-orange/90 transition-all font-averia text-lg">
               About Us
             </button>
-          </motion.div>
-        </div>
-
-        {/* Right Images Collage */}
-        <div className="md:w-1/2 relative min-h-[500px] w-full mt-10 md:mt-0">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="absolute right-0 top-0 w-[80%] h-[400px] rounded-3xl overflow-hidden shadow-2xl border-4 border-white"
-          >
-            <img src="/images/believe/DSC00795-1024x684-1.jpeg.bv_resized_ipad.jpeg.bv.webp" alt="Children learning" className="w-full h-full object-cover" />
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="absolute left-0 bottom-0 w-[60%] h-[300px] rounded-3xl overflow-hidden shadow-2xl border-4 border-white z-10"
-          >
-            <img src="/images/believe/DSC01240-684x1024-1.jpeg.bv.webp" alt="Happy child" className="w-full h-full object-cover" />
           </motion.div>
         </div>
       </div>
