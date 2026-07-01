@@ -12,18 +12,19 @@ const BelieveBrilliance = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="absolute left-0 top-0 w-[80%] h-[400px] rounded-3xl overflow-hidden shadow-2xl border-4 border-white"
+            className="absolute left-0 top-0 w-[80%] h-[400px] rounded-tl-[40px] overflow-hidden shadow-2xl border-4 border-white"
           >
-            <img src="/images/believe/DSC00795-1024x684-1.jpeg.bv_resized_ipad.jpeg.bv.webp" alt="Children learning" className="w-full h-full object-cover" />
+            <img src="/images/believe/DSC01240-684x1024-1.jpeg.bv.webp" alt="Children learning" className="w-full h-full object-cover" />
           </motion.div>
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="absolute right-0 bottom-0 w-[60%] h-[300px] rounded-3xl overflow-hidden shadow-2xl border-4 border-white z-10"
+            className="absolute right-0 bottom-0 w-[60%] h-[300px] rounded-br-[40px] overflow-hidden shadow-2xl border-4 border-white z-10"
           >
-            <img src="/images/believe/DSC01240-684x1024-1.jpeg.bv.webp" alt="Happy child" className="w-full h-full object-cover" />
+            <img src="/images/believe/DSC00795-1024x684-1.jpeg.bv_resized_ipad.jpeg.bv.webp" alt="Happy child" className="w-full h-full object-cover" />
+
           </motion.div>
         </div>
 
@@ -44,7 +45,7 @@ const BelieveBrilliance = () => {
             <p className="text-gray-700 text-lg mb-6 leading-relaxed">
               At My School ITALY, we believe brilliance can be built – one neural connection at a time. Our NeuroPi Study Technology, grounded in modern neuroscience research, helps children shine through proven, research-based instruction that has empowered young learners around the world. Using the powerful concept of Neuroplasticity – the brain's ability to grow and rewire through experience – we nurture learning pathways right from Pre Nursery days.
             </p>
-            
+
             <div className="border-l-4 border-msi-orange pl-6 my-8 py-2">
               <p className="text-gray-600 italic">
                 Every activity is designed to strengthen focus, confidence, and communication – helping children become curious thinkers, capable learners, and compassionate leaders. At NeuroPi, education is not about memorizing facts – it's about building the brain for the future.
