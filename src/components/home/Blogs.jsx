@@ -29,14 +29,14 @@ const blogs = [
 
 export default function Blogs() {
   return (
-    <section className="py-20 bg-white relative">
+    <section className="py-20 bg-[#2f9ed9] relative">
       <div className="container mx-auto px-4 md:px-12">
         <div className="text-center mb-12">
           <motion.h2 
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl font-schoolbell text-msi-purple font-bold mb-4"
+            className="text-4xl md:text-5xl font-schoolbell text-white font-bold mb-4"
           >
             Recent BLOGs
           </motion.h2>
@@ -45,7 +45,7 @@ export default function Blogs() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="text-gray-600 font-medium"
+            className="text-white font-medium"
           >
             What's Going on in our Blog?
           </motion.p>
@@ -103,6 +103,19 @@ export default function Blogs() {
             Read More
           </a>
         </motion.div>
+      </div>
+      <div className="waves">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none" className="block w-full h-[15vh] min-h-[100px] max-h-[150px]">
+          <defs>
+            <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+          </defs>
+          <g className="parallax">
+            <use href="#wave-path" x="48" y="0" fill="rgba(255,255,255,0.7)" />
+            <use href="#wave-path" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+            <use href="#wave-path" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+            <use href="#wave-path" x="48" y="7" fill="#fff" />
+          </g>
+        </svg>
       </div>
     </section>
   );

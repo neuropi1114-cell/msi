@@ -13,6 +13,7 @@ import Blogs from './components/home/Blogs';
 import WorkingParents from './components/home/WorkingParents';
 import StepIntoADay from './components/home/StepIntoADay';
 import Footer from './components/layout/Footer';
+import ContactUs from './components/home/ContactUs';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Awards />
         <Team />
         <Blogs />
+        <ContactUs />
       </main>
       <Footer />
     </div>
