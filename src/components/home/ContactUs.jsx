@@ -13,7 +13,6 @@ const programs = [
 ];
 
 const countries = [
-  { name: "Bangladesh", code: "bd", phone: "+880" },
   { name: "India", code: "in", phone: "+91" },
   { name: "Italy", code: "it", phone: "+39" },
   { name: "Ghana", code: "gh", phone: "+233" },
