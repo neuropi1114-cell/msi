@@ -2,6 +2,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
+
 const programs = [
   "Toddler (1.5 years - 2.5 years)",
   "Nursery (2.5 years - 3.5 years)",

@@ -32,9 +32,9 @@ export default function HomePage() {
         {/* <SeoContent /> */}
         <VideoShowcase />
         <Awards />
-         <FeaturedIn />
+        <FeaturedIn />
         <Team />
-       
+
         <Blogs />
         <ContactUs />
       </main>
