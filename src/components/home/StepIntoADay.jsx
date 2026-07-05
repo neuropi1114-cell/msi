@@ -9,6 +9,7 @@ const StepIntoADay = () => {
             src="/images/stepintoaday/kid_image.webp"
             alt="Child at play"
             className="w-full"
+            loading="lazy"
           />
         </div>
 
@@ -17,6 +18,7 @@ const StepIntoADay = () => {
             src="/images/stepintoaday/Built-on-Neuroscience-and-Joy-STEP-INTO-A-DAY-5.png.bv.webp"
             alt="Built on Neuroscience and Joy"
             className="w-full"
+            loading="lazy"
           />
           <p className="text-gray-700 text-lg mb-6 leading-8">
             In the enchanted world of My School ITALY, every day begins with a sparkle of wonder. Little dreamers play, explore, and grow — guided by the quiet magic of neuroscience. Here, every laugh writes a new story of learning, love, and light.

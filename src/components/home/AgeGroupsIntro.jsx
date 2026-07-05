@@ -10,18 +10,18 @@ const AgeGroupsIntro = () => {
   ];
 
   const images = [
-    '/images/growing-in-confidence/img-01.png',
-    '/images/growing-in-confidence/img-02.png',
-    '/images/growing-in-confidence/img-03.png',
-    '/images/growing-in-confidence/img-04.png',
-    '/images/growing-in-confidence/img-05.png',
-    '/images/growing-in-confidence/img-06.png',
-    '/images/growing-in-confidence/img-07.png',
-    '/images/growing-in-confidence/img-08.png',
-    '/images/growing-in-confidence/img-09.png',
-    '/images/growing-in-confidence/img-10.png',
-    '/images/growing-in-confidence/img-11.png',
-    '/images/growing-in-confidence/img-12.png',
+    { src: '/images/growing-in-confidence/img-01.png', alt: 'Child playing with building blocks' },
+    { src: '/images/growing-in-confidence/img-02.png', alt: 'Child painting and exploring colors' },
+    { src: '/images/growing-in-confidence/img-03.png', alt: 'Children reading books together' },
+    { src: '/images/growing-in-confidence/img-04.png', alt: 'Child solving puzzles' },
+    { src: '/images/growing-in-confidence/img-05.png', alt: 'Children playing outdoors' },
+    { src: '/images/growing-in-confidence/img-06.png', alt: 'Child engaged in sensory play' },
+    { src: '/images/growing-in-confidence/img-07.png', alt: 'Children in classroom activity' },
+    { src: '/images/growing-in-confidence/img-08.png', alt: 'Child learning with educational toys' },
+    { src: '/images/growing-in-confidence/img-09.png', alt: 'Children collaborating on a project' },
+    { src: '/images/growing-in-confidence/img-10.png', alt: 'Child practicing motor skills' },
+    { src: '/images/growing-in-confidence/img-11.png', alt: 'Children during music and movement' },
+    { src: '/images/growing-in-confidence/img-12.png', alt: 'Child exploring nature and outdoors' },
   ];
 
   return (
@@ -65,6 +65,7 @@ const AgeGroupsIntro = () => {
               src="/images/age-groups/sproutlings.webp"
               alt="Sproutlings"
               className="w-full rounded-2xl shadow-xl"
+              loading="lazy"
             />
           </motion.div>
 
@@ -132,6 +133,7 @@ const AgeGroupsIntro = () => {
               src="/images/age-groups/mini-maestros.webp"
               alt="Mini Maestros"
               className="w-full rounded-2xl shadow-xl"
+              loading="lazy"
             />
           </motion.div>
         </div>
@@ -148,6 +150,7 @@ const AgeGroupsIntro = () => {
               src="/images/age-groups/astro-architect.webp"
               alt="Astro Architect"
               className="w-full rounded-2xl shadow-xl"
+              loading="lazy"
             />
           </motion.div>
 
@@ -197,7 +200,7 @@ const AgeGroupsIntro = () => {
                 {features.map((feature, index) => (
                   <div key={index} className="flex flex-col items-center text-center p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow">
                     <div className="w-14 h-14 mb-3 flex items-center justify-center">
-                      <img src={feature.icon} alt={feature.title} className="w-full h-full object-contain" />
+                      <img src={feature.icon} alt={feature.title} className="w-full h-full object-contain" loading="lazy" />
                     </div>
                     <h3 className="text-sm font-semibold" style={{ color: '#e4984d' }}>{feature.title}</h3>
                   </div>
@@ -220,30 +223,30 @@ const AgeGroupsIntro = () => {
               <div className="grid grid-cols-5 gap-2 h-full">
                 {/* Column 1 */}
                 <div className="flex flex-col gap-2 pt-8">
-                  <img src={images[0]} alt="" className="w-full rounded-lg object-cover" />
-                  <img src={images[1]} alt="" className="w-full rounded-lg object-cover" />
+                  <img src={images[0].src} alt={images[0].alt} className="w-full rounded-lg object-cover" loading="lazy" />
+                  <img src={images[1].src} alt={images[1].alt} className="w-full rounded-lg object-cover" loading="lazy" />
                 </div>
                 {/* Column 2 */}
                 <div className="flex flex-col gap-2">
-                  <img src={images[2]} alt="" className="w-full rounded-lg object-cover" />
-                  <img src={images[3]} alt="" className="w-full rounded-lg object-cover" />
+                  <img src={images[2].src} alt={images[2].alt} className="w-full rounded-lg object-cover" loading="lazy" />
+                  <img src={images[3].src} alt={images[3].alt} className="w-full rounded-lg object-cover" loading="lazy" />
                 </div>
                 {/* Column 3 */}
                 <div className="flex flex-col gap-2 pt-12">
-                  <img src={images[4]} alt="" className="w-full rounded-lg object-cover" />
-                  <img src={images[5]} alt="" className="w-full rounded-lg object-cover" />
-                  <img src={images[6]} alt="" className="w-full rounded-lg object-cover" />
+                  <img src={images[4].src} alt={images[4].alt} className="w-full rounded-lg object-cover" loading="lazy" />
+                  <img src={images[5].src} alt={images[5].alt} className="w-full rounded-lg object-cover" loading="lazy" />
+                  <img src={images[6].src} alt={images[6].alt} className="w-full rounded-lg object-cover" loading="lazy" />
                 </div>
                 {/* Column 4 */}
                 <div className="flex flex-col gap-2 pt-4">
-                  <img src={images[7]} alt="" className="w-full rounded-lg object-cover" />
-                  <img src={images[8]} alt="" className="w-full rounded-lg object-cover" />
+                  <img src={images[7].src} alt={images[7].alt} className="w-full rounded-lg object-cover" loading="lazy" />
+                  <img src={images[8].src} alt={images[8].alt} className="w-full rounded-lg object-cover" loading="lazy" />
                 </div>
                 {/* Column 5 */}
                 <div className="flex flex-col gap-2">
-                  <img src={images[9]} alt="" className="w-full rounded-lg object-cover" />
-                  <img src={images[10]} alt="" className="w-full rounded-lg object-cover" />
-                  <img src={images[11]} alt="" className="w-full rounded-lg object-cover" />
+                  <img src={images[9].src} alt={images[9].alt} className="w-full rounded-lg object-cover" loading="lazy" />
+                  <img src={images[10].src} alt={images[10].alt} className="w-full rounded-lg object-cover" loading="lazy" />
+                  <img src={images[11].src} alt={images[11].alt} className="w-full rounded-lg object-cover" loading="lazy" />
                 </div>
               </div>
             </div>

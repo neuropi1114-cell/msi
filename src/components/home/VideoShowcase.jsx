@@ -63,7 +63,7 @@ function VideoCard({ video, index }) {
           />
         )}
       </div>
-      <h3 className="mt-4 text-center font-bold text-lg tracking-wide text-orange-500">
+      <h3 className="mt-4 text-center font-bold text-lg tracking-wide text-msi-orange">
         {video.title}
       </h3>
     </motion.div>
@@ -78,7 +78,7 @@ export default function VideoShowcase() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-3xl md:text-4xl font-schoolbell text-center font-bold mb-12 text-gray-800"
+          className="text-3xl md:text-4xl font-schoolbell text-center font-bold mb-12 text-msi-orange"
         >
           FEATURED VIDEOS
         </motion.h2>

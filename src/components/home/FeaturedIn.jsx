@@ -38,6 +38,7 @@ export default function FeaturedIn() {
                     src={img} 
                     alt={`Featured in ${index + 1}`} 
                     className="w-full h-auto max-h-16 object-contain"
+                    loading="lazy"
                   />
                 </motion.div>
               ))}

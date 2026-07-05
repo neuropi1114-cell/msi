@@ -64,7 +64,8 @@ export default function Team() {
                 <img 
                   src={member.image} 
                   alt={member.name} 
-                  className="w-full h-full object-cover" 
+                  className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
               <h3 className="text-2xl font-schoolbell text-msi-purple font-bold mb-2 uppercase">
@@ -109,7 +110,7 @@ export default function Team() {
             viewport={{ once: true }}
             className="flex justify-center mt-12"
         >
-            <img src="/images/team/image-bee.png.bv.webp" alt="Bee" className="w-24 h-auto" />
+            <img src="/images/team/image-bee.png.bv.webp" alt="Bee" className="w-24 h-auto" loading="lazy" />
         </motion.div>
 
         <motion.div 

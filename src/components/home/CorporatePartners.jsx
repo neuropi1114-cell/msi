@@ -51,18 +51,20 @@ export default function CorporatePartners() {
                 src={partner.image} 
                 alt={partner.alt} 
                 className="max-w-full max-h-full object-contain transition-all duration-300"
+                loading="lazy"
                 onError={(e) => { e.target.src = '/images/logo/logo.png.bv.webp'; }}
               />
             </div>
           ))}
         </div>
-        <div className="animate-marquee flex whitespace-nowrap items-center min-w-full shrink-0">
+        <div className="animate-marquee flex whitespace-nowrap items-center min-w-full shrink-0" aria-hidden="true">
           {partners.map((partner, index) => (
             <div key={`${index}-clone`} className="mx-8 w-32 h-24 md:w-40 md:h-28 flex-shrink-0 flex items-center justify-center p-4 bg-white rounded-xl shadow-sm border border-gray-50 hover:shadow-md transition-shadow">
               <img 
                 src={partner.image} 
-                alt={partner.alt} 
+                alt="" 
                 className="max-w-full max-h-full object-contain transition-all duration-300"
+                loading="lazy"
                 onError={(e) => { e.target.src = '/images/logo/logo.png.bv.webp'; }}
               />
             </div>

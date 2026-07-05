@@ -68,6 +68,7 @@ const LogoGrid = ({ logos }) => (
           src={logo.src}
           alt={logo.alt}
           className="max-w-full max-h-full object-contain"
+          loading="lazy"
           onError={(e) => { e.target.style.display = 'none'; }}
         />
       </div>
@@ -111,6 +112,7 @@ const Solutions = () => {
               src="https://myschoolitaly.com/wp-content/uploads/al_opt_content/IMAGE/myschoolitaly.com/wp-content/uploads/2024/10/happy-indian-family-portrait-generative-ai.jpg.bv.webp?bv_host=myschoolitaly.com"
               alt="Working Parents"
               className="w-full h-64 object-cover"
+              loading="lazy"
             />
           </div>
           <h3 className="text-2xl font-schoolbell text-[#2f9ed9] font-bold mb-3 text-center">
@@ -134,6 +136,7 @@ const Solutions = () => {
               src="https://myschoolitaly.com/wp-content/uploads/al_opt_content/IMAGE/myschoolitaly.com/wp-content/uploads/2024/10/asian-indian-business-people-corporate-culture-working-office-concept-with-laptop-papers-meetings-presentations-discussions.jpg.bv.webp?bv_host=myschoolitaly.com"
               alt="Corporate Partners"
               className="w-full h-64 object-cover"
+              loading="lazy"
             />
           </div>
           <h3 className="text-2xl font-schoolbell text-[#2f9ed9] font-bold mb-3 text-center">

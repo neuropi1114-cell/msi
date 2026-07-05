@@ -137,7 +137,7 @@ const Footer = () => {
         </svg>
         {/* Character scene centered over the mountain */}
         <div className="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center">
-          <img src="/images/footer/bg-bottom.png.bv.webp" alt="Footer decoration" className="w-1/3 max-w-sm" />
+          <img src="/images/footer/bg-bottom.png.bv.webp" alt="Footer decoration" className="w-1/3 max-w-sm" loading="lazy" />
         </div>
       </div>
 

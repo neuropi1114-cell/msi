@@ -36,18 +36,20 @@ export default function Awards() {
                       src={award.image} 
                       alt={award.alt} 
                       className="max-w-full max-h-full object-contain transition-all duration-300" 
+                      loading="lazy"
                       onError={(e) => { e.target.src = '/images/logo/logo.png.bv.webp'; }}
                     />
                   </div>
                 ))}
               </div>
-              <div className="animate-marquee flex whitespace-nowrap items-center min-w-full shrink-0">
+              <div className="animate-marquee flex whitespace-nowrap items-center min-w-full shrink-0" aria-hidden="true">
                 {awards.map((award, index) => (
                   <div key={`${index}-clone`} className="mx-8 w-40 h-32 flex-shrink-0 flex items-center justify-center bg-white rounded-lg">
                     <img 
                       src={award.image} 
-                      alt={award.alt} 
+                      alt="" 
                       className="max-w-full max-h-full object-contain transition-all duration-300"
+                      loading="lazy"
                       onError={(e) => { e.target.src = '/images/logo/logo.png.bv.webp'; }} 
                     />
                   </div>

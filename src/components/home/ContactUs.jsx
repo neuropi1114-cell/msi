@@ -81,6 +81,7 @@ export default function ContactUs() {
                 src="/images/hero/DSC00928-scaled-1-1024x684.jpg.bv_resized_ipad.jpg.bv.webp"
                 alt="Children playing at My School Italy"
                 className="w-full h-auto object-cover"
+                loading="lazy"
               />
             </motion.div>
           </div>

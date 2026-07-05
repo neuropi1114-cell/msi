@@ -1,18 +1,20 @@
+import { lazy, Suspense } from 'react';
 import TopBar from './components/layout/TopBar';
 import Header from './components/layout/Header';
 import Hero from './components/home/Hero';
-import BelieveBrilliance from './components/home/BelieveBrilliance';
-import Solutions from './components/home/Solutions';
-import CorporatePartners from './components/home/CorporatePartners';
-import AgeGroupsIntro from './components/home/AgeGroupsIntro';
-import VideoShowcase from './components/home/VideoShowcase';
-import Awards from './components/home/Awards';
-import Team from './components/home/Team';
-import FeaturedIn from './components/home/FeaturedIn';
-import Blogs from './components/home/Blogs';
-import StepIntoADay from './components/home/StepIntoADay';
-import Footer from './components/layout/Footer';
-import ContactUs from './components/home/ContactUs';
+
+const BelieveBrilliance = lazy(() => import('./components/home/BelieveBrilliance'));
+const Solutions = lazy(() => import('./components/home/Solutions'));
+const CorporatePartners = lazy(() => import('./components/home/CorporatePartners'));
+const AgeGroupsIntro = lazy(() => import('./components/home/AgeGroupsIntro'));
+const VideoShowcase = lazy(() => import('./components/home/VideoShowcase'));
+const Awards = lazy(() => import('./components/home/Awards'));
+const Team = lazy(() => import('./components/home/Team'));
+const FeaturedIn = lazy(() => import('./components/home/FeaturedIn'));
+const Blogs = lazy(() => import('./components/home/Blogs'));
+const StepIntoADay = lazy(() => import('./components/home/StepIntoADay'));
+const Footer = lazy(() => import('./components/layout/Footer'));
+const ContactUs = lazy(() => import('./components/home/ContactUs'));
 
 function App() {
   return (
@@ -21,19 +23,29 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <BelieveBrilliance />
-        <StepIntoADay />
-        <Solutions />
-        <CorporatePartners />
-        <AgeGroupsIntro />
-        <VideoShowcase />
-        <Awards />
-        <FeaturedIn />
-        <Team />
-        <Blogs />
-        <ContactUs />
+        <Suspense fallback={null}>
+          <BelieveBrilliance />
+          <StepIntoADay />
+        </Suspense>
+        <Suspense fallback={null}>
+          <Solutions />
+          <CorporatePartners />
+          <AgeGroupsIntro />
+        </Suspense>
+        <Suspense fallback={null}>
+          <VideoShowcase />
+          <Awards />
+          <Team />
+        </Suspense>
+        <Suspense fallback={null}>
+          <FeaturedIn />
+          <Blogs />
+          <ContactUs />
+        </Suspense>
       </main>
-      <Footer />
+      <Suspense fallback={null}>
+        <Footer />
+      </Suspense>
     </div>
   );
 }
