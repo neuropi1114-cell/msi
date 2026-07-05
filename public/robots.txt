@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://myschoolitaly.com
+
+# Sitemaps
+Sitemap: https://myschoolitaly.com/sitemap.xml

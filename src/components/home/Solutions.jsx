@@ -106,16 +106,15 @@ const Solutions = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="bg-white rounded-3xl p-10 shadow-xl"
+          className=""
         >
-          <div className="rounded-2xl overflow-hidden mb-6 shadow-lg">
-            <img
-              src="https://myschoolitaly.com/wp-content/uploads/al_opt_content/IMAGE/myschoolitaly.com/wp-content/uploads/2024/10/happy-indian-family-portrait-generative-ai.jpg.bv.webp?bv_host=myschoolitaly.com"
-              alt="Working Parents"
-              className="w-full h-64 object-cover"
-              loading="lazy"
-            />
-          </div>
+          <img
+            src="https://myschoolitaly.com/wp-content/uploads/al_opt_content/IMAGE/myschoolitaly.com/wp-content/uploads/2024/10/happy-indian-family-portrait-generative-ai.jpg.bv.webp?bv_host=myschoolitaly.com"
+            alt="Working Parents"
+            className="w-full h-[500px] object-cover rounded-t-3xl"
+            loading="lazy"
+          />
+          <div className="bg-white rounded-b-3xl p-10">
           <h3 className="text-2xl font-schoolbell text-[#2f9ed9] font-bold mb-3 text-center">
             Working Parents
           </h3>
@@ -123,6 +122,7 @@ const Solutions = () => {
             Working parents look no further. We are a flexible nursery offering solutions and services to fit your schedule, from convenient locations and flexible hours, to meal service and tools that allow you to be connected to your child at any time. Always close to you, be it your home or your office. We care for over 1200 children daily!
           </p>
           <LogoGrid logos={workingParentLogos} />
+          </div>
         </motion.div>
 
         <motion.div
@@ -130,16 +130,15 @@ const Solutions = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="bg-white rounded-3xl p-10 shadow-xl"
+          className=""
         >
-          <div className="rounded-2xl overflow-hidden mb-6 shadow-lg">
-            <img
-              src="https://myschoolitaly.com/wp-content/uploads/al_opt_content/IMAGE/myschoolitaly.com/wp-content/uploads/2024/10/asian-indian-business-people-corporate-culture-working-office-concept-with-laptop-papers-meetings-presentations-discussions.jpg.bv.webp?bv_host=myschoolitaly.com"
-              alt="Corporate Partners"
-              className="w-full h-64 object-cover"
-              loading="lazy"
-            />
-          </div>
+          <img
+            src="https://myschoolitaly.com/wp-content/uploads/al_opt_content/IMAGE/myschoolitaly.com/wp-content/uploads/2024/10/asian-indian-business-people-corporate-culture-working-office-concept-with-laptop-papers-meetings-presentations-discussions.jpg.bv.webp?bv_host=myschoolitaly.com"
+            alt="Corporate Partners"
+            className="w-full h-[500px] object-cover rounded-t-3xl"
+            loading="lazy"
+          />
+          <div className="bg-white rounded-b-3xl p-10">
           <h3 className="text-2xl font-schoolbell text-[#2f9ed9] font-bold mb-3 text-center">
             Corporate Partners
           </h3>
@@ -147,6 +146,7 @@ const Solutions = () => {
             We work with companies and corporations and provide tailor-made family solutions to employees. Our goal is to become an asset to your work place by sharing your employees' family responsibility, thereby allowing them to become a more productive part of your business.
           </p>
           <LogoGrid logos={corporatePartnerLogos} />
+          </div>
         </motion.div>
       </div>
     </section>
