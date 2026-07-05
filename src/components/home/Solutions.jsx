@@ -100,13 +100,13 @@ const Solutions = () => {
         </motion.p>
       </div>
 
-      <div className="container mx-auto px-4 md:px-12">
+      <div className="container mx-auto px-4 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="bg-white rounded-3xl p-10 shadow-xl max-w-4xl mx-auto"
+          className="bg-white rounded-3xl p-10 shadow-xl"
         >
           <div className="rounded-2xl overflow-hidden mb-6 shadow-lg">
             <img
@@ -130,7 +130,7 @@ const Solutions = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="bg-white rounded-3xl p-10 shadow-xl max-w-4xl mx-auto mt-12"
+          className="bg-white rounded-3xl p-10 shadow-xl"
         >
           <div className="rounded-2xl overflow-hidden mb-6 shadow-lg">
             <img
