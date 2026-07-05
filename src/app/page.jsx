@@ -15,7 +15,7 @@ const Blogs = dynamic(() => import('../components/home/Blogs'), { ssr: true });
 const StepIntoADay = dynamic(() => import('../components/home/StepIntoADay'), { ssr: true });
 const Footer = dynamic(() => import('../components/layout/Footer'), { ssr: true });
 const ContactUs = dynamic(() => import('../components/home/ContactUs'), { ssr: true });
-const SeoContent = dynamic(() => import('../components/home/SeoContent'), { ssr: true });
+// const SeoContent = dynamic(() => import('../components/home/SeoContent'), { ssr: true });
 
 export default function HomePage() {
   return (
@@ -29,11 +29,12 @@ export default function HomePage() {
         <Solutions />
         <CorporatePartners />
         <AgeGroupsIntro />
-        <SeoContent />
+        {/* <SeoContent /> */}
         <VideoShowcase />
         <Awards />
+         <FeaturedIn />
         <Team />
-        <FeaturedIn />
+       
         <Blogs />
         <ContactUs />
       </main>
