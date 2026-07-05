@@ -6,9 +6,12 @@ import BelieveBrilliance from './components/home/BelieveBrilliance';
 import Solutions from './components/home/Solutions';
 import AgeGroups from './components/home/AgeGroups';
 import CorporatePartners from './components/home/CorporatePartners';
-import Counters from './components/home/Counters';
+// import Counters from './components/home/Counters';
+import AgeGroupsIntro from './components/home/AgeGroupsIntro';
+import VideoShowcase from './components/home/VideoShowcase';
 import Awards from './components/home/Awards';
 import Team from './components/home/Team';
+import FeaturedIn from './components/home/FeaturedIn';
 import Blogs from './components/home/Blogs';
 import WorkingParents from './components/home/WorkingParents';
 import StepIntoADay from './components/home/StepIntoADay';
@@ -27,9 +30,13 @@ function App() {
         <Solutions />
         <WorkingParents />
         <CorporatePartners />
-        <AgeGroups />
-        <Counters />
+        {/* <AgeGroups /> */}
+        {/* <Counters /> */}
+        <AgeGroupsIntro />
+        
+        <VideoShowcase />
         <Awards />
+        <FeaturedIn />
         <Team />
         <Blogs />
         <ContactUs />
