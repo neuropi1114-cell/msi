@@ -1,6 +1,7 @@
+'use client';
 import React, { useState } from 'react';
 import { Menu, X, Search } from 'lucide-react';
-import mainLogo from '../../logo/The-Neuroscientific-European-Childcare-PDF_12-x-4-ft_Backside-1.png.bv_resized_desktop.png.bv.webp';
+const mainLogo = '/logo/The-Neuroscientific-European-Childcare-PDF_12-x-4-ft_Backside-1.png.bv_resized_desktop.png.bv.webp';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -51,7 +52,7 @@ const Header = () => {
         </div>
 
         <button
-          className="text-gray-700 hover:text-msi-orange transition-colors"
+          className="text-white hover:text-white transition-colors"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
