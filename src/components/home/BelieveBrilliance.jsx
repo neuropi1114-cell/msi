@@ -36,18 +36,20 @@ const BelieveBrilliance = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h3 className="text-msi-blue font-schoolbell text-xl md:text-2xl mb-2 tracking-wider">
+            <h3 className="text-msi-blue font-schoolbell text-xl md:text-2xl mb-2 tracking-wider whitespace-nowrap">
               A 21st Century Education Elixir
             </h3>
             <h2 className="text-4xl md:text-5xl font-schoolbell text-msi-orange font-bold uppercase mb-6 leading-tigher">
-              SHAPING YOUNG MINDS THROUGH NEUROSCIENCE
+              SHAPING YOUNG MINDS{' '}
+                <br />
+                THROUGH NEUROSCIENCE
             </h2>
-            <p className="text-gray-700 text-lg mb-6 leading-relaxed">
+            <p className="text-gray-700 text-lg mb-6 leading-relaxed text-justify">
               At My School ITALY, we believe brilliance can be built – one neural connection at a time. Our NeuroPi Study Technology, grounded in modern neuroscience research, helps children shine through proven, research-based instruction that has empowered young learners around the world. Using the powerful concept of Neuroplasticity – the brain's ability to grow and rewire through experience – we nurture learning pathways right from Pre Nursery days.
             </p>
 
             <div className="border-l-4 border-msi-orange pl-6 my-8 py-2">
-              <p className="text-gray-600 italic">
+              <p className="text-gray-600 italic text-justify">
                 Every activity is designed to strengthen focus, confidence, and communication – helping children become curious thinkers, capable learners, and compassionate leaders. At NeuroPi, education is not about memorizing facts – it's about building the brain for the future.
               </p>
             </div>
