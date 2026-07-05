@@ -6,19 +6,19 @@ const blogs = [
     id: 1,
     title: "🎃 Spooktacular Halloween Celebration at MySchoolITALY @ Hitex! 👻",
     image: "/images/blog/IMG_20251031_141448545_HDR-scaled.jpg.bv.webp",
-    link: "#"
+    link: "/blog/1"
   },
   {
     id: 2,
     title: "Brain-Boosting Activities You Can Do at Home",
     image: "/images/blog/freepik__a-warm-and-inviting-home-setting-where-a-toddler-a__39143.jpeg.bv_resized_ipad.jpeg.bv.webp",
-    link: "#"
+    link: "/blog/2"
   },
   {
     id: 3,
     title: "What is Neuroscience-Based Early Childhood Education",
     image: "/images/blog/little-boy-solving-puzzle-with-brain-background-1-scaled.jpg.bv_resized_desktop.jpg.bv.webp",
-    link: "#"
+    link: "/blog/3"
   },
   {
     id: 4,
