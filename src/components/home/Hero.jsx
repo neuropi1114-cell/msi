@@ -88,7 +88,7 @@ const Hero = () => {
               </p>
             </div>
 
-            <a href="/programs">
+            <a href={current === 1 ? '/nep' : current === 2 ? '/day-care' : '/programs'}>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

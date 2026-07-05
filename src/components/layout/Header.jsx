@@ -18,6 +18,7 @@ const Header = () => {
       ],
     },
     { name: 'Programs', href: '/programs' },
+    { name: 'The Educational Project', href: '/nep' },
     { name: 'Admissions', href: '/admissions' },
     { name: 'Blog', href: '#' },
     { name: 'Contact Us', href: '/contact' },

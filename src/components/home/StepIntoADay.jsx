@@ -27,7 +27,7 @@ const StepIntoADay = () => {
             And as sunlight fills their colourful classrooms, imagination takes flight like a thousand butterflies. Kind words bloom like petals, and every discovery twinkles brighter than the stars above. At My School ITALY, childhood becomes a symphony — where science hums softly beneath the melody of joy in our programs for ages 45 days old babies to 12 years old kids in our Creche, Daycare, Preschool, After School and Summer Camps with healthy meals and activities.
           </p>
           <a
-            href="/the-educational-project/"
+            href="/nep"
             className="inline-flex items-center justify-center bg-msi-orange text-white font-bold py-4 px-10 rounded-full font-averia text-lg"
           >
             Read More

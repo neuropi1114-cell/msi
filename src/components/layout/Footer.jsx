@@ -118,9 +118,10 @@ const Footer = () => {
               <li><a href="/" className="hover:text-msi-orange transition-colors">Home</a></li>
               <li><a href="/about" className="hover:text-msi-orange transition-colors">About Us</a></li>
               <li><a href="/programs" className="hover:text-msi-orange transition-colors">Programs</a></li>
+              <li><a href="/nep" className="hover:text-msi-orange transition-colors">The Educational Project</a></li>
               <li><a href="/admissions" className="hover:text-msi-orange transition-colors">Admissions</a></li>
               <li><a href="/contact" className="hover:text-msi-orange transition-colors">Contact Us</a></li>
-              <li><a href="/programs" className="hover:text-msi-orange transition-colors">Day Care</a></li>
+              <li><a href="/day-care" className="hover:text-msi-orange transition-colors">Day Care</a></li>
               <li><a href="#" className="hover:text-msi-orange transition-colors">Franchise</a></li>
               <li><a href="/admissions" className="hover:text-msi-orange transition-colors">Enroll</a></li>
             </ul>
