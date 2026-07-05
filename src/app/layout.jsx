@@ -35,7 +35,7 @@ export const metadata = {
     description: 'Rooted in the science of early brain development, our preschool chain blends neuroscience, play-based learning, and emotional intelligence.',
   },
   icons: {
-    icon: '/favicon.svg',
+    icon: '/favicon.ico',
   },
   alternates: {
     canonical: 'https://myschoolitaly.com',
