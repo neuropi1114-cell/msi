@@ -93,19 +93,19 @@ const Footer = () => {
 
             {/* Social Icons */}
             <div className="flex space-x-3 mt-6">
-              <a href="#" className="w-9 h-9 rounded bg-white/10 flex items-center justify-center hover:bg-msi-orange transition-colors">
+              <a href="https://facebook.com/myschoolitaly" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded bg-white/10 flex items-center justify-center hover:bg-msi-orange transition-colors">
                 <Facebook className="w-4 h-4" />
               </a>
-              <a href="#" className="w-9 h-9 rounded bg-white/10 flex items-center justify-center hover:bg-msi-orange transition-colors">
+              <a href="https://twitter.com/myschoolitaly" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded bg-white/10 flex items-center justify-center hover:bg-msi-orange transition-colors">
                 <Twitter className="w-4 h-4" />
               </a>
-              <a href="#" className="w-9 h-9 rounded bg-white/10 flex items-center justify-center hover:bg-msi-orange transition-colors">
+              <a href="https://linkedin.com/company/myschoolitaly" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded bg-white/10 flex items-center justify-center hover:bg-msi-orange transition-colors">
                 <Linkedin className="w-4 h-4" />
               </a>
-              <a href="#" className="w-9 h-9 rounded bg-white/10 flex items-center justify-center hover:bg-msi-orange transition-colors">
+              <a href="https://instagram.com/myschoolitaly" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded bg-white/10 flex items-center justify-center hover:bg-msi-orange transition-colors">
                 <Instagram className="w-4 h-4" />
               </a>
-              <a href="#" className="w-9 h-9 rounded bg-white/10 flex items-center justify-center hover:bg-msi-orange transition-colors">
+              <a href="https://youtube.com/@myschoolitaly" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded bg-white/10 flex items-center justify-center hover:bg-msi-orange transition-colors">
                 <Youtube className="w-4 h-4" />
               </a>
             </div>
@@ -115,14 +115,14 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-6 text-white">Navigation</h3>
             <ul className="flex flex-col gap-y-2 text-white/80 text-sm">
-              <li><a href="#" className="hover:text-msi-orange transition-colors">Home</a></li>
-              <li><a href="#" className="hover:text-msi-orange transition-colors">Pre School</a></li>
-              <li><a href="#" className="hover:text-msi-orange transition-colors">The Educational Project</a></li>
-              <li><a href="#" className="hover:text-msi-orange transition-colors">Day Care</a></li>
-              <li><a href="#" className="hover:text-msi-orange transition-colors">Our Team</a></li>
-              <li><a href="#" className="hover:text-msi-orange transition-colors">Franchise Overview</a></li>
-              <li><a href="#" className="hover:text-msi-orange transition-colors">Baby Sensory</a></li>
-              <li><a href="#" className="hover:text-msi-orange transition-colors">Enroll</a></li>
+              <li><a href="/" className="hover:text-msi-orange transition-colors">Home</a></li>
+              <li><a href="/about" className="hover:text-msi-orange transition-colors">About Us</a></li>
+              <li><a href="/programs" className="hover:text-msi-orange transition-colors">Programs</a></li>
+              <li><a href="/admissions" className="hover:text-msi-orange transition-colors">Admissions</a></li>
+              <li><a href="/contact" className="hover:text-msi-orange transition-colors">Contact Us</a></li>
+              <li><a href="/programs" className="hover:text-msi-orange transition-colors">Day Care</a></li>
+              <li><a href="#" className="hover:text-msi-orange transition-colors">Franchise</a></li>
+              <li><a href="/admissions" className="hover:text-msi-orange transition-colors">Enroll</a></li>
             </ul>
           </div>
 
@@ -147,9 +147,9 @@ const Footer = () => {
           &copy; 2002 – 2025 My School ITALY. All Rights Reserved.
         </p>
         <div className="flex justify-center gap-4">
-          <a href="#" className="text-msi-orange hover:underline transition-colors text-sm">Privacy Policy</a>
+          <a href="/privacy-policy" className="text-msi-orange hover:underline transition-colors text-sm">Privacy Policy</a>
           <span className="text-white/40">|</span>
-          <a href="#" className="text-msi-orange hover:underline transition-colors text-sm">Terms and Conditions</a>
+          <a href="/terms" className="text-msi-orange hover:underline transition-colors text-sm">Terms and Conditions</a>
         </div>
       </div>
     </footer>

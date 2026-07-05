@@ -17,7 +17,7 @@ export const metadata = {
     default: 'My School ITALY | Neuroscience-Based Preschool & Daycare',
     template: '%s | My School ITALY',
   },
-  description: 'My School ITALY: Neuroscience-based preschool & childcare for ages 45 days to 7 years. Our NeuroPi Study Technology nurtures young minds through play-based learning, emotional intelligence, and brain development.',
+  description: 'My School ITALY is a neuroscience-based preschool & daycare for ages 45 days to 7 years. Our NeuroPi method nurtures young minds through play-based learning and emotional growth.',
   keywords: ['preschool', 'daycare', 'neuroscience', 'childcare', 'early childhood education', 'My School Italy', 'NeuroPi', 'play-based learning', 'brain development'],
   robots: 'index, follow',
   openGraph: {

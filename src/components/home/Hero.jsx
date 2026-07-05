@@ -45,7 +45,9 @@ const Hero = () => {
   const slide = slides[current];
 
   return (
-    <section className="relative -mt-16 pt-16 h-[calc(85vh+4rem)] min-h-[calc(600px+4rem)] w-full flex items-center">
+    <section className="relative -mt-16 pt-16 min-h-[calc(100vh+4rem)] w-full flex items-center" aria-label="Hero banner">
+      {/* SEO-relevant H1 brand heading — visible to crawlers and screen readers */}
+      <h1 className="sr-only">My School ITALY | Neuroscience-Based Preschool & Daycare for Ages 45 Days to 7 Years</h1>
       {/* Background Image with Overlay */}
       <AnimatePresence initial={false} custom={direction} mode="wait">
         <motion.div
@@ -76,9 +78,9 @@ const Hero = () => {
             transition={{ duration: 0.7, ease: "easeInOut" }}
             className="max-w-xl w-full"
           >
-            <h1 className="text-5xl md:text-7xl font-schoolbell text-msi-orange font-bold uppercase mb-4 drop-shadow-md">
+            <span className="text-5xl md:text-7xl font-schoolbell text-msi-orange font-bold uppercase mb-4 drop-shadow-md block">
               {slide.title}
-            </h1>
+            </span>
 
             <div className={`${current === 1 ? 'bg-[#351C5A]' : 'bg-msi-orange/90'} backdrop-blur-sm p-8 rounded-tr-3xl rounded-bl-3xl rounded-tl-md rounded-br-md shadow-2xl mb-8 border-2 border-white/20`}>
               <p className="text-white text-lg leading-relaxed font-averia tracking-wide">
@@ -86,13 +88,15 @@ const Hero = () => {
               </p>
             </div>
 
+            <a href="/programs">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="bg-msi-orange text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-msi-orange/90 hover:shadow-xl transition-all font-averia text-lg"
             >
-              Read More
+              Explore Programs
             </motion.button>
+          </a>
           </motion.div>
         </AnimatePresence>
       </div>

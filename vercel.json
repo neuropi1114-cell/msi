@@ -1,0 +1,32 @@
+{
+  "headers": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "(?!myschoolitaly\\.com$).*"
+        }
+      ],
+      "headers": [
+        {
+          "key": "x-robots-tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "msi-mu.vercel.app"
+        }
+      ],
+      "destination": "https://myschoolitaly.com/:path*",
+      "permanent": true
+    }
+  ]
+}

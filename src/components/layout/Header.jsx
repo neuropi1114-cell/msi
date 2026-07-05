@@ -8,47 +8,40 @@ const Header = () => {
   const [expandedSection, setExpandedSection] = useState(null);
 
   const navLinks = [
-    { name: 'Home', href: '#' },
+    { name: 'Home', href: '/' },
     {
       name: 'About Us',
       children: [
-        { name: 'People Behind', href: '#' },
-        { name: 'PRASAD GARAPATI', href: '#' },
-        { name: 'Dr Aperna Volluru-Founder', href: '#' },
-        { name: 'Message from Founder', href: '#' },
-        { name: 'Dr Dr Peter Gseller-Venture Philanthropist', href: '#' },
+        { name: 'Our Story', href: '/about' },
+        { name: 'Our Team', href: '/about#team' },
+        { name: 'Message from Founder', href: '/about' },
       ],
     },
-    { name: 'Early Childhood Program', href: '#' },
-    { name: 'Franchise', href: '#' },
-    { name: 'Our Team', href: '#' },
-    { name: 'Login', href: '#' },
-    { name: 'Enrol', href: '#' },
-    { name: 'Book Your Tour', href: '#' },
-    { name: 'Work With us', href: '#' },
-    { name: 'HR', href: '#' },
-    { name: 'Shop', href: '#' },
+    { name: 'Programs', href: '/programs' },
+    { name: 'Admissions', href: '/admissions' },
     { name: 'Blog', href: '#' },
-    { name: 'Social Media', href: '#' },
+    { name: 'Contact Us', href: '/contact' },
+    { name: 'Franchise', href: '#' },
+    { name: 'Enrol', href: '/admissions' },
+    { name: 'Book Your Tour', href: '/contact' },
+    { name: 'Work With us', href: '#' },
+    { name: 'Shop', href: '#' },
     { name: 'Media Coverage', href: '#' },
+    { name: 'Testimonials', href: '#' },
+    { name: 'Login', href: '#' },
+    { name: 'HR', href: '#' },
     { name: 'Handbook', href: '#' },
     { name: 'Handbook Video', href: '#' },
     { name: 'Video Gallery', href: '#' },
-    { name: 'Testimonials', href: '#' },
-    { name: 'Contact Us', href: '#' },
-    { name: 'Hitex', href: '#' },
-    { name: 'Kavuri Hills', href: '#' },
-    { name: 'Qcity', href: '#' },
-    { name: 'Mindspace', href: '#' },
-    { name: 'Avance 2', href: '#' },
-    { name: 'Avance', href: '#' },
   ];
 
   return (
     <header className="sticky top-0 z-40 w-full bg-transparent py-2">
       <div className="container mx-auto px-4 md:px-12 flex justify-between items-center">
         <div className="flex items-center">
-          <img src={mainLogo} alt="My School ITALY Logo" className="h-12 w-auto" />
+          <a href="/" aria-label="Go to homepage">
+            <img src={mainLogo} alt="My School ITALY Logo" className="h-12 w-auto" />
+          </a>
         </div>
 
         <button
