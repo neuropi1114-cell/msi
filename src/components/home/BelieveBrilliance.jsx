@@ -59,9 +59,9 @@ const BelieveBrilliance = () => {
               EDUCATION EXCELLENCE EVERYWHERE Is Our Vision
             </h4>
 
-            <button className="bg-msi-orange text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-msi-orange/90 transition-all font-averia text-lg">
+            <a href="/about" className="bg-msi-orange text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-msi-orange/90 transition-all font-averia text-lg inline-block">
               About Us
-            </button>
+            </a>
           </motion.div>
         </div>
       </div>
