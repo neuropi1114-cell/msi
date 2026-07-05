@@ -1,5 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 const pressImages = [
   "/images/ASFATUREDIN/press30.png.bv_resized_mobile.png.bv.webp",
@@ -59,14 +60,12 @@ export default function FeaturedIn() {
             <p className="text-white/90 text-lg mb-8 leading-relaxed text-justify">
               Education is a journey, not a race, and students learn best when they're having fun while they do it.
             </p>
-            <motion.a
-              href="#"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+            <Link
+              href="/media-coverage"
               className="inline-block bg-[#f26522] text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
             >
               Read More
-            </motion.a>
+            </Link>
           </motion.div>
 
         </div>
