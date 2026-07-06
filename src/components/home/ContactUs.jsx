@@ -138,7 +138,7 @@ export default function ContactUs() {
                         className="px-3 py-3 bg-gray-100 border border-r-0 border-gray-300 rounded-l-lg text-gray-700 flex items-center gap-2 min-w-[90px]"
                       >
                         <img
-                          src={`https://flagcdn.com/w20/${countries.find(c => c.phone === formData.phoneCode)?.code || 'in'}.png`}
+                          src={`/images/flags/${countries.find(c => c.phone === formData.phoneCode)?.code || 'in'}.png`}
                           alt="Flag"
                           className="w-4 h-auto rounded-sm"
                         />
@@ -159,7 +159,7 @@ export default function ContactUs() {
                               className={`px-3 py-2 cursor-pointer flex items-center gap-2 hover:bg-orange-50 text-sm ${formData.phoneCode === country.phone ? 'bg-orange-100' : ''}`}
                             >
                               <img
-                                src={`https://flagcdn.com/w20/${country.code}.png`}
+                                src={`/images/flags/${country.code}.png`}
                                 alt={country.name}
                                 className="w-4 h-auto rounded-sm"
                               />
@@ -208,7 +208,7 @@ export default function ContactUs() {
                     {selectedCountry ? (
                       <span className="flex items-center gap-2">
                         <img
-                          src={`https://flagcdn.com/w20/${selectedCountry.code}.png`}
+                          src={`/images/flags/${selectedCountry.code}.png`}
                           alt={selectedCountry.name}
                           className="w-5 h-auto rounded-sm"
                         />
@@ -233,7 +233,7 @@ export default function ContactUs() {
                           className={`px-4 py-3 cursor-pointer flex items-center gap-2 hover:bg-orange-50 ${formData.country === country.name ? 'bg-orange-100' : ''}`}
                         >
                           <img
-                            src={`https://flagcdn.com/w20/${country.code}.png`}
+                            src={`/images/flags/${country.code}.png`}
                             alt={country.name}
                             className="w-5 h-auto rounded-sm"
                           />

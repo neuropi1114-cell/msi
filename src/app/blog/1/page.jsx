@@ -42,7 +42,17 @@ export const metadata = {
   alternates: { canonical: 'https://myschoolitaly.com/blog/1' },
 };
 
+function shuffleArray(array) {
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+}
+
 export default function BlogPostPage() {
+  const shuffledImages = shuffleArray(galleryImages);
   return (
     <>
       <TopBar />
@@ -95,7 +105,7 @@ export default function BlogPostPage() {
         <section className="pb-16">
           <div className="container mx-auto px-4 md:px-12 max-w-6xl">
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
-              {galleryImages.map((src, index) => (
+              {shuffledImages.map((src, index) => (
                 <a
                   key={index}
                   href={src}

@@ -109,7 +109,7 @@ const Solutions = () => {
           className=""
         >
           <img
-            src="https://myschoolitaly.com/wp-content/uploads/al_opt_content/IMAGE/myschoolitaly.com/wp-content/uploads/2024/10/happy-indian-family-portrait-generative-ai.jpg.bv.webp?bv_host=myschoolitaly.com"
+            src="/images/solutions/working-parents.jpg.bv.webp"
             alt="Working Parents"
             className="w-full h-[500px] object-cover rounded-t-3xl"
             loading="lazy"
@@ -133,7 +133,7 @@ const Solutions = () => {
           className=""
         >
           <img
-            src="https://myschoolitaly.com/wp-content/uploads/al_opt_content/IMAGE/myschoolitaly.com/wp-content/uploads/2024/10/asian-indian-business-people-corporate-culture-working-office-concept-with-laptop-papers-meetings-presentations-discussions.jpg.bv.webp?bv_host=myschoolitaly.com"
+            src="/images/solutions/corporate-partners.jpg.bv.webp"
             alt="Corporate Partners"
             className="w-full h-[500px] object-cover rounded-t-3xl"
             loading="lazy"

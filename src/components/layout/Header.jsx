@@ -31,9 +31,9 @@ const Header = () => {
     { name: 'Testimonials', href: '#' },
     { name: 'Login', href: '#' },
     { name: 'HR', href: '#' },
-    { name: 'Handbook', href: '#' },
-    { name: 'Handbook Video', href: '#' },
-    { name: 'Video Gallery', href: '#' },
+    { name: 'Handbook', href: '/handbook' },
+    { name: 'Handbook Video', href: '/handbook' },
+    { name: 'Video Gallery', href: '/video-gallery' },
   ];
 
   return (
