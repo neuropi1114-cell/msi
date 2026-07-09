@@ -48,7 +48,7 @@ export default function BlogPost2Page() {
           <div className="container mx-auto px-4 md:px-12 max-w-4xl">
             <div className="mb-10 rounded-xl overflow-hidden shadow-lg relative aspect-[1024/585]">
               <Image
-                src="https://myschoolitaly.com/wp-content/uploads/2025/10/freepik__a-warm-and-inviting-home-setting-where-a-toddler-a__39143-1024x585.jpeg"
+                src="/images/blog/brain-boosting-activities-featured.jpg"
                 alt="Brain-boosting activities at home"
                 fill
                 className="object-cover"

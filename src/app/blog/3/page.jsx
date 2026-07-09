@@ -49,7 +49,7 @@ export default function BlogPost3Page() {
           <div className="container mx-auto px-4 md:px-12 max-w-4xl">
             <div className="mb-10 rounded-xl overflow-hidden shadow-lg relative aspect-[1024/574]">
               <Image
-                src="https://myschoolitaly.com/wp-content/uploads/2025/09/little-boy-solving-puzzle-with-brain-background-1-1024x574.jpg"
+                src="/images/blog/neuroscience-education-featured.jpg"
                 alt="Neuroscience-Based Early Childhood Education"
                 fill
                 className="object-cover"
