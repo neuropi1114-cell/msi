@@ -116,14 +116,12 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-6 text-white">Navigation</h3>
             <ul className="flex flex-col gap-y-2 text-white/80 text-sm">
               <li><a href="/" className="hover:text-msi-orange transition-colors">Home</a></li>
-              <li><a href="/about" className="hover:text-msi-orange transition-colors">About Us</a></li>
-              <li><a href="/programs" className="hover:text-msi-orange transition-colors">Programs</a></li>
+              <li><a href="/programs" className="hover:text-msi-orange transition-colors">Pre School</a></li>
               <li><a href="/nep" className="hover:text-msi-orange transition-colors">The Educational Project</a></li>
-              <li><a href="/admissions" className="hover:text-msi-orange transition-colors">Admissions</a></li>
-              <li><a href="/contact" className="hover:text-msi-orange transition-colors">Contact Us</a></li>
               <li><a href="/day-care" className="hover:text-msi-orange transition-colors">Day Care</a></li>
-              <li><a href="/handbook" className="hover:text-msi-orange transition-colors">Handbook</a></li>
-              <li><a href="#" className="hover:text-msi-orange transition-colors">Franchise</a></li>
+              <li><a href="/about#team" className="hover:text-msi-orange transition-colors">Our Team</a></li>
+              <li><a href="/msi-venture-philanthropy" className="hover:text-msi-orange transition-colors">Franchise Overview</a></li>
+              <li><a href="/baby-sensory" className="hover:text-msi-orange transition-colors">Baby Sensory</a></li>
               <li><a href="/admissions" className="hover:text-msi-orange transition-colors">Enroll</a></li>
             </ul>
           </div>

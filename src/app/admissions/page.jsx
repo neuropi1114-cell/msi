@@ -3,7 +3,6 @@ import TopBar from '../../components/layout/TopBar';
 import Header from '../../components/layout/Header';
 import ContactUs from '../../components/home/ContactUs';
 import Awards from '../../components/home/Awards';
-import Blogs from '../../components/home/Blogs';
 import Footer from '../../components/layout/Footer';
 
 export const metadata = {
@@ -29,7 +28,6 @@ export default function AdmissionsPage() {
       </main>
       <ContactUs />
       <Awards />
-      <Blogs />
       <Footer />
     </>
   );
