@@ -45,18 +45,18 @@ const Footer = () => {
           
           {/* Column 1: My School ITALY About */}
           <div>
-            <h3 className="text-xl font-bold mb-6 text-white text-center font-sans">My School ITALY</h3>
-            <p className="text-white/80 leading-relaxed text-sm mb-4 text-justify font-sans">
+            <h3 className="text-xl font-bold mb-6 text-white text-center">My School ITALY</h3>
+            <p className="text-white/80 leading-relaxed text-sm mb-4 text-justify">
               Welcome to the enchanted world of "My School ITALY", where young minds flourish through neuroscience-based education. For over three decades, we've nurtured confident communicators from ages 45 days to 7 years. 👶 Our rainbow-hued classrooms and caring staff create a fairy tale setting 🧚‍♀️. Explore our tailored services for each stage of early development, from specialized baby creches to engaging preschool and foundation programs. ✨
             </p>
-            <p className="text-white/80 leading-relaxed text-sm text-justify font-sans">
+            <p className="text-white/80 leading-relaxed text-sm text-justify">
               We also offer a range of enriching extracurricular activities and special programs like Robotics, Gymnastics, Neurobics, Dance, and Storytelling to enhance your child's overall development. We're a network of preschools around the world, passionately championing accessible, top-tier, and high-quality education. 🏰
             </p>
           </div>
 
           {/* Column 2: Contact Us */}
           <div>
-            <h3 className="text-xl font-bold mb-6 text-white font-sans">Contact us</h3>
+            <h3 className="text-xl font-bold mb-6 text-white">Contact us</h3>
             
             <ul className="space-y-3 text-white/80 text-sm">
               <li className="flex items-start">
@@ -120,7 +120,7 @@ const Footer = () => {
               <li><a href="/nep" className="hover:text-msi-orange transition-colors">The Educational Project</a></li>
               <li><a href="/day-care" className="hover:text-msi-orange transition-colors">Day Care</a></li>
               <li><a href="/about#team" className="hover:text-msi-orange transition-colors">Our Team</a></li>
-              <li><a href="/msi-venture-philanthropy" className="hover:text-msi-orange transition-colors">Franchise Overview</a></li>
+              <li><a href="/franchise-overview" className="hover:text-msi-orange transition-colors">Franchise Overview</a></li>
               <li><a href="/baby-sensory" className="hover:text-msi-orange transition-colors">Baby Sensory</a></li>
               <li><a href="/admissions" className="hover:text-msi-orange transition-colors">Enroll</a></li>
             </ul>
