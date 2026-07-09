@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import TopBar from '../../../components/layout/TopBar';
 import Header from '../../../components/layout/Header';
 import Footer from '../../../components/layout/Footer';
@@ -9,6 +10,20 @@ export const metadata = {
   title: 'What is Neuroscience-Based Early Childhood Education',
   description: 'Early childhood is a critical period for brain development. Discover how neuroscience-based education uses brain science to design teaching methods for young children.',
   alternates: { canonical: 'https://myschoolitaly.com/blog/3' },
+  openGraph: {
+    title: 'What is Neuroscience-Based Early Childhood Education | My School ITALY',
+    description: 'Early childhood is a critical period for brain development. Discover how neuroscience-based education uses brain science to design teaching methods for young children.',
+    url: 'https://myschoolitaly.com/blog/3',
+    siteName: 'My School ITALY',
+    locale: 'en_US',
+    type: 'article',
+    images: [{ url: '/images/hero/Slider_1-scaled.jpg.bv.webp', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'What is Neuroscience-Based Early Childhood Education | My School ITALY',
+    description: 'Early childhood is a critical period for brain development. Discover how neuroscience-based education uses brain science to design teaching methods for young children.',
+  },
 };
 
 export default function BlogPost3Page() {
@@ -32,11 +47,12 @@ export default function BlogPost3Page() {
 
         <section className="py-12 md:py-16">
           <div className="container mx-auto px-4 md:px-12 max-w-4xl">
-            <div className="mb-10 rounded-xl overflow-hidden shadow-lg">
-              <img
+            <div className="mb-10 rounded-xl overflow-hidden shadow-lg relative aspect-[1024/574]">
+              <Image
                 src="https://myschoolitaly.com/wp-content/uploads/2025/09/little-boy-solving-puzzle-with-brain-background-1-1024x574.jpg"
                 alt="Neuroscience-Based Early Childhood Education"
-                className="w-full h-auto"
+                fill
+                className="object-cover"
               />
             </div>
 

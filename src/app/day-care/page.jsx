@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import TopBar from '../../components/layout/TopBar';
 import Header from '../../components/layout/Header';
 import Footer from '../../components/layout/Footer';
@@ -9,6 +10,20 @@ export const metadata = {
   title: 'Day Care',
   description: 'My School ITALY daycare programs for children 45 days to 7 years. Safe, nurturing, neuroscience-based childcare in a play-based learning environment.',
   alternates: { canonical: 'https://myschoolitaly.com/day-care' },
+  openGraph: {
+    title: 'Day Care | My School ITALY',
+    description: 'My School ITALY daycare programs for children 45 days to 7 years. Safe, nurturing, neuroscience-based childcare in a play-based learning environment.',
+    url: 'https://myschoolitaly.com/day-care',
+    siteName: 'My School ITALY',
+    locale: 'en_US',
+    type: 'website',
+    images: [{ url: '/images/hero/Slider_1-scaled.jpg.bv.webp', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Day Care | My School ITALY',
+    description: 'My School ITALY daycare programs for children 45 days to 7 years. Safe, nurturing, neuroscience-based childcare in a play-based learning environment.',
+  },
 };
 
 export default function DayCarePage() {
@@ -46,9 +61,11 @@ export default function DayCarePage() {
           <div className="container mx-auto px-4 md:px-12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
               <div>
-                <img
+                <Image
                   src="/images/hero/DSC00795-1024x684-1.jpeg.bv.webp"
                   alt="Our Great Vision"
+                  width={800}
+                  height={534}
                   className="w-full h-auto rounded-2xl shadow-lg"
                 />
               </div>
@@ -79,9 +96,11 @@ export default function DayCarePage() {
                 </p>
               </div>
               <div>
-                <img
+                <Image
                   src="/images/hero/DSC00928-scaled-2-1024x684.jpg.bv.webp"
                   alt="We make learning magical through creativity"
+                  width={800}
+                  height={534}
                   className="w-full h-auto rounded-2xl shadow-lg"
                 />
               </div>
@@ -99,7 +118,7 @@ export default function DayCarePage() {
               </p>
             </div>
             <a
-              href="#Enro"
+              href="/admissions"
               className="inline-block bg-msi-orange text-white font-bold py-3 px-10 rounded-full hover:bg-msi-orange/90 transition-colors text-lg mt-6 md:mt-0 flex-shrink-0"
             >
               Enrol Now

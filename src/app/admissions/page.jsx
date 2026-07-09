@@ -9,6 +9,20 @@ export const metadata = {
   title: 'Admissions',
   description: 'Enroll your child at My School ITALY. Simple admission process for Infant, Toddler, Preschool, and Kindergarten programs. Book a tour or apply online today.',
   alternates: { canonical: 'https://myschoolitaly.com/admissions' },
+  openGraph: {
+    title: 'Admissions | My School ITALY',
+    description: 'Enroll your child at My School ITALY. Simple admission process for Infant, Toddler, Preschool, and Kindergarten programs.',
+    url: 'https://myschoolitaly.com/admissions',
+    siteName: 'My School ITALY',
+    locale: 'en_US',
+    type: 'website',
+    images: [{ url: '/images/hero/Slider_1-scaled.jpg.bv.webp', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Admissions | My School ITALY',
+    description: 'Enroll your child at My School ITALY. Simple admission process for Infant, Toddler, Preschool, and Kindergarten programs.',
+  },
 };
 
 export default function AdmissionsPage() {

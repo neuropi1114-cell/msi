@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import TopBar from '../../../components/layout/TopBar';
 import Header from '../../../components/layout/Header';
 import Footer from '../../../components/layout/Footer';
@@ -40,6 +41,20 @@ export const metadata = {
   title: 'Spooktacular Halloween Celebration at MySchoolITALY @ Hitex',
   description: 'This October, MySchoolITALY at Hitex turned into a festive wonderland of pumpkins, costumes, and spooky surprises as our students and teachers came together to celebrate Halloween 2025.',
   alternates: { canonical: 'https://myschoolitaly.com/blog/1' },
+  openGraph: {
+    title: 'Spooktacular Halloween Celebration at MySchoolITALY @ Hitex | My School ITALY',
+    description: 'This October, MySchoolITALY at Hitex turned into a festive wonderland of pumpkins, costumes, and spooky surprises as our students and teachers came together to celebrate Halloween 2025.',
+    url: 'https://myschoolitaly.com/blog/1',
+    siteName: 'My School ITALY',
+    locale: 'en_US',
+    type: 'article',
+    images: [{ url: '/images/hero/Slider_1-scaled.jpg.bv.webp', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Spooktacular Halloween Celebration at MySchoolITALY @ Hitex | My School ITALY',
+    description: 'This October, MySchoolITALY at Hitex turned into a festive wonderland of pumpkins, costumes, and spooky surprises as our students and teachers came together to celebrate Halloween 2025.',
+  },
 };
 
 function shuffleArray(array) {
@@ -113,11 +128,12 @@ export default function BlogPostPage() {
                   rel="noopener noreferrer"
                   className="overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300 group"
                 >
-                  <img
+                  <Image
                     src={src}
                     alt={`Halloween celebration photo ${index + 1}`}
+                    width={400}
+                    height={300}
                     className="w-full h-40 md:h-48 object-cover transform group-hover:scale-110 transition-transform duration-500"
-                    loading="lazy"
                   />
                 </a>
               ))}

@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import TopBar from '../../components/layout/TopBar';
 import Header from '../../components/layout/Header';
 import Footer from '../../components/layout/Footer';
@@ -66,9 +67,11 @@ export default function BabySensoryPage() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.1 }}
               >
-                <img
+                <Image
                   src="/images/baby-sensory/welcome-baby.jpg"
-                  alt="Baby Sensory"
+                  alt="Baby Sensory class at My School ITALY"
+                  width={600}
+                  height={450}
                   className="w-full h-auto rounded-2xl shadow-lg"
                 />
               </motion.div>
@@ -197,14 +200,17 @@ export default function BabySensoryPage() {
               {[
                 {
                   img: '/images/baby-sensory/card-1.jpg',
+                  alt: 'Sensory area arranged for baby visual development',
                   text: 'We\'ve arranged the sensory area to match the distance at which your baby sees objects clearly.',
                 },
                 {
                   img: '/images/baby-sensory/card-2.jpg',
+                  alt: 'Instruments used for baby sensory stimulation',
                   text: 'We\'ve measured the decibel level of our instruments to make sure they are not too loud.',
                 },
                 {
                   img: '/images/baby-sensory/card-3.jpg',
+                  alt: 'Soothing baby after sensory session',
                   text: 'We soothe your baby at the end of every session by mimicking the sounds of the womb.',
                 },
               ].map((item, i) => (
@@ -216,8 +222,8 @@ export default function BabySensoryPage() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: i * 0.15 }}
                 >
-                  <div className="overflow-hidden">
-                    <img src={item.img} alt="" className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-[1.01]" loading="lazy" />
+                  <div className="overflow-hidden relative h-64">
+                    <Image src={item.img} alt={item.alt} fill className="object-cover transition-transform duration-300 group-hover:scale-[1.01]" />
                   </div>
                   <div className="p-6 text-center bg-[#F9FAFA]">
                     <p className="text-gray-700 leading-relaxed text-lg">{item.text}</p>

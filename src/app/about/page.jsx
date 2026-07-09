@@ -14,6 +14,20 @@ export const metadata = {
   title: 'About Us',
   description: 'Discover the story behind My School ITALY — a neuroscience-based preschool founded by Dr. Jessy Costantino. Learn about our mission, values, and global network.',
   alternates: { canonical: 'https://myschoolitaly.com/about' },
+  openGraph: {
+    title: 'About Us | My School ITALY',
+    description: 'Discover the story behind My School ITALY — a neuroscience-based preschool founded by Dr. Jessy Costantino. Learn about our mission, values, and global network.',
+    url: 'https://myschoolitaly.com/about',
+    siteName: 'My School ITALY',
+    locale: 'en_US',
+    type: 'website',
+    images: [{ url: '/images/hero/Slider_1-scaled.jpg.bv.webp', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About Us | My School ITALY',
+    description: 'Discover the story behind My School ITALY — a neuroscience-based preschool founded by Dr. Jessy Costantino. Learn about our mission, values, and global network.',
+  },
 };
 
 export default function AboutPage() {

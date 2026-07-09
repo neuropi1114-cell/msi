@@ -14,6 +14,20 @@ export const metadata = {
   title: 'Franchise Overview – My School ITALY',
   description: 'Own your own preschool with My School ITALY. Low investment, high returns franchise opportunity in neuroscience-based early childhood education.',
   alternates: { canonical: 'https://myschoolitaly.com/franchise-overview' },
+  openGraph: {
+    title: 'Franchise Overview | My School ITALY',
+    description: 'Own your own preschool with My School ITALY. Low investment, high returns franchise opportunity in neuroscience-based early childhood education.',
+    url: 'https://myschoolitaly.com/franchise-overview',
+    siteName: 'My School ITALY',
+    locale: 'en_US',
+    type: 'website',
+    images: [{ url: '/images/hero/Slider_1-scaled.jpg.bv.webp', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Franchise Overview | My School ITALY',
+    description: 'Own your own preschool with My School ITALY. Low investment, high returns franchise opportunity in neuroscience-based early childhood education.',
+  },
 };
 
 export default function FranchiseOverviewPage() {

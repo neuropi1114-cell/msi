@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import TopBar from '../../components/layout/TopBar';
 import Header from '../../components/layout/Header';
 import Footer from '../../components/layout/Footer';
@@ -8,6 +9,20 @@ export const metadata = {
   title: 'The Educational Project',
   description: 'Discover My School ITALY\'s educational project — a neuroscience-based approach that cultivates emotional intelligence, resilience, and a love for learning in every child.',
   alternates: { canonical: 'https://myschoolitaly.com/nep' },
+  openGraph: {
+    title: 'The Educational Project | My School ITALY',
+    description: 'Discover My School ITALY\'s educational project — a neuroscience-based approach that cultivates emotional intelligence, resilience, and a love for learning in every child.',
+    url: 'https://myschoolitaly.com/nep',
+    siteName: 'My School ITALY',
+    locale: 'en_US',
+    type: 'website',
+    images: [{ url: '/images/hero/Slider_1-scaled.jpg.bv.webp', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'The Educational Project | My School ITALY',
+    description: 'Discover My School ITALY\'s educational project — a neuroscience-based approach that cultivates emotional intelligence, resilience, and a love for learning in every child.',
+  },
 };
 
 const blogPosts = [
@@ -71,12 +86,12 @@ export default function EducationalProjectPage() {
         <section className="py-16 bg-gradient-to-b from-msi-purple to-white hidden md:block">
           <div className="container mx-auto px-4 md:px-12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-stretch">
-              <div className="rounded-2xl overflow-hidden">
-                <img
+              <div className="rounded-2xl overflow-hidden relative min-h-[400px]">
+                <Image
                   src="/images/nep/hero-classroom.webp"
-                  alt="Classroom"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
+                  alt="My School ITALY classroom designed with neuroscience principles"
+                  fill
+                  className="object-cover"
                 />
               </div>
               <div className="flex flex-col justify-center">
@@ -98,12 +113,12 @@ export default function EducationalProjectPage() {
         {/* Section 2b: Design Philosophy - Mobile */}
         <section className="py-16 bg-[#f7f9fc] md:hidden">
           <div className="container mx-auto px-4">
-            <div className="rounded-2xl overflow-hidden mb-6">
-              <img
+            <div className="rounded-2xl overflow-hidden mb-6 relative aspect-[4/3]">
+              <Image
                 src="/images/nep/hero-classroom.webp"
-                alt="Classroom"
-                className="w-full h-auto"
-                loading="lazy"
+                alt="My School ITALY classroom designed with neuroscience principles"
+                fill
+                className="object-cover"
               />
             </div>
             <div className="max-w-lg mx-auto">
@@ -123,8 +138,8 @@ export default function EducationalProjectPage() {
           <div className="container mx-auto px-4 md:px-12">
             {/* Arrows - Desktop */}
             <div className="hidden md:flex justify-between mb-4">
-              <img src="/images/nep/arrow1.webp" alt="" className="h-10" />
-              <img src="/images/nep/arrow1.webp" alt="" className="h-10" />
+              <Image src="/images/nep/arrow1.webp" alt="" width={40} height={40} className="h-10 w-auto" />
+              <Image src="/images/nep/arrow1.webp" alt="" width={40} height={40} className="h-10 w-auto" />
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-center">
@@ -155,7 +170,7 @@ export default function EducationalProjectPage() {
 
             {/* Bottom Arrow - Desktop */}
             <div className="hidden md:flex justify-center mt-4">
-              <img src="/images/nep/arrow2.webp" alt="" className="h-10" />
+              <Image src="/images/nep/arrow2.webp" alt="" width={40} height={40} className="h-10 w-auto" />
             </div>
           </div>
         </section>
@@ -165,8 +180,8 @@ export default function EducationalProjectPage() {
           <div className="container mx-auto px-4 md:px-12">
             <div className="grid grid-cols-4 md:grid-cols-8 gap-2 md:gap-4">
               {galleryImages.map((img, i) => (
-                <div key={i} className="rounded-lg overflow-hidden">
-                  <img src={img} alt={`Gallery ${i + 1}`} className="w-full h-auto" loading="lazy" />
+                <div key={i} className="rounded-lg overflow-hidden relative aspect-[4/3]">
+                  <Image src={img} alt={`My School ITALY campus gallery ${i + 1}`} fill className="object-cover" />
                 </div>
               ))}
             </div>
@@ -179,12 +194,12 @@ export default function EducationalProjectPage() {
           <div className="container mx-auto px-4 md:px-12 relative z-10">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
               <div>
-                <div className="rounded-2xl overflow-hidden mb-6">
-                  <img
+                <div className="rounded-2xl overflow-hidden mb-6 relative aspect-[4/3]">
+                  <Image
                     src="/images/nep/neuropi-approach-1.webp"
-                    alt="Children at play"
-                    className="w-full h-auto"
-                    loading="lazy"
+                    alt="Children at play in NeuroPi classroom"
+                    fill
+                    className="object-cover"
                   />
                 </div>
                 <p className="text-white/90 text-lg leading-relaxed">
@@ -193,12 +208,12 @@ export default function EducationalProjectPage() {
               </div>
               <div>
                 <h2 className="text-3xl md:text-4xl  font-bold mb-6">WHAT IS THE NEUROPI APPROACH?</h2>
-                <div className="rounded-2xl overflow-hidden mb-6">
-                  <img
+                <div className="rounded-2xl overflow-hidden mb-6 relative aspect-[4/3]">
+                  <Image
                     src="/images/nep/neuropi-approach-2.webp"
-                    alt="Classroom activity"
-                    className="w-full h-auto"
-                    loading="lazy"
+                    alt="Classroom activity at My School ITALY"
+                    fill
+                    className="object-cover"
                   />
                 </div>
                 <div className="text-white/90 text-lg leading-relaxed space-y-4">
@@ -229,12 +244,12 @@ export default function EducationalProjectPage() {
                   <p className="italic">&ldquo;My child comes home peaceful, curious, and full of stories – NeuroPi feels like family. The perfect blend of heart and science.&rdquo;</p>
                 </div>
               </div>
-              <div className="rounded-2xl overflow-hidden">
-                <img
+              <div className="rounded-2xl overflow-hidden relative aspect-[4/3]">
+                <Image
                   src="/images/nep/learning-neuropi.webp"
-                  alt="Children learning"
-                  className="w-full h-auto"
-                  loading="lazy"
+                  alt="Children learning the NeuroPi way"
+                  fill
+                  className="object-cover"
                 />
               </div>
             </div>
@@ -260,10 +275,8 @@ export default function EducationalProjectPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {blogPosts.map((post, i) => (
                 <div key={i} className="bg-white rounded-2xl shadow-xl overflow-hidden transition-transform hover:scale-[1.02]">
-                  <a href={post.link} target="_blank" rel="noopener noreferrer" className="block">
-                    <div className="aspect-[4/3] overflow-hidden">
-                      <img src={post.image} alt={post.title} className="w-full h-full object-cover" loading="lazy" />
-                    </div>
+                  <a href={post.link} target="_blank" rel="noopener noreferrer" className="block relative aspect-[4/3] overflow-hidden">
+                      <Image src={post.image} alt={post.title} fill className="object-cover" />
                   </a>
                   <div className="p-6">
                     <span className="inline-block bg-msi-orange text-white text-xs font-bold px-3 py-1 rounded-full mb-3">{post.category}</span>

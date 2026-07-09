@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import TopBar from '../../../components/layout/TopBar';
 import Header from '../../../components/layout/Header';
 import Footer from '../../../components/layout/Footer';
@@ -9,6 +10,20 @@ export const metadata = {
   title: 'Brain-Boosting Activities You Can Do at Home',
   description: 'As parents, you play a powerful role in shaping your child\'s early brain development. Discover neuroscience-backed activities to support your child\'s development.',
   alternates: { canonical: 'https://myschoolitaly.com/blog/2' },
+  openGraph: {
+    title: 'Brain-Boosting Activities You Can Do at Home | My School ITALY',
+    description: 'As parents, you play a powerful role in shaping your child\'s early brain development. Discover neuroscience-backed activities to support your child\'s development.',
+    url: 'https://myschoolitaly.com/blog/2',
+    siteName: 'My School ITALY',
+    locale: 'en_US',
+    type: 'article',
+    images: [{ url: '/images/hero/Slider_1-scaled.jpg.bv.webp', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Brain-Boosting Activities You Can Do at Home | My School ITALY',
+    description: 'As parents, you play a powerful role in shaping your child\'s early brain development. Discover neuroscience-backed activities to support your child\'s development.',
+  },
 };
 
 export default function BlogPost2Page() {
@@ -31,11 +46,12 @@ export default function BlogPost2Page() {
 
         <section className="py-12 md:py-16">
           <div className="container mx-auto px-4 md:px-12 max-w-4xl">
-            <div className="mb-10 rounded-xl overflow-hidden shadow-lg">
-              <img
+            <div className="mb-10 rounded-xl overflow-hidden shadow-lg relative aspect-[1024/585]">
+              <Image
                 src="https://myschoolitaly.com/wp-content/uploads/2025/10/freepik__a-warm-and-inviting-home-setting-where-a-toddler-a__39143-1024x585.jpeg"
                 alt="Brain-boosting activities at home"
-                className="w-full h-auto"
+                fill
+                className="object-cover"
               />
             </div>
 
