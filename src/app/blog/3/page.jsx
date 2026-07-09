@@ -9,11 +9,11 @@ import { ArrowLeft } from 'lucide-react';
 export const metadata = {
   title: 'What is Neuroscience-Based Early Childhood Education',
   description: 'Early childhood is a critical period for brain development. Discover how neuroscience-based education uses brain science to design teaching methods for young children.',
-  alternates: { canonical: 'https://myschoolitaly.com/blog/3' },
+  alternates: { canonical: '/blog/3' },
   openGraph: {
     title: 'What is Neuroscience-Based Early Childhood Education | My School ITALY',
     description: 'Early childhood is a critical period for brain development. Discover how neuroscience-based education uses brain science to design teaching methods for young children.',
-    url: 'https://myschoolitaly.com/blog/3',
+    url: '/blog/3',
     siteName: 'My School ITALY',
     locale: 'en_US',
     type: 'article',

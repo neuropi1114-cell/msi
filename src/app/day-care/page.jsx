@@ -9,11 +9,11 @@ import Blogs from '../../components/home/Blogs';
 export const metadata = {
   title: 'Day Care',
   description: 'My School ITALY daycare programs for children 45 days to 7 years. Safe, nurturing, neuroscience-based childcare in a play-based learning environment.',
-  alternates: { canonical: 'https://myschoolitaly.com/day-care' },
+  alternates: { canonical: '/day-care' },
   openGraph: {
     title: 'Day Care | My School ITALY',
     description: 'My School ITALY daycare programs for children 45 days to 7 years. Safe, nurturing, neuroscience-based childcare in a play-based learning environment.',
-    url: 'https://myschoolitaly.com/day-care',
+    url: '/day-care',
     siteName: 'My School ITALY',
     locale: 'en_US',
     type: 'website',

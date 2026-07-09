@@ -12,7 +12,7 @@ const lato = Lato({
 });
 
 export const metadata = {
-  metadataBase: new URL('https://myschoolitaly.com'),
+  metadataBase: new URL('http://localhost:3000'),
   title: {
     default: 'My School ITALY | Neuroscience-Based Preschool & Daycare',
     template: '%s | My School ITALY',
@@ -24,7 +24,7 @@ export const metadata = {
     title: 'My School ITALY | Neuroscience-Based Preschool & Daycare',
     description: 'Rooted in the science of early brain development, our preschool chain blends neuroscience, play-based learning, and emotional intelligence.',
     type: 'website',
-    url: 'https://myschoolitaly.com',
+    url: '/',
     siteName: 'My School ITALY',
     locale: 'en_US',
     images: [{ url: '/images/hero/Slider_1-scaled.jpg.bv.webp', width: 1200, height: 630 }],
@@ -38,7 +38,7 @@ export const metadata = {
     icon: '/favicon.ico',
   },
   alternates: {
-    canonical: 'https://myschoolitaly.com',
+    canonical: '/',
   },
 };
 
@@ -46,8 +46,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning className={lato.variable}>
       <head>
-        <link rel="preconnect" href="https://flagcdn.com" />
-        <link rel="preconnect" href="https://myschoolitaly.com" />
+        {/* External preconnect hints removed for local deployment */}
         <link rel="preload" as="image" href="/images/hero/Slider_1-scaled.jpg.bv.webp" fetchPriority="high" />
       </head>
       <body className="text-gray-800 bg-[#f7f9fc] min-h-screen" style={{ fontFamily: 'var(--font-lato)' }}>

@@ -115,7 +115,7 @@ export default function Blogs() {
           className="mt-12 text-center"
         >
           <a
-            href="https://myschoolitaly.com/blog/"
+            href="/blog/"
             className="inline-block bg-[#e1872b] hover:bg-[#c4701f] text-white font-bold py-3 px-10 rounded-full shadow-lg transform hover:-translate-y-1 transition-all"
           >
             Read More

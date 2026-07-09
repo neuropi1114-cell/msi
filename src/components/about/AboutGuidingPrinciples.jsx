@@ -5,17 +5,17 @@ const principles = [
   {
     title: 'Children',
     description: 'Children are central to everything we do.',
-    image: 'https://myschoolitaly.com/wp-content/uploads/al_opt_content/IMAGE/myschoolitaly.com/wp-content/uploads/2024/10/WhatsApp-Image-2024-10-17-at-7.46.47-AM.jpeg.bv.webp?bv_host=myschoolitaly.com',
+    image: '/images/misc/WhatsApp-Image-2024-10-17-at-7.46.47-AM.jpeg.bv_resized_ipad.jpeg.bv.webp',
   },
   {
     title: 'Family',
     description: 'Families are our primary partners.',
-    image: 'https://myschoolitaly.com/wp-content/uploads/al_opt_content/IMAGE/myschoolitaly.com/wp-content/uploads/2024/10/WhatsApp-Image-2024-10-17-at-7.46.46-AM.jpeg.bv.webp?bv_host=myschoolitaly.com',
+    image: '/images/misc/WhatsApp-Image-2024-10-17-at-7.46.46-AM.jpeg.bv_resized_ipad.jpeg.bv.webp',
   },
   {
     title: 'Community',
     description: 'Being a valued part of each unique community.',
-    image: 'https://myschoolitaly.com/wp-content/uploads/al_opt_content/IMAGE/myschoolitaly.com/wp-content/uploads/2024/10/WhatsApp-Image-2024-10-17-at-7.46.47-AM-1.jpeg.bv.webp?bv_host=myschoolitaly.com',
+    image: '/images/misc/WhatsApp-Image-2024-10-17-at-7.46.47-AM-1.jpeg.bv_resized_ipad.jpeg.bv.webp',
   },
 ];
 

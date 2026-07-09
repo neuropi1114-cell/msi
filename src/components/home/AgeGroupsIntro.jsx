@@ -82,7 +82,7 @@ const AgeGroupsIntro = () => {
               Observations that can provide a remarkable insight into the needs, abilities, and sensitivities of your new baby. Our Ciao Baby programs are delivered by expertly trained Practitioners across the country. We would love to welcome you to our classes or answer any questions you may have.
             </p>
             <a
-              href="https://myschoolitaly.com/ciao-baby/"
+              href="/ciao-baby/"
               className="inline-block px-6 py-3 text-white rounded-full font-semibold hover:opacity-90 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
               style={{ backgroundColor: '#e4984d' }}
             >
@@ -110,7 +110,7 @@ const AgeGroupsIntro = () => {
               We want you to enjoy every second of your baby's miraculous development. That's why everything we do has a purpose. We welcome you to feed or cuddle your baby during the session.
             </p>
             <a
-              href="https://myschoolitaly.com/baby-sensory/"
+              href="/baby-sensory/"
               className="inline-block px-6 py-3 text-white rounded-full font-semibold hover:opacity-90 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
               style={{ backgroundColor: '#e4984d' }}
             >
@@ -167,7 +167,7 @@ const AgeGroupsIntro = () => {
               We provide a warm, safe and nurturing environment in which children can grow and develop. Children who are treated as individuals in a loving environment are happy & confident. During these early years, our aim is to inspire toddlers with an excitement for life. We use discovery teaching to nurture curiosity in children and build the confidence to explore the world around them.
             </p>
             <a
-              href="https://myschoolitaly.com/day-care/"
+              href="/day-care/"
               className="inline-block px-6 py-3 text-white rounded-full font-semibold hover:opacity-90 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
               style={{ backgroundColor: '#e4984d' }}
             >
@@ -203,7 +203,7 @@ const AgeGroupsIntro = () => {
 
             <div className="text-center">
               <a
-                href="https://myschoolitaly.com/pre-school/"
+                href="/pre-school/"
                 className="inline-block px-6 py-3 text-white rounded-full font-semibold hover:opacity-90 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
                 style={{ backgroundColor: '#e4984d' }}
               >

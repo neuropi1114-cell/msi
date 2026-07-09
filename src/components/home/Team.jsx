@@ -6,7 +6,7 @@ const teamMembers = [
     name: "PRASAD GARAPATI",
     role: "Chairman",
     image: "/images/team/Untitled-design-5.png.bv_resized_ipad.png.bv.webp",
-    link: "https://myschoolitaly.com/prasad-garapati/",
+    link: "/prasad-garapati/",
     linkedin: "https://www.linkedin.com/in/prasad-garapati/"
   },
   {

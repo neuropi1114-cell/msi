@@ -40,11 +40,11 @@ const galleryImages = [
 export const metadata = {
   title: 'Spooktacular Halloween Celebration at MySchoolITALY @ Hitex',
   description: 'This October, MySchoolITALY at Hitex turned into a festive wonderland of pumpkins, costumes, and spooky surprises as our students and teachers came together to celebrate Halloween 2025.',
-  alternates: { canonical: 'https://myschoolitaly.com/blog/1' },
+  alternates: { canonical: '/blog/1' },
   openGraph: {
     title: 'Spooktacular Halloween Celebration at MySchoolITALY @ Hitex | My School ITALY',
     description: 'This October, MySchoolITALY at Hitex turned into a festive wonderland of pumpkins, costumes, and spooky surprises as our students and teachers came together to celebrate Halloween 2025.',
-    url: 'https://myschoolitaly.com/blog/1',
+    url: '/blog/1',
     siteName: 'My School ITALY',
     locale: 'en_US',
     type: 'article',

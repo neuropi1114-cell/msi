@@ -71,7 +71,7 @@ export default function VenturePhilanthropy() {
 
           <motion.div {...fadeIn} transition={{ duration: 0.6, delay: 0.2 }} className="mt-10 flex justify-center">
             <img
-              src="https://myschoolitaly.com/wp-content/uploads/2024/10/Picture1.png"
+              src="/images/misc/Picture1.png"
               alt="MSI Venture Philanthropy"
               className="rounded-lg shadow-lg max-w-full h-auto"
               loading="lazy"

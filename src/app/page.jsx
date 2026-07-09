@@ -1,5 +1,4 @@
 import dynamic from 'next/dynamic';
-import Script from 'next/script';
 import TopBar from '../components/layout/TopBar';
 import Header from '../components/layout/Header';
 import Hero from '../components/home/Hero';
@@ -20,7 +19,7 @@ const ContactUs = dynamic(() => import('../components/home/ContactUs'), { ssr: t
 export default function HomePage() {
   return (
     <>
-      <Script src="https://www.noupe.com/embed/019f45dcfb50700084eba7b67e2b9ab95e08.js" strategy="afterInteractive" />
+      {/* Third-party analytics script removed for local deployment */}
       <TopBar />
       <Header />
       <main>

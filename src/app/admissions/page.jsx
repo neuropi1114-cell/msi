@@ -8,11 +8,11 @@ import Footer from '../../components/layout/Footer';
 export const metadata = {
   title: 'Admissions',
   description: 'Enroll your child at My School ITALY. Simple admission process for Infant, Toddler, Preschool, and Kindergarten programs. Book a tour or apply online today.',
-  alternates: { canonical: 'https://myschoolitaly.com/admissions' },
+  alternates: { canonical: '/admissions' },
   openGraph: {
     title: 'Admissions | My School ITALY',
     description: 'Enroll your child at My School ITALY. Simple admission process for Infant, Toddler, Preschool, and Kindergarten programs.',
-    url: 'https://myschoolitaly.com/admissions',
+    url: '/admissions',
     siteName: 'My School ITALY',
     locale: 'en_US',
     type: 'website',

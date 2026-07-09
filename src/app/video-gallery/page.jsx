@@ -6,11 +6,11 @@ import VideoGalleryPage from '../../components/video-gallery/VideoGalleryPage';
 export const metadata = {
   title: 'Video Gallery',
   description: 'Explore our collection of school videos, awards, and media coverage at My School ITALY.',
-  alternates: { canonical: 'https://myschoolitaly.com/video-gallery' },
+  alternates: { canonical: '/video-gallery' },
   openGraph: {
     title: 'Video Gallery | My School ITALY',
     description: 'Explore our collection of school videos, awards, and media coverage at My School ITALY.',
-    url: 'https://myschoolitaly.com/video-gallery',
+    url: '/video-gallery',
     siteName: 'My School ITALY',
     locale: 'en_US',
     type: 'website',

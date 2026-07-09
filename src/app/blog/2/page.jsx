@@ -9,11 +9,11 @@ import { ArrowLeft } from 'lucide-react';
 export const metadata = {
   title: 'Brain-Boosting Activities You Can Do at Home',
   description: 'As parents, you play a powerful role in shaping your child\'s early brain development. Discover neuroscience-backed activities to support your child\'s development.',
-  alternates: { canonical: 'https://myschoolitaly.com/blog/2' },
+  alternates: { canonical: '/blog/2' },
   openGraph: {
     title: 'Brain-Boosting Activities You Can Do at Home | My School ITALY',
     description: 'As parents, you play a powerful role in shaping your child\'s early brain development. Discover neuroscience-backed activities to support your child\'s development.',
-    url: 'https://myschoolitaly.com/blog/2',
+    url: '/blog/2',
     siteName: 'My School ITALY',
     locale: 'en_US',
     type: 'article',

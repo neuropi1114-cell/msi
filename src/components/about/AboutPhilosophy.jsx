@@ -15,7 +15,7 @@ export default function AboutPhilosophy() {
           >
             <div className="rounded-3xl overflow-hidden shadow-2xl">
               <img
-                src="https://myschoolitaly.com/wp-content/uploads/al_opt_content/IMAGE/myschoolitaly.com/wp-content/uploads/2024/10/DSC00911-scaled-1-1024x684.jpg.bv.webp?bv_host=myschoolitaly.com"
+                src="/images/hero/DSC00911-scaled-1-1024x684.jpg.bv_resized_ipad.jpg.bv.webp"
                 alt="Children at My School ITALY"
                 className="w-full h-auto object-cover"
                 loading="lazy"

@@ -15,11 +15,11 @@ const ContactUs = dynamic(() => import('../../components/home/ContactUs'), { ssr
 export const metadata = {
   title: 'Programs',
   description: 'Explore My School ITALY neuroscience-based programs: Infant (45 days–18 months), Toddler (18 months–3 years), Preschool (3–5 years), and Kindergarten (5–7 years).',
-  alternates: { canonical: 'https://myschoolitaly.com/programs' },
+  alternates: { canonical: '/programs' },
   openGraph: {
     title: 'Programs | My School ITALY',
     description: 'Explore My School ITALY neuroscience-based programs: Infant (45 days–18 months), Toddler (18 months–3 years), Preschool (3–5 years), and Kindergarten (5–7 years).',
-    url: 'https://myschoolitaly.com/programs',
+    url: '/programs',
     siteName: 'My School ITALY',
     locale: 'en_US',
     type: 'website',

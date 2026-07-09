@@ -13,11 +13,11 @@ import AboutEnrol from '../../components/about/AboutEnrol';
 export const metadata = {
   title: 'About Us',
   description: 'Discover the story behind My School ITALY — a neuroscience-based preschool founded by Dr. Jessy Costantino. Learn about our mission, values, and global network.',
-  alternates: { canonical: 'https://myschoolitaly.com/about' },
+  alternates: { canonical: '/about' },
   openGraph: {
     title: 'About Us | My School ITALY',
     description: 'Discover the story behind My School ITALY — a neuroscience-based preschool founded by Dr. Jessy Costantino. Learn about our mission, values, and global network.',
-    url: 'https://myschoolitaly.com/about',
+    url: '/about',
     siteName: 'My School ITALY',
     locale: 'en_US',
     type: 'website',

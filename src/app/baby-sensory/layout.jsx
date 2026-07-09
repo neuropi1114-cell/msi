@@ -1,11 +1,11 @@
 export const metadata = {
   title: 'Baby Sensory',
   description: 'Baby Sensory at My School ITALY. Stimulating activities designed to develop your baby\'s senses through sight, sound, touch, and movement.',
-  alternates: { canonical: 'https://myschoolitaly.com/baby-sensory' },
+  alternates: { canonical: '/baby-sensory' },
   openGraph: {
     title: 'Baby Sensory | My School ITALY',
     description: 'Baby Sensory at My School ITALY. Stimulating activities designed to develop your baby\'s senses through sight, sound, touch, and movement.',
-    url: 'https://myschoolitaly.com/baby-sensory',
+    url: '/baby-sensory',
     siteName: 'My School ITALY',
     locale: 'en_US',
     type: 'website',

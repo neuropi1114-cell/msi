@@ -13,11 +13,11 @@ import SupportSystem from '../../components/franchise/SupportSystem';
 export const metadata = {
   title: 'Franchise Overview – My School ITALY',
   description: 'Own your own preschool with My School ITALY. Low investment, high returns franchise opportunity in neuroscience-based early childhood education.',
-  alternates: { canonical: 'https://myschoolitaly.com/franchise-overview' },
+  alternates: { canonical: '/franchise-overview' },
   openGraph: {
     title: 'Franchise Overview | My School ITALY',
     description: 'Own your own preschool with My School ITALY. Low investment, high returns franchise opportunity in neuroscience-based early childhood education.',
-    url: 'https://myschoolitaly.com/franchise-overview',
+    url: '/franchise-overview',
     siteName: 'My School ITALY',
     locale: 'en_US',
     type: 'website',

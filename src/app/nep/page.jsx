@@ -8,11 +8,11 @@ import ContactUs from '../../components/home/ContactUs';
 export const metadata = {
   title: 'The Educational Project',
   description: 'Discover My School ITALY\'s educational project — a neuroscience-based approach that cultivates emotional intelligence, resilience, and a love for learning in every child.',
-  alternates: { canonical: 'https://myschoolitaly.com/nep' },
+  alternates: { canonical: '/nep' },
   openGraph: {
     title: 'The Educational Project | My School ITALY',
     description: 'Discover My School ITALY\'s educational project — a neuroscience-based approach that cultivates emotional intelligence, resilience, and a love for learning in every child.',
-    url: 'https://myschoolitaly.com/nep',
+    url: '/nep',
     siteName: 'My School ITALY',
     locale: 'en_US',
     type: 'website',
@@ -32,7 +32,7 @@ const blogPosts = [
     date: 'July 4, 2023',
     category: 'New Preschool',
     image: '/images/nep/blog-1.webp',
-    link: 'https://myschoolitaly.com/magical-wonderland-my-school-italy-opens-the-best-preschool-in-manpada/',
+    link: '/blog/',
   },
   {
     title: 'Empower Your Child\'s Future with 5 Proven Neuroscience-Backed Learning Techniques',
@@ -40,7 +40,7 @@ const blogPosts = [
     date: 'February 13, 2023',
     category: 'Neuroscience',
     image: '/images/nep/blog-2.webp',
-    link: 'https://myschoolitaly.com/empower-your-childs-future-with-5-proven-neuroscience-backed-learning-techniques/',
+    link: '/blog/',
   },
   {
     title: 'A Legacy of Love: Children\'s Day Celebrations',
@@ -48,7 +48,7 @@ const blogPosts = [
     date: 'November 15, 2023',
     category: 'festivity',
     image: '/images/nep/blog-3.webp',
-    link: 'https://myschoolitaly.com/a-legacy-of-love-childrens-day-celebrations/',
+    link: '/blog/',
   },
 ];
 
@@ -275,13 +275,13 @@ export default function EducationalProjectPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {blogPosts.map((post, i) => (
                 <div key={i} className="bg-white rounded-2xl shadow-xl overflow-hidden transition-transform hover:scale-[1.02]">
-                  <a href={post.link} target="_blank" rel="noopener noreferrer" className="block relative aspect-[4/3] overflow-hidden">
+                  <a href={post.link} className="block relative aspect-[4/3] overflow-hidden">
                       <Image src={post.image} alt={post.title} fill className="object-cover" />
                   </a>
                   <div className="p-6">
                     <span className="inline-block bg-msi-orange text-white text-xs font-bold px-3 py-1 rounded-full mb-3">{post.category}</span>
                     <h3 className="text-lg font-bold text-msi-purple mb-2">
-                      <a href={post.link} target="_blank" rel="noopener noreferrer" className="hover:text-msi-orange transition-colors">{post.title}</a>
+                      <a href={post.link} className="hover:text-msi-orange transition-colors">{post.title}</a>
                     </h3>
                     <p className="text-gray-600 text-sm mb-4">{post.excerpt}</p>
                     <span className="text-gray-400 text-xs">{post.date}</span>
@@ -291,9 +291,7 @@ export default function EducationalProjectPage() {
             </div>
             <div className="text-center mt-10">
               <a
-                href="https://myschoolitaly.com/blog/"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/blog/"
                 className="inline-block bg-msi-orange hover:bg-msi-orange/90 text-white font-bold py-3 px-8 rounded-full transition-colors"
               >
                 Read More

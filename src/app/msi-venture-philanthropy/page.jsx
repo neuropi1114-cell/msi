@@ -7,11 +7,11 @@ import VenturePhilanthropy from '../../components/venture-philanthropy/VenturePh
 export const metadata = {
   title: 'MSI Venture Philanthropy',
   description: 'My School ITALY venture philanthropy — every child\'s potential becomes our purpose.',
-  alternates: { canonical: 'https://myschoolitaly.com/msi-venture-philanthropy' },
+  alternates: { canonical: '/msi-venture-philanthropy' },
   openGraph: {
     title: 'MSI Venture Philanthropy | My School ITALY',
     description: 'My School ITALY venture philanthropy — every child\'s potential becomes our purpose.',
-    url: 'https://myschoolitaly.com/msi-venture-philanthropy',
+    url: '/msi-venture-philanthropy',
     siteName: 'My School ITALY',
     locale: 'en_US',
     type: 'website',
