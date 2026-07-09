@@ -1,14 +1,14 @@
-import { Averia_Libre } from 'next/font/google';
+import { Lato } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/react';
 import './globals.css';
 import JsonLd from '../components/JsonLd';
 
-const averiaLibre = Averia_Libre({
+const lato = Lato({
   subsets: ['latin'],
   weight: ['300', '400', '700'],
   style: ['normal', 'italic'],
   display: 'swap',
-  variable: '--font-averia',
+  variable: '--font-lato',
 });
 
 export const metadata = {
@@ -44,13 +44,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning className={averiaLibre.variable}>
+    <html lang="en" suppressHydrationWarning className={lato.variable}>
       <head>
         <link rel="preconnect" href="https://flagcdn.com" />
         <link rel="preconnect" href="https://myschoolitaly.com" />
         <link rel="preload" as="image" href="/images/hero/Slider_1-scaled.jpg.bv.webp" fetchPriority="high" />
       </head>
-      <body className="text-gray-800 bg-[#f7f9fc] min-h-screen" style={{ fontFamily: 'var(--font-averia)' }}>
+      <body className="text-gray-800 bg-[#f7f9fc] min-h-screen" style={{ fontFamily: 'var(--font-lato)' }}>
         <JsonLd />
         {children}
         <Analytics />

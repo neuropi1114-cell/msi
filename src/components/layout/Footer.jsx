@@ -93,7 +93,7 @@ const Footer = () => {
 
             {/* Social Icons */}
             <div className="flex space-x-3 mt-6">
-              <a href="https://facebook.com/myschoolitaly" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded bg-white/10 flex items-center justify-center hover:bg-msi-orange transition-colors">
+              <a href="https://www.facebook.com/myschoolitalyHQ/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded bg-white/10 flex items-center justify-center hover:bg-msi-orange transition-colors">
                 <Facebook className="w-4 h-4" />
               </a>
               <a href="https://twitter.com/myschoolitaly" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded bg-white/10 flex items-center justify-center hover:bg-msi-orange transition-colors">

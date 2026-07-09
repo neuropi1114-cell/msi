@@ -11,8 +11,8 @@ export default {
         'msi-blue': '#1891cd'
       },
       fontFamily: {
-        'averia': ['Averia Libre', 'sans-serif'],
-        'schoolbell': ['Averia Libre', 'sans-serif']
+        'averia': ['Lato'],
+        'schoolbell': ['Lato']
       }
     },
   },
