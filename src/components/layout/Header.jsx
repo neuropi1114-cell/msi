@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import { Menu, X, Search } from 'lucide-react';
-const mainLogo = '/logo/The-Neuroscientific-European-Childcare-PDF_12-x-4-ft_Backside-1.png.bv_resized_desktop.png.bv.webp';
+const mainLogo = '/images/logo/The-Neuroscientific-European-Childcare-PDF_12-x-4-ft_Backside-1.png.bv_resized_desktop.png.bv.webp';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

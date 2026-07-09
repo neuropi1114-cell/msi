@@ -27,3 +27,8 @@ out
 
 # Yarn
 .yarn/install-state.gz
+
+# Auto-generated
+next-env.d.ts
+public/sitemap*.xml
+public/robots.txt
