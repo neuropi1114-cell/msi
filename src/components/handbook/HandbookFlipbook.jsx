@@ -75,7 +75,7 @@ const HandbookFlipbook = () => {
     <section className="py-12 md:py-20 bg-gradient-to-b from-msi-purple to-white">
       <div className="container mx-auto px-4 md:px-12">
         <div className="text-center mb-8">
-          <h2 className="text-3xl md:text-5xl font-schoolbell font-bold text-white mb-2">
+          <h2 className="text-3xl md:text-5xl  font-bold text-white mb-2">
             Parent Handbook
           </h2>
           <p className="text-white/60 text-sm">

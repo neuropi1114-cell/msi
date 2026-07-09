@@ -59,7 +59,7 @@ export default function EducationalProjectPage() {
         <section className="bg-msi-purple py-24 text-white flex items-end min-h-[60vh] bg-cover bg-center" style={{ backgroundImage: 'url(/images/nep/hero-classroom.webp)' }}>
           <div className="container mx-auto px-4 md:px-12">
             <div className="max-w-2xl bg-msi-purple/80 backdrop-blur-sm p-8 md:p-12 rounded-2xl">
-              <h2 className="text-3xl md:text-5xl font-schoolbell font-bold mb-6">ABOUT NEUROPI CHILDREN</h2>
+              <h2 className="text-3xl md:text-5xl  font-bold mb-6">ABOUT NEUROPI CHILDREN</h2>
               <p className="text-white/90 text-lg leading-relaxed">
                 Once upon a time, in the world of NeuroPi, every child was seen as a tiny universe - full of dreams, neurons, and sparkles of curiosity. Their laughter wasn&apos;t just joy - it was learning in motion, connecting the brain and heart in beautiful harmony. Each child here grows at their own rhythm, blooming in colours of confidence, calm, and creativity. We don&apos;t rush them toward the future - we walk beside them as they discover it. In every classroom, magic and science hold hands. Mindful play becomes their compass; empathy becomes their light. They learn to breathe before they speak, to listen before they lead, and to care before they conquer. Every giggle builds a pathway, every question unlocks a possibility, and every hug strengthens the science of love. At NeuroPi, children don&apos;t just learn - they awaken. Because here, childhood isn&apos;t a race... it&apos;s a beautiful unfolding of brilliance.
               </p>
@@ -192,7 +192,7 @@ export default function EducationalProjectPage() {
                 </p>
               </div>
               <div>
-                <h2 className="text-3xl md:text-4xl font-schoolbell font-bold mb-6">WHAT IS THE NEUROPI APPROACH?</h2>
+                <h2 className="text-3xl md:text-4xl  font-bold mb-6">WHAT IS THE NEUROPI APPROACH?</h2>
                 <div className="rounded-2xl overflow-hidden mb-6">
                   <img
                     src="/images/nep/neuropi-approach-2.webp"
@@ -216,7 +216,7 @@ export default function EducationalProjectPage() {
             {/* Section 6: Learning the NeuroPi Way */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl md:text-4xl font-schoolbell font-bold mb-6">LEARNING THE NEUROPI WAY</h2>
+                <h2 className="text-3xl md:text-4xl  font-bold mb-6">LEARNING THE NEUROPI WAY</h2>
                 <div className="text-white/90 text-lg leading-relaxed space-y-3">
                   <p><strong>1. Think Smart</strong> – Cognitive curiosity through discovery learning</p>
                   <p><strong>2. Feel Deeply</strong> – Emotional literacy & empathy through play</p>
@@ -255,7 +255,7 @@ export default function EducationalProjectPage() {
             </svg>
           </div>
           <div className="container mx-auto px-4 md:px-12 relative z-10 pt-20 pb-20">
-            <h2 className="text-3xl md:text-4xl font-schoolbell text-msi-purple font-bold text-center mb-2">Recent News</h2>
+            <h2 className="text-3xl md:text-4xl  text-msi-purple font-bold text-center mb-2">Recent News</h2>
             <p className="text-gray-500 text-lg text-center mb-12">What&apos;s Going on in our Blog?</p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {blogPosts.map((post, i) => (

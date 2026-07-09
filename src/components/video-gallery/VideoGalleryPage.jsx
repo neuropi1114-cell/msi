@@ -69,7 +69,7 @@ function SectionHeading({ title }) {
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      className="text-3xl md:text-4xl font-schoolbell text-center font-bold mb-12 text-msi-orange"
+      className="text-3xl md:text-4xl  text-center font-bold mb-12 text-msi-orange"
     >
       {title}
     </motion.h2>
@@ -204,7 +204,7 @@ export default function VideoGalleryPage() {
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-5xl font-schoolbell text-white font-bold mb-6"
+            className="text-4xl md:text-5xl  text-white font-bold mb-6"
           >
             Video Gallery
           </motion.h1>

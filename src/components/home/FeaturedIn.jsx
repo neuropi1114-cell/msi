@@ -54,7 +54,7 @@ export default function FeaturedIn() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="w-full md:w-1/2 text-center md:text-left"
           >
-            <h2 className="text-4xl md:text-5xl font-schoolbell text-white font-bold mb-6 whitespace-nowrap">
+            <h2 className="text-4xl md:text-5xl  text-white font-bold mb-6 whitespace-nowrap">
               As Featured in
             </h2>
             <p className="text-white/90 text-lg mb-8 leading-relaxed text-justify">

@@ -30,7 +30,7 @@ export default function AboutPhilosophy() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="lg:w-1/2"
           >
-            <h2 className="text-3xl md:text-5xl font-schoolbell font-bold mb-6" style={{ color: '#E1872B' }}>
+            <h2 className="text-3xl md:text-5xl  font-bold mb-6" style={{ color: '#E1872B' }}>
               Our Philosophy
             </h2>
             <div className="space-y-4 text-gray-700 text-lg leading-relaxed">

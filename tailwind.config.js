@@ -8,11 +8,11 @@ export default {
       colors: {
         'msi-purple': '#351c5a',
         'msi-orange': '#e1872b',
-        'msi-blue': '#1891cd'
+        'msi-blue': '#1891cd',
+        'msi-accent': '#e85d26'
       },
       fontFamily: {
-        'averia': ['Lato'],
-        'schoolbell': ['Lato']
+        'lato': ['Lato']
       }
     },
   },

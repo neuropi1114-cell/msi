@@ -78,12 +78,12 @@ const Hero = () => {
             transition={{ duration: 0.7, ease: "easeInOut" }}
             className="max-w-xl w-full"
           >
-            <span className="text-5xl md:text-7xl font-schoolbell text-msi-orange font-bold uppercase mb-4 drop-shadow-md block">
+            <span className="text-5xl md:text-7xl  text-msi-orange font-bold uppercase mb-4 drop-shadow-md block">
               {slide.title}
             </span>
 
             <div className={`${current === 1 ? 'bg-[#351C5A]' : 'bg-msi-orange/90'} backdrop-blur-sm p-8 rounded-tr-3xl rounded-bl-3xl rounded-tl-md rounded-br-md shadow-2xl mb-8 border-2 border-white/20`}>
-              <p className="text-white text-lg leading-relaxed font-averia tracking-wide">
+              <p className="text-white text-lg leading-relaxed  tracking-wide">
                 {slide.description}
               </p>
             </div>
@@ -92,7 +92,7 @@ const Hero = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-msi-orange text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-msi-orange/90 hover:shadow-xl transition-all font-averia text-lg"
+              className="bg-msi-orange text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-msi-orange/90 hover:shadow-xl transition-all  text-lg"
             >
               Explore Programs
             </motion.button>

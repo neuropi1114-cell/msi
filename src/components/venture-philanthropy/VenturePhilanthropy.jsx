@@ -21,7 +21,7 @@ export default function VenturePhilanthropy() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-4xl md:text-5xl lg:text-7xl font-schoolbell font-bold text-white mb-6"
+            className="text-4xl md:text-5xl lg:text-7xl  font-bold text-white mb-6"
           >
             MSI Venture Philanthropy
           </motion.h1>
@@ -55,10 +55,10 @@ export default function VenturePhilanthropy() {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 md:px-12 max-w-5xl">
           <motion.div {...fadeIn} transition={{ duration: 0.6 }}>
-            <h2 className="text-3xl md:text-4xl font-schoolbell text-msi-purple font-bold mb-4 text-center">
+            <h2 className="text-3xl md:text-4xl  text-msi-purple font-bold mb-4 text-center">
               Our approach
             </h2>
-            <h3 className="text-xl md:text-2xl text-msi-orange font-schoolbell font-bold mb-8 text-center">
+            <h3 className="text-xl md:text-2xl text-msi-orange  font-bold mb-8 text-center">
               To maximize impact, we partner locally
             </h3>
             <p className="text-gray-700 mb-4 leading-relaxed text-lg text-justify">
@@ -103,10 +103,10 @@ export default function VenturePhilanthropy() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 md:px-12 max-w-5xl">
           <motion.div {...fadeIn} transition={{ duration: 0.6 }}>
-            <h2 className="text-3xl md:text-4xl font-schoolbell text-msi-purple font-bold mb-4 text-center">
+            <h2 className="text-3xl md:text-4xl  text-msi-purple font-bold mb-4 text-center">
               Our strategy
             </h2>
-            <h3 className="text-xl md:text-2xl text-msi-orange font-schoolbell font-bold mb-8 text-center">
+            <h3 className="text-xl md:text-2xl text-msi-orange  font-bold mb-8 text-center">
               Thesis-driven strategies across three themes
             </h3>
             <p className="text-gray-700 leading-relaxed text-lg text-justify">
@@ -119,10 +119,10 @@ export default function VenturePhilanthropy() {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 md:px-12 max-w-5xl">
           <motion.div {...fadeIn} transition={{ duration: 0.6 }}>
-            <h2 className="text-3xl md:text-4xl font-schoolbell text-msi-purple font-bold mb-4 text-center">
+            <h2 className="text-3xl md:text-4xl  text-msi-purple font-bold mb-4 text-center">
               Themes
             </h2>
-            <h3 className="text-xl md:text-2xl text-msi-orange font-schoolbell font-bold mb-8 text-center">
+            <h3 className="text-xl md:text-2xl text-msi-orange  font-bold mb-8 text-center">
               Achieving lasting systemic change with curated thematic portfolios
             </h3>
             <p className="text-gray-700 leading-relaxed text-lg text-justify">
@@ -135,10 +135,10 @@ export default function VenturePhilanthropy() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 md:px-12 max-w-5xl">
           <motion.div {...fadeIn} transition={{ duration: 0.6 }}>
-            <h2 className="text-3xl md:text-4xl font-schoolbell text-msi-purple font-bold mb-4 text-center">
+            <h2 className="text-3xl md:text-4xl  text-msi-purple font-bold mb-4 text-center">
               Investment process
             </h2>
-            <h3 className="text-xl md:text-2xl text-msi-orange font-schoolbell font-bold mb-8 text-center">
+            <h3 className="text-xl md:text-2xl text-msi-orange  font-bold mb-8 text-center">
               Achieving lasting systemic change with curated thematic portfolios
             </h3>
             <p className="text-gray-700 mb-6 leading-relaxed text-lg text-justify">
@@ -147,7 +147,7 @@ export default function VenturePhilanthropy() {
           </motion.div>
 
           <motion.div {...fadeIn} transition={{ duration: 0.6, delay: 0.2 }}>
-            <h4 className="text-xl font-schoolbell font-bold text-msi-purple mb-4">Pipeline and due diligence:</h4>
+            <h4 className="text-xl  font-bold text-msi-purple mb-4">Pipeline and due diligence:</h4>
             <ul className="list-disc list-inside space-y-2 text-gray-700 text-lg mb-10">
               <li>Sourced through established global networks and local teams</li>
               <li>Aligned with strategy and thematic portfolios</li>
@@ -158,7 +158,7 @@ export default function VenturePhilanthropy() {
           </motion.div>
 
           <motion.div {...fadeIn} transition={{ duration: 0.6, delay: 0.3 }}>
-            <h4 className="text-xl font-schoolbell font-bold text-msi-purple mb-4">Execution and value creation:</h4>
+            <h4 className="text-xl  font-bold text-msi-purple mb-4">Execution and value creation:</h4>
             <ul className="list-disc list-inside space-y-2 text-gray-700 text-lg mb-10">
               <li>Multi-year, long-term grant agreement</li>
               <li>Focus on value-drivers such as impact, management quality and partnerships</li>
@@ -170,7 +170,7 @@ export default function VenturePhilanthropy() {
           </motion.div>
 
           <motion.div {...fadeIn} transition={{ duration: 0.6, delay: 0.4 }}>
-            <h4 className="text-xl font-schoolbell font-bold text-msi-purple mb-4">End of engagement:</h4>
+            <h4 className="text-xl  font-bold text-msi-purple mb-4">End of engagement:</h4>
             <ul className="list-disc list-inside space-y-2 text-gray-700 text-lg">
               <li>Average duration of engagements: five to ten years</li>
               <li>Transparent end-of-engagement modalities</li>
@@ -184,10 +184,10 @@ export default function VenturePhilanthropy() {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 md:px-12 max-w-5xl">
           <motion.div {...fadeIn} transition={{ duration: 0.6 }}>
-            <h2 className="text-3xl md:text-4xl font-schoolbell text-msi-purple font-bold mb-4 text-center">
+            <h2 className="text-3xl md:text-4xl  text-msi-purple font-bold mb-4 text-center">
               Partnerships
             </h2>
-            <h3 className="text-xl md:text-2xl text-msi-orange font-schoolbell font-bold mb-8 text-center">
+            <h3 className="text-xl md:text-2xl text-msi-orange  font-bold mb-8 text-center">
               Central to our investment approach
             </h3>
             <p className="text-gray-700 mb-6 leading-relaxed text-lg text-justify">
@@ -208,10 +208,10 @@ export default function VenturePhilanthropy() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 md:px-12 max-w-5xl">
           <motion.div {...fadeIn} transition={{ duration: 0.6 }}>
-            <h2 className="text-3xl md:text-4xl font-schoolbell text-msi-purple font-bold mb-4 text-center">
+            <h2 className="text-3xl md:text-4xl  text-msi-purple font-bold mb-4 text-center">
               Impact
             </h2>
-            <h3 className="text-xl md:text-2xl text-msi-orange font-schoolbell font-bold mb-8 text-center">
+            <h3 className="text-xl md:text-2xl text-msi-orange  font-bold mb-8 text-center">
               Measurable social and environmental impact
             </h3>
             <p className="text-gray-700 leading-relaxed text-lg text-justify">
@@ -224,7 +224,7 @@ export default function VenturePhilanthropy() {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 md:px-12 max-w-5xl">
           <motion.div {...fadeIn} transition={{ duration: 0.6 }}>
-            <h2 className="text-3xl md:text-4xl font-schoolbell text-msi-purple font-bold mb-4 text-center">
+            <h2 className="text-3xl md:text-4xl  text-msi-purple font-bold mb-4 text-center">
               Impact process
             </h2>
             <p className="text-gray-700 leading-relaxed text-lg text-justify">
@@ -240,7 +240,7 @@ export default function VenturePhilanthropy() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 md:px-12 max-w-5xl">
           <motion.div {...fadeIn} transition={{ duration: 0.6 }}>
-            <h2 className="text-3xl md:text-4xl font-schoolbell text-msi-purple font-bold mb-4 text-center">
+            <h2 className="text-3xl md:text-4xl  text-msi-purple font-bold mb-4 text-center">
               Smart stats
             </h2>
             <p className="text-gray-700 leading-relaxed text-lg text-justify mb-8">

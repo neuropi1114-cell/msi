@@ -33,7 +33,7 @@ export default function AboutGuidingPrinciples() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-5xl font-schoolbell font-bold text-white mb-4">
+          <h2 className="text-3xl md:text-5xl  font-bold text-white mb-4">
             Our Guiding Principles
           </h2>
           <div className="flex justify-center">
@@ -60,7 +60,7 @@ export default function AboutGuidingPrinciples() {
                 />
               </div>
               <div className="p-6 text-center">
-                <h3 className="text-2xl font-schoolbell font-bold text-white mb-2">
+                <h3 className="text-2xl  font-bold text-white mb-2">
                   {principle.title}
                 </h3>
                 <p className="text-white/80">

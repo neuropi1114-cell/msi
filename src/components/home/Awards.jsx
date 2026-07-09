@@ -21,7 +21,7 @@ export default function Awards() {
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="text-3xl md:text-4xl font-schoolbell text-white font-bold"
+              className="text-3xl md:text-4xl  text-white font-bold"
             >
               AWARDS & ACCOLADES
             </motion.h2>

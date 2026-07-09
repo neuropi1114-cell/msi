@@ -51,10 +51,10 @@ export default function AboutActivities() {
           transition={{ duration: 0.6 }}
           className="text-center mb-6"
         >
-          <h2 className="text-3xl md:text-5xl font-schoolbell font-bold" style={{ color: '#E1872B' }}>
+          <h2 className="text-3xl md:text-5xl  font-bold" style={{ color: '#E1872B' }}>
             Activities For Kids
           </h2>
-          <h3 className="text-xl md:text-2xl font-schoolbell mt-2" style={{ color: '#1891CD' }}>
+          <h3 className="text-xl md:text-2xl  mt-2" style={{ color: '#1891CD' }}>
             Engagement
           </h3>
           <div className="flex justify-center mt-4">
@@ -85,7 +85,7 @@ export default function AboutActivities() {
               <div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center text-white" style={{ backgroundColor: '#E1872B' }}>
                 {activity.icon}
               </div>
-              <h3 className="text-xl font-schoolbell font-bold mb-3" style={{ color: '#351C5A' }}>
+              <h3 className="text-xl  font-bold mb-3" style={{ color: '#351C5A' }}>
                 {activity.title}
               </h3>
               <p className="text-gray-600 leading-relaxed">

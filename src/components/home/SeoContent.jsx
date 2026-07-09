@@ -27,7 +27,7 @@ export default function SeoContent() {
     <section className="py-24 bg-white" aria-labelledby="programs-heading">
       <div className="container mx-auto px-4 md:px-12">
         <div className="text-center mb-16">
-          <h2 id="programs-heading" className="text-4xl md:text-5xl font-schoolbell text-msi-purple font-bold mb-4">
+          <h2 id="programs-heading" className="text-4xl md:text-5xl  text-msi-purple font-bold mb-4">
             A Neuroscience-Based Approach to Early Childhood Education
           </h2>
           <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
@@ -51,7 +51,7 @@ export default function SeoContent() {
         </div>
 
         <div className="mt-16 bg-msi-purple rounded-3xl p-10 md:p-14 text-center text-white">
-          <h3 className="text-3xl font-schoolbell font-bold mb-4">Why Parents Choose My School ITALY</h3>
+          <h3 className="text-3xl  font-bold mb-4">Why Parents Choose My School ITALY</h3>
           <p className="text-white/90 text-lg max-w-4xl mx-auto leading-relaxed mb-8">
             Our neuroscience-based preschool and daycare chain serves over 1,200 children daily across Italy, UAE, and India. With locations in Hyderabad, Pune, Mumbai, Jaipur, Noida, Odisha, Andhra Pradesh, and expanding globally, we make world-class early childhood education accessible to every family. Our flexible programs accommodate working parents with extended hours, nutritious meals, and real-time updates so you stay connected to your child throughout the day.
           </p>

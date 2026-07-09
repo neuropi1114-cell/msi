@@ -4,7 +4,7 @@ const footerLogo = '/logo/The-Neuroscientific-European-Childcare-PDF_12-x-4-ft_B
 
 const Footer = () => {
   return (
-    <footer className="bg-msi-purple text-white pt-16 font-averia overflow-hidden">
+    <footer className="bg-msi-purple text-white pt-16  overflow-hidden">
       <div className="container mx-auto px-4 md:px-12">
         
         {/* Logo */}
@@ -47,16 +47,16 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-6 text-white text-center font-sans">My School ITALY</h3>
             <p className="text-white/80 leading-relaxed text-sm mb-4 text-justify font-sans">
-              Welcome to the enchanted world of "My School ITALY", where young minds flourish through neuroscience-based education. For over three decades, we've nurtured confident communicators from ages 45 days to 7 years. Our rainbow-hued classrooms and caring staff create a fairy tale setting. Explore our tailored services for each stage of early development, from specialized baby creches to engaging preschool and foundation programs.
+              Welcome to the enchanted world of "My School ITALY", where young minds flourish through neuroscience-based education. For over three decades, we've nurtured confident communicators from ages 45 days to 7 years. 👶 Our rainbow-hued classrooms and caring staff create a fairy tale setting 🧚‍♀️. Explore our tailored services for each stage of early development, from specialized baby creches to engaging preschool and foundation programs. ✨
             </p>
             <p className="text-white/80 leading-relaxed text-sm text-justify font-sans">
-              We also offer a range of enriching extracurricular activities and special programs like Robotics, Gymnastics, Neurobics, Dance, and Storytelling to enhance your child's overall development. We're a network of preschools around the world, passionately championing accessible, top-tier, and high-quality education.
+              We also offer a range of enriching extracurricular activities and special programs like Robotics, Gymnastics, Neurobics, Dance, and Storytelling to enhance your child's overall development. We're a network of preschools around the world, passionately championing accessible, top-tier, and high-quality education. 🏰
             </p>
           </div>
 
           {/* Column 2: Contact Us */}
           <div>
-            <h3 className="text-xl font-bold mb-6 text-white">Contact us</h3>
+            <h3 className="text-xl font-bold mb-6 text-white font-sans">Contact us</h3>
             
             <ul className="space-y-3 text-white/80 text-sm">
               <li className="flex items-start">
@@ -93,19 +93,19 @@ const Footer = () => {
 
             {/* Social Icons */}
             <div className="flex space-x-3 mt-6">
-              <a href="https://www.facebook.com/myschoolitalyHQ/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded bg-white/10 flex items-center justify-center hover:bg-msi-orange transition-colors">
+              <a href="https://www.facebook.com/myschoolitalyHQ/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded bg-msi-orange flex items-center justify-center transition-all hover:scale-110">
                 <Facebook className="w-4 h-4" />
               </a>
-              <a href="https://twitter.com/myschoolitaly" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded bg-white/10 flex items-center justify-center hover:bg-msi-orange transition-colors">
+              <a href="https://twitter.com/myschoolitaly" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded bg-msi-orange flex items-center justify-center transition-all hover:scale-110">
                 <Twitter className="w-4 h-4" />
               </a>
-              <a href="https://linkedin.com/company/myschoolitaly" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded bg-white/10 flex items-center justify-center hover:bg-msi-orange transition-colors">
+              <a href="https://linkedin.com/company/myschoolitaly" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded bg-msi-orange flex items-center justify-center transition-all hover:scale-110">
                 <Linkedin className="w-4 h-4" />
               </a>
-              <a href="https://instagram.com/myschoolitaly" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded bg-white/10 flex items-center justify-center hover:bg-msi-orange transition-colors">
+              <a href="https://instagram.com/myschoolitaly" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded bg-msi-orange flex items-center justify-center transition-all hover:scale-110">
                 <Instagram className="w-4 h-4" />
               </a>
-              <a href="https://youtube.com/@myschoolitaly" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded bg-white/10 flex items-center justify-center hover:bg-msi-orange transition-colors">
+              <a href="https://youtube.com/@myschoolitaly" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded bg-msi-orange flex items-center justify-center transition-all hover:scale-110">
                 <Youtube className="w-4 h-4" />
               </a>
             </div>
@@ -144,14 +144,15 @@ const Footer = () => {
       </div>
 
       {/* Copyright Bar */}
-      <div className="bg-[#1e0e3a] py-4 px-4 text-center">
-        <p className="text-white/60 text-sm mb-2">
-          &copy; 2002 – 2025 My School ITALY. All Rights Reserved.
-        </p>
-        <div className="flex justify-center gap-4">
-          <a href="/privacy-policy" className="text-msi-orange hover:underline transition-colors text-sm">Privacy Policy</a>
-          <span className="text-white/40">|</span>
-          <a href="/terms" className="text-msi-orange hover:underline transition-colors text-sm">Terms and Conditions</a>
+      <div className="bg-[#1e0e3a] py-4">
+        <div className="container mx-auto px-4 md:px-12 flex items-center justify-between text-sm flex-wrap gap-y-1">
+          <span className="text-white/60">&copy; 2002 – 2025 My School ITALY. All Rights Reserved.</span>
+          <div className="flex items-center gap-2">
+            <span className="text-white/40">|</span>
+            <a href="/privacy-policy" className="text-msi-orange hover:underline transition-colors">Privacy Policy</a>
+            <span className="text-white/40">|</span>
+            <a href="/terms" className="text-msi-orange hover:underline transition-colors">Terms and Conditions</a>
+          </div>
         </div>
       </div>
     </footer>

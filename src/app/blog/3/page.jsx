@@ -23,7 +23,7 @@ export default function BlogPost3Page() {
               <ArrowLeft className="w-4 h-4 mr-2" /> Back to Home
             </Link>
             <p className="text-msi-orange font-bold uppercase tracking-wider mb-2">Blog</p>
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-schoolbell font-bold leading-tight">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl  font-bold leading-tight">
               What is Neuroscience-Based Early Childhood Education
             </h1>
             <p className="text-white/70 mt-4 text-sm">September 19, 2025</p>
@@ -54,7 +54,7 @@ export default function BlogPost3Page() {
 
             <hr className="my-8 border-gray-200" />
 
-            <h2 className="text-2xl md:text-3xl font-schoolbell font-bold text-msi-purple mb-4 mt-10">Understanding Neuroscience and Early Childhood Education</h2>
+            <h2 className="text-2xl md:text-3xl  font-bold text-msi-purple mb-4 mt-10">Understanding Neuroscience and Early Childhood Education</h2>
             <p className="text-gray-700 leading-relaxed mb-6">
               <strong>Neuroscience</strong> is the study of the brain and nervous system&mdash;how they develop, function, and adapt. In recent years, advances in brain science have revealed that the first five years of life are incredibly important for brain growth. During this period, children&rsquo;s brains form millions of new connections every second&mdash;a process called <strong>neuroplasticity.</strong>
             </p>
@@ -64,7 +64,7 @@ export default function BlogPost3Page() {
 
             <hr className="my-8 border-gray-200" />
 
-            <h2 className="text-2xl md:text-3xl font-schoolbell font-bold text-msi-purple mb-6 mt-10">Key Features of Neuroscience-Based Early Childhood Education</h2>
+            <h2 className="text-2xl md:text-3xl  font-bold text-msi-purple mb-6 mt-10">Key Features of Neuroscience-Based Early Childhood Education</h2>
             <ul className="space-y-4 text-gray-700 list-disc list-inside mb-8">
               <li><strong className="text-msi-orange">Brain-Driven Curriculum:</strong> Activities are designed to stimulate brain areas responsible for language, memory, attention, and emotional regulation.</li>
               <li><strong className="text-msi-orange">Play-Based Learning:</strong> Play is recognised as a powerful tool for brain development, helping children learn problem-solving, creativity, and social skills.</li>
@@ -75,7 +75,7 @@ export default function BlogPost3Page() {
 
             <hr className="my-8 border-gray-200" />
 
-            <h2 className="text-2xl md:text-3xl font-schoolbell font-bold text-msi-purple mb-6 mt-10">Why Is This Approach Important for Indian Parents?</h2>
+            <h2 className="text-2xl md:text-3xl  font-bold text-msi-purple mb-6 mt-10">Why Is This Approach Important for Indian Parents?</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               In India, where education systems are rapidly evolving, parents are increasingly looking for scientifically backed methods to give their children a strong start. Neuroscience-based preschools offer:
             </p>
@@ -88,7 +88,7 @@ export default function BlogPost3Page() {
 
             <hr className="my-8 border-gray-200" />
 
-            <h2 className="text-2xl md:text-3xl font-schoolbell font-bold text-msi-purple mb-4 mt-10">How Our Preschool Implements Neuroscience-Based Education</h2>
+            <h2 className="text-2xl md:text-3xl  font-bold text-msi-purple mb-4 mt-10">How Our Preschool Implements Neuroscience-Based Education</h2>
             <p className="text-gray-700 leading-relaxed mb-6">
               At My School ITALY, we integrate the latest neuroscience research into everything we do&mdash;from classroom activities to teacher training. Our specially designed curriculum ensures your child&rsquo;s brain is stimulated in the most effective ways, combining play, sensory experiences, and emotional support.
             </p>
@@ -98,7 +98,7 @@ export default function BlogPost3Page() {
 
             <hr className="my-8 border-gray-200" />
 
-            <h2 className="text-2xl md:text-3xl font-schoolbell font-bold text-msi-purple mb-4 mt-10">Final Thoughts</h2>
+            <h2 className="text-2xl md:text-3xl  font-bold text-msi-purple mb-4 mt-10">Final Thoughts</h2>
             <p className="text-gray-700 leading-relaxed mb-6">
               Choosing a preschool is one of the most important decisions parents make. Neuroscience-based early childhood education offers a scientifically proven pathway to help your child&rsquo;s brain reach its fullest potential.
             </p>

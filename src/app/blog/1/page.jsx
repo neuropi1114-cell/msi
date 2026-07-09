@@ -64,7 +64,7 @@ export default function BlogPostPage() {
               <ArrowLeft className="w-4 h-4 mr-2" /> Back to Home
             </Link>
             <p className="text-msi-orange font-bold uppercase tracking-wider mb-2">Blog</p>
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-schoolbell font-bold leading-tight">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl  font-bold leading-tight">
               Spooktacular Halloween Celebration at MySchoolITALY @ Hitex!
             </h1>
           </div>
@@ -78,7 +78,7 @@ export default function BlogPostPage() {
             <p className="text-gray-700 leading-relaxed mb-6">
               The school was beautifully decorated with cobwebs, ghosts, and glowing pumpkins — creating the perfect Halloween atmosphere. Students arrived dressed as witches, wizards, superheroes, and all kinds of creative characters, filling the campus with color and laughter.
             </p>
-            <h2 className="text-2xl md:text-3xl font-schoolbell font-bold text-msi-purple mt-10 mb-6">Event Highlights</h2>
+            <h2 className="text-2xl md:text-3xl  font-bold text-msi-purple mt-10 mb-6">Event Highlights</h2>
             <ol className="space-y-4 text-gray-700 list-decimal list-inside">
               <li>
                 <strong className="text-msi-orange">Costume Parade:</strong> Students showcased their creativity and confidence, walking the ramp in their imaginative Halloween outfits.
@@ -96,7 +96,7 @@ export default function BlogPostPage() {
             <p className="text-gray-700 leading-relaxed mt-6 mb-6">
               A big thank you to our dedicated teachers, supportive parents, and enthusiastic students for making this Halloween celebration truly special. Your spirit and creativity made the day unforgettable!
             </p>
-            <p className="text-lg font-schoolbell text-msi-blue font-bold mt-10 mb-8">
+            <p className="text-lg  text-msi-blue font-bold mt-10 mb-8">
               Check out the photos below to relive the spooky, joyful, and fun-filled moments from the Halloween Celebration at My School ITALY, Hitex!
             </p>
           </div>

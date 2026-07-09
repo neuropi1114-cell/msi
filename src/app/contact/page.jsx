@@ -38,7 +38,7 @@ export default function ContactPage() {
       <main>
         <section className="bg-msi-purple py-20 text-white">
           <div className="container mx-auto px-4 md:px-12 text-center">
-            <h1 className="text-4xl md:text-6xl font-schoolbell font-bold mb-4">Contact Us</h1>
+            <h1 className="text-4xl md:text-6xl  font-bold mb-4">Contact Us</h1>
             <p className="text-white/80 text-lg max-w-2xl mx-auto">
               We would love to hear from you. Reach out to learn more about our programs or book a visit.
             </p>
@@ -47,7 +47,7 @@ export default function ContactPage() {
 
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4 md:px-12">
-            <h2 className="text-3xl font-schoolbell text-msi-purple font-bold mb-4 text-center">Our Locations</h2>
+            <h2 className="text-3xl  text-msi-purple font-bold mb-4 text-center">Our Locations</h2>
             <p className="text-gray-600 text-lg text-center max-w-2xl mx-auto mb-14">
               Find the My School ITALY center nearest to you.
             </p>

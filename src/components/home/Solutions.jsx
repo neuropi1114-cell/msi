@@ -85,7 +85,7 @@ const Solutions = () => {
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-3xl md:text-5xl font-schoolbell text-white font-bold mb-4"
+          className="text-3xl md:text-5xl  text-white font-bold mb-4"
         >
           Solutions For All Lifestyles
         </motion.h2>
@@ -115,10 +115,10 @@ const Solutions = () => {
             loading="lazy"
           />
           <div className="bg-white rounded-b-3xl p-10">
-          <h3 className="text-2xl font-schoolbell text-[#2f9ed9] font-bold mb-3 text-center">
+          <h3 className="text-2xl  text-[#2f9ed9] font-bold mb-3 text-center">
             Working Parents
           </h3>
-          <p className="text-gray-600 mb-6 leading-relaxed text-center">
+          <p className="text-gray-600 mb-6 leading-relaxed text-justify">
             Working parents look no further. We are a flexible nursery offering solutions and services to fit your schedule, from convenient locations and flexible hours, to meal service and tools that allow you to be connected to your child at any time. Always close to you, be it your home or your office. We care for over 1200 children daily!
           </p>
           <LogoGrid logos={workingParentLogos} />
@@ -139,10 +139,10 @@ const Solutions = () => {
             loading="lazy"
           />
           <div className="bg-white rounded-b-3xl p-10">
-          <h3 className="text-2xl font-schoolbell text-[#2f9ed9] font-bold mb-3 text-center">
+          <h3 className="text-2xl  text-[#2f9ed9] font-bold mb-3 text-center">
             Corporate Partners
           </h3>
-          <p className="text-gray-600 mb-6 leading-relaxed text-center">
+          <p className="text-gray-600 mb-6 leading-relaxed text-justify">
             We work with companies and corporations and provide tailor-made family solutions to employees. Our goal is to become an asset to your work place by sharing your employees' family responsibility, thereby allowing them to become a more productive part of your business.
           </p>
           <LogoGrid logos={corporatePartnerLogos} />

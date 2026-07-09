@@ -12,7 +12,7 @@ export default function AboutPremises() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-5xl font-schoolbell font-bold" style={{ color: '#E1872B' }}>
+          <h2 className="text-3xl md:text-5xl  font-bold" style={{ color: '#E1872B' }}>
             The Premises
           </h2>
           <div className="flex justify-center mt-4">

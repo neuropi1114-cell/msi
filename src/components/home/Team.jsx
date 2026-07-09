@@ -36,7 +36,7 @@ export default function Team() {
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl font-schoolbell text-msi-orange font-bold mb-4"
+            className="text-4xl md:text-5xl  text-msi-orange font-bold mb-4"
           >
             People Behind
           </motion.h2>
@@ -69,7 +69,7 @@ export default function Team() {
                   loading="lazy"
                 />
               </div>
-              <h3 className="text-2xl font-schoolbell text-msi-purple font-bold mb-2 uppercase">
+              <h3 className="text-2xl  text-msi-purple font-bold mb-2 uppercase">
                 <a href={member.link} className="hover:text-msi-orange transition-colors">
                   {member.name}
                 </a>
@@ -121,7 +121,7 @@ export default function Team() {
             transition={{ duration: 0.6 }}
             className="mt-16 max-w-4xl mx-auto"
         >
-            <h3 className="text-3xl md:text-4xl font-schoolbell text-msi-purple font-bold mb-4 text-center">
+            <h3 className="text-3xl md:text-4xl  text-msi-purple font-bold mb-4 text-center">
                 Every Child's Potential Becomes Our Purpose
             </h3>
             <p className="text-msi-orange text-2xl md:text-3xl text-center mb-6">MSI venture philanthropy</p>

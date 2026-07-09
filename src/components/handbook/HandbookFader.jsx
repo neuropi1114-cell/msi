@@ -81,7 +81,7 @@ const HandbookFader = () => {
             <p className="text-msi-orange font-bold text-lg md:text-xl uppercase tracking-wider mb-2">
               {slide.subtitle}
             </p>
-            <h1 className="text-4xl md:text-6xl font-schoolbell font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-6xl  font-bold text-white mb-6">
               {slide.title}
             </h1>
             <p className="text-white/90 text-lg md:text-xl leading-relaxed mb-8">

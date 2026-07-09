@@ -30,7 +30,7 @@ export default function HandbookPage() {
             </svg>
           </div>
           <div className="container mx-auto px-4 md:px-12 relative z-20 text-center">
-            <h1 className="text-4xl md:text-6xl font-schoolbell font-bold text-white">
+            <h1 className="text-4xl md:text-6xl  font-bold text-white">
               Handbook
             </h1>
           </div>
@@ -38,7 +38,7 @@ export default function HandbookPage() {
 
         <section className="py-12 bg-white">
           <div className="container mx-auto px-4 md:px-12 text-center">
-            <h2 className="text-3xl md:text-5xl font-schoolbell font-bold text-msi-purple mb-2">
+            <h2 className="text-3xl md:text-5xl  font-bold text-msi-purple mb-2">
               Flip Through Our Handbook
             </h2>
             <p className="text-gray-500 text-lg">
@@ -52,7 +52,7 @@ export default function HandbookPage() {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4 md:px-12 max-w-4xl">
             <div className="bg-msi-purple rounded-3xl p-8 md:p-12 text-center text-white">
-              <h2 className="text-3xl md:text-4xl font-schoolbell font-bold mb-4">
+              <h2 className="text-3xl md:text-4xl  font-bold mb-4">
                 Download the Handbook PDF
               </h2>
               <p className="text-white/80 text-lg mb-6 max-w-2xl mx-auto">

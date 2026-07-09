@@ -37,10 +37,10 @@ const BelieveBrilliance = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h3 className="text-msi-blue font-schoolbell text-xl md:text-2xl mb-2 tracking-wider whitespace-nowrap">
+            <h3 className="text-msi-blue  text-xl md:text-2xl mb-2 tracking-wider whitespace-nowrap">
               A 21st Century Education Elixir
             </h3>
-            <h2 className="text-4xl md:text-5xl font-schoolbell text-msi-orange font-bold uppercase mb-6 leading-tigher">
+            <h2 className="text-4xl md:text-5xl  text-msi-orange font-bold uppercase mb-6 leading-tigher">
               SHAPING YOUNG MINDS{' '}
                 <br />
                 THROUGH NEUROSCIENCE
@@ -55,11 +55,11 @@ const BelieveBrilliance = () => {
               </p>
             </div>
 
-            <h4 className="text-xl text-msi-blue font-schoolbell mb-8">
+            <h4 className="text-xl text-msi-blue  mb-8">
               EDUCATION EXCELLENCE EVERYWHERE Is Our Vision
             </h4>
 
-            <a href="/about" className="bg-msi-orange text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-msi-orange/90 transition-all font-averia text-lg inline-block">
+            <a href="/about" className="bg-msi-orange text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-msi-orange/90 transition-all  text-lg inline-block">
               About Us
             </a>
           </motion.div>

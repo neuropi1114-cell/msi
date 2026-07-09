@@ -79,7 +79,7 @@ export default function VideoShowcase() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-3xl md:text-4xl font-schoolbell text-center font-bold mb-12 text-msi-orange"
+          className="text-3xl md:text-4xl  text-center font-bold mb-12 text-msi-orange"
         >
           FEATURED VIDEOS
         </motion.h2>
