@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import TopBar from '../../components/layout/TopBar';
 import Header from '../../components/layout/Header';
@@ -5,12 +7,6 @@ import Footer from '../../components/layout/Footer';
 import ContactUs from '../../components/home/ContactUs';
 import { Baby, BookOpen, Music } from 'lucide-react';
 import { motion } from 'framer-motion';
-
-export const metadata = {
-  title: 'Baby Sensory',
-  description: 'Baby Sensory at My School ITALY. Stimulating activities designed to develop your baby\'s senses through sight, sound, touch, and movement.',
-  alternates: { canonical: 'https://myschoolitaly.com/baby-sensory' },
-};
 
 export default function BabySensoryPage() {
   return (
@@ -54,17 +50,34 @@ export default function BabySensoryPage() {
         </section>
 
         {/* Welcome + Why unique */}
-        <section className="py-16 md:py-20" style={{ background: 'linear-gradient(135deg, #f8f4ff 0%, #ffffff 100%)' }}>
+        <motion.section
+          className="py-16 md:py-20"
+          style={{ background: 'linear-gradient(135deg, #f8f4ff 0%, #ffffff 100%)' }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
           <div className="container mx-auto px-4 md:px-12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center max-w-6xl mx-auto">
-              <div>
+              <motion.div
+                initial={{ opacity: 0, x: -40 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+              >
                 <img
                   src="/images/baby-sensory/welcome-baby.jpg"
                   alt="Baby Sensory"
                   className="w-full h-auto rounded-2xl shadow-lg"
                 />
-              </div>
-              <div>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: 40 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+              >
                 <p className="text-msi-orange font-semibold uppercase tracking-wider text-lg mb-1">Welcome To</p>
                 <h2 className="text-4xl md:text-5xl text-msi-purple font-bold mb-2">Baby Sensory</h2>
                 <div className="w-20 h-1 bg-msi-orange mb-6" />
@@ -72,10 +85,10 @@ export default function BabySensoryPage() {
                 <p className="text-gray-600 text-lg leading-relaxed">
                   What makes Baby Sensory unique is that every activity has been carefully designed to stimulate your baby&rsquo;s senses and move development and learning forwards.
                 </p>
-              </div>
+              </motion.div>
             </div>
           </div>
-        </section>
+        </motion.section>
 
         {/* Features - 3 icon boxes */}
         <section className="py-16 md:py-20 bg-[#e0872b]">
@@ -109,29 +122,55 @@ export default function BabySensoryPage() {
         </section>
 
         {/* Enrol CTA */}
-        <section className="py-16 bg-msi-purple text-white">
+        <motion.section
+          className="py-16 bg-msi-purple text-white"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
           <div className="container mx-auto px-4 md:px-12 flex flex-col md:flex-row items-center justify-between max-w-5xl">
-            <div>
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+            >
               <h2 className="text-3xl font-bold mb-2">ENROL YOUR CHILD</h2>
               <p className="text-white/80 max-w-xl">
                 Interested in a community of global learners, child psychologists, paediatricians and educators, who, like yourself, believe in the power of a progressive, quality education to make the world a better place?
               </p>
-            </div>
-            <a
+            </motion.div>
+            <motion.a
               href="/admissions"
               className="inline-block bg-msi-orange text-white font-bold py-3 px-10 rounded-full hover:bg-msi-orange/90 transition-colors text-lg mt-6 md:mt-0 flex-shrink-0"
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: 0.2 }}
             >
               Enrol Now
-            </a>
+            </motion.a>
           </div>
-        </section>
+        </motion.section>
 
         {/* Early Learning for Babies */}
-        <section className="py-16 md:py-20 bg-white">
+        <motion.section
+          className="py-16 md:py-20 bg-white"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
           <div className="container mx-auto px-4 md:px-12 max-w-6xl">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
               <div />
-              <div>
+              <motion.div
+                initial={{ opacity: 0, x: 40 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+              >
                 <h2 className="text-3xl md:text-4xl text-msi-purple font-bold mb-4">Early Learning for Babies</h2>
                 <p className="text-msi-orange font-semibold text-lg mb-4">It&rsquo;s your day, so is the treat!</p>
                 <p className="text-gray-600 leading-relaxed mb-2">
@@ -140,13 +179,19 @@ export default function BabySensoryPage() {
                 <p className="text-gray-600 leading-relaxed">
                   We welcome you to feed or cuddle your baby during the session.
                 </p>
-              </div>
+              </motion.div>
             </div>
           </div>
-        </section>
+        </motion.section>
 
         {/* 3 Image Cards */}
-        <section className="py-16 md:py-20 bg-[#f7f9fc]">
+        <motion.section
+          className="py-16 md:py-20 bg-[#f7f9fc]"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
           <div className="container mx-auto px-4 md:px-12">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {[
@@ -163,18 +208,25 @@ export default function BabySensoryPage() {
                   text: 'We soothe your baby at the end of every session by mimicking the sounds of the womb.',
                 },
               ].map((item, i) => (
-                <div key={i} className="rounded-[10px] overflow-hidden shadow-lg group">
+                <motion.div
+                  key={i}
+                  className="rounded-[10px] overflow-hidden shadow-lg group"
+                  initial={{ opacity: 0, y: 40 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: i * 0.15 }}
+                >
                   <div className="overflow-hidden">
                     <img src={item.img} alt="" className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-[1.01]" loading="lazy" />
                   </div>
                   <div className="p-6 text-center bg-[#F9FAFA]">
                     <p className="text-gray-700 leading-relaxed text-lg">{item.text}</p>
                   </div>
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>
-        </section>
+        </motion.section>
       </main>
       <ContactUs />
       <Footer />
