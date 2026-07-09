@@ -8,32 +8,40 @@ const Header = () => {
   const [expandedSection, setExpandedSection] = useState(null);
 
   const navLinks = [
-    { name: 'Home', href: '/' },
     {
       name: 'About Us',
       children: [
-        { name: 'Our Story', href: '/about' },
-        { name: 'Our Team', href: '/about#team' },
         { name: 'Message from Founder', href: '/about' },
+        { name: 'Our Advisory Board', href: '/advisory-board' },
+        { name: 'Our Story', href: '/about' },
+        {
+          name: 'Our Team',
+          children: [
+            { name: 'MNR Gupta - CEO', href: '#' },
+            { name: 'Maneendra Kumar - Business Head', href: '#' },
+          ],
+        },
       ],
     },
-    { name: 'Programs', href: '/programs' },
-    { name: 'The Educational Project', href: '/nep' },
     { name: 'Admissions', href: '/admissions' },
     { name: 'Blog', href: '#' },
+    { name: 'Book Your Tour', href: '/book-your-tour' },
     { name: 'Contact Us', href: '/contact' },
-    { name: 'Franchise', href: '#' },
     { name: 'Enrol', href: '/admissions' },
-    { name: 'Book Your Tour', href: '/contact' },
-    { name: 'Work With us', href: '#' },
-    { name: 'Shop', href: '#' },
-    { name: 'Media Coverage', href: '#' },
-    { name: 'Testimonials', href: '#' },
-    { name: 'Login', href: '#' },
-    { name: 'HR', href: '#' },
+    { name: 'Franchise', href: '#' },
     { name: 'Handbook', href: '/handbook' },
     { name: 'Handbook Video', href: '/handbook' },
+    { name: 'Home', href: '/' },
+    { name: 'HR', href: '#' },
+    { name: 'Login', href: '#' },
+    { name: 'Media Coverage', href: '#' },
+    { name: 'Our Advisory Board', href: '/advisory-board' },
+    { name: 'Programs', href: '/programs' },
+    { name: 'Shop', href: '#' },
+    { name: 'Testimonials', href: '#' },
+    { name: 'The Educational Project', href: '/nep' },
     { name: 'Video Gallery', href: '/video-gallery' },
+    { name: 'Work With us', href: '#' },
   ];
 
   return (
@@ -98,18 +106,44 @@ const Header = () => {
                     {link.name}
                     <span className={`transition-transform duration-200 ${expandedSection === link.name ? 'rotate-90' : ''}`}>{'>'}</span>
                   </button>
-                  <div className={`overflow-hidden transition-all duration-200 ${expandedSection === link.name ? 'max-h-96' : 'max-h-0'}`}>
+                  <div className={`overflow-hidden transition-all duration-200 ${expandedSection === link.name ? 'max-h-[500px]' : 'max-h-0'}`}>
                     <div className="pl-4 flex flex-col">
-                      {link.children.map((child) => (
-                        <a
-                          key={child.name}
-                          href={child.href}
-                          className="text-white/90 px-2 py-1.5 border-b border-white/10 text-xs uppercase tracking-wide hover:bg-[#351C5A] hover:text-white transition-colors"
-                          onClick={() => setIsMenuOpen(false)}
-                        >
-                          {child.name}
-                        </a>
-                      ))}
+                      {link.children.map((child) =>
+                        child.children ? (
+                          <div key={child.name}>
+                            <button
+                              className="w-full flex justify-between items-center text-white/90 px-2 py-1.5 border-b border-white/10 text-xs uppercase tracking-wide hover:bg-[#351C5A] hover:text-white transition-colors"
+                              onClick={() => setExpandedSection(expandedSection === child.name ? null : child.name)}
+                            >
+                              {child.name}
+                              <span className={`transition-transform duration-200 ${expandedSection === child.name ? 'rotate-90' : ''}`}>{'>'}</span>
+                            </button>
+                            <div className={`overflow-hidden transition-all duration-200 ${expandedSection === child.name ? 'max-h-96' : 'max-h-0'}`}>
+                              <div className="pl-4 flex flex-col">
+                                {child.children.map((grandchild) => (
+                                  <a
+                                    key={grandchild.name}
+                                    href={grandchild.href}
+                                    className="text-white/80 px-2 py-1 border-b border-white/10 text-[11px] uppercase tracking-wide hover:bg-[#351C5A] hover:text-white transition-colors"
+                                    onClick={() => setIsMenuOpen(false)}
+                                  >
+                                    {grandchild.name}
+                                  </a>
+                                ))}
+                              </div>
+                            </div>
+                          </div>
+                        ) : (
+                          <a
+                            key={child.name}
+                            href={child.href}
+                            className="text-white/90 px-2 py-1.5 border-b border-white/10 text-xs uppercase tracking-wide hover:bg-[#351C5A] hover:text-white transition-colors"
+                            onClick={() => setIsMenuOpen(false)}
+                          >
+                            {child.name}
+                          </a>
+                        )
+                      )}
                     </div>
                   </div>
                 </div>
