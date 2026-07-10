@@ -49,7 +49,7 @@ export default function RootLayout({ children }) {
         {/* External preconnect hints removed for local deployment */}
         <link rel="preload" as="image" href="/images/hero/Slider_1-scaled.jpg.bv.webp" fetchPriority="high" />
       </head>
-      <body className="text-gray-800 bg-[#f7f9fc] min-h-screen" style={{ fontFamily: 'var(--font-lato)' }}>
+      <body className="text-gray-800 bg-[#f7f9fc] min-h-screen" style={{ fontFamily: 'var(--font-lato)' }} suppressHydrationWarning>
         <JsonLd />
         {children}
         <Analytics />
