@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-export default function CloudHeader({ title, bgClass = 'bg-[#e1872b]', textClass = 'text-white', image }) {
+export default function CloudHeader({ title, subtitle, bgClass = 'bg-[#e1872b]', textClass = 'text-white', image }) {
   return (
     <section className="relative flex min-h-[300px] items-center justify-center overflow-hidden">
       {/* Background: image or color */}
@@ -36,9 +36,16 @@ export default function CloudHeader({ title, bgClass = 'bg-[#e1872b]', textClass
         </svg>
       </div>
 
-      <h1 className={`relative z-20 px-4 text-center font-lato text-4xl font-bold md:text-5xl ${textClass}`}>
-        {title}
-      </h1>
+      <div className="relative z-20 px-4 text-center">
+        <h1 className={`font-lato text-4xl font-bold md:text-5xl ${textClass}`}>
+          {title}
+        </h1>
+        {subtitle && (
+          <p className={`mt-4 text-lg md:text-xl ${textClass} opacity-80`}>
+            {subtitle}
+          </p>
+        )}
+      </div>
     </section>
   );
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import TopBar from '../../components/layout/TopBar';
 import Header from '../../components/layout/Header';
 import Footer from '../../components/layout/Footer';
-import AboutHero from '../../components/about/AboutHero';
+import CloudHeader from '../../components/layout/CloudHeader';
 import AboutPremises from '../../components/about/AboutPremises';
 import AboutPhilosophy from '../../components/about/AboutPhilosophy';
 import AboutVideo from '../../components/about/AboutVideo';
@@ -36,7 +36,7 @@ export default function AboutPage() {
       <TopBar />
       <Header />
       <main>
-        <AboutHero />
+        <CloudHeader title="About Us" subtitle="Discover the heart and science behind My School ITALY" image="/images/about-hero.jpg" textClass="text-[#e1872b]" />
         <AboutPremises />
         <AboutPhilosophy />
         <AboutVideo />
