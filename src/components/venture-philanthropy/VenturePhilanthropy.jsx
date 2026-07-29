@@ -139,7 +139,7 @@ export default function VenturePhilanthropy() {
               Investment process
             </h2>
             <h3 className="text-xl md:text-2xl text-msi-orange  font-bold mb-8 text-center">
-              Achieving lasting systemic change with curated thematic portfolios
+              A rigorous approach to identifying and scaling high-impact opportunities
             </h3>
             <p className="text-gray-700 mb-6 leading-relaxed text-lg text-justify">
               MSI Impact Trust: <span className="text-blue-600 font-semibold">Ritzy Schools Educational Society</span> commits institutional investment and intentional value creation across the lifecycle of our engagements:

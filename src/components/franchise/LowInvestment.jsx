@@ -21,8 +21,8 @@ export default function LowInvestment() {
             />
             <p className="mt-6 text-gray-700 leading-relaxed text-justify">
               Parents look out for the best early learning and care environment for their children
-              since their birth and now a days it is trend to start schooling at play school right
-              after second birthday of a child. So to run a successful International Kindergarten
+              from birth, and nowadays it is common to start schooling at preschool right
+              after a child's second birthday. Running a successful International Kindergarten
               such as ours, is not only a lucrative business but is also an entertaining and a
               pleasurable one.
             </p>

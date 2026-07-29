@@ -47,10 +47,10 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-6 text-white text-center">My School ITALY</h3>
             <p className="text-white/80 leading-relaxed text-sm mb-4 text-justify">
-              Welcome to the enchanted world of "My School ITALY", where young minds flourish through neuroscience-based education. For over three decades, we've nurtured confident communicators from ages 45 days to 7 years. 👶 Our rainbow-hued classrooms and caring staff create a fairy tale setting 🧚‍♀️. Explore our tailored services for each stage of early development, from specialized baby creches to engaging preschool and foundation programs. ✨
+              Welcome to My School ITALY, where young minds grow through neuroscience-based education. For over three decades, we've nurtured confident communicators from ages 45 days to 7 years. Our colourful classrooms and caring staff create a warm, stimulating environment. Explore our tailored services for each stage of early development, from baby creches to preschool and foundation programs.
             </p>
             <p className="text-white/80 leading-relaxed text-sm text-justify">
-              We also offer a range of enriching extracurricular activities and special programs like Robotics, Gymnastics, Neurobics, Dance, and Storytelling to enhance your child's overall development. We're a network of preschools around the world, passionately championing accessible, top-tier, and high-quality education. 🏰
+              We also offer enriching extracurricular activities including Robotics, Gymnastics, Neurobics, Dance, and Storytelling to support your child's overall development. We're a global network of preschools committed to accessible, high-quality education.
             </p>
           </div>
 

@@ -1,4 +1,4 @@
-import { Lato } from 'next/font/google';
+import { Lato, Playfair_Display } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/react';
 import './globals.css';
 import JsonLd from '../components/JsonLd';
@@ -9,6 +9,14 @@ const lato = Lato({
   style: ['normal', 'italic'],
   display: 'swap',
   variable: '--font-lato',
+});
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  style: ['normal', 'italic'],
+  display: 'swap',
+  variable: '--font-playfair',
 });
 
 export const metadata = {
@@ -44,12 +52,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning className={lato.variable}>
+    <html lang="en" suppressHydrationWarning className={`${lato.variable} ${playfair.variable}`}>
       <head>
-        {/* External preconnect hints removed for local deployment */}
         <link rel="preload" as="image" href="/images/hero/Slider_1-scaled.jpg.bv.webp" fetchPriority="high" />
       </head>
-      <body className="text-gray-800 bg-[#f7f9fc] min-h-screen" style={{ fontFamily: 'var(--font-lato)' }} suppressHydrationWarning>
+      <body className="text-gray-800 bg-[#f7f9fc] min-h-screen font-lato" suppressHydrationWarning>
         <JsonLd />
         {children}
         <Analytics />

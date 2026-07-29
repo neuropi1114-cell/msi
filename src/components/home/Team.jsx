@@ -36,18 +36,18 @@ export default function Team() {
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl  text-msi-orange font-bold mb-4"
+            className="font-display text-display-md md:text-display-lg text-msi-purple mb-4"
           >
-            People Behind
+            The people who make it happen
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="text-gray-600 max-w-3xl mx-auto text-center"
+            className="text-gray-600 max-w-2xl mx-auto text-lg leading-relaxed"
           >
-            The People Behind have been working together to create a culture of innovation, quality, develop policies, set goals, and guide the organisation in ensuring products or services meet parent and educator expectations and comply with regulatory requirements.
+            Behind every classroom, every programme, and every child's breakthrough — there's a team that cares deeply about getting it right.
           </motion.p>
         </div>
 
@@ -119,14 +119,14 @@ export default function Team() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="mt-16 max-w-4xl mx-auto"
+            className="mt-16 max-w-4xl mx-auto text-center"
         >
-            <h3 className="text-3xl md:text-4xl  text-msi-purple font-bold mb-4 text-center">
-                Every Child's Potential Becomes Our Purpose
+            <h3 className="font-display text-display-md text-msi-purple mb-4">
+                Education should reach everyone
             </h3>
-            <p className="text-msi-orange text-2xl md:text-3xl text-center mb-6">MSI venture philanthropy</p>
-            <p className="text-gray-600 text-center mb-6 leading-relaxed text-center">
-                My School ITALY aims to ensure inclusive and equitable quality education and promote lifelong learning opportunities for all (SDG 4). Our Training and Hiring programmes align to decent work and sustainable growth (SDG 8 target 8.6) to substantially reduce the proportion of youth not in employment, education, or training.
+            <p className="text-msi-orange font-display italic text-xl md:text-2xl mb-6">MSI venture philanthropy</p>
+            <p className="text-gray-600 mb-6 leading-relaxed max-w-2xl mx-auto">
+                We work to make quality early education accessible to communities that need it most — through training programmes, hiring initiatives, and partnerships that create real opportunities for young people.
             </p>
             <div className="border-t border-gray-200 pt-6 mt-6">
                 <p className="text-gray-700 font-medium text-center mb-2">Ritzy Schools Educational Society</p>
