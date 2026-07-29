@@ -1,4 +1,4 @@
-import { Lato, Playfair_Display } from 'next/font/google';
+import { Lato, Playfair_Display, Fredoka, Averia_Libre } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/react';
 import './globals.css';
 import JsonLd from '../components/JsonLd';
@@ -17,6 +17,21 @@ const playfair = Playfair_Display({
   style: ['normal', 'italic'],
   display: 'swap',
   variable: '--font-playfair',
+});
+
+const fredoka = Fredoka({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  display: 'swap',
+  variable: '--font-fredoka',
+});
+
+const averia = Averia_Libre({
+  subsets: ['latin'],
+  weight: ['300', '400', '700'],
+  style: ['normal', 'italic'],
+  display: 'swap',
+  variable: '--font-averia',
 });
 
 export const metadata = {
@@ -52,7 +67,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${lato.variable} ${playfair.variable}`}>
+    <html lang="en" suppressHydrationWarning className={`${lato.variable} ${playfair.variable} ${fredoka.variable} ${averia.variable}`}>
       <head>
         <link rel="preload" as="image" href="/images/hero/Slider_1-scaled.jpg.bv.webp" fetchPriority="high" />
       </head>

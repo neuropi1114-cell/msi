@@ -169,9 +169,11 @@ export default function CiaoBabyPage() {
                     <h3 className="text-xl font-bold mb-3" style={{ color: '#e4984d' }}>
                       {program.title}
                     </h3>
-                    <p className="text-gray-600 text-sm leading-relaxed mb-3 text-justify">
-                      {program.description.split('.')[0]}.
-                    </p>
+                    <div className="text-gray-600 text-sm leading-relaxed mb-3 text-justify space-y-2">
+                      {program.description.split('.').filter(Boolean).map((sentence, i) => (
+                        <p key={i}>{sentence.trim()}.</p>
+                      ))}
+                    </div>
                     {program.list && (
                       <ul className="text-sm text-gray-600 space-y-1">
                         {program.list.map((item, i) => (

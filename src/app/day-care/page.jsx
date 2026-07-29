@@ -5,6 +5,7 @@ import Header from '../../components/layout/Header';
 import Footer from '../../components/layout/Footer';
 import ContactUs from '../../components/home/ContactUs';
 import Blogs from '../../components/home/Blogs';
+import CloudHeader from '../../components/layout/CloudHeader';
 
 export const metadata = {
   title: 'Day Care',
@@ -32,16 +33,7 @@ export default function DayCarePage() {
       <TopBar />
       <Header />
       <main>
-        {/* Hero */}
-        <section className="bg-msi-purple py-20 text-white relative overflow-hidden">
-          <div className="absolute inset-0 bg-black/20" />
-          <div className="relative container mx-auto px-4 md:px-12 text-center">
-            <h1 className="text-4xl md:text-6xl  font-bold mb-4">Day Care</h1>
-            <p className="text-white/80 text-lg max-w-2xl mx-auto">
-              A safe, nurturing environment where your child learns, grows, and thrives through our neuroscience-based approach.
-            </p>
-          </div>
-        </section>
+        <CloudHeader image="/images/day-care/hero.jpg" />
 
         {/* Play, learn and grow with My School ITALY */}
         <section className="py-20 bg-white">

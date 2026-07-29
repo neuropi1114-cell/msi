@@ -12,6 +12,8 @@ export default {
         'msi-orange': '#e1872b',
         'msi-orange-warm': '#e4984d',
         'msi-blue': '#1891cd',
+        'msi-blue-light': '#2CB3E9',
+        'msi-blue-dark': '#159ED9',
         'msi-accent': '#e85d26',
         'msi-cream': '#FCF9F4',
         'msi-ivory': '#f4f0eb',
@@ -24,6 +26,8 @@ export default {
       fontFamily: {
         'lato': ['var(--font-lato)', 'sans-serif'],
         'display': ['var(--font-playfair)', 'Georgia', 'serif'],
+        'fredoka': ['var(--font-fredoka)', 'sans-serif'],
+        'averia': ['var(--font-averia)', 'cursive'],
       },
       fontSize: {
         'display-xl': ['clamp(3rem, 8vw, 6rem)', { lineHeight: '1.05', letterSpacing: '-0.02em' }],
