@@ -203,7 +203,7 @@ const AgeGroupsIntro = () => {
 
             <div className="text-center">
               <a
-                href="/pre-school/"
+                href="/growing-in-confidence/"
                 className="inline-block px-6 py-3 text-white rounded-full font-semibold hover:opacity-90 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
                 style={{ backgroundColor: '#e4984d' }}
               >
