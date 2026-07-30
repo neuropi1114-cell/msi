@@ -36,7 +36,7 @@ export default function Team() {
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="font-display text-display-md md:text-display-lg text-msi-purple mb-4"
+            className="font-lato text-display-md md:text-display-lg text-msi-purple mb-4"
           >
             The people who make it happen
           </motion.h2>
@@ -121,10 +121,10 @@ export default function Team() {
             transition={{ duration: 0.6 }}
             className="mt-16 max-w-4xl mx-auto text-center"
         >
-            <h3 className="font-display text-display-md text-msi-purple mb-4">
+            <h3 className="font-lato text-display-md text-msi-purple mb-4">
                 Education should reach everyone
             </h3>
-            <p className="text-msi-orange font-display italic text-xl md:text-2xl mb-6">MSI venture philanthropy</p>
+            <p className="text-msi-orange font-lato italic text-xl md:text-2xl mb-6">MSI venture philanthropy</p>
             <p className="text-gray-600 mb-6 leading-relaxed max-w-2xl mx-auto">
                 We work to make quality early education accessible to communities that need it most — through training programmes, hiring initiatives, and partnerships that create real opportunities for young people.
             </p>

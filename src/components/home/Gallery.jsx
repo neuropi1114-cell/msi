@@ -24,10 +24,10 @@ export default function Gallery() {
           transition={{ duration: 0.7 }}
           className="mb-16 max-w-lg"
         >
-          <p className="font-display italic text-msi-gold text-lg mb-3">
+          <p className="font-lato italic text-msi-gold text-lg mb-3">
             glimpses of everyday life
           </p>
-          <h2 className="font-display text-display-md md:text-display-lg text-msi-purple leading-tight">
+          <h2 className="font-lato text-display-md md:text-display-lg text-msi-purple leading-tight">
             A school made of small, beautiful moments
           </h2>
         </motion.div>
@@ -62,7 +62,7 @@ export default function Gallery() {
                 />
                 {/* Handwritten-style caption on hover */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                <span className="absolute bottom-3 left-4 font-display italic text-white/90 text-sm md:text-base opacity-0 group-hover:opacity-100 transition-opacity duration-500 translate-y-2 group-hover:translate-y-0">
+                <span className="absolute bottom-3 left-4 font-lato italic text-white/90 text-sm md:text-base opacity-0 group-hover:opacity-100 transition-opacity duration-500 translate-y-2 group-hover:translate-y-0">
                   {img.caption}
                 </span>
               </motion.div>

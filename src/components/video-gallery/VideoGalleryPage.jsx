@@ -14,10 +14,29 @@ const localThumbnails = {
   hTEi1WvA28E: '/images/videos/video-5.webp',
   AiNWHm7q3Wk: '/images/videos/video-6.webp',
   '-cDp2zfcRcU': '/images/videos/video-7.webp',
+  lwekHckHeck: '/images/videos/lwekHckHeck.jpg',
+  'uAXR0G6-t6I': '/images/videos/uAXR0G6-t6I.jpg',
+  MV6PxQkmluY: '/images/videos/MV6PxQkmluY.jpg',
+  eIDcQ2EEPhs: '/images/videos/eIDcQ2EEPhs.jpg',
+  ObS6C8cQd9E: '/images/videos/ObS6C8cQd9E.jpg',
+  hkSMePatEPg: '/images/videos/hkSMePatEPg.jpg',
+  djLHmDYsAuY: '/images/videos/djLHmDYsAuY.jpg',
+  '6TsoweeYKoQ': '/images/videos/6TsoweeYKoQ.jpg',
+  'iUDO-BbPIyY': '/images/videos/iUDO-BbPIyY.jpg',
+  hbxTbWMlYLo: '/images/videos/hbxTbWMlYLo.jpg',
+  g5hKSEQb96Q: '/images/videos/g5hKSEQb96Q.jpg',
+  'bjFW7Edd-8g': '/images/videos/bjFW7Edd-8g.jpg',
+  b_lLBIaOkDc: '/images/videos/b_lLBIaOkDc.jpg',
+  OJywbhbWYA0: '/images/videos/OJywbhbWYA0.jpg',
+  '9q8r-SotXRo': '/images/videos/9q8r-SotXRo.jpg',
+  'A-NtsxZK_ic': '/images/videos/A-NtsxZK_ic.jpg',
+  BdyDktqjdpY: '/images/videos/BdyDktqjdpY.jpg',
+  yF_yosN1t0s: '/images/videos/yF_yosN1t0s.jpg',
+  XySHccUU2NY: '/images/videos/XySHccUU2NY.jpg',
 };
 
 function getThumbnail(videoId) {
-  return localThumbnails[videoId] || `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`;
+  return localThumbnails[videoId];
 }
 
 function VideoCard({ video, index, onPlay }) {
@@ -31,7 +50,7 @@ function VideoCard({ video, index, onPlay }) {
       onClick={() => onPlay(video)}
     >
       <div className="relative w-full aspect-video">
-        <img src={getThumbnail(video.id)} alt={video.title} className="w-full h-full object-cover" loading="lazy" onError={(e) => { if (e.target.src.includes('hqdefault')) e.target.src = `https://i.ytimg.com/vi/${video.id}/0.jpg`; }} />
+        <img src={getThumbnail(video.id)} alt={video.title} className="w-full h-full object-cover" loading="lazy" />
         <div className="absolute inset-0 bg-black/30 flex items-center justify-center group-hover:bg-black/50 transition-colors">
           <svg className="w-16 h-16 text-white opacity-80 group-hover:opacity-100 transition-opacity" viewBox="0 0 1000 1000" fill="currentColor">
             <path d="M838 162C746 71 633 25 500 25 371 25 258 71 163 162 71 254 25 367 25 500 25 633 71 746 163 837 254 929 367 979 500 979 633 979 746 933 838 837 929 746 975 633 975 500 975 367 929 254 838 162M808 192C892 279 933 379 933 500 933 621 892 725 808 808 725 892 621 938 500 938 379 938 279 896 196 808 113 725 67 621 67 500 67 379 108 279 196 192 279 108 383 62 500 62 621 62 721 108 808 192M438 392V642L642 517 438 392Z" />

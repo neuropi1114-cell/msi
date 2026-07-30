@@ -32,7 +32,7 @@ const BelieveBrilliance = () => {
             whileInView={{ opacity: 1, rotate: -3 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.5 }}
-            className="absolute -bottom-2 left-8 font-display italic text-msi-gold/60 text-sm z-20 hidden md:block"
+            className="absolute -bottom-2 left-8 font-lato italic text-msi-gold/60 text-sm z-20 hidden md:block"
           >
             thirty years of watching them grow
           </motion.span>
@@ -46,10 +46,10 @@ const BelieveBrilliance = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h3 className="font-display italic text-msi-gold text-xl md:text-2xl mb-2 tracking-wide">
+            <h3 className="font-lato italic text-msi-gold text-xl md:text-2xl mb-2 tracking-wide">
               It starts with how they see the world
             </h3>
-            <h2 className="font-display text-display-md md:text-display-lg text-msi-purple mb-6 leading-tight">
+            <h2 className="font-lato text-display-md md:text-display-lg text-msi-purple mb-6 leading-tight">
               Building brilliant minds,{' '}
                 <br />
                 one small moment at a time
@@ -64,7 +64,7 @@ const BelieveBrilliance = () => {
               </p>
             </div>
 
-            <h4 className="font-display italic text-msi-gold text-lg mb-8">
+            <h4 className="font-lato italic text-msi-gold text-lg mb-8">
               Where every small step matters
             </h4>
 

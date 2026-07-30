@@ -25,9 +25,6 @@ export default {
       },
       fontFamily: {
         'lato': ['var(--font-lato)', 'sans-serif'],
-        'display': ['var(--font-playfair)', 'Georgia', 'serif'],
-        'fredoka': ['var(--font-fredoka)', 'sans-serif'],
-        'averia': ['var(--font-averia)', 'cursive'],
       },
       fontSize: {
         'display-xl': ['clamp(3rem, 8vw, 6rem)', { lineHeight: '1.05', letterSpacing: '-0.02em' }],

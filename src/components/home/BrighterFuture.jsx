@@ -14,10 +14,10 @@ export default function BrighterFuture() {
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="max-w-2xl"
         >
-          <p className="font-display italic text-msi-gold text-lg mb-4">
+          <p className="font-lato italic text-msi-gold text-lg mb-4">
             the first seven years change everything
           </p>
-          <h3 className="font-display text-display-md md:text-display-lg text-white mb-6 leading-tight">
+          <h3 className="font-lato text-display-md md:text-display-lg text-white mb-6 leading-tight">
             Childhood isn't a countdown. It's the foundation.
           </h3>
           <p className="text-white/70 text-lg leading-relaxed max-w-xl">

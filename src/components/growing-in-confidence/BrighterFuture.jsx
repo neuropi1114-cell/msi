@@ -23,7 +23,7 @@ export default function BrighterFuture() {
           <h3
             className="text-white uppercase font-bold mb-4 leading-tight"
             style={{
-              fontFamily: '"Fredoka One", "Fredoka", sans-serif',
+              fontFamily: 'var(--font-lato), sans-serif',
               fontSize: '42px',
               letterSpacing: '1px',
             }}
@@ -33,7 +33,7 @@ export default function BrighterFuture() {
           <p
             className="text-white leading-relaxed"
             style={{
-              fontFamily: '"Averia Libre", serif',
+              fontFamily: 'var(--font-lato), sans-serif',
               fontWeight: 400,
               fontSize: '16px',
             }}

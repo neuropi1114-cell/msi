@@ -138,7 +138,7 @@ const Hero = () => {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7, delay: 0.2 }}
-              className="font-display italic text-msi-gold text-lg md:text-xl mb-4 tracking-wide"
+              className="font-lato italic text-msi-gold text-lg md:text-xl mb-4 tracking-wide"
             >
               {slide.tagline}
             </motion.p>
@@ -148,7 +148,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-              className="font-display text-display-lg md:text-display-xl text-white font-medium mb-6 leading-[1.1]"
+              className="font-lato text-display-lg md:text-display-xl text-white font-medium mb-6 leading-[1.1]"
             >
               {slide.title}
             </motion.h2>
@@ -186,7 +186,7 @@ const Hero = () => {
 
         {/* Slide indicator — minimal, editorial */}
         <div className="absolute bottom-10 left-6 md:left-12 lg:left-20 flex items-center gap-4 z-20">
-          <span className="font-display text-white/40 text-sm tabular-nums">
+          <span className="font-lato text-white/40 text-sm tabular-nums">
             {String(current + 1).padStart(2, '0')} / {String(slides.length).padStart(2, '0')}
           </span>
           <div className="flex gap-2">
