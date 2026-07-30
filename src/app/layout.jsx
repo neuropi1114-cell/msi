@@ -1,5 +1,6 @@
 import { Lato } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/react';
+import Script from 'next/script';
 import './globals.css';
 import JsonLd from '../components/JsonLd';
 
@@ -60,6 +61,11 @@ export default function RootLayout({ children }) {
         <JsonLd />
         {children}
         <Analytics />
+        <Script
+          src="https://cdn.chatway.app/widget.js?id=23D3hS7Mt4QI"
+          strategy="lazyOnload"
+          defer
+        />
       </body>
     </html>
   );
