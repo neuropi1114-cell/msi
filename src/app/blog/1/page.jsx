@@ -48,6 +48,7 @@ export const metadata = {
     siteName: 'My School ITALY',
     locale: 'en_US',
     type: 'article',
+    article: { publishedTime: '2025-10-31', modifiedTime: '2025-10-31' },
     images: [{ url: '/images/hero/Slider_1-scaled.jpg.bv.webp', width: 1200, height: 630 }],
   },
   twitter: {
@@ -131,7 +132,7 @@ export default function BlogPostPage() {
                 >
                   <Image
                     src={src}
-                    alt={`Halloween celebration photo ${index + 1}`}
+                    alt={`My School ITALY Hitex Halloween celebration`}
                     width={400}
                     height={300}
                     className="w-full h-40 md:h-48 object-cover transform group-hover:scale-110 transition-transform duration-500"

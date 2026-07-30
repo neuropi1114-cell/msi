@@ -17,6 +17,7 @@ export const metadata = {
     siteName: 'My School ITALY',
     locale: 'en_US',
     type: 'article',
+    article: { publishedTime: '2025-01-15', modifiedTime: '2025-01-15' },
     images: [{ url: '/images/hero/Slider_1-scaled.jpg.bv.webp', width: 1200, height: 630 }],
   },
   twitter: {

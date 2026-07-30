@@ -1,14 +1,16 @@
+const siteUrl = 'https://myschoolitaly.com';
+
 export default function JsonLd() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'EducationalOrganization',
     name: 'My School ITALY',
     description: 'Neuroscience-based preschool & childcare for ages 45 days to 7 years.',
-    url: '/',
+    url: siteUrl,
     telephone: '+91 7093904680',
     email: 'info@myschoolitaly.com',
-    logo: '/favicon.svg',
-    image: '/images/hero/Slider_1-scaled.jpg.bv.webp',
+    logo: `${siteUrl}/favicon.svg`,
+    image: `${siteUrl}/images/hero/Slider_1-scaled.jpg.bv.webp`,
     foundingDate: '2017',
     founder: {
       '@type': 'Person',
@@ -50,10 +52,25 @@ export default function JsonLd() {
     },
   };
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    name: 'Breadcrumb',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: siteUrl },
+    ],
+  };
+
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-    />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+    </>
   );
 }

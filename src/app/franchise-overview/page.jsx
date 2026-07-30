@@ -11,7 +11,7 @@ import FunFacts from '../../components/franchise/FunFacts';
 import SupportSystem from '../../components/franchise/SupportSystem';
 
 export const metadata = {
-  title: 'Franchise Overview – My School ITALY',
+  title: 'Franchise Overview | My School ITALY',
   description: 'Own your own preschool with My School ITALY. Low investment, high returns franchise opportunity in neuroscience-based early childhood education.',
   alternates: { canonical: '/franchise-overview' },
   openGraph: {

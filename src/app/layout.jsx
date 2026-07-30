@@ -40,6 +40,12 @@ export const metadata = {
   },
   alternates: {
     canonical: '/',
+    languages: {
+      en: '/',
+    },
+  },
+  other: {
+    'google-site-verification': '',
   },
 };
 
@@ -48,6 +54,7 @@ export default function RootLayout({ children }) {
     <html lang="en" suppressHydrationWarning className={`${lato.variable}`}>
       <head>
         <link rel="preload" as="image" href="/images/hero/Slider_1-scaled.jpg.bv.webp" fetchPriority="high" />
+        <link rel="manifest" href="/manifest.json" />
       </head>
       <body className="text-gray-800 bg-[#f7f9fc] min-h-screen font-lato" suppressHydrationWarning>
         <JsonLd />

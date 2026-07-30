@@ -11,7 +11,7 @@ export const metadata = {
   alternates: { canonical: '/admissions' },
   openGraph: {
     title: 'Admissions | My School ITALY',
-    description: 'Enroll your child at My School ITALY. Simple admission process for Infant, Toddler, Preschool, and Kindergarten programs.',
+    description: 'Enroll your child at My School ITALY. Simple admission process for Infant, Toddler, Preschool, and Kindergarten programs. Book a tour or apply online today.',
     url: '/admissions',
     siteName: 'My School ITALY',
     locale: 'en_US',
@@ -21,7 +21,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Admissions | My School ITALY',
-    description: 'Enroll your child at My School ITALY. Simple admission process for Infant, Toddler, Preschool, and Kindergarten programs.',
+    description: 'Enroll your child at My School ITALY. Simple admission process for Infant, Toddler, Preschool, and Kindergarten programs. Book a tour or apply online today.',
   },
 };
 

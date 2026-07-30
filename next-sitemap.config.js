@@ -12,6 +12,7 @@ export default {
   changefreq: 'daily',
   priority: 0.7,
   transform: (config, path) => {
+    const staticPages = ['/privacy-policy', '/handbook', '/video-gallery', '/media-coverage', '/msi-venture-philanthropy'];
     const priorityMap = {
       '/': 1.0,
       '/about': 0.8,
@@ -29,7 +30,7 @@ export default {
     };
     return {
       loc: path,
-      changefreq: config.changefreq,
+      changefreq: staticPages.includes(path) ? 'monthly' : config.changefreq,
       priority: priorityMap[path] ?? config.priority,
       lastmod: config.autoLastmod ? new Date().toISOString() : undefined,
     };

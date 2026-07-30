@@ -13,7 +13,7 @@ export const metadata = {
   openGraph: {
     title: 'Book Your Tour | My School ITALY',
     description:
-      'Book a tour at My School ITALY, the neuroscientific European preschool. Visit our campus and explore our neuroscience-based early childhood programs.',
+      'Book a tour at My School ITALY, the neuroscientific European preschool. Visit our campus, explore our programs, and experience our neuroscience-based early childhood education.',
     url: '/book-your-tour',
     siteName: 'My School ITALY',
     locale: 'en_US',

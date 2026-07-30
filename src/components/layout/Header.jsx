@@ -40,17 +40,17 @@ const Header = () => {
       ],
     },
     { name: 'Admissions', href: '/admissions' },
-    { name: 'Blog', href: '#' },
+    { name: 'Blog', href: '/blog' },
     { name: 'Book Your Tour', href: '/book-your-tour' },
     { name: 'Contact Us', href: '/contact' },
     { name: 'Enrol', href: '/admissions' },
-    { name: 'Franchise', href: '#' },
+    { name: 'Franchise', href: '/franchise-overview' },
     { name: 'Handbook', href: '/handbook' },
     { name: 'Handbook Video', href: '/handbook' },
     { name: 'Home', href: '/' },
     { name: 'HR', href: '#' },
     { name: 'Login', href: '#' },
-    { name: 'Media Coverage', href: '#' },
+    { name: 'Media Coverage', href: '/media-coverage' },
     { name: 'Our Advisory Board', href: '/advisory-board' },
     { name: 'Programs', href: '/programs' },
     { name: 'Shop', href: '#' },
@@ -65,7 +65,7 @@ const Header = () => {
       <div className="container mx-auto px-4 md:px-12 flex justify-between items-center">
         <div className="flex items-center">
           <a href="/" aria-label="Go to homepage">
-            <img src={mainLogo} alt="My School ITALY Logo" className="h-12 w-auto" />
+            <img src={mainLogo} alt="My School ITALY Logo" width="200" height="50" className="h-12 w-auto" />
           </a>
         </div>
 
