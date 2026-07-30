@@ -64,7 +64,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${lato.variable} ${fredoka.variable}`}>
+    <html lang="en" suppressHydrationWarning className={`${lato.variable} ${fredoka.variable} ${schoolbell.variable}`}>
       <head>
         <link rel="preload" as="image" href="/images/hero/Slider_1-scaled.jpg.bv.webp" fetchPriority="high" />
         <link rel="manifest" href="/manifest.json" />
