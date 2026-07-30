@@ -2,6 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+
 const AgeGroupsIntro = () => {
   const features = [
     { icon: '/images/growing-in-confidence/mortarboard.png', title: 'Awesome Careers' },
@@ -179,7 +180,7 @@ const AgeGroupsIntro = () => {
         {/* Growing In Confidence Section */}
         <div className="mt-24">
           <div className="text-center max-w-4xl mx-auto mb-12">
-            <span className="inline-block px-4 py-1 text-sm font-semibold mb-4" style={{ color: '#369bd0' }}>
+            <span className="font-schoolbell text-[22px] font-normal text-msi-blue">
               Preschool (3-7 Years)
             </span>
             <h2 >
