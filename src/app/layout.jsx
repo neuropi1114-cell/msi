@@ -18,6 +18,11 @@ const fredoka = Fredoka({
   variable: '--font-fredoka',
 });
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+};
+
 export const metadata = {
   metadataBase: new URL('https://myschoolitaly.com'),
   title: {

@@ -24,8 +24,8 @@ export default function IgsGatewayLink({
           <div className={`col-12 col-md-6 gateway-link__image-wrap${imageLeft ? '' : ' push-md-6'} link-images`}>
             <div className="images slick-wrapper slick-initialized slick-slider">
               <div className="slick-list draggable">
-                <div className="slick-track" style={{ opacity: 1, width: 977 }}>
-                  <div className="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style={{ width: 977, position: 'relative', left: 0, top: 0, zIndex: 999, opacity: 1 }}>
+                <div className="slick-track" style={{ opacity: 1, width: '100%' }}>
+                  <div className="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style={{ width: '100%', position: 'relative', left: 0, top: 0, zIndex: 999, opacity: 1 }}>
                     <div>
                       <div className="slide" style={{ width: '100%', display: 'inline-block' }}>
                         <div className={`image-inner image-crop-${imageCrop}`}>

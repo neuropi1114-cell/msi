@@ -13,7 +13,7 @@ export default function IgsFeatureCarousel() {
         </h2>
         <div className="slick-wrapper slick-initialized slick-slider">
           <div className="slick-list draggable">
-            <div className="slick-track" style={{ opacity: 1, width: 6310, transform: 'translate3d(0px, 0px, 0px)' }}>
+            <div className="slick-track" style={{ opacity: 1, width: '100%', transform: 'translate3d(0px, 0px, 0px)' }}>
               {[
                 {
                   title: 'Giving Day',
@@ -56,7 +56,7 @@ export default function IgsFeatureCarousel() {
                   target: '',
                 },
               ].map((item, idx) => (
-                <div key={idx} className="slick-slide slick-active" data-slick-index={idx} aria-hidden={false} style={{ width: 1262, position: 'relative', left: 0, top: 0, zIndex: 999, opacity: 1 }}>
+                <div key={idx} className="slick-slide slick-active" data-slick-index={idx} aria-hidden={false} style={{ width: '100%', position: 'relative', left: 0, top: 0, zIndex: 999, opacity: 1 }}>
                   <div>
                     <div className="slide" style={{ width: '100%', display: 'inline-block' }}>
                       <div className="feature">
