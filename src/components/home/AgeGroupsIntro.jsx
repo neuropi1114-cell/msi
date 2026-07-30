@@ -41,9 +41,9 @@ const AgeGroupsIntro = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: '#369bd0' }}>
             Age Groups (45 Days To 7 Years)
           </h2>
-            <h3 className="text-xl md:text-2xl font-semibold mb-6" style={{ color: '#e4984d' }}>
+            <h2 >
             Customised Teaching To Maximise Learning At Every Age Group
-            </h3>
+            </h2>
           <p className="text-gray-600 text-lg leading-relaxed">
             To maximise your child's growth, My School ITALY has a different approach designed specifically for each stage of early development. Read below to see how at each stage, your child will receive personalised teaching, developing the optimal skills for their current age.
           </p>
@@ -182,7 +182,7 @@ const AgeGroupsIntro = () => {
             <span className="inline-block px-4 py-1 text-sm font-semibold mb-4" style={{ color: '#369bd0' }}>
               Preschool (3-7 Years)
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center" style={{ color: '#e4984d' }}>
+            <h2 >
               Growing In Confidence
             </h2>
             <p className="text-gray-600 mb-8 leading-relaxed text-justify">
