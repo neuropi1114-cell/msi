@@ -1,4 +1,4 @@
-import { Lato } from 'next/font/google';
+import { Lato, Fredoka } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/react';
 import Script from 'next/script';
 import './globals.css';
@@ -12,6 +12,11 @@ const lato = Lato({
   variable: '--font-lato',
 });
 
+const fredoka = Fredoka({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-fredoka',
+});
 
 export const metadata = {
   metadataBase: new URL('https://myschoolitaly.com'),
@@ -52,7 +57,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${lato.variable}`}>
+    <html lang="en" suppressHydrationWarning className={`${lato.variable} ${fredoka.variable}`}>
       <head>
         <link rel="preload" as="image" href="/images/hero/Slider_1-scaled.jpg.bv.webp" fetchPriority="high" />
         <link rel="manifest" href="/manifest.json" />
