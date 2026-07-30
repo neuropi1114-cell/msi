@@ -1,4 +1,4 @@
-import { Lato, Fredoka } from 'next/font/google';
+import { Lato, Fredoka, Schoolbell } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/react';
 import Script from 'next/script';
 import './globals.css';
@@ -16,6 +16,13 @@ const fredoka = Fredoka({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-fredoka',
+});
+
+const schoolbell = Schoolbell({
+  subsets: ['latin'],
+  weight: '400',
+  display: 'swap',
+  variable: '--font-schoolbell',
 });
 
 export const metadata = {
