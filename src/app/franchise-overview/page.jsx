@@ -37,6 +37,7 @@ export default function FranchiseOverviewPage() {
       <Header />
       <main>
         <FranchiseHero />
+        <div data-nav-sentinel />
         <FranchiseForm />
         <LowInvestment />
         <ImageCarousel />

@@ -44,6 +44,7 @@ export default function BlogPost3Page() {
             <p className="text-white/70 mt-4 text-sm">September 19, 2025</p>
           </div>
         </section>
+        <div data-nav-sentinel />
 
         <section className="py-12 md:py-16">
           <div className="container mx-auto px-4 md:px-12 max-w-4xl">

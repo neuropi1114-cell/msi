@@ -104,6 +104,7 @@ export default function AdvisoryBoardPage() {
             </p>
           </div>
         </section>
+        <div data-nav-sentinel />
 
         {/* Advisory Members */}
         <section className="bg-[#f7f9fc] py-20">

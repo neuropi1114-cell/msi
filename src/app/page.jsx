@@ -24,6 +24,7 @@ export default function HomePage() {
       <Header />
       <main>
         <Hero />
+        <div data-nav-sentinel />
         <BelieveBrilliance />
         <StepIntoADay />
         <Solutions />

@@ -47,6 +47,7 @@ export default function ProgramsPage() {
           </p>
         </div>
       </section>
+      <div data-nav-sentinel />
       <BrighterFuture />
       <NeuroPiApproach />
       <Activities />

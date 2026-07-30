@@ -116,6 +116,7 @@ export default function CiaoBabyPage() {
             </p>
           </div>
         </section>
+        <div data-nav-sentinel />
 
         {/* Birth to 3 Months */}
         <section className="py-16 bg-gradient-to-br from-pink-50 to-orange-50">

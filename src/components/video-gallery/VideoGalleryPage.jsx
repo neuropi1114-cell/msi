@@ -237,6 +237,7 @@ export default function VideoGalleryPage() {
           </motion.p>
         </div>
       </section>
+      <div data-nav-sentinel />
 
       <OurSchoolsSection onPlay={setActiveVideo} />
       <EventsSection onPlay={setActiveVideo} />

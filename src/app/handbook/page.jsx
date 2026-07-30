@@ -49,6 +49,7 @@ export default function HandbookPage() {
             </h1>
           </div>
         </section>
+        <div data-nav-sentinel />
 
         <section className="py-12 bg-white">
           <div className="container mx-auto px-4 md:px-12 text-center">

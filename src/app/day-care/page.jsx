@@ -34,6 +34,7 @@ export default function DayCarePage() {
       <Header />
       <main>
         <CloudHeader image="/images/day-care/hero.jpg" />
+        <div data-nav-sentinel />
 
         {/* Play, learn and grow with My School ITALY */}
         <section className="py-20 bg-white">

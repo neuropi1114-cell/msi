@@ -67,6 +67,7 @@ export default function MediaCoveragePage() {
           </motion.p>
         </div>
       </section>
+      <div data-nav-sentinel />
 
       {/* Press Images Grid */}
       <section className="py-20 bg-white">

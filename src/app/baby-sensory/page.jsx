@@ -49,6 +49,7 @@ export default function BabySensoryPage() {
             <h1 className="text-5xl md:text-7xl font-bold text-center">Baby Sensory</h1>
           </div>
         </section>
+        <div data-nav-sentinel />
 
         {/* Welcome + Why unique */}
         <motion.section
