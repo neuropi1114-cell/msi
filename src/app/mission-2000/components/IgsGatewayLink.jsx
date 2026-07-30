@@ -12,11 +12,13 @@ export default function IgsGatewayLink({
   linkText,
   hasBindingFabric,
   linkTarget,
+  bgImage,
 }) {
   const imageLeft = imagePosition === 'left';
   return (
-    <div className={`section gateway-link theme-${theme} image-${imagePosition} fade-in`}>
-      <div className="section-wrapper wrapper container">
+    <div className={`section gateway-link theme-${theme} image-${imagePosition} fade-in`} style={bgImage ? { backgroundImage: `url(${bgImage})`, backgroundSize: 'cover', backgroundPosition: 'center', position: 'relative' } : {}}>
+      {bgImage && <div style={{ position: 'absolute', inset: 0, background: theme === 'orange' ? 'rgba(255, 105, 0, 0.7)' : theme === 'orange_pastel' ? 'rgba(255, 200, 140, 0.7)' : 'rgba(0,0,0,0.5)', zIndex: 1 }}></div>}
+      <div className="section-wrapper wrapper container" style={bgImage ? { position: 'relative', zIndex: 2 } : {}}>
         {hasBindingFabric && <span className="binding-fabric" aria-hidden></span>}
         <div className="row gateway-link__row">
           <div className={`col-12 col-md-6 gateway-link__image-wrap${imageLeft ? '' : ' push-md-6'} link-images`}>

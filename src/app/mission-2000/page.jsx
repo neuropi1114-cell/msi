@@ -50,6 +50,7 @@ export default function Mission2000Page() {
             linkHref="https://www.igssyd.nsw.edu.au/enrolment/scholarships/"
             linkText="Find out more"
             hasBindingFabric={true}
+            bgImage="/mission2000/assets/bg_ts.png"
           />
           <IgsGatewayLink
             variant="principal"
@@ -66,6 +67,9 @@ export default function Mission2000Page() {
             hasBindingFabric={true}
           />
           <IgsFeaturedNews />
+          <div style={{ backgroundImage: 'url(/mission2000/assets/bg_ts.png)', backgroundSize: 'cover', backgroundPosition: 'center', position: 'relative' }}>
+            <div style={{ position: 'absolute', inset: 0, background: 'rgba(255, 200, 140, 0.7)', zIndex: 1 }}></div>
+            <div style={{ position: 'relative', zIndex: 2 }}>
           <IgsGatewayLink
             variant="virtual-tour"
             theme="orange_pastel"
@@ -75,12 +79,15 @@ export default function Mission2000Page() {
             imageCrop="none"
             heading="Take a Virtual Tour of different parts of our School."
             titleHtml="Virtual Tour"
-            content="<p>Explore our vibrant campuses from wherever you are. Walk through our learning spaces, facilities, creative centres, outdoor areas and more. Experience the unique environment that makes IGS a place of inspiration, diversity and discovery.</p>"
+            content="<p>Explore our vibrant campuses from wherever you are. Walk through our learning spaces, facilities, creative centres, outdoor areas and more. Enjoy the unique environment that makes IGS a place of inspiration, diversity and discovery.</p>"
             linkHref="https://igss.youtour.com.au/#"
             linkText="Take Virtual Tour"
             hasBindingFabric={true}
             linkTarget="_blank"
+            bgImage="/mission2000/assets/bg_ts.png"
           />
+            </div>
+          </div>
         </main>
       </div>
       <IgsDirectory />

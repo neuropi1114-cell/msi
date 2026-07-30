@@ -1,6 +1,8 @@
 export default function IgsFeatureCarousel() {
   return (
-    <div className="section feature-carousel theme-lilac fade-in">
+    <div className="section feature-carousel theme-lilac fade-in" style={{ backgroundImage: 'url(/mission2000/assets/bg_ts.png)', backgroundSize: 'cover', backgroundPosition: 'center', position: 'relative' }}>
+      <div style={{ position: 'absolute', inset: 0, background: 'rgba(227, 163, 255, 0.7)', zIndex: 1 }}></div>
+      <div style={{ position: 'relative', zIndex: 2 }}>
       <span className="binding-fabric" aria-hidden></span>
       <div className="container">
         <h2 className="heading">
@@ -82,6 +84,7 @@ export default function IgsFeatureCarousel() {
           <button className="slick-arrow"><i className="material-icons">chevron_left</i></button>
           <button className="slick-arrow"><i className="material-icons">chevron_right</i></button>
         </div>
+      </div>
       </div>
     </div>
   );

@@ -1,6 +1,8 @@
 export default function IgsIntroduction() {
   return (
-    <div className="section introduction theme-purple fade-in">
+    <div className="section introduction theme-purple fade-in" style={{ backgroundImage: 'url(/mission2000/assets/bg_ts.png)', backgroundSize: 'cover', backgroundPosition: 'center', position: 'relative' }}>
+      <div style={{ position: 'absolute', inset: 0, background: 'rgba(54, 0, 80, 0.7)', zIndex: 1 }}></div>
+      <div style={{ position: 'relative', zIndex: 2 }}>
       <span className="binding-fabric" aria-hidden></span>
       <div className="container">
         <div className="row">
@@ -22,6 +24,7 @@ export default function IgsIntroduction() {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );
