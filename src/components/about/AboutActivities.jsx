@@ -115,7 +115,7 @@ export default function AboutActivities() {
           >
             <img
               src="/images/about/child-man.png"
-              alt=""
+              alt="Child and parent at My School ITALY"
               className="w-full max-w-[383px] h-auto"
               loading="lazy"
             />

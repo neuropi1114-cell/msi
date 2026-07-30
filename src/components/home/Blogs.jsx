@@ -82,7 +82,7 @@ export default function Blogs() {
                 <div className={`relative overflow-hidden ${post.fitHeight ? 'h-48' : 'aspect-[4/3]'}`}>
                   <img
                     src={post.image}
-                    alt=""
+                    alt={post.title}
                     className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
                     loading="lazy"
                   />

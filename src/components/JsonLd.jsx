@@ -5,7 +5,7 @@ export default function JsonLd() {
     name: 'My School ITALY',
     description: 'Neuroscience-based preschool & childcare for ages 45 days to 7 years.',
     url: '/',
-    telephone: '+39 123 456 7890',
+    telephone: '+91 7093904680',
     email: 'info@myschoolitaly.com',
     logo: '/favicon.svg',
     image: '/images/hero/Slider_1-scaled.jpg.bv.webp',
@@ -16,9 +16,11 @@ export default function JsonLd() {
     },
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Via Roma 123',
-      addressLocality: 'Rome',
-      addressCountry: 'IT',
+      streetAddress: 'Hitex Road, Madhapur',
+      addressLocality: 'Hyderabad',
+      addressRegion: 'Telangana',
+      postalCode: '500081',
+      addressCountry: 'IN',
     },
     areaServed: [
       { '@type': 'Country', name: 'Italy' },

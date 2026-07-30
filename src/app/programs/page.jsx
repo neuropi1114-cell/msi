@@ -37,6 +37,16 @@ export default function ProgramsPage() {
     <>
       <TopBar />
       <Header />
+      <section className="bg-msi-purple py-24 text-center">
+        <div className="container mx-auto px-4 md:px-12">
+          <h1 className="text-4xl md:text-6xl text-white font-bold mb-4">
+            Programs
+          </h1>
+          <p className="text-white/80 text-lg max-w-2xl mx-auto">
+            Neuroscience-based programs for every stage of early development — from infancy to kindergarten.
+          </p>
+        </div>
+      </section>
       <BrighterFuture />
       <NeuroPiApproach />
       <Activities />

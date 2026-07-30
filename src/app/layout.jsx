@@ -13,7 +13,7 @@ const lato = Lato({
 
 
 export const metadata = {
-  metadataBase: new URL('http://localhost:3000'),
+  metadataBase: new URL('https://myschoolitaly.com'),
   title: {
     default: 'My School ITALY | Neuroscience-Based Preschool & Daycare',
     template: '%s | My School ITALY',
@@ -36,7 +36,7 @@ export const metadata = {
     description: 'Rooted in the science of early brain development, our preschool chain blends neuroscience, play-based learning, and emotional intelligence.',
   },
   icons: {
-    icon: '/favicon.ico',
+    icon: '/favicon.png',
   },
   alternates: {
     canonical: '/',

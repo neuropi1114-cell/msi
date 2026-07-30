@@ -103,7 +103,7 @@ export default function CiaoBabyPage() {
         <section className="relative flex min-h-[300px] items-center justify-center overflow-hidden">
           <img
             src="/images/ciao-baby/birth-to-3-months.jpg"
-            alt=""
+            alt="Ciao Baby program - infant care"
             className="absolute inset-0 w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/20" />
