@@ -4,10 +4,10 @@ import data from '../../data/corporate-partners.json';
 
 const { title: defaultTitle, description: defaultDescription, partners } = data;
 
-export default function CorporatePartners({ title = defaultTitle, description = defaultDescription, reverse = false }) {
+export default function CorporatePartners({ title = defaultTitle, description = defaultDescription, reverse = false, id }) {
   const marqueeClass = reverse ? 'animate-marquee-reverse' : 'animate-marquee';
   return (
-    <section className="py-16 bg-white overflow-hidden border-t border-gray-100">
+    <section id={id} className="py-16 bg-white overflow-hidden border-t border-gray-100">
       <div className="container mx-auto px-4 md:px-12 text-center mb-8">
         <motion.h2 
           initial={{ opacity: 0, y: -20 }}

@@ -1,11 +1,11 @@
 'use client';
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 import { Menu, X, Search } from 'lucide-react';
 const mainLogo = '/images/logo/The-Neuroscientific-European-Childcare-PDF_12-x-4-ft_Backside-1.png.bv_resized_desktop.png.bv.webp';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [expandedSection, setExpandedSection] = useState(null);
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -24,54 +24,28 @@ const Header = () => {
   }, []);
 
   const navLinks = [
-    {
-      name: 'About Us',
-      children: [
-        { name: 'Message from Founder', href: '/about' },
-        { name: 'Our Advisory Board', href: '/advisory-board' },
-        { name: 'Our Story', href: '/about' },
-        {
-          name: 'Our Team',
-          children: [
-            { name: 'MNR Gupta - CEO', href: '#' },
-            { name: 'Maneendra Kumar - Business Head', href: '#' },
-          ],
-        },
-      ],
-    },
-    { name: 'Admissions', href: '/admissions' },
-    { name: 'Blog', href: '/blog' },
-    { name: 'Book Your Tour', href: '/book-your-tour' },
-    { name: 'Contact Us', href: '/contact' },
-    { name: 'Enrol', href: '/admissions' },
-    { name: 'Franchise', href: '/franchise-overview' },
-    { name: 'Handbook', href: '/handbook' },
-    { name: 'Handbook Video', href: '/handbook' },
-    { name: 'Home', href: '/' },
-    { name: 'HR', href: '#' },
-    { name: 'Login', href: '#' },
-    { name: 'Media Coverage', href: '/media-coverage' },
-    { name: 'Our Advisory Board', href: '/advisory-board' },
+    { name: 'Why MSI', href: '/about' },
     { name: 'Programs', href: '/programs' },
-    { name: 'Shop', href: '#' },
-    { name: 'Testimonials', href: '#' },
-    { name: 'The Educational Project', href: '/nep' },
-    { name: 'Video Gallery', href: '/video-gallery' },
-    { name: 'Work With us', href: '#' },
+    { name: 'The NeuroPi Way', href: '/nep' },
+    { name: 'Parents', href: '/handbook' },
+    { name: 'Corporate Childcare', href: '/#corporate-childcare' },
+    { name: 'Login', href: '#' },
   ];
 
   return (
     <header className="sticky top-0 z-40 w-full bg-transparent py-2">
-      <div className="container mx-auto px-4 md:px-12 flex justify-between items-center">
+      <div className="container mx-auto px-4 md:px-12 flex justify-between items-center gap-4">
         <div className="flex items-center">
-          <a href="/" aria-label="Go to homepage">
-            <img src={mainLogo} alt="My School ITALY Logo" width="200" height="50" className="h-12 w-auto" />
-          </a>
+          <Link href="/" aria-label="Go to homepage">
+            <img src={mainLogo} alt="My School ITALY Logo" width="200" height="50" className="h-16 w-auto md:h-20" />
+          </Link>
         </div>
 
         <button
-          className={`transition-colors ${isScrolled ? 'text-[#351c5a]' : 'text-white'}`}
+          className="transition-colors bg-[#e1872b] text-white p-2 rounded hover:bg-[#351c5a]"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+          aria-expanded={isMenuOpen}
         >
           {isMenuOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
         </button>
@@ -111,69 +85,17 @@ const Header = () => {
               </output>
             </div>
           </div>
-          <nav className="px-4 pb-4 flex flex-col gap-1">
-            {navLinks.map((link) =>
-              link.children ? (
-                <div key={link.name}>
-                  <button
-                    className="w-full flex justify-between items-center font-bold text-white px-2 py-2 border-b border-white/20 text-sm uppercase tracking-wide hover:bg-[#351C5A] hover:text-white transition-colors"
-                    onClick={() => setExpandedSection(expandedSection === link.name ? null : link.name)}
-                  >
-                    {link.name}
-                    <span className={`transition-transform duration-200 ${expandedSection === link.name ? 'rotate-90' : ''}`}>{'>'}</span>
-                  </button>
-                  <div className={`overflow-hidden transition-all duration-200 ${expandedSection === link.name ? 'max-h-[500px]' : 'max-h-0'}`}>
-                    <div className="pl-4 flex flex-col">
-                      {link.children.map((child) =>
-                        child.children ? (
-                          <div key={child.name}>
-                            <button
-                              className="w-full flex justify-between items-center text-white/90 px-2 py-1.5 border-b border-white/10 text-xs uppercase tracking-wide hover:bg-[#351C5A] hover:text-white transition-colors"
-                              onClick={() => setExpandedSection(expandedSection === child.name ? null : child.name)}
-                            >
-                              {child.name}
-                              <span className={`transition-transform duration-200 ${expandedSection === child.name ? 'rotate-90' : ''}`}>{'>'}</span>
-                            </button>
-                            <div className={`overflow-hidden transition-all duration-200 ${expandedSection === child.name ? 'max-h-96' : 'max-h-0'}`}>
-                              <div className="pl-4 flex flex-col">
-                                {child.children.map((grandchild) => (
-                                  <a
-                                    key={grandchild.name}
-                                    href={grandchild.href}
-                                    className="text-white/80 px-2 py-1 border-b border-white/10 text-[11px] uppercase tracking-wide hover:bg-[#351C5A] hover:text-white transition-colors"
-                                    onClick={() => setIsMenuOpen(false)}
-                                  >
-                                    {grandchild.name}
-                                  </a>
-                                ))}
-                              </div>
-                            </div>
-                          </div>
-                        ) : (
-                          <a
-                            key={child.name}
-                            href={child.href}
-                            className="text-white/90 px-2 py-1.5 border-b border-white/10 text-xs uppercase tracking-wide hover:bg-[#351C5A] hover:text-white transition-colors"
-                            onClick={() => setIsMenuOpen(false)}
-                          >
-                            {child.name}
-                          </a>
-                        )
-                      )}
-                    </div>
-                  </div>
-                </div>
-              ) : (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  className="font-bold text-white px-2 py-2 border-b border-white/20 text-sm uppercase tracking-wide hover:bg-[#351C5A] hover:text-white transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {link.name}
-                </a>
-              )
-            )}
+          <nav aria-label="Mobile navigation" className="px-4 pb-4 flex flex-col gap-1">
+            {navLinks.map((link) => (
+              <Link
+                key={link.name}
+                href={link.href}
+                className="font-bold text-white px-2 py-2 border-b border-white/20 text-sm uppercase tracking-wide hover:bg-[#351C5A] hover:text-white transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {link.name}
+              </Link>
+            ))}
           </nav>
         </div>
       </div>

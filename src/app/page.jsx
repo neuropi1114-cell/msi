@@ -34,7 +34,7 @@ export default function HomePage() {
         <AgeGroupsIntro data={ageGroups.sections[2]} />
         <Solutions />
         <CorporatePartners title="Working Parents" description="While you build their future, we will care for their childhood." reverse />
-        <CorporatePartners />
+        <CorporatePartners id="corporate-childcare" />
         <VideoShowcase />
         <Awards />
         <FeaturedIn />
