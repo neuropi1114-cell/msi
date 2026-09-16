@@ -29,13 +29,13 @@ export default function HomePage() {
         <BelieveBrilliance />
         <AgeGroupsIntro data={ageGroups.sections[0]} />
 
-        <StepIntoADay />
+        <StepIntoADay title="BETTER UNDERSTANDING AROUND EVERY CHILD" subtitle="Built in to" />
         <AgeGroupsIntro data={ageGroups.sections[1]} />
         <AgeGroupsIntro data={ageGroups.sections[2]} />
         <Solutions key="solutions-1" />
         <CorporatePartners title="Working Parents" description="While you build their future, we will care for their childhood." reverse />
         <CorporatePartners id="corporate-childcare" />
-        <StepIntoADay />
+        <StepIntoADay title="Powered By NeuroPI" subtitle="Built in to" />
 
         <VideoShowcase />
         <Awards />

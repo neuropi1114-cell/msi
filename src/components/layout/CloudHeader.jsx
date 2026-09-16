@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-export default function CloudHeader({ title, subtitle, bgClass = 'bg-[#e1872b]', textClass = 'text-white', image }) {
+export default function CloudHeader({ title, subtitle, bgClass = 'bg-[#d16827]', textClass = 'text-white', image }) {
   return (
     <section className="relative flex min-h-[300px] items-center justify-center overflow-hidden">
       {/* Background: image or color */}

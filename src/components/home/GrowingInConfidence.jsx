@@ -8,7 +8,7 @@ const GrowingInConfidence = ({ growing }) => {
           {growing.span}
         </span>
         <h2>{growing.title}</h2>
-        <p className="text-[#0A1539] mb-8 leading-relaxed text-justify" style={{ color: '#0A1539' }}>
+        <p className="mb-8 leading-relaxed text-justify">
           {growing.description}
         </p>
 
@@ -26,8 +26,7 @@ const GrowingInConfidence = ({ growing }) => {
         <div className="text-center">
           <a
             href={growing.link}
-            className="inline-block px-6 py-3 text-white rounded-full font-semibold hover:opacity-90 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
-            style={{ backgroundColor: '#e4984d' }}
+            className="inline-block px-6 py-3 bg-msi-orange text-white rounded-full font-semibold hover:opacity-90 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
           >
             Read More
           </a>

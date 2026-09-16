@@ -54,10 +54,10 @@ export default function AboutActivities() {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <h2 className="text-3xl md:text-5xl font-bold" style={{ color: '#E1872B' }}>
+          <h2 className="text-3xl md:text-5xl font-bold">
             Activities For Kids
           </h2>
-          <h2 className="text-xl md:text-2xl mt-2" style={{ color: '#1891CD' }}>
+          <h2 className="text-xl md:text-2xl mt-2 text-msi-blue">
             Engagement
           </h2>
         </motion.div>
@@ -91,7 +91,7 @@ export default function AboutActivities() {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="flex items-start gap-4"
               >
-                <div className="w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0 text-white" style={{ backgroundColor: '#E1872B' }}>
+                <div className="w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0 text-white bg-msi-orange">
                   {activity.icon}
                 </div>
                 <div>
@@ -131,7 +131,7 @@ export default function AboutActivities() {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="flex items-start gap-4 flex-row-reverse"
               >
-                <div className="w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0 text-white" style={{ backgroundColor: '#E1872B' }}>
+                <div className="w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0 text-white bg-msi-orange">
                   {activity.icon}
                 </div>
                 <div className="text-right">

@@ -37,7 +37,7 @@ export default function AboutGuidingPrinciples() {
             Our Guiding Principles
           </h2>
           <div className="flex justify-center">
-            <div className="w-16 h-1 rounded-full" style={{ backgroundColor: '#E1872B' }} />
+            <div className="w-16 h-1 rounded-full bg-msi-orange" />
           </div>
         </motion.div>
 

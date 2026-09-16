@@ -29,18 +29,18 @@ const AgeDetail = ({ group, reversed, first }) => {
                   onClick={() => setOpenAccordion(isOpen ? null : i)}
                   className="w-full flex items-center justify-between py-4 text-left cursor-pointer"
                 >
-                  <h2 className="text-2xl md:text-3xl font-bold" style={{ color: '#e4984d' }}>
+                  <h2 className="text-2xl md:text-3xl font-bold">
                     {item.title}
                   </h2>
                   <span
-                    className="text-2xl font-normal leading-none ml-4 transition-transform duration-300"
-                    style={{ color: '#e4984d', transform: isOpen ? 'rotate(45deg)' : 'rotate(0)' }}
+                    className="text-2xl font-normal leading-none ml-4 transition-transform duration-300 text-msi-orange"
+                    style={{ transform: isOpen ? 'rotate(45deg)' : 'rotate(0)' }}
                   >
                     +
                   </span>
                 </button>
                 {isOpen && (
-                  <p className="pb-6 text-[#0A1539] leading-relaxed" style={{ color: '#0A1539' }}>{item.content}</p>
+                  <p className="pb-6 leading-relaxed">{item.content}</p>
                 )}
               </div>
             );
@@ -48,25 +48,24 @@ const AgeDetail = ({ group, reversed, first }) => {
         </div>
       ) : (
         <>
-          <h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: '#e4984d' }}>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">
             {group.title}
           </h2>
-          <p className="text-[#0A1539] mb-6 leading-relaxed" style={{ color: '#0A1539' }}>{group.description}</p>
+          <p className="mb-6 leading-relaxed">{group.description}</p>
         </>
       )}
       {!group.accordion && (group.drawer ? (
         <>
           <button
             onClick={() => setDrawerOpen(true)}
-            className="inline-block px-6 py-3 text-white rounded-full font-semibold hover:opacity-90 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 cursor-pointer"
-            style={{ backgroundColor: '#e4984d' }}
+            className="inline-block px-6 py-3 bg-msi-orange text-white rounded-full font-semibold hover:opacity-90 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 cursor-pointer"
           >
             Read More
           </button>
           <Drawer open={drawerOpen} onClose={() => setDrawerOpen(false)} title={group.drawer.title} side="left">
             <div className="space-y-4">
               {group.drawer.paragraphs.map((paragraph, i) => (
-                <p key={i} className="text-[#0A1539] leading-relaxed" style={{ color: '#0A1539' }}>
+                <p key={i} className="leading-relaxed">
                   {paragraph}
                 </p>
               ))}
@@ -76,8 +75,7 @@ const AgeDetail = ({ group, reversed, first }) => {
       ) : (
         <a
           href={group.link}
-          className="inline-block px-6 py-3 text-white rounded-full font-semibold hover:opacity-90 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
-          style={{ backgroundColor: '#e4984d' }}
+          className="inline-block px-6 py-3 bg-msi-orange text-white rounded-full font-semibold hover:opacity-90 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
         >
           Read More
         </a>
@@ -130,11 +128,11 @@ const AgeGroupsIntro = ({ data }) => {
             transition={{ duration: 0.6 }}
             className="text-center max-w-4xl mx-auto mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: '#369bd0' }}>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-msi-blue">
               {data.header.title}
             </h2>
             <h2>{data.header.subtitle}</h2>
-            <p className="text-[#0A1539] text-lg leading-relaxed" style={{ color: '#0A1539' }}>{data.header.description}</p>
+            <p className="text-lg leading-relaxed">{data.header.description}</p>
           </motion.div>
         )}
 

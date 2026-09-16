@@ -39,7 +39,7 @@ export default function GrowingInConfidencePage() {
         <section className="py-16 bg-[#f7f9fc]">
           <div className="container mx-auto px-4 md:px-12">
             <div className="text-center max-w-4xl mx-auto mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: '#369bd0' }}>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-msi-blue">
                 What Parents Say
               </h2>
               <p className="text-gray-600 text-lg">
@@ -68,7 +68,7 @@ export default function GrowingInConfidencePage() {
                 <div key={index} className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow">
                   <div className="mb-4">
                     {[...Array(5)].map((_, i) => (
-                      <svg key={i} className="w-5 h-5 inline" style={{ color: '#e4984d' }} viewBox="0 0 576 512" fill="currentColor">
+                      <svg key={i} className="w-5 h-5 inline text-msi-orange" viewBox="0 0 576 512" fill="currentColor">
                         <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z" />
                       </svg>
                     ))}
@@ -77,7 +77,7 @@ export default function GrowingInConfidencePage() {
                     &ldquo;{testimonial.quote}&rdquo;
                   </p>
                   <div className="border-t pt-4">
-                    <p className="font-bold" style={{ color: '#e4984d' }}>{testimonial.name}</p>
+                    <p className="font-bold text-msi-orange">{testimonial.name}</p>
                     <p className="text-gray-500 text-sm">{testimonial.role}</p>
                   </div>
                 </div>

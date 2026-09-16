@@ -153,7 +153,7 @@ export default function EducationalProjectPage() {
               <div className="w-full md:w-[21.048%] flex items-center justify-center mb-6 md:mb-0" style={{ margin: '0 16px' }}>
                 <div className="w-full">
                   <div className="md:hidden border-t border-gray-300 my-3"></div>
-                  <div style={{ backgroundColor: '#E1872B', padding: '19px', borderRadius: '40px', textAlign: 'center' }}>
+                  <div style={{ backgroundColor: '#d16827', padding: '19px', borderRadius: '40px', textAlign: 'center' }}>
                     <div className="font-lato text-[100px] font-semibold text-white leading-none">15</div>
                     <div className="font-lato text-[30px] font-semibold text-white">Million</div>
                   </div>
@@ -215,7 +215,7 @@ export default function EducationalProjectPage() {
               </div>
               <div>
                 <div className="mb-10" style={{ marginTop: '60px', paddingRight: '200px' }}>
-                  <h2 className="font-lato text-[45px] font-bold uppercase leading-[45px] text-[#E1872B]">WHAT IS THE NEUROPI APPROACH?</h2>
+                  <h2 className="font-lato text-[45px] font-bold uppercase leading-[45px] text-[#d16827]">WHAT IS THE NEUROPI APPROACH?</h2>
                 </div>
                 <div className="rounded-[10px] overflow-hidden mb-6 relative aspect-[4/3] w-full">
                   <Image
@@ -227,7 +227,7 @@ export default function EducationalProjectPage() {
                 </div>
                 <div className="w-full md:max-w-[88%]">
                   <p className="font-lato text-[18px] text-[#464646] text-justify leading-relaxed mb-4">
-                    <span style={{ color: '#1891cd' }}><em><strong>We focus on five pillars of whole-child growth:</strong></em></span>
+                    <span className="text-msi-blue"><em><strong>We focus on five pillars of whole-child growth:</strong></em></span>
                   </p>
                   <div className="font-lato text-[18px] text-[#464646] text-justify leading-relaxed space-y-2">
                     <p><strong>Brain-Based Learning</strong> &ndash; Each activity is designed to build focus, memory, and creative thinking.</p>
@@ -246,7 +246,7 @@ export default function EducationalProjectPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-12">
               <div style={{ marginRight: '30px' }}>
                 <div className="mb-10" style={{ marginTop: '60px', paddingRight: '100px' }}>
-                  <h2 className="font-lato text-[45px] font-bold uppercase leading-[45px] text-[#E1872B]">LEARNING THE NEUROPI WAY</h2>
+                  <h2 className="font-lato text-[45px] font-bold uppercase leading-[45px] text-[#d16827]">LEARNING THE NEUROPI WAY</h2>
                 </div>
                 <div className="font-lato text-[18px] text-[#464646] text-justify leading-relaxed space-y-3">
                   <p><strong>1. Think Smart</strong> &ndash; Cognitive curiosity through discovery learning</p>
@@ -254,9 +254,9 @@ export default function EducationalProjectPage() {
                   <p><strong>3. Move Freely</strong> &ndash; Mind-body connection through rhythm &amp; movement</p>
                   <p><strong>4. Create Boldly</strong> &ndash; Imagination through art and storytelling</p>
                   <p><strong>5. Grow Calmly</strong> &ndash; Mindfulness and self-regulation woven into each day</p>
-                  <p style={{ color: '#1891cd' }} className="font-semibold italic pt-4">My School ITALY &ndash; <em>Where Little Minds Grow with Science &amp; Soul.</em></p>
+                  <p className="text-msi-blue font-semibold italic pt-4">My School ITALY &ndash; <em>Where Little Minds Grow with Science &amp; Soul.</em></p>
                   <p>Every child&apos;s brain is a world of wonder. Here, we blend neuroscience, play, and empathy to nurture calm, confident, and connected learners.</p>
-                  <p style={{ color: '#1891cd' }} className="font-semibold italic"><em>Parent say</em></p>
+                  <p className="text-msi-blue font-semibold italic"><em>Parent say</em></p>
                   <p className="italic">&ldquo;My child comes home peaceful, curious, and full of stories &ndash; NeuroPi feels like family. The perfect blend of heart and science.&rdquo;</p>
                 </div>
               </div>
@@ -277,7 +277,7 @@ export default function EducationalProjectPage() {
         {/* Section 7: Recent News */}
         <section className="relative" style={{ backgroundColor: '#FCF9F4', padding: '130px 0 60px 0' }}>
           <div className="container mx-auto px-4 md:px-12 relative z-10" style={{ maxWidth: '1200px', minHeight: '400px' }}>
-            <h2 className="font-lato text-[45px] font-bold uppercase text-center text-[#E1872B] mb-2">Recent News</h2>
+            <h2 className="font-lato text-[45px] font-bold uppercase text-center text-[#d16827] mb-2">Recent News</h2>
             <p className="font-lato text-[18px] text-[#464646] text-center mb-12">What&apos;s Going on in our Blog?</p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8" style={{ gridColumnGap: '30px', gridRowGap: '35px' }}>
               {blogPosts.map((post, i) => (
@@ -286,7 +286,7 @@ export default function EducationalProjectPage() {
                       <Image src={post.image} alt={post.title} fill className="object-cover" />
                   </a>
                   <div className="p-6">
-                    <span className="inline-block font-lato text-[12px] font-medium text-white px-3 py-1 rounded-full mb-3" style={{ backgroundColor: '#E1872B', margin: '20px' }}>{post.category}</span>
+                    <span className="inline-block font-lato text-[12px] font-medium text-white px-3 py-1 rounded-full mb-3" style={{ backgroundColor: '#d16827', margin: '20px' }}>{post.category}</span>
                     <h3 className="font-lato text-[21px] font-bold uppercase leading-[30px] text-[#464646] mb-2 px-6">
                       <a href={post.link} className="hover:text-[#159ED9] transition-colors">{post.title}</a>
                     </h3>
@@ -300,7 +300,7 @@ export default function EducationalProjectPage() {
               <a
                 href="/blog/"
                 className="inline-block font-lato text-[18px] font-normal text-white transition-colors"
-                style={{ backgroundColor: '#E1872B', padding: '20px 30px', borderRadius: '12px 0 12px 0' }}
+                style={{ backgroundColor: '#d16827', padding: '20px 30px', borderRadius: '12px 0 12px 0' }}
               >
                 Read More
               </a>

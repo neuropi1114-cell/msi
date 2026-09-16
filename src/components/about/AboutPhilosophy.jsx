@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export default function AboutPhilosophy() {
   return (
-    <section className="py-20" style={{ backgroundColor: '#f7f9fc' }}>
+    <section className="py-20 bg-[#f7f9fc]">
       <div className="container mx-auto px-4 md:px-12">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <motion.div
@@ -30,7 +30,7 @@ export default function AboutPhilosophy() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="lg:w-1/2"
           >
-            <h2 className="text-3xl md:text-5xl  font-bold mb-6" style={{ color: '#E1872B' }}>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">
               Our Philosophy
             </h2>
             <div className="space-y-4 text-gray-700 text-lg leading-relaxed">

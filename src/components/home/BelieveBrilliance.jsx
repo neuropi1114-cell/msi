@@ -38,33 +38,29 @@ const BelieveBrilliance = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h3 className="italic text-[#369bd0] text-xl md:text-2xl mb-2 tracking-wide">
+            <h3>
               From 45 Days to 8 Years
             </h3>
-            <h2 className="font-linotte text-display-md md:text-display-lg text-[#e4984d] mb-6 leading-tight">
+            <h2 className="font-linotte text-display-md md:text-display-lg mb-6 leading-tight">
               EVERY CHILD IS DIFFERENT.
               <br />
               THEIR EARLY YEARS SHOULD UNDERSTAND THAT.
             </h2>
-            <p className="font-linotte text-[#0A1539] text-lg mb-6 leading-relaxed" style={{ color: '#0A1539' }}>
+            <p className="font-linotte text-lg mb-6 leading-relaxed">
               A nurturing early childhood ecosystem where learning, care, development,
               movement, nutrition and emotional wellbeing come together around the individual
               child.
             </p>
 
-
-
-
-
             <div className="flex flex-wrap gap-6">
-              <a href="/book-your-tour" className="group inline-flex items-center gap-2 text-[#0A1539] font-medium text-lg border-b-2 border-[#e4984d] pb-1 hover:border-[#e4984d]/80 transition-colors" style={{ color: '#0A1539' }}>
-                BOOK A SCHOOL TOUR
+              <a href="/book-your-tour" className="group inline-flex items-center gap-2 font-medium text-lg text-msi-yellow transition-colors">
+                <span className="border-b-2 border-msi-yellow pb-1 group-hover:border-msi-yellow/80">BOOK A SCHOOL TOUR</span>
                 <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </a>
-              <a href="/contact" className="group inline-flex items-center gap-2 text-[#0A1539] font-medium text-lg border-b-2 border-[#e4984d] pb-1 hover:border-[#e4984d]/80 transition-colors" style={{ color: '#0A1539' }}>
-                FIND A CENTRE
+              <a href="/contact" className="group inline-flex items-center gap-2 font-medium text-lg text-msi-green transition-colors">
+                <span className="border-b-2 border-msi-green pb-1 group-hover:border-msi-green/80">FIND A CENTRE</span>
                 <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>

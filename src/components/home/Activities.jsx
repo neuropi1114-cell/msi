@@ -51,14 +51,14 @@ export default function Activities() {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <p className="text-lg md:text-xl" style={{ color: '#1891CD' }}>Activities For Kids</p>
-          <h2 className="text-4xl md:text-5xl font-bold mt-2" style={{ color: '#E1872B' }}>Engagement</h2>
-          <p className="max-w-4xl mx-auto mt-6 text-[#0A1539] text-sm md:text-base leading-relaxed" style={{ color: '#0A1539' }}>
+          <p className="text-lg md:text-xl text-msi-blue">Activities For Kids</p>
+          <h2 className="text-4xl md:text-5xl font-bold mt-2">Engagement</h2>
+          <p className="max-w-4xl mx-auto mt-6 text-sm md:text-base leading-relaxed">
             Every activity is designed to nurture brain development, emotional balance, and social bonding, while keeping learning joyful and meaningful. Every giggle grows a brain cell. Every day builds confidence. The child gradually learns his own identity, learns to relate to peers, with the educator, with father and mother and the adult figures outside their family life.
           </p>
           <div className="flex items-center justify-center gap-2 my-8">
             <span className="block w-16 h-px bg-gray-300" />
-            <span className="block w-2 h-2 rounded-full" style={{ backgroundColor: '#E1872B' }} />
+            <span className="block w-2 h-2 rounded-full bg-msi-orange" />
             <span className="block w-16 h-px bg-gray-300" />
           </div>
         </motion.div>
@@ -74,12 +74,12 @@ export default function Activities() {
                 transition={{ duration: 0.5, delay: i * 0.2 }}
                 className="flex items-start gap-4"
               >
-                <span className="min-w-[56px] h-14 rounded-full flex items-center justify-center text-white" style={{ backgroundColor: '#E1872B' }}>
+                <span className="min-w-[56px] h-14 rounded-full flex items-center justify-center text-white bg-msi-orange">
                   {a.icon}
                 </span>
                 <div>
                   <h3>{a.title}</h3>
-                  <p className="text-[#0A1539] text-sm mt-1 leading-relaxed" style={{ color: '#0A1539' }}>{a.desc}</p>
+                  <p className="text-sm mt-1 leading-relaxed">{a.desc}</p>
                 </div>
               </motion.div>
             ))}
@@ -110,12 +110,12 @@ export default function Activities() {
                 transition={{ duration: 0.5, delay: i * 0.2 }}
                 className="flex items-start gap-4 lg:flex-row-reverse text-right lg:text-left"
               >
-                <span className="min-w-[56px] h-14 rounded-full flex items-center justify-center text-white" style={{ backgroundColor: '#E1872B' }}>
+                <span className="min-w-[56px] h-14 rounded-full flex items-center justify-center text-white bg-msi-orange">
                   {a.icon}
                 </span>
                 <div>
                   <h3>{a.title}</h3>
-                  <p className="text-[#0A1539] text-sm mt-1 leading-relaxed" style={{ color: '#0A1539' }}>{a.desc}</p>
+                  <p className="text-sm mt-1 leading-relaxed">{a.desc}</p>
                 </div>
               </motion.div>
             ))}

@@ -30,7 +30,7 @@ export default function SeoContent() {
           <h2 id="programs-heading" className="text-4xl md:text-5xl  text-msi-purple font-bold mb-4">
             A Neuroscience-Based Approach to Early Childhood Education
           </h2>
-          <p className="text-[#0A1539] text-lg max-w-3xl mx-auto leading-relaxed" style={{ color: '#0A1539' }}>
+          <p className="text-lg max-w-3xl mx-auto leading-relaxed">
             At My School ITALY, we blend cutting-edge brain science with the warmth of Italian-inspired education to nurture confident, curious, and compassionate children. Here is how our unique method prepares your child for a bright future.
           </p>
         </div>
@@ -44,7 +44,7 @@ export default function SeoContent() {
                   <Icon className="w-7 h-7 text-msi-purple" />
                 </div>
                 <h3 className="text-xl font-bold text-msi-purple mb-4">{program.title}</h3>
-                <p className="text-[#0A1539] leading-relaxed" style={{ color: '#0A1539' }}>{program.description}</p>
+                <p className="leading-relaxed">{program.description}</p>
               </article>
             );
           })}

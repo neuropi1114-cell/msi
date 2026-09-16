@@ -30,19 +30,19 @@
           }
         },
         {
-          "ageRange": "Everything a Child Needs",
+          "ageRange": "Everything A Child Needs",
           "title": "WHAT IF A PRESCHOOL COULD NOTICE MORE?",
           "image": "/images/age-groups/mini-maestros.webp",
           "alt": "Mini Maestros",
           "link": "/baby-sensory/",
           "reversed": true,
-          "description": "Not only what your child knows. But... What makes them curious. How they approach something new. What keeps them engaged.",
+          "description": "Not only what your child knows. But... What makes them curious? How they approach something new? What keeps them engaged?",
           "drawer": {
             "title": "WHAT IF A PRESCHOOL COULD NOTICE MORE?",
             "paragraphs": [
               "Not only what your child knows.",
               "But...",
-              "What makes them curious.",
+              "What makes them curious?",
               "How they approach something new.",
               "What keeps them engaged.",
               "How they respond when something is difficult.",
@@ -143,24 +143,72 @@
         "description": "Our philosophy, our people, our commitment and our resources are all focused on helping us to give the children an excellent start in life, exposing them to gymnastics and robotics along with academics.",
         "link": "/growing-in-confidence/",
         "features": [
-          { "icon": "/images/growing-in-confidence/mortarboard.png", "title": "Awesome Careers" },
-          { "icon": "/images/growing-in-confidence/education.png", "title": "Global Certificate" },
-          { "icon": "/images/growing-in-confidence/atom.png", "title": "Best Program" },
-          { "icon": "/images/growing-in-confidence/school-bag.png", "title": "Child Support" }
+          {
+            "icon": "/images/growing-in-confidence/mortarboard.png",
+            "title": "Awesome Careers"
+          },
+          {
+            "icon": "/images/growing-in-confidence/education.png",
+            "title": "Global Certificate"
+          },
+          {
+            "icon": "/images/growing-in-confidence/atom.png",
+            "title": "Best Program"
+          },
+          {
+            "icon": "/images/growing-in-confidence/school-bag.png",
+            "title": "Child Support"
+          }
         ],
         "images": [
-          { "src": "/images/growing-in-confidence/img-01.png", "alt": "Child playing with building blocks" },
-          { "src": "/images/growing-in-confidence/img-02.png", "alt": "Child painting and exploring colors" },
-          { "src": "/images/growing-in-confidence/img-03.png", "alt": "Children reading books together" },
-          { "src": "/images/growing-in-confidence/img-04.png", "alt": "Child solving puzzles" },
-          { "src": "/images/growing-in-confidence/img-05.png", "alt": "Children playing outdoors" },
-          { "src": "/images/growing-in-confidence/img-06.png", "alt": "Child engaged in sensory play" },
-          { "src": "/images/growing-in-confidence/img-07.png", "alt": "Children in classroom activity" },
-          { "src": "/images/growing-in-confidence/img-08.png", "alt": "Child learning with educational toys" },
-          { "src": "/images/growing-in-confidence/img-09.png", "alt": "Children collaborating on a project" },
-          { "src": "/images/growing-in-confidence/img-10.png", "alt": "Child practicing motor skills" },
-          { "src": "/images/growing-in-confidence/img-11.png", "alt": "Children during music and movement" },
-          { "src": "/images/growing-in-confidence/img-12.png", "alt": "Child exploring nature and outdoors" }
+          {
+            "src": "/images/growing-in-confidence/img-01.png",
+            "alt": "Child playing with building blocks"
+          },
+          {
+            "src": "/images/growing-in-confidence/img-02.png",
+            "alt": "Child painting and exploring colors"
+          },
+          {
+            "src": "/images/growing-in-confidence/img-03.png",
+            "alt": "Children reading books together"
+          },
+          {
+            "src": "/images/growing-in-confidence/img-04.png",
+            "alt": "Child solving puzzles"
+          },
+          {
+            "src": "/images/growing-in-confidence/img-05.png",
+            "alt": "Children playing outdoors"
+          },
+          {
+            "src": "/images/growing-in-confidence/img-06.png",
+            "alt": "Child engaged in sensory play"
+          },
+          {
+            "src": "/images/growing-in-confidence/img-07.png",
+            "alt": "Children in classroom activity"
+          },
+          {
+            "src": "/images/growing-in-confidence/img-08.png",
+            "alt": "Child learning with educational toys"
+          },
+          {
+            "src": "/images/growing-in-confidence/img-09.png",
+            "alt": "Children collaborating on a project"
+          },
+          {
+            "src": "/images/growing-in-confidence/img-10.png",
+            "alt": "Child practicing motor skills"
+          },
+          {
+            "src": "/images/growing-in-confidence/img-11.png",
+            "alt": "Children during music and movement"
+          },
+          {
+            "src": "/images/growing-in-confidence/img-12.png",
+            "alt": "Child exploring nature and outdoors"
+          }
         ]
       }
     }

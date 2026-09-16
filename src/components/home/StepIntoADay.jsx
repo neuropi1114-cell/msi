@@ -1,7 +1,9 @@
 import React from 'react';
 
 const StepIntoADay = ({
-  rightImage = "/images/stepintoaday/BETTER UNDERSTANDING AROUND EVERY CHILD.png",
+  title = "BETTER UNDERSTANDING AROUND EVERY CHILD",
+  subtitle = "Built in to",
+  rightImage,
   altText = "Better Understanding Around Every Child"
 }) => {
   return (
@@ -19,16 +21,29 @@ const StepIntoADay = ({
         </div>
 
         <div className="lg:pl-10">
-          <img
-            src={rightImage}
-            alt={altText}
-            className="w-full mb-8"
-            loading="lazy"
-          />
-          <p className="text-[#0A1539] text-lg mb-6 leading-relaxed" style={{ color: '#0A1539' }}>
+          {title ? (
+            <div className="mb-8">
+              {subtitle && (
+                <h3 className="font-schoolbell text-2xl md:text-3xl text-[#1891cd] font-normal mb-1">
+                  {subtitle}
+                </h3>
+              )}
+              <h3 className="font-linotte text-3xl md:text-4xl text-[#d16827] font-bold leading-tight uppercase">
+                {title}
+              </h3>
+            </div>
+          ) : rightImage ? (
+            <img
+              src={rightImage}
+              alt={altText}
+              className="w-full mb-8"
+              loading="lazy"
+            />
+          ) : null}
+          <p className="text-lg mb-6 leading-relaxed">
             Children don't develop only while sitting at a table.
           </p>
-          <ul className="text-[#0A1539] text-lg mb-10 leading-relaxed space-y-2 list-disc list-inside" style={{ color: '#0A1539' }}>
+          <ul className="text-lg mb-10 leading-relaxed space-y-2 list-disc list-inside">
             <li>A story develops language and imagination.</li>
             <li>A puzzle can develop persistence.</li>
             <li>Gymnastics can develop coordination and confidence.</li>
@@ -41,7 +56,7 @@ const StepIntoADay = ({
             <li>Movement matters.</li>
             <li>Relationships matter.</li>
           </ul>
-          <p className="font-bold text-[#0A1539] text-lg mb-10 leading-relaxed" style={{ color: '#0A1539' }}>
+          <p className="font-bold text-lg mb-10 leading-relaxed">
             At MSI, the whole day is part of childhood.
           </p>
           <a

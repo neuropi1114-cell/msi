@@ -17,8 +17,7 @@ export default function BrighterFuture() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="w-full max-w-[49%] text-left rounded-t-[10px] p-[50px]"
-          style={{ backgroundColor: '#E1872B91' }}
+          className="w-full max-w-[49%] text-left rounded-t-[10px] p-[50px] bg-msi-orange/90"
         >
           <h3
             className="text-white uppercase font-bold mb-4 leading-tight"

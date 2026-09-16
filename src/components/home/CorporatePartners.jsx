@@ -22,8 +22,7 @@ export default function CorporatePartners({ title = defaultTitle, description = 
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
-          className="text-[#0A1539] max-w-2xl mx-auto"
-          style={{ color: '#0A1539' }}
+          className="max-w-2xl mx-auto"
         >
           {description}
         </motion.p>
@@ -39,7 +38,7 @@ export default function CorporatePartners({ title = defaultTitle, description = 
                 alt={partner.alt} 
                 className="max-w-full max-h-full object-contain transition-all duration-300"
                 loading="lazy"
-                onError={(e) => { e.target.src = '/images/logo/logo.png.bv.webp'; }}
+                onError={(e) => { e.target.onerror = null; e.target.src = '/images/logo/logo.png.bv.webp'; }}
               />
             </div>
           ))}
@@ -52,7 +51,7 @@ export default function CorporatePartners({ title = defaultTitle, description = 
                 alt="" 
                 className="max-w-full max-h-full object-contain transition-all duration-300"
                 loading="lazy"
-                onError={(e) => { e.target.src = '/images/logo/logo.png.bv.webp'; }}
+                onError={(e) => { e.target.onerror = null; e.target.src = '/images/logo/logo.png.bv.webp'; }}
               />
             </div>
           ))}

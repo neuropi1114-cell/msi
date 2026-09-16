@@ -62,8 +62,7 @@ export default function Blogs() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="text-[#0A1539] font-medium"
-            style={{ color: '#0A1539' }}
+            className="font-medium"
           >
             What&rsquo;s Going on in our Blog?
           </motion.p>
@@ -90,17 +89,17 @@ export default function Blogs() {
                 </div>
               </a>
               <div className="px-5 pt-5 pb-4 flex flex-col flex-grow">
-                <span className="inline-block bg-[#e1872b] text-white text-xs font-bold px-3 py-1 rounded-full uppercase mb-3 self-start">
+                <span className="inline-block bg-[#d16827] text-white text-xs font-bold px-3 py-1 rounded-full uppercase mb-3 self-start">
                   {post.badge}
                 </span>
                 <h3 className="font-bold text-gray-800 text-base mb-3 leading-snug">
-                  <a href={post.link} className="hover:text-[#e1872b] transition-colors">
+                  <a href={post.link} className="hover:text-[#d16827] transition-colors">
                     {post.title}
                   </a>
                 </h3>
                 <a
                   href={post.link}
-                  className="text-[#e1872b] font-semibold text-sm hover:text-[#c4701f] transition-colors mt-auto inline-flex items-center gap-1"
+                  className="text-[#d16827] font-semibold text-sm hover:text-[#b0521d] transition-colors mt-auto inline-flex items-center gap-1"
                 >
                   Read More <span aria-hidden="true">&raquo;</span>
                 </a>
@@ -117,7 +116,7 @@ export default function Blogs() {
         >
           <a
             href="/blog/"
-            className="inline-block bg-[#e1872b] hover:bg-[#c4701f] text-white font-bold py-3 px-10 rounded-full shadow-lg transform hover:-translate-y-1 transition-all"
+            className="inline-block bg-[#d16827] hover:bg-[#b0521d] text-white font-bold py-3 px-10 rounded-full shadow-lg transform hover:-translate-y-1 transition-all"
           >
             Read More
           </a>

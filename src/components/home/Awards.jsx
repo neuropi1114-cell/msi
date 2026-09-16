@@ -38,7 +38,7 @@ export default function Awards() {
                       alt={award.alt} 
                       className="max-w-full max-h-full object-contain transition-all duration-300" 
                       loading="lazy"
-                      onError={(e) => { e.target.src = '/images/logo/logo.png.bv.webp'; }}
+                      onError={(e) => { e.target.onerror = null; e.target.src = '/images/logo/logo.png.bv.webp'; }}
                     />
                   </div>
                 ))}
@@ -51,7 +51,7 @@ export default function Awards() {
                       alt="" 
                       className="max-w-full max-h-full object-contain transition-all duration-300"
                       loading="lazy"
-                      onError={(e) => { e.target.src = '/images/logo/logo.png.bv.webp'; }} 
+                      onError={(e) => { e.target.onerror = null; e.target.src = '/images/logo/logo.png.bv.webp'; }} 
                     />
                   </div>
                 ))}

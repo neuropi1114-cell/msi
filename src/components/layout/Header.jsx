@@ -42,7 +42,7 @@ const Header = () => {
         </div>
 
         <button
-          className="transition-colors bg-[#e1872b] text-white p-2 rounded hover:bg-[#351c5a]"
+          className="transition-colors bg-[#d16827] text-white p-2 rounded hover:bg-[#351c5a]"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
           aria-expanded={isMenuOpen}
@@ -53,7 +53,7 @@ const Header = () => {
 
       <div className={`fixed inset-0 z-50 transition-opacity duration-300 ${isMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
         <div className="absolute inset-0 bg-black/40" onClick={() => setIsMenuOpen(false)} />
-        <div className={`absolute top-0 right-0 h-full w-72 md:w-80 shadow-xl overflow-y-auto transition-transform duration-300 ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`} style={{ backgroundColor: 'rgb(225, 135, 43)' }}>
+        <div className={`absolute top-0 right-0 h-full w-72 md:w-80 bg-msi-orange shadow-xl overflow-y-auto transition-transform duration-300 ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
           <div className="flex justify-end p-4">
             <button onClick={() => setIsMenuOpen(false)} className="text-white hover:opacity-80">
               <X className="w-7 h-7" />

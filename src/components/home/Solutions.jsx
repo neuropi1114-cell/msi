@@ -68,7 +68,7 @@ const LogoGrid = ({ logos }) => (
           alt={logo.alt}
           className="max-w-full max-h-full object-contain"
           loading="lazy"
-          onError={(e) => { e.target.style.display = 'none'; }}
+          onError={(e) => { e.target.onerror = null; e.target.style.display = 'none'; }}
         />
       </div>
     ))}
@@ -77,7 +77,7 @@ const LogoGrid = ({ logos }) => (
 
 const Solutions = () => {
   return (
-    <section className="py-24 bg-[#e0872b] relative overflow-hidden">
+    <section className="py-24 bg-[#d16827] relative overflow-hidden">
       <div className="container mx-auto px-4 md:px-12 text-center mb-12">
         <h2 className="text-3xl md:text-5xl text-white font-bold mb-4">
           Solutions For All Lifestyles
@@ -116,16 +116,16 @@ const Solutions = () => {
           <h3 className="text-2xl text-[#2f9ed9] font-bold mb-3 text-center">
             You focus on your work
           </h3>
-          <p className="text-[#0A1539] mb-2 leading-relaxed text-justify" style={{ color: '#0A1539' }}>
+          <p className="mb-2 leading-relaxed text-justify">
             We remain focused on your child.
           </p>
-          <p className="text-[#0A1539] mb-2 leading-relaxed text-justify" style={{ color: '#0A1539' }}>
+          <p className="mb-2 leading-relaxed text-justify">
             For working parents, childcare needs to understand real life.
             An early meeting. A long commute. A late call.
             A school holiday when your office is open.
             A workday that doesn't end exactly when preschool does.
           </p>
-          <p className="text-[#0A1539] mb-6 leading-relaxed text-justify" style={{ color: '#0A1539' }}>
+          <p className="mb-6 leading-relaxed text-justify">
             That is why MSI brings together:
             Crèche + Preschool + Daycare + Extended Care + After-School + Enrichment
             with additional care options available at selected centres

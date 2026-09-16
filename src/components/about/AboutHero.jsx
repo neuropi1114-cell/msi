@@ -4,8 +4,7 @@ import { motion } from 'framer-motion';
 export default function AboutHero() {
   return (
     <section
-      className="relative py-24 md:py-32 overflow-hidden"
-      style={{ backgroundColor: '#351C5A' }}
+      className="relative py-24 md:py-32 overflow-hidden bg-msi-purple"
     >
       <div className="absolute inset-0 opacity-20">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.5 27.8" preserveAspectRatio="none" className="w-full h-full">

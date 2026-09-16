@@ -39,7 +39,6 @@ export default function VideoCarousel() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
           className="text-4xl md:text-5xl font-bold text-center mb-14"
-          style={{ color: '#E1872B' }}
         >
           School Videos
         </motion.h2>
@@ -64,34 +63,34 @@ export default function VideoCarousel() {
 
           <div
             ref={containerRef}
-            className="flex gap-4 overflow-x-auto scrollbar-hide scroll-smooth snap-x snap-mandatory"
+            className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth snap-x snap-mandatory py-4"
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
             {videos.map((video, i) => (
-              <div
-                key={video.id}
-                className="min-w-[280px] sm:min-w-[320px] snap-start"
-              >
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: i * 0.1 }}
-                  className="relative group cursor-pointer rounded-2xl overflow-hidden shadow-lg"
-                  onClick={() => setActiveVideo(video.id)}
+              <div key={video.id} className="min-w-[280px] md:min-w-[340px] snap-start">
+                <div
+                  onClick={() => setActiveVideo(video.vimeoId)}
+                  className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer group border border-gray-100"
                 >
-                  <img
-                    src={video.thumbnail}
-                    alt={`Video ${i + 1}`}
-                    className="w-full h-48 object-cover"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-black/30 flex items-center justify-center group-hover:bg-black/50 transition-colors">
-                    <svg className="w-16 h-16 text-white opacity-80 group-hover:opacity-100 transition-opacity" viewBox="0 0 1000 1000" fill="currentColor">
-                      <path d="M838 162C746 71 633 25 500 25 371 25 258 71 163 162 71 254 25 367 25 500 25 633 71 746 163 837 254 929 367 979 500 979 633 979 746 933 838 837 929 746 975 633 975 500 975 367 929 254 838 162M808 192C892 279 933 379 933 500 933 621 892 725 808 808 725 892 621 938 500 938 379 938 279 896 196 808 113 725 67 621 67 500 67 379 108 279 196 192 279 108 383 62 500 62 621 62 721 108 808 192M438 392V642L642 517 438 392Z" />
-                    </svg>
+                  <div className="relative aspect-video overflow-hidden">
+                    <img
+                      src={video.thumb}
+                      alt={video.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors flex items-center justify-center">
+                      <div className="w-12 h-12 rounded-full bg-white/90 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                        <svg className="w-5 h-5 text-msi-purple ml-0.5" viewBox="0 0 1000 1000" fill="currentColor">
+                          <path d="M838 162C746 71 633 25 500 25 371 25 258 71 163 162 71 254 25 367 25 500 25 633 71 746 163 837 254 929 367 979 500 979 633 979 746 933 838 837 929 746 975 633 975 500 975 367 929 254 838 162M808 192C892 279 933 379 933 500 933 621 892 725 808 808 725 892 621 938 500 938 379 938 279 896 196 808 113 725 67 621 67 500 67 379 108 279 196 192 279 108 383 62 500 62 621 62 721 108 808 192M438 392V642L642 517 438 392Z" />
+                        </svg>
+                      </div>
+                    </div>
                   </div>
-                </motion.div>
+                  <div className="p-4 text-center">
+                    <h3 className="font-bold text-gray-800 text-sm md:text-base line-clamp-1">{video.title}</h3>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
@@ -104,10 +103,10 @@ export default function VideoCarousel() {
                   const container = containerRef.current;
                   if (!container) return;
                   const cardWidth = container.querySelector('div:first-child')?.offsetWidth || 320;
-                  container.scrollTo({ left: i * (cardWidth + 16), behavior: 'smooth' });
+                  container.scrollTo({ left: i * (cardWidth + 24), behavior: 'smooth' });
                   setCurrent(i);
                 }}
-                className={`w-2.5 h-2.5 rounded-full transition-colors ${i === current ? 'bg-[#E1872B]' : 'bg-gray-300'}`}
+                className={`w-2.5 h-2.5 rounded-full transition-colors ${i === current ? 'bg-[#d16827]' : 'bg-gray-300'}`}
               />
             ))}
           </div>
