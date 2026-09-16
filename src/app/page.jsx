@@ -30,9 +30,10 @@ export default function HomePage() {
         <AgeGroupsIntro data={ageGroups.sections[0]} />
 
         <StepIntoADay />
+        <AgeGroupsIntro data={ageGroups.sections[1]} />
+        <AgeGroupsIntro data={ageGroups.sections[2]} />
         <Solutions />
         <CorporatePartners />
-        <AgeGroupsIntro data={ageGroups.sections[1]} />
         <VideoShowcase />
         <Awards />
         <FeaturedIn />

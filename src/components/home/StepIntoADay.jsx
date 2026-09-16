@@ -17,20 +17,33 @@ const StepIntoADay = () => {
 
         <div className="lg:pl-10">
           <img
-            src="/images/stepintoaday/Built-on-Neuroscience-and-Joy-STEP-INTO-A-DAY-5.png.bv.webp"
+            src="/images/stepintoaday/Built on Neuroscience and Joy (1).png"
             alt="Built on Neuroscience and Joy"
             className="w-full mb-8"
             loading="lazy"
           />
           <p className="text-gray-700 text-lg mb-6 leading-relaxed">
-            Every morning at My School ITALY begins the same way — with a room full of small people discovering something new. A child stacks one more block than yesterday. Another notices the light changing through the window. A teacher sits quietly beside someone learning to tie their shoes.
+            Children don't develop only while sitting at a table.
           </p>
-          <p className="text-gray-700 text-lg mb-10 leading-relaxed">
-            These aren't scripted moments. They're the real ones — the kind that shape how a child sees themselves and the world around them. We've designed our days around these quiet breakthroughs, for children from infancy through primary school.
+          <ul className="text-gray-700 text-lg mb-10 leading-relaxed space-y-2 list-disc list-inside">
+            <li>A story develops language and imagination.</li>
+            <li>A puzzle can develop persistence.</li>
+            <li>Gymnastics can develop coordination and confidence.</li>
+            <li>Building can develop planning and problem-solving.</li>
+            <li>Painting can develop expression.</li>
+            <li>Sharing can develop social understanding.</li>
+            <li>Eating independently can develop coordination and confidence.</li>
+            <li>Pretend play can develop communication.</li>
+            <li>Rest matters.</li>
+            <li>Movement matters.</li>
+            <li>Relationships matter.</li>
+          </ul>
+          <p className="font-bold text-gray-900 text-lg mb-10 leading-relaxed">
+            At MSI, the whole day is part of childhood.
           </p>
           <a
             href="/nep"
-            className="group inline-flex items-center gap-2 text-msi-purple font-medium text-lg border-b-2 border-msi-purple/30 pb-1 hover:border-msi-purple transition-colors"
+            className="group inline-flex items-center gap-2 text-msi-orange italic font-medium text-lg border-b-2 border-msi-orange/30 pb-1 hover:border-msi-orange transition-colors"
           >
             See a typical day
             <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">

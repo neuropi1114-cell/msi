@@ -56,68 +56,85 @@
             ]
           }
         }
-      ],
-      "growing": {
-        "span": "Preschool (3-7 Years)",
-        "title": "Growing In Confidence",
-        "description": "Our philosophy, our people, our commitment and our resources are all focused on helping us to give the children an excellent start in life, exposing them to gymnastics and robotics along with academics.",
-        "link": "/growing-in-confidence/",
-        "features": [
-          { "icon": "/images/growing-in-confidence/mortarboard.png", "title": "Awesome Careers" },
-          { "icon": "/images/growing-in-confidence/education.png", "title": "Global Certificate" },
-          { "icon": "/images/growing-in-confidence/atom.png", "title": "Best Program" },
-          { "icon": "/images/growing-in-confidence/school-bag.png", "title": "Child Support" }
-        ],
-        "images": [
-          { "src": "/images/growing-in-confidence/img-01.png", "alt": "Child playing with building blocks" },
-          { "src": "/images/growing-in-confidence/img-02.png", "alt": "Child painting and exploring colors" },
-          { "src": "/images/growing-in-confidence/img-03.png", "alt": "Children reading books together" },
-          { "src": "/images/growing-in-confidence/img-04.png", "alt": "Child solving puzzles" },
-          { "src": "/images/growing-in-confidence/img-05.png", "alt": "Children playing outdoors" },
-          { "src": "/images/growing-in-confidence/img-06.png", "alt": "Child engaged in sensory play" },
-          { "src": "/images/growing-in-confidence/img-07.png", "alt": "Children in classroom activity" },
-          { "src": "/images/growing-in-confidence/img-08.png", "alt": "Child learning with educational toys" },
-          { "src": "/images/growing-in-confidence/img-09.png", "alt": "Children collaborating on a project" },
-          { "src": "/images/growing-in-confidence/img-10.png", "alt": "Child practicing motor skills" },
-          { "src": "/images/growing-in-confidence/img-11.png", "alt": "Children during music and movement" },
-          { "src": "/images/growing-in-confidence/img-12.png", "alt": "Child exploring nature and outdoors" }
-        ]
-      }
+      ]
     },
     {
       "id": "age-groups-user-defined",
-      "header": {
-        "title": "Age Groups (Edit Me)",
-        "subtitle": "Customised Teaching To Maximise Learning At Every Age Group",
-        "description": "Edit this content in src/data/age-groups.json to change what this section shows."
-      },
       "groups": [
         {
-          "ageRange": "Age Groups (45 Days To 1 Years)",
-          "title": "Sproutlings",
-          "image": "/images/age-groups/sproutlings.webp",
-          "alt": "Sproutlings",
-          "link": "/ciao-baby/",
-          "reversed": false,
-          "description": "Observations that can provide a remarkable insight into the needs, abilities, and sensitivities of your new baby. Our Ciao Baby programs are delivered by expertly trained Practitioners across the country. We would love to welcome you to our classes or answer any questions you may have."
-        },
-        {
-          "ageRange": "1 - 2 Years",
-          "title": "Mini Maestros",
+          "ageRange": "Once Upon a Time Can Lead Almost Anywhere.",
+          "title": "STORIES ARE WHERE OUR CLASSROOMS COME ALIVE",
           "image": "/images/age-groups/mini-maestros.webp",
           "alt": "Mini Maestros",
           "link": "/baby-sensory/",
           "reversed": true,
-          "description": "We want you to enjoy every second of your baby's miraculous development. That's why everything we do has a purpose. We welcome you to feed or cuddle your baby during the session."
+          "description": "At My School ITALY, stories are not something we save for the end of the lesson.",
+          "drawer": {
+            "title": "STORIES ARE WHERE OUR CLASSROOMS COME ALIVE",
+            "paragraphs": [
+              "Once Upon a Time Can Lead Almost Anywhere.",
+              "At My School ITALY, stories are not something we save for the end of the lesson.",
+              "Stories can become the lesson.",
+              "A curious character can lead children towards a new word.",
+              "A journey can introduce numbers.",
+              "An animal can open a conversation about science.",
+              "A river can lead to geography.",
+              "A disappearing species can begin a conversation about protecting our planet.",
+              "And one little question in a story can keep a classroom thinking for the rest of the day.",
+              "LISTEN → WATCH → CONNECT → PRACTISE → MOVE & CREATE → PERFORM",
+              "English. Mathematics. Science. Understanding the World. Creativity. Values.",
+              "All connected through experiences children can remember"
+            ]
+          }
         },
         {
-          "ageRange": "2 - 3 Years",
-          "title": "Astro Architect",
+          "ageRange": "Inspire Me Eat",
+          "title": "SMALL TUMMIES. BIG DEVELOPMENTAL NEEDS.",
           "image": "/images/age-groups/astro-architect.webp",
           "alt": "Astro Architect",
           "link": "/day-care/",
           "reversed": false,
-          "description": "We provide a warm, safe and nurturing environment in which children can grow and develop. Children who are treated as individuals in a loving environment are happy & confident. During these early years, our aim is to inspire toddlers with an excitement for life. We use discovery teaching to nurture curiosity in children and build the confidence to explore the world around them."
+          "description": "Breakfast. Lunch. Snacks.",
+          "drawer": {
+            "title": "SMALL TUMMIES. BIG DEVELOPMENTAL NEEDS.",
+            "paragraphs": [
+              "INSPIRE ME EAT",
+              "Breakfast. Lunch. Snacks.",
+              "Mealtimes are about more than food.",
+              "Children learn to hold, pour, choose, communicate, wait, share, taste and gradually become more independent.",
+              "Nutrition, age-appropriate textures, portions, hygiene and positive mealtime experiences are part of the MSI day.",
+              "Because even a spoon can become a learning tool"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "age-groups-45-days-to-7-years",
+      "header": {
+        "title": "Safety Has Two Sides",
+        "subtitle": "SAFE ENOUGH TO EXPLORE.",
+        "description": "A child needs both. Because when children feel secure, they are more ready to explore, communicate, participate and learn"
+      },
+      "groups": [
+        {
+          "ageRange": "Age Groups (45 Days To 1 Years)",
+          "title": "PHYSICAL SAFETY",
+          "image": "/images/age-groups/sproutlings.webp",
+          "alt": "Sproutlings",
+          "link": "/ciao-baby/",
+          "reversed": false,
+          "description": "Controlled access • Child-safe spaces • Supervision • Hygiene • Attendance • Secure handover",
+          "accordion": [
+            {
+              "title": "PHYSICAL SAFETY",
+              "content": "Controlled access • Child-safe spaces • Supervision • Hygiene • Attendance • Secure handover"
+            },
+            {
+              "title": "EMOTIONAL SAFETY",
+              "content": "Being heard • Being respected • Asking for help • Expressing feelings • Making mistakes • Trying again"
+            }
+          ]
         }
       ],
       "growing": {
