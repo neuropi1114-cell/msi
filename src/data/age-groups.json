@@ -1,0 +1,151 @@
+{
+  "sections": [
+    {
+      "id": "age-groups-45-days",
+      "groups": [
+        {
+          "ageRange": "Connected Around One Child",
+          "title": "THE FIRST YEARS ARE NOT LITTLE YEARS.",
+          "image": "/images/age-groups/sproutlings.webp",
+          "alt": "Sproutlings",
+          "link": "/ciao-baby/",
+          "reversed": false,
+          "description": "Before children can explain who they are, they are already showing us. In the questions they ask.",
+          "drawer": {
+            "title": "THE FIRST YEARS ARE NOT LITTLE YEARS.",
+            "paragraphs": [
+              "Before children can explain who they are, they are already showing us.",
+              "In the questions they ask.",
+              "The stories they love.",
+              "The things they build again and again.",
+              "The way they make friends.",
+              "The way they move.",
+              "The things that make them laugh.",
+              "The moments they hesitate.",
+              "And the moments they suddenly say:",
+              "\"I can do it!\"",
+              "At My School ITALY, we believe early education begins by noticing these moments.",
+              "Because before we teach a child, we should first try to understand them"
+            ]
+          }
+        },
+        {
+          "ageRange": "Everything a Child Needs",
+          "title": "WHAT IF A PRESCHOOL COULD NOTICE MORE?",
+          "image": "/images/age-groups/mini-maestros.webp",
+          "alt": "Mini Maestros",
+          "link": "/baby-sensory/",
+          "reversed": true,
+          "description": "Not only what your child knows. But... What makes them curious. How they approach something new. What keeps them engaged.",
+          "drawer": {
+            "title": "WHAT IF A PRESCHOOL COULD NOTICE MORE?",
+            "paragraphs": [
+              "Not only what your child knows.",
+              "But...",
+              "What makes them curious.",
+              "How they approach something new.",
+              "What keeps them engaged.",
+              "How they respond when something is difficult.",
+              "How they communicate.",
+              "How they interact with other children.",
+              "What they are beginning to do independently.",
+              "What makes their eyes light up.",
+              "This is where the MSI experience becomes different.",
+              "WE DON'T JUST TEACH THE CHILD.",
+              "WE LEARN FROM THE CHILD TOO"
+            ]
+          }
+        }
+      ],
+      "growing": {
+        "span": "Preschool (3-7 Years)",
+        "title": "Growing In Confidence",
+        "description": "Our philosophy, our people, our commitment and our resources are all focused on helping us to give the children an excellent start in life, exposing them to gymnastics and robotics along with academics.",
+        "link": "/growing-in-confidence/",
+        "features": [
+          { "icon": "/images/growing-in-confidence/mortarboard.png", "title": "Awesome Careers" },
+          { "icon": "/images/growing-in-confidence/education.png", "title": "Global Certificate" },
+          { "icon": "/images/growing-in-confidence/atom.png", "title": "Best Program" },
+          { "icon": "/images/growing-in-confidence/school-bag.png", "title": "Child Support" }
+        ],
+        "images": [
+          { "src": "/images/growing-in-confidence/img-01.png", "alt": "Child playing with building blocks" },
+          { "src": "/images/growing-in-confidence/img-02.png", "alt": "Child painting and exploring colors" },
+          { "src": "/images/growing-in-confidence/img-03.png", "alt": "Children reading books together" },
+          { "src": "/images/growing-in-confidence/img-04.png", "alt": "Child solving puzzles" },
+          { "src": "/images/growing-in-confidence/img-05.png", "alt": "Children playing outdoors" },
+          { "src": "/images/growing-in-confidence/img-06.png", "alt": "Child engaged in sensory play" },
+          { "src": "/images/growing-in-confidence/img-07.png", "alt": "Children in classroom activity" },
+          { "src": "/images/growing-in-confidence/img-08.png", "alt": "Child learning with educational toys" },
+          { "src": "/images/growing-in-confidence/img-09.png", "alt": "Children collaborating on a project" },
+          { "src": "/images/growing-in-confidence/img-10.png", "alt": "Child practicing motor skills" },
+          { "src": "/images/growing-in-confidence/img-11.png", "alt": "Children during music and movement" },
+          { "src": "/images/growing-in-confidence/img-12.png", "alt": "Child exploring nature and outdoors" }
+        ]
+      }
+    },
+    {
+      "id": "age-groups-user-defined",
+      "header": {
+        "title": "Age Groups (Edit Me)",
+        "subtitle": "Customised Teaching To Maximise Learning At Every Age Group",
+        "description": "Edit this content in src/data/age-groups.json to change what this section shows."
+      },
+      "groups": [
+        {
+          "ageRange": "Age Groups (45 Days To 1 Years)",
+          "title": "Sproutlings",
+          "image": "/images/age-groups/sproutlings.webp",
+          "alt": "Sproutlings",
+          "link": "/ciao-baby/",
+          "reversed": false,
+          "description": "Observations that can provide a remarkable insight into the needs, abilities, and sensitivities of your new baby. Our Ciao Baby programs are delivered by expertly trained Practitioners across the country. We would love to welcome you to our classes or answer any questions you may have."
+        },
+        {
+          "ageRange": "1 - 2 Years",
+          "title": "Mini Maestros",
+          "image": "/images/age-groups/mini-maestros.webp",
+          "alt": "Mini Maestros",
+          "link": "/baby-sensory/",
+          "reversed": true,
+          "description": "We want you to enjoy every second of your baby's miraculous development. That's why everything we do has a purpose. We welcome you to feed or cuddle your baby during the session."
+        },
+        {
+          "ageRange": "2 - 3 Years",
+          "title": "Astro Architect",
+          "image": "/images/age-groups/astro-architect.webp",
+          "alt": "Astro Architect",
+          "link": "/day-care/",
+          "reversed": false,
+          "description": "We provide a warm, safe and nurturing environment in which children can grow and develop. Children who are treated as individuals in a loving environment are happy & confident. During these early years, our aim is to inspire toddlers with an excitement for life. We use discovery teaching to nurture curiosity in children and build the confidence to explore the world around them."
+        }
+      ],
+      "growing": {
+        "span": "Preschool (3-7 Years)",
+        "title": "Growing In Confidence",
+        "description": "Our philosophy, our people, our commitment and our resources are all focused on helping us to give the children an excellent start in life, exposing them to gymnastics and robotics along with academics.",
+        "link": "/growing-in-confidence/",
+        "features": [
+          { "icon": "/images/growing-in-confidence/mortarboard.png", "title": "Awesome Careers" },
+          { "icon": "/images/growing-in-confidence/education.png", "title": "Global Certificate" },
+          { "icon": "/images/growing-in-confidence/atom.png", "title": "Best Program" },
+          { "icon": "/images/growing-in-confidence/school-bag.png", "title": "Child Support" }
+        ],
+        "images": [
+          { "src": "/images/growing-in-confidence/img-01.png", "alt": "Child playing with building blocks" },
+          { "src": "/images/growing-in-confidence/img-02.png", "alt": "Child painting and exploring colors" },
+          { "src": "/images/growing-in-confidence/img-03.png", "alt": "Children reading books together" },
+          { "src": "/images/growing-in-confidence/img-04.png", "alt": "Child solving puzzles" },
+          { "src": "/images/growing-in-confidence/img-05.png", "alt": "Children playing outdoors" },
+          { "src": "/images/growing-in-confidence/img-06.png", "alt": "Child engaged in sensory play" },
+          { "src": "/images/growing-in-confidence/img-07.png", "alt": "Children in classroom activity" },
+          { "src": "/images/growing-in-confidence/img-08.png", "alt": "Child learning with educational toys" },
+          { "src": "/images/growing-in-confidence/img-09.png", "alt": "Children collaborating on a project" },
+          { "src": "/images/growing-in-confidence/img-10.png", "alt": "Child practicing motor skills" },
+          { "src": "/images/growing-in-confidence/img-11.png", "alt": "Children during music and movement" },
+          { "src": "/images/growing-in-confidence/img-12.png", "alt": "Child exploring nature and outdoors" }
+        ]
+      }
+    }
+  ]
+}

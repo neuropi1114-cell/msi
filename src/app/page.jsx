@@ -2,11 +2,12 @@ import dynamic from 'next/dynamic';
 import TopBar from '../components/layout/TopBar';
 import Header from '../components/layout/Header';
 import Hero from '../components/home/Hero';
+import AgeGroupsIntro from '../components/home/AgeGroupsIntro';
+import ageGroups from '../data/age-groups.json';
 
 const BelieveBrilliance = dynamic(() => import('../components/home/BelieveBrilliance'), { ssr: true });
 const Solutions = dynamic(() => import('../components/home/Solutions'), { ssr: true });
 const CorporatePartners = dynamic(() => import('../components/home/CorporatePartners'), { ssr: true });
-const AgeGroupsIntro = dynamic(() => import('../components/home/AgeGroupsIntro'), { ssr: true });
 const VideoShowcase = dynamic(() => import('../components/home/VideoShowcase'), { ssr: true });
 const Awards = dynamic(() => import('../components/home/Awards'), { ssr: true });
 const Team = dynamic(() => import('../components/home/Team'), { ssr: true });
@@ -26,12 +27,12 @@ export default function HomePage() {
         <Hero />
         <div data-nav-sentinel />
         <BelieveBrilliance />
-        <AgeGroupsIntro />
+        <AgeGroupsIntro data={ageGroups.sections[0]} />
 
         <StepIntoADay />
         <Solutions />
         <CorporatePartners />
-        <AgeGroupsIntro />
+        <AgeGroupsIntro data={ageGroups.sections[1]} />
         <VideoShowcase />
         <Awards />
         <FeaturedIn />
