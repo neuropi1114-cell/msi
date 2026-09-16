@@ -28,7 +28,7 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-  p {
+  p, li {
     font-family: 'Linotte-Regular', 'Linotte Rounded', 'Linotte', var(--font-fredoka), sans-serif;
     font-weight: 200;
     color: #0A1539;

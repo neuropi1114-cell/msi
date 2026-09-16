@@ -24,11 +24,11 @@ const StepIntoADay = ({
           {title ? (
             <div className="mb-8">
               {subtitle && (
-                <h3 className="font-schoolbell text-2xl md:text-3xl text-[#1891cd] font-normal mb-1">
+                <h3 className="mb-4">
                   {subtitle}
                 </h3>
               )}
-              <h3 className="font-linotte text-3xl md:text-4xl text-[#d16827] font-bold leading-tight uppercase">
+              <h3 className="font-linotte text-3xl md:text-4xl text-msi-orange font-bold leading-tight uppercase not-italic">
                 {title}
               </h3>
             </div>
@@ -40,10 +40,10 @@ const StepIntoADay = ({
               loading="lazy"
             />
           ) : null}
-          <p className="text-lg mb-6 leading-relaxed">
+          <p className="mb-6">
             Children don't develop only while sitting at a table.
           </p>
-          <ul className="text-lg mb-10 leading-relaxed space-y-2 list-disc list-inside">
+          <ul className="list-disc list-inside space-y-2 mb-6">
             <li>A story develops language and imagination.</li>
             <li>A puzzle can develop persistence.</li>
             <li>Gymnastics can develop coordination and confidence.</li>
@@ -56,14 +56,14 @@ const StepIntoADay = ({
             <li>Movement matters.</li>
             <li>Relationships matter.</li>
           </ul>
-          <p className="font-bold text-lg mb-10 leading-relaxed">
+          <p>
             At MSI, the whole day is part of childhood.
           </p>
           <a
             href="/nep"
-            className="group inline-flex items-center gap-2 text-msi-orange italic font-medium text-lg border-b-2 border-msi-orange/30 pb-1 hover:border-msi-orange transition-colors"
+            className="group inline-flex items-center gap-2 font-medium text-lg text-msi-blue transition-colors mt-4"
           >
-            See a typical day
+            <span className="border-b-2 border-msi-blue pb-1 group-hover:border-msi-blue/80">See a typical day</span>
             <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>

@@ -99,7 +99,7 @@ export default function Blogs() {
                 </h3>
                 <a
                   href={post.link}
-                  className="text-[#d16827] font-semibold text-sm hover:text-[#b0521d] transition-colors mt-auto inline-flex items-center gap-1"
+                  className="font-linotte text-[#d16827] font-[200] text-sm hover:text-[#b0521d] transition-colors mt-auto inline-flex items-center gap-1"
                 >
                   Read More <span aria-hidden="true">&raquo;</span>
                 </a>
@@ -116,7 +116,7 @@ export default function Blogs() {
         >
           <a
             href="/blog/"
-            className="inline-block bg-[#d16827] hover:bg-[#b0521d] text-white font-bold py-3 px-10 rounded-full shadow-lg transform hover:-translate-y-1 transition-all"
+            className="font-linotte inline-block bg-[#d16827] hover:bg-[#b0521d] text-white font-[200] py-3 px-10 rounded-full shadow-lg transform hover:-translate-y-1 transition-all"
           >
             Read More
           </a>

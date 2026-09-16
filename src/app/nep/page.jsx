@@ -299,7 +299,7 @@ export default function EducationalProjectPage() {
             <div className="text-center mt-[30px]">
               <a
                 href="/blog/"
-                className="inline-block font-lato text-[18px] font-normal text-white transition-colors"
+                className="inline-block font-linotte text-[18px] font-[200] text-white transition-colors"
                 style={{ backgroundColor: '#d16827', padding: '20px 30px', borderRadius: '12px 0 12px 0' }}
               >
                 Read More

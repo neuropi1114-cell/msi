@@ -97,7 +97,7 @@ export default function BlogPage() {
                     <p className="text-gray-600 leading-relaxed mb-4">
                       {post.excerpt}
                     </p>
-                    <span className="inline-flex items-center text-msi-orange font-semibold text-sm">
+                    <span className="font-linotte inline-flex items-center text-msi-orange font-[200] text-sm">
                       Read More <ArrowRight className="w-4 h-4 ml-1" />
                     </span>
                   </div>

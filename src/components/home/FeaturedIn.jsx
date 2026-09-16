@@ -62,7 +62,7 @@ export default function FeaturedIn() {
             </p>
             <Link
               href="/media-coverage"
-              className="inline-block bg-[#d16827] text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+              className="font-linotte inline-block bg-[#d16827] text-white font-[200] py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
             >
               Read More
             </Link>

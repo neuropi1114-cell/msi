@@ -35,8 +35,8 @@ const Drawer = ({ open, onClose, title, children, side = 'right' }) => {
             aria-modal="true"
             aria-label={title}
           >
-            <div className="flex justify-between items-center gap-4 p-6 border-b border-gray-100">
-              <h3 className="leading-tight">
+            <div className="flex justify-between items-center gap-4 px-6 py-4 border-b border-gray-100">
+              <h3 className="font-bold leading-tight !mb-0" style={{ marginBottom: 0 }}>
                 {title}
               </h3>
               <button
@@ -47,7 +47,7 @@ const Drawer = ({ open, onClose, title, children, side = 'right' }) => {
                 &times;
               </button>
             </div>
-            <div className="p-6 md:p-8">{children}</div>
+            <div className="px-6 pb-6 pt-1">{children}</div>
           </motion.aside>
         </>
       )}

@@ -58,16 +58,14 @@ const AgeDetail = ({ group, reversed, first }) => {
         <>
           <button
             onClick={() => setDrawerOpen(true)}
-            className="inline-block px-6 py-3 bg-msi-orange text-white rounded-full font-semibold hover:opacity-90 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 cursor-pointer"
+            className="font-linotte inline-block px-6 py-3 bg-msi-blue text-white rounded-full font-[200] hover:opacity-90 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 cursor-pointer"
           >
             Read More
           </button>
           <Drawer open={drawerOpen} onClose={() => setDrawerOpen(false)} title={group.drawer.title} side="left">
-            <div className="space-y-4">
+            <div className="space-y-3">
               {group.drawer.paragraphs.map((paragraph, i) => (
-                <p key={i} className="leading-relaxed">
-                  {paragraph}
-                </p>
+                <p key={i} className="leading-relaxed" dangerouslySetInnerHTML={{ __html: paragraph }} />
               ))}
             </div>
           </Drawer>
@@ -75,7 +73,7 @@ const AgeDetail = ({ group, reversed, first }) => {
       ) : (
         <a
           href={group.link}
-          className="inline-block px-6 py-3 bg-msi-orange text-white rounded-full font-semibold hover:opacity-90 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
+          className="font-linotte inline-block px-6 py-3 bg-msi-blue text-white rounded-full font-[200] hover:opacity-90 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
         >
           Read More
         </a>

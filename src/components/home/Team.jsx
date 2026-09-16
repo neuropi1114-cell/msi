@@ -133,7 +133,7 @@ export default function Team() {
                 <p className="text-center mb-1">Email : ritzyschools@gmail.com</p>
                 <p className="text-center mb-4">Contact: Ms Roja , Program Manager</p>
                 <div className="text-center">
-                    <a href="/msi-venture-philanthropy" className="inline-block bg-msi-orange text-white px-8 py-3 rounded-full font-medium hover:bg-msi-orange/90 transition-colors">
+                    <a href="/msi-venture-philanthropy" className="font-linotte inline-block bg-msi-orange text-white px-8 py-3 rounded-full font-[200] hover:bg-msi-orange/90 transition-colors">
                         Read More
                     </a>
                 </div>
