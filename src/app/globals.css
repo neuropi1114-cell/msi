@@ -116,6 +116,14 @@
   animation: marquee 25s linear infinite;
 }
 
+@keyframes marquee-reverse {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(0); }
+}
+.animate-marquee-reverse {
+  animation: marquee-reverse 25s linear infinite;
+}
+
 /* Waves */
 .waves {
   position: relative;
@@ -161,7 +169,8 @@
     animation: none;
   }
 
-  .animate-marquee {
+  .animate-marquee,
+  .animate-marquee-reverse {
     animation: none;
   }
 

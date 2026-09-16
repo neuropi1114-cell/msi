@@ -1,0 +1,22 @@
+{
+  "title": "Corporate Partners",
+  "description": "We work with companies and corporations and provide tailor-made family solutions to employees.",
+  "partners": [
+    { "id": 1, "image": "/images/logos/working-parents/Accenture-Logo.jpg.bv.webp", "alt": "Accenture" },
+    { "id": 2, "image": "/images/logos/working-parents/TCS-Logo.jpg.bv.webp", "alt": "TCS" },
+    { "id": 3, "image": "/images/logos/working-parents/Microsoft-Logo.jpg.bv.webp", "alt": "Microsoft" },
+    { "id": 4, "image": "/images/logos/working-parents/Infosys_logo.svg.png.bv_resized_ipad.png.bv.webp", "alt": "Infosys" },
+    { "id": 5, "image": "/images/logos/working-parents/wipro-2.png.bv.webp", "alt": "Wipro" },
+    { "id": 6, "image": "/images/logos/working-parents/ibm-1.png.bv.webp", "alt": "IBM" },
+    { "id": 7, "image": "/images/logos/working-parents/Deloitte_Logo.png.bv_resized_ipad.png.bv.webp", "alt": "Deloitte" },
+    { "id": 8, "image": "/images/logos/working-parents/Vodafone-Logo.jpg.bv.webp", "alt": "Vodafone" },
+    { "id": 9, "image": "/images/logos/working-parents/Amazon-Logo-1.jpg.bv.webp", "alt": "Amazon" },
+    { "id": 10, "image": "/images/logos/working-parents/ICICI-Bank-Logo.jpg.bv.webp", "alt": "ICICI Bank" },
+    { "id": 11, "image": "/images/logos/working-parents/cognizant-1.png.bv.webp", "alt": "Cognizant" },
+    { "id": 12, "image": "/images/logos/working-parents/Tech-Mahindra-Logo.jpg.bv.webp", "alt": "Tech Mahindra" },
+    { "id": 13, "image": "/images/logos/working-parents/hcl.png.bv_resized_ipad.png.bv.webp", "alt": "HCL" },
+    { "id": 14, "image": "/images/logos/working-parents/oracle_logo.png.bv_resized_ipad.png.bv.webp", "alt": "Oracle" },
+    { "id": 15, "image": "/images/logos/working-parents/Broadcom-Logo.jpg.bv.webp", "alt": "Broadcom" },
+    { "id": 16, "image": "/images/logos/working-parents/KWE-Logo.jpg.bv.webp", "alt": "KWE" }
+  ]
+}

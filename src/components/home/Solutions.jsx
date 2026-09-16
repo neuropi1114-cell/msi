@@ -116,11 +116,10 @@ const Solutions = () => {
           />
           <div className="bg-white rounded-b-3xl p-10">
           <h3 className="text-2xl  text-[#2f9ed9] font-bold mb-3 text-center">
-            Working Parents
+            YOU GO TO WORK.
+            <br />
+            THEIR CHILDHOOD DOESN'T HAVE TO WAIT.
           </h3>
-          <p className="text-gray-600 mb-6 leading-relaxed text-justify">
-            Working parents look no further. We are a flexible nursery offering solutions and services to fit your schedule, from convenient locations and flexible hours, to meal service and tools that allow you to be connected to your child at any time. Always close to you, be it your home or your office. We care for over 1200 children daily!
-          </p>
           <LogoGrid logos={workingParentLogos} />
           </div>
         </motion.div>
@@ -140,10 +139,21 @@ const Solutions = () => {
           />
           <div className="bg-white rounded-b-3xl p-10">
           <h3 className="text-2xl  text-[#2f9ed9] font-bold mb-3 text-center">
-            Corporate Partners
+            You focus on your work
           </h3>
+          <p className="text-gray-600 mb-2 leading-relaxed text-justify">
+            We remain focused on your child.
+          </p>
+          <p className="text-gray-600 mb-2 leading-relaxed text-justify">
+            For working parents, childcare needs to understand real life.
+            An early meeting. A long commute. A late call.
+            A school holiday when your office is open.
+            A workday that doesn't end exactly when preschool does.
+          </p>
           <p className="text-gray-600 mb-6 leading-relaxed text-justify">
-            We work with companies and corporations and provide tailor-made family solutions to employees. Our goal is to become an asset to your work place by sharing your employees' family responsibility, thereby allowing them to become a more productive part of your business.
+            That is why MSI brings together:
+            Crèche + Preschool + Daycare + Extended Care + After-School + Enrichment
+            with additional care options available at selected centres
           </p>
           <LogoGrid logos={corporatePartnerLogos} />
           </div>
