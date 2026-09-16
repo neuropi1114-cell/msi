@@ -27,15 +27,7 @@ const BelieveBrilliance = () => {
             <img src="/images/believe/DSC00795-1024x684-1.jpeg.bv_resized_ipad.jpeg.bv.webp" alt="Happy child" className="w-full h-full object-cover img-editorial" loading="lazy" />
           </motion.div>
           {/* Decorative handwritten note */}
-          <motion.span
-            initial={{ opacity: 0, rotate: -5 }}
-            whileInView={{ opacity: 1, rotate: -3 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.5 }}
-            className="absolute -bottom-2 left-8 font-lato italic text-msi-gold/60 text-sm z-20 hidden md:block"
-          >
-            thirty years of watching them grow
-          </motion.span>
+
         </div>
 
         {/* Right Content — with editorial spacing */}
@@ -46,38 +38,32 @@ const BelieveBrilliance = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h3 className="font-lato italic text-msi-gold text-xl md:text-2xl mb-2 tracking-wide">
-              From 45 Days to 12 Years
+            <h3 className="italic text-[#369bd0] text-xl md:text-2xl mb-2 tracking-wide">
+              From 45 Days to 8 Years
             </h3>
-            <h2 className="font-lato text-display-md md:text-display-lg text-msi-purple mb-6 leading-tight">
+            <h2 className="font-linotte text-display-md md:text-display-lg text-[#e4984d] mb-6 leading-tight">
               EVERY CHILD IS DIFFERENT.
               <br />
-              THEIR EARLY YEARS SHOULD UNDERSTAND THAT
+              THEIR EARLY YEARS SHOULD UNDERSTAND THAT.
             </h2>
-            <p className="text-gray-700 text-lg mb-6 leading-relaxed">
-              A nurturing early childhood ecosystem where learning, care, development, 
-movement, nutrition and emotional wellbeing come together around the individual 
-child.
+            <p className="font-linotte text-[#0A1539] text-lg mb-6 leading-relaxed" style={{ color: '#0A1539' }}>
+              A nurturing early childhood ecosystem where learning, care, development,
+              movement, nutrition and emotional wellbeing come together around the individual
+              child.
             </p>
 
-            <div className="border-l-4 border-msi-gold pl-6 my-8 py-2">
-              <p className="text-gray-600 italic leading-relaxed">
-                The first thing we notice isn't a curriculum. It's the way your child explores a room, or reaches for a new colour, or laughs when something unexpected happens. That's usually where the story begins.
-              </p>
-            </div>
 
-            <h4 className="font-lato italic text-msi-gold text-lg mb-8">
-              Where every small step matters
-            </h4>
+
+
 
             <div className="flex flex-wrap gap-6">
-              <a href="/book-your-tour" className="group inline-flex items-center gap-2 text-msi-purple font-medium text-lg border-b-2 border-msi-purple/30 pb-1 hover:border-msi-purple transition-colors">
+              <a href="/book-your-tour" className="group inline-flex items-center gap-2 text-[#0A1539] font-medium text-lg border-b-2 border-[#e4984d] pb-1 hover:border-[#e4984d]/80 transition-colors" style={{ color: '#0A1539' }}>
                 BOOK A SCHOOL TOUR
                 <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </a>
-              <a href="/contact" className="group inline-flex items-center gap-2 text-msi-purple font-medium text-lg border-b-2 border-msi-purple/30 pb-1 hover:border-msi-purple transition-colors">
+              <a href="/contact" className="group inline-flex items-center gap-2 text-[#0A1539] font-medium text-lg border-b-2 border-[#e4984d] pb-1 hover:border-[#e4984d]/80 transition-colors" style={{ color: '#0A1539' }}>
                 FIND A CENTRE
                 <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />

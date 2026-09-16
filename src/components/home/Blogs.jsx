@@ -62,7 +62,8 @@ export default function Blogs() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="text-gray-600 font-medium"
+            className="text-[#0A1539] font-medium"
+            style={{ color: '#0A1539' }}
           >
             What&rsquo;s Going on in our Blog?
           </motion.p>

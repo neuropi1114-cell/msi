@@ -32,9 +32,11 @@ export default function HomePage() {
         <StepIntoADay />
         <AgeGroupsIntro data={ageGroups.sections[1]} />
         <AgeGroupsIntro data={ageGroups.sections[2]} />
-        <Solutions />
+        <Solutions key="solutions-1" />
         <CorporatePartners title="Working Parents" description="While you build their future, we will care for their childhood." reverse />
         <CorporatePartners id="corporate-childcare" />
+        <StepIntoADay />
+
         <VideoShowcase />
         <Awards />
         <FeaturedIn />

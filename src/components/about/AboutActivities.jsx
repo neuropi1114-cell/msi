@@ -95,7 +95,7 @@ export default function AboutActivities() {
                   {activity.icon}
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold mb-2" style={{ color: '#351C5A' }}>
+                  <h3>
                     {activity.title}
                   </h3>
                   <p className="text-gray-600 leading-relaxed">
@@ -135,7 +135,7 @@ export default function AboutActivities() {
                   {activity.icon}
                 </div>
                 <div className="text-right">
-                  <h3 className="text-xl font-bold mb-2" style={{ color: '#351C5A' }}>
+                  <h3>
                     {activity.title}
                   </h3>
                   <p className="text-gray-600 leading-relaxed">

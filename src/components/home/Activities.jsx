@@ -53,7 +53,7 @@ export default function Activities() {
         >
           <p className="text-lg md:text-xl" style={{ color: '#1891CD' }}>Activities For Kids</p>
           <h2 className="text-4xl md:text-5xl font-bold mt-2" style={{ color: '#E1872B' }}>Engagement</h2>
-          <p className="max-w-4xl mx-auto mt-6 text-gray-600 text-sm md:text-base leading-relaxed">
+          <p className="max-w-4xl mx-auto mt-6 text-[#0A1539] text-sm md:text-base leading-relaxed" style={{ color: '#0A1539' }}>
             Every activity is designed to nurture brain development, emotional balance, and social bonding, while keeping learning joyful and meaningful. Every giggle grows a brain cell. Every day builds confidence. The child gradually learns his own identity, learns to relate to peers, with the educator, with father and mother and the adult figures outside their family life.
           </p>
           <div className="flex items-center justify-center gap-2 my-8">
@@ -78,8 +78,8 @@ export default function Activities() {
                   {a.icon}
                 </span>
                 <div>
-                  <h3 className="text-lg font-bold" style={{ color: '#1891CD' }}>{a.title}</h3>
-                  <p className="text-gray-600 text-sm mt-1 leading-relaxed">{a.desc}</p>
+                  <h3>{a.title}</h3>
+                  <p className="text-[#0A1539] text-sm mt-1 leading-relaxed" style={{ color: '#0A1539' }}>{a.desc}</p>
                 </div>
               </motion.div>
             ))}
@@ -114,8 +114,8 @@ export default function Activities() {
                   {a.icon}
                 </span>
                 <div>
-                  <h3 className="text-lg font-bold" style={{ color: '#1891CD' }}>{a.title}</h3>
-                  <p className="text-gray-600 text-sm mt-1 leading-relaxed">{a.desc}</p>
+                  <h3>{a.title}</h3>
+                  <p className="text-[#0A1539] text-sm mt-1 leading-relaxed" style={{ color: '#0A1539' }}>{a.desc}</p>
                 </div>
               </motion.div>
             ))}

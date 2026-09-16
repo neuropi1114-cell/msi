@@ -8,7 +8,7 @@ const GrowingInConfidence = ({ growing }) => {
           {growing.span}
         </span>
         <h2>{growing.title}</h2>
-        <p className="text-gray-600 mb-8 leading-relaxed text-justify">
+        <p className="text-[#0A1539] mb-8 leading-relaxed text-justify" style={{ color: '#0A1539' }}>
           {growing.description}
         </p>
 
@@ -18,7 +18,7 @@ const GrowingInConfidence = ({ growing }) => {
               <div className="w-14 h-14 mb-3 flex items-center justify-center">
                 <img src={feature.icon} alt={feature.title} className="w-full h-full object-contain" loading="lazy" />
               </div>
-              <h3 className="text-sm font-semibold" style={{ color: '#e4984d' }}>{feature.title}</h3>
+              <h3>{feature.title}</h3>
             </div>
           ))}
         </div>

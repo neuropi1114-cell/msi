@@ -27,7 +27,7 @@ export default function Gallery() {
           <p className="font-lato italic text-msi-gold text-lg mb-3">
             glimpses of everyday life
           </p>
-          <h2 className="font-lato text-display-md md:text-display-lg text-msi-purple leading-tight">
+          <h2 className="font-linotte text-display-md md:text-display-lg text-msi-purple leading-tight">
             A school made of small, beautiful moments
           </h2>
         </motion.div>

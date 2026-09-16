@@ -364,7 +364,7 @@ export default function ContactUs({ intro }) {
                 )}
               </form>
 
-              <p className="mt-6 text-gray-600 text-center text-sm leading-relaxed">
+              <p className="mt-6 text-[#0A1539] text-center text-sm leading-relaxed" style={{ color: '#0A1539' }}>
                 At My School ITALY, we turn everyday moments into brain-building adventures – where play fuels curiosity, emotions shape empathy, and each child discovers the joy of learning through science and love.
               </p>
             </motion.div>

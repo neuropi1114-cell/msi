@@ -1,6 +1,4 @@
 'use client';
-import React from 'react';
-import { motion } from 'framer-motion';
 
 const workingParentLogos = [
   { src: "/images/logos/working-parents/Accenture-Logo.jpg.bv.webp", alt: "Accenture" },
@@ -81,33 +79,16 @@ const Solutions = () => {
   return (
     <section className="py-24 bg-[#e0872b] relative overflow-hidden">
       <div className="container mx-auto px-4 md:px-12 text-center mb-12">
-        <motion.h2
-          initial={{ opacity: 0, y: -20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-3xl md:text-5xl  text-white font-bold mb-4"
-        >
+        <h2 className="text-3xl md:text-5xl text-white font-bold mb-4">
           Solutions For All Lifestyles
-        </motion.h2>
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.2 }}
-          className="text-white/90 max-w-2xl mx-auto text-lg"
-        >
+        </h2>
+        <p className="text-white/90 max-w-2xl mx-auto text-lg">
           We offer family solutions for the diverse and multi-cultural global community.
-        </motion.p>
+        </p>
       </div>
 
       <div className="container mx-auto px-4 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className=""
-        >
+        <div>
           <img
             src="/images/solutions/working-parents.jpg.bv.webp"
             alt="Working Parents"
@@ -115,22 +96,16 @@ const Solutions = () => {
             loading="lazy"
           />
           <div className="bg-white rounded-b-3xl p-10">
-          <h3 className="text-2xl  text-[#2f9ed9] font-bold mb-3 text-center">
+          <h3 className="text-2xl text-[#2f9ed9] font-bold mb-3 text-center">
             YOU GO TO WORK.
             <br />
             THEIR CHILDHOOD DOESN'T HAVE TO WAIT.
           </h3>
           <LogoGrid logos={workingParentLogos} />
           </div>
-        </motion.div>
+        </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className=""
-        >
+        <div>
           <img
             src="/images/solutions/corporate-partners.jpg.bv.webp"
             alt="Corporate Partners"
@@ -138,26 +113,26 @@ const Solutions = () => {
             loading="lazy"
           />
           <div className="bg-white rounded-b-3xl p-10">
-          <h3 className="text-2xl  text-[#2f9ed9] font-bold mb-3 text-center">
+          <h3 className="text-2xl text-[#2f9ed9] font-bold mb-3 text-center">
             You focus on your work
           </h3>
-          <p className="text-gray-600 mb-2 leading-relaxed text-justify">
+          <p className="text-[#0A1539] mb-2 leading-relaxed text-justify" style={{ color: '#0A1539' }}>
             We remain focused on your child.
           </p>
-          <p className="text-gray-600 mb-2 leading-relaxed text-justify">
+          <p className="text-[#0A1539] mb-2 leading-relaxed text-justify" style={{ color: '#0A1539' }}>
             For working parents, childcare needs to understand real life.
             An early meeting. A long commute. A late call.
             A school holiday when your office is open.
             A workday that doesn't end exactly when preschool does.
           </p>
-          <p className="text-gray-600 mb-6 leading-relaxed text-justify">
+          <p className="text-[#0A1539] mb-6 leading-relaxed text-justify" style={{ color: '#0A1539' }}>
             That is why MSI brings together:
             Crèche + Preschool + Daycare + Extended Care + After-School + Enrichment
             with additional care options available at selected centres
           </p>
           <LogoGrid logos={corporatePartnerLogos} />
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

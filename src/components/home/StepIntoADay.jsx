@@ -1,6 +1,9 @@
 import React from 'react';
 
-const StepIntoADay = () => {
+const StepIntoADay = ({
+  rightImage = "/images/stepintoaday/BETTER UNDERSTANDING AROUND EVERY CHILD.png",
+  altText = "Better Understanding Around Every Child"
+}) => {
   return (
     <section className="py-24 md:py-32 bg-white">
       <div className="container mx-auto px-6 md:px-12 lg:px-20 grid gap-12 lg:grid-cols-2 items-center">
@@ -17,15 +20,15 @@ const StepIntoADay = () => {
 
         <div className="lg:pl-10">
           <img
-            src="/images/stepintoaday/Built on Neuroscience and Joy (1).png"
-            alt="Built on Neuroscience and Joy"
+            src={rightImage}
+            alt={altText}
             className="w-full mb-8"
             loading="lazy"
           />
-          <p className="text-gray-700 text-lg mb-6 leading-relaxed">
+          <p className="text-[#0A1539] text-lg mb-6 leading-relaxed" style={{ color: '#0A1539' }}>
             Children don't develop only while sitting at a table.
           </p>
-          <ul className="text-gray-700 text-lg mb-10 leading-relaxed space-y-2 list-disc list-inside">
+          <ul className="text-[#0A1539] text-lg mb-10 leading-relaxed space-y-2 list-disc list-inside" style={{ color: '#0A1539' }}>
             <li>A story develops language and imagination.</li>
             <li>A puzzle can develop persistence.</li>
             <li>Gymnastics can develop coordination and confidence.</li>
@@ -38,7 +41,7 @@ const StepIntoADay = () => {
             <li>Movement matters.</li>
             <li>Relationships matter.</li>
           </ul>
-          <p className="font-bold text-gray-900 text-lg mb-10 leading-relaxed">
+          <p className="font-bold text-[#0A1539] text-lg mb-10 leading-relaxed" style={{ color: '#0A1539' }}>
             At MSI, the whole day is part of childhood.
           </p>
           <a

@@ -27,6 +27,7 @@ export default {
         'lato': ['var(--font-lato)', 'sans-serif'],
         'fredoka': ['var(--font-fredoka)', 'sans-serif'],
         'schoolbell': ['"Schoolbell"', 'sans-serif'],
+        'linotte': ['"Linotte-Regular"', '"Linotte Rounded"', '"Linotte"', 'var(--font-fredoka)', 'sans-serif'],
       },
       fontSize: {
         'display-xl': ['clamp(3rem, 8vw, 6rem)', { lineHeight: '1.05', letterSpacing: '-0.02em' }],

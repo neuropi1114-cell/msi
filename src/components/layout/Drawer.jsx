@@ -36,7 +36,7 @@ const Drawer = ({ open, onClose, title, children, side = 'right' }) => {
             aria-label={title}
           >
             <div className="flex justify-between items-center gap-4 p-6 border-b border-gray-100">
-              <h3 className="text-xl md:text-2xl font-bold leading-tight" style={{ color: '#e4984d' }}>
+              <h3 className="leading-tight">
                 {title}
               </h3>
               <button

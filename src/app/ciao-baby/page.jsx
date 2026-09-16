@@ -173,7 +173,7 @@ export default function CiaoBabyPage() {
                     loading="lazy"
                   />
                   <div className="p-6">
-                    <h3 className="text-xl font-bold mb-3" style={{ color: '#e4984d' }}>
+                    <h3>
                       {program.title}
                     </h3>
                     <div className="text-gray-600 text-sm leading-relaxed mb-3 text-justify space-y-2">

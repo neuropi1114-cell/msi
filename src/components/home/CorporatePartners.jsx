@@ -22,7 +22,8 @@ export default function CorporatePartners({ title = defaultTitle, description = 
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
-          className="text-gray-600 max-w-2xl mx-auto"
+          className="text-[#0A1539] max-w-2xl mx-auto"
+          style={{ color: '#0A1539' }}
         >
           {description}
         </motion.p>

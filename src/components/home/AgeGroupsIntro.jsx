@@ -16,7 +16,7 @@ const AgeDetail = ({ group, reversed, first }) => {
       transition={{ duration: 0.6, delay: 0.2 }}
       className="bg-white p-8 rounded-2xl shadow-lg"
     >
-      <h3 className="text-sm font-semibold mb-2 tracking-wider" style={{ color: '#369bd0' }}>
+      <h3>
         {group.ageRange}
       </h3>
       {group.accordion ? (
@@ -40,7 +40,7 @@ const AgeDetail = ({ group, reversed, first }) => {
                   </span>
                 </button>
                 {isOpen && (
-                  <p className="pb-6 text-gray-600 leading-relaxed">{item.content}</p>
+                  <p className="pb-6 text-[#0A1539] leading-relaxed" style={{ color: '#0A1539' }}>{item.content}</p>
                 )}
               </div>
             );
@@ -51,7 +51,7 @@ const AgeDetail = ({ group, reversed, first }) => {
           <h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: '#e4984d' }}>
             {group.title}
           </h2>
-          <p className="text-gray-600 mb-6 leading-relaxed">{group.description}</p>
+          <p className="text-[#0A1539] mb-6 leading-relaxed" style={{ color: '#0A1539' }}>{group.description}</p>
         </>
       )}
       {!group.accordion && (group.drawer ? (
@@ -66,7 +66,7 @@ const AgeDetail = ({ group, reversed, first }) => {
           <Drawer open={drawerOpen} onClose={() => setDrawerOpen(false)} title={group.drawer.title} side="left">
             <div className="space-y-4">
               {group.drawer.paragraphs.map((paragraph, i) => (
-                <p key={i} className="text-gray-700 leading-relaxed">
+                <p key={i} className="text-[#0A1539] leading-relaxed" style={{ color: '#0A1539' }}>
                   {paragraph}
                 </p>
               ))}
@@ -134,7 +134,7 @@ const AgeGroupsIntro = ({ data }) => {
               {data.header.title}
             </h2>
             <h2>{data.header.subtitle}</h2>
-            <p className="text-gray-600 text-lg leading-relaxed">{data.header.description}</p>
+            <p className="text-[#0A1539] text-lg leading-relaxed" style={{ color: '#0A1539' }}>{data.header.description}</p>
           </motion.div>
         )}
 

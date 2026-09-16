@@ -45,7 +45,8 @@ export default function Team() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="text-gray-600 max-w-2xl mx-auto text-lg leading-relaxed"
+            className="text-[#0A1539] max-w-2xl mx-auto text-lg leading-relaxed"
+            style={{ color: '#0A1539' }}
           >
             Behind every classroom, every programme, and every child's breakthrough — there's a team that cares deeply about getting it right.
           </motion.p>
@@ -125,13 +126,13 @@ export default function Team() {
                 Education should reach everyone
             </h3>
             <p className="text-msi-orange font-lato italic text-xl md:text-2xl mb-6">MSI venture philanthropy</p>
-            <p className="text-gray-600 mb-6 leading-relaxed max-w-2xl mx-auto">
+            <p className="text-[#0A1539] mb-6 leading-relaxed max-w-2xl mx-auto" style={{ color: '#0A1539' }}>
                 We work to make quality early education accessible to communities that need it most — through training programmes, hiring initiatives, and partnerships that create real opportunities for young people.
             </p>
             <div className="border-t border-gray-200 pt-6 mt-6">
-                <p className="text-gray-700 font-medium text-center mb-2">Ritzy Schools Educational Society</p>
-                <p className="text-gray-600 text-center mb-1">Email : ritzyschools@gmail.com</p>
-                <p className="text-gray-600 text-center mb-4">Contact: Ms Roja , Program Manager</p>
+                <p className="text-[#0A1539] font-medium text-center mb-2" style={{ color: '#0A1539' }}>Ritzy Schools Educational Society</p>
+                <p className="text-[#0A1539] text-center mb-1" style={{ color: '#0A1539' }}>Email : ritzyschools@gmail.com</p>
+                <p className="text-[#0A1539] text-center mb-4" style={{ color: '#0A1539' }}>Contact: Ms Roja , Program Manager</p>
                 <div className="text-center">
                     <a href="/msi-venture-philanthropy" className="inline-block bg-msi-orange text-white px-8 py-3 rounded-full font-medium hover:bg-msi-orange/90 transition-colors">
                         Read More

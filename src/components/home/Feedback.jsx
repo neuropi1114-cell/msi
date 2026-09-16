@@ -69,9 +69,9 @@ export default function Feedback() {
         >
           <p className="text-lg md:text-xl" style={{ color: '#1891CD' }}>What do parents say about us</p>
           <h2 className="text-4xl md:text-5xl font-bold mt-2" style={{ color: '#E1872B' }}>Testimonials</h2>
-          <div className="max-w-4xl mx-auto mt-6 text-gray-600 text-sm md:text-base leading-relaxed">
-            <p>At My School ITALY, every parent&rsquo;s story reflects the heart of our mission &mdash; blending neuroscience and nurturing care to shape confident, happy learners. Our testimonials capture how families experience the NeuroPi difference &mdash; from emotional well-being to academic readiness and joyful curiosity.</p>
-            <p className="mt-4">Parents consistently share how their children show remarkable emotional growth, learning to express feelings calmly and connect meaningfully with peers. The brain-based curriculum has improved attention, curiosity, and creative thinking at home and school. Teachers&rsquo; warmth and individual attention make every child feel seen, supported, and celebrated. The environment&rsquo;s soft colours, sensory-rich zones, and mindful routines create a sense of peace and belonging. Daily updates and parent workshops empower them to continue brain-nurturing practices at home. Together, these heartfelt testimonials showcase the essence of My School ITALY &mdash; where parents don&rsquo;t just see progress, they feel transformation.</p>
+          <div className="max-w-4xl mx-auto mt-6 text-[#0A1539] text-sm md:text-base leading-relaxed" style={{ color: '#0A1539' }}>
+            <p style={{ color: '#0A1539' }}>At My School ITALY, every parent&rsquo;s story reflects the heart of our mission &mdash; blending neuroscience and nurturing care to shape confident, happy learners. Our testimonials capture how families experience the NeuroPi difference &mdash; from emotional well-being to academic readiness and joyful curiosity.</p>
+            <p className="mt-4" style={{ color: '#0A1539' }}>Parents consistently share how their children show remarkable emotional growth, learning to express feelings calmly and connect meaningfully with peers. The brain-based curriculum has improved attention, curiosity, and creative thinking at home and school. Teachers&rsquo; warmth and individual attention make every child feel seen, supported, and celebrated. The environment&rsquo;s soft colours, sensory-rich zones, and mindful routines create a sense of peace and belonging. Daily updates and parent workshops empower them to continue brain-nurturing practices at home. Together, these heartfelt testimonials showcase the essence of My School ITALY &mdash; where parents don&rsquo;t just see progress, they feel transformation.</p>
           </div>
           <div className="flex justify-center mt-4">
             <img src="/images/gallery/bee.png" alt="" className="w-auto h-6" loading="lazy" />
@@ -105,7 +105,7 @@ export default function Feedback() {
               <div key={i} className="min-w-[320px] md:min-w-[400px] snap-start">
                 <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 flex flex-col h-full">
                   <Stars />
-                  <p className="text-gray-700 text-sm leading-relaxed flex-1">&ldquo;{t.text}&rdquo;</p>
+                  <p className="text-[#0A1539] text-sm leading-relaxed flex-1" style={{ color: '#0A1539' }}>&ldquo;{t.text}&rdquo;</p>
                   <div className="mt-4 pt-4 border-t border-gray-100">
                     <strong style={{ color: '#1891CD' }}>{t.name}</strong>
                   </div>
