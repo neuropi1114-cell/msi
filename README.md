@@ -84,3 +84,7 @@ yarn lint
 ## Build
 
 The site is statically prerendered (SSG) with all SEO metadata baked into the HTML at build time. Sitemap and robots.txt are auto-generated via `next-sitemap` after each build.
+
+## Contact
+
+For inquiries, reach out at: neuropi1114@gmail.com

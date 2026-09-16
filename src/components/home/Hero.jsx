@@ -6,7 +6,7 @@ const slides = [
   {
     image: '/images/hero/Slider_1-scaled.jpg.bv.webp',
     accentImage: '/images/believe/DSC01240-684x1024-1.jpeg.bv.webp',
-    tagline: 'where curious minds take root',
+    tagline: 'we begin by understanding the child',
     title: 'Every child\'s brain is a world of wonder',
     body: 'Rooted in the science of early brain development, we create spaces where curiosity, calm, and connection thrive.',
     cta: { text: 'See how we do it', href: '/programs' },
@@ -14,18 +14,18 @@ const slides = [
   {
     image: '/images/hero/Slider_2-scaled.jpg.bv.webp',
     accentImage: '/images/believe/DSC00795-1024x684-1.jpeg.bv_resized_ipad.jpeg.bv.webp',
-    tagline: 'feelings come first here',
-    title: 'We help children understand their world',
+    tagline: 'Childhood Deserves to Be Understood, Not Hurried.',
+    title: 'LET CHILDHOOD BE EXTRAORDINARY',
     body: 'Through guided social interactions, mindfulness, and a warm environment where every child feels seen and heard.',
-    cta: { text: 'Explore our approach', href: '/nep' },
+    cta: { text: 'Explore Why MSI', href: '/nep' },
   },
   {
     image: '/images/hero/Slider_3-scaled.jpg.bv.webp',
     accentImage: '/images/age-groups/sproutlings.webp',
-    tagline: 'play is how they learn',
+    tagline: 'From 45 days to the growing years.',
     title: 'Discovery starts with a single question',
-    body: 'Our play-based curriculum turns everyday moments into opportunities for exploration, creativity, and a lifelong love of learning.',
-    cta: { text: 'Step into a day', href: '/day-care' },
+    body: 'One continuous journey through Baby Crèche, Toddler, Nursery, Kindergarten, Daycare, Extended Care, After-School and Enrichment.',
+    cta: { text: 'Explore Program', href: '/day-care' },
   },
 ];
 

@@ -26,6 +26,8 @@ export default function HomePage() {
         <Hero />
         <div data-nav-sentinel />
         <BelieveBrilliance />
+        <AgeGroupsIntro />
+
         <StepIntoADay />
         <Solutions />
         <CorporatePartners />

@@ -47,15 +47,17 @@ const BelieveBrilliance = () => {
             transition={{ duration: 0.6 }}
           >
             <h3 className="font-lato italic text-msi-gold text-xl md:text-2xl mb-2 tracking-wide">
-              It starts with how they see the world
+              From 45 Days to 12 Years
             </h3>
             <h2 className="font-lato text-display-md md:text-display-lg text-msi-purple mb-6 leading-tight">
-              Building brilliant minds,{' '}
-                <br />
-                one small moment at a time
+              EVERY CHILD IS DIFFERENT.
+              <br />
+              THEIR EARLY YEARS SHOULD UNDERSTAND THAT
             </h2>
             <p className="text-gray-700 text-lg mb-6 leading-relaxed">
-              Children don't learn from worksheets. They learn from wonder, from repetition, from the way a teacher kneels down to their level. At My School ITALY, we've spent over thirty years observing how young brains actually grow — and building our approach around what we've seen work.
+              A nurturing early childhood ecosystem where learning, care, development, 
+movement, nutrition and emotional wellbeing come together around the individual 
+child.
             </p>
 
             <div className="border-l-4 border-msi-gold pl-6 my-8 py-2">
@@ -68,12 +70,20 @@ const BelieveBrilliance = () => {
               Where every small step matters
             </h4>
 
-            <a href="/about" className="group inline-flex items-center gap-2 text-msi-purple font-medium text-lg border-b-2 border-msi-purple/30 pb-1 hover:border-msi-purple transition-colors">
-              Learn about us
-              <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </a>
+            <div className="flex flex-wrap gap-6">
+              <a href="/book-your-tour" className="group inline-flex items-center gap-2 text-msi-purple font-medium text-lg border-b-2 border-msi-purple/30 pb-1 hover:border-msi-purple transition-colors">
+                BOOK A SCHOOL TOUR
+                <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </a>
+              <a href="/contact" className="group inline-flex items-center gap-2 text-msi-purple font-medium text-lg border-b-2 border-msi-purple/30 pb-1 hover:border-msi-purple transition-colors">
+                FIND A CENTRE
+                <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </a>
+            </div>
           </motion.div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, Phone, Mail, MapPin, Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
+import { Home, Phone, Mail, Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
 
 const TopBar = () => {
   return (
@@ -13,15 +13,15 @@ const TopBar = () => {
           <Phone className="w-4 h-4 mr-2" />
           (+91) 70939 04680
         </a>
+        <a href="https://wa.me/917075947070" target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-msi-orange transition-colors">
+          <img src="/whatsapp-icon.svg" alt="WhatsApp" className="w-4 h-4 mr-2" />
+          (+91) 70759 47070
+        </a>
         <a href="mailto:info@myschoolitaly.com" className="flex items-center hover:text-msi-orange transition-colors">
           <Mail className="w-4 h-4 mr-2" />
           info@myschoolitaly.com
         </a>
-        <div className="flex items-center">
-          <MapPin className="w-4 h-4 mr-2 text-msi-orange" />
-          ITALY, UAE & INDIA
         </div>
-      </div>
       
       <div className="flex items-center space-x-3">
         <a href="https://facebook.com/myschoolitaly" target="_blank" rel="noopener noreferrer" className="bg-msi-orange p-1.5 rounded hover:bg-white hover:text-msi-orange transition-colors">
