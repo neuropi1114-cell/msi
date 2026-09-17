@@ -2,14 +2,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
-const programs = [
-  "Toddler (1.5 years - 2.5 years)",
-  "Nursery (2.5 years - 3.5 years)",
-  "K1 (3.5 years - 4.5 years)",
-  "K2 (4.5 years - 5.5 years)",
-  "Grade 1 (5.5 years - 6.5 years)",
-  "Grade 2 (6.5 years - 7.5 years)"
-];
+import { programs } from '../../data/programs';
 
 const countries = [
   { name: "Bangladesh", code: "bd", phone: "+880" },

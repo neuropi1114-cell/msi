@@ -1,15 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import { Send, CheckCircle } from 'lucide-react';
-
-const programs = [
-  { value: 'Toddler (1.5 - 2.5 years)', label: 'Toddler (1.5 - 2.5 years)' },
-  { value: 'Nursery (2.5 - 3.5 years)', label: 'Nursery (2.5 - 3.5 years)' },
-  { value: 'K1 (3.5 - 4.5 years)', label: 'K1 (3.5 - 4.5 years)' },
-  { value: 'K2 (4.5 - 5.5 years)', label: 'K2 (4.5 - 5.5 years)' },
-  { value: 'Grade 1 (5.5 - 6.5 years)', label: 'Grade 1 (5.5 - 6.5 years)' },
-  { value: 'Grade 2 (6.5 - 7.5 years)', label: 'Grade 2 (6.5 - 7.5 years)' },
-];
+import { programs } from '../../data/programs';
 
 const BookTourForm = () => {
   const [formData, setFormData] = useState({
@@ -113,9 +105,9 @@ const BookTourForm = () => {
           className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-msi-orange focus:border-transparent outline-none transition-all bg-white"
         >
           <option value="">Select Program</option>
-          {programs.map((p) => (
-            <option key={p.value} value={p.value}>
-              {p.label}
+          {programs.map((program) => (
+            <option key={program} value={program}>
+              {program}
             </option>
           ))}
         </select>

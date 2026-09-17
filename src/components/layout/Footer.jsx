@@ -23,7 +23,7 @@ const Footer = () => {
           <ul className="text-white/80 text-sm flex flex-wrap justify-center gap-x-1 gap-y-1 mb-4">
             {['Q-city', 'Hitex', 'Avance', 'Mindscape', 'Kavuri Hills', 'Avance 2', 'Cyberabad Police Commissionerate', 'Miyapur', 'Kukatpally', 'Kondapur', 'Manikonda'].map((branch, i, arr) => (
               <li key={branch} className="flex items-center">
-                <span className="hover:text-msi-orange transition-colors cursor-pointer">{branch}</span>
+                <span className="text-msi-cream cursor-pointer">{branch}</span>
                 {i < arr.length - 1 && <span className="text-white/40 ml-1">|</span>}
               </li>
             ))}
@@ -33,7 +33,7 @@ const Footer = () => {
           <ul className="text-white/80 text-sm flex flex-wrap justify-center gap-x-1 gap-y-1">
             {['Berhampur – Odisha', 'Tanuku – AP', 'Tadepalligudem – AP', 'Manpada – Thane', 'Balewadi – Pune', 'Purna Nagar – Pune', 'Chakshu – Jaipur', 'Noida – UP'].map((branch, i, arr) => (
               <li key={branch} className="flex items-center">
-                <span className="hover:text-msi-orange transition-colors cursor-pointer">{branch}</span>
+                <span className="text-msi-cream cursor-pointer">{branch}</span>
                 {i < arr.length - 1 && <span className="text-white/40 ml-1">|</span>}
               </li>
             ))}
@@ -58,7 +58,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-6 text-white">Contact us</h3>
             
-            <ul className="space-y-3 text-white/80 text-sm">
+            <ul className="space-y-3 text-msi-cream text-sm">
               <li className="flex items-start">
                 <MapPin className="w-4 h-4 mr-2 text-msi-orange flex-shrink-0 mt-1" />
                 <span>
@@ -79,15 +79,15 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <Phone className="w-4 h-4 mr-2 text-msi-orange" />
-                <a href="tel:+917093904680" className="hover:text-msi-orange transition-colors">(+91) 70939 04680</a>
+                <a href="tel:+917093904680">(+91) 70939 04680</a>
               </li>
               <li className="flex items-center">
                 <Mail className="w-4 h-4 mr-2 text-msi-orange" />
-                <a href="mailto:info@myschoolitaly.com" className="hover:text-msi-orange transition-colors">info@myschoolitaly.com</a>
+                <a href="mailto:info@myschoolitaly.com">info@myschoolitaly.com</a>
               </li>
               <li className="flex items-center">
                 <Phone className="w-4 h-4 mr-2 text-msi-orange" />
-                <span>WhatsApp: <a href="https://wa.me/917093904680" className="hover:text-msi-orange transition-colors">(+91) 70939 04680</a></span>
+                <span>WhatsApp: <a href="https://wa.me/917093904680">(+91) 70939 04680</a></span>
               </li>
             </ul>
 
@@ -114,15 +114,15 @@ const Footer = () => {
           {/* Column 3: Navigation */}
           <div>
             <h3 className="text-xl font-bold mb-6 text-white">Navigation</h3>
-            <ul className="flex flex-col gap-y-2 text-white/80 text-sm">
-              <li><a href="/" className="hover:text-msi-orange transition-colors">Home</a></li>
-              <li><a href="/programs" className="hover:text-msi-orange transition-colors">Pre School</a></li>
-              <li><a href="/nep" className="hover:text-msi-orange transition-colors">The Educational Project</a></li>
-              <li><a href="/day-care" className="hover:text-msi-orange transition-colors">Day Care</a></li>
-              <li><a href="/about#team" className="hover:text-msi-orange transition-colors">Our Team</a></li>
-              <li><a href="/franchise-overview" className="hover:text-msi-orange transition-colors">Franchise Overview</a></li>
-              <li><a href="/baby-sensory" className="hover:text-msi-orange transition-colors">Baby Sensory</a></li>
-              <li><a href="/admissions" className="hover:text-msi-orange transition-colors">Enroll</a></li>
+            <ul className="flex flex-col gap-y-2 text-msi-cream text-sm">
+              <li><a href="/">Home</a></li>
+              <li><a href="/programs">Pre School</a></li>
+              <li><a href="/nep">The Educational Project</a></li>
+              <li><a href="/day-care">Day Care</a></li>
+              <li><a href="/about#team">Our Team</a></li>
+              <li><a href="/franchise-overview">Franchise Overview</a></li>
+              <li><a href="/baby-sensory">Baby Sensory</a></li>
+              <li><a href="/admissions">Enroll</a></li>
             </ul>
           </div>
 
