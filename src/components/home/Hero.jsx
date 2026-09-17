@@ -1,6 +1,7 @@
 'use client';
 import React, { useState, useCallback, useEffect, useRef } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
+import Link from 'next/link';
 
 const slides = [
   {
@@ -37,8 +38,10 @@ const fadeSlide = {
 
 const Hero = () => {
   const [current, setCurrent] = useState(0);
-  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
-  const sectionRef = useRef(null);
+  const [isPaused, setIsPaused] = useState(false);
+  const reduceMotion = useReducedMotion();
+  const bgRef = useRef(null);
+  const accentRef = useRef(null);
 
   const next = useCallback(() => {
     setCurrent((c) => (c + 1) % slides.length);
@@ -49,25 +52,44 @@ const Hero = () => {
   }, []);
 
   useEffect(() => {
+    if (reduceMotion || isPaused) return;
     const timer = setInterval(next, 7000);
     return () => clearInterval(timer);
-  }, [next]);
+  }, [next, isPaused, reduceMotion]);
 
-  const handleMouseMove = (e) => {
-    if (!sectionRef.current) return;
-    const rect = sectionRef.current.getBoundingClientRect();
-    setMousePos({
-      x: ((e.clientX - rect.left) / rect.width - 0.5) * 20,
-      y: ((e.clientY - rect.top) / rect.height - 0.5) * 20,
-    });
-  };
+  const handleMouseMove = useCallback(
+    (e) => {
+      if (reduceMotion) return;
+      const rect = e.currentTarget.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / rect.width - 0.5) * 20;
+      const y = ((e.clientY - rect.top) / rect.height - 0.5) * 20;
+      if (bgRef.current) {
+        bgRef.current.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px) scale(1.05)`;
+      }
+      if (accentRef.current) {
+        accentRef.current.style.transform = `translate(${-x * 0.5}px, ${-y * 0.5}px)`;
+      }
+    },
+    [reduceMotion]
+  );
+
+  const resetParallax = useCallback(() => {
+    if (bgRef.current) bgRef.current.style.transform = 'scale(1.05)';
+    if (accentRef.current) accentRef.current.style.transform = '';
+  }, []);
 
   const slide = slides[current];
 
   return (
     <section
-      ref={sectionRef}
       onMouseMove={handleMouseMove}
+      onMouseEnter={() => setIsPaused(true)}
+      onMouseLeave={() => {
+        setIsPaused(false);
+        resetParallax();
+      }}
+      onFocus={() => setIsPaused(true)}
+      onBlur={() => setIsPaused(false)}
       className="relative min-h-screen w-full overflow-hidden bg-msi-charcoal"
       aria-label="Hero banner"
     >
@@ -90,10 +112,11 @@ const Hero = () => {
           className="absolute inset-0 z-0"
         >
           <div
+            ref={bgRef}
             className="absolute inset-0 bg-cover bg-center img-editorial"
             style={{
               backgroundImage: `url("${slide.image}")`,
-              transform: `translate(${mousePos.x * 0.3}px, ${mousePos.y * 0.3}px) scale(1.05)`,
+              transform: 'scale(1.05)',
               transition: 'transform 0.8s cubic-bezier(0.22, 1, 0.36, 1)',
             }}
           />
@@ -112,13 +135,15 @@ const Hero = () => {
           exit={{ opacity: 0, y: -20, rotate: 0 }}
           transition={{ duration: 0.9, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
           className="hidden lg:block absolute z-20 right-[8%] bottom-[12%] w-64 h-80 rounded-2xl overflow-hidden shadow-2xl border-2 border-white/10"
-          style={{
-            transform: `translate(${mousePos.x * -0.5}px, ${mousePos.y * -0.5}px)`,
-            transition: 'transform 1s cubic-bezier(0.22, 1, 0.36, 1)',
-          }}
         >
-          <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url("${slide.accentImage}")` }} />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+          <div
+            ref={accentRef}
+            className="absolute inset-0"
+            style={{ transition: 'transform 1s cubic-bezier(0.22, 1, 0.36, 1)' }}
+          >
+            <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url("${slide.accentImage}")` }} />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+          </div>
         </motion.div>
       </AnimatePresence>
 
@@ -138,7 +163,7 @@ const Hero = () => {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7, delay: 0.2 }}
-              className="font-lato italic text-msi-gold text-lg md:text-xl mb-4 tracking-wide"
+              className="font-lato italic text-msi-blue text-lg md:text-xl mb-4 tracking-wide"
             >
               {slide.tagline}
             </motion.p>
@@ -164,23 +189,26 @@ const Hero = () => {
             </motion.p>
 
             {/* Conversational CTA */}
-            <motion.a
-              href={slide.cta.href}
+            <motion.div
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.7 }}
-              className="group inline-flex items-center gap-3 text-white text-lg font-medium border-b-2 border-msi-gold/60 pb-1 hover:border-msi-gold transition-colors"
             >
-              {slide.cta.text}
-              <svg
-                className="w-5 h-5 transition-transform group-hover:translate-x-1"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
+              <Link
+                href={slide.cta.href}
+                className="group inline-flex items-center gap-3 text-white text-lg font-medium border-b-2 border-msi-gold/60 pb-1 hover:border-msi-gold transition-colors"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </motion.a>
+                {slide.cta.text}
+                <svg
+                  className="w-5 h-5 transition-transform group-hover:translate-x-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </Link>
+            </motion.div>
           </motion.div>
         </AnimatePresence>
 

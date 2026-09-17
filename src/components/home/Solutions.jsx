@@ -1,136 +1,43 @@
-'use client';
-
-const workingParentLogos = [
-  { src: "/images/logos/working-parents/Accenture-Logo.jpg.bv.webp", alt: "Accenture" },
-  { src: "/images/logos/working-parents/TCS-Logo.jpg.bv.webp", alt: "TCS" },
-  { src: "/images/logos/working-parents/Microsoft-Logo.jpg.bv.webp", alt: "Microsoft" },
-  { src: "/images/logos/working-parents/KWE-Logo.jpg.bv.webp", alt: "KWE" },
-  { src: "/images/logos/working-parents/Broadcom-Logo.jpg.bv.webp", alt: "Broadcom" },
-  { src: "/images/logos/working-parents/ICICI-Bank-Logo.jpg.bv.webp", alt: "ICICI Bank" },
-  { src: "/images/logos/working-parents/Vodafone-Logo.jpg.bv.webp", alt: "Vodafone" },
-  { src: "/images/logos/working-parents/Amazon-Logo-1.jpg.bv.webp", alt: "Amazon" },
-  { src: "/images/logos/working-parents/hcl.png.bv.webp", alt: "HCL" },
-  { src: "/images/logos/working-parents/wipro-2.png.bv.webp", alt: "Wipro" },
-  { src: "/images/logos/working-parents/ibm-1.png.bv.webp", alt: "IBM" },
-  { src: "/images/logos/working-parents/Cyient_logo-1.jpg.bv.webp", alt: "Cyient" },
-  { src: "/images/logos/working-parents/cognizant-1.png.bv.webp", alt: "Cognizant" },
-  { src: "/images/logos/working-parents/ValueLabs_LLP_Logo.jpg.bv.webp", alt: "ValueLabs" },
-  { src: "/images/logos/working-parents/oracle_logo.png.bv.webp", alt: "Oracle" },
-  { src: "/images/logos/working-parents/optum-healthcare-logo.png.bv.webp", alt: "Optum" },
-  { src: "/images/logos/working-parents/mc.png.bv.webp", alt: "MC" },
-  { src: "/images/logos/working-parents/HSBC_logo.png.bv.webp", alt: "HSBC" },
-  { src: "/images/logos/working-parents/Deloitte_Logo.png.bv.webp", alt: "Deloitte" },
-  { src: "/images/logos/working-parents/Novartis-Logo.png.bv.webp", alt: "Novartis" },
-  { src: "/images/logos/working-parents/6102f4c273c93700042f87ea.png.bv.webp", alt: "Partner" },
-  { src: "/images/logos/working-parents/Infosys_logo.svg.png.bv.webp", alt: "Infosys" },
-  { src: "/images/logos/working-parents/Wells_Fargo_Logo.png.bv.webp", alt: "Wells Fargo" },
-];
-
-const corporatePartnerLogos = [
-  { src: "/images/logos/corporate-partners/TSWREIS-Logo.jpg.bv.webp", alt: "TSWREIS" },
-  { src: "/images/logos/corporate-partners/TTWREIS-Logo.jpg.bv.webp", alt: "TTWREIS" },
-  { src: "/images/logos/corporate-partners/Tech-Mahindra-Logo.jpg.bv.webp", alt: "Tech Mahindra" },
-  { src: "/images/logos/corporate-partners/Samudara-Infra-Logo.jpg.bv.webp", alt: "Samudara Infra" },
-  { src: "/images/logos/corporate-partners/Amaron-Logo.jpg.bv.webp", alt: "Amaron" },
-  { src: "/images/logos/corporate-partners/QCIty.jpg.bv.webp", alt: "QCity" },
-  { src: "/images/logos/corporate-partners/ICICI-Bank-Logo.jpg.bv.webp", alt: "ICICI Bank" },
-  { src: "/images/logos/corporate-partners/Religare-Logo.jpg.bv.webp", alt: "Religare" },
-  { src: "/images/logos/corporate-partners/Amazon-Logo.jpg.bv.webp", alt: "Amazon" },
-  { src: "/images/logos/corporate-partners/Vodafone-Logo-1.jpg.bv.webp", alt: "Vodafone" },
-  { src: "/images/logos/corporate-partners/hps.png.bv.webp", alt: "HPS" },
-  { src: "/images/logos/corporate-partners/novvvva.png.bv.webp", alt: "Novartis" },
-  { src: "/images/logos/corporate-partners/hhimachal.png.bv.webp", alt: "Himachal" },
-  { src: "/images/logos/corporate-partners/ppppresvas-1.png.bv.webp", alt: "Presvas" },
-  { src: "/images/logos/corporate-partners/granules_logo.png.bv.webp", alt: "Granules" },
-  { src: "/images/logos/corporate-partners/Siemens-Logo.png.bv.webp", alt: "Siemens" },
-  { src: "/images/logos/corporate-partners/Xoriant-Logo.png.bv.webp", alt: "Xoriant" },
-  { src: "/images/logos/corporate-partners/Genpact_logo.svg.png.bv.webp", alt: "Genpact" },
-  { src: "/images/logos/corporate-partners/SSC_Technologies_logo.png.bv.webp", alt: "SS&C Technologies" },
-  { src: "/images/logos/corporate-partners/Gemini-Consulting.png.bv.webp", alt: "Gemini Consulting" },
-  { src: "/images/logos/corporate-partners/348423720_n.jpg.bv.webp", alt: "Partner" },
-  { src: "/images/logos/corporate-partners/ibm.svg", alt: "IBM" },
-  { src: "/images/logos/corporate-partners/images-1.png.bv.webp", alt: "Partner" },
-  { src: "/images/logos/corporate-partners/images-2.png.bv.webp", alt: "Partner" },
-  { src: "/images/logos/corporate-partners/kidzen-logo.png.bv.webp", alt: "Kidzen" },
-  { src: "/images/logos/corporate-partners/proeves-logo.png.bv.webp", alt: "Proeves" },
-  { src: "/images/logos/corporate-partners/Zinnia-Home-1.png.bv.webp", alt: "Zinnia" },
-];
-
-const LogoGrid = ({ logos }) => (
-  <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3">
-    {logos.map((logo, i) => (
-      <div
-        key={i}
-        className="aspect-square bg-white rounded-lg flex items-center justify-center p-2 shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
-      >
-        <img
-          src={logo.src}
-          alt={logo.alt}
-          className="max-w-full max-h-full object-contain"
-          loading="lazy"
-          onError={(e) => { e.target.onerror = null; e.target.style.display = 'none'; }}
-        />
-      </div>
-    ))}
-  </div>
-);
-
 const Solutions = () => {
   return (
     <section className="py-24 bg-[#d16827] relative overflow-hidden">
-      <div className="container mx-auto px-4 md:px-12 text-center mb-12">
+      <div className="container mx-auto px-3 md:px-6 text-center mb-12">
         <h2 className="text-3xl md:text-5xl text-white font-bold mb-4">
-          Solutions For All Lifestyles
+          YOU GO TO WORK.
+          <br />
+          THEIR CHILDHOOD DOESN'T HAVE TO WAIT.
         </h2>
         <p className="text-white/90 max-w-2xl mx-auto text-lg">
           We offer family solutions for the diverse and multi-cultural global community.
         </p>
       </div>
 
-      <div className="container mx-auto px-4 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-        <div>
+      <div className="container mx-auto px-3 md:px-6 max-w-7xl">
+        <div className="bg-white rounded-3xl overflow-hidden shadow-xl">
           <img
-            src="/images/solutions/working-parents.jpg.bv.webp"
-            alt="Working Parents"
-            className="w-full h-[500px] object-cover rounded-t-3xl"
+            src="/images/solutions/you-go-to-work.jpeg"
+            alt="Parents at work while MSI cares for their child"
+            className="w-full object-cover"
             loading="lazy"
           />
-          <div className="bg-white rounded-b-3xl p-10">
-          <h3 className="text-2xl text-[#2f9ed9] font-bold mb-3 text-center">
-            YOU GO TO WORK.
-            <br />
-            THEIR CHILDHOOD DOESN'T HAVE TO WAIT.
-          </h3>
-          <LogoGrid logos={workingParentLogos} />
-          </div>
-        </div>
-
-        <div>
-          <img
-            src="/images/solutions/corporate-partners.jpg.bv.webp"
-            alt="Corporate Partners"
-            className="w-full h-[500px] object-cover rounded-t-3xl"
-            loading="lazy"
-          />
-          <div className="bg-white rounded-b-3xl p-10">
-          <h3 className="text-2xl text-[#2f9ed9] font-bold mb-3 text-center">
-            You focus on your work
-          </h3>
-          <p className="mb-2 leading-relaxed text-justify">
-            We remain focused on your child.
-          </p>
-          <p className="mb-2 leading-relaxed text-justify">
-            For working parents, childcare needs to understand real life.
-            An early meeting. A long commute. A late call.
-            A school holiday when your office is open.
-            A workday that doesn't end exactly when preschool does.
-          </p>
-          <p className="mb-6 leading-relaxed text-justify">
-            That is why MSI brings together:
-            Crèche + Preschool + Daycare + Extended Care + After-School + Enrichment
-            with additional care options available at selected centres
-          </p>
-          <LogoGrid logos={corporatePartnerLogos} />
+          <div className="p-6 md:p-10">
+            <h3 className="text-2xl text-[#2f9ed9] font-bold mb-3 text-center">
+              You focus on your work
+            </h3>
+            <p className="mb-2 leading-relaxed text-center text-lg md:text-xl">
+              We remain focused on your child.
+            </p>
+            <p className="mb-2 leading-relaxed text-center text-lg md:text-xl">
+              For working parents, childcare needs to understand real life.
+              An early meeting. A long commute. A late call.
+              A school holiday when your office is open.
+              A workday that doesn't end exactly when preschool does.
+            </p>
+            <p className="leading-relaxed text-center text-lg md:text-xl">
+              That is why MSI brings together:
+              Crèche + Preschool + Daycare + Extended Care + After-School + Enrichment
+              with additional care options available at selected centres
+            </p>
           </div>
         </div>
       </div>

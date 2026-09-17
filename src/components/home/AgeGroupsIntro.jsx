@@ -2,11 +2,18 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Drawer from '../layout/Drawer';
-import GrowingInConfidence from './GrowingInConfidence';
 
 const AgeDetail = ({ group, reversed, first }) => {
   const [drawerOpen, setDrawerOpen] = useState(false);
-  const [openAccordion, setOpenAccordion] = useState(group.accordion ? 0 : null);
+  const [openAccordions, setOpenAccordions] = useState(() =>
+    group.accordion ? group.accordion.map((_, i) => i) : []
+  );
+
+  const toggleAccordion = (i) => {
+    setOpenAccordions((prev) =>
+      prev.includes(i) ? prev.filter((item) => item !== i) : [...prev, i]
+    );
+  };
 
   const content = (
     <motion.div
@@ -20,29 +27,32 @@ const AgeDetail = ({ group, reversed, first }) => {
         {group.ageRange}
       </h3>
       {group.accordion ? (
-        <div className="mt-2">
+        <div className="mt-3 space-y-3">
           {group.accordion.map((item, i) => {
-            const isOpen = openAccordion === i;
+            const isOpen = openAccordions.includes(i);
             return (
-              <div key={i} className={i === 0 ? '' : 'border-t border-gray-100'}>
-                <button
-                  onClick={() => setOpenAccordion(isOpen ? null : i)}
-                  className="w-full flex items-center justify-between py-4 text-left cursor-pointer"
-                >
-                  <h2 className="text-2xl md:text-3xl font-bold">
-                    {item.title}
-                  </h2>
-                  <span
-                    className="text-2xl font-normal leading-none ml-4 transition-transform duration-300 text-msi-orange"
-                    style={{ transform: isOpen ? 'rotate(45deg)' : 'rotate(0)' }}
-                  >
-                    +
-                  </span>
-                </button>
-                {isOpen && (
-                  <p className="pb-6 leading-relaxed">{item.content}</p>
+              <React.Fragment key={i}>
+                {i > 0 && (
+                  <div className="flex items-center gap-3 my-3">
+                    <span className="text-msi-blue font-bold text-3xl md:text-4xl select-none">+</span>
+                  </div>
                 )}
-              </div>
+                <div>
+                  <button
+                    onClick={() => toggleAccordion(i)}
+                    className="w-full py-1 text-left cursor-pointer focus:outline-none"
+                  >
+                    <h2 className="text-2xl md:text-3xl font-bold">
+                      {item.title}
+                    </h2>
+                  </button>
+                  {isOpen && (
+                    <div className="mt-1 pb-1">
+                      <p className="leading-relaxed">{item.content}</p>
+                    </div>
+                  )}
+                </div>
+              </React.Fragment>
             );
           })}
         </div>
@@ -137,8 +147,6 @@ const AgeGroupsIntro = ({ data }) => {
         {data.groups.map((group, index) => (
           <AgeDetail key={index} group={group} reversed={group.reversed} first={index === 0} />
         ))}
-
-        {data.growing && <GrowingInConfidence growing={data.growing} />}
       </div>
     </section>
   );
