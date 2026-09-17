@@ -6,7 +6,7 @@
         {
           "ageRange": "Connected Around One Child",
           "title": "THE FIRST YEARS ARE NOT LITTLE YEARS.",
-          "image": "/images/age-groups/sproutlings.webp",
+          "image": "/images/believe/Web_2.png",
           "alt": "Sproutlings",
           "link": "/ciao-baby/",
           "reversed": false,
@@ -32,7 +32,7 @@
         {
           "ageRange": "Everything A Child Needs",
           "title": "WHAT IF A PRESCHOOL COULD NOTICE MORE?",
-          "image": "/images/age-groups/mini-maestros.webp",
+          "image": "/images/age-groups/everything-a-child-needs.png",
           "alt": "Mini Maestros",
           "link": "/baby-sensory/",
           "reversed": true,
@@ -64,7 +64,7 @@
         {
           "ageRange": "Once Upon a Time Can Lead Almost Anywhere.",
           "title": "STORIES ARE WHERE OUR CLASSROOMS COME ALIVE",
-          "image": "/images/age-groups/mini-maestros.webp",
+          "image": "/images/age-groups/once-upon-a-time.png",
           "alt": "Mini Maestros",
           "link": "/baby-sensory/",
           "reversed": true,

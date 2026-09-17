@@ -24,7 +24,7 @@ const BelieveBrilliance = () => {
             transition={{ duration: 0.9, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
             className="absolute right-0 bottom-0 w-[55%] h-[320px] lg:h-[360px] rounded-br-[40px] overflow-hidden z-10 shadow-xl border-4 border-white"
           >
-            <img src="/images/believe/DSC00795-1024x684-1.jpeg.bv_resized_ipad.jpeg.bv.webp" alt="Happy child" className="w-full h-full object-cover img-editorial" loading="lazy" />
+            <img src="/images/believe/Web_15.png" alt="Happy child" className="w-full h-full object-cover img-editorial" loading="lazy" />
           </motion.div>
           {/* Decorative handwritten note */}
 

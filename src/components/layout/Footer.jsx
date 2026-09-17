@@ -1,10 +1,11 @@
 import React from 'react';
-import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram, Youtube, ArrowRight } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
+
 const footerLogo = '/images/logo/The-Neuroscientific-European-Childcare-PDF_12-x-4-ft_Backside-1.png.bv_resized_desktop.png.bv.webp';
 
 const Footer = () => {
   return (
-    <footer className="bg-msi-purple text-white pt-16  overflow-hidden">
+    <footer className="bg-msi-purple text-white pt-16 overflow-hidden">
       <div className="container mx-auto px-4 md:px-12">
         
         {/* Logo */}
@@ -13,28 +14,31 @@ const Footer = () => {
         </div>
 
         {/* Tagline */}
-        <p className="text-center text-white font-bold text-lg uppercase tracking-wider mb-4">
+        <p className="text-center !text-white font-bold text-lg uppercase tracking-wider mb-2">
           Education Excellence Everywhere
+        </p>
+        <p className="text-center text-msi-orange font-medium text-base mb-6 italic">
+          While you build their future, we care for their childhood.
         </p>
 
         {/* Locations under tagline */}
         <div className="text-center mb-10">
           <h4 className="text-msi-orange font-bold mb-2">HYDERABAD :</h4>
-          <ul className="text-white/80 text-sm flex flex-wrap justify-center gap-x-1 gap-y-1 mb-4">
+          <ul className="!text-white text-sm flex flex-wrap justify-center gap-x-1 gap-y-1 mb-4">
             {['Q-city', 'Hitex', 'Avance', 'Mindscape', 'Kavuri Hills', 'Avance 2', 'Cyberabad Police Commissionerate', 'Miyapur', 'Kukatpally', 'Kondapur', 'Manikonda'].map((branch, i, arr) => (
-              <li key={branch} className="flex items-center">
-                <span className="text-msi-cream cursor-pointer">{branch}</span>
-                {i < arr.length - 1 && <span className="text-white/40 ml-1">|</span>}
+              <li key={branch} className="flex items-center !text-white">
+                <span className="!text-white cursor-pointer hover:text-msi-orange transition-colors">{branch}</span>
+                {i < arr.length - 1 && <span className="!text-white/40 ml-1">|</span>}
               </li>
             ))}
           </ul>
           
           <h4 className="text-msi-orange font-bold mb-2">PAN – INDIA :</h4>
-          <ul className="text-white/80 text-sm flex flex-wrap justify-center gap-x-1 gap-y-1">
+          <ul className="!text-white text-sm flex flex-wrap justify-center gap-x-1 gap-y-1">
             {['Berhampur – Odisha', 'Tanuku – AP', 'Tadepalligudem – AP', 'Manpada – Thane', 'Balewadi – Pune', 'Purna Nagar – Pune', 'Chakshu – Jaipur', 'Noida – UP'].map((branch, i, arr) => (
-              <li key={branch} className="flex items-center">
-                <span className="text-msi-cream cursor-pointer">{branch}</span>
-                {i < arr.length - 1 && <span className="text-white/40 ml-1">|</span>}
+              <li key={branch} className="flex items-center !text-white">
+                <span className="!text-white cursor-pointer hover:text-msi-orange transition-colors">{branch}</span>
+                {i < arr.length - 1 && <span className="!text-white/40 ml-1">|</span>}
               </li>
             ))}
           </ul>
@@ -45,12 +49,12 @@ const Footer = () => {
           
           {/* Column 1: My School ITALY About */}
           <div>
-            <h3 className="text-xl font-bold mb-6 text-white text-center">My School ITALY</h3>
-            <p className="text-white/80 leading-relaxed text-sm mb-4 text-justify">
-              Welcome to My School ITALY, where young minds grow through neuroscience-based education. For over three decades, we've nurtured confident communicators from ages 45 days to 7 years. Our colourful classrooms and caring staff create a warm, stimulating environment. Explore our tailored services for each stage of early development, from baby creches to preschool and foundation programs.
+            <h3 className="text-xl font-bold mb-6 text-white text-center md:text-left">My School ITALY</h3>
+            <p className="!text-white leading-relaxed text-sm mb-4 text-justify">
+              Welcome to My School ITALY that brings together neuroscience-informed learning, European early-years principles, nurturing care and developmental understanding in a safe, joyful environment for children from 45 days to the growing years. Our learning journey extends beyond the classroom through Gymnastics, Neurobics, Robotics, Dance, Storytelling and Creative Arts, while NeuroPi helps connect developmental understanding across school and home.
             </p>
-            <p className="text-white/80 leading-relaxed text-sm text-justify">
-              We also offer enriching extracurricular activities including Robotics, Gymnastics, Neurobics, Dance, and Storytelling to support your child's overall development. We're a global network of preschools committed to accessible, high-quality education.
+            <p className="!text-white leading-relaxed text-sm text-justify font-medium">
+              Every child is different. We begin by understanding the child.
             </p>
           </div>
 
@@ -58,55 +62,52 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-6 text-white">Contact us</h3>
             
-            <ul className="space-y-3 text-msi-cream text-sm">
-              <li className="flex items-start">
+            <ul className="space-y-3 !text-white text-sm">
+              <li className="flex items-start !text-white">
                 <MapPin className="w-4 h-4 mr-2 text-msi-orange flex-shrink-0 mt-1" />
-                <span>
-                  <strong>ITALY:</strong> Piazza Luigi Di Savoia 40, Bari 70121
+                <span className="!text-white">
+                  <strong className="!text-white">ITALY:</strong> Piazza Luigi Di Savoia 40, Bari 70121
                 </span>
               </li>
-              <li className="flex items-start">
+              <li className="flex items-start !text-white">
                 <MapPin className="w-4 h-4 mr-2 text-msi-orange flex-shrink-0 mt-1" />
-                <span>
-                  <strong>UAE:</strong> Dubai Silicon Oasis, Dubai
+                <span className="!text-white">
+                  <strong className="!text-white">UAE:</strong> Dubai Silicon Oasis, Dubai
                 </span>
               </li>
-              <li className="flex items-start">
+              <li className="flex items-start !text-white">
                 <MapPin className="w-4 h-4 mr-2 text-msi-orange flex-shrink-0 mt-1" />
-                <span>
-                  <strong>INDIA:</strong> Hitex Road, next to Hitex Exhibition Centre Gate, Izzathnagar, Hyderabad, Telangana 500084
+                <span className="!text-white">
+                  <strong className="!text-white">INDIA:</strong> Hitex Road, next to Hitex Exhibition Centre Gate, Izzathnagar, Hyderabad, Telangana 500084
                 </span>
               </li>
-              <li className="flex items-center">
+              <li className="flex items-center !text-white">
                 <Phone className="w-4 h-4 mr-2 text-msi-orange" />
-                <a href="tel:+917093904680">(+91) 70939 04680</a>
+                <a href="tel:+917093904680" className="!text-white hover:text-msi-orange transition-colors">(+91) 70939 04680</a>
               </li>
-              <li className="flex items-center">
+              <li className="flex items-center !text-white">
                 <Mail className="w-4 h-4 mr-2 text-msi-orange" />
-                <a href="mailto:info@myschoolitaly.com">info@myschoolitaly.com</a>
+                <a href="mailto:info@myschoolitaly.com" className="!text-white hover:text-msi-orange transition-colors">info@myschoolitaly.com</a>
               </li>
-              <li className="flex items-center">
+              <li className="flex items-center !text-white">
                 <Phone className="w-4 h-4 mr-2 text-msi-orange" />
-                <span>WhatsApp: <a href="https://wa.me/917093904680">(+91) 70939 04680</a></span>
+                <span className="!text-white">WhatsApp: <a href="https://wa.me/917093904680" className="!text-white hover:text-msi-orange transition-colors">(+91) 70939 04680</a></span>
               </li>
             </ul>
 
-            {/* Social Icons */}
-            <div className="flex space-x-3 mt-6">
-              <a href="https://www.facebook.com/myschoolitalyHQ/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded bg-msi-orange flex items-center justify-center transition-all hover:scale-110">
-                <Facebook className="w-4 h-4" />
+            {/* Social Icons brought from top header */}
+            <div className="flex items-center space-x-3 mt-6">
+              <a href="https://facebook.com/myschoolitaly" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="w-9 h-9 rounded bg-msi-orange flex items-center justify-center transition-all hover:scale-110">
+                <img src="/facebook-icon.svg" alt="Facebook" className="w-4 h-4" />
               </a>
-              <a href="https://twitter.com/myschoolitaly" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded bg-msi-orange flex items-center justify-center transition-all hover:scale-110">
-                <Twitter className="w-4 h-4" />
+              <a href="https://instagram.com/myschoolitaly" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-9 h-9 rounded bg-msi-orange flex items-center justify-center transition-all hover:scale-110">
+                <img src="/instagram-icon.svg" alt="Instagram" className="w-4 h-4" />
               </a>
-              <a href="https://linkedin.com/company/myschoolitaly" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded bg-msi-orange flex items-center justify-center transition-all hover:scale-110">
-                <Linkedin className="w-4 h-4" />
+              <a href="https://linkedin.com/company/myschoolitaly" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="w-9 h-9 rounded bg-msi-orange flex items-center justify-center transition-all hover:scale-110">
+                <img src="/linkedin.svg" alt="LinkedIn" className="w-4 h-4" />
               </a>
-              <a href="https://instagram.com/myschoolitaly" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded bg-msi-orange flex items-center justify-center transition-all hover:scale-110">
-                <Instagram className="w-4 h-4" />
-              </a>
-              <a href="https://youtube.com/@myschoolitaly" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded bg-msi-orange flex items-center justify-center transition-all hover:scale-110">
-                <Youtube className="w-4 h-4" />
+              <a href="https://youtube.com/@myschoolitaly" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="w-9 h-9 rounded bg-msi-orange flex items-center justify-center transition-all hover:scale-110">
+                <img src="/youtube.svg" alt="YouTube" className="w-4 h-4" />
               </a>
             </div>
           </div>
@@ -114,15 +115,15 @@ const Footer = () => {
           {/* Column 3: Navigation */}
           <div>
             <h3 className="text-xl font-bold mb-6 text-white">Navigation</h3>
-            <ul className="flex flex-col gap-y-2 text-msi-cream text-sm">
-              <li><a href="/">Home</a></li>
-              <li><a href="/programs">Pre School</a></li>
-              <li><a href="/nep">The Educational Project</a></li>
-              <li><a href="/day-care">Day Care</a></li>
-              <li><a href="/about#team">Our Team</a></li>
-              <li><a href="/franchise-overview">Franchise Overview</a></li>
-              <li><a href="/baby-sensory">Baby Sensory</a></li>
-              <li><a href="/admissions">Enroll</a></li>
+            <ul className="flex flex-col gap-y-2 !text-white text-sm">
+              <li><a href="/" className="!text-white hover:text-msi-orange transition-colors">Home</a></li>
+              <li><a href="/about" className="!text-white hover:text-msi-orange transition-colors">About Us</a></li>
+              <li><a href="/programs" className="!text-white hover:text-msi-orange transition-colors">Programs</a></li>
+              <li><a href="/franchise-overview" className="!text-white hover:text-msi-orange transition-colors">For School Owners</a></li>
+              <li><a href="/media" className="!text-white hover:text-msi-orange transition-colors">Media</a></li>
+              <li><a href="/blogs" className="!text-white hover:text-msi-orange transition-colors">Blog</a></li>
+              <li><a href="/admissions" className="!text-white hover:text-msi-orange transition-colors">Enroll</a></li>
+              <li><a href="/contact" className="!text-white hover:text-msi-orange transition-colors">Book A Tour</a></li>
             </ul>
           </div>
 
@@ -144,11 +145,11 @@ const Footer = () => {
       {/* Copyright Bar */}
       <div className="bg-[#1e0e3a] py-4">
         <div className="container mx-auto px-4 md:px-12 flex items-center justify-between text-sm flex-wrap gap-y-1">
-          <span className="text-white/60">&copy; 2002 – 2025 My School ITALY. All Rights Reserved.</span>
+          <span className="!text-white/80">&copy; 2002 – 2025 My School ITALY. All Rights Reserved.</span>
           <div className="flex items-center gap-2">
-            <span className="text-white/40">|</span>
+            <span className="!text-white/40">|</span>
             <a href="/privacy-policy" className="text-msi-orange hover:underline transition-colors">Privacy Policy</a>
-            <span className="text-white/40">|</span>
+            <span className="!text-white/40">|</span>
             <a href="/terms" className="text-msi-orange hover:underline transition-colors">Terms and Conditions</a>
           </div>
         </div>

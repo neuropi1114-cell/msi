@@ -5,27 +5,24 @@ import Link from 'next/link';
 
 const slides = [
   {
-    image: '/images/hero/Slider_1-scaled.jpg.bv.webp',
-    accentImage: '/images/believe/DSC01240-684x1024-1.jpeg.bv.webp',
-    tagline: 'we begin by understanding the child',
+    image: '/images/hero/hero-slide-1.png',
+    bgPosition: 'bg-[center_-120px]',
+    accentImage: '/images/hero/hero-slide-1-accent.png',
     title: 'Every child\'s brain is a world of wonder',
-    body: 'Rooted in the science of early brain development, we create spaces where curiosity, calm, and connection thrive.',
     cta: { text: 'See how we do it', href: '/programs' },
   },
   {
-    image: '/images/hero/Slider_2-scaled.jpg.bv.webp',
-    accentImage: '/images/believe/DSC00795-1024x684-1.jpeg.bv_resized_ipad.jpeg.bv.webp',
-    tagline: 'Childhood Deserves to Be Understood, Not Hurried.',
+    image: '/images/hero/hero-slide-2.png',
+    bgPosition: 'bg-center',
+    accentImage: '/images/hero/hero-slide-2-accent.webp',
     title: 'LET CHILDHOOD BE EXTRAORDINARY',
-    body: 'Through guided social interactions, mindfulness, and a warm environment where every child feels seen and heard.',
     cta: { text: 'Explore Why MSI', href: '/nep' },
   },
   {
-    image: '/images/hero/Slider_3-scaled.jpg.bv.webp',
-    accentImage: '/images/age-groups/sproutlings.webp',
-    tagline: 'From 45 days to the growing years.',
+    image: '/images/hero/hero-slide-3.jpg',
+    bgPosition: 'bg-center',
+    accentImage: '/images/hero/hero-slide-3-accent.jpg',
     title: 'Discovery starts with a single question',
-    body: 'One continuous journey through Baby Crèche, Toddler, Nursery, Kindergarten, Daycare, Extended Care, After-School and Enrichment.',
     cta: { text: 'Explore Program', href: '/day-care' },
   },
 ];
@@ -113,16 +110,13 @@ const Hero = () => {
         >
           <div
             ref={bgRef}
-            className="absolute inset-0 bg-cover bg-center img-editorial"
+            className={`absolute inset-0 bg-cover ${slide.bgPosition || 'bg-center'}`}
             style={{
               backgroundImage: `url("${slide.image}")`,
               transform: 'scale(1.05)',
               transition: 'transform 0.8s cubic-bezier(0.22, 1, 0.36, 1)',
             }}
           />
-          {/* Cinematic gradient overlay — asymmetrical */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/20" />
         </motion.div>
       </AnimatePresence>
 
@@ -134,7 +128,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0, rotate: -2 }}
           exit={{ opacity: 0, y: -20, rotate: 0 }}
           transition={{ duration: 0.9, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-          className="hidden lg:block absolute z-20 right-[8%] bottom-[12%] w-64 h-80 rounded-2xl overflow-hidden shadow-2xl border-2 border-white/10"
+          className="hidden lg:block absolute z-20 right-[4%] bottom-[8%] w-72 h-72 lg:w-80 lg:h-80 rounded-2xl overflow-hidden shadow-2xl border-2 border-white/20 bg-white/10 backdrop-blur-sm"
         >
           <div
             ref={accentRef}
@@ -142,51 +136,27 @@ const Hero = () => {
             style={{ transition: 'transform 1s cubic-bezier(0.22, 1, 0.36, 1)' }}
           >
             <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url("${slide.accentImage}")` }} />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
           </div>
         </motion.div>
       </AnimatePresence>
 
-      {/* Content — left-aligned, editorial composition */}
-      <div className="relative z-20 container mx-auto px-6 md:px-12 lg:px-20 h-full min-h-screen flex flex-col justify-center">
+      {/* Content — left-aligned, bottom composition */}
+      <div className="relative z-20 container mx-auto px-6 md:px-12 lg:px-20 h-full min-h-screen flex flex-col justify-end pb-20 pt-28">
         <AnimatePresence initial={false} mode="wait">
           <motion.div
             key={current}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.6 }}
-            className="max-w-2xl pt-20"
+            className="max-w-3xl w-full bg-black/15 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-white/10 shadow-lg overflow-hidden mb-4"
           >
-            {/* Handwritten-style tagline */}
-            <motion.p
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.7, delay: 0.2 }}
-              className="font-lato italic text-msi-blue text-lg md:text-xl mb-4 tracking-wide"
-            >
-              {slide.tagline}
-            </motion.p>
-
             {/* Oversized display title */}
-            <motion.h2
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-              className="font-lato text-display-lg md:text-display-xl text-white font-medium mb-6 leading-[1.1]"
+            <h2
+              className="font-linotte text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white font-medium mb-8 leading-[1.15] break-words tracking-tight"
             >
               {slide.title}
-            </motion.h2>
-
-            {/* Body text */}
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.5 }}
-              className="text-white/75 text-lg md:text-xl leading-relaxed mb-10 max-w-lg"
-            >
-              {slide.body}
-            </motion.p>
+            </h2>
 
             {/* Conversational CTA */}
             <motion.div
@@ -214,7 +184,7 @@ const Hero = () => {
 
         {/* Slide indicator — minimal, editorial */}
         <div className="absolute bottom-10 left-6 md:left-12 lg:left-20 flex items-center gap-4 z-20">
-          <span className="font-lato text-white/40 text-sm tabular-nums">
+          <span className="font-linotte text-white/40 text-sm tabular-nums">
             {String(current + 1).padStart(2, '0')} / {String(slides.length).padStart(2, '0')}
           </span>
           <div className="flex gap-2">
@@ -222,9 +192,8 @@ const Hero = () => {
               <button
                 key={i}
                 onClick={() => setCurrent(i)}
-                className={`h-[2px] transition-all duration-500 ${
-                  i === current ? 'w-8 bg-msi-gold' : 'w-4 bg-white/30 hover:bg-white/50'
-                }`}
+                className={`h-[2px] transition-all duration-500 ${i === current ? 'w-8 bg-msi-gold' : 'w-4 bg-white/30 hover:bg-white/50'
+                  }`}
                 aria-label={`Go to slide ${i + 1}`}
               />
             ))}

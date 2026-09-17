@@ -37,7 +37,7 @@ export default function HomePage() {
         <Solutions key="solutions-1" />
         <CorporatePartners title="Working Parents" description="While you build their future, we will care for their childhood." reverse />
         <CorporatePartners id="corporate-childcare" />
-        <StepIntoADay title="BETTER UNDERSTANDING AROUND EVERY CHILD" subtitle="Powered By NeuroPI" />
+        <StepIntoADay title="BETTER UNDERSTANDING AROUND EVERY CHILD" subtitle="Powered By NeuroPI" image="/images/stepintoaday/better-understanding-2.png" />
         <GrowingInConfidence />
 
         <VideoShowcase />
