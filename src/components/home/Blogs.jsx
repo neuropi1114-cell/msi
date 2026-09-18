@@ -53,7 +53,6 @@ export default function Blogs() {
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl text-gray-800 font-bold mb-4"
           >
             Recent BLOGs
           </motion.h2>
@@ -62,7 +61,6 @@ export default function Blogs() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="font-medium"
           >
             What&rsquo;s Going on in our Blog?
           </motion.p>
@@ -78,7 +76,7 @@ export default function Blogs() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col"
             >
-              <a href={post.link} tabIndex={-1} className="block overflow-hidden relative">
+              <a href={post.link} tabIndex={-1}>
                 <div className={`relative overflow-hidden ${post.fitHeight ? 'h-48' : 'aspect-[4/3]'}`}>
                   <img
                     src={post.image}
@@ -92,14 +90,13 @@ export default function Blogs() {
                 <span className="inline-block bg-[#d16827] text-white text-xs font-bold px-3 py-1 rounded-full uppercase mb-3 self-start">
                   {post.badge}
                 </span>
-                <h3 className="font-bold text-gray-800 text-base mb-3 leading-snug">
-                  <a href={post.link} className="hover:text-[#d16827] transition-colors">
+                <h3>
+                  <a href={post.link}>
                     {post.title}
                   </a>
                 </h3>
                 <a
                   href={post.link}
-                  className="font-linotte text-[#d16827] font-[200] text-sm hover:text-[#b0521d] transition-colors mt-auto inline-flex items-center gap-1"
                 >
                   Read More <span aria-hidden="true">&raquo;</span>
                 </a>

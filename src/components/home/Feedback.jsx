@@ -41,7 +41,16 @@ function Stars() {
   );
 }
 
-export default function Feedback() {
+const defaultDescription = [
+  'At My School ITALY, every parent\u2019s story reflects the heart of our mission \u2014 blending neuroscience and nurturing care to shape confident, happy learners. Our testimonials capture how families experience the NeuroPi difference \u2014 from emotional well-being to academic readiness and joyful curiosity.',
+  'Parents consistently share how their children show remarkable emotional growth, learning to express feelings calmly and connect meaningfully with peers. The brain-based curriculum has improved attention, curiosity, and creative thinking at home and school. Teachers\u2019 warmth and individual attention make every child feel seen, supported, and celebrated. The environment\u2019s soft colours, sensory-rich zones, and mindful routines create a sense of peace and belonging. Daily updates and parent workshops empower them to continue brain-nurturing practices at home. Together, these heartfelt testimonials showcase the essence of My School ITALY \u2014 where parents don\u2019t just see progress, they feel transformation.',
+];
+
+export default function Feedback({
+  eyebrow = 'What do parents say about us',
+  title = 'Testimonials',
+  description = defaultDescription,
+}) {
   const [current, setCurrent] = useState(0);
   const containerRef = useRef(null);
 
@@ -67,11 +76,12 @@ export default function Feedback() {
           transition={{ duration: 0.6 }}
           className="text-center mb-4"
         >
-          <p className="text-lg md:text-xl text-msi-blue">What do parents say about us</p>
-          <h2 className="text-4xl md:text-5xl font-bold mt-2">Testimonials</h2>
+          <p className="text-lg md:text-xl text-msi-blue">{eyebrow}</p>
+          <h2 className="text-4xl md:text-5xl font-bold mt-2">{title}</h2>
           <div className="max-w-4xl mx-auto mt-6 text-sm md:text-base leading-relaxed">
-            <p>At My School ITALY, every parent&rsquo;s story reflects the heart of our mission &mdash; blending neuroscience and nurturing care to shape confident, happy learners. Our testimonials capture how families experience the NeuroPi difference &mdash; from emotional well-being to academic readiness and joyful curiosity.</p>
-            <p className="mt-4">Parents consistently share how their children show remarkable emotional growth, learning to express feelings calmly and connect meaningfully with peers. The brain-based curriculum has improved attention, curiosity, and creative thinking at home and school. Teachers&rsquo; warmth and individual attention make every child feel seen, supported, and celebrated. The environment&rsquo;s soft colours, sensory-rich zones, and mindful routines create a sense of peace and belonging. Daily updates and parent workshops empower them to continue brain-nurturing practices at home. Together, these heartfelt testimonials showcase the essence of My School ITALY &mdash; where parents don&rsquo;t just see progress, they feel transformation.</p>
+            {description.map((text, i) => (
+              <p key={i} className={i > 0 ? 'mt-4' : undefined}>{text}</p>
+            ))}
           </div>
           <div className="flex justify-center mt-4">
             <img src="/images/gallery/bee.png" alt="" className="w-auto h-6" loading="lazy" />

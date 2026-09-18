@@ -139,7 +139,7 @@ export default function ContactUs({ intro }) {
               className="bg-white rounded-3xl shadow-xl p-8 md:p-10"
             >
               {intro && <div className="text-gray-600 text-center mb-6 leading-relaxed">{intro}</div>}
-              <h2 className="text-3xl md:text-4xl  font-bold text-msi-accent mb-6 text-center">
+              <h2>
                 ENROL YOUR CHILD
               </h2>
 
@@ -155,7 +155,7 @@ export default function ContactUs({ intro }) {
                     className={inputClass('parentName')}
                     placeholder="Enter parent name"
                   />
-                  {errors.parentName && <p className="text-red-500 text-xs mt-1">{errors.parentName}</p>}
+                  {errors.parentName && <p >{errors.parentName}</p>}
                 </div>
 
                 <div>
@@ -169,7 +169,7 @@ export default function ContactUs({ intro }) {
                     className={inputClass('email')}
                     placeholder="Enter email address"
                   />
-                  {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
+                  {errors.email && <p >{errors.email}</p>}
                 </div>
 
                 <div>
@@ -233,7 +233,7 @@ export default function ContactUs({ intro }) {
                       placeholder="Enter mobile number"
                     />
                   </div>
-                  {errors.mobile && <p className="text-red-500 text-xs mt-1">{errors.mobile}</p>}
+                  {errors.mobile && <p >{errors.mobile}</p>}
                 </div>
 
                 <div>
@@ -250,7 +250,7 @@ export default function ContactUs({ intro }) {
                       <option key={idx} value={program}>{program}</option>
                     ))}
                   </select>
-                  {errors.program && <p className="text-red-500 text-xs mt-1">{errors.program}</p>}
+                  {errors.program && <p >{errors.program}</p>}
                 </div>
 
                 <div ref={countryRef} className="relative">
@@ -276,7 +276,7 @@ export default function ContactUs({ intro }) {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
                   </button>
-                  {errors.country && <p className="text-red-500 text-xs mt-1">{errors.country}</p>}
+                  {errors.country && <p >{errors.country}</p>}
                   {countryOpen && (
                     <ul className="absolute z-10 w-full mt-1 bg-white border border-gray-300 rounded-lg shadow-lg max-h-60 overflow-auto" role="listbox" aria-labelledby="country-label">
                       {countries.map((country) => (
@@ -332,10 +332,10 @@ export default function ContactUs({ intro }) {
                   />
                   <label htmlFor="agreePolicy" className="text-sm text-gray-600">
                     I have read and agree to the{' '}
-                    <a href="/privacy-policy" className="text-msi-accent underline">Privacy Policy</a>
+                    <a href="/privacy-policy">Privacy Policy</a>
                   </label>
                 </div>
-                {errors.agreePolicy && <p className="text-red-500 text-xs -mt-3">{errors.agreePolicy}</p>}
+                {errors.agreePolicy && <p>{errors.agreePolicy}</p>}
 
                 <button
                   type="submit"
@@ -357,7 +357,7 @@ export default function ContactUs({ intro }) {
                 )}
               </form>
 
-              <p className="mt-6 text-center text-sm leading-relaxed">
+              <p>
                 At My School ITALY, we turn everyday moments into brain-building adventures – where play fuels curiosity, emotions shape empathy, and each child discovers the joy of learning through science and love.
               </p>
             </motion.div>

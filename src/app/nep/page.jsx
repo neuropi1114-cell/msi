@@ -4,6 +4,10 @@ import TopBar from '../../components/layout/TopBar';
 import Header from '../../components/layout/Header';
 import Footer from '../../components/layout/Footer';
 import ContactUs from '../../components/home/ContactUs';
+import SettlingInMore from '../../components/nep/SettlingInMore';
+import ChildDay from '../../components/nep/ChildDay';
+import Faq from '../../components/nep/Faq';
+import Feedback from '../../components/home/Feedback';
 
 export const metadata = {
   title: 'The Educational Project',
@@ -98,13 +102,28 @@ export default function EducationalProjectPage() {
               </div>
               <div style={{ padding: '30px 10px 10px 70px' }}>
                 <p className="font-lato text-[18px] leading-[27px] text-white text-justify mb-6" style={{ maxWidth: '84.216%' }}>
-                  Every My School ITALY space is designed like a gentle embrace – where design nurtures both calm and curiosity. Our classrooms are guided by neuroscience principles, shaping environments that help young minds focus, feel safe, and flourish. Soft pastel hues soothe the senses, natural light awakens energy, and open layouts invite exploration. Each corner has purpose — sensory pods for mindfulness, movement zones for balance, and creativity corners for imagination.
+                  <strong>STARTING SCHOOL &amp; SETTLING IN</strong><br />
+                  <em>Small Steps Into a Big New World</em>
                 </p>
+                <p className="font-lato text-[18px] leading-[27px] text-white text-justify mb-6" style={{ maxWidth: '84.216%' }}>
+                  For a young child, beginning preschool or daycare can mean a new environment, new adults, new children and a completely new routine.
+                </p>
+                <p className="font-lato text-[18px] leading-[27px] text-white text-justify" style={{ maxWidth: '84.216%' }}>
+                  We do not expect every child to settle in the same way.
+                </p>
+                <SettlingInMore />
                 <div style={{ height: '104px' }}></div>
-                <p className="font-lato text-[18px] leading-[27px] text-[#464646] text-justify" style={{ maxWidth: '84.216%' }}>
-                  <strong>My School ITALY – Where design becomes a teacher :</strong><br />
-                  Each space at My School ITALY nurtures the mind through beauty, balance, and belonging. We design with intention: rounded edges, cozy textures, and breathable air that mirrors nature&apos;s calm rhythm. Sound, colour, and scent are thoughtfully balanced to support emotional regulation and joyful engagement. Here the architecture becomes a teacher – guiding growth through comfort, connection, and discovery. Because the right space doesn&apos;t just hold learning, it creates it.
+                <p className="font-lato text-[18px] leading-[27px] text-[#464646] text-justify mb-6" style={{ maxWidth: '84.216%' }}>
+                  <strong>YOUR CHILD&apos;S DAY AT MSI</strong><br />
+                  <em>Care, Learning and Childhood &mdash; All in One Day</em>
                 </p>
+                <p className="font-lato text-[18px] leading-[27px] text-[#464646] text-justify mb-6" style={{ maxWidth: '84.216%' }}>
+                  A child&apos;s day at MSI is designed around an age-appropriate rhythm rather than continuous instruction.
+                </p>
+                <p className="font-lato text-[18px] leading-[27px] text-[#464646] text-justify" style={{ maxWidth: '84.216%' }}>
+                  Depending on age and program, a day may move through:
+                </p>
+                <ChildDay />
               </div>
             </div>
           </div>
@@ -246,19 +265,10 @@ export default function EducationalProjectPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-12">
               <div style={{ marginRight: '30px' }}>
                 <div className="mb-10" style={{ marginTop: '60px', paddingRight: '100px' }}>
-                  <h2 className="font-lato text-[45px] font-bold uppercase leading-[45px] text-[#d16827]">LEARNING THE NEUROPI WAY</h2>
+                  <h2 className="font-lato text-[45px] font-bold uppercase leading-[45px] text-[#d16827]">FREQUENTLY ASKED QUESTIONS</h2>
+                  <p className="font-lato text-[18px] text-[#464646] mt-4">You Have Questions. We Want You to Ask Them.</p>
                 </div>
-                <div className="font-lato text-[18px] text-[#464646] text-justify leading-relaxed space-y-3">
-                  <p><strong>1. Think Smart</strong> &ndash; Cognitive curiosity through discovery learning</p>
-                  <p><strong>2. Feel Deeply</strong> &ndash; Emotional literacy &amp; empathy through play</p>
-                  <p><strong>3. Move Freely</strong> &ndash; Mind-body connection through rhythm &amp; movement</p>
-                  <p><strong>4. Create Boldly</strong> &ndash; Imagination through art and storytelling</p>
-                  <p><strong>5. Grow Calmly</strong> &ndash; Mindfulness and self-regulation woven into each day</p>
-                  <p className="text-msi-blue font-semibold italic pt-4">My School ITALY &ndash; <em>Where Little Minds Grow with Science &amp; Soul.</em></p>
-                  <p>Every child&apos;s brain is a world of wonder. Here, we blend neuroscience, play, and empathy to nurture calm, confident, and connected learners.</p>
-                  <p className="text-msi-blue font-semibold italic"><em>Parent say</em></p>
-                  <p className="italic">&ldquo;My child comes home peaceful, curious, and full of stories &ndash; NeuroPi feels like family. The perfect blend of heart and science.&rdquo;</p>
-                </div>
+                <Faq />
               </div>
               <div className="flex items-center justify-center">
                 <div className="rounded-[10px] overflow-hidden relative aspect-[4/3] w-full">
@@ -273,6 +283,15 @@ export default function EducationalProjectPage() {
             </div>
           </div>
         </section>
+
+        <Feedback
+          eyebrow="Every Family Has an MSI Story"
+          title="PARENT STORIES & TESTIMONIALS"
+          description={[
+            'The most meaningful description of a school often comes from the families who experience it every day.',
+            'Hear MSI parents talk about:',
+          ]}
+        />
 
         {/* Section 7: Recent News */}
         <section className="relative" style={{ backgroundColor: '#FCF9F4', padding: '130px 0 60px 0' }}>
