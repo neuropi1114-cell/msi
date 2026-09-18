@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="bg-msi-purple text-white pt-16 overflow-hidden">
       <div className="container mx-auto px-4 md:px-12">
-        
+
         {/* Logo */}
         <div className="mb-4 text-center">
           <img src={footerLogo} alt="My School ITALY" className="h-20 md:h-28 mx-auto" />
@@ -15,25 +15,23 @@ const Footer = () => {
 
         {/* Tagline */}
         <p className="text-center !text-white font-bold text-lg uppercase tracking-wider mb-2">
-          Education Excellence Everywhere
-        </p>
-        <p className="text-center text-msi-orange font-medium text-base mb-6 italic">
+
           While you build their future, we care for their childhood.
         </p>
 
         {/* Locations under tagline */}
         <div className="text-center mb-10">
-          <h4 className="text-msi-orange font-bold mb-2">HYDERABAD :</h4>
+          <h4 className="text-msi-orange font-bold mb-2">HYDERABAD</h4>
           <ul className="!text-white text-sm flex flex-wrap justify-center gap-x-1 gap-y-1 mb-4">
-            {['Q-city', 'Hitex', 'Avance', 'Mindscape', 'Kavuri Hills', 'Avance 2', 'Cyberabad Police Commissionerate', 'Miyapur', 'Kukatpally', 'Kondapur', 'Manikonda'].map((branch, i, arr) => (
+            {['Hitex', 'Q-city', 'Avance 1', 'Avance 2', 'Mindscape', 'Kavuri Hills', 'Cyberabad Police Commissionerate', 'Miyapur', 'Kukatpally', 'Kondapur', 'Manikonda'].map((branch, i, arr) => (
               <li key={branch} className="flex items-center !text-white">
                 <span className="!text-white cursor-pointer hover:text-msi-orange transition-colors">{branch}</span>
                 {i < arr.length - 1 && <span className="!text-white/40 ml-1">|</span>}
               </li>
             ))}
           </ul>
-          
-          <h4 className="text-msi-orange font-bold mb-2">PAN – INDIA :</h4>
+
+          <h4 className="text-msi-orange font-bold mb-2">PAN – INDIA </h4>
           <ul className="!text-white text-sm flex flex-wrap justify-center gap-x-1 gap-y-1">
             {['Berhampur – Odisha', 'Tanuku – AP', 'Tadepalligudem – AP', 'Manpada – Thane', 'Balewadi – Pune', 'Purna Nagar – Pune', 'Chakshu – Jaipur', 'Noida – UP'].map((branch, i, arr) => (
               <li key={branch} className="flex items-center !text-white">
@@ -46,7 +44,7 @@ const Footer = () => {
 
         {/* Main Content Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
-          
+
           {/* Column 1: My School ITALY About */}
           <div>
             <h3 className="text-xl font-bold mb-6 text-white text-center md:text-left">My School ITALY</h3>
@@ -61,37 +59,31 @@ const Footer = () => {
           {/* Column 2: Contact Us */}
           <div>
             <h3 className="text-xl font-bold mb-6 text-white">Contact us</h3>
-            
+
             <ul className="space-y-3 !text-white text-sm">
               <li className="flex items-start !text-white">
-                <MapPin className="w-4 h-4 mr-2 text-msi-orange flex-shrink-0 mt-1" />
+                <img src="/googleMaps.svg" alt="Location" className="w-4 h-4 mr-2 flex-shrink-0 mt-1" />
                 <span className="!text-white">
                   <strong className="!text-white">ITALY:</strong> Piazza Luigi Di Savoia 40, Bari 70121
                 </span>
               </li>
+
               <li className="flex items-start !text-white">
-                <MapPin className="w-4 h-4 mr-2 text-msi-orange flex-shrink-0 mt-1" />
+                <img src="/googleMaps.svg" alt="Location" className="w-4 h-4 mr-2 flex-shrink-0 mt-1" />
                 <span className="!text-white">
-                  <strong className="!text-white">UAE:</strong> Dubai Silicon Oasis, Dubai
-                </span>
-              </li>
-              <li className="flex items-start !text-white">
-                <MapPin className="w-4 h-4 mr-2 text-msi-orange flex-shrink-0 mt-1" />
-                <span className="!text-white">
-                  <strong className="!text-white">INDIA:</strong> Hitex Road, next to Hitex Exhibition Centre Gate, Izzathnagar, Hyderabad, Telangana 500084
-                </span>
+                  <strong className="!text-white">INDIA:</strong> Hitex, HiTech City, Hyderabad, 500084</span>
               </li>
               <li className="flex items-center !text-white">
                 <Phone className="w-4 h-4 mr-2 text-msi-orange" />
-                <a href="tel:+917093904680" className="!text-white hover:text-msi-orange transition-colors">(+91) 70939 04680</a>
+                <a href="tel:+917093904680" className="!text-white hover:text-msi-orange transition-colors font-normal">(+91) 70939 04680</a>
               </li>
               <li className="flex items-center !text-white">
-                <Mail className="w-4 h-4 mr-2 text-msi-orange" />
-                <a href="mailto:info@myschoolitaly.com" className="!text-white hover:text-msi-orange transition-colors">info@myschoolitaly.com</a>
+                <img src="/gmail.svg" alt="Gmail" className="w-4 h-4 mr-2 flex-shrink-0" />
+                <a href="mailto:info@myschoolitaly.com" className="!text-white hover:text-msi-orange transition-colors font-normal">info@myschoolitaly.com</a>
               </li>
               <li className="flex items-center !text-white">
-                <Phone className="w-4 h-4 mr-2 text-msi-orange" />
-                <span className="!text-white">WhatsApp: <a href="https://wa.me/917093904680" className="!text-white hover:text-msi-orange transition-colors">(+91) 70939 04680</a></span>
+                <img src="/whatsapp-icon.svg" alt="WhatsApp" className="w-4 h-4 mr-2 flex-shrink-0" />
+                <a href="https://wa.me/917093904680" target="_blank" rel="noopener noreferrer" className="!text-white hover:text-msi-orange transition-colors font-normal">(+91) 70939 04680</a>
               </li>
             </ul>
 
@@ -120,6 +112,8 @@ const Footer = () => {
               <li><a href="/about" className="!text-white hover:text-msi-orange transition-colors">About Us</a></li>
               <li><a href="/programs" className="!text-white hover:text-msi-orange transition-colors">Programs</a></li>
               <li><a href="/franchise-overview" className="!text-white hover:text-msi-orange transition-colors">For School Owners</a></li>
+              <li><a href="/privacy-policy" className="!text-white hover:text-msi-orange transition-colors">Policy Framework</a></li>
+
               <li><a href="/media" className="!text-white hover:text-msi-orange transition-colors">Media</a></li>
               <li><a href="/blogs" className="!text-white hover:text-msi-orange transition-colors">Blog</a></li>
               <li><a href="/admissions" className="!text-white hover:text-msi-orange transition-colors">Enroll</a></li>
@@ -145,7 +139,7 @@ const Footer = () => {
       {/* Copyright Bar */}
       <div className="bg-[#1e0e3a] py-4">
         <div className="container mx-auto px-4 md:px-12 flex items-center justify-between text-sm flex-wrap gap-y-1">
-          <span className="!text-white/80">&copy; 2002 – 2025 My School ITALY. All Rights Reserved.</span>
+          <span className="!text-white/80">&copy; 2002 &ndash; {new Date().getFullYear()} My School ITALY. All Rights Reserved.</span>
           <div className="flex items-center gap-2">
             <span className="!text-white/40">|</span>
             <a href="/privacy-policy" className="text-msi-orange hover:underline transition-colors">Privacy Policy</a>

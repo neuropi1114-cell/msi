@@ -138,25 +138,25 @@
         }
       ],
       "growing": {
-        "span": "Preschool (3-7 Years)",
+        "span": "",
         "title": "Growing In Confidence",
         "description": "Our philosophy, our people, our commitment and our resources are all focused on helping us to give the children an excellent start in life, exposing them to gymnastics and robotics along with academics.",
         "link": "/growing-in-confidence/",
         "features": [
           {
-            "icon": "/images/growing-in-confidence/mortarboard.png",
+            "icon": "/images/growing-in-confidence/awesome-careers.png",
             "title": "Awesome Careers"
           },
           {
-            "icon": "/images/growing-in-confidence/education.png",
+            "icon": "/images/growing-in-confidence/global-certificate.png",
             "title": "Global Certificate"
           },
           {
-            "icon": "/images/growing-in-confidence/atom.png",
+            "icon": "/images/growing-in-confidence/best-program.png",
             "title": "Best Program"
           },
           {
-            "icon": "/images/growing-in-confidence/school-bag.png",
+            "icon": "/images/growing-in-confidence/child-support.png",
             "title": "Child Support"
           }
         ],

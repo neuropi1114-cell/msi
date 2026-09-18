@@ -5,13 +5,13 @@ import { motion } from 'framer-motion';
 const videos = [
   {
     id: 1,
-    title: "ASKING FOR VOTE",
-    url: "https://vimeo.com/369741702",
+    title: "My School ITALY Little Gymnasts",
+    url: "https://vimeo.com/1227726704",
   },
   {
     id: 2,
-    title: "EUROPEAN BUSINESS AWARDS",
-    url: "https://vimeo.com/787866116",
+    title: "We Work for a Good World",
+    url: "https://vimeo.com/1222446376",
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ const videos = [
 ];
 
 function getVimeoId(url) {
-  const match = url.match(/vimeo\.com\/(\d+)/);
+  const match = url.match(/vimeo\.com\/(?:video\/)?(\d+)/);
   return match ? match[1] : '';
 }
 

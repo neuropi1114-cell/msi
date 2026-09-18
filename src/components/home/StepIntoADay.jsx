@@ -14,12 +14,13 @@ const StepIntoADay = ({
   subtitle = "Built in to",
   rightImage,
   image = "/images/stepintoaday/kid_image.webp",
-  altText = "Better Understanding Around Every Child"
+  altText = "Better Understanding Around Every Child",
+  className = "py-16 md:py-20 bg-white"
 }) => {
   const [drawerOpen, setDrawerOpen] = useState(false);
 
   return (
-    <section className="py-24 md:py-32 bg-white">
+    <section className={className}>
       <div className="container mx-auto px-6 md:px-12 lg:px-20 grid gap-12 lg:grid-cols-2 items-center">
         <div className="relative">
           <img
