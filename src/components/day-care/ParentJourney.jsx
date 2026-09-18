@@ -62,7 +62,7 @@ export default function ParentJourney() {
             />
           </div>
           <div>
-            <h2 className="text-3xl text-msi-purple font-bold mb-6">YOUR JOURNEY WITH MSI</h2>
+            <h2>YOUR JOURNEY WITH MSI</h2>
             <p className="text-gray-600 mb-4 leading-relaxed">At My School ITALY, we want parents to know not only what their child is learning, but also how their child is spending the day, settling in, eating, resting, participating, making friends and growing.</p>
             <p className="text-gray-600 leading-relaxed">From your first visit to everyday communication, we aim to make your experience with MSI connected, transparent and reassuring.</p>
             <p className="font-bold text-msi-orange text-lg mt-6">Your Child. Your Questions. Your Journey With Us.</p>

@@ -41,7 +41,7 @@ export default function ChildDay() {
       <Drawer
         open={open}
         onClose={() => setOpen(false)}
-        title="YOUR CHILD'S DAY AT MSI"
+        title="Your Child's Day At MSI"
         side="left"
       >
         <p className="text-msi-purple font-bold text-lg leading-snug">

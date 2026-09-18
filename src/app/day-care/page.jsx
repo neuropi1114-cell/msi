@@ -4,9 +4,13 @@ import Header from '../../components/layout/Header';
 import Footer from '../../components/layout/Footer';
 import ContactUs from '../../components/home/ContactUs';
 import CloudHeader from '../../components/layout/CloudHeader';
+
 import ParentExperience from '../../components/day-care/ParentExperience';
 import ParentJourney from '../../components/day-care/ParentJourney';
+import DesignPhilosophy from '../../components/nep/DesignPhilosophy';
+import NeuroPiApproach from '../../components/nep/NeuroPiApproach';
 import CreativeLearning from '../../components/day-care/CreativeLearning';
+import AskMsiCta from '../../components/day-care/AskMsiCta';
 import EnrolCta from '../../components/day-care/EnrolCta';
 import RecentNews from '../../components/day-care/RecentNews';
 
@@ -41,8 +45,12 @@ export default function DayCarePage() {
 
         <ParentExperience />
         <ParentJourney />
+        <DesignPhilosophy />
+        <NeuroPiApproach />
+
         <CreativeLearning />
         <EnrolCta />
+        <AskMsiCta />
         <RecentNews />
       </main>
       <ContactUs />

@@ -1,13 +1,15 @@
 import React from 'react';
-import Image from 'next/image';
 import TopBar from '../../components/layout/TopBar';
 import Header from '../../components/layout/Header';
 import Footer from '../../components/layout/Footer';
 import ContactUs from '../../components/home/ContactUs';
-import SettlingInMore from '../../components/nep/SettlingInMore';
-import ChildDay from '../../components/nep/ChildDay';
-import Faq from '../../components/nep/Faq';
 import Feedback from '../../components/home/Feedback';
+import NepHero from '../../components/nep/NepHero';
+import DesignPhilosophy from '../../components/nep/DesignPhilosophy';
+import MissionCounters from '../../components/nep/MissionCounters';
+import GalleryStrip from '../../components/nep/GalleryStrip';
+import NeuroPiApproach from '../../components/nep/NeuroPiApproach';
+import NepNews from '../../components/nep/NepNews';
 
 export const metadata = {
   title: 'The Educational Project',
@@ -29,260 +31,17 @@ export const metadata = {
   },
 };
 
-const blogPosts = [
-  {
-    title: 'Magical Wonderland: My School ITALY opens the Best Preschool in Manpada!',
-    excerpt: 'Step into a world of enchantment and learning as My School ITALY brings its unique neuroscience-based education to Manpada.',
-    date: 'July 4, 2023',
-    category: 'New Preschool',
-    image: '/images/nep/blog-1.webp',
-    link: '/blog/',
-  },
-  {
-    title: 'Empower Your Child\'s Future with 5 Proven Neuroscience-Backed Learning Techniques',
-    excerpt: 'Enhance your child\'s learning with My School Italy\'s Neuroscience-Backed Learning Programs. Experience the difference today.',
-    date: 'February 13, 2023',
-    category: 'Neuroscience',
-    image: '/images/nep/blog-2.webp',
-    link: '/blog/',
-  },
-  {
-    title: 'A Legacy of Love: Children\'s Day Celebrations',
-    excerpt: 'Explore our enchanting Children\'s Day celebrations. Join the laughter, love, and learning in this magical journey.',
-    date: 'November 15, 2023',
-    category: 'festivity',
-    image: '/images/nep/blog-3.webp',
-    link: '/blog/',
-  },
-];
-
-const galleryImages = [
-  '/images/nep/gallery-1.webp',
-  '/images/nep/gallery-2.webp',
-  '/images/nep/gallery-3.webp',
-  '/images/nep/gallery-4.webp',
-  '/images/nep/gallery-5.webp',
-  '/images/nep/gallery-6.webp',
-  '/images/nep/gallery-7.webp',
-  '/images/nep/gallery-8.webp',
-];
-
 export default function EducationalProjectPage() {
   return (
     <>
       <TopBar />
       <Header />
       <main>
-
-        {/* Section 1: Hero - About NeuroPi Children */}
-        <section className="relative flex items-end min-h-screen bg-cover bg-top" style={{ backgroundImage: 'url(/images/nep/hero-classroom.webp)' }}>
-          <div className="container mx-auto px-4 md:px-12 w-full">
-            <div className="w-full md:w-[41.831%]" style={{ backgroundColor: '#159ED9', padding: '50px', borderRadius: '10px 10px 0 0' }}>
-              <h2 className="font-lato text-[35px] font-bold text-white mb-6">ABOUT NEUROPI CHILDREN</h2>
-              <p className="font-lato text-base text-white/90 leading-relaxed">
-                Once upon a time, in the world of NeuroPi, every child was seen as a tiny universe - full of dreams, neurons, and sparkles of curiosity. Their laughter wasn&apos;t just joy - it was learning in motion, connecting the brain and heart in beautiful harmony. Each child here grows at their own rhythm, blooming in colours of confidence, calm, and creativity. We don&apos;t rush them toward the future - we walk beside them as they discover it. In every classroom, magic and science hold hands. Mindful play becomes their compass; empathy becomes their light. They learn to breathe before they speak, to listen before they lead, and to care before they conquer. Every giggle builds a pathway, every question unlocks a possibility, and every hug strengthens the science of love. At NeuroPi, children don&apos;t just learn - they awaken. Because here, childhood isn&apos;t a race... it&apos;s a beautiful unfolding of brilliance.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Section 2: Design Philosophy - Desktop */}
-        <section className="hidden md:block" style={{ background: 'linear-gradient(180deg, #271344 50%, #FFFFFF 3%)', padding: '50px 0' }}>
-          <div className="container mx-auto px-4 md:px-12" style={{ maxWidth: '1240px' }}>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch">
-              <div className="flex items-center justify-center">
-                <div className="rounded-[10px] overflow-hidden relative w-full aspect-[4/3]">
-                  <Image
-                    src="/images/nep/hero-classroom.webp"
-                    alt="My School ITALY classroom designed with neuroscience principles"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-              <div style={{ padding: '30px 10px 10px 70px' }}>
-                <p className="font-lato text-[18px] leading-[27px] text-white text-justify mb-6" style={{ maxWidth: '84.216%' }}>
-                  <strong>STARTING SCHOOL &amp; SETTLING IN</strong><br />
-                  <em>Small Steps Into a Big New World</em>
-                </p>
-                <p className="font-lato text-[18px] leading-[27px] text-white text-justify mb-6" style={{ maxWidth: '84.216%' }}>
-                  For a young child, beginning preschool or daycare can mean a new environment, new adults, new children and a completely new routine.
-                </p>
-                <p className="font-lato text-[18px] leading-[27px] text-white text-justify" style={{ maxWidth: '84.216%' }}>
-                  We do not expect every child to settle in the same way.
-                </p>
-                <SettlingInMore />
-                <div style={{ height: '104px' }}></div>
-                <p className="font-lato text-[18px] leading-[27px] text-[#464646] text-justify mb-6" style={{ maxWidth: '84.216%' }}>
-                  <strong>YOUR CHILD&apos;S DAY AT MSI</strong><br />
-                  <em>Care, Learning and Childhood &mdash; All in One Day</em>
-                </p>
-                <p className="font-lato text-[18px] leading-[27px] text-[#464646] text-justify mb-6" style={{ maxWidth: '84.216%' }}>
-                  A child&apos;s day at MSI is designed around an age-appropriate rhythm rather than continuous instruction.
-                </p>
-                <p className="font-lato text-[18px] leading-[27px] text-[#464646] text-justify" style={{ maxWidth: '84.216%' }}>
-                  Depending on age and program, a day may move through:
-                </p>
-                <ChildDay />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Section 2b: Design Philosophy - Mobile */}
-        <section className="md:hidden" style={{ backgroundColor: '#271344', padding: '50px 0' }}>
-          <div className="container mx-auto px-4" style={{ maxWidth: '1240px' }}>
-            <div className="grid grid-cols-1 gap-0">
-              <div className="flex items-center justify-center">
-                <div className="rounded-[10px] overflow-hidden relative w-full aspect-[4/3]">
-                  <Image
-                    src="/images/nep/hero-classroom.webp"
-                    alt="My School ITALY classroom designed with neuroscience principles"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-              <div style={{ padding: '30px 10px 10px 10px' }}>
-                <p className="font-lato text-[15px] leading-[27px] text-white text-justify mb-6 w-full">
-                  My School ITALY is Designed To Give Authentic Experiences To Your Child At our Kindergarten, we believe in providing an environment that is appropriate for enhancing each child&apos;s development. It has been said that play is a child&apos;s work. We create opportunities for play, discovery, and exploration, to support each child&apos;s growth and development. We believe each child is unique, and the educator&apos;s role is to scaffold a child&apos;s development at the pace suitable to them.
-                </p>
-                <div style={{ height: '0px' }}></div>
-                <p className="font-lato text-[15px] leading-[27px] text-white text-justify w-full">
-                  It has been said that play is a child&apos;s work. We create opportunities for play, discovery, and exploration, to support each child&apos;s growth and development. We believe each child is unique, and the educator&apos;s role is to scaffold a child&apos;s development at the pace suitable to them.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Section 3: Mission with Counters */}
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4 md:px-12" style={{ maxWidth: '1240px' }}>
-            <div className="hidden md:flex justify-between mb-4">
-              <Image src="/images/nep/arrow1.webp" alt="" width={40} height={40} className="h-10 w-auto" />
-              <Image src="/images/nep/arrow1.webp" alt="" width={40} height={40} className="h-10 w-auto" />
-            </div>
-
-            <div className="flex flex-wrap items-center">
-              <div className="w-full md:w-[23.033%] flex items-center justify-center md:justify-start mb-6 md:mb-0">
-                <p className="font-lato text-[25px] leading-[27px] text-[#464646] italic text-center md:text-left md:max-w-[91.11%]"><em>Our Mission is to educate and empower the lives of</em></p>
-              </div>
-
-              <div className="w-full md:w-[21.048%] flex items-center justify-center mb-6 md:mb-0" style={{ margin: '0 16px' }}>
-                <div className="w-full">
-                  <div className="md:hidden border-t border-gray-300 my-3"></div>
-                  <div style={{ backgroundColor: '#d16827', padding: '19px', borderRadius: '40px', textAlign: 'center' }}>
-                    <div className="font-lato text-[100px] font-semibold text-white leading-none">15</div>
-                    <div className="font-lato text-[30px] font-semibold text-white">Million</div>
-                  </div>
-                  <div className="md:hidden border-t border-gray-300 my-3"></div>
-                </div>
-              </div>
-
-              <div className="w-full md:w-[15.889%] flex items-center justify-center mb-6 md:mb-0">
-                <h2 className="font-lato text-[30px] font-bold leading-[36px] text-[#464646] text-center md:text-end md:max-w-[89%]">Children, Teachers, Parents</h2>
-                <div className="md:hidden border-t border-gray-300 my-3 w-full"></div>
-              </div>
-
-              <div className="hidden md:flex md:w-[14.59%] items-center justify-center">
-                <h2 className="font-lato text-[160px] font-normal leading-[57px] text-[#464646] text-end md:max-w-[89%]">{')'}</h2>
-              </div>
-
-              <div className="w-full md:w-[25.41%] flex items-center justify-center mb-6 md:mb-0">
-                <h2 className="font-lato text-[60px] font-semibold text-[#464646] text-center md:max-w-[74.602%]">By 2027</h2>
-              </div>
-            </div>
-
-            <div className="hidden md:flex justify-center mt-4">
-              <Image src="/images/nep/arrow2.webp" alt="" width={40} height={40} className="h-10 w-auto" />
-            </div>
-          </div>
-        </section>
-
-        {/* Section 4: Image Gallery Strip */}
-        <section className="py-8" style={{ backgroundColor: '#159ED9' }}>
-          <div className="container mx-auto px-4 md:px-12" style={{ maxWidth: '1500px' }}>
-            <div className="grid grid-cols-4 md:grid-cols-8 gap-2 md:gap-4">
-              {galleryImages.map((img, i) => (
-                <div key={i} className="rounded-[10px] overflow-hidden relative aspect-[4/3]">
-                  <Image src={img} alt={`My School ITALY campus gallery ${i + 1}`} fill className="object-cover" />
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Section 5: What is the NeuroPi Approach? */}
-        <section className="py-[70px] bg-white relative">
-          <div className="container mx-auto px-4 md:px-12 relative z-10" style={{ maxWidth: '1240px', minHeight: '524px' }}>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-              <div className="flex flex-col items-end">
-                <div className="rounded-[10px] overflow-hidden mb-6 relative aspect-[4/3] w-full">
-                  <Image
-                    src="/images/nep/neuropi-approach-1.webp"
-                    alt="Children at play in NeuroPi classroom"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="w-full md:max-w-[83%]" style={{ backgroundColor: '#2CB3E9', padding: '30px', borderRadius: '12px' }}>
-                  <p className="font-lato text-[18px] text-white text-justify leading-relaxed">
-                    The NeuroPi Approach is where the science of the brain meets the art of nurturing. Rooted in neuroscience, our philosophy understands how every experience — from play to emotion — shapes a child&apos;s developing brain. Every NeuroPi classroom is a living lab of growth — where teachers guide with compassion, and children learn through wonder. It&apos;s not just about early education; it&apos;s about raising emotionally intelligent, resilient, and joyful minds ready to thrive in life.
-                  </p>
-                </div>
-              </div>
-              <div>
-                <div className="mb-10" style={{ marginTop: '60px', paddingRight: '200px' }}>
-                  <h2 className="font-lato text-[45px] font-bold uppercase leading-[45px] text-[#d16827]">WHAT IS THE NEUROPI APPROACH?</h2>
-                </div>
-                <div className="rounded-[10px] overflow-hidden mb-6 relative aspect-[4/3] w-full">
-                  <Image
-                    src="/images/nep/neuropi-approach-2.webp"
-                    alt="Classroom activity at My School ITALY"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="w-full md:max-w-[88%]">
-                  <p className="font-lato text-[18px] text-[#464646] text-justify leading-relaxed mb-4">
-                    <span className="text-msi-blue"><em><strong>We focus on five pillars of whole-child growth:</strong></em></span>
-                  </p>
-                  <div className="font-lato text-[18px] text-[#464646] text-justify leading-relaxed space-y-2">
-                    <p><strong>Brain-Based Learning</strong> &ndash; Each activity is designed to build focus, memory, and creative thinking.</p>
-                    <p><strong>Mindful Routines</strong> &ndash; Calm, predictable rhythms that strengthen emotional regulation and self-awareness.</p>
-                    <p><strong>Nutrition &amp; Movement Integration</strong> &ndash; Healthy bodies that fuel strong neural connections and cognitive clarity.</p>
-                    <p><strong>Social-Emotional Learning</strong> &ndash; Building empathy, confidence, and communication from the very start.</p>
-                    <p><strong>Playful Discovery</strong> &ndash; Curiosity-driven exploration that transforms play into powerful learning.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div style={{ height: '50px' }}></div>
-            <div className="border-t border-[#D8D8D8] my-4"></div>
-
-            {/* Section 6: Learning the NeuroPi Way */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-12">
-              <div style={{ marginRight: '30px' }}>
-                <div className="mb-10" style={{ marginTop: '60px', paddingRight: '100px' }}>
-                  <h2 className="font-lato text-[45px] font-bold uppercase leading-[45px] text-[#d16827]">FREQUENTLY ASKED QUESTIONS</h2>
-                  <p className="font-lato text-[18px] text-[#464646] mt-4">You Have Questions. We Want You to Ask Them.</p>
-                </div>
-                <Faq />
-              </div>
-              <div className="flex items-center justify-center">
-                <div className="rounded-[10px] overflow-hidden relative aspect-[4/3] w-full">
-                  <Image
-                    src="/images/nep/learning-neuropi.webp"
-                    alt="Children learning the NeuroPi way"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <NepHero />
+        <DesignPhilosophy />
+        <MissionCounters />
+        <GalleryStrip />
+        <NeuroPiApproach />
 
         <Feedback
           eyebrow="Every Family Has an MSI Story"
@@ -293,40 +52,7 @@ export default function EducationalProjectPage() {
           ]}
         />
 
-        {/* Section 7: Recent News */}
-        <section className="relative" style={{ backgroundColor: '#FCF9F4', padding: '130px 0 60px 0' }}>
-          <div className="container mx-auto px-4 md:px-12 relative z-10" style={{ maxWidth: '1200px', minHeight: '400px' }}>
-            <h2 className="font-lato text-[45px] font-bold uppercase text-center text-[#d16827] mb-2">Recent News</h2>
-            <p className="font-lato text-[18px] text-[#464646] text-center mb-12">What&apos;s Going on in our Blog?</p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8" style={{ gridColumnGap: '30px', gridRowGap: '35px' }}>
-              {blogPosts.map((post, i) => (
-                <div key={i} className="bg-white rounded-2xl shadow-xl overflow-hidden transition-transform hover:scale-[1.02]">
-                  <a href={post.link} className="block relative aspect-[4/3] overflow-hidden">
-                      <Image src={post.image} alt={post.title} fill className="object-cover" />
-                  </a>
-                  <div className="p-6">
-                    <span className="inline-block font-lato text-[12px] font-medium text-white px-3 py-1 rounded-full mb-3" style={{ backgroundColor: '#d16827', margin: '20px' }}>{post.category}</span>
-                    <h3 className="font-lato text-[21px] font-bold uppercase leading-[30px] text-[#464646] mb-2 px-6">
-                      <a href={post.link} className="hover:text-[#159ED9] transition-colors">{post.title}</a>
-                    </h3>
-                    <p className="font-lato text-[18px] text-[#464646] mb-4 px-6">{post.excerpt}</p>
-                    <span className="font-lato text-[15px] text-[#464646] px-6 pb-6 block">{post.date}</span>
-                  </div>
-                </div>
-              ))}
-            </div>
-            <div className="text-center mt-[30px]">
-              <a
-                href="/blog/"
-                className="inline-block font-linotte text-[18px] font-[200] text-white transition-colors"
-                style={{ backgroundColor: '#d16827', padding: '20px 30px', borderRadius: '12px 0 12px 0' }}
-              >
-                Read More
-              </a>
-            </div>
-          </div>
-        </section>
-
+        <NepNews />
       </main>
       <ContactUs />
       <Footer />

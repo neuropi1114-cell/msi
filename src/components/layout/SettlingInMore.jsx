@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import Drawer from '../layout/Drawer';
+import Drawer from './Drawer';
 
 const drawerContent = [
   'For a young child, beginning preschool or daycare can mean a new environment, new adults, new children and a completely new routine.',
@@ -35,7 +35,7 @@ export default function SettlingInMore() {
         side="left"
       >
         <p className="text-msi-purple font-bold text-lg leading-snug">
-          Small Steps Into a Big New World
+          Small Steps Into A Big New World
         </p>
         <div className="mt-4 space-y-4 text-gray-600 text-base leading-relaxed">
           {drawerContent.map((text, i) => (
