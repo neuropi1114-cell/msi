@@ -36,7 +36,7 @@ const Header = () => {
     { name: 'Why MSI', href: '/about' },
     { name: 'Programs', href: '/programs' },
     { name: 'The NeuroPi Way', href: '/nep' },
-    { name: 'Parents', href: '/handbook' },
+    { name: 'Parents', href: '/parents' },
     { name: 'Corporate Childcare', href: '/#corporate-childcare' },
   ];
 

@@ -23,7 +23,7 @@ const slides = [
     bgPosition: 'bg-center',
     accentImage: '/images/hero/hero-slide-3-accent.jpg',
     title: 'Discovery starts with a single question',
-    cta: { text: 'Explore Program', href: '/day-care' },
+    cta: { text: 'Explore Program', href: '/parents' },
   },
 ];
 
