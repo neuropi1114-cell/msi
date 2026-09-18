@@ -3,11 +3,13 @@ import dynamic from 'next/dynamic';
 import TopBar from '../../components/layout/TopBar';
 import Header from '../../components/layout/Header';
 import Footer from '../../components/layout/Footer';
+import CloudHeader from '../../components/layout/CloudHeader';
+import SectionHeader from '../../components/common/SectionHeader';
+import NeuroPiApproach from '../../components/nep/NeuroPiApproach';
 import Feedback from '../../components/home/Feedback';
 import Gallery from '../../components/home/Gallery';
 import VideoCarousel from '../../components/home/VideoCarousel';
 import Activities from '../../components/home/Activities';
-import NeuroPiApproach from '../../components/home/NeuroPiApproach';
 import BrighterFuture from '../../components/home/BrighterFuture';
 
 const ContactUs = dynamic(() => import('../../components/home/ContactUs'), { ssr: true });
@@ -37,23 +39,26 @@ export default function ProgramsPage() {
     <>
       <TopBar />
       <Header />
-      <section className="bg-msi-purple py-24 text-center">
-        <div className="container mx-auto px-4 md:px-12">
-          <h1 className="text-4xl md:text-6xl text-white font-bold mb-4">
-            Programs
-          </h1>
-          <p className="text-white/80 text-lg max-w-2xl mx-auto">
-            Neuroscience-based programs for every stage of early development — from infancy to kindergarten.
-          </p>
-        </div>
-      </section>
-      <div data-nav-sentinel />
-      <BrighterFuture />
-      <NeuroPiApproach />
-      <Activities />
-      <VideoCarousel />
-      <Feedback />
-      <Gallery />
+      <main>
+        <CloudHeader image="/images/day-care/hero.jpg" />
+        <div data-nav-sentinel />
+        <SectionHeader
+          title="From 45 Days to the Growing Years"
+          subtitle={
+            <>
+              One continuous journey through Baby Crèche, Toddler, Nursery, Kindergarten, Daycare,<br />
+              Extended Care, After-School and Enrichment
+            </>
+          }
+          description=""
+        />
+        <NeuroPiApproach variant="programs" />
+        {/* <BrighterFuture /> */}
+        <Activities />
+        <VideoCarousel />
+        <Feedback />
+        <Gallery />
+      </main>
       <ContactUs />
       <Footer />
     </>

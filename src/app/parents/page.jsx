@@ -5,13 +5,13 @@ import Footer from '../../components/layout/Footer';
 import ContactUs from '../../components/home/ContactUs';
 import CloudHeader from '../../components/layout/CloudHeader';
 
-import ParentExperience from '../../components/day-care/ParentExperience';
-import ParentJourney from '../../components/day-care/ParentJourney';
+import SectionHeader from '../../components/common/SectionHeader';
+import ParentJourney from '../../components/parents/ParentJourney';
 import DesignPhilosophy from '../../components/nep/DesignPhilosophy';
 import NeuroPiApproach from '../../components/nep/NeuroPiApproach';
 import VideoCarousel from '../../components/home/VideoCarousel';
 import Feedback from '../../components/home/Feedback';
-import CreativeLearning from '../../components/day-care/CreativeLearning';
+import CreativeLearning from '../../components/parents/CreativeLearning';
 import MissionCounters from '../../components/nep/MissionCounters';
 import GalleryStrip from '../../components/nep/GalleryStrip';
 
@@ -44,7 +44,7 @@ export default function ParentsPage() {
         <CloudHeader image="/images/day-care/hero.jpg" />
         <div data-nav-sentinel />
 
-        <ParentExperience />
+        <SectionHeader />
         <ParentJourney />
         <DesignPhilosophy />
         <NeuroPiApproach />
