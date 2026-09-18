@@ -6,23 +6,30 @@ const videos = [
   {
     id: 1,
     title: "My School ITALY Little Gymnasts",
-    url: "https://vimeo.com/1227726704",
+    url: "https://player.vimeo.com/video/1227726704?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479",
   },
   {
     id: 2,
-    title: "We Work for a Good World",
+    title: "We Work For A Good World",
     url: "https://vimeo.com/1222446376",
   },
   {
     id: 3,
-    title: "INDIA STARTUP - MSME AWARD",
-    url: "https://vimeo.com/408861820",
+    title: "Why Is There The Darkness",
+    url: "https://www.youtube.com/watch?v=RnjHCxm1Q1E",
   },
 ];
 
-function getVimeoId(url) {
-  const match = url.match(/vimeo\.com\/(?:video\/)?(\d+)/);
-  return match ? match[1] : '';
+function getEmbedUrl(url) {
+  const youtubeMatch = url.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/))([\w-]+)/);
+  if (youtubeMatch) {
+    return `https://www.youtube.com/embed/${youtubeMatch[1]}`;
+  }
+  const vimeoMatch = url.match(/vimeo\.com\/(?:video\/)?(\d+)/);
+  if (vimeoMatch) {
+    return `https://player.vimeo.com/video/${vimeoMatch[1]}?title=0&byline=0&portrait=0`;
+  }
+  return url;
 }
 
 function VideoCard({ video, index }) {
@@ -52,13 +59,13 @@ function VideoCard({ video, index }) {
       transition={{ delay: index * 0.2 }}
       className="flex flex-col"
     >
-      <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-lg">
+      <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-lg bg-black">
         {isVisible && (
           <iframe
-            src={`https://player.vimeo.com/video/${getVimeoId(video.url)}?badge=0&autopause=0&player_id=0&autoplay=1&muted=1&loop=1`}
+            src={getEmbedUrl(video.url)}
             className="absolute inset-0 w-full h-full"
             frameBorder="0"
-            allow="autoplay; fullscreen; picture-in-picture; muted"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
             title={video.title}
           />
