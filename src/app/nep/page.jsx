@@ -44,7 +44,7 @@ export default function EducationalProjectPage() {
         <NeuroPiApproach />
 
         <Feedback
-          eyebrow="Every Family Has an MSI Story"
+          eyebrow="Every Family Has An MSI Story"
           title="PARENT STORIES & TESTIMONIALS"
           description={[
             'The most meaningful description of a school often comes from the families who experience it every day.',

@@ -9,10 +9,13 @@ import ParentExperience from '../../components/day-care/ParentExperience';
 import ParentJourney from '../../components/day-care/ParentJourney';
 import DesignPhilosophy from '../../components/nep/DesignPhilosophy';
 import NeuroPiApproach from '../../components/nep/NeuroPiApproach';
+import VideoCarousel from '../../components/home/VideoCarousel';
+import Feedback from '../../components/home/Feedback';
 import CreativeLearning from '../../components/day-care/CreativeLearning';
-import AskMsiCta from '../../components/day-care/AskMsiCta';
-import EnrolCta from '../../components/day-care/EnrolCta';
-import RecentNews from '../../components/day-care/RecentNews';
+import MissionCounters from '../../components/nep/MissionCounters';
+import GalleryStrip from '../../components/nep/GalleryStrip';
+// import EnrolCta from '../../components/day-care/EnrolCta';
+
 
 export const metadata = {
   title: 'Day Care',
@@ -47,11 +50,18 @@ export default function DayCarePage() {
         <ParentJourney />
         <DesignPhilosophy />
         <NeuroPiApproach />
+        <VideoCarousel
+          eyebrow="Every Family Has An MSI Story"
+          title="PARENT STORIES & TESTIMONIALS"
+        />
+        <Feedback eyebrow="" title="" />
 
         <CreativeLearning />
-        <EnrolCta />
-        <AskMsiCta />
-        <RecentNews />
+        <MissionCounters />
+        <GalleryStrip />
+        {/* <EnrolCta /> */}
+
+
       </main>
       <ContactUs />
       <Footer />

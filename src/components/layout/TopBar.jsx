@@ -3,7 +3,7 @@ import { Home, Phone } from 'lucide-react';
 
 const TopBar = () => {
   return (
-    <div className="bg-msi-purple text-white text-sm py-2 px-4 md:px-12 flex flex-col md:flex-row justify-between items-center z-50 relative">
+    <div className="hidden md:flex bg-msi-purple text-white text-xs lg:text-sm py-2 px-4 md:px-12 justify-between items-center z-30 relative">
       <div className="flex flex-wrap items-center gap-4 mb-2 md:mb-0">
         <a href="/" className="flex items-center text-msi-cream" aria-label="Home">
           <Home className="w-4 h-4 mr-2" />

@@ -105,8 +105,7 @@ export default function ContactUs({ intro }) {
   }, []);
 
   const inputClass = (name) =>
-    `w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-msi-accent ${
-      errors[name] ? 'border-red-400' : 'border-gray-300'
+    `w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-msi-purple ${errors[name] ? 'border-red-400' : 'border-gray-300'
     }`;
 
   return (
@@ -139,13 +138,13 @@ export default function ContactUs({ intro }) {
               className="bg-white rounded-3xl shadow-xl p-8 md:p-10"
             >
               {intro && <div className="text-gray-600 text-center mb-6 leading-relaxed">{intro}</div>}
-              <h2>
+              <h2 className="">
                 ENROL YOUR CHILD
               </h2>
 
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div>
-                  <label htmlFor="parentName" className="block text-sm font-medium text-gray-700 mb-1">Parent / Guardian Name</label>
+                  <label htmlFor="parentName" className="block text-sm font-medium text-msi-purple mb-1">Parent / Guardian Name</label>
                   <input
                     id="parentName"
                     type="text"
@@ -159,7 +158,7 @@ export default function ContactUs({ intro }) {
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email ID</label>
+                  <label htmlFor="email" className="block text-sm font-medium text-msi-purple mb-1">Email ID</label>
                   <input
                     id="email"
                     type="email"
@@ -173,7 +172,7 @@ export default function ContactUs({ intro }) {
                 </div>
 
                 <div>
-                  <label htmlFor="mobile" className="block text-sm font-medium text-gray-700 mb-1">Mobile Number</label>
+                  <label htmlFor="mobile" className="block text-sm font-medium text-msi-purple mb-1">Mobile Number</label>
                   <div className="flex">
                     <div ref={phoneRef} className="relative">
                       <button
@@ -229,7 +228,7 @@ export default function ContactUs({ intro }) {
                       name="mobile"
                       value={formData.mobile}
                       onChange={handleChange}
-                      className={`w-full px-4 py-3 border rounded-r-lg focus:outline-none focus:ring-2 focus:ring-msi-accent ${errors.mobile ? 'border-red-400' : 'border-gray-300'}`}
+                      className={`w-full px-4 py-3 border rounded-r-lg focus:outline-none focus:ring-2 focus:ring-msi-purple ${errors.mobile ? 'border-red-400' : 'border-gray-300'}`}
                       placeholder="Enter mobile number"
                     />
                   </div>
@@ -237,7 +236,7 @@ export default function ContactUs({ intro }) {
                 </div>
 
                 <div>
-                  <label htmlFor="program" className="block text-sm font-medium text-gray-700 mb-1">Select Program</label>
+                  <label htmlFor="program" className="block text-sm font-medium text-msi-purple mb-1">Select Program</label>
                   <select
                     id="program"
                     name="program"
@@ -254,12 +253,12 @@ export default function ContactUs({ intro }) {
                 </div>
 
                 <div ref={countryRef} className="relative">
-                  <label id="country-label" className="block text-sm font-medium text-gray-700 mb-1">Select Country</label>
+                  <label id="country-label" className="block text-sm font-medium text-msi-purple mb-1">Select Country</label>
                   <button
                     type="button"
                     onClick={() => setCountryOpen(!countryOpen)}
                     onKeyDown={(e) => { if (e.key === 'Escape') setCountryOpen(false); }}
-                    className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-msi-accent bg-white text-left flex items-center justify-between ${errors.country ? 'border-red-400' : 'border-gray-300'}`}
+                    className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-msi-purple bg-white text-left flex items-center justify-between ${errors.country ? 'border-red-400' : 'border-gray-300'}`}
                     aria-expanded={countryOpen}
                     aria-haspopup="listbox"
                     aria-labelledby="country-label"
@@ -309,7 +308,7 @@ export default function ContactUs({ intro }) {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Message / Inquiry</label>
+                  <label htmlFor="message" className="block text-sm font-medium text-msi-purple mb-1">Message / Inquiry</label>
                   <textarea
                     id="message"
                     name="message"
@@ -328,9 +327,9 @@ export default function ContactUs({ intro }) {
                     name="agreePolicy"
                     checked={formData.agreePolicy}
                     onChange={handleChange}
-                    className={`mt-1 w-5 h-5 text-msi-accent border-gray-300 rounded focus:ring-msi-accent ${errors.agreePolicy ? 'border-red-400' : ''}`}
+                    className={`mt-1 w-5 h-5 text-msi-purple border-gray-300 rounded focus:ring-msi-purple ${errors.agreePolicy ? 'border-red-400' : ''}`}
                   />
-                  <label htmlFor="agreePolicy" className="text-sm text-gray-600">
+                  <label htmlFor="agreePolicy" className="">
                     I have read and agree to the{' '}
                     <a href="/privacy-policy">Privacy Policy</a>
                   </label>
@@ -340,7 +339,7 @@ export default function ContactUs({ intro }) {
                 <button
                   type="submit"
                   disabled={submitting}
-                  className="w-full bg-msi-accent hover:bg-msi-accent/90 disabled:bg-gray-400 text-white font-bold py-4 rounded-lg transition-colors duration-300 text-lg"
+                  className="w-full bg-msi-purple hover:bg-msi-purple/90 disabled:bg-gray-400 text-white font-bold py-4 rounded-lg transition-colors duration-300 text-lg"
                 >
                   {submitting ? 'SUBMITTING...' : 'ENROL YOUR CHILD'}
                 </button>

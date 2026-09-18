@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import UnderlineArrowLink from '../common/UnderlineArrowLink';
 
 const faqs = [
   {
@@ -76,7 +77,7 @@ export default function Faq() {
                 aria-expanded={open}
                 className="w-full flex items-center justify-between gap-4 py-5 text-left"
               >
-                <span className="font-lato text-[19px] font-bold text-[#464646]">
+                <span className={`font-lato text-[19px] font-bold transition-colors ${open ? 'text-msi-blue' : 'text-msi-purple'}`}>
                   {faq.question}
                 </span>
                 <span
@@ -87,7 +88,7 @@ export default function Faq() {
                 </span>
               </button>
               {open && (
-                <p className="font-lato text-[18px] text-[#464646] leading-relaxed pb-6 pr-8">
+                <p className="">
                   {faq.answer}
                 </p>
               )}
@@ -97,30 +98,25 @@ export default function Faq() {
       </div>
 
       <div className="mt-10">
-        <p className="font-lato text-[22px] font-bold text-[#464646] mb-5">
+        <h3>
           Still have a question?
-        </p>
-        <div className="flex flex-wrap gap-3">
-          <Link
-            href="/contact"
-            className="inline-block bg-msi-purple text-white font-bold py-3 px-8 rounded-full hover:opacity-90 transition-opacity"
-          >
-            ASK MSI
-          </Link>
+        </h3>
+        <div className="flex flex-wrap items-center gap-3 sm:gap-4">
+          <UnderlineArrowLink href="/contact" text="ASK MSI" color="purple" />
           <a
             href="https://wa.me/917075947070"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-msi-orange text-white font-bold py-3 px-8 rounded-full hover:opacity-90 transition-opacity"
+            aria-label="Chat with My School ITALY on WhatsApp"
+            className="inline-flex items-center border-2 border-[#25d366] bg-white py-1.5 px-5 rounded-full hover:bg-[#e6f9ee] hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 shadow-md whitespace-nowrap"
           >
-            WHATSAPP US
+            <img
+              src="/whatsapp-wordmark.svg"
+              alt="WhatsApp"
+              className="h-6 w-auto"
+            />
           </a>
-          <Link
-            href="/book-your-tour"
-            className="inline-block border-2 border-msi-purple text-msi-purple font-bold py-3 px-8 rounded-full hover:bg-msi-purple hover:text-white transition-colors"
-          >
-            BOOK A TOUR
-          </Link>
+          <UnderlineArrowLink />
         </div>
       </div>
     </div>

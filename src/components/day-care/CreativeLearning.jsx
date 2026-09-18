@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import UnderlineArrowLink from '../common/UnderlineArrowLink';
 
 export default function CreativeLearning() {
   return (
@@ -6,17 +7,33 @@ export default function CreativeLearning() {
       <div className="container mx-auto px-4 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
           <div>
-            <h2 className="text-3xl text-msi-purple font-bold mb-6">
-              We make learning magical through creativity
+            <h2 >
+              YOUR CHILD&apos;S SCHOOL SHOULD NEVER FEEL FAR AWAY
             </h2>
-            <p className="text-gray-600 mb-4 leading-relaxed">
-              In order to respond more and more concretely to the need of the parents, we provide
-              Live CCTV Feed, Biometric Security Systems, Learning and Management Systems, and
-              Child safe, hygienic, and friendly Ambience.
-            </p>
-            <p className="text-gray-600 leading-relaxed">
-              Our Nap Rooms and diaper Change Stations give extra mileage to our Daycare Facility.
-            </p>
+            <div className="text-gray-600 mb-6 leading-relaxed space-y-1 font-lato text-[17px]">
+              <p>You may be at work.</p>
+              <p>You may be travelling.</p>
+              <p>
+                You may simply be wondering whether your child ate lunch, enjoyed the story or finally tried the activity they were hesitant about yesterday.
+              </p>
+              <p>We understand why those little things matter.</p>
+              <p>
+                At My School ITALY, the parent experience is built around communication, continuity and trust.
+              </p>
+              <p>
+                Because early childhood works best when the important adults surrounding a child understand one another.
+              </p>
+              <p className="font-bold text-msi-purple pt-2">
+                YOU KNOW YOUR CHILD.<br />
+                WE GET TO KNOW YOUR CHILD TOO.
+              </p>
+              <p>And together, we support the journey.</p>
+            </div>
+
+            <div className="flex flex-wrap items-center gap-6 mt-6">
+              <UnderlineArrowLink href="/contact" text="FIND A CENTRE" color="green" />
+              <UnderlineArrowLink href="/book-your-tour" text="BOOK A TOUR" color="yellow" />
+            </div>
           </div>
           <div>
             <Image

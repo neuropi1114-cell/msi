@@ -12,7 +12,10 @@ const videos = [
   { id: '-cDp2zfcRcU', thumbnail: '/images/videos/video-7.webp' },
 ];
 
-export default function VideoCarousel() {
+export default function VideoCarousel({
+  eyebrow = '',
+  title = 'School Videos',
+}) {
   const [activeVideo, setActiveVideo] = useState(null);
   const [current, setCurrent] = useState(0);
   const containerRef = useRef(null);
@@ -33,15 +36,16 @@ export default function VideoCarousel() {
   return (
     <section className="py-20 bg-[#f7f9fc]">
       <div className="container mx-auto px-4 md:px-12">
-        <motion.h2
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-4xl md:text-5xl font-bold text-center mb-14"
+          className="text-center mb-10"
         >
-          School Videos
-        </motion.h2>
+          {eyebrow && <p className="text-lg md:text-xl text-msi-blue mb-2">{eyebrow}</p>}
+          <h2 className="text-4xl md:text-5xl font-bold">{title}</h2>
+        </motion.div>
 
         <div className="relative">
           <button

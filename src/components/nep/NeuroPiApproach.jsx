@@ -49,8 +49,8 @@ export default function NeuroPiApproach() {
               <p className="font-lato text-[18px] text-[#464646] text-justify leading-relaxed mb-4">
                 <span className="text-msi-blue"><em><strong>Home Learning &amp; Family Connection</strong></em></span>
               </p>
-              <div className="font-lato text-[18px] text-[#464646] text-justify leading-relaxed">
-                <p><strong>Learning Doesn&apos;t Stop at the School Gate</strong></p>
+              <div >
+                <p className="text-2xl md:text-3xl"><strong>Learning Doesn&apos;t Stop at the School Gate</strong></p>
                 <p>Home should not become another classroom. Instead, families can extend learning through simple everyday experiences.</p>
                 <p>A story at bedtime.</p>
                 <p>Counting fruit while shopping.</p>
@@ -67,8 +67,9 @@ export default function NeuroPiApproach() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-12">
           <div style={{ marginRight: '30px' }}>
             <div className="mb-10 mt-[60px] pr-[100px]">
-              <h2 className="font-lato text-[45px] font-bold uppercase leading-[45px] text-[#d16827]">FREQUENTLY ASKED QUESTIONS</h2>
-              <p className="font-lato text-[18px] text-[#464646] mt-4">You Have Questions. We Want You to Ask Them.</p>
+
+              <h3 >You Have Questions. We Want You to Ask Them.</h3>
+              <h2 >FREQUENTLY ASKED QUESTIONS</h2>
             </div>
             <Faq />
           </div>

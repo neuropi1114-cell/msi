@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import { motion } from 'framer-motion';
+import UnderlineArrowLink from '../common/UnderlineArrowLink';
 
 const BelieveBrilliance = () => {
   return (
@@ -53,18 +54,8 @@ const BelieveBrilliance = () => {
             </p>
 
             <div className="flex flex-wrap gap-6">
-              <a href="/book-your-tour" className="group inline-flex items-center gap-2 font-medium text-lg text-msi-yellow transition-colors">
-                <span className="border-b-2 border-msi-yellow pb-1 group-hover:border-msi-yellow/80">BOOK A SCHOOL TOUR</span>
-                <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </a>
-              <a href="/contact" className="group inline-flex items-center gap-2 font-medium text-lg text-msi-green transition-colors">
-                <span className="border-b-2 border-msi-green pb-1 group-hover:border-msi-green/80">FIND A CENTRE</span>
-                <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </a>
+              <UnderlineArrowLink href="/book-your-tour" text="BOOK A SCHOOL TOUR" color="yellow" />
+              <UnderlineArrowLink href="/contact" text="FIND A CENTRE" color="green" />
             </div>
           </motion.div>
         </div>

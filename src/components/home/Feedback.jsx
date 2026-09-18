@@ -76,8 +76,8 @@ export default function Feedback({
           transition={{ duration: 0.6 }}
           className="text-center mb-4"
         >
-          <p className="text-lg md:text-xl text-msi-blue">{eyebrow}</p>
-          <h2 className="text-4xl md:text-5xl font-bold mt-2">{title}</h2>
+          {eyebrow && <p className="text-lg md:text-xl text-msi-blue">{eyebrow}</p>}
+          {title && <h2 className="text-4xl md:text-5xl font-bold mt-2">{title}</h2>}
           <div className="max-w-4xl mx-auto mt-6 text-sm md:text-base leading-relaxed">
             {description.map((text, i) => (
               <p key={i} className={i > 0 ? 'mt-4' : undefined}>{text}</p>
