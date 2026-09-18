@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Drawer from './Drawer';
+import ReadMoreButton from '../common/ReadMoreButton';
 
 const drawerContent = [
   'For a young child, beginning preschool or daycare can mean a new environment, new adults, new children and a completely new routine.',
@@ -20,14 +21,13 @@ export default function SettlingInMore() {
 
   return (
     <>
-      <button
+      <ReadMoreButton
         onClick={() => setOpen(true)}
         aria-haspopup="dialog"
         aria-expanded={open}
-        className="mt-2 mb-6 inline-block bg-msi-orange text-white font-bold py-3 px-10 rounded-full hover:bg-msi-orange/90 transition-colors"
-      >
-        Read More
-      </button>
+
+        className="mt-2 mb-6 font-bold"
+      />
       <Drawer
         open={open}
         onClose={() => setOpen(false)}

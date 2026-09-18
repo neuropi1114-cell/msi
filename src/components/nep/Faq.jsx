@@ -101,7 +101,7 @@ export default function Faq() {
         <h3>
           Still have a question?
         </h3>
-        <div className="flex flex-wrap items-center gap-3 sm:gap-4">
+        <div className="flex flex-wrap md:flex-nowrap items-center gap-3 sm:gap-4 whitespace-nowrap">
           <UnderlineArrowLink href="/contact" text="ASK MSI" color="purple" />
           <a
             href="https://wa.me/917075947070"

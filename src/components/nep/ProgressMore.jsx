@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Drawer from '../layout/Drawer';
+import ReadMoreButton from '../common/ReadMoreButton';
 
 const areas = [
   'Communication',
@@ -24,14 +25,13 @@ export default function ProgressMore() {
 
   return (
     <>
-      <button
+      <ReadMoreButton
         onClick={() => setOpen(true)}
         aria-haspopup="dialog"
         aria-expanded={open}
-        className="mt-6 inline-block bg-msi-orange text-white font-bold py-3 px-10 rounded-full hover:bg-msi-orange/90 transition-colors"
-      >
-        Read More
-      </button>
+        bgColor="bg-msi-orange hover:bg-msi-orange/90"
+        className="mt-6 font-bold"
+      />
       <Drawer
         open={open}
         onClose={() => setOpen(false)}

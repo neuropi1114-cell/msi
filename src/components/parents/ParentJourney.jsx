@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Drawer from '../layout/Drawer';
+import ReadMoreButton from '../common/ReadMoreButton';
 
 const steps = [
   {
@@ -54,7 +55,7 @@ export default function ParentJourney() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
           <div>
             <Image
-              src="/images/hero/DSC00795-1024x684-1.jpeg.bv.webp"
+              src="/images/parents/parent-journey.jpg"
               alt="Children learning and playing at My School ITALY daycare"
               width={800}
               height={534}
@@ -67,14 +68,13 @@ export default function ParentJourney() {
             <p>At My School ITALY, we want parents to know not only what their child is learning, but also how their child is spending the day, settling in, eating, resting, participating, making friends and growing.</p>
             <p>From your first visit to everyday communication, we aim to make your experience with MSI connected, transparent and reassuring.</p>
 
-            <button
+            <ReadMoreButton
               onClick={() => setOpen(true)}
               aria-haspopup="dialog"
               aria-expanded={open}
-              className="mt-8 inline-block bg-msi-orange text-white font-bold py-3 px-10 rounded-full hover:bg-msi-orange/90 transition-colors"
-            >
-              Read More
-            </button>
+
+              className="mt-8 font-bold"
+            />
           </div>
         </div>
       </div>

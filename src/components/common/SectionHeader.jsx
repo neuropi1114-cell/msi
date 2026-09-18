@@ -17,7 +17,7 @@ export default function SectionHeader({
           </h3>
         )}
         {description && (
-          <p className="text-2xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-2xl  max-w-3xl mx-auto">
             {description}
           </p>
         )}

@@ -4,7 +4,7 @@ import Faq from '../nep/Faq';
 export default function FaqSection({
   subheading = "You Have Questions. We Want You to Ask Them.",
   heading = "FREQUENTLY ASKED QUESTIONS",
-  imageSrc = "/images/nep/learning-neuropi.webp",
+  imageSrc = "/images/nep/faq-portrait.png",
   imageAlt = "Children learning at My School ITALY",
   className = "py-[70px] bg-white relative"
 }) {
@@ -20,7 +20,7 @@ export default function FaqSection({
             <Faq />
           </div>
           <div className="flex items-center justify-center">
-            <div className="rounded-[10px] overflow-hidden relative aspect-[4/3] w-full shadow-lg">
+            <div className="rounded-[12px] overflow-hidden relative aspect-[3/4] max-w-[500px] w-full shadow-xl">
               <Image
                 src={imageSrc}
                 alt={imageAlt}

@@ -58,7 +58,7 @@ export default function NeuroPiApproach({ faqOnly = false, variant = 'default' }
           <div className="flex flex-col items-end">
             <div className="rounded-[10px] overflow-hidden mb-6 relative aspect-[4/3] w-full">
               <Image
-                src="/images/nep/neuropi-approach-1.webp"
+                src="/images/nep/web-14.jpg"
                 alt="Children at play in NeuroPi classroom"
                 fill
                 className="object-cover"
@@ -86,7 +86,7 @@ export default function NeuroPiApproach({ faqOnly = false, variant = 'default' }
             </div>
             <div className="rounded-[10px] overflow-hidden mb-6 relative aspect-[4/3] w-full">
               <Image
-                src="/images/nep/neuropi-approach-2.webp"
+                src="/images/nep/img-2217.jpeg"
                 alt="Classroom activity at My School ITALY"
                 fill
                 className="object-cover"

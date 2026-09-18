@@ -1,6 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import ReadMoreButton from '../common/ReadMoreButton';
 
 const pressImages = [
   "/images/ASFATUREDIN/press30.png.bv_resized_mobile.png.bv.webp",
@@ -60,12 +61,10 @@ export default function FeaturedIn() {
             <p className="text-white/90 text-lg mb-8 leading-relaxed text-justify">
               Education is a journey, not a race, and students learn best when they're having fun while they do it.
             </p>
-            <Link
+            <ReadMoreButton
               href="/media-coverage"
-              className="font-linotte inline-block bg-[#d16827] text-white font-[200] py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-            >
-              Read More
-            </Link>
+              bgColor="bg-[#d16827] hover:bg-[#d16827]/90"
+            />
           </motion.div>
 
         </div>
