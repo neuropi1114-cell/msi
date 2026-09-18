@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import Drawer from '../layout/Drawer';
 import ReadMoreButton from '../common/ReadMoreButton';
+import ScrollReveal from '../common/ScrollReveal';
 
 const steps = [
   {
@@ -53,7 +54,7 @@ export default function ParentJourney() {
     <section className="py-20 bg-[#f7f9fc]">
       <div className="container mx-auto px-4 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
-          <div>
+          <ScrollReveal direction="right" delay={0.1}>
             <Image
               src="/images/parents/parent-journey.jpg"
               alt="Children learning and playing at My School ITALY daycare"
@@ -61,8 +62,8 @@ export default function ParentJourney() {
               height={534}
               className="w-full h-auto rounded-2xl shadow-lg"
             />
-          </div>
-          <div>
+          </ScrollReveal>
+          <ScrollReveal direction="left" delay={0.2}>
             <h3>Your Child. Your Questions. <br />Your Journey With Us.</h3>
             <h2>YOUR JOURNEY WITH MSI</h2>
             <p>At My School ITALY, we want parents to know not only what their child is learning, but also how their child is spending the day, settling in, eating, resting, participating, making friends and growing.</p>
@@ -75,7 +76,7 @@ export default function ParentJourney() {
 
               className="mt-8 font-bold"
             />
-          </div>
+          </ScrollReveal>
         </div>
       </div>
 

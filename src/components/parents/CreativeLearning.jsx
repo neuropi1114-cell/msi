@@ -1,12 +1,13 @@
 import Image from 'next/image';
 import UnderlineArrowLink from '../common/UnderlineArrowLink';
+import ScrollReveal from '../common/ScrollReveal';
 
 export default function CreativeLearning() {
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
-          <div>
+          <ScrollReveal direction="right" delay={0.1}>
             <h2>
               YOUR CHILD&apos;S SCHOOL SHOULD NEVER FEEL FAR AWAY
             </h2>
@@ -34,8 +35,8 @@ export default function CreativeLearning() {
               <UnderlineArrowLink href="/contact" text="FIND A CENTRE" color="green" />
               <UnderlineArrowLink href="/book-your-tour" text="BOOK A TOUR" color="yellow" />
             </div>
-          </div>
-          <div>
+          </ScrollReveal>
+          <ScrollReveal direction="left" delay={0.25}>
             <Image
               src="/images/hero/DSC00928-scaled-2-1024x684.jpg.bv.webp"
               alt="Children taking part in creative learning activities at My School ITALY daycare"
@@ -43,7 +44,7 @@ export default function CreativeLearning() {
               height={534}
               className="w-full h-auto rounded-2xl shadow-lg"
             />
-          </div>
+          </ScrollReveal>
         </div>
       </div>
     </section>

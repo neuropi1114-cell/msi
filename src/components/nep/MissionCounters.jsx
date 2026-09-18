@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import ScrollReveal from '../common/ScrollReveal';
 
 export default function MissionCounters() {
   return (
@@ -10,11 +11,11 @@ export default function MissionCounters() {
         </div>
 
         <div className="flex flex-wrap items-center">
-          <div className="w-full md:w-[23.033%] flex items-center justify-center md:justify-start mb-6 md:mb-0">
+          <ScrollReveal direction="up" delay={0.1} className="w-full md:w-[23.033%] flex items-center justify-center md:justify-start mb-6 md:mb-0">
             <p className="font-lato text-[25px] leading-[27px] text-[#464646] italic text-center md:text-left md:max-w-[91.11%]"><em>Our Mission is to educate and empower the lives of</em></p>
-          </div>
+          </ScrollReveal>
 
-          <div className="w-full md:w-[21.048%] flex items-center justify-center mb-6 md:mb-0" style={{ margin: '0 16px' }}>
+          <ScrollReveal direction="zoom" delay={0.25} className="w-full md:w-[21.048%] flex items-center justify-center mb-6 md:mb-0" style={{ margin: '0 16px' }}>
             <div className="w-full">
               <div className="md:hidden border-t border-gray-300 my-3"></div>
               <div style={{ backgroundColor: '#d16827', padding: '19px', borderRadius: '40px', textAlign: 'center' }}>
@@ -23,20 +24,20 @@ export default function MissionCounters() {
               </div>
               <div className="md:hidden border-t border-gray-300 my-3"></div>
             </div>
-          </div>
+          </ScrollReveal>
 
-          <div className="w-full md:w-[15.889%] flex items-center justify-center mb-6 md:mb-0">
+          <ScrollReveal direction="up" delay={0.35} className="w-full md:w-[15.889%] flex items-center justify-center mb-6 md:mb-0">
             <h2 className="font-lato text-[30px] font-bold leading-[36px] text-[#464646] text-center md:text-end md:max-w-[89%]">Children, Teachers, Parents</h2>
             <div className="md:hidden border-t border-gray-300 my-3 w-full"></div>
-          </div>
+          </ScrollReveal>
 
           <div className="hidden md:flex md:w-[14.59%] items-center justify-center">
             <h2 className="font-lato text-[160px] font-normal leading-[57px] text-[#464646] text-end md:max-w-[89%]">{')'}</h2>
           </div>
 
-          <div className="w-full md:w-[25.41%] flex items-center justify-center mb-6 md:mb-0">
+          <ScrollReveal direction="left" delay={0.45} className="w-full md:w-[25.41%] flex items-center justify-center mb-6 md:mb-0">
             <h2 className="font-lato text-[60px] font-semibold text-[#464646] text-center md:max-w-[74.602%]">By 2027</h2>
-          </div>
+          </ScrollReveal>
         </div>
 
         <div className="hidden md:flex justify-center mt-4">
