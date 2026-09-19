@@ -13,6 +13,7 @@ import Feedback from '../../components/home/Feedback';
 import Gallery from '../../components/home/Gallery';
 import VideoCarousel from '../../components/home/VideoCarousel';
 import Activities from '../../components/home/Activities';
+import NeuroPiApproach from '../../components/home/NeuroPiApproach';
 import OneJourneySection from '../../components/programs/OneJourneySection';
 import {
   metadata,
@@ -228,8 +229,9 @@ export default function ProgramsPage() {
         />
 
 
-        <OneJourneySection />
+        <NeuroPiApproach />
         <Activities />
+        <OneJourneySection />
         <VideoCarousel />
         <Feedback />
         <Gallery />
