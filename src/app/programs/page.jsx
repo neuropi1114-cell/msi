@@ -9,11 +9,10 @@ import FaqSection from '../../components/common/FaqSection';
 import DesignPhilosophy from '../../components/nep/DesignPhilosophy';
 import NepHero from '../../components/nep/NepHero';
 import DualFeatureSection from '../../components/common/DualFeatureSection';
-import Feedback from '../../components/home/Feedback';
-import Gallery from '../../components/home/Gallery';
+
+
 import VideoCarousel from '../../components/home/VideoCarousel';
-import Activities from '../../components/home/Activities';
-import NeuroPiApproach from '../../components/home/NeuroPiApproach';
+
 import OneJourneySection from '../../components/programs/OneJourneySection';
 import RecentNews from '../../components/day-care/RecentNews';
 import {
@@ -180,7 +179,7 @@ export default function ProgramsPage() {
 
         <DesignPhilosophy
           topBgClass="bg-msi-yellow"
-          image="/images/programs/IMG_8606.png"
+          image="/images/programs/Aperna_23.png"
           imageAspect="aspect-[16/9]"
           imageClass="object-cover scale-[1.05]"
           eyebrow="From “How Does It Work?” to “Can I Make It Work?”"
@@ -201,9 +200,9 @@ export default function ProgramsPage() {
 
         <DualFeatureSection
           sectionTitle="EXPRESSIVE ART & DESIGN"
-          leftImage="/images/programs/Aperna_8.png"
+          leftImage="/images/programs/Aperna_24.png"
           leftAspect="aspect-[4/5]"
-          rightImage="/images/programs/Batch_3_6.png"
+          rightImage="/images/programs/Aperna_25.png"
           leftTitle={<span className="italic">Let the Body Become Another Language.</span>}
           leftSubtitle="DANCE & CREATIVE MOVEMENT"
           leftSubtitleColor="text-msi-yellow"
@@ -253,13 +252,11 @@ export default function ProgramsPage() {
         />
 
 
-        <NeuroPiApproach />
-        <Activities />
         <OneJourneySection />
         <VideoCarousel />
         <RecentNews />
-        <Feedback />
-        <Gallery />
+
+
       </main>
       <ContactUs />
       <Footer />
