@@ -50,9 +50,12 @@ export default function Feedback({
   eyebrow = 'What do parents say about us',
   title = 'Testimonials',
   description = defaultDescription,
+  className = '',
 }) {
   const [current, setCurrent] = useState(0);
   const containerRef = useRef(null);
+  const hasHeader = Boolean(eyebrow || title);
+  const sectionClass = className || (hasHeader ? 'pt-16 pb-8 bg-[#f7f9fc]' : 'pt-2 pb-8 bg-[#f7f9fc]');
 
   const scroll = (dir) => {
     const container = containerRef.current;
@@ -67,7 +70,7 @@ export default function Feedback({
   };
 
   return (
-    <section id="Testimonials" className="py-20 bg-[#f7f9fc]">
+    <section id="Testimonials" className={sectionClass}>
       <div className="container mx-auto px-4 md:px-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -78,7 +81,7 @@ export default function Feedback({
         >
           {eyebrow && <p className="text-lg md:text-xl text-msi-blue">{eyebrow}</p>}
           {title && <h2 className="text-4xl md:text-5xl font-bold mt-2">{title}</h2>}
-          <div className="max-w-4xl mx-auto mt-6 text-sm md:text-base leading-relaxed">
+          <div className={`max-w-4xl mx-auto text-sm md:text-base leading-relaxed ${hasHeader ? 'mt-6' : 'mt-2'}`}>
             {description.map((text, i) => (
               <p key={i} className={i > 0 ? 'mt-4' : undefined}>{text}</p>
             ))}
@@ -117,7 +120,7 @@ export default function Feedback({
                   <Stars />
                   <p className="text-sm leading-relaxed flex-1">&ldquo;{t.text}&rdquo;</p>
                   <div className="mt-4 pt-4 border-t border-gray-100">
-                    <strong className="text-msi-blue">{t.name}</strong>
+                    <h3 className="text-msi-blue  text-transform: uppercase text-sm md:text-base font-bold not-italic">{t.name}</h3>
                   </div>
                 </div>
               </div>

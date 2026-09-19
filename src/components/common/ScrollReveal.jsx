@@ -10,7 +10,7 @@ export default function ScrollReveal({
   duration = 0.6,
   distance = 30,
   once = true,
-  amount = 0.2,
+  amount = 0.1,
   className = '',
   style = {},
   staggerChildren = 0,
@@ -53,7 +53,7 @@ export default function ScrollReveal({
     <motion.div
       initial={getInitial()}
       whileInView={getAnimate()}
-      viewport={{ once, amount }}
+      viewport={{ once, amount, margin: '0px 0px -20px 0px' }}
       transition={{
         duration,
         delay,

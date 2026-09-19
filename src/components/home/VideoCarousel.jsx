@@ -3,18 +3,18 @@ import { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 
 const videos = [
-  { id: 'vLUZaUrn17o', thumbnail: '/images/videos/video-1.webp' },
-  { id: 'u4IyhN68ohc', thumbnail: '/images/videos/video-2.webp' },
-  { id: 'pzdVEWwTKHM', thumbnail: '/images/videos/video-3.webp' },
-  { id: 'awIBkDlkQxs', thumbnail: '/images/videos/video-4.webp' },
-  { id: 'hTEi1WvA28E', thumbnail: '/images/videos/video-5.webp' },
-  { id: 'AiNWHm7q3Wk', thumbnail: '/images/videos/video-6.webp' },
-  { id: '-cDp2zfcRcU', thumbnail: '/images/videos/video-7.webp' },
+  { id: 'AiNWHm7q3Wk', title: 'FATHER OF NEHA', thumbnail: '/images/videos/video-6.webp' },
+  { id: 'hTEi1WvA28E', title: 'FATHER OF YAYAH', thumbnail: '/images/videos/video-5.webp' },
+  { id: 'awIBkDlkQxs', title: 'MOTHER OF ANANYA', thumbnail: '/images/videos/video-4.webp' },
+  { id: '-cDp2zfcRcU', title: 'MOTHER OF DIVYA', thumbnail: '/images/videos/video-7.webp' },
+  { id: 'OJywbhbWYA0', title: 'TECH MAHINDRA OFFICIALS SAY', thumbnail: '/images/videos/OJywbhbWYA0.jpg' },
+  { id: '9q8r-SotXRo', title: 'TECH MAHINDRA OFFICIALS SAY', thumbnail: '/images/videos/9q8r-SotXRo.jpg' },
 ];
 
 export default function VideoCarousel({
   eyebrow = '',
   title = 'School Videos',
+  className = '',
 }) {
   const [activeVideo, setActiveVideo] = useState(null);
   const [current, setCurrent] = useState(0);
@@ -34,7 +34,7 @@ export default function VideoCarousel({
   };
 
   return (
-    <section className="py-20 bg-[#f7f9fc]">
+    <section className={`pt-20 pb-6 bg-[#f7f9fc] ${className}`}>
       <div className="container mx-auto px-4 md:px-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -43,7 +43,7 @@ export default function VideoCarousel({
           transition={{ duration: 0.6 }}
           className="text-center mb-10"
         >
-          {eyebrow && <p className="text-lg md:text-xl text-msi-blue mb-2">{eyebrow}</p>}
+          {eyebrow && <h3>{eyebrow}</h3>}
           <h2 className="text-4xl md:text-5xl font-bold">{title}</h2>
         </motion.div>
 
@@ -70,29 +70,27 @@ export default function VideoCarousel({
             className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth snap-x snap-mandatory py-4"
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
-            {videos.map((video, i) => (
+            {videos.map((video) => (
               <div key={video.id} className="min-w-[280px] md:min-w-[340px] snap-start">
                 <div
-                  onClick={() => setActiveVideo(video.vimeoId)}
+                  onClick={() => setActiveVideo(video.id)}
                   className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer group border border-gray-100"
                 >
                   <div className="relative aspect-video overflow-hidden">
                     <img
-                      src={video.thumb}
-                      alt={video.title}
+                      src={video.thumbnail || `https://img.youtube.com/vi/${video.id}/hqdefault.jpg`}
+                      alt={video.title || 'School video'}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       loading="lazy"
                     />
-                    <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors flex items-center justify-center">
-                      <div className="w-12 h-12 rounded-full bg-white/90 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                        <svg className="w-5 h-5 text-msi-purple ml-0.5" viewBox="0 0 1000 1000" fill="currentColor">
-                          <path d="M838 162C746 71 633 25 500 25 371 25 258 71 163 162 71 254 25 367 25 500 25 633 71 746 163 837 254 929 367 979 500 979 633 979 746 933 838 837 929 746 975 633 975 500 975 367 929 254 838 162M808 192C892 279 933 379 933 500 933 621 892 725 808 808 725 892 621 938 500 938 379 938 279 896 196 808 113 725 67 621 67 500 67 379 108 279 196 192 279 108 383 62 500 62 621 62 721 108 808 192M438 392V642L642 517 438 392Z" />
-                        </svg>
-                      </div>
+                    <div className="absolute top-3 left-3 w-7 h-7 rounded-lg bg-black/60 backdrop-blur-sm flex items-center justify-center text-white shadow-sm group-hover:bg-[#d16827] transition-colors">
+                      <svg className="w-3.5 h-3.5 fill-current ml-0.5" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z" />
+                      </svg>
                     </div>
                   </div>
                   <div className="p-4 text-center">
-                    <h3 className="font-bold text-gray-800 text-sm md:text-base line-clamp-1">{video.title}</h3>
+                    <h3 className="text-msi-purple text-sm md:text-base font-bold not-italic">{video.title}</h3>
                   </div>
                 </div>
               </div>

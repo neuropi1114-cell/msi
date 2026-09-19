@@ -93,9 +93,9 @@ export default function NeuroPiApproach({ faqOnly = false, variant = 'default' }
               />
             </div>
             <div className="w-full md:max-w-[88%]">
-              <p className="font-lato text-[18px] text-[#464646] text-justify leading-relaxed mb-4">
-                <span className="text-msi-blue"><em><strong>Home Learning &amp; Family Connection</strong></em></span>
-              </p>
+              <h3 className='text-msi-blue'>
+                Home Learning &amp; Family Connection
+              </h3>
               <div>
                 <p className="text-2xl md:text-3xl"><strong>Learning Doesn&apos;t Stop at the School Gate</strong></p>
                 <p>Home should not become another classroom. Instead, families can extend learning through simple everyday experiences.</p>

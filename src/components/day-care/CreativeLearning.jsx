@@ -37,7 +37,7 @@ export default function CreativeLearning() {
           </div>
           <div>
             <Image
-              src="/images/hero/DSC00928-scaled-2-1024x684.jpg.bv.webp"
+              src="/images/day-care/batch-3-16.png"
               alt="Children taking part in creative learning activities at My School ITALY daycare"
               width={800}
               height={534}

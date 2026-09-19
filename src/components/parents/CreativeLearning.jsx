@@ -4,7 +4,7 @@ import ScrollReveal from '../common/ScrollReveal';
 
 export default function CreativeLearning() {
   return (
-    <section className="py-20 bg-white">
+    <section className="pt-8 pb-16 bg-white">
       <div className="container mx-auto px-4 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
           <ScrollReveal direction="right" delay={0.1}>
@@ -38,7 +38,7 @@ export default function CreativeLearning() {
           </ScrollReveal>
           <ScrollReveal direction="left" delay={0.25}>
             <Image
-              src="/images/hero/DSC00928-scaled-2-1024x684.jpg.bv.webp"
+              src="/images/parents/batch-3-16.png"
               alt="Children taking part in creative learning activities at My School ITALY daycare"
               width={800}
               height={534}
