@@ -5,7 +5,7 @@ import Header from '../../components/layout/Header';
 import Footer from '../../components/layout/Footer';
 import CloudHeader from '../../components/layout/CloudHeader';
 import SectionHeader from '../../components/common/SectionHeader';
-import NeuroPiApproach from '../../components/nep/NeuroPiApproach';
+import DualFeatureSection from '../../components/common/DualFeatureSection';
 import Feedback from '../../components/home/Feedback';
 import Gallery from '../../components/home/Gallery';
 import VideoCarousel from '../../components/home/VideoCarousel';
@@ -52,7 +52,7 @@ export default function ProgramsPage() {
           }
           description=""
         />
-        <NeuroPiApproach variant="programs" />
+        <DualFeatureSection variant="programs" />
         {/* <BrighterFuture /> */}
         <Activities />
         <VideoCarousel />

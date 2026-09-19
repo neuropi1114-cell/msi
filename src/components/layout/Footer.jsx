@@ -109,6 +109,7 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-6 text-white">Navigation</h3>
             <ul className="flex flex-col gap-y-2 !text-white text-sm">
               <li><a href="/" className="!text-white hover:text-msi-orange transition-colors">Home</a></li>
+              <li><a href="/whyus" className="!text-white hover:text-msi-orange transition-colors">Why Choose Us</a></li>
               <li><a href="/about" className="!text-white hover:text-msi-orange transition-colors">About Us</a></li>
               <li><a href="/programs" className="!text-white hover:text-msi-orange transition-colors">Programs</a></li>
               <li><a href="/franchise-overview" className="!text-white hover:text-msi-orange transition-colors">For School Owners</a></li>

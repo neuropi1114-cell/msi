@@ -33,7 +33,7 @@ const Header = () => {
   }, [isMenuOpen]);
 
   const navLinks = [
-    { name: 'Why MSI', href: '/about' },
+    { name: 'Why MSI', href: '/whyus' },
     { name: 'Programs', href: '/programs' },
     { name: 'The NeuroPi Way', href: '/nep' },
     { name: 'Parents', href: '/parents' },

@@ -8,7 +8,7 @@ import NepHero from '../../components/nep/NepHero';
 import DesignPhilosophy from '../../components/nep/DesignPhilosophy';
 import MissionCounters from '../../components/nep/MissionCounters';
 import GalleryStrip from '../../components/nep/GalleryStrip';
-import NeuroPiApproach from '../../components/nep/NeuroPiApproach';
+import DualFeatureSection from '../../components/common/DualFeatureSection';
 import NepNews from '../../components/nep/NepNews';
 
 export const metadata = {
@@ -41,7 +41,7 @@ export default function EducationalProjectPage() {
         <DesignPhilosophy />
         <MissionCounters />
         <GalleryStrip />
-        <NeuroPiApproach />
+        <DualFeatureSection showFaq={true} />
 
         <Feedback
           eyebrow="Every Family Has An MSI Story"

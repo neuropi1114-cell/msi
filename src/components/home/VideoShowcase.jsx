@@ -78,7 +78,14 @@ function VideoCard({ video, index }) {
   );
 }
 
-export default function VideoShowcase() {
+export default function VideoShowcase({ title = "FEATURED VIDEOS", videosList = videos }) {
+  const gridCols =
+    videosList.length === 4
+      ? 'md:grid-cols-2 lg:grid-cols-4'
+      : videosList.length === 2
+      ? 'md:grid-cols-2'
+      : 'md:grid-cols-3';
+
   return (
     <section className="py-16 bg-[#f7f9fc]">
       <div className="container mx-auto px-4 md:px-12">
@@ -86,14 +93,14 @@ export default function VideoShowcase() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-3xl md:text-4xl  text-center font-bold mb-12 text-msi-orange"
+          className="text-3xl md:text-4xl text-center font-bold mb-12 text-msi-orange"
         >
-          FEATURED VIDEOS
+          {title}
         </motion.h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {videos.map((video, index) => (
-            <VideoCard key={video.id} video={video} index={index} />
+        <div className={`grid grid-cols-1 ${gridCols} gap-8`}>
+          {videosList.map((video, index) => (
+            <VideoCard key={video.id || index} video={video} index={index} />
           ))}
         </div>
       </div>

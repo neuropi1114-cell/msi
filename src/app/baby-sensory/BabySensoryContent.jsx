@@ -6,6 +6,8 @@ import TopBar from '../../components/layout/TopBar';
 import Header from '../../components/layout/Header';
 import Footer from '../../components/layout/Footer';
 import ContactUs from '../../components/home/ContactUs';
+import EarlyLearningSection from '../../components/common/EarlyLearningSection';
+import SensoryCardsSection from '../../components/common/SensoryCardsSection';
 import { Baby, BookOpen, Music } from 'lucide-react';
 import { motion } from 'framer-motion';
 
@@ -159,81 +161,10 @@ export default function BabySensoryContent() {
         </motion.section>
 
         {/* Early Learning for Babies */}
-        <motion.section
-          className="py-16 md:py-20 bg-white"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
-          <div className="container mx-auto px-4 md:px-12 max-w-6xl">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-              <div />
-              <motion.div
-                initial={{ opacity: 0, x: 40 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-              >
-                <h2 className="text-3xl md:text-4xl text-msi-purple font-bold mb-4">Early Learning for Babies</h2>
-                <p className="text-msi-orange font-semibold text-lg mb-4">It&rsquo;s your day, so is the treat!</p>
-                <p className="text-gray-600 leading-relaxed mb-2">
-                  We want you to enjoy every second of your baby&rsquo;s miraculous development. That&rsquo;s why everything we do has a purpose.
-                </p>
-                <p className="text-gray-600 leading-relaxed">
-                  We welcome you to feed or cuddle your baby during the session.
-                </p>
-              </motion.div>
-            </div>
-          </div>
-        </motion.section>
+        <EarlyLearningSection />
 
         {/* 3 Image Cards */}
-        <motion.section
-          className="py-16 md:py-20 bg-[#f7f9fc]"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
-          <div className="container mx-auto px-4 md:px-12">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              {[
-                {
-                  img: '/images/baby-sensory/card-1.jpg',
-                  alt: 'Sensory area arranged for baby visual development',
-                  text: 'We\'ve arranged the sensory area to match the distance at which your baby sees objects clearly.',
-                },
-                {
-                  img: '/images/baby-sensory/card-2.jpg',
-                  alt: 'Instruments used for baby sensory stimulation',
-                  text: 'We\'ve measured the decibel level of our instruments to make sure they are not too loud.',
-                },
-                {
-                  img: '/images/baby-sensory/card-3.jpg',
-                  alt: 'Soothing baby after sensory session',
-                  text: 'We soothe your baby at the end of every session by mimicking the sounds of the womb.',
-                },
-              ].map((item, i) => (
-                <motion.div
-                  key={i}
-                  className="rounded-[10px] overflow-hidden shadow-lg group"
-                  initial={{ opacity: 0, y: 40 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: i * 0.15 }}
-                >
-                  <div className="overflow-hidden relative h-64">
-                    <Image src={item.img} alt={item.alt} fill className="object-cover transition-transform duration-300 group-hover:scale-[1.01]" />
-                  </div>
-                  <div className="p-6 text-center bg-[#F9FAFA]">
-                    <p className="text-gray-700 leading-relaxed text-lg">{item.text}</p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </motion.section>
+        <SensoryCardsSection />
       </main>
       <ContactUs />
       <Footer />

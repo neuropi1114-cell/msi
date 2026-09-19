@@ -6,9 +6,10 @@ import ContactUs from '../../components/home/ContactUs';
 import CloudHeader from '../../components/layout/CloudHeader';
 
 import SectionHeader from '../../components/common/SectionHeader';
-import ParentJourney from '../../components/parents/ParentJourney';
+import StorySection from '../../components/common/StorySection';
 import DesignPhilosophy from '../../components/nep/DesignPhilosophy';
-import NeuroPiApproach from '../../components/nep/NeuroPiApproach';
+import DualFeatureSection from '../../components/common/DualFeatureSection';
+import FaqSection from '../../components/common/FaqSection';
 import VideoCarousel from '../../components/home/VideoCarousel';
 import Feedback from '../../components/home/Feedback';
 import CreativeLearning from '../../components/parents/CreativeLearning';
@@ -45,9 +46,10 @@ export default function ParentsPage() {
         <div data-nav-sentinel />
 
         <SectionHeader />
-        <ParentJourney />
+        <StorySection />
         <DesignPhilosophy />
-        <NeuroPiApproach />
+        <DualFeatureSection />
+        <FaqSection />
         <VideoCarousel
           eyebrow="Every Family Has An MSI Story"
           title="PARENT STORIES & TESTIMONIALS"

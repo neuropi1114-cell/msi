@@ -26,8 +26,10 @@ const closingLines = [
   'And plenty of time to simply be a child.',
 ];
 
-export default function ChildDay() {
+export default function ChildDay({ showButton = true }) {
   const [open, setOpen] = useState(false);
+
+  if (!showButton) return null;
 
   return (
     <>
@@ -35,7 +37,6 @@ export default function ChildDay() {
         onClick={() => setOpen(true)}
         aria-haspopup="dialog"
         aria-expanded={open}
-
         className="mt-6 font-bold"
       />
       <Drawer
