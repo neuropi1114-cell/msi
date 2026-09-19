@@ -230,6 +230,9 @@ export default function ProgramsPage() {
           subheading="Holidays Become Adventures."
           heading="HOLIDAY & SUMMER PROGRAMS"
           showFaq={false}
+          imageSrc="/images/programs/Aperna_27.png"
+          imageAlt="Holiday & Summer Programs"
+          imageAspect="aspect-[16/9]"
           description={
             <div className="text-[#464646] font-lato text-[17px] leading-relaxed space-y-3 mt-4">
               <p>

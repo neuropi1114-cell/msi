@@ -10,6 +10,8 @@ export default function FaqSection({
   showFaq = true,
   imageSrc = "/images/nep/faq-portrait.png",
   imageAlt = "Children learning at My School ITALY",
+  imageAspect = "aspect-[3/4]",
+  imageClass = "object-cover",
   className = "py-[70px] bg-white relative"
 }) {
   return (
@@ -31,12 +33,12 @@ export default function FaqSection({
             {showFaq && <Faq />}
           </div>
           <div className="flex items-center justify-center">
-            <div className="rounded-[12px] overflow-hidden relative aspect-[3/4] max-w-[500px] w-full shadow-xl">
+            <div className={`rounded-[12px] overflow-hidden relative ${imageAspect} max-w-[500px] w-full shadow-xl`}>
               <Image
                 src={imageSrc}
                 alt={imageAlt}
                 fill
-                className="object-cover"
+                className={imageClass}
               />
             </div>
           </div>

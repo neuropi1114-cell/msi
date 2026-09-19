@@ -8,8 +8,8 @@ export default function OneJourneySection({
   title = "ONE JOURNEY. MANY POSSIBILITIES.",
   children,
   footerText = "And throughout that journey, the child remains at the centre.",
-  imageSrc = "/images/programs/Batch_3_6.png",
-  bgImageSrc = "/images/programs/Aperna_6.jpeg",
+  imageSrc = "/images/programs/Aperna_28.png",
+  bgImageSrc = "/images/programs/Aperna_28.png",
   imageAlt = "One Journey. Many Possibilities - My School ITALY",
   showBeeIcon = true,
 }) {
@@ -81,7 +81,7 @@ export default function OneJourneySection({
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="lg:col-span-5 h-[350px] sm:h-[420px] lg:h-[480px] w-full relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white"
+              className="lg:col-span-5 aspect-[16/9] w-full relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white"
             >
               <Image
                 src={imageSrc}
