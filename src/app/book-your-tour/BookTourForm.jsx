@@ -147,7 +147,7 @@ const BookTourForm = () => {
               rel="noopener noreferrer"
               className="text-msi-orange hover:underline"
             >
-              Privacy Policy
+              Privacy Policy.
             </a>
             .
           </strong>
