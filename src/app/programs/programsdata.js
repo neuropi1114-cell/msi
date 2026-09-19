@@ -176,4 +176,30 @@ export const roboticsDrawerBody = (
   </div>
 );
 
+export const danceCreativeMovementDrawerBody = (
+  <div className="mt-4 space-y-4 text-gray-600 text-base leading-relaxed">
+    <p>
+      Through music, rhythm, dance and creative movement, children develop coordination, body awareness, rhythm, expression, confidence and social participation.
+    </p>
+    <p>
+      Sometimes children communicate best not through words &mdash; but through movement.
+    </p>
+  </div>
+);
+
+export const storytellingCreativeArtsDrawerBody = (
+  <div className="mt-4 space-y-4 text-gray-600 text-base leading-relaxed">
+    <p>
+      Stories, drama, drawing, painting, music, puppetry and creative expression give children opportunities to transform imagination into something they can share.
+    </p>
+    <p>
+      Children listen, invent characters, retell experiences, perform, create and express ideas in their own ways.
+    </p>
+    <p className="font-semibold text-msi-purple">
+      Because creativity isn&apos;t an extra subject. It is another way of thinking.
+    </p>
+  </div>
+);
+
+
 
