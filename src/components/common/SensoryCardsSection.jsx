@@ -6,17 +6,17 @@ import { motion } from 'framer-motion';
 
 const defaultCards = [
   {
-    img: '/images/baby-sensory/card-1.jpg',
+    img: '/images/baby-sensory/early_childhood_deserves.png',
     alt: 'Early childhood development',
     text: 'Early childhood deserves much more than supervision or early academics.',
   },
   {
-    img: '/images/baby-sensory/card-2.jpg',
+    img: '/images/baby-sensory/meaningful_experiences.png',
     alt: 'Everyday experiences in child development',
     text: 'At MSI, everyday experiences are treated as meaningful parts of development.',
   },
   {
-    img: '/images/baby-sensory/card-3.jpg',
+    img: '/images/baby-sensory/early_years_influence.png',
     alt: 'Early years influence in child development',
     text: 'The early years are small in number, but enormous in influence.',
   },
@@ -45,12 +45,12 @@ export default function SensoryCardsSection({
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.15 }}
             >
-              <div className="overflow-hidden relative h-64">
+              <div className="overflow-hidden relative h-72 sm:h-80">
                 <Image
                   src={item.img}
                   alt={item.alt}
                   fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-[1.01]"
+                  className={`object-cover ${item.objectPos || 'object-top'} transition-transform duration-300 group-hover:scale-[1.01]`}
                 />
               </div>
               <div className="p-6 text-center bg-[#F9FAFA]">

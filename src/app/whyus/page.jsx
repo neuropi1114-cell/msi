@@ -38,7 +38,7 @@ export default function WhyUsPage() {
       <TopBar />
       <Header />
       <main>
-        <CloudHeader image="/images/day-care/hero.jpg" />
+        <CloudHeader image="/images/whyus/hero_playroom.png" />
         <div data-nav-sentinel />
 
         <SectionHeader

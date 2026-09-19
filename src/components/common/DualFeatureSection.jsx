@@ -87,7 +87,7 @@ export default function DualFeatureSection({
           <div className="flex flex-col items-end">
             <div className="rounded-[10px] overflow-hidden mb-6 relative aspect-[4/3] w-full">
               <Image
-                src="/images/nep/web-14.jpg"
+                src="/images/nep/corporate_childcare_left.png"
                 alt="Children at play in NeuroPi classroom"
                 fill
                 className="object-cover"
@@ -151,7 +151,7 @@ export default function DualFeatureSection({
             </div>
             <div className="rounded-[10px] overflow-hidden mb-6 relative aspect-[4/3] w-full">
               <Image
-                src="/images/nep/img-2217.jpeg"
+                src="/images/nep/corporate_childcare_right.png"
                 alt="Classroom activity at My School ITALY"
                 fill
                 className="object-cover"
