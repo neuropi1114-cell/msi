@@ -42,7 +42,7 @@ export default function ParentsPage() {
       <TopBar />
       <Header />
       <main>
-        <CloudHeader image="/images/day-care/hero.jpg" />
+        <CloudHeader image="/images/parents/hero_mangalyam.jpeg" imageClass="object-cover object-[center_10%]" />
         <div data-nav-sentinel />
 
         <SectionHeader />

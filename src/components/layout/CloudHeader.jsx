@@ -8,6 +8,7 @@ export default function CloudHeader({
   subtitle,
   bgClass = 'bg-[#d16827]',
   image,
+  imageClass = 'object-cover object-[center_15%]',
   heightClass = 'min-h-[320px] sm:min-h-[420px] md:min-h-[520px] lg:min-h-[600px]',
 }) {
   return (
@@ -18,7 +19,7 @@ export default function CloudHeader({
           src={image}
           alt=""
           fill
-          className="object-cover"
+          className={imageClass}
           sizes="100vw"
         />
       ) : (
