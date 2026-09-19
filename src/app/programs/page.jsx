@@ -28,6 +28,9 @@ import {
   roboticsDrawerBody,
   danceCreativeMovementDrawerBody,
   storytellingCreativeArtsDrawerBody,
+  extendedDaycareDrawerBody,
+  emergencyExtendedCareDrawerBody,
+  twentyFourHourCareDrawerBody,
 } from './programsdata';
 
 const ContactUs = dynamic(() => import('../../components/home/ContactUs'), { ssr: true });
@@ -131,59 +134,69 @@ export default function ProgramsPage() {
           drawerEyebrow="Your Child's Day Continues With Purpose."
           drawerTitle="DAYCARE"
           drawerBody={daycareDrawerBody}
-          bottomEyebrow="Little Feet. Big Curiosity."
-          bottomTitle="PRE NURSERY"
-          bottomP1="Toddlers learn by doing."
-          bottomP2="They touch, move, imitate, experiment, repeat, question and discover."
-          bottomDrawerEyebrow="Little Feet. Big Curiosity."
-          bottomDrawerTitle="PRE NURSERY"
-          bottomDrawerBody={preNurseryDrawerBody}
+          bottomEyebrow="Childcare Beyond Conventional Working Hours."
+          bottomTitle="24-HOUR CARE — WHERE AVAILABLE"
+          bottomP1="Childcare solutions designed for parents working night shifts, rotating schedules, healthcare, technology, emergency services and other non-traditional working hours."
+          bottomP2={null}
+          bottomP3={null}
+          bottomDrawerEyebrow="Childcare Beyond Conventional Working Hours."
+          bottomDrawerTitle="24-HOUR CARE — WHERE AVAILABLE"
+          bottomDrawerBody={twentyFourHourCareDrawerBody}
         />
+
+
+        <NepHero
+          bgImage="/images/programs/early_drop_off.png"
+          eyebrow="More Flexibility Around Your Working Day."
+          title="EARLY DROP-OFF & LATE PICK-UP"
+          titleColor="text-msi-yellow"
+          description={
+            <div className="space-y-3">
+              <p>
+                An early meeting, a long commute or an unexpected late evening should not turn childcare into a daily struggle.
+              </p>
+              <p>
+                Selected MSI centres provide Early Drop-Off and Late Pick-Up options designed around the realities of working families.
+              </p>
+            </div>
+          }
+          showReadMore={false}
+        />
+
         <FaqSection
           subheading="Because Your Working Calendar and the School Calendar Don't Always Match."
           heading="SATURDAY & HOLIDAY CARE"
           showFaq={false}
+          imageSrc="/images/programs/Aperna_17.png"
+          imageAlt="Saturday & Holiday Care"
           description={
-            <div className="text-[#464646] font-lato text-[17px] leading-relaxed space-y-3 mt-4">
+            <div className="text-[#464646] font-lato text-[17px] leading-relaxed mt-4">
               <p>
-                Selected centres provide childcare on Saturdays and designated holidays.
-              </p>
-              <p>
-                Children spend their day in a familiar environment with opportunities for play, creativity, movement, stories, rest and social interaction.
+                Selected centres provide childcare on Saturdays and designated holidays. Children spend their day in a familiar environment with opportunities for play, creativity, movement, stories, rest and social interaction.
               </p>
             </div>
           }
         />
 
-        <NepHero
-          bgImage="/images/programs/Aperna_5.png"
-          eyebrow="Where Curiosity Begins To Become Learning."
-          title="NURSERY"
-          titleColor="text-msi-yellow"
-          description="Through stories, conversation, play, movement, art, music and hands-on discovery, children begin developing foundational language, early literacy, numeracy, communication, physical and social-emotional skills."
-          readMoreDrawerTitle="NURSERY"
-          readMoreDrawerBody={nurseryDrawerBody}
-        />
-
         <DesignPhilosophy
           topBgClass="bg-msi-yellow"
-          image="/images/programs/Aperna_6.png"
+          image="/images/programs/IMG_8606.png"
           imageAspect="aspect-[16/9]"
           imageClass="object-cover scale-[1.05]"
-          eyebrow="Strong Bodies Support Growing Minds."
-          title="GYMNASTICS"
-          p1="Through age-appropriate movement experiences, children learn to control their bodies, follow sequences, attempt challenges and experience the satisfaction of mastering a new movement."
-          p2={null}
-          drawerEyebrow="Strong Bodies Support Growing Minds."
-          drawerTitle="GYMNASTICS"
-          drawerBody={gymnasticsDrawerBody}
-          bottomEyebrow="From “How Does It Work?” to “Can I Make It Work?”"
-          bottomTitle="ROBOTICS"
-          bottomP1="The purpose is not to turn preschoolers into engineers."
-          bottomP2="It is to preserve the question every future engineer begins with: “What happens if I try this?”"
-          bottomDrawerEyebrow="From “How Does It Work?” to “Can I Make It Work?”"
-          bottomDrawerTitle="ROBOTICS"
-          bottomDrawerBody={roboticsDrawerBody}
+          eyebrow="From “How Does It Work?” to “Can I Make It Work?”"
+          title="ROBOTICS"
+          p1="The purpose is not to turn preschoolers into engineers."
+          p2="It is to preserve the question every future engineer begins with: “What happens if I try this?”"
+          drawerEyebrow="From “How Does It Work?” to “Can I Make It Work?”"
+          drawerTitle="ROBOTICS"
+          drawerBody={roboticsDrawerBody}
+          bottomEyebrow="Strong Bodies Support Growing Minds."
+          bottomTitle="GYMNASTICS"
+          bottomP1="Through age-appropriate movement experiences, children learn to control their bodies, follow sequences, attempt challenges and experience the satisfaction of mastering a new movement."
+          bottomP2={null}
+          bottomDrawerEyebrow="Strong Bodies Support Growing Minds."
+          bottomDrawerTitle="GYMNASTICS"
+          bottomDrawerBody={gymnasticsDrawerBody}
         />
 
         <DualFeatureSection

@@ -192,14 +192,59 @@ export const storytellingCreativeArtsDrawerBody = (
     <p>
       Stories, drama, drawing, painting, music, puppetry and creative expression give children opportunities to transform imagination into something they can share.
     </p>
-    <p>
-      Children listen, invent characters, retell experiences, perform, create and express ideas in their own ways.
-    </p>
     <p className="font-semibold text-msi-purple">
       Because creativity isn&apos;t an extra subject. It is another way of thinking.
     </p>
   </div>
 );
+
+export const extendedDaycareDrawerBody = (
+  <div className="mt-4 space-y-4 text-gray-600 text-base leading-relaxed">
+    <p>
+      Working days don&apos;t always fit neatly around school hours.
+    </p>
+    <p>
+      Our Extended Daycare provides families with additional childcare beyond regular program timings, while children remain in a familiar, secure and engaging environment.
+    </p>
+    <p>
+      Depending on the centre, extended care can include meals, rest, supervised play, enrichment and age-appropriate activities.
+    </p>
+    <p className="font-semibold text-msi-purple">
+      You focus on your work. We remain focused on your child.
+    </p>
+  </div>
+);
+
+export const emergencyExtendedCareDrawerBody = (
+  <div className="mt-4 space-y-4 text-gray-600 text-base leading-relaxed">
+    <p>
+      Meetings run late. Travel gets delayed. Emergencies happen.
+    </p>
+    <p>
+      Where available, MSI&apos;s Emergency Extended Care gives enrolled families additional support when unexpected circumstances disrupt their normal childcare arrangements.
+    </p>
+  </div>
+);
+
+export const twentyFourHourCareDrawerBody = (
+  <div className="mt-4 space-y-4 text-gray-600 text-base leading-relaxed">
+    <p>
+      Some professions don&apos;t operate from nine to five.
+    </p>
+    <p>
+      At selected locations, MSI can provide extended childcare solutions designed for parents working night shifts, rotating schedules, healthcare, technology, emergency services and other non-traditional working hours.
+    </p>
+    <p>
+      Availability and operating hours vary by centre.
+    </p>
+    <p className="font-semibold text-msi-purple">
+      Because modern families need modern childcare.
+    </p>
+  </div>
+);
+
+
+
 
 
 

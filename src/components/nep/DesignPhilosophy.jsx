@@ -29,6 +29,7 @@ export default function DesignPhilosophy({
   bottomTitle = "Care, Learning and Childhood \u2014 All in One Day",
   bottomP1 = "A child's day at MSI is designed around an age-appropriate rhythm rather than continuous instruction.",
   bottomP2 = "Depending on age and program, a day may move through:",
+  bottomP3 = null,
   bottomDrawerTitle = null,
   bottomDrawerEyebrow = null,
   bottomDrawerBody = null,
@@ -122,7 +123,8 @@ export default function DesignPhilosophy({
                 </h2>
               )}
               {bottomP1 && <p className="text-gray-600 text-[15px] md:text-[16px] leading-relaxed mb-1">{bottomP1}</p>}
-              {bottomP2 && <p className="text-gray-600 text-[15px] md:text-[16px] leading-relaxed mb-3">{bottomP2}</p>}
+              {bottomP2 && <p className={`text-gray-600 text-[15px] md:text-[16px] leading-relaxed ${bottomP3 ? 'mb-1' : 'mb-3'}`}>{bottomP2}</p>}
+              {bottomP3 && <p className="text-gray-600 text-[15px] md:text-[16px] leading-relaxed mb-3">{bottomP3}</p>}
 
               {hasBottomDrawer && (
                 <div className="w-fit">
