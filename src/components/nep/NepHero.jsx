@@ -7,6 +7,7 @@ import Drawer from '../layout/Drawer';
 export default function NepHero({
   eyebrow = null,
   title = "ABOUT NEUROPI CHILDREN",
+  titleColor = null,
   description = "Once upon a time, in the world of NeuroPi, every child was seen as a tiny universe - full of dreams, neurons, and sparkles of curiosity. Their laughter wasn't just joy - it was learning in motion, connecting the brain and heart in beautiful harmony. Each child here grows at their own rhythm, blooming in colours of confidence, calm, and creativity. We don't rush them toward the future - we walk beside them as they discover it. In every classroom, magic and science hold hands. Mindful play becomes their compass; empathy becomes their light. They learn to breathe before they speak, to listen before they lead, and to care before they conquer. Every giggle builds a pathway, every question unlocks a possibility, and every hug strengthens the science of love. At NeuroPi, children don't just learn - they awaken. Because here, childhood isn't a race... it's a beautiful unfolding of brilliance.",
   bgImage = "/images/nep/hero-classroom.webp",
   bgPosition = "bg-cover bg-center",
@@ -53,7 +54,7 @@ export default function NepHero({
             className={`w-full md:w-[50%] lg:w-[45%] max-w-xl p-6 sm:p-8 md:p-10 rounded-2xl shadow-2xl ${boxBgClass}`}
           >
             {eyebrow && <h3 style={{ color: '#FCF9F4' }}>{eyebrow}</h3>}
-            <h2>{title}</h2>
+            <h2 className={titleColor ? titleColor : ''}>{title}</h2>
             {typeof description === 'string' ? (
               <p>{description}</p>
             ) : (

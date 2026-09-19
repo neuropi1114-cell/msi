@@ -15,7 +15,9 @@ export default function DualFeatureSection({
   sectionTitle = "UNDERSTANDING YOUR CHILD'S PROGRESS",
   leftTitle = 'More Than "How Many Letters Does My Child Know?"',
   leftSubtitle = null,
+  leftSubtitleColor = null,
   leftParagraphs = null,
+  leftButtonBgColor = "bg-msi-orange hover:bg-msi-orange/90",
   leftDrawerTitle = null,
   leftDrawerEyebrow = null,
   leftDrawerBody = null,
@@ -23,6 +25,7 @@ export default function DualFeatureSection({
   rightTitle = "Learning Doesn't Stop at the School Gate",
   rightTitleColor = null,
   rightParagraphs = null,
+  rightButtonBgColor = "bg-msi-orange hover:bg-msi-orange/90",
   rightDrawerTitle = null,
   rightDrawerEyebrow = null,
   rightDrawerBody = null,
@@ -78,8 +81,8 @@ export default function DualFeatureSection({
   }
 
   return (
-    <section className="py-[70px] bg-white relative">
-      <div className="container mx-auto px-4 md:px-12 relative z-10" style={{ maxWidth: '1240px', minHeight: '524px' }}>
+    <section className="pt-2 md:pt-4 pb-2 md:pb-4 bg-white relative">
+      <div className="container mx-auto px-4 md:px-12 relative z-10" style={{ maxWidth: '1240px' }}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div className="flex flex-col items-end">
             <div className="rounded-[10px] overflow-hidden mb-6 relative aspect-[4/3] w-full">
@@ -94,7 +97,7 @@ export default function DualFeatureSection({
               <p>
                 <strong className="text-2xl md:text-3xl">{leftTitle}</strong>
               </p>
-              {leftSubtitle && <h2>{leftSubtitle}</h2>}
+              {leftSubtitle && <h2 className={leftSubtitleColor ? leftSubtitleColor : ''}>{leftSubtitle}</h2>}
               {leftParagraphs ? (
                 leftParagraphs.map((text, idx) => (
                   <p key={idx} className="text-msi-cream mb-2">
@@ -120,7 +123,7 @@ export default function DualFeatureSection({
                     onClick={() => setLeftOpen(true)}
                     aria-haspopup="dialog"
                     aria-expanded={leftOpen}
-                    bgColor="bg-msi-orange hover:bg-msi-orange/90"
+                    bgColor={leftButtonBgColor}
                     className="mt-6 font-bold"
                   />
                   <Drawer
@@ -184,7 +187,7 @@ export default function DualFeatureSection({
                     onClick={() => setRightOpen(true)}
                     aria-haspopup="dialog"
                     aria-expanded={rightOpen}
-                    bgColor="bg-msi-orange hover:bg-msi-orange/90"
+                    bgColor={rightButtonBgColor}
                     className="mt-6 font-bold"
                   />
                   <Drawer

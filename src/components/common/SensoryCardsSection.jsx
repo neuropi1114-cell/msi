@@ -24,7 +24,7 @@ const defaultCards = [
 
 export default function SensoryCardsSection({
   cards = defaultCards,
-  className = "py-16 md:py-20 bg-[#f7f9fc]",
+  className = "pt-10 md:pt-14 pb-4 md:pb-6 bg-[#f7f9fc]",
 }) {
   return (
     <motion.section

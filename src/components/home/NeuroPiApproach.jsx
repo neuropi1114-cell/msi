@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 export default function NeuroPiApproach() {
   return (
-    <section className="py-16 md:py-20 relative overflow-hidden bg-white">
+    <section className="pt-4 md:pt-6 pb-12 md:pb-16 relative overflow-hidden bg-white">
       {/* Blurred Background Image Layer */}
       <div className="absolute inset-0 z-0 scale-105 filter blur-xl opacity-20">
         <Image
@@ -32,7 +32,16 @@ export default function NeuroPiApproach() {
             className="lg:col-span-7 bg-white p-6 sm:p-8 md:p-10 rounded-2xl shadow-xl border border-gray-100"
           >
             <h3>Small Tummies Have Big Developmental Needs.</h3>
-            <h2>INSPIRE ME EAT</h2>
+            <div className="my-3">
+              <Image
+                src="/images/nep/inspire_me_eat_logo.png"
+                alt="INSPIRE ME EAT"
+                width={350}
+                height={109}
+                className="w-auto h-16 sm:h-20 md:h-24 object-contain"
+                priority
+              />
+            </div>
 
             <div className="mt-5 space-y-4">
               <p>

@@ -14,7 +14,7 @@ export default function DesignPhilosophy({
   p1 = "For a young child, beginning preschool or daycare can mean a new environment, new adults, new children and a completely new routine.",
   p2 = "We do not expect every child to settle in the same way.",
   p3 = null,
-  showSettlingInMore = null, // auto-detects
+  showSettlingInMore = null,
   drawerTitle = null,
   drawerEyebrow = null,
   drawerBody = null,
@@ -32,18 +32,18 @@ export default function DesignPhilosophy({
   const hasCustomDrawer = Boolean(drawerBody);
   const hasBottomDrawer = Boolean(bottomDrawerBody);
 
-  // If custom drawers are provided, turn off default SettlingInMore button unless explicitly set to true
   const shouldShowSettlingIn = showSettlingInMore !== null 
     ? showSettlingInMore 
     : (!hasCustomDrawer && !hasBottomDrawer);
 
   return (
-    <>
-      <section className="hidden md:block bg-[linear-gradient(180deg,#271344_50%,#FFFFFF_3%)] py-[50px]">
+    <div className="w-full">
+      {/* Top Section: Dark Purple Background */}
+      <section className="bg-[#271344] py-8 md:py-12">
         <div className="container mx-auto px-4 md:px-12 max-w-[1240px]">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
             <ScrollReveal direction="right" delay={0.1} className="flex items-center justify-center">
-              <div className="rounded-[10px] overflow-hidden relative w-full aspect-[4/3] ml-6">
+              <div className="rounded-[10px] overflow-hidden relative w-full aspect-[4/3] shadow-xl">
                 <Image
                   src="/images/nep/Web_1.png"
                   alt="My School ITALY classroom designed with neuroscience principles"
@@ -52,21 +52,29 @@ export default function DesignPhilosophy({
                 />
               </div>
             </ScrollReveal>
-            <ScrollReveal direction="left" delay={0.2} className="pt-[30px] pr-2.5 pb-2.5 pl-6">
-              <h3>{eyebrow}</h3>
-              <h2>{title}</h2>
+            <ScrollReveal direction="left" delay={0.2} className="flex flex-col justify-center">
+              {eyebrow && (
+                <h3 className="italic font-lato text-[#68BAE3] text-base md:text-lg mb-1">
+                  {eyebrow}
+                </h3>
+              )}
+              {title && (
+                <h2 className="text-msi-orange font-linotte font-bold text-2xl md:text-[32px] leading-tight uppercase mb-4">
+                  {title}
+                </h2>
+              )}
 
-              {p1 && <p className="text-msi-cream mb-2">{p1}</p>}
-              {p2 && <p className="text-msi-cream mb-2">{p2}</p>}
-              {p3 && <p className="text-msi-cream mb-2">{p3}</p>}
+              {p1 && <p className="text-msi-cream font-lato text-[15px] md:text-[16px] leading-relaxed mb-3">{p1}</p>}
+              {p2 && <p className="text-msi-cream font-lato text-[15px] md:text-[16px] leading-relaxed mb-3">{p2}</p>}
+              {p3 && <p className="text-msi-cream font-lato text-[15px] md:text-[16px] leading-relaxed mb-3">{p3}</p>}
 
               {hasCustomDrawer ? (
-                <>
+                <div>
                   <ReadMoreButton
                     onClick={() => setOpen(true)}
                     aria-haspopup="dialog"
                     aria-expanded={open}
-                    className="mt-2 mb-6 font-bold"
+                    className="mt-3 font-bold"
                   />
                   <Drawer
                     open={open}
@@ -81,24 +89,41 @@ export default function DesignPhilosophy({
                     )}
                     {drawerBody}
                   </Drawer>
-                </>
+                </div>
               ) : shouldShowSettlingIn ? (
                 <SettlingInMore />
               ) : null}
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
 
-              <div className="h-[104px]"></div>
-              <h3>{bottomEyebrow}</h3>
-              <h2>{bottomTitle}</h2>
-              {bottomP1 && <p>{bottomP1}</p>}
-              {bottomP2 && <p>{bottomP2}</p>}
+      {/* Bottom Section: White Background */}
+      <section className="bg-white pt-6 pb-2 md:pt-8 md:pb-4">
+        <div className="container mx-auto px-4 md:px-12 max-w-[1240px]">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-start">
+            <div className="hidden md:block"></div>
+            <ScrollReveal direction="up" delay={0.2} className="flex flex-col justify-center">
+              {bottomEyebrow && (
+                <h3 className="italic font-lato text-msi-blue text-base md:text-lg mb-1">
+                  {bottomEyebrow}
+                </h3>
+              )}
+              {bottomTitle && (
+                <h2 className="text-msi-orange font-linotte font-bold text-2xl md:text-[32px] leading-tight uppercase mb-4">
+                  {bottomTitle}
+                </h2>
+              )}
+              {bottomP1 && <p className="text-gray-600 font-lato text-[15px] md:text-[16px] leading-relaxed mb-3">{bottomP1}</p>}
+              {bottomP2 && <p className="text-gray-600 font-lato text-[15px] md:text-[16px] leading-relaxed mb-3">{bottomP2}</p>}
 
               {hasBottomDrawer && (
-                <>
+                <div>
                   <ReadMoreButton
                     onClick={() => setBottomOpen(true)}
                     aria-haspopup="dialog"
                     aria-expanded={bottomOpen}
-                    className="mt-3 mb-6 font-bold"
+                    className="mt-3 font-bold"
                   />
                   <Drawer
                     open={bottomOpen}
@@ -113,7 +138,7 @@ export default function DesignPhilosophy({
                     )}
                     {bottomDrawerBody}
                   </Drawer>
-                </>
+                </div>
               )}
 
               <ChildDay showButton={!hasBottomDrawer && !hasCustomDrawer} />
@@ -121,89 +146,6 @@ export default function DesignPhilosophy({
           </div>
         </div>
       </section>
-
-      <section className="md:hidden bg-[#271344] py-[50px]">
-        <div className="container mx-auto px-4 max-w-[1240px]">
-          <div className="grid grid-cols-1 gap-0">
-            <ScrollReveal direction="up" delay={0.1} className="flex items-center justify-center">
-              <div className="rounded-[10px] overflow-hidden relative w-full aspect-[4/3]">
-                <Image
-                  src="/images/nep/Web_1.png"
-                  alt="My School ITALY classroom designed with neuroscience principles"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </ScrollReveal>
-            <ScrollReveal direction="up" delay={0.2} className="pt-[30px] px-2.5 pb-2.5">
-              {p1 && (
-                <p className="font-lato text-[15px] leading-[27px] text-white text-justify mb-6 w-full">
-                  {p1}
-                </p>
-              )}
-              {p2 && (
-                <p className="font-lato text-[15px] leading-[27px] text-white text-justify w-full mb-6">
-                  {p2}
-                </p>
-              )}
-              {p3 && (
-                <p className="font-lato text-[15px] leading-[27px] text-white text-justify w-full mb-6">
-                  {p3}
-                </p>
-              )}
-              {hasCustomDrawer ? (
-                <>
-                  <ReadMoreButton
-                    onClick={() => setOpen(true)}
-                    aria-haspopup="dialog"
-                    aria-expanded={open}
-                    className="mt-2 mb-6 font-bold"
-                  />
-                  <Drawer
-                    open={open}
-                    onClose={() => setOpen(false)}
-                    title={drawerTitle || title}
-                    side="left"
-                  >
-                    {drawerEyebrow && (
-                      <p className="text-msi-purple font-bold text-lg leading-snug mb-3">
-                        {drawerEyebrow}
-                      </p>
-                    )}
-                    {drawerBody}
-                  </Drawer>
-                </>
-              ) : shouldShowSettlingIn ? (
-                <SettlingInMore />
-              ) : null}
-
-              {hasBottomDrawer && (
-                <>
-                  <ReadMoreButton
-                    onClick={() => setBottomOpen(true)}
-                    aria-haspopup="dialog"
-                    aria-expanded={bottomOpen}
-                    className="mt-3 mb-6 font-bold"
-                  />
-                  <Drawer
-                    open={bottomOpen}
-                    onClose={() => setBottomOpen(false)}
-                    title={bottomDrawerTitle || bottomTitle}
-                    side="left"
-                  >
-                    {bottomDrawerEyebrow && (
-                      <p className="text-msi-purple font-bold text-lg leading-snug mb-3">
-                        {bottomDrawerEyebrow}
-                      </p>
-                    )}
-                    {bottomDrawerBody}
-                  </Drawer>
-                </>
-              )}
-            </ScrollReveal>
-          </div>
-        </div>
-      </section>
-    </>
+    </div>
   );
 }

@@ -21,21 +21,6 @@ export default function CloudHeader({ title, subtitle, bgClass = 'bg-[#d16827]',
 
       <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-transparent" />
 
-      {/* Bottom right decoration */}
-      <img
-        src="/images/day-care/vector-right.png"
-        alt=""
-        className="absolute bottom-0 right-0 z-10 pointer-events-none"
-        aria-hidden="true"
-      />
-      {/* Bottom left decoration */}
-      <img
-        src="/images/day-care/vector-left.png"
-        alt=""
-        className="absolute bottom-0 left-0 z-10 pointer-events-none"
-        aria-hidden="true"
-      />
-
       {/* Cloud shape divider at bottom */}
       <div className="absolute bottom-0 left-0 right-0" aria-hidden="true">
         <svg

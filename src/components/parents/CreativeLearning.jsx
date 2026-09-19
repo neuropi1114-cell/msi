@@ -18,14 +18,14 @@ export default function CreativeLearning({
   showFooter = true,
 }) {
   return (
-    <section className="pt-8 pb-16 bg-white">
+    <section className="pt-3 md:pt-5 pb-12 bg-white">
       <div className="container mx-auto px-4 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
           <ScrollReveal direction="right" delay={0.1}>
-            <h2>
+            <h2 className="text-center md:text-left">
               {title}
             </h2>
-            <div className="text-gray-600 mb-6 leading-relaxed space-y-2 font-lato text-[17px]">
+            <div className="text-gray-600 mb-6 leading-relaxed space-y-2 font-lato text-[17px] text-center md:text-left">
               {paragraphs.map((p, idx) => (
                 <p key={idx}>{p}</p>
               ))}
@@ -42,7 +42,7 @@ export default function CreativeLearning({
               ) : null}
             </div>
 
-            <div className="flex flex-wrap items-center gap-6 mt-6">
+            <div className="flex flex-wrap items-center justify-center md:justify-start gap-6 mt-6">
               <UnderlineArrowLink href="/contact" text="FIND A CENTRE" color="green" />
               <UnderlineArrowLink href="/book-your-tour" text="BOOK A TOUR" color="yellow" />
             </div>
