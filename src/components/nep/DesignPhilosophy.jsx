@@ -12,9 +12,13 @@ export default function DesignPhilosophy({
   image = "/images/nep/Web_1.png",
   imageAlt = "My School ITALY classroom designed with neuroscience principles",
   topBgClass = "bg-[#271344]",
+  imageAspect = "aspect-[4/3]",
+  imageClass = "object-cover",
   eyebrow = "Small Steps Into A Big New World",
+  eyebrowClass = "text-[#68BAE3]",
   title = "STARTING SCHOOL & SETTLING IN",
   p1 = "For a young child, beginning preschool or daycare can mean a new environment, new adults, new children and a completely new routine.",
+  p1Class = "text-msi-cream",
   p2 = "We do not expect every child to settle in the same way.",
   p3 = null,
   showSettlingInMore = null,
@@ -35,8 +39,8 @@ export default function DesignPhilosophy({
   const hasCustomDrawer = Boolean(drawerBody);
   const hasBottomDrawer = Boolean(bottomDrawerBody);
 
-  const shouldShowSettlingIn = showSettlingInMore !== null 
-    ? showSettlingInMore 
+  const shouldShowSettlingIn = showSettlingInMore !== null
+    ? showSettlingInMore
     : (!hasCustomDrawer && !hasBottomDrawer);
 
   return (
@@ -46,18 +50,18 @@ export default function DesignPhilosophy({
         <div className="container mx-auto px-4 md:px-12 max-w-[1240px]">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
             <ScrollReveal direction="right" delay={0.1} className="flex items-center justify-center">
-              <div className="rounded-[10px] overflow-hidden relative w-full aspect-[4/3] shadow-xl">
+              <div className={`rounded-[10px] overflow-hidden relative w-full ${imageAspect} shadow-xl`}>
                 <Image
                   src={image}
                   alt={imageAlt}
                   fill
-                  className="object-cover"
+                  className={imageClass}
                 />
               </div>
             </ScrollReveal>
             <ScrollReveal direction="left" delay={0.2} className="flex flex-col justify-center">
               {eyebrow && (
-                <h3 className="italic font-lato text-[#68BAE3] text-base md:text-lg mb-1">
+                <h3 className={` ${eyebrowClass}`}>
                   {eyebrow}
                 </h3>
               )}
@@ -67,9 +71,9 @@ export default function DesignPhilosophy({
                 </h2>
               )}
 
-              {p1 && <p className="text-msi-cream font-lato text-[15px] md:text-[16px] leading-relaxed mb-3">{p1}</p>}
-              {p2 && <p className="text-msi-cream font-lato text-[15px] md:text-[16px] leading-relaxed mb-3">{p2}</p>}
-              {p3 && <p className="text-msi-cream font-lato text-[15px] md:text-[16px] leading-relaxed mb-3">{p3}</p>}
+              {p1 && <p className={`${p1Class} text-[15px] md:text-[16px] leading-relaxed mb-1`}>{p1}</p>}
+              {p2 && <p className="text-msi-cream text-[15px] md:text-[16px] leading-relaxed mb-1">{p2}</p>}
+              {p3 && <p className="text-msi-cream text-[15px] md:text-[16px] leading-relaxed mb-3">{p3}</p>}
 
               {hasCustomDrawer ? (
                 <div className="w-fit">
@@ -108,7 +112,7 @@ export default function DesignPhilosophy({
             <div className="hidden md:block"></div>
             <ScrollReveal direction="up" delay={0.2} className="flex flex-col justify-center">
               {bottomEyebrow && (
-                <h3 className="italic font-lato text-msi-blue text-base md:text-lg mb-1">
+                <h3 className=" text-msi-blue ">
                   {bottomEyebrow}
                 </h3>
               )}
@@ -117,8 +121,8 @@ export default function DesignPhilosophy({
                   {bottomTitle}
                 </h2>
               )}
-              {bottomP1 && <p className="text-gray-600 font-lato text-[15px] md:text-[16px] leading-relaxed mb-3">{bottomP1}</p>}
-              {bottomP2 && <p className="text-gray-600 font-lato text-[15px] md:text-[16px] leading-relaxed mb-3">{bottomP2}</p>}
+              {bottomP1 && <p className="text-gray-600 text-[15px] md:text-[16px] leading-relaxed mb-1">{bottomP1}</p>}
+              {bottomP2 && <p className="text-gray-600 text-[15px] md:text-[16px] leading-relaxed mb-3">{bottomP2}</p>}
 
               {hasBottomDrawer && (
                 <div className="w-fit">

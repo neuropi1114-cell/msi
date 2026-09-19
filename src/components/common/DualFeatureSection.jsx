@@ -22,6 +22,8 @@ export default function DualFeatureSection({
   leftButtonBgColor = "bg-msi-orange hover:bg-msi-orange/90",
   leftImage = "/images/nep/corporate_childcare_left.png",
   leftImageAlt = "Children at play in NeuroPi classroom",
+  leftImageClass = "object-cover",
+  leftAspect = "aspect-[4/3]",
   leftDrawerTitle = null,
   leftDrawerEyebrow = null,
   leftDrawerBody = null,
@@ -32,6 +34,8 @@ export default function DualFeatureSection({
   rightButtonBgColor = "bg-msi-orange hover:bg-msi-orange/90",
   rightImage = "/images/nep/corporate_childcare_right.png",
   rightImageAlt = "Classroom activity at My School ITALY",
+  rightImageClass = "object-cover",
+  rightAspect = "aspect-[4/3]",
   rightDrawerTitle = null,
   rightDrawerEyebrow = null,
   rightDrawerBody = null,
@@ -76,7 +80,7 @@ export default function DualFeatureSection({
                   src="/images/nep/ChatGPT Image Sep 19, 2026, 12_03_42 PM.png"
                   alt="Children learning the NeuroPi way"
                   fill
-                  className="object-cover"
+                  className={leftImageClass}
                 />
               </div>
             </div>
@@ -93,14 +97,21 @@ export default function DualFeatureSection({
   return (
     <section className="pt-2 md:pt-4 pb-2 md:pb-4 bg-white relative">
       <div className="container mx-auto px-4 md:px-12 relative z-10" style={{ maxWidth: '1240px' }}>
+        {sectionTitle && (
+          <div className="mb-6 md:mb-8 text-right">
+            <h2 className="text-msi-orange font-linotte font-bold text-2xl md:text-[32px] leading-tight uppercase">
+              {sectionTitle}
+            </h2>
+          </div>
+        )}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div className="flex flex-col items-end">
-            <div className="rounded-[10px] overflow-hidden mb-6 relative aspect-[4/3] w-full">
+            <div className={`rounded-[10px] overflow-hidden mb-6 relative ${leftAspect} w-full`}>
               <Image
                 src={leftImage}
                 alt={leftImageAlt}
                 fill
-                className="object-cover"
+                className={leftImageClass}
               />
             </div>
             <div className="w-full md:max-w-[83%] bg-[#2CB3E9] p-[30px] rounded-[12px]">
@@ -156,15 +167,12 @@ export default function DualFeatureSection({
             </div>
           </div>
           <div>
-            <div className="mb-10">
-              <h2>{sectionTitle}</h2>
-            </div>
-            <div className="rounded-[10px] overflow-hidden mb-6 relative aspect-[4/3] w-full">
+            <div className={`rounded-[10px] overflow-hidden mb-6 relative ${rightAspect} w-full`}>
               <Image
                 src={rightImage}
                 alt={rightImageAlt}
                 fill
-                className="object-cover"
+                className={rightImageClass}
               />
             </div>
             <div className="w-full md:max-w-[88%]">

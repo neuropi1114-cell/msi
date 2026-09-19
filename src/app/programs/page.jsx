@@ -15,6 +15,7 @@ import VideoCarousel from '../../components/home/VideoCarousel';
 import Activities from '../../components/home/Activities';
 import NeuroPiApproach from '../../components/home/NeuroPiApproach';
 import OneJourneySection from '../../components/programs/OneJourneySection';
+import RecentNews from '../../components/day-care/RecentNews';
 import {
   metadata,
   ciaoBabyDrawerBody,
@@ -55,7 +56,9 @@ export default function ProgramsPage() {
         />
 
         <DesignPhilosophy
-          image="/images/programs/Aperna_6.jpeg"
+          image="/images/programs/Aperna_6.png"
+          imageAspect="aspect-[16/9]"
+          imageClass="object-cover scale-[1.05]"
           eyebrow="The Smallest Children Deserve Our Greatest Care."
           title={
             <>
@@ -90,6 +93,7 @@ export default function ProgramsPage() {
         <DualFeatureSection
           sectionTitle="KINDERGARTEN"
           leftImage="/images/programs/Aperna_8.png"
+          leftAspect="aspect-[4/5]"
           rightImage="/images/programs/Batch_3_6.png"
           leftTitle={<span className="italic">From Exploring The World To Making Connections.</span>}
           leftSubtitle="KINDERGARTEN K1"
@@ -115,10 +119,14 @@ export default function ProgramsPage() {
 
         <DesignPhilosophy
           topBgClass="bg-msi-green"
-          image="/images/programs/Aperna_6.jpeg"
+          image="/images/programs/Aperna_16.png"
+          imageAspect="aspect-[4/5]"
+          imageClass="object-cover"
           eyebrow="Your Child's Day Continues With Purpose."
+          eyebrowClass="text-msi-purple"
           title="DAYCARE"
           p1="Children remain within a familiar environment where care, relationships, play, meals, rest, movement, learning and friendships continue naturally throughout the day."
+          p1Class="text-msi-purple"
           p2={null}
           drawerEyebrow="Your Child's Day Continues With Purpose."
           drawerTitle="DAYCARE"
@@ -159,7 +167,9 @@ export default function ProgramsPage() {
 
         <DesignPhilosophy
           topBgClass="bg-msi-yellow"
-          image="/images/programs/Aperna_6.jpeg"
+          image="/images/programs/Aperna_6.png"
+          imageAspect="aspect-[16/9]"
+          imageClass="object-cover scale-[1.05]"
           eyebrow="Strong Bodies Support Growing Minds."
           title="GYMNASTICS"
           p1="Through age-appropriate movement experiences, children learn to control their bodies, follow sequences, attempt challenges and experience the satisfaction of mastering a new movement."
@@ -179,6 +189,7 @@ export default function ProgramsPage() {
         <DualFeatureSection
           sectionTitle="EXPRESSIVE ART & DESIGN"
           leftImage="/images/programs/Aperna_8.png"
+          leftAspect="aspect-[4/5]"
           rightImage="/images/programs/Batch_3_6.png"
           leftTitle={<span className="italic">Let the Body Become Another Language.</span>}
           leftSubtitle="DANCE & CREATIVE MOVEMENT"
@@ -233,6 +244,7 @@ export default function ProgramsPage() {
         <Activities />
         <OneJourneySection />
         <VideoCarousel />
+        <RecentNews />
         <Feedback />
         <Gallery />
       </main>
