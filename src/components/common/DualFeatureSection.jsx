@@ -13,11 +13,15 @@ export default function DualFeatureSection({
   showFaq = false,
   variant = 'default',
   sectionTitle = "UNDERSTANDING YOUR CHILD'S PROGRESS",
+  eyebrow = null,
+  title = null,
   leftTitle = 'More Than "How Many Letters Does My Child Know?"',
   leftSubtitle = null,
   leftSubtitleColor = null,
   leftParagraphs = null,
   leftButtonBgColor = "bg-msi-orange hover:bg-msi-orange/90",
+  leftImage = "/images/nep/corporate_childcare_left.png",
+  leftImageAlt = "Children at play in NeuroPi classroom",
   leftDrawerTitle = null,
   leftDrawerEyebrow = null,
   leftDrawerBody = null,
@@ -26,6 +30,8 @@ export default function DualFeatureSection({
   rightTitleColor = null,
   rightParagraphs = null,
   rightButtonBgColor = "bg-msi-orange hover:bg-msi-orange/90",
+  rightImage = "/images/nep/corporate_childcare_right.png",
+  rightImageAlt = "Classroom activity at My School ITALY",
   rightDrawerTitle = null,
   rightDrawerEyebrow = null,
   rightDrawerBody = null,
@@ -35,13 +41,17 @@ export default function DualFeatureSection({
 
   if (variant === 'programs') {
     return (
-      <section className="py-[70px] bg-white relative">
+      <section className="pt-4 pb-[70px] bg-white relative">
         <div className="container mx-auto px-4 md:px-12 relative z-10" style={{ maxWidth: '1240px' }}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div style={{ marginRight: '30px' }}>
               <div className="mb-6">
-                <h3>From Their First Days With Us To Their Growing Years</h3>
-                <h2>PROGRAMS</h2>
+                <h3 className="italic font-lato text-[#68BAE3] text-base md:text-lg mb-1">
+                  {eyebrow || sectionTitle || "From Their First Days With Us To Their Growing Years"}
+                </h3>
+                <h2 className="text-msi-orange font-linotte font-bold text-2xl md:text-[32px] leading-tight uppercase">
+                  {title || "PROGRAMS"}
+                </h2>
               </div>
               <div className="text-[#464646] font-lato text-[17px] leading-relaxed space-y-4 mb-8">
                 <p>
@@ -63,7 +73,7 @@ export default function DualFeatureSection({
             <div className="flex items-center justify-center">
               <div className="rounded-[10px] overflow-hidden relative aspect-[4/3] w-full shadow-lg">
                 <Image
-                  src="/images/nep/learning-neuropi.webp"
+                  src="/images/nep/ChatGPT Image Sep 19, 2026, 12_03_42 PM.png"
                   alt="Children learning the NeuroPi way"
                   fill
                   className="object-cover"
@@ -87,8 +97,8 @@ export default function DualFeatureSection({
           <div className="flex flex-col items-end">
             <div className="rounded-[10px] overflow-hidden mb-6 relative aspect-[4/3] w-full">
               <Image
-                src="/images/nep/corporate_childcare_left.png"
-                alt="Children at play in NeuroPi classroom"
+                src={leftImage}
+                alt={leftImageAlt}
                 fill
                 className="object-cover"
               />
@@ -151,8 +161,8 @@ export default function DualFeatureSection({
             </div>
             <div className="rounded-[10px] overflow-hidden mb-6 relative aspect-[4/3] w-full">
               <Image
-                src="/images/nep/corporate_childcare_right.png"
-                alt="Classroom activity at My School ITALY"
+                src={rightImage}
+                alt={rightImageAlt}
                 fill
                 className="object-cover"
               />

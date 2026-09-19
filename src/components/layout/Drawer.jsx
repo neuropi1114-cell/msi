@@ -1,8 +1,18 @@
 'use client';
-import React, { useEffect } from 'react';
+import React, { useEffect, useSyncExternalStore } from 'react';
+import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 
+const emptySubscribe = () => () => {};
+const useIsMounted = () =>
+  useSyncExternalStore(
+    emptySubscribe,
+    () => true,
+    () => false
+  );
+
 const Drawer = ({ open, onClose, title, children, side = 'right' }) => {
+  const mounted = useIsMounted();
   const fromLeft = side === 'left';
 
   useEffect(() => {
@@ -18,7 +28,9 @@ const Drawer = ({ open, onClose, title, children, side = 'right' }) => {
     };
   }, [open, onClose]);
 
-  return (
+  if (!mounted) return null;
+
+  return createPortal(
     <AnimatePresence>
       {open && (
         <>
@@ -26,7 +38,7 @@ const Drawer = ({ open, onClose, title, children, side = 'right' }) => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[100] bg-black/50"
+            className="fixed inset-0 z-[9999] bg-black/50"
             onClick={onClose}
           />
           <motion.aside
@@ -34,7 +46,7 @@ const Drawer = ({ open, onClose, title, children, side = 'right' }) => {
             animate={{ x: 0 }}
             exit={{ x: fromLeft ? '-100%' : '100%' }}
             transition={{ type: 'tween', duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-            className={`fixed top-0 z-[100] h-full w-full max-w-md bg-white shadow-2xl overflow-y-auto ${
+            className={`fixed top-0 z-[10000] h-full w-full max-w-md bg-white shadow-2xl overflow-y-auto ${
               fromLeft ? 'left-0' : 'right-0'
             }`}
             role="dialog"
@@ -57,7 +69,8 @@ const Drawer = ({ open, onClose, title, children, side = 'right' }) => {
           </motion.aside>
         </>
       )}
-    </AnimatePresence>
+    </AnimatePresence>,
+    document.body
   );
 };
 

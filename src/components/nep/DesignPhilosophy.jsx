@@ -9,6 +9,9 @@ import ReadMoreButton from '../common/ReadMoreButton';
 import Drawer from '../layout/Drawer';
 
 export default function DesignPhilosophy({
+  image = "/images/nep/Web_1.png",
+  imageAlt = "My School ITALY classroom designed with neuroscience principles",
+  topBgClass = "bg-[#271344]",
   eyebrow = "Small Steps Into A Big New World",
   title = "STARTING SCHOOL & SETTLING IN",
   p1 = "For a young child, beginning preschool or daycare can mean a new environment, new adults, new children and a completely new routine.",
@@ -38,15 +41,15 @@ export default function DesignPhilosophy({
 
   return (
     <div className="w-full">
-      {/* Top Section: Dark Purple Background */}
-      <section className="bg-[#271344] py-8 md:py-12">
+      {/* Top Section */}
+      <section className={`${topBgClass} py-8 md:py-12`}>
         <div className="container mx-auto px-4 md:px-12 max-w-[1240px]">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
             <ScrollReveal direction="right" delay={0.1} className="flex items-center justify-center">
               <div className="rounded-[10px] overflow-hidden relative w-full aspect-[4/3] shadow-xl">
                 <Image
-                  src="/images/nep/Web_1.png"
-                  alt="My School ITALY classroom designed with neuroscience principles"
+                  src={image}
+                  alt={imageAlt}
                   fill
                   className="object-cover"
                 />
@@ -69,7 +72,7 @@ export default function DesignPhilosophy({
               {p3 && <p className="text-msi-cream font-lato text-[15px] md:text-[16px] leading-relaxed mb-3">{p3}</p>}
 
               {hasCustomDrawer ? (
-                <div>
+                <div className="w-fit">
                   <ReadMoreButton
                     onClick={() => setOpen(true)}
                     aria-haspopup="dialog"
@@ -118,7 +121,7 @@ export default function DesignPhilosophy({
               {bottomP2 && <p className="text-gray-600 font-lato text-[15px] md:text-[16px] leading-relaxed mb-3">{bottomP2}</p>}
 
               {hasBottomDrawer && (
-                <div>
+                <div className="w-fit">
                   <ReadMoreButton
                     onClick={() => setBottomOpen(true)}
                     aria-haspopup="dialog"

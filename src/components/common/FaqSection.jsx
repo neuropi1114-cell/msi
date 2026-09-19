@@ -1,9 +1,13 @@
+'use client';
+
 import Image from 'next/image';
 import Faq from '../nep/Faq';
 
 export default function FaqSection({
   subheading = "You Have Questions. We Want You to Ask Them.",
   heading = "FREQUENTLY ASKED QUESTIONS",
+  description = null,
+  showFaq = true,
   imageSrc = "/images/nep/faq-portrait.png",
   imageAlt = "Children learning at My School ITALY",
   className = "py-[70px] bg-white relative"
@@ -16,8 +20,15 @@ export default function FaqSection({
             <div className="mb-10 pr-[100px]">
               {subheading && <h3>{subheading}</h3>}
               {heading && <h2>{heading}</h2>}
+              {description && (
+                typeof description === 'string' ? (
+                  <p className="text-[#464646] font-lato text-[17px] leading-relaxed mt-4">{description}</p>
+                ) : (
+                  description
+                )
+              )}
             </div>
-            <Faq />
+            {showFaq && <Faq />}
           </div>
           <div className="flex items-center justify-center">
             <div className="rounded-[12px] overflow-hidden relative aspect-[3/4] max-w-[500px] w-full shadow-xl">
