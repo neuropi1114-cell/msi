@@ -54,7 +54,7 @@ const Drawer = ({ open, onClose, title, children, side = 'right' }) => {
             aria-label={title}
           >
             <div className="sticky top-0 z-10 bg-white flex justify-between items-center gap-4 px-6 py-4 border-b border-gray-100">
-              <h3 className="font-bold leading-tight text-msi-purple !mb-0" style={{ marginBottom: 0 }}>
+              <h3 className="font-linotte font-bold text-xl sm:text-2xl leading-tight text-msi-purple !mb-0" style={{ marginBottom: 0 }}>
                 {title}
               </h3>
               <button

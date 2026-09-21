@@ -17,15 +17,6 @@ const dayFlow = [
   'Home Time',
 ];
 
-const closingLines = [
-  'Babies and younger children follow routines appropriate to their individual feeding, sleep and care requirements.',
-  'There is a time to learn.',
-  'A time to move.',
-  'A time to eat.',
-  'A time to rest.',
-  'And plenty of time to simply be a child.',
-];
-
 export default function ChildDay({ showButton = true }) {
   const [open, setOpen] = useState(false);
 
@@ -45,27 +36,52 @@ export default function ChildDay({ showButton = true }) {
         title="Your Child's Day At MSI"
         side="left"
       >
-        <p className="text-msi-purple font-bold text-lg leading-snug">
-          Care, Learning and Childhood &mdash; All in One Day
-        </p>
-        <div className="mt-4 space-y-1">
-          {dayFlow.map((step, i) => (
-            <div key={i}>
-              <p className="font-semibold text-msi-purple">{step}</p>
-              {i < dayFlow.length - 1 && (
-                <p className="text-msi-orange text-sm text-center my-1" aria-hidden="true">
-                  &darr;
-                </p>
-              )}
+        <div className="space-y-5 text-gray-700 leading-relaxed">
+          {/* Header Banner */}
+          <div className="p-5 rounded-2xl bg-gradient-to-br from-purple-50 via-white to-amber-50 border border-purple-100 shadow-xs">
+            <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-purple/10 text-msi-purple mb-2">
+              Rhythm Over Rigid Routine
+            </span>
+            <h3 className="text-xl sm:text-2xl font-linotte font-bold text-msi-orange tracking-tight uppercase">
+              Care, Learning and Childhood &mdash; All in One Day
+            </h3>
+          </div>
+
+          {/* Daily Schedule Timeline Card */}
+          <div className="p-5 rounded-2xl bg-white border border-gray-100 shadow-md space-y-2">
+            <h4 className="font-extrabold text-msi-purple text-sm uppercase tracking-wider mb-3">
+              Daily Rhythm Flow:
+            </h4>
+            <div className="grid grid-cols-1 gap-2">
+              {dayFlow.map((step, i) => (
+                <div key={i} className="flex items-center gap-3 p-2.5 bg-purple-50/60 border-l-4 border-msi-purple rounded-r-xl shadow-2xs">
+                  <span className="w-6 h-6 rounded-full bg-msi-orange/15 text-msi-orange font-extrabold text-xs flex items-center justify-center shrink-0">
+                    {i + 1}
+                  </span>
+                  <p className="font-bold text-msi-purple text-xs sm:text-sm">
+                    {step}
+                  </p>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-        <div className="mt-6 pt-4 border-t border-gray-100 space-y-3">
-          {closingLines.map((line, i) => (
-            <p key={i} className="text-gray-600 leading-relaxed">
-              {line}
+          </div>
+
+          {/* Infant Care Note */}
+          <div className="p-4 rounded-xl bg-blue-50/80 border border-blue-100 shadow-2xs">
+            <p className="text-gray-700 text-xs sm:text-sm leading-relaxed">
+              Babies and younger children follow routines appropriate to their individual feeding, sleep and care requirements.
             </p>
-          ))}
+          </div>
+
+          {/* Footer Accent Card */}
+          <div className="p-5 rounded-2xl bg-gradient-to-r from-msi-purple to-[#271344] text-white shadow-lg text-center space-y-1">
+            <p className="text-xs sm:text-sm text-purple-200">
+              There is a time to learn, to move, to eat, and to rest...
+            </p>
+            <p className="font-linotte font-bold text-msi-yellow text-lg sm:text-xl uppercase tracking-wide">
+              And plenty of time to simply be a child.
+            </p>
+          </div>
         </div>
       </Drawer>
     </>

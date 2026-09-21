@@ -104,30 +104,42 @@ export default function StorySection({
         {drawerBody ? (
           drawerBody
         ) : (
-          <>
-            <div className="mb-5">
-              <p className="text-msi-purple font-bold text-lg leading-snug">
-                From Your First Enquiry to Your Child&rsquo;s First Day &mdash; And Beyond
-              </p>
-              <p className="text-gray-600 text-sm leading-relaxed mt-2">
-                Your relationship with MSI begins before admission. Our parent journey is designed to help you understand the school, choose the right program and allow your child to transition comfortably.
+          <div className="space-y-5 text-gray-700 leading-relaxed">
+            {/* Header Banner */}
+            <div className="p-5 rounded-2xl bg-gradient-to-br from-purple-50 via-white to-amber-50 border border-purple-100 shadow-xs">
+              <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-purple/10 text-msi-purple mb-2">
+                A Transparent Partnership
+              </span>
+              <h3 className="text-xl sm:text-2xl font-linotte font-bold text-msi-orange tracking-tight uppercase">
+                From First Enquiry to First Day &mdash; And Beyond
+              </h3>
+              <p className="mt-3 text-gray-700 text-xs sm:text-sm leading-relaxed">
+                Your relationship with MSI begins before admission. Our parent journey helps you understand the school, choose the right program, and transition comfortably.
               </p>
             </div>
-            <ol className="space-y-5">
+
+            {/* Steps List */}
+            <div className="space-y-3">
               {defaultSteps.map((step) => (
-                <li key={step.number} className="flex gap-3">
-                  <span className="font-bold text-msi-orange text-lg flex-shrink-0">{step.number}</span>
+                <div key={step.number} className="flex gap-3.5 p-3.5 bg-white border border-gray-100 rounded-xl shadow-2xs hover:shadow-xs transition-shadow">
+                  <span className="w-8 h-8 rounded-full bg-msi-orange/10 text-msi-orange font-black text-sm flex items-center justify-center shrink-0">
+                    {step.number}
+                  </span>
                   <div>
-                    <h4 className="font-bold text-msi-purple">{step.title}</h4>
-                    <p className="text-gray-600 text-sm leading-relaxed mt-1">{step.description}</p>
+                    <h4 className="font-bold text-msi-purple text-sm sm:text-base">{step.title}</h4>
+                    <p className="text-gray-600 text-xs sm:text-sm leading-relaxed mt-0.5">{step.description}</p>
                   </div>
-                </li>
+                </div>
               ))}
-            </ol>
-            <p className="mt-6 pt-4 border-t border-gray-100 italic text-gray-500 text-sm">
-              Admission is not the end of counselling. It is the beginning of a relationship.
-            </p>
-          </>
+            </div>
+
+            {/* Footer Accent Card */}
+            <div className="p-4 rounded-xl bg-gradient-to-r from-msi-purple to-[#271344] text-white shadow-md text-center">
+              <p className="font-semibold text-amber-300 text-xs sm:text-sm italic">
+                &ldquo;Admission is not the end of counselling. It is the beginning of a relationship.&rdquo;
+              </p>
+            </div>
+          </div>
         )}
       </Drawer>
     </section>
