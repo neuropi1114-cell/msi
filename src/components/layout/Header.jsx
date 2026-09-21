@@ -93,17 +93,23 @@ const Header = () => {
           </a>
         </div>
 
-        {/* Inline Desktop Navigation */}
-        <nav aria-label="Desktop navigation" className="hidden lg:flex items-center gap-7">
-          {navLinks.map((link) => (
-            <Link
-              key={link.name}
-              href={link.href}
-              className="font-lato font-semibold text-[15px] text-msi-blue hover:text-msi-green transition-colors relative py-1 group"
-            >
-              <h3 className="m-0 p-0 text-inherit font-inherit not-italic inline">{link.name}</h3>
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-msi-green transition-all duration-300 group-hover:w-full" />
-            </Link>
+        {/* Inline Desktop Navigation with Red Dot Dividers */}
+        <nav aria-label="Desktop navigation" className="hidden lg:flex items-center gap-5">
+          {navLinks.map((link, index) => (
+            <React.Fragment key={link.name}>
+              {index > 0 && (
+                <span className="text-red-500 font-bold text-lg select-none leading-none opacity-80" aria-hidden="true">
+                  •
+                </span>
+              )}
+              <Link
+                href={link.href}
+                className="font-lato font-semibold text-[15px] text-msi-blue hover:text-msi-green transition-colors relative py-1 group"
+              >
+                <h3 className="m-0 p-0 text-inherit font-inherit not-italic inline">{link.name}</h3>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-msi-green transition-all duration-300 group-hover:w-full" />
+              </Link>
+            </React.Fragment>
           ))}
         </nav>
 
