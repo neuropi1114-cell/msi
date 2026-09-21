@@ -43,7 +43,7 @@ export default function ProgramsPage() {
       <TopBar />
       <Header />
       <main>
-        <CloudHeader image="/images/programs/ChatGPT Image Sep 19, 2026 at 12_59_57 PM.png" />
+        <CloudHeader image="/images/programs/Header_3.png" imageClass="object-cover object-top" />
         <div data-nav-sentinel />
 
         <SectionHeader
@@ -59,7 +59,7 @@ export default function ProgramsPage() {
         />
 
         <DesignPhilosophy
-          image="/images/programs/Aperna_6.png"
+          image="/images/programs/Programs_2_1.png"
           imageAspect="aspect-[16/9]"
           imageClass="object-cover scale-[1.05]"
           eyebrow="The Smallest Children Deserve Our Greatest Care."
@@ -95,7 +95,7 @@ export default function ProgramsPage() {
 
         <DualFeatureSection
           sectionTitle="KINDERGARTEN"
-          leftImage="/images/programs/Aperna_8.png"
+          leftImage="/images/programs/Programs_4.png"
           leftAspect="aspect-[4/5]"
           rightImage="/images/programs/Batch_3_6.png"
           leftTitle={<span className="italic">From Exploring The World To Making Connections.</span>}
@@ -122,8 +122,8 @@ export default function ProgramsPage() {
 
         <DesignPhilosophy
           topBgClass="bg-msi-green"
-          image="/images/programs/Aperna_16.png"
-          imageAspect="aspect-[4/5]"
+          image="/images/programs/Daycare.png"
+          imageAspect="aspect-[16/9]"
           imageClass="object-cover"
           eyebrow="Your Child's Day Continues With Purpose."
           eyebrowClass="text-msi-purple"

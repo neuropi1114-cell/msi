@@ -6,6 +6,19 @@ import { motion } from 'framer-motion';
 import ReadMoreButton from '../common/ReadMoreButton';
 import Drawer from '../layout/Drawer';
 
+function getEmbedUrl(url) {
+  if (!url) return '';
+  const youtubeMatch = url.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/))([\w-]+)/);
+  if (youtubeMatch) {
+    return `https://www.youtube.com/embed/${youtubeMatch[1]}`;
+  }
+  const vimeoMatch = url.match(/vimeo\.com\/(?:video\/)?(\d+)/);
+  if (vimeoMatch) {
+    return `https://player.vimeo.com/video/${vimeoMatch[1]}?title=0&byline=0&portrait=0&transparent=1`;
+  }
+  return url;
+}
+
 export default function OneJourneySection({
   eyebrow = null,
   eyebrowClass = "",
@@ -16,6 +29,7 @@ export default function OneJourneySection({
   imageSrc = "/images/programs/Aperna_28.png",
   bgImageSrc = "/images/programs/Aperna_28.png",
   imageAlt = "One Journey. Many Possibilities - My School ITALY",
+  videoUrl = null,
   showBeeIcon = true,
   showReadMore = false,
   readMoreDrawerTitle = null,
@@ -55,7 +69,7 @@ export default function OneJourneySection({
               className="lg:col-span-7 bg-white p-6 sm:p-8 md:p-10 rounded-2xl shadow-xl border border-gray-100"
             >
               {eyebrow && (
-                <h3 className={`text-base sm:text-lg font-medium mb-2 ${eyebrowClass}`}>
+                <h3 className={`text-base sm:text-lg font-medium text-msi-purple mb-2 ${eyebrowClass}`}>
                   {eyebrow}
                 </h3>
               )}
@@ -103,8 +117,25 @@ export default function OneJourneySection({
               )}
             </motion.div>
 
-            {/* Right Side: Image Card */}
-            {imageSrc && (
+            {/* Right Side: Video or Image Card */}
+            {videoUrl ? (
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="lg:col-span-5 aspect-video w-full relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-black"
+              >
+                <iframe
+                  src={getEmbedUrl(videoUrl)}
+                  className="absolute inset-0 w-full h-full"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  title={readMoreDrawerTitle || title || "Video"}
+                />
+              </motion.div>
+            ) : imageSrc ? (
               <motion.div
                 initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -120,7 +151,7 @@ export default function OneJourneySection({
                   sizes="(max-width: 1024px) 100vw, 45vw"
                 />
               </motion.div>
-            )}
+            ) : null}
 
           </div>
         </div>

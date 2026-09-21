@@ -190,6 +190,7 @@ export default function EducationalProjectPage() {
           title="NEUROPI TEACHER DEVELOPMENT"
           titleColor="text-msi-orange"
           footerText={null}
+          videoUrl="https://vimeo.com/1228813425"
           readMoreDrawerTitle="NEUROPI TEACHER DEVELOPMENT"
           readMoreDrawerBody={teacherDevelopmentDrawerBody}
         >

@@ -19,9 +19,9 @@ const slides = [
     cta: { text: 'Explore Why MSI', href: '/theneuropiway' },
   },
   {
-    image: '/images/hero/hero-slide-3.jpg',
+    image: '/images/hero/Header_3.png',
     bgPosition: 'bg-center',
-    accentImage: '/images/hero/hero-slide-3-accent.jpg',
+    accentImage: '/images/hero/Header_3a.png',
     title: 'Discovery starts with a single question',
     cta: { text: 'Explore Program', href: '/parents' },
   },

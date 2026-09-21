@@ -59,7 +59,7 @@ export default function WhyUsPage() {
           title="OUR PHILOSOPHY"
           titleColor="text-msi-yellow"
           description="We do not believe every child should develop in exactly the same way or at exactly the same pace. We meet the child where they are — and help them grow from there."
-          bgImage="/images/nep/daycare_4.jpeg"
+          bgImage="/images/whyus/Why_MSI_3.png"
           readMoreDrawerTitle="OUR PHILOSOPHY"
           readMoreDrawerBody={philosophyDrawerBody}
         />

@@ -8,7 +8,7 @@ export default function CloudHeader({
   subtitle,
   bgClass = 'bg-[#d16827]',
   image,
-  imageClass = 'object-cover object-[center_15%]',
+  imageClass = 'object-cover object-top',
   heightClass = 'min-h-[320px] sm:min-h-[420px] md:min-h-[520px] lg:min-h-[600px]',
 }) {
   return (
