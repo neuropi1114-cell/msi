@@ -107,54 +107,56 @@ export default function DesignPhilosophy({
       </section>
 
       {/* Bottom Section: White Background */}
-      <section className="bg-white pt-6 pb-2 md:pt-8 md:pb-4">
-        <div className="container mx-auto px-4 md:px-12 max-w-[1240px]">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-start">
-            <div className="hidden md:block"></div>
-            <ScrollReveal direction="up" delay={0.2} className="flex flex-col justify-center">
-              {bottomEyebrow && (
-                <h3 className=" text-msi-blue ">
-                  {bottomEyebrow}
-                </h3>
-              )}
-              {bottomTitle && (
-                <h2 className="text-msi-orange font-linotte font-bold text-2xl md:text-[32px] leading-tight uppercase mb-4">
-                  {bottomTitle}
-                </h2>
-              )}
-              {bottomP1 && <p className="text-gray-600 text-[15px] md:text-[16px] leading-relaxed mb-1">{bottomP1}</p>}
-              {bottomP2 && <p className={`text-gray-600 text-[15px] md:text-[16px] leading-relaxed ${bottomP3 ? 'mb-1' : 'mb-3'}`}>{bottomP2}</p>}
-              {bottomP3 && <p className="text-gray-600 text-[15px] md:text-[16px] leading-relaxed mb-3">{bottomP3}</p>}
+      {(bottomEyebrow || bottomTitle || bottomP1 || bottomDrawerBody) && (
+        <section className="bg-white pt-6 pb-2 md:pt-8 md:pb-4">
+          <div className="container mx-auto px-4 md:px-12 max-w-[1240px]">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-start">
+              <div className="hidden md:block"></div>
+              <ScrollReveal direction="up" delay={0.2} className="flex flex-col justify-center">
+                {bottomEyebrow && (
+                  <h3 className=" text-msi-blue ">
+                    {bottomEyebrow}
+                  </h3>
+                )}
+                {bottomTitle && (
+                  <h2 className="text-msi-orange font-linotte font-bold text-2xl md:text-[32px] leading-tight uppercase mb-4">
+                    {bottomTitle}
+                  </h2>
+                )}
+                {bottomP1 && <p className="text-gray-600 text-[15px] md:text-[16px] leading-relaxed mb-1">{bottomP1}</p>}
+                {bottomP2 && <p className={`text-gray-600 text-[15px] md:text-[16px] leading-relaxed ${bottomP3 ? 'mb-1' : 'mb-3'}`}>{bottomP2}</p>}
+                {bottomP3 && <p className="text-gray-600 text-[15px] md:text-[16px] leading-relaxed mb-3">{bottomP3}</p>}
 
-              {hasBottomDrawer && (
-                <div className="w-fit">
-                  <ReadMoreButton
-                    onClick={() => setBottomOpen(true)}
-                    aria-haspopup="dialog"
-                    aria-expanded={bottomOpen}
-                    className="mt-3 font-bold"
-                  />
-                  <Drawer
-                    open={bottomOpen}
-                    onClose={() => setBottomOpen(false)}
-                    title={bottomDrawerTitle || bottomTitle}
-                    side="left"
-                  >
-                    {bottomDrawerEyebrow && (
-                      <p className="text-msi-purple font-bold text-lg leading-snug mb-3">
-                        {bottomDrawerEyebrow}
-                      </p>
-                    )}
-                    {bottomDrawerBody}
-                  </Drawer>
-                </div>
-              )}
+                {hasBottomDrawer && (
+                  <div className="w-fit">
+                    <ReadMoreButton
+                      onClick={() => setBottomOpen(true)}
+                      aria-haspopup="dialog"
+                      aria-expanded={bottomOpen}
+                      className="mt-3 font-bold"
+                    />
+                    <Drawer
+                      open={bottomOpen}
+                      onClose={() => setBottomOpen(false)}
+                      title={bottomDrawerTitle || bottomTitle}
+                      side="left"
+                    >
+                      {bottomDrawerEyebrow && (
+                        <p className="text-msi-purple font-bold text-lg leading-snug mb-3">
+                          {bottomDrawerEyebrow}
+                        </p>
+                      )}
+                      {bottomDrawerBody}
+                    </Drawer>
+                  </div>
+                )}
 
-              <ChildDay showButton={!hasBottomDrawer && !hasCustomDrawer} />
-            </ScrollReveal>
+                <ChildDay showButton={!hasBottomDrawer && !hasCustomDrawer && shouldShowSettlingIn} />
+              </ScrollReveal>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
     </div>
   );
 }

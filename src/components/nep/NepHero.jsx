@@ -12,6 +12,7 @@ export default function NepHero({
   bgImage = "/images/nep/hero-classroom.webp",
   bgPosition = "bg-cover bg-center",
   boxBgClass = "bg-msi-blue",
+  flipBg = false,
   showReadMore = true,
   readMoreText = "Read More",
   readMoreBgColor = "bg-msi-orange hover:bg-msi-orange/90",
@@ -45,11 +46,12 @@ export default function NepHero({
 
   return (
     <>
-      <section
-        className={`relative flex items-center min-h-[450px] md:min-h-[550px] lg:min-h-[600px] ${bgPosition} py-12 md:py-16`}
-        style={{ backgroundImage: `url(${bgImage})` }}
-      >
-        <div className="container mx-auto px-4 md:px-12 w-full">
+      <section className="relative flex items-center min-h-[450px] md:min-h-[550px] lg:min-h-[600px] py-12 md:py-16 overflow-hidden">
+        <div
+          className={`absolute inset-0 ${bgPosition} ${flipBg ? '[transform:scaleX(-1)]' : ''}`}
+          style={{ backgroundImage: `url(${bgImage})` }}
+        />
+        <div className="container mx-auto px-4 md:px-12 w-full relative z-10">
           <div
             className={`w-full md:w-[50%] lg:w-[45%] max-w-xl p-6 sm:p-8 md:p-10 rounded-2xl shadow-2xl ${boxBgClass}`}
           >

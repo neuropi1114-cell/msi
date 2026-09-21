@@ -35,7 +35,7 @@ const Header = () => {
   const navLinks = [
     { name: 'Why MSI', href: '/whyus' },
     { name: 'Programs', href: '/programs' },
-    { name: 'The NeuroPi Way', href: '/nep' },
+    { name: 'The NeuroPi Way', href: '/theneuropiway' },
     { name: 'Parents', href: '/parents' },
     { name: 'Corporate Childcare', href: '/#corporate-childcare' },
   ];

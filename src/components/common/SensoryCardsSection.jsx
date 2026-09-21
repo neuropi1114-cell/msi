@@ -45,7 +45,7 @@ export default function SensoryCardsSection({
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.15 }}
             >
-              <div className="overflow-hidden relative h-72 sm:h-80">
+              <div className={`overflow-hidden relative ${item.aspect || (item.text ? 'h-72 sm:h-80' : 'aspect-[4/5] w-full')}`}>
                 <Image
                   src={item.img}
                   alt={item.alt}
@@ -53,9 +53,11 @@ export default function SensoryCardsSection({
                   className={`object-cover ${item.objectPos || 'object-top'} transition-transform duration-300 group-hover:scale-[1.01]`}
                 />
               </div>
-              <div className="p-6 text-center bg-[#F9FAFA]">
-                <p className="text-gray-700 leading-relaxed text-lg">{item.text}</p>
-              </div>
+              {item.text && (
+                <div className="p-6 text-center bg-[#F9FAFA]">
+                  <p className="text-gray-700 leading-relaxed text-lg">{item.text}</p>
+                </div>
+              )}
             </motion.div>
           ))}
         </div>

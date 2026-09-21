@@ -12,6 +12,8 @@ export default function DualFeatureSection({
   faqOnly = false,
   showFaq = false,
   variant = 'default',
+  showLeftReadMore = true,
+  showRightReadMore = true,
   sectionTitle = "UNDERSTANDING YOUR CHILD'S PROGRESS",
   eyebrow = null,
   title = null,
@@ -138,31 +140,33 @@ export default function DualFeatureSection({
                   </p>
                 </>
               )}
-              {leftDrawerBody ? (
-                <>
-                  <ReadMoreButton
-                    onClick={() => setLeftOpen(true)}
-                    aria-haspopup="dialog"
-                    aria-expanded={leftOpen}
-                    bgColor={leftButtonBgColor}
-                    className="mt-6 font-bold"
-                  />
-                  <Drawer
-                    open={leftOpen}
-                    onClose={() => setLeftOpen(false)}
-                    title={leftDrawerTitle || leftSubtitle || leftTitle}
-                    side="left"
-                  >
-                    {leftDrawerEyebrow && (
-                      <p className="text-msi-purple font-bold text-lg leading-snug mb-3">
-                        {leftDrawerEyebrow}
-                      </p>
-                    )}
-                    {leftDrawerBody}
-                  </Drawer>
-                </>
-              ) : (
-                <ProgressMore />
+              {showLeftReadMore && (
+                leftDrawerBody ? (
+                  <>
+                    <ReadMoreButton
+                      onClick={() => setLeftOpen(true)}
+                      aria-haspopup="dialog"
+                      aria-expanded={leftOpen}
+                      bgColor={leftButtonBgColor}
+                      className="mt-6 font-bold"
+                    />
+                    <Drawer
+                      open={leftOpen}
+                      onClose={() => setLeftOpen(false)}
+                      title={leftDrawerTitle || leftSubtitle || leftTitle}
+                      side="left"
+                    >
+                      {leftDrawerEyebrow && (
+                        <p className="text-msi-purple font-bold text-lg leading-snug mb-3">
+                          {leftDrawerEyebrow}
+                        </p>
+                      )}
+                      {leftDrawerBody}
+                    </Drawer>
+                  </>
+                ) : (
+                  <ProgressMore />
+                )
               )}
             </div>
           </div>
@@ -182,9 +186,11 @@ export default function DualFeatureSection({
                 </h3>
               )}
               <div>
-                <h2 className={rightTitleColor ? rightTitleColor : ''}>
-                  {rightTitle}
-                </h2>
+                {rightTitle && (
+                  <h2 className={rightTitleColor ? rightTitleColor : ''}>
+                    {rightTitle}
+                  </h2>
+                )}
                 {rightParagraphs ? (
                   rightParagraphs.map((text, idx) => (
                     <p key={idx}>{text}</p>
@@ -199,31 +205,33 @@ export default function DualFeatureSection({
                   </>
                 )}
               </div>
-              {rightDrawerBody ? (
-                <>
-                  <ReadMoreButton
-                    onClick={() => setRightOpen(true)}
-                    aria-haspopup="dialog"
-                    aria-expanded={rightOpen}
-                    bgColor={rightButtonBgColor}
-                    className="mt-6 font-bold"
-                  />
-                  <Drawer
-                    open={rightOpen}
-                    onClose={() => setRightOpen(false)}
-                    title={rightDrawerTitle || rightTitle || rightEyebrow}
-                    side="left"
-                  >
-                    {rightDrawerEyebrow && (
-                      <p className="text-msi-purple font-bold text-lg leading-snug mb-3">
-                        {rightDrawerEyebrow}
-                      </p>
-                    )}
-                    {rightDrawerBody}
-                  </Drawer>
-                </>
-              ) : (
-                <HomeLearningMore />
+              {showRightReadMore && (
+                rightDrawerBody ? (
+                  <>
+                    <ReadMoreButton
+                      onClick={() => setRightOpen(true)}
+                      aria-haspopup="dialog"
+                      aria-expanded={rightOpen}
+                      bgColor={rightButtonBgColor}
+                      className="mt-6 font-bold"
+                    />
+                    <Drawer
+                      open={rightOpen}
+                      onClose={() => setRightOpen(false)}
+                      title={rightDrawerTitle || rightTitle || rightEyebrow}
+                      side="left"
+                    >
+                      {rightDrawerEyebrow && (
+                        <p className="text-msi-purple font-bold text-lg leading-snug mb-3">
+                          {rightDrawerEyebrow}
+                        </p>
+                      )}
+                      {rightDrawerBody}
+                    </Drawer>
+                  </>
+                ) : (
+                  <HomeLearningMore />
+                )
               )}
             </div>
           </div>

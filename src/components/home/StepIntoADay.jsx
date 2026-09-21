@@ -119,7 +119,7 @@ const StepIntoADay = ({
           <p className="leading-relaxed">A richer developmental picture of the child.</p>
 
           <a
-            href="/nep"
+            href="/theneuropiway"
             className="font-linotte inline-block px-6 py-3 bg-msi-blue text-white rounded-full font-[200] hover:opacity-90 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
           >
             Discover NeuroPI

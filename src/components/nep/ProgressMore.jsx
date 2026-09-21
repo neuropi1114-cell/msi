@@ -66,7 +66,7 @@ export default function ProgressMore() {
         </p>
         <p className="text-gray-600 leading-relaxed mt-4">
           For the methodology behind developmental observation, parents can explore{' '}
-          <Link href="/nep" className="text-msi-orange font-bold underline">
+          <Link href="/theneuropiway" className="text-msi-orange font-bold underline">
             The NeuroPi Way
           </Link>
           .

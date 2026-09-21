@@ -27,12 +27,12 @@ function getEmbedUrl(url) {
   }
   const vimeoMatch = url.match(/vimeo\.com\/(?:video\/)?(\d+)/);
   if (vimeoMatch) {
-    return `https://player.vimeo.com/video/${vimeoMatch[1]}?title=0&byline=0&portrait=0`;
+    return `https://player.vimeo.com/video/${vimeoMatch[1]}?title=0&byline=0&portrait=0&transparent=1`;
   }
   return url;
 }
 
-function VideoCard({ video, index }) {
+function VideoCard({ video, index, videoTitleColor = "text-msi-orange" }) {
   const ref = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -59,7 +59,7 @@ function VideoCard({ video, index }) {
       transition={{ delay: index * 0.15 }}
       className="flex flex-col h-full"
     >
-      <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-lg bg-black">
+      <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-md bg-white border border-gray-100">
         {isVisible && (
           <iframe
             src={getEmbedUrl(video.url)}
@@ -71,14 +71,20 @@ function VideoCard({ video, index }) {
           />
         )}
       </div>
-      <h3 className="mt-4 text-center font-bold text-lg tracking-wide text-msi-orange">
+      <h3 className={`mt-4 text-center font-bold text-lg tracking-wide not-italic ${videoTitleColor}`}>
         {video.title}
       </h3>
     </motion.div>
   );
 }
 
-export default function VideoShowcase({ title = "FEATURED VIDEOS", videosList = videos }) {
+export default function VideoShowcase({
+  title = "FEATURED VIDEOS",
+  videosList = videos,
+  showCarousel = true,
+  titleColor = "text-msi-orange",
+  videoTitleColor = "text-msi-orange",
+}) {
   const [current, setCurrent] = useState(0);
   const containerRef = useRef(null);
 
@@ -102,65 +108,75 @@ export default function VideoShowcase({ title = "FEATURED VIDEOS", videosList = 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-3xl md:text-4xl text-center font-bold mb-12 text-msi-orange uppercase"
+          className={`text-3xl md:text-4xl text-center font-bold mb-12 uppercase ${titleColor}`}
         >
           {title}
         </motion.h2>
 
-        <div className="relative">
-          {/* Previous Button */}
-          <button
-            onClick={() => scroll('prev')}
-            aria-label="Previous video"
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-3 md:-translate-x-5 z-10 w-11 h-11 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-100 transition-colors border border-gray-100"
-          >
-            <svg className="w-5 h-5 text-gray-700" viewBox="0 0 1000 1000" fill="currentColor">
-              <path d="M646 125C629 125 613 133 604 142L308 442C296 454 292 471 292 487 292 504 296 521 308 533L604 854C617 867 629 875 646 875 663 875 679 871 692 858 704 846 713 829 713 812 713 796 708 779 692 767L438 487 692 225C700 217 708 204 708 187 708 171 704 154 692 142 675 129 663 125 646 125Z" />
-            </svg>
-          </button>
+        {showCarousel ? (
+          <div className="relative">
+            {/* Previous Button */}
+            <button
+              onClick={() => scroll('prev')}
+              aria-label="Previous video"
+              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-3 md:-translate-x-5 z-10 w-11 h-11 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-100 transition-colors border border-gray-100"
+            >
+              <svg className="w-5 h-5 text-gray-700" viewBox="0 0 1000 1000" fill="currentColor">
+                <path d="M646 125C629 125 613 133 604 142L308 442C296 454 292 471 292 487 292 504 296 521 308 533L604 854C617 867 629 875 646 875 663 875 679 871 692 858 704 846 713 829 713 812 713 796 708 779 692 767L438 487 692 225C700 217 708 204 708 187 708 171 704 154 692 142 675 129 663 125 646 125Z" />
+              </svg>
+            </button>
 
-          {/* Next Button */}
-          <button
-            onClick={() => scroll('next')}
-            aria-label="Next video"
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-3 md:translate-x-5 z-10 w-11 h-11 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-100 transition-colors border border-gray-100"
-          >
-            <svg className="w-5 h-5 text-gray-700" viewBox="0 0 1000 1000" fill="currentColor">
-              <path d="M696 533C708 521 713 504 713 487 713 471 708 454 696 446L400 146C388 133 375 125 354 125 338 125 325 129 313 142 300 154 292 171 292 187 292 204 296 221 308 233L563 492 304 771C292 783 288 800 288 817 288 833 296 850 308 863 321 871 338 875 354 875 371 875 388 867 400 854L696 533Z" />
-            </svg>
-          </button>
+            {/* Next Button */}
+            <button
+              onClick={() => scroll('next')}
+              aria-label="Next video"
+              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-3 md:translate-x-5 z-10 w-11 h-11 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-100 transition-colors border border-gray-100"
+            >
+              <svg className="w-5 h-5 text-gray-700" viewBox="0 0 1000 1000" fill="currentColor">
+                <path d="M696 533C708 521 713 504 713 487 713 471 708 454 696 446L400 146C388 133 375 125 354 125 338 125 325 129 313 142 300 154 292 171 292 187 292 204 296 221 308 233L563 492 304 771C292 783 288 800 288 817 288 833 296 850 308 863 321 871 338 875 354 875 371 875 388 867 400 854L696 533Z" />
+              </svg>
+            </button>
 
-          {/* Carousel Track */}
-          <div
-            ref={containerRef}
-            className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth snap-x snap-mandatory py-4 px-2"
-            style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
-          >
+            {/* Carousel Track */}
+            <div
+              ref={containerRef}
+              className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth snap-x snap-mandatory py-4 px-2"
+              style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+            >
+              {videosList.map((video, index) => (
+                <div key={video.id || index} className="min-w-[280px] sm:min-w-[320px] md:min-w-[360px] snap-start flex-shrink-0">
+                  <VideoCard video={video} index={index} videoTitleColor={videoTitleColor} />
+                </div>
+              ))}
+            </div>
+
+            {/* Dots Indicator */}
+            <div className="flex justify-center mt-6 gap-2">
+              {videosList.map((_, i) => (
+                <button
+                  key={i}
+                  aria-label={`Go to slide ${i + 1}`}
+                  onClick={() => {
+                    const container = containerRef.current;
+                    if (!container) return;
+                    const cardWidth = container.querySelector('div:first-child')?.offsetWidth || 340;
+                    container.scrollTo({ left: i * (cardWidth + 24), behavior: 'smooth' });
+                    setCurrent(i);
+                  }}
+                  className={`w-2.5 h-2.5 rounded-full transition-colors ${i === current ? 'bg-msi-orange' : 'bg-gray-300'}`}
+                />
+              ))}
+            </div>
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {videosList.map((video, index) => (
-              <div key={video.id || index} className="min-w-[280px] sm:min-w-[320px] md:min-w-[360px] snap-start flex-shrink-0">
-                <VideoCard video={video} index={index} />
+              <div key={video.id || index} className="w-full">
+                <VideoCard video={video} index={index} videoTitleColor={videoTitleColor} />
               </div>
             ))}
           </div>
-
-          {/* Dots Indicator */}
-          <div className="flex justify-center mt-6 gap-2">
-            {videosList.map((_, i) => (
-              <button
-                key={i}
-                aria-label={`Go to slide ${i + 1}`}
-                onClick={() => {
-                  const container = containerRef.current;
-                  if (!container) return;
-                  const cardWidth = container.querySelector('div:first-child')?.offsetWidth || 340;
-                  container.scrollTo({ left: i * (cardWidth + 24), behavior: 'smooth' });
-                  setCurrent(i);
-                }}
-                className={`w-2.5 h-2.5 rounded-full transition-colors ${i === current ? 'bg-msi-orange' : 'bg-gray-300'}`}
-              />
-            ))}
-          </div>
-        </div>
+        )}
       </div>
     </section>
   );
