@@ -11,12 +11,13 @@ import NepHero from '../../components/nep/NepHero';
 import DualFeatureSection from '../../components/common/DualFeatureSection';
 
 
-import VideoCarousel from '../../components/home/VideoCarousel';
+import VideoShowcase from '../../components/home/VideoShowcase';
 
 import OneJourneySection from '../../components/programs/OneJourneySection';
 import RecentNews from '../../components/day-care/RecentNews';
 import {
   metadata,
+  programVideos,
   ciaoBabyDrawerBody,
   preNurseryDrawerBody,
   nurseryDrawerBody,
@@ -257,39 +258,11 @@ export default function ProgramsPage() {
 
         <OneJourneySection />
 
-        <VideoCarousel
-          title="PROGRAMS IN ACTION"
+        <VideoShowcase
           eyebrow="Watch Our Programs Come Alive"
-          videoList={[
-            {
-              id: 'program-1',
-              title: 'MSI PROGRAM HIGHLIGHTS 1',
-              src: '/videos/Program_1.mp4',
-              aspect: 'portrait',
-              isReel: true,
-            },
-            {
-              id: 'program-2',
-              title: 'MSI PROGRAM HIGHLIGHTS 2',
-              src: '/videos/Program_2.mp4',
-              aspect: 'portrait',
-              isReel: true,
-            },
-            {
-              id: 'program-3',
-              title: 'MSI PROGRAM HIGHLIGHTS 3',
-              src: '/videos/Program_3.mp4',
-              aspect: 'portrait',
-              isReel: true,
-            },
-            {
-              id: 'program-4',
-              title: 'MSI PROGRAM HIGHLIGHTS 4',
-              src: '/videos/Program_4.mp4',
-              aspect: 'portrait',
-              isReel: true,
-            },
-          ]}
+          title="PROGRAMS IN ACTION"
+          videosList={programVideos}
+          showCarousel={true}
         />
 
         <RecentNews />

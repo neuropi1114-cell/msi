@@ -17,6 +17,7 @@ export default function DesignPhilosophy({
   eyebrow = "Small Steps Into A Big New World",
   eyebrowClass = "text-[#68BAE3]",
   title = "STARTING SCHOOL & SETTLING IN",
+  titleClass = "text-msi-orange",
   p1 = "For a young child, beginning preschool or daycare can mean a new environment, new adults, new children and a completely new routine.",
   p1Class = "text-msi-cream",
   p2 = "We do not expect every child to settle in the same way.",
@@ -67,7 +68,7 @@ export default function DesignPhilosophy({
                 </h3>
               )}
               {title && (
-                <h2 className="text-msi-orange font-linotte font-bold text-2xl md:text-[32px] leading-tight uppercase mb-4">
+                <h2 className={`${titleClass} font-linotte font-bold text-2xl md:text-[32px] leading-tight uppercase mb-4`}>
                   {title}
                 </h2>
               )}

@@ -3,19 +3,18 @@ import TopBar from '../../components/layout/TopBar';
 import Header from '../../components/layout/Header';
 import Footer from '../../components/layout/Footer';
 import ContactUs from '../../components/home/ContactUs';
-import Feedback from '../../components/home/Feedback';
 import CloudHeader from '../../components/layout/CloudHeader';
 import SectionHeader from '../../components/common/SectionHeader';
 import NepHero from '../../components/nep/NepHero';
 import DesignPhilosophy from '../../components/nep/DesignPhilosophy';
-import MissionCounters from '../../components/nep/MissionCounters';
-import GalleryStrip from '../../components/nep/GalleryStrip';
+import MissionCounters from '../../components/common/MissionCounters';
+import GalleryStrip from '../../components/common/GalleryStrip';
 import DualFeatureSection from '../../components/common/DualFeatureSection';
-import NepNews from '../../components/nep/NepNews';
 import AboutActivities from '../../components/about/AboutActivities';
 import VideoShowcase from '../../components/home/VideoShowcase';
 import EarlyLearningSection from '../../components/common/EarlyLearningSection';
 import SensoryCardsSection from '../../components/common/SensoryCardsSection';
+import OneJourneySection from '../../components/programs/OneJourneySection';
 
 import {
   metadata,
@@ -24,12 +23,11 @@ import {
   nepHeroLearningDrawerBody,
   neuropiDrawerBody,
   fivePillarsDrawerBody,
-  k1DrawerBody,
-  k2DrawerBody,
-  daycareDrawerBody,
-  twentyFourHourCareDrawerBody,
   earlyLearningDrawerBody,
   neuroPiSensoryCards,
+  neuropiLearningCycleDrawerBody,
+  teacherDevelopmentDrawerBody,
+  neuroPiWayGalleryImages,
 } from './theneuropiwaydata';
 
 export { metadata };
@@ -55,18 +53,17 @@ export default function EducationalProjectPage() {
           eyebrow="Better Understanding Around The Child."
           title="THE NEUROPI WAY"
           p1="The NeuroPi Approach is where the science of the brain meets the art of nurturing."
-          p2=""
           drawerTitle="Better Understanding Around The Child."
           drawerEyebrow="NOT MORE TECHNOLOGY AROUND THE CHILD."
           drawerBody={neuropiDrawerBody}
           bottomEyebrow="Focus On Whole Child Growth."
           bottomTitle="FIVE PILLARS"
           bottomP1="Every child’s brain is a world of wonder. Here, we blend neuroscience, play, and empathy to nurture calm, confident, and connected learners."
-          bottomP2=""
           bottomDrawerTitle="Focus On Whole Child Growth."
           bottomDrawerEyebrow="FIVE PILLARS"
           bottomDrawerBody={fivePillarsDrawerBody}
         />
+
         <NepHero
           bgImage="/images/nep/The_NeuroPi_Way_3.png"
           eyebrow="Where Little Minds Grow With Science & Soul."
@@ -89,10 +86,7 @@ export default function EducationalProjectPage() {
               Mindfulness &amp; Emotional Bonding for Calm, Connected, Confident Children.
             </span>
           }
-          leftSubtitle={null}
-          leftParagraphs={[]}
           showLeftReadMore={false}
-          leftDrawerBody={null}
           rightEyebrow={
             <span className="italic">
               Move &amp; Grow
@@ -100,11 +94,8 @@ export default function EducationalProjectPage() {
               Kinesthetic And Motor Based Learning For Enhanced Coordination &amp; Attention
             </span>
           }
-          rightTitle={null}
           rightTitleColor="text-msi-orange"
-          rightParagraphs={[]}
           showRightReadMore={false}
-          rightDrawerBody={null}
         />
         <DesignPhilosophy
           topBgClass="bg-msi-green"
@@ -114,14 +105,12 @@ export default function EducationalProjectPage() {
           eyebrow={
             <div className="space-y-4">
               <div>
-
                 NeuroSmart Learning
                 <span>
                   Evidence-Based, Brain-Friendly Curriculum for Strengthening Cognitive Networks.
                 </span>
               </div>
               <div>
-
                 Creative Expression Labs
                 <span>
                   Music, Art, Storytelling, and Sensory Play for Boosting Imagination &amp; Language.
@@ -130,17 +119,7 @@ export default function EducationalProjectPage() {
             </div>
           }
           eyebrowClass="text-msi-purple font-medium"
-          title={null}
-          p1={null}
-          p2={null}
           showSettlingInMore={false}
-          drawerBody={null}
-          bottomEyebrow={null}
-          bottomTitle={null}
-          bottomP1={null}
-          bottomP2={null}
-          bottomP3={null}
-          bottomDrawerBody={null}
         />
 
         <AboutActivities
@@ -173,6 +152,21 @@ export default function EducationalProjectPage() {
           readMoreDrawerTitle="NEUROPI CONNECT — SCHOOL + HOME"
           readMoreDrawerBody={nepHeroDrawerBody}
         />
+        <DesignPhilosophy
+          topBgClass="bg-msi-yellow"
+          image="/images/nep/The_NeuroPi_Way_13.png"
+          imageClass="object-contain"
+          imageAspect="aspect-[16/9]"
+          eyebrow="The NeuroPi Learning Cycle"
+          eyebrowClass="text-msi-purple font-bold"
+          title="OBSERVE → UNDERSTAND → PERSONALISE → ENGAGE → TRACK"
+          titleClass="text-msi-cream font-extrabold"
+          p1="The NeuroPi Way follows a continuous cycle. Because children keep changing. Our understanding of them should keep changing too."
+          p1Class="text-msi-purple-deep font-semibold"
+          drawerTitle="The NeuroPi Learning Cycle"
+          drawerEyebrow="OBSERVE → UNDERSTAND → PERSONALISE → ENGAGE → TRACK"
+          drawerBody={neuropiLearningCycleDrawerBody}
+        />
 
         <EarlyLearningSection
           title="Where Neuroscience-Informed Philosophy Becomes Daily Classroom Practice"
@@ -184,7 +178,6 @@ export default function EducationalProjectPage() {
               The NeuroPi Classroom Method provides MSI educators with a consistent approach for turning observation into better classroom experiences.
             </span>
           }
-          p2={null}
           bgImage="/images/nep/The_NeuroPi_Way_x.png"
           showReadMore={true}
           readMoreDrawerTitle="THE NEUROPI CLASSROOM METHOD"
@@ -192,20 +185,24 @@ export default function EducationalProjectPage() {
         />
 
         <SensoryCardsSection cards={neuroPiSensoryCards} />
-
+        <OneJourneySection
+          eyebrow="To Understand Children Better, We Must Keep Developing the Adults Around Them."
+          title="NEUROPI TEACHER DEVELOPMENT"
+          titleColor="text-msi-orange"
+          footerText={null}
+          readMoreDrawerTitle="NEUROPI TEACHER DEVELOPMENT"
+          readMoreDrawerBody={teacherDevelopmentDrawerBody}
+        >
+          <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
+            The NeuroPi Way depends on the teacher.
+            <br />
+            That is why teacher development is not treated as a one-time induction program.
+            <br />
+            MSI educators continue developing their understanding.
+          </p>
+        </OneJourneySection>
         <MissionCounters />
-        <GalleryStrip />
-
-        <Feedback
-          eyebrow="Every Family Has An MSI Story"
-          title="PARENT STORIES & TESTIMONIALS"
-          description={[
-            'The most meaningful description of a school often comes from the families who experience it every day.',
-            'Hear MSI parents talk about:',
-          ]}
-        />
-
-        <NepNews />
+        <GalleryStrip images={neuroPiWayGalleryImages} />
       </main>
       <ContactUs />
       <Footer />

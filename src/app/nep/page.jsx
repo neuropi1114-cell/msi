@@ -7,7 +7,7 @@ import Feedback from '../../components/home/Feedback';
 import NepHero from '../../components/nep/NepHero';
 import DesignPhilosophy from '../../components/nep/DesignPhilosophy';
 import MissionCounters from '../../components/nep/MissionCounters';
-import GalleryStrip from '../../components/nep/GalleryStrip';
+import GalleryStrip from '../../components/common/GalleryStrip';
 import DualFeatureSection from '../../components/common/DualFeatureSection';
 import NepNews from '../../components/nep/NepNews';
 

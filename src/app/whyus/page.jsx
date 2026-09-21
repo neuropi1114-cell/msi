@@ -15,7 +15,7 @@ import DualFeatureSection from '../../components/common/DualFeatureSection';
 import HomeNeuroPiApproach from '../../components/home/NeuroPiApproach';
 import CreativeLearning from '../../components/parents/CreativeLearning';
 import VideoShowcase from '../../components/home/VideoShowcase';
-import GalleryStrip from '../../components/nep/GalleryStrip';
+import GalleryStrip from '../../components/common/GalleryStrip';
 
 import {
   metadata,

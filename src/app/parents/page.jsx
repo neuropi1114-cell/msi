@@ -14,7 +14,7 @@ import VideoCarousel from '../../components/home/VideoCarousel';
 import Feedback from '../../components/home/Feedback';
 import CreativeLearning from '../../components/parents/CreativeLearning';
 import MissionCounters from '../../components/nep/MissionCounters';
-import GalleryStrip from '../../components/nep/GalleryStrip';
+import GalleryStrip from '../../components/common/GalleryStrip';
 
 export const metadata = {
   title: 'Parents',

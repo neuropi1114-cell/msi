@@ -79,6 +79,7 @@ function VideoCard({ video, index, videoTitleColor = "text-msi-orange" }) {
 }
 
 export default function VideoShowcase({
+  eyebrow = null,
   title = "FEATURED VIDEOS",
   videosList = videos,
   showCarousel = true,
@@ -104,6 +105,16 @@ export default function VideoShowcase({
   return (
     <section className="py-16 bg-[#f7f9fc]">
       <div className="container mx-auto px-4 md:px-12">
+        {eyebrow && (
+          <motion.p
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center text-sm md:text-base font-bold text-msi-orange uppercase tracking-wider mb-2"
+          >
+            {eyebrow}
+          </motion.p>
+        )}
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
