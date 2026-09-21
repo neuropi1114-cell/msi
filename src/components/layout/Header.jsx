@@ -37,7 +37,7 @@ const Header = () => {
     { name: 'Programs', href: '/programs' },
     { name: 'NeuroPi Way', href: '/neuropiway' },
     { name: 'Parents', href: '/parents' },
-    { name: 'Corporate Childcare', href: '/#corporate-childcare' },
+    { name: 'Corporate Childcare', href: '/corporatechildcare' },
   ];
 
   return (
@@ -105,7 +105,7 @@ const Header = () => {
                 href={link.href}
                 className="font-lato font-semibold text-[15px] text-msi-blue hover:text-msi-green transition-colors relative py-1 group"
               >
-                <h3 className="m-0 p-0 text-inherit font-inherit not-italic inline">{link.name}</h3>
+                <span className="inline">{link.name}</span>
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-msi-green transition-all duration-300 group-hover:w-full" />
               </Link>
             </React.Fragment>
@@ -164,7 +164,7 @@ const Header = () => {
                       className="font-bold text-white px-3 py-3 border-b border-white/15 text-sm uppercase tracking-wide hover:bg-[#351C5A] hover:text-white rounded-lg transition-all flex justify-between items-center"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      <h3 className="m-0 p-0 text-inherit font-inherit not-italic">{link.name}</h3>
+                      <span>{link.name}</span>
                       <ChevronRight className="w-4 h-4 text-white/60" />
                     </Link>
                   ))}

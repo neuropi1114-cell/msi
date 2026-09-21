@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { Mail, Phone, MapPin } from 'lucide-react';
 
 const footerLogo = '/images/logo/The-Neuroscientific-European-Childcare-PDF_12-x-4-ft_Backside-1.png.bv_resized_desktop.png.bv.webp';
@@ -108,17 +109,17 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-6 text-white">Navigation</h3>
             <ul className="flex flex-col gap-y-2 !text-white text-sm">
-              <li><a href="/" className="!text-white hover:text-msi-orange transition-colors">Home</a></li>
-              <li><a href="/whyus" className="!text-white hover:text-msi-orange transition-colors">Why Choose Us</a></li>
-              <li><a href="/about" className="!text-white hover:text-msi-orange transition-colors">About Us</a></li>
-              <li><a href="/programs" className="!text-white hover:text-msi-orange transition-colors">Programs</a></li>
-              <li><a href="/franchise-overview" className="!text-white hover:text-msi-orange transition-colors">For School Owners</a></li>
-              <li><a href="/privacy-policy" className="!text-white hover:text-msi-orange transition-colors">Policy Framework</a></li>
-
-              <li><a href="/media" className="!text-white hover:text-msi-orange transition-colors">Media</a></li>
-              <li><a href="/blogs" className="!text-white hover:text-msi-orange transition-colors">Blog</a></li>
-              <li><a href="/admissions" className="!text-white hover:text-msi-orange transition-colors">Enroll</a></li>
-              <li><a href="/contact" className="!text-white hover:text-msi-orange transition-colors">Book A Tour</a></li>
+              <li><Link href="/" className="!text-white hover:text-msi-orange transition-colors">Home</Link></li>
+              <li><Link href="/whyus" className="!text-white hover:text-msi-orange transition-colors">Why Choose Us</Link></li>
+              <li><Link href="/about" className="!text-white hover:text-msi-orange transition-colors">About Us</Link></li>
+              <li><Link href="/programs" className="!text-white hover:text-msi-orange transition-colors">Programs</Link></li>
+              <li><Link href="/corporatechildcare" className="!text-white hover:text-msi-orange transition-colors">Corporate Childcare</Link></li>
+              <li><Link href="/franchise-overview" className="!text-white hover:text-msi-orange transition-colors">For School Owners</Link></li>
+              <li><Link href="/privacy-policy" className="!text-white hover:text-msi-orange transition-colors">Policy Framework</Link></li>
+              <li><Link href="/media-coverage" className="!text-white hover:text-msi-orange transition-colors">Media</Link></li>
+              <li><Link href="/blog" className="!text-white hover:text-msi-orange transition-colors">Blog</Link></li>
+              <li><Link href="/admissions" className="!text-white hover:text-msi-orange transition-colors">Enroll</Link></li>
+              <li><Link href="/contact" className="!text-white hover:text-msi-orange transition-colors">Book A Tour</Link></li>
             </ul>
           </div>
 
