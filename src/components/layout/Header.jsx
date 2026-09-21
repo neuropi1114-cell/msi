@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { Menu, X, Search, ChevronRight, Phone, User } from 'lucide-react';
 
 const mainLogo = '/images/logo/The-Neuroscientific-European-Childcare-PDF_12-x-4-ft_Backside-1.png.bv_resized_desktop.png.bv.webp';
-const emptySubscribe = () => () => {};
+const emptySubscribe = () => () => { };
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,18 +35,17 @@ const Header = () => {
   const navLinks = [
     { name: 'Why MSI', href: '/whyus' },
     { name: 'Programs', href: '/programs' },
-    { name: 'The NeuroPi Way', href: '/theneuropiway' },
+    { name: 'NeuroPi Way', href: '/neuropiway' },
     { name: 'Parents', href: '/parents' },
     { name: 'Corporate Childcare', href: '/#corporate-childcare' },
   ];
 
   return (
     <header
-      className={`sticky top-0 z-40 w-full transition-all duration-300 ${
-        isScrolled
+      className={`sticky top-0 z-40 w-full transition-all duration-300 ${isScrolled
           ? 'bg-white/95 backdrop-blur-md shadow-md py-2.5'
           : 'bg-white/80 backdrop-blur-sm py-3.5 border-b border-gray-100/80'
-      }`}
+        }`}
     >
       <div className="container mx-auto px-4 md:px-12 flex justify-between items-center gap-6">
         {/* Brand Logo */}
@@ -138,15 +137,13 @@ const Header = () => {
       {mounted &&
         createPortal(
           <div
-            className={`fixed inset-0 z-[9999] transition-opacity duration-300 ${
-              isMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
-            }`}
+            className={`fixed inset-0 z-[9999] transition-opacity duration-300 ${isMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
+              }`}
           >
             <div className="fixed inset-0 bg-black/60 backdrop-blur-xs" onClick={() => setIsMenuOpen(false)} />
             <div
-              className={`fixed top-0 right-0 bottom-0 z-[10000] h-full w-[85%] max-w-sm bg-msi-orange shadow-2xl overflow-y-auto transition-transform duration-300 ${
-                isMenuOpen ? 'translate-x-0' : 'translate-x-full'
-              }`}
+              className={`fixed top-0 right-0 bottom-0 z-[10000] h-full w-[85%] max-w-sm bg-msi-orange shadow-2xl overflow-y-auto transition-transform duration-300 ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+                }`}
             >
               <div className="flex justify-end items-center p-4 sticky top-0 bg-msi-orange z-10">
                 <button

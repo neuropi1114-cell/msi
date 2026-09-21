@@ -292,11 +292,11 @@ export const neuroPiSensoryCards = [
 export const metadata = {
   title: 'The Educational Project - The NeuroPi Way',
   description: 'Discover My School ITALY\'s educational project — a neuroscience-based approach that cultivates emotional intelligence, resilience, and a love for learning in every child.',
-  alternates: { canonical: '/theneuropiway' },
+  alternates: { canonical: '/neuropiway' },
   openGraph: {
     title: 'The Educational Project - The NeuroPi Way | My School ITALY',
     description: 'Discover My School ITALY\'s educational project — a neuroscience-based approach that cultivates emotional intelligence, resilience, and a love for learning in every child.',
-    url: '/theneuropiway',
+    url: '/neuropiway',
     siteName: 'My School ITALY',
     locale: 'en_US',
     type: 'website',

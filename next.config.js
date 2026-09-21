@@ -4,12 +4,17 @@ const nextConfig = {
     return [
       {
         source: '/nep',
-        destination: '/theneuropiway',
+        destination: '/neuropiway',
         permanent: true,
       },
       {
         source: '/the-neuropi-way',
-        destination: '/theneuropiway',
+        destination: '/neuropiway',
+        permanent: true,
+      },
+      {
+        source: '/theneuropiway',
+        destination: '/neuropiway',
         permanent: true,
       },
     ];

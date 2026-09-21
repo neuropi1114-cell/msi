@@ -139,7 +139,7 @@ const renderNeuroPIDrawerContent = (title, subtitle) => (
         Where School & Home Become One
       </p>
       <ReadMoreButton
-        href="/theneuropiway"
+        href="/neuropiway"
         text="Discover NeuroPI"
         className="w-full text-center justify-center mt-2 font-bold"
       />

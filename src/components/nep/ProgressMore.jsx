@@ -85,7 +85,7 @@ export default function ProgressMore() {
               For the methodology behind developmental observation:
             </p>
             <div>
-              <Link href="/theneuropiway" className="inline-block px-4 py-2 rounded-xl bg-msi-yellow text-msi-purple font-extrabold text-sm uppercase tracking-wide hover:bg-yellow-300 transition-colors shadow-xs">
+              <Link href="/neuropiway" className="inline-block px-4 py-2 rounded-xl bg-msi-yellow text-msi-purple font-extrabold text-sm uppercase tracking-wide hover:bg-yellow-300 transition-colors shadow-xs">
                 Explore The NeuroPi Way &rarr;
               </Link>
             </div>

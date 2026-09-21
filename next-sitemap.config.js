@@ -25,7 +25,7 @@ export default {
       '/handbook': 0.6,
       '/media-coverage': 0.6,
       '/msi-venture-philanthropy': 0.6,
-      '/theneuropiway': 0.8,
+      '/neuropiway': 0.8,
       '/video-gallery': 0.6,
     };
     return {
