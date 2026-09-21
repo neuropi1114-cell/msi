@@ -87,7 +87,7 @@ const Hero = () => {
       }}
       onFocus={() => setIsPaused(true)}
       onBlur={() => setIsPaused(false)}
-      className="relative min-h-screen w-full overflow-hidden bg-msi-charcoal"
+      className="relative h-[calc(100vh-60px)] md:h-[calc(100vh-116px)] min-h-[500px] max-h-[900px] w-full overflow-hidden bg-msi-charcoal"
       aria-label="Hero banner"
     >
       <h1 className="sr-only">
@@ -128,7 +128,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0, rotate: -2 }}
           exit={{ opacity: 0, y: -20, rotate: 0 }}
           transition={{ duration: 0.9, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-          className="hidden lg:block absolute z-20 right-[4%] bottom-[8%] w-72 h-72 lg:w-80 lg:h-80 rounded-2xl overflow-hidden shadow-2xl border-2 border-white/20 bg-white/10 backdrop-blur-sm"
+          className="hidden lg:block absolute z-20 right-[4%] bottom-[12%] w-64 h-64 lg:w-72 lg:h-72 xl:w-80 xl:h-80 rounded-2xl overflow-hidden shadow-2xl border-2 border-white/20 bg-white/10 backdrop-blur-sm"
         >
           <div
             ref={accentRef}
@@ -141,7 +141,7 @@ const Hero = () => {
       </AnimatePresence>
 
       {/* Content — left-aligned, bottom composition */}
-      <div className="relative z-20 container mx-auto px-6 md:px-12 lg:px-20 h-full min-h-screen flex flex-col justify-end pb-20 pt-28">
+      <div className="relative z-20 container mx-auto px-6 md:px-12 lg:px-20 h-full flex flex-col justify-end pb-16 md:pb-20 pt-10">
         <AnimatePresence initial={false} mode="wait">
           <motion.div
             key={current}
@@ -149,11 +149,11 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.6 }}
-            className="max-w-3xl w-full bg-black/15 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-white/10 shadow-lg overflow-hidden mb-4"
+            className="max-w-3xl w-full bg-black/20 backdrop-blur-md rounded-2xl p-5 sm:p-6 md:p-8 border border-white/10 shadow-lg overflow-hidden mb-6 md:mb-8"
           >
             {/* Oversized display title */}
             <h2
-              className="font-linotte text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white font-medium mb-8 leading-[1.15] break-words tracking-tight"
+              className="font-linotte text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white font-medium mb-4 sm:mb-6 leading-[1.15] break-words tracking-tight"
             >
               {slide.title}
             </h2>
@@ -166,7 +166,7 @@ const Hero = () => {
             >
               <Link
                 href={slide.cta.href}
-                className="group inline-flex items-center gap-3 text-white text-lg font-medium border-b-2 border-msi-gold/60 pb-1 hover:border-msi-gold transition-colors"
+                className="group inline-flex items-center gap-3 text-white text-base sm:text-lg font-medium border-b-2 border-msi-gold/60 pb-1 hover:border-msi-gold transition-colors"
               >
                 {slide.cta.text}
                 <svg
@@ -183,8 +183,8 @@ const Hero = () => {
         </AnimatePresence>
 
         {/* Slide indicator — minimal, editorial */}
-        <div className="absolute bottom-10 left-6 md:left-12 lg:left-20 flex items-center gap-4 z-20">
-          <span className="font-linotte text-white/40 text-sm tabular-nums">
+        <div className="absolute bottom-5 md:bottom-6 left-6 md:left-12 lg:left-20 flex items-center gap-4 z-20">
+          <span className="font-linotte text-white/60 text-xs sm:text-sm tabular-nums">
             {String(current + 1).padStart(2, '0')} / {String(slides.length).padStart(2, '0')}
           </span>
           <div className="flex gap-2">
@@ -192,7 +192,7 @@ const Hero = () => {
               <button
                 key={i}
                 onClick={() => setCurrent(i)}
-                className={`h-[2px] transition-all duration-500 ${i === current ? 'w-8 bg-msi-gold' : 'w-4 bg-white/30 hover:bg-white/50'
+                className={`h-[2px] transition-all duration-500 cursor-pointer ${i === current ? 'w-8 bg-msi-gold' : 'w-4 bg-white/30 hover:bg-white/50'
                   }`}
                 aria-label={`Go to slide ${i + 1}`}
               />
@@ -201,10 +201,10 @@ const Hero = () => {
         </div>
 
         {/* Nav arrows — minimal */}
-        <div className="absolute bottom-10 right-6 md:right-12 lg:right-20 flex items-center gap-3 z-20">
+        <div className="absolute bottom-5 md:bottom-6 right-6 md:right-12 lg:right-20 flex items-center gap-3 z-20">
           <button
             onClick={prev}
-            className="w-10 h-10 rounded-full border border-white/20 text-white/60 flex items-center justify-center hover:border-msi-gold hover:text-msi-gold transition-colors"
+            className="w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-white/30 text-white/80 flex items-center justify-center hover:border-msi-gold hover:text-msi-gold transition-colors cursor-pointer"
             aria-label="Previous slide"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -213,7 +213,7 @@ const Hero = () => {
           </button>
           <button
             onClick={next}
-            className="w-10 h-10 rounded-full border border-white/20 text-white/60 flex items-center justify-center hover:border-msi-gold hover:text-msi-gold transition-colors"
+            className="w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-white/30 text-white/80 flex items-center justify-center hover:border-msi-gold hover:text-msi-gold transition-colors cursor-pointer"
             aria-label="Next slide"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
