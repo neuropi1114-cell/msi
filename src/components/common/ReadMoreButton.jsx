@@ -13,7 +13,7 @@ export default function ReadMoreButton({
   ...props
 }) {
   const content = children || text;
-  const baseClasses = `font-linotte inline-block w-fit self-start text-white font-[200] py-3 px-10 rounded-full shadow-lg transform hover:-translate-y-1 transition-all duration-300 ${bgColor} ${className}`;
+  const baseClasses = `font-linotte inline-flex items-center justify-center text-white font-bold text-sm sm:text-base py-2.5 px-8 rounded-full shadow-md hover:shadow-xl hover:scale-105 active:scale-95 transition-all duration-300 cursor-pointer ${bgColor} ${className}`;
 
   if (href) {
     const isExternal = href.startsWith('http://') || href.startsWith('https://');

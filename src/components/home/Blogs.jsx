@@ -98,6 +98,7 @@ export default function Blogs() {
                 </h3>
                 <a
                   href={post.link}
+                  className="mt-auto inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-msi-orange hover:text-msi-purple transition-colors pt-3"
                 >
                   Read More <span aria-hidden="true">&raquo;</span>
                 </a>
