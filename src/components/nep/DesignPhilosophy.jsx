@@ -31,6 +31,8 @@ export default function DesignPhilosophy({
   bottomP1 = "A child's day at MSI is designed around an age-appropriate rhythm rather than continuous instruction.",
   bottomP2 = "Depending on age and program, a day may move through:",
   bottomP3 = null,
+  bottomP1Class = null,
+  bottomP2Class = null,
   bottomDrawerTitle = null,
   bottomDrawerEyebrow = null,
   bottomDrawerBody = null,
@@ -61,7 +63,7 @@ export default function DesignPhilosophy({
                 />
               </div>
             </ScrollReveal>
-            <ScrollReveal direction="left" delay={0.2} className="flex flex-col justify-center">
+            <ScrollReveal direction="left" delay={0.2} className="flex flex-col justify-center items-start">
               {eyebrow && (
                 <h3 className={` ${eyebrowClass}`}>
                   {eyebrow}
@@ -78,7 +80,7 @@ export default function DesignPhilosophy({
               {p3 && <p className="text-msi-cream text-[15px] md:text-[16px] leading-relaxed mb-3">{p3}</p>}
 
               {hasCustomDrawer ? (
-                <div className="w-fit">
+                <div className="w-fit self-start">
                   <ReadMoreButton
                     onClick={() => setOpen(true)}
                     aria-haspopup="dialog"
@@ -113,7 +115,7 @@ export default function DesignPhilosophy({
           <div className="container mx-auto px-4 md:px-12 max-w-[1240px]">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-start">
               <div className="hidden md:block"></div>
-              <ScrollReveal direction="up" delay={0.2} className="flex flex-col justify-center">
+              <ScrollReveal direction="up" delay={0.2} className="flex flex-col justify-center items-start">
                 {bottomEyebrow && (
                   <h3 className=" text-msi-blue ">
                     {bottomEyebrow}
@@ -124,12 +126,12 @@ export default function DesignPhilosophy({
                     {bottomTitle}
                   </h2>
                 )}
-                {bottomP1 && <p className="text-gray-600 text-[15px] md:text-[16px] leading-relaxed mb-1">{bottomP1}</p>}
-                {bottomP2 && <p className={`text-gray-600 text-[15px] md:text-[16px] leading-relaxed ${bottomP3 ? 'mb-1' : 'mb-3'}`}>{bottomP2}</p>}
+                {bottomP1 && <p className={bottomP1Class !== null ? bottomP1Class : "text-gray-600 text-[15px] md:text-[16px] leading-relaxed mb-1"}>{bottomP1}</p>}
+                {bottomP2 && <p className={bottomP2Class !== null ? bottomP2Class : `text-gray-600 text-[15px] md:text-[16px] leading-relaxed ${bottomP3 ? 'mb-1' : 'mb-3'}`}>{bottomP2}</p>}
                 {bottomP3 && <p className="text-gray-600 text-[15px] md:text-[16px] leading-relaxed mb-3">{bottomP3}</p>}
 
                 {hasBottomDrawer && (
-                  <div className="w-fit">
+                  <div className="w-fit self-start">
                     <ReadMoreButton
                       onClick={() => setBottomOpen(true)}
                       aria-haspopup="dialog"

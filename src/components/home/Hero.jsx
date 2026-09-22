@@ -13,7 +13,7 @@ const slides = [
   },
   {
     image: '/images/hero/hero-slide-2.png',
-    bgPosition: 'bg-center',
+    bgPosition: 'bg-[center_top]',
     accentImage: '/images/hero/hero-slide-2-accent.webp',
     title: 'LET CHILDHOOD BE EXTRAORDINARY',
     cta: { text: 'Explore Why MSI', href: '/neuropiway' },

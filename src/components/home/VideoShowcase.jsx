@@ -32,7 +32,7 @@ function getEmbedUrl(url) {
   return url;
 }
 
-function VideoCard({ video, index, videoTitleColor = "text-msi-orange" }) {
+function VideoCard({ video, index, videoTitleColor = "text-msi-orange", aspect = "portrait" }) {
   const ref = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -50,6 +50,11 @@ function VideoCard({ video, index, videoTitleColor = "text-msi-orange" }) {
     return () => observer.disconnect();
   }, []);
 
+  const aspectClass =
+    aspect === 'portrait' || aspect === 'aspect-[9/16]'
+      ? 'aspect-[9/16] w-full max-w-[280px] mx-auto'
+      : aspect;
+
   return (
     <motion.div
       ref={ref}
@@ -57,9 +62,9 @@ function VideoCard({ video, index, videoTitleColor = "text-msi-orange" }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: index * 0.15 }}
-      className="flex flex-col h-full"
+      className="flex flex-col h-full items-center"
     >
-      <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-md bg-white border border-gray-100">
+      <div className={`relative w-full ${aspectClass} rounded-2xl overflow-hidden shadow-lg bg-black border border-gray-100`}>
         {isVisible && (
           <iframe
             src={getEmbedUrl(video.url)}
@@ -71,7 +76,7 @@ function VideoCard({ video, index, videoTitleColor = "text-msi-orange" }) {
           />
         )}
       </div>
-      <h3 className={`mt-4 text-center font-bold text-lg tracking-wide not-italic ${videoTitleColor}`}>
+      <h3 className={`mt-3 text-center font-bold text-base md:text-lg tracking-wide not-italic ${videoTitleColor}`}>
         {video.title}
       </h3>
     </motion.div>
@@ -85,14 +90,17 @@ export default function VideoShowcase({
   showCarousel = true,
   titleColor = "text-msi-orange",
   videoTitleColor = "text-msi-orange",
+  aspect = "portrait",
 }) {
   const [current, setCurrent] = useState(0);
   const containerRef = useRef(null);
 
+  const isPortrait = aspect === 'portrait' || aspect === 'aspect-[9/16]';
+
   const scroll = (dir) => {
     const container = containerRef.current;
     if (!container) return;
-    const cardWidth = container.querySelector('div:first-child')?.offsetWidth || 340;
+    const cardWidth = container.querySelector('div:first-child')?.offsetWidth || (isPortrait ? 260 : 340);
     const gap = 24;
     const scrollAmount = cardWidth + gap;
     const newScroll = container.scrollLeft + (dir === 'next' ? scrollAmount : -scrollAmount);
@@ -125,12 +133,12 @@ export default function VideoShowcase({
         </motion.h2>
 
         {showCarousel ? (
-          <div className="relative">
+          <div className="relative px-6 md:px-12">
             {/* Previous Button */}
             <button
               onClick={() => scroll('prev')}
               aria-label="Previous video"
-              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-3 md:-translate-x-5 z-10 w-11 h-11 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-100 transition-colors border border-gray-100"
+              className="absolute -left-2 md:-left-4 top-1/2 -translate-y-1/2 z-20 w-11 h-11 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-100 transition-colors border border-gray-100"
             >
               <svg className="w-5 h-5 text-gray-700" viewBox="0 0 1000 1000" fill="currentColor">
                 <path d="M646 125C629 125 613 133 604 142L308 442C296 454 292 471 292 487 292 504 296 521 308 533L604 854C617 867 629 875 646 875 663 875 679 871 692 858 704 846 713 829 713 812 713 796 708 779 692 767L438 487 692 225C700 217 708 204 708 187 708 171 704 154 692 142 675 129 663 125 646 125Z" />
@@ -141,7 +149,7 @@ export default function VideoShowcase({
             <button
               onClick={() => scroll('next')}
               aria-label="Next video"
-              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-3 md:translate-x-5 z-10 w-11 h-11 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-100 transition-colors border border-gray-100"
+              className="absolute -right-2 md:-right-4 top-1/2 -translate-y-1/2 z-20 w-11 h-11 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-100 transition-colors border border-gray-100"
             >
               <svg className="w-5 h-5 text-gray-700" viewBox="0 0 1000 1000" fill="currentColor">
                 <path d="M696 533C708 521 713 504 713 487 713 471 708 454 696 446L400 146C388 133 375 125 354 125 338 125 325 129 313 142 300 154 292 171 292 187 292 204 296 221 308 233L563 492 304 771C292 783 288 800 288 817 288 833 296 850 308 863 321 871 338 875 354 875 371 875 388 867 400 854L696 533Z" />
@@ -151,12 +159,24 @@ export default function VideoShowcase({
             {/* Carousel Track */}
             <div
               ref={containerRef}
-              className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth snap-x snap-mandatory py-4 px-2"
+              className="flex gap-5 md:gap-6 overflow-x-auto scrollbar-hide scroll-smooth snap-x snap-mandatory py-4 px-3 justify-start xl:justify-center"
               style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
             >
               {videosList.map((video, index) => (
-                <div key={video.id || index} className="min-w-[280px] sm:min-w-[320px] md:min-w-[360px] snap-start flex-shrink-0">
-                  <VideoCard video={video} index={index} videoTitleColor={videoTitleColor} />
+                <div
+                  key={video.id || index}
+                  className={`${
+                    isPortrait
+                      ? 'w-[200px] sm:w-[230px] md:w-[245px] lg:w-[255px]'
+                      : 'min-w-[280px] sm:min-w-[320px] md:min-w-[360px]'
+                  } snap-start flex-shrink-0`}
+                >
+                  <VideoCard
+                    video={video}
+                    index={index}
+                    videoTitleColor={videoTitleColor}
+                    aspect={aspect}
+                  />
                 </div>
               ))}
             </div>
@@ -170,7 +190,7 @@ export default function VideoShowcase({
                   onClick={() => {
                     const container = containerRef.current;
                     if (!container) return;
-                    const cardWidth = container.querySelector('div:first-child')?.offsetWidth || 340;
+                    const cardWidth = container.querySelector('div:first-child')?.offsetWidth || (isPortrait ? 260 : 340);
                     container.scrollTo({ left: i * (cardWidth + 24), behavior: 'smooth' });
                     setCurrent(i);
                   }}
@@ -180,10 +200,15 @@ export default function VideoShowcase({
             </div>
           </div>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 justify-items-center">
             {videosList.map((video, index) => (
               <div key={video.id || index} className="w-full">
-                <VideoCard video={video} index={index} videoTitleColor={videoTitleColor} />
+                <VideoCard
+                  video={video}
+                  index={index}
+                  videoTitleColor={videoTitleColor}
+                  aspect={aspect}
+                />
               </div>
             ))}
           </div>
