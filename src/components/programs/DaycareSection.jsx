@@ -1,39 +1,6 @@
 import React from 'react';
 import DesignPhilosophy from '../nep/DesignPhilosophy';
-
-const daycareDrawerBody = (
-  <div className="mt-4 space-y-4 text-gray-600 text-base leading-relaxed">
-    <p>
-      Daycare at MSI is more than supervision after school.
-    </p>
-    <p>
-      Children remain within a familiar environment where care, relationships, play, meals, rest, movement, learning and friendships continue naturally throughout the day.
-    </p>
-    <p>
-      Parents remain connected to their child&apos;s experiences, helping create continuity between home, school and daycare.
-    </p>
-    <p className="font-semibold text-msi-purple">
-      You focus on your work. We remain focused on your child.
-    </p>
-  </div>
-);
-
-const twentyFourHourCareDrawerBody = (
-  <div className="mt-4 space-y-4 text-gray-600 text-base leading-relaxed">
-    <p>
-      Some professions don&apos;t operate from nine to five.
-    </p>
-    <p>
-      At selected locations, MSI can provide extended childcare solutions designed for parents working night shifts, rotating schedules, healthcare, technology, emergency services and other non-traditional working hours.
-    </p>
-    <p>
-      Availability and operating hours vary by centre.
-    </p>
-    <p className="font-semibold text-msi-purple">
-      Because modern families need modern childcare.
-    </p>
-  </div>
-);
+import { daycareDrawerBody, twentyFourHourCareDrawerBody } from '../../app/programs/programsdata';
 
 export default function DaycareSection() {
   return (

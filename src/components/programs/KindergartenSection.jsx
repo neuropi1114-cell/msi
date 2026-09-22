@@ -1,39 +1,6 @@
 import React from 'react';
 import DualFeatureSection from '../common/DualFeatureSection';
-
-const k1DrawerBody = (
-  <div className="mt-4 space-y-4 text-gray-600 text-base leading-relaxed">
-    <p>
-      As children&apos;s language, attention and independence develop, K1 introduces increasingly structured learning while preserving the joy of discovery.
-    </p>
-    <p>
-      Children build foundations in language and literacy, mathematics, science, understanding the world, communication, creativity, physical development and social-emotional learning.
-    </p>
-    <p>
-      Stories and real experiences help children connect what they learn with the world around them.
-    </p>
-    <p className="font-semibold text-msi-purple">
-      Learning becomes meaningful when children can connect it.
-    </p>
-  </div>
-);
-
-const k2DrawerBody = (
-  <div className="mt-4 space-y-4 text-gray-600 text-base leading-relaxed">
-    <p>
-      K2 builds confidence and independence as children prepare for the next stage of formal schooling.
-    </p>
-    <p>
-      Children strengthen reading readiness, writing, mathematical thinking, scientific curiosity, communication, problem-solving, creativity and independent learning habits.
-    </p>
-    <p>
-      Our objective is not simply to prepare children for the next classroom. It is to help them become curious thinkers, confident communicators and enthusiastic learners.
-    </p>
-    <p className="font-semibold text-msi-purple">
-      Ready for School. Ready for Learning. Ready for What Comes Next.
-    </p>
-  </div>
-);
+import { k1DrawerBody, k2DrawerBody } from '../../app/programs/programsdata';
 
 export default function KindergartenSection() {
   return (

@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import { ArrowRight } from 'lucide-react';
 
 export default function ReadMoreButton({
   href,
@@ -10,10 +11,20 @@ export default function ReadMoreButton({
   target,
   rel,
   onClick,
+  showArrow = true,
   ...props
 }) {
   const content = children || text;
-  const baseClasses = `font-linotte inline-flex items-center justify-center text-white font-bold text-sm sm:text-base py-2.5 px-8 rounded-full shadow-md hover:shadow-xl hover:scale-105 active:scale-95 transition-all duration-300 cursor-pointer w-fit self-start ${bgColor} ${className}`;
+  const baseClasses = `group font-linotte inline-flex items-center justify-center gap-2 text-white font-bold text-sm sm:text-base py-2.5 px-7 rounded-full shadow-md hover:shadow-lg hover:scale-[1.03] active:scale-[0.98] transition-all duration-300 cursor-pointer w-fit self-start ${bgColor} ${className}`;
+
+  const innerContent = (
+    <>
+      <span>{content}</span>
+      {showArrow && (
+        <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+      )}
+    </>
+  );
 
   if (href) {
     const isExternal = href.startsWith('http://') || href.startsWith('https://');
@@ -26,20 +37,20 @@ export default function ReadMoreButton({
           className={baseClasses}
           {...props}
         >
-          {content}
+          {innerContent}
         </a>
       );
     }
     return (
       <Link href={href} target={target} rel={rel} className={baseClasses} {...props}>
-        {content}
+        {innerContent}
       </Link>
     );
   }
 
   return (
     <button type="button" onClick={onClick} className={baseClasses} {...props}>
-      {content}
+      {innerContent}
     </button>
   );
 }

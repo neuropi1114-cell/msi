@@ -48,132 +48,214 @@ export const centreVideos = [
   },
 ];
 
+/* --- Rich Beautiful Card Drawer Bodies for /whyus --- */
+
 export const storyDrawerBody = (
-  <div className="space-y-4 text-gray-700 text-sm leading-relaxed">
-    <p>
-      My School ITALY began with a simple belief: early childhood education should respect the individuality of every child.
-    </p>
-    <p>
-      Over the years, that belief has grown into an integrated preschool, crèche and daycare ecosystem where learning, care, development and family partnership come together.
-    </p>
-    <p>
-      Today, My School ITALY is Powered by NeuroPi, bringing neuroscience-informed thinking into everyday early-years practice.
-    </p>
-    <div className="pt-4 border-t border-gray-100">
-      <h4 className="text-base font-bold text-msi-blue mb-2">
+  <div className="space-y-6 text-gray-700 text-sm sm:text-base leading-relaxed">
+    <div className="p-5 rounded-2xl bg-gradient-to-br from-purple-50 via-white to-orange-50 border border-purple-100 shadow-xs">
+      <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-purple/10 text-msi-purple mb-2">
+        European Early Education
+      </span>
+      <h3 className="text-xl sm:text-2xl font-black text-msi-orange tracking-tight uppercase">
+        OUR STORY
+      </h3>
+      <p className="mt-3 text-gray-700 font-medium leading-relaxed">
+        My School ITALY began with a simple belief: early childhood education should respect the individuality of every child.
+      </p>
+    </div>
+
+    <div className="space-y-3">
+      <div className="p-4 bg-purple-50/90 border-l-4 border-msi-purple rounded-r-xl shadow-2xs">
+        <h4 className="font-extrabold text-msi-purple text-base uppercase mb-1">An Integrated Ecosystem</h4>
+        <p className="text-gray-800 font-medium text-sm sm:text-base">
+          Over the years, that belief has grown into an integrated preschool, crèche and daycare ecosystem where learning, care, development and family partnership come together.
+        </p>
+      </div>
+
+      <div className="p-4 bg-blue-50/90 border-l-4 border-msi-blue rounded-r-xl shadow-2xs">
+        <h4 className="font-extrabold text-msi-blue text-base uppercase mb-1">Powered by NeuroPi</h4>
+        <p className="text-gray-800 font-medium text-sm sm:text-base">
+          Today, My School ITALY is Powered by NeuroPi, bringing neuroscience-informed thinking into everyday early-years practice.
+        </p>
+      </div>
+    </div>
+
+    <div className="p-5 rounded-2xl bg-white border border-gray-100 shadow-md">
+      <h4 className="font-extrabold text-msi-blue text-base uppercase tracking-wider mb-2">
         More Than a Preschool. A Place to Understand Every Child.
       </h4>
-      <p className="mb-2">
-        The early years shape how a child learns, connects, communicates and experiences the world.
-      </p>
-      <p>
+      <p className="text-gray-700 font-medium text-sm sm:text-base">
         At My School ITALY, education and care come together in an environment designed around the developing child — combining European early-years principles, neuroscience-informed practice, meaningful relationships, movement, stories, nutrition and emotional wellbeing.
       </p>
     </div>
-    <p className="font-bold text-msi-orange pt-3 text-base text-center border-t border-gray-100">
-      Every Child. Every Brain. Every Future
-    </p>
+
+    <div className="p-6 rounded-2xl bg-gradient-to-r from-msi-purple to-[#271344] text-white shadow-lg text-center">
+      <h4 className="font-extrabold text-msi-yellow text-base sm:text-lg uppercase tracking-wide">
+        Every Child &bull; Every Brain &bull; Every Future
+      </h4>
+    </div>
   </div>
 );
 
 export const philosophyDrawerBody = (
-  <div className="space-y-4 text-gray-700 text-sm leading-relaxed">
-    <p>
-      Children learn when they feel safe enough to explore, curious enough to question and confident enough to try.
-    </p>
-    <p>
-      We therefore create experiences that encourage children to wonder, communicate, move, imagine, experiment, create and discover.
-    </p>
-    <p>
-      We do not believe every child should develop in exactly the same way or at exactly the same pace. We meet the child where they are — and help them grow from there.
-    </p>
+  <div className="space-y-6 text-gray-700 text-sm sm:text-base leading-relaxed">
+    <div className="p-5 rounded-2xl bg-gradient-to-br from-yellow-50 via-white to-purple-50 border border-yellow-200 shadow-xs">
+      <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-yellow/20 text-msi-purple mb-2">
+        Childhood Is Not Preparation for Life. Childhood Is Life.
+      </span>
+      <h3 className="text-xl sm:text-2xl font-black text-msi-orange tracking-tight uppercase">
+        OUR PHILOSOPHY
+      </h3>
+      <p className="mt-3 text-gray-700 font-medium leading-relaxed">
+        Children learn when they feel safe enough to explore, curious enough to question and confident enough to try.
+      </p>
+    </div>
+
+    <div className="p-5 rounded-2xl bg-white border border-gray-100 shadow-md">
+      <h4 className="font-extrabold text-msi-purple text-base uppercase tracking-wider mb-3">
+        Core Pillars of Growth:
+      </h4>
+      <div className="flex flex-wrap gap-2.5">
+        {['Wonder & Curiosity', 'Communication', 'Active Movement', 'Imaginative Play', 'Experimentation', 'Hands-on Discovery'].map((item, idx) => (
+          <span key={idx} className="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-amber-50/90 text-msi-orange border border-amber-100 shadow-2xs">
+            {item}
+          </span>
+        ))}
+      </div>
+    </div>
+
+    <div className="p-6 rounded-2xl bg-gradient-to-r from-msi-purple to-[#271344] text-white shadow-lg text-center">
+      <h4 className="font-extrabold text-msi-yellow text-base sm:text-lg uppercase tracking-wide">
+        We meet the child where they are &mdash; and help them grow from there.
+      </h4>
+    </div>
   </div>
 );
 
 export const europeanApproachDrawerBody = (
-  <div className="space-y-4 text-gray-700 text-sm leading-relaxed">
-    <p>
-      Our European-inspired approach respects childhood as a period of exploration and discovery.
-    </p>
-    <p className="font-bold text-msi-purple">
-      Children learn through:
-    </p>
-    <p className="font-semibold text-msi-orange">
-      Play &bull; Stories &bull; Conversation &bull; Nature &bull; Movement &bull; Music &bull; Art &bull; Exploration &bull; Hands-on Experiences
-    </p>
-    <div className="pt-3 border-t border-gray-100 space-y-2">
-      <p>
-        Teachers guide rather than dominate. Questions are welcomed. Curiosity is encouraged.
+  <div className="space-y-6 text-gray-700 text-sm sm:text-base leading-relaxed">
+    <div className="p-5 rounded-2xl bg-gradient-to-br from-purple-50 via-white to-blue-50 border border-purple-100 shadow-xs">
+      <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-purple/10 text-msi-purple mb-2">
+        Less Pressure. More Purposeful Learning.
+      </span>
+      <h3 className="text-xl sm:text-2xl font-black text-msi-purple tracking-tight uppercase">
+        THE EUROPEAN EARLY YEARS APPROACH
+      </h3>
+      <p className="mt-3 text-gray-700 font-medium leading-relaxed">
+        Our European-inspired approach respects childhood as a period of exploration and discovery rather than rigid instruction.
       </p>
-      <p>
-        Learning connects naturally across language, mathematics, science, creativity and the world around us.
+    </div>
+
+    <div className="p-5 rounded-2xl bg-white border border-gray-100 shadow-md">
+      <h4 className="font-extrabold text-msi-purple text-base uppercase tracking-wider mb-3">
+        Children Learn Through:
+      </h4>
+      <div className="flex flex-wrap gap-2.5">
+        {['Play', 'Stories', 'Conversation', 'Nature', 'Movement', 'Music', 'Art', 'Exploration', 'Hands-on Experiences'].map((item, idx) => (
+          <span key={idx} className="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-purple-50/90 text-msi-purple border border-purple-100 shadow-2xs">
+            {item}
+          </span>
+        ))}
+      </div>
+    </div>
+
+    <div className="p-4 bg-purple-50/90 border-l-4 border-msi-purple rounded-r-xl shadow-2xs">
+      <p className="text-gray-800 font-medium text-sm sm:text-base">
+        Teachers guide rather than dominate. Questions are welcomed. Curiosity is encouraged, and learning connects naturally across language, mathematics, science and creativity.
       </p>
     </div>
   </div>
 );
 
 export const learningEnvironmentDrawerBody = (
-  <div className="space-y-4 text-gray-600 text-sm leading-relaxed">
-    <p>
-      A child&apos;s environment influences how they feel, move, interact and learn.
-    </p>
-    <p>
-      MSI environments are designed to be welcoming, organised, stimulating and child-friendly, with spaces for active learning as well as quieter moments.
-    </p>
-    <p className="font-bold text-msi-purple">
-      Children can move between:
-    </p>
-    <p className="font-semibold text-msi-orange">
-      Learning &bull; Reading &bull; Creating &bull; Building &bull; Pretend Play &bull; Movement &bull; Rest &bull; Social Interaction
-    </p>
-    <div className="pt-3 border-t border-gray-100">
-      <p className="font-bold text-msi-blue mb-1">
-        The objective is simple:
+  <div className="space-y-6 text-gray-700 text-sm sm:text-base leading-relaxed">
+    <div className="p-5 rounded-2xl bg-gradient-to-br from-blue-50 via-white to-green-50 border border-blue-100 shadow-xs">
+      <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-blue/10 text-msi-blue mb-2">
+        Designed for Growing Minds
+      </span>
+      <h3 className="text-xl sm:text-2xl font-black text-msi-blue tracking-tight uppercase">
+        OUR LEARNING ENVIRONMENT
+      </h3>
+      <p className="mt-3 text-gray-700 font-medium leading-relaxed">
+        A child&apos;s environment influences how they feel, move, interact and learn. MSI environments are welcoming, organized, stimulating and child-friendly.
       </p>
-      <p className="font-medium text-gray-800">
+    </div>
+
+    <div className="p-5 rounded-2xl bg-white border border-gray-100 shadow-md">
+      <h4 className="font-extrabold text-msi-purple text-base uppercase tracking-wider mb-3">
+        Children Move Seamlessly Between:
+      </h4>
+      <div className="flex flex-wrap gap-2.5">
+        {['Learning Centers', 'Reading Corners', 'Creative Arts', 'Building & STEAM', 'Pretend Play', 'Movement', 'Rest', 'Social Interaction'].map((item, idx) => (
+          <span key={idx} className="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-blue-50/90 text-msi-blue border border-blue-100 shadow-2xs">
+            {item}
+          </span>
+        ))}
+      </div>
+    </div>
+
+    <div className="p-6 rounded-2xl bg-gradient-to-r from-msi-purple to-[#271344] text-white shadow-lg text-center">
+      <h4 className="font-extrabold text-msi-yellow text-base sm:text-lg uppercase tracking-wide">
         Create an environment in which children feel secure enough to explore and inspired enough to learn.
-      </p>
+      </h4>
     </div>
   </div>
 );
 
 export const booksStoriesDrawerBody = (
-  <div className="space-y-4 text-gray-700 text-sm leading-relaxed">
-    <p>
-      Stories are at the heart of My School ITALY. Our original books and learning materials take children into worlds of animals, nature, people, places and discovery &mdash; while naturally connecting learning across subjects.
-    </p>
-    <div className="pt-2">
-      <p className="font-bold text-msi-purple mb-1">A story can lead into:</p>
-      <p className="font-semibold text-msi-orange">
+  <div className="space-y-6 text-gray-700 text-sm sm:text-base leading-relaxed">
+    <div className="p-5 rounded-2xl bg-gradient-to-br from-purple-50 via-white to-blue-50 border border-purple-100 shadow-xs">
+      <h3 className="text-xl sm:text-2xl font-black text-msi-purple tracking-tight uppercase">
+        OUR BOOKS &amp; STORIES
+      </h3>
+      <p className="mt-3 text-gray-700 font-medium leading-relaxed">
+        Stories are at the heart of My School ITALY. Our original books and learning materials take children into worlds of animals, nature, people, places and discovery.
+      </p>
+    </div>
+
+    <div className="p-5 rounded-2xl bg-gradient-to-r from-msi-purple/10 to-msi-blue/5 border-l-4 border-msi-purple">
+      <p className="font-bold text-msi-purple text-base mb-1">A story can lead into:</p>
+      <p className="font-semibold text-msi-orange text-sm sm:text-base">
         Language &rarr; Mathematics &rarr; Science &rarr; Social Understanding &rarr; Creativity &rarr; Movement &rarr; Values
       </p>
     </div>
-    <div className="pt-2">
-      <p className="font-bold text-msi-purple mb-1">Our learning journey follows a simple rhythm:</p>
-      <p className="font-bold text-msi-blue tracking-wide text-xs md:text-sm">
+
+    <div className="p-5 rounded-2xl bg-msi-blue/5 border-l-4 border-msi-blue">
+      <p className="font-bold text-msi-purple text-base mb-1">Our learning journey follows a simple rhythm:</p>
+      <p className="font-bold text-msi-blue tracking-wide text-xs sm:text-sm">
         LISTEN &rarr; WATCH &rarr; CONNECT &rarr; PRACTISE &rarr; MOVE &amp; CREATE &rarr; PERFORM
       </p>
     </div>
-    <p className="pt-2 border-t border-gray-100">
-      Through stories, we want children not only to remember what they learned, but also to remain curious about the world they are growing into.
-    </p>
   </div>
 );
 
 export const teachersDrawerBody = (
-  <div className="space-y-4 text-gray-700 text-sm leading-relaxed">
-    <div className="space-y-2 font-medium text-gray-800">
-      <p>Children need teachers who notice.</p>
-      <p>Teachers who listen.</p>
-      <p>Teachers who observe.</p>
-      <p>Teachers who understand when to guide &mdash; and when to allow discovery.</p>
+  <div className="space-y-6 text-gray-700 text-sm sm:text-base leading-relaxed">
+    <div className="p-5 rounded-2xl bg-gradient-to-br from-orange-50 via-white to-purple-50 border border-orange-100 shadow-xs">
+      <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-orange/10 text-msi-orange mb-2">
+        The Most Important Technology In A Classroom Is Still A Caring Adult
+      </span>
+      <h3 className="text-xl sm:text-2xl font-black text-msi-purple tracking-tight uppercase">
+        OUR TEACHERS
+      </h3>
+      <div className="mt-3 space-y-1.5 font-bold text-msi-purple text-base sm:text-lg">
+        <p>&bull; Children need teachers who notice.</p>
+        <p>&bull; Teachers who listen.</p>
+        <p>&bull; Teachers who observe.</p>
+        <p>&bull; Teachers who understand when to guide &mdash; and when to allow discovery.</p>
+      </div>
     </div>
-    <p className="pt-2 border-t border-gray-100">
-      MSI educators receive continuous development in our classroom approach, child observation, communication, engagement and emotional wellbeing.
-    </p>
-    <div className="pt-2 border-t border-gray-100 space-y-1">
-      <p className="font-medium text-gray-700">Because a curriculum can provide direction.</p>
-      <p className="font-bold text-msi-purple text-base">A great teacher brings it to life.</p>
+
+    <div className="p-4 bg-purple-50/90 border-l-4 border-msi-purple rounded-r-xl shadow-2xs">
+      <p className="text-gray-800 font-medium text-sm sm:text-base">
+        MSI educators receive continuous development in our classroom approach, child observation, communication, engagement and emotional wellbeing.
+      </p>
+    </div>
+
+    <div className="p-6 rounded-2xl bg-gradient-to-r from-msi-purple to-[#271344] text-white shadow-lg text-center">
+      <h4 className="font-extrabold text-msi-yellow text-base sm:text-lg uppercase tracking-wide">
+        Because a curriculum can provide direction. A great teacher brings it to life.
+      </h4>
     </div>
   </div>
 );
