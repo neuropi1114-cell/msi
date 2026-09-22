@@ -38,7 +38,11 @@ export default function WhyUsPage() {
       <TopBar />
       <Header />
       <main>
-        <CloudHeader image="/images/whyus/hero_playroom.png" />
+        <CloudHeader
+          image="/images/whyus/hero_playroom.png"
+          imageClass="object-cover object-top"
+          heightClass="w-full aspect-[2048/768] min-h-[250px] max-h-[600px]"
+        />
         <div data-nav-sentinel />
 
         <SectionHeader

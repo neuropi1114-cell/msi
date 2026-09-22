@@ -36,7 +36,14 @@ export default function AboutPage() {
       <TopBar />
       <Header />
       <main>
-        <CloudHeader title="About Us" subtitle="Discover the heart and science behind My School ITALY" image="/images/about-hero.jpg" textClass="text-[#d16827]" />
+        <CloudHeader
+          title="About Us"
+          subtitle="Discover the heart and science behind My School ITALY"
+          image="/images/about-hero.jpg"
+          textClass="text-[#d16827]"
+          imageClass="object-cover object-top"
+          heightClass="w-full aspect-[1600/1067] min-h-[320px] max-h-[650px]"
+        />
         <div data-nav-sentinel />
         <AboutPremises />
         <AboutPhilosophy />

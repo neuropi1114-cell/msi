@@ -38,7 +38,11 @@ export default function EducationalProjectPage() {
       <TopBar />
       <Header />
       <main>
-        <CloudHeader image="/images/nep/The_NeuroPi_Way_1.png" />
+        <CloudHeader
+          image="/images/nep/The_NeuroPi_Way_1.png"
+          imageClass="object-cover object-top"
+          heightClass="w-full aspect-[1672/941] min-h-[300px] max-h-[700px]"
+        />
         <div data-nav-sentinel />
 
         <SectionHeader

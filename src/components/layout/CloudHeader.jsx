@@ -9,7 +9,7 @@ export default function CloudHeader({
   bgClass = 'bg-[#d16827]',
   image,
   imageClass = 'object-cover object-top',
-  heightClass = 'min-h-[320px] sm:min-h-[420px] md:min-h-[520px] lg:min-h-[600px]',
+  heightClass = 'w-full aspect-[16/9] min-h-[280px] sm:min-h-[380px] max-h-[680px]',
 }) {
   return (
     <section className={`relative flex items-center justify-center overflow-hidden ${heightClass}`}>
