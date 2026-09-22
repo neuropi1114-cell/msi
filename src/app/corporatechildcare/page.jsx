@@ -5,10 +5,10 @@ import Footer from '../../components/layout/Footer';
 import CloudHeader from '../../components/layout/CloudHeader';
 import SectionHeader from '../../components/common/SectionHeader';
 import DesignPhilosophy from '../../components/nep/DesignPhilosophy';
+import NepHero from '../../components/nep/NepHero';
 import ContactUs from '../../components/home/ContactUs';
 import CorporatePartners from '../../components/home/CorporatePartners';
-import { preNurseryDrawerBody } from '../programs/programsdata';
-import { metadata, corporateChildcareDrawerBody } from './corporatechildcaredata';
+import { metadata, corporateChildcareDrawerBody, corporateChildcareSolutionsDrawerBody } from './corporatechildcaredata';
 
 export { metadata };
 
@@ -18,7 +18,7 @@ export default function CorporateChildcarePage() {
       <TopBar />
       <Header />
       <main>
-        <CloudHeader image="/images/whyus/hero_playroom.png" />
+        <CloudHeader image="/images/corporatechildcare/Corporate_Childcare_1.png" />
         <div data-nav-sentinel />
 
         <SectionHeader
@@ -28,9 +28,9 @@ export default function CorporateChildcarePage() {
         />
 
         <DesignPhilosophy
-          image="/images/programs/Programs_2_1.png"
+          image="/images/corporatechildcare/Corporate_Childcare_2.jpeg"
           imageAspect="aspect-[16/9]"
-          imageClass="object-cover scale-[1.05]"
+          imageClass="object-contain"
           eyebrow="You Take Care Of Your People."
           title="We Help Take Care of Their Little People."
           p1="When employees know their children are cared for, they can focus on their work."
@@ -38,13 +38,20 @@ export default function CorporateChildcarePage() {
           drawerEyebrow="You Take Care of Your People. We Help Take Care of Their Little People."
           drawerTitle="When Employees Know Their Children Are Cared For, They Can Focus on Their Work."
           drawerBody={corporateChildcareDrawerBody}
-          bottomEyebrow="Little Feet. Big Curiosity."
-          bottomTitle="PRE NURSERY"
-          bottomP1="Toddlers learn by doing."
-          bottomP2="They touch, move, imitate, experiment, repeat, question and discover."
-          bottomDrawerEyebrow="Little Feet. Big Curiosity."
-          bottomDrawerTitle="PRE NURSERY"
-          bottomDrawerBody={preNurseryDrawerBody}
+          bottomEyebrow={null}
+          bottomTitle={null}
+          bottomP1={null}
+          bottomP2={null}
+        />
+
+        <NepHero
+          eyebrow="One Organisation. Different Employees. Different Childcare Needs."
+          title="CORPORATE CHILDCARE SOLUTIONS"
+          titleColor="text-msi-yellow"
+          description="A single childcare model may not work for every workplace. The requirement depends on employee numbers, location, shifts, available space, commuting patterns and the ages of employees' children."
+          bgImage="/images/corporatechildcare/Corporate_Childcare_3b.png"
+          readMoreDrawerTitle="CORPORATE CHILDCARE SOLUTIONS"
+          readMoreDrawerBody={corporateChildcareSolutionsDrawerBody}
         />
 
         {/* Corporate Partners Marquee Sections */}

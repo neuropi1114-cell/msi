@@ -72,3 +72,72 @@ export const corporateChildcareDrawerBody = (
     </div>
   </div>
 );
+
+export const corporateChildcareSolutionsDrawerBody = (
+  <div className="space-y-6 text-gray-700 leading-relaxed font-lato text-base pt-2">
+    {/* Highlight Quote Box */}
+    <div className="bg-gradient-to-r from-msi-purple/10 via-msi-orange/5 to-transparent p-5 rounded-2xl border-l-4 border-msi-orange shadow-xs">
+      <p className="font-semibold text-msi-purple text-lg leading-snug">
+        One Organisation. Different Employees. Different Childcare Needs.
+      </p>
+    </div>
+
+    {/* Paragraph */}
+    <p className="text-gray-600">
+      A single childcare model may not work for every workplace. The requirement depends on employee numbers, location, shifts, available space, commuting patterns and the ages of employees&apos; children.
+    </p>
+
+    {/* Delivery Models Card */}
+    <div className="bg-[#f7f9fc] p-5 rounded-2xl border border-gray-100 space-y-4">
+      <h4 className="font-bold text-msi-purple text-sm uppercase tracking-wider mb-2">
+        MSI Delivery Models
+      </h4>
+      <div className="space-y-3">
+        <div className="flex items-start gap-3">
+          <CheckCircle2 className="w-5 h-5 text-msi-orange shrink-0 mt-0.5" />
+          <span className="text-sm text-gray-700">
+            <strong className="text-gray-900">On-Campus Crèche:</strong> Childcare within or adjacent to the corporate campus.
+          </span>
+        </div>
+        <div className="flex items-start gap-3">
+          <CheckCircle2 className="w-5 h-5 text-msi-orange shrink-0 mt-0.5" />
+          <span className="text-sm text-gray-700">
+            <strong className="text-gray-900">Near-Campus Preferred Centres:</strong> Access to an MSI centre conveniently located near the workplace.
+          </span>
+        </div>
+        <div className="flex items-start gap-3">
+          <CheckCircle2 className="w-5 h-5 text-msi-orange shrink-0 mt-0.5" />
+          <span className="text-sm text-gray-700">
+            <strong className="text-gray-900">Corporate Subsidy Programs:</strong> Employer-supported childcare with preferential arrangements for eligible employees.
+          </span>
+        </div>
+        <div className="flex items-start gap-3">
+          <CheckCircle2 className="w-5 h-5 text-msi-orange shrink-0 mt-0.5" />
+          <span className="text-sm text-gray-700">
+            <strong className="text-gray-900">Reserved Seats:</strong> A defined number of childcare places reserved for the organisation&apos;s employees.
+          </span>
+        </div>
+        <div className="flex items-start gap-3">
+          <CheckCircle2 className="w-5 h-5 text-msi-orange shrink-0 mt-0.5" />
+          <span className="text-sm text-gray-700">
+            <strong className="text-gray-900">Extended-Hours Childcare:</strong> Additional support for longer or non-standard working schedules.
+          </span>
+        </div>
+        <div className="flex items-start gap-3">
+          <CheckCircle2 className="w-5 h-5 text-msi-orange shrink-0 mt-0.5" />
+          <span className="text-sm text-gray-700">
+            <strong className="text-gray-900">Multi-Location Solutions:</strong> Childcare access across multiple locations for distributed workforces.
+          </span>
+        </div>
+      </div>
+    </div>
+
+    {/* Final Callout Banner */}
+    <div className="bg-msi-purple text-white p-5 rounded-2xl shadow-md text-center">
+      <p className="font-bold text-lg md:text-xl text-white">
+        One Childcare Partner. <br />
+        <span className="text-msi-orange">Multiple Ways to Deliver.</span>
+      </p>
+    </div>
+  </div>
+);
