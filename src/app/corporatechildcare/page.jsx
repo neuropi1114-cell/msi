@@ -13,7 +13,9 @@ import CorporateContactUs from '../../components/home/CorporateContactUs';
 import CorporatePartners from '../../components/home/CorporatePartners';
 import EnrolCta from '../../components/day-care/EnrolCta';
 import VideoShowcase from '../../components/home/VideoShowcase';
+import GalleryStrip from '../../components/common/GalleryStrip';
 import { programVideos } from '../programs/programsdata';
+import { neuroPiWayGalleryImages } from '../neuropiway/theneuropiwaydata';
 import {
   metadata,
   corporateChildcareDrawerBody,
@@ -229,7 +231,10 @@ export default function CorporateChildcarePage() {
           title="PROGRAMS IN ACTION"
           videosList={programVideos}
           showCarousel={true}
+          aspect="landscape"
         />
+
+        <GalleryStrip images={neuroPiWayGalleryImages} />
 
         {/* Corporate Proposal Form / CTA */}
         <CorporateContactUs />

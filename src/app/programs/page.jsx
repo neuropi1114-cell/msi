@@ -63,6 +63,7 @@ export default function ProgramsPage() {
           title="PROGRAMS IN ACTION"
           videosList={programVideos}
           showCarousel={true}
+          aspect="landscape"
         />
 
         <RecentNews />

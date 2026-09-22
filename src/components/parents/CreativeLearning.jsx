@@ -16,6 +16,7 @@ export default function CreativeLearning({
   paragraphs = defaultParagraphs,
   footerContent = null,
   showFooter = true,
+  imageSrc = "/images/parents/Parents_7_v2.png",
 }) {
   return (
     <section className="pt-3 md:pt-5 pb-12 bg-white">
@@ -49,11 +50,11 @@ export default function CreativeLearning({
           </ScrollReveal>
           <ScrollReveal direction="left" delay={0.25}>
             <Image
-              src="/images/parents/batch-3-16.png"
+              src={imageSrc}
               alt="Children taking part in creative learning activities at My School ITALY daycare"
-              width={800}
-              height={534}
-              className="w-full h-auto rounded-2xl shadow-lg"
+              width={1672}
+              height={941}
+              className="w-full h-auto rounded-2xl shadow-lg object-cover"
             />
           </ScrollReveal>
         </div>

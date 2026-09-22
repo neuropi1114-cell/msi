@@ -37,11 +37,11 @@ export default function CreativeLearning() {
           </div>
           <div>
             <Image
-              src="/images/day-care/batch-3-16.png"
+              src="/images/parents/Parents_7_v2.png"
               alt="Children taking part in creative learning activities at My School ITALY daycare"
-              width={800}
-              height={534}
-              className="w-full h-auto rounded-2xl shadow-lg"
+              width={1672}
+              height={941}
+              className="w-full h-auto rounded-2xl shadow-lg object-cover"
             />
           </div>
         </div>

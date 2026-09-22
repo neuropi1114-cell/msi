@@ -10,9 +10,12 @@ export default function EnrichmentSection() {
       imageAspect="aspect-[16/9]"
       imageClass="object-cover scale-[1.05]"
       eyebrow="From “How Does It Work?” to “Can I Make It Work?”"
+      eyebrowClass="text-msi-purple"
       title="ROBOTICS"
       p1="The purpose is not to turn preschoolers into engineers."
+      p1Class="text-msi-purple"
       p2="It is to preserve the question every future engineer begins with: “What happens if I try this?”"
+      p2Class="text-msi-purple"
       drawerEyebrow="From “How Does It Work?” to “Can I Make It Work?”"
       drawerTitle="ROBOTICS"
       drawerBody={roboticsDrawerBody}

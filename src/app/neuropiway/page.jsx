@@ -69,7 +69,7 @@ export default function EducationalProjectPage() {
         />
 
         <NepHero
-          bgImage="/images/nep/The_NeuroPi_Way_3.png"
+          bgImage="/images/nep/The_NeuroPi_Way_3_v2.png"
           eyebrow="Where Little Minds Grow With Science & Soul."
           title="LEARNING THE NEUROPI WAY"
           titleColor="text-msi-yellow font-bold text-2xl md:text-3xl mb-3"
@@ -140,8 +140,8 @@ export default function EducationalProjectPage() {
           aspect="landscape"
         />
         <NepHero
-          bgImage="/images/nep/The_NeuroPi_Way_9.png"
-          flipBg={true}
+          bgImage="/images/nep/The_NeuroPi_Way_8_v2.png"
+          flipBg={false}
           eyebrow="One Child Lives In Two Important Worlds"
           title="NEUROPI CONNECT — SCHOOL + HOME"
           titleColor="text-msi-yellow font-bold text-2xl md:text-3xl mb-3"
@@ -183,7 +183,7 @@ export default function EducationalProjectPage() {
               The NeuroPi Classroom Method provides MSI educators with a consistent approach for turning observation into better classroom experiences.
             </span>
           }
-          bgImage="/images/nep/The_NeuroPi_Way_x.png"
+          bgImage="/images/nep/The_NeuroPi_Way_13_v2.png"
           showReadMore={true}
           readMoreDrawerTitle="THE NEUROPI CLASSROOM METHOD"
           readMoreDrawerBody={earlyLearningDrawerBody}

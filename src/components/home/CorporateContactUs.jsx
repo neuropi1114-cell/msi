@@ -8,7 +8,7 @@ import {
   initialCorporateFormData,
 } from '../../app/corporatechildcare/corporatecontactdata';
 
-export default function CorporateContactUs() {
+export default function CorporateContactUs({ imageSrc = "/images/corporatechildcare/Corporate_Childcare_1.png" }) {
   const [formData, setFormData] = useState(initialCorporateFormData);
   const [errors, setErrors] = useState({});
   const [submitting, setSubmitting] = useState(false);
@@ -103,7 +103,7 @@ export default function CorporateContactUs() {
             >
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-md">
                 <img
-                  src="/images/hero/DSC00928-scaled-1-1024x684.jpg.bv_resized_ipad.jpg.bv.webp"
+                  src={imageSrc}
                   alt="Children playing at My School ITALY"
                   className="w-full h-full object-cover"
                   loading="lazy"
