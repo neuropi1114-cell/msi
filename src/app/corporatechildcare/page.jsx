@@ -141,7 +141,9 @@ export default function CorporateChildcarePage() {
           subheading="One Workforce. Many Locations. One Childcare Partner."
           heading="MULTI-LOCATION SOLUTIONS"
           showFaq={false}
-          imageSrc="/images/corporatechildcare/Corporate_Childcare_8.png"
+          imageSrc="/images/corporatechildcare/Corporate_Childcare_8_v2.png"
+          imageAspect="aspect-[16/9]"
+          imageClass="object-contain"
           description={multiLocationSolutionsContent}
         />
 
@@ -234,10 +236,11 @@ export default function CorporateChildcarePage() {
           aspect="landscape"
         />
 
-        <GalleryStrip images={neuroPiWayGalleryImages} />
 
         {/* Corporate Proposal Form / CTA */}
         <CorporateContactUs />
+        <GalleryStrip images={neuroPiWayGalleryImages} />
+
       </main>
       <Footer />
     </>
