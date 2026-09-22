@@ -137,6 +137,7 @@ export default function EducationalProjectPage() {
           videoTitleColor="text-msi-blue"
           videosList={neuroscientificVideos}
           showCarousel={false}
+          aspect="landscape"
         />
         <NepHero
           bgImage="/images/nep/The_NeuroPi_Way_9.png"

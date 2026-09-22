@@ -20,6 +20,8 @@ export default function DesignPhilosophy({
   titleClass = "text-msi-orange",
   p1 = "For a young child, beginning preschool or daycare can mean a new environment, new adults, new children and a completely new routine.",
   p1Class = "text-msi-cream",
+  p2Class = null,
+  p3Class = null,
   p2 = "We do not expect every child to settle in the same way.",
   p3 = null,
   showSettlingInMore = null,
@@ -76,8 +78,8 @@ export default function DesignPhilosophy({
               )}
 
               {p1 && <p className={`${p1Class} text-[15px] md:text-[16px] leading-relaxed mb-1`}>{p1}</p>}
-              {p2 && <p className="text-msi-cream text-[15px] md:text-[16px] leading-relaxed mb-1">{p2}</p>}
-              {p3 && <p className="text-msi-cream text-[15px] md:text-[16px] leading-relaxed mb-3">{p3}</p>}
+              {p2 && <p className={`${p2Class || p1Class} text-[15px] md:text-[16px] leading-relaxed mb-1`}>{p2}</p>}
+              {p3 && <p className={`${p3Class || p1Class} text-[15px] md:text-[16px] leading-relaxed mb-3`}>{p3}</p>}
 
               {hasCustomDrawer ? (
                 <div className="w-fit self-start">

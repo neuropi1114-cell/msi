@@ -16,7 +16,7 @@ const BelieveBrilliance = () => {
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
             className="absolute left-0 top-0 w-[75%] h-[420px] lg:h-[480px] rounded-tl-[40px] overflow-hidden shadow-2xl"
           >
-            <img src="/images/believe/DSC01240-684x1024-1.jpeg.bv.webp" alt="Children learning" className="w-full h-full object-cover img-editorial" loading="lazy" />
+            <img src="/images/believe/believe-brilliance-hero.webp" alt="Children learning" className="w-full h-full object-cover img-editorial" loading="lazy" />
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -25,7 +25,7 @@ const BelieveBrilliance = () => {
             transition={{ duration: 0.9, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
             className="absolute right-0 bottom-0 w-[55%] h-[320px] lg:h-[360px] rounded-br-[40px] overflow-hidden z-10 shadow-xl border-4 border-white"
           >
-            <img src="/images/believe/Web_15.png" alt="Happy child" className="w-full h-full object-cover img-editorial" loading="lazy" />
+            <img src="/images/believe/believe-brilliance-collage.png" alt="Happy child" className="w-full h-full object-cover img-editorial" loading="lazy" />
           </motion.div>
           {/* Decorative handwritten note */}
 

@@ -19,9 +19,9 @@ const slides = [
     cta: { text: 'Explore Why MSI', href: '/neuropiway' },
   },
   {
-    image: '/images/hero/Header_3.png',
+    image: '/images/hero/hero-slide-3.png',
     bgPosition: 'bg-center',
-    accentImage: '/images/hero/Header_3a.png',
+    accentImage: '/images/hero/hero-slide-3-accent.png',
     title: 'Discovery starts with a single question',
     cta: { text: 'Explore Program', href: '/parents' },
   },
@@ -96,6 +96,9 @@ const Hero = () => {
 
       {/* Grain overlay */}
       <div className="grain-overlay absolute inset-0 z-30 pointer-events-none" />
+
+      {/* Top and bottom gradient scrim for high contrast visibility */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/35 via-transparent to-black/50 z-10 pointer-events-none" />
 
       {/* Main background image */}
       <AnimatePresence initial={false} mode="wait">

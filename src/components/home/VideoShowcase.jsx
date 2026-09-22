@@ -32,7 +32,7 @@ function getEmbedUrl(url) {
   return url;
 }
 
-function VideoCard({ video, index, videoTitleColor = "text-msi-orange", aspect = "portrait" }) {
+function VideoCard({ video, index, videoTitleColor = "text-msi-orange", aspect = "portrait", showVideoTitle = false }) {
   const ref = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -53,6 +53,8 @@ function VideoCard({ video, index, videoTitleColor = "text-msi-orange", aspect =
   const aspectClass =
     aspect === 'portrait' || aspect === 'aspect-[9/16]'
       ? 'aspect-[9/16] w-full max-w-[280px] mx-auto'
+      : aspect === 'landscape' || aspect === 'aspect-[16/9]'
+      ? 'aspect-[16/9] w-full mx-auto'
       : aspect;
 
   return (
@@ -76,18 +78,22 @@ function VideoCard({ video, index, videoTitleColor = "text-msi-orange", aspect =
           />
         )}
       </div>
-      <h3 className={`mt-3 text-center font-bold text-base md:text-lg tracking-wide not-italic ${videoTitleColor}`}>
-        {video.title}
-      </h3>
+      {showVideoTitle && video.title && (
+        <h3 className={`mt-3 text-center font-bold text-base md:text-lg tracking-wide not-italic ${videoTitleColor}`}>
+          {video.title}
+        </h3>
+      )}
     </motion.div>
   );
 }
 
 export default function VideoShowcase({
   eyebrow = null,
+  eyebrowClass = null,
   title = "FEATURED VIDEOS",
   videosList = videos,
   showCarousel = true,
+  showVideoTitle = false,
   titleColor = "text-msi-orange",
   videoTitleColor = "text-msi-orange",
   aspect = "portrait",
@@ -114,14 +120,14 @@ export default function VideoShowcase({
     <section className="py-16 bg-[#f7f9fc]">
       <div className="container mx-auto px-4 md:px-12">
         {eyebrow && (
-          <motion.p
+          <motion.h3
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center text-sm md:text-base font-bold text-msi-orange uppercase tracking-wider mb-2"
+            className={`text-center ${eyebrowClass || " uppercase tracking-wider mb-2"}`}
           >
             {eyebrow}
-          </motion.p>
+          </motion.h3>
         )}
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -159,23 +165,23 @@ export default function VideoShowcase({
             {/* Carousel Track */}
             <div
               ref={containerRef}
-              className="flex gap-5 md:gap-6 overflow-x-auto scrollbar-hide scroll-smooth snap-x snap-mandatory py-4 px-3 justify-start xl:justify-center"
+              className="flex gap-5 md:gap-6 overflow-x-auto scrollbar-hide scroll-smooth snap-x snap-mandatory py-4 px-2 sm:px-4 justify-start"
               style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
             >
               {videosList.map((video, index) => (
                 <div
                   key={video.id || index}
-                  className={`${
-                    isPortrait
-                      ? 'w-[200px] sm:w-[230px] md:w-[245px] lg:w-[255px]'
-                      : 'min-w-[280px] sm:min-w-[320px] md:min-w-[360px]'
-                  } snap-start flex-shrink-0`}
+                  className={`${isPortrait
+                    ? 'w-[200px] sm:w-[230px] md:w-[245px] lg:w-[255px]'
+                    : 'w-[280px] sm:w-[320px] md:w-[350px] lg:w-[360px]'
+                    } snap-start flex-shrink-0`}
                 >
                   <VideoCard
                     video={video}
                     index={index}
                     videoTitleColor={videoTitleColor}
                     aspect={aspect}
+                    showVideoTitle={showVideoTitle}
                   />
                 </div>
               ))}
@@ -200,14 +206,22 @@ export default function VideoShowcase({
             </div>
           </div>
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 justify-items-center">
+          <div className="flex flex-wrap justify-center gap-6 max-w-6xl mx-auto">
             {videosList.map((video, index) => (
-              <div key={video.id || index} className="w-full">
+              <div
+                key={video.id || index}
+                className={
+                  aspect === 'landscape' || aspect === 'aspect-[16/9]'
+                    ? 'w-full max-w-[350px] sm:max-w-[360px]'
+                    : 'w-full max-w-[280px]'
+                }
+              >
                 <VideoCard
                   video={video}
                   index={index}
                   videoTitleColor={videoTitleColor}
                   aspect={aspect}
+                  showVideoTitle={showVideoTitle}
                 />
               </div>
             ))}

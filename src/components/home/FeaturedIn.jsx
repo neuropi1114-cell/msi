@@ -4,14 +4,14 @@ import Link from 'next/link';
 import ReadMoreButton from '../common/ReadMoreButton';
 
 const pressImages = [
-  "/images/ASFATUREDIN/press30.png.bv_resized_mobile.png.bv.webp",
-  "/images/ASFATUREDIN/press29.png.bv.webp",
-  "/images/ASFATUREDIN/press25.png.bv_resized_mobile.png.bv.webp",
-  "/images/ASFATUREDIN/press24.png.bv_resized_mobile.png.bv.webp",
-  "/images/ASFATUREDIN/press16.png.bv_resized_mobile.png.bv.webp",
-  "/images/ASFATUREDIN/logoz.png.bv_resized_mobile.png.bv.webp",
-  "/images/ASFATUREDIN/logo.png.bv_resized_mobile.png.bv.webp",
-  "/images/ASFATUREDIN/90291873.png.bv_resized_mobile.png.bv.webp"
+  "/images/featured-in/press-1.webp",
+  "/images/featured-in/press-2.webp",
+  "/images/featured-in/press-3.webp",
+  "/images/featured-in/press-4.webp",
+  "/images/featured-in/press-5.webp",
+  "/images/featured-in/press-6.webp",
+  "/images/featured-in/press-7.webp",
+  "/images/featured-in/press-8.webp"
 ];
 
 export default function FeaturedIn() {

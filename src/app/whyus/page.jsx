@@ -122,7 +122,7 @@ export default function WhyUsPage() {
           paragraphs={whyChooseUsParagraphs}
           footerContent={whyChooseUsFooter}
         />
-        <VideoShowcase title="OUR CENTRES" videosList={centreVideos} />
+        <VideoShowcase title="OUR CENTRES" videosList={centreVideos} showVideoTitle={true} aspect="landscape" />
         <GalleryStrip />
       </main>
       <ContactUs />

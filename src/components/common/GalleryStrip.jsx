@@ -3,14 +3,18 @@
 import React from 'react';
 
 const defaultGalleryImages = [
-  '/images/nep/gallery-1.webp',
-  '/images/nep/gallery-2.webp',
-  '/images/nep/gallery-3.webp',
-  '/images/nep/gallery-4.webp',
-  '/images/nep/gallery-5.webp',
-  '/images/nep/gallery-6.webp',
-  '/images/nep/gallery-7.webp',
-  '/images/nep/gallery-8.webp',
+  '/images/growing-in-confidence/img-01.png',
+  '/images/programs/Programs_2_1.png',
+  '/images/growing-in-confidence/img-03.png',
+  '/images/programs/Aperna_5.png',
+  '/images/growing-in-confidence/img-05.png',
+  '/images/programs/Programs_4.png',
+  '/images/growing-in-confidence/img-07.png',
+  '/images/programs/Batch_3_6.png',
+  '/images/growing-in-confidence/img-09.png',
+  '/images/nep/The_NeuroPi_Way_2.png',
+  '/images/growing-in-confidence/img-11.png',
+  '/images/programs/Aperna_24.png',
 ];
 
 export default function GalleryStrip({ images = defaultGalleryImages }) {

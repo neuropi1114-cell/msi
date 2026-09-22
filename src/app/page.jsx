@@ -40,7 +40,7 @@ export default function HomePage() {
         <StepIntoADay title="BETTER UNDERSTANDING AROUND EVERY CHILD" subtitle="Powered By NeuroPI" image="/images/stepintoaday/better-understanding-2.png" />
         <GrowingInConfidence />
 
-        <VideoShowcase />
+        <VideoShowcase showVideoTitle={true} aspect="landscape" />
         <Awards />
         <FeaturedIn />
         {/* <Team /> */}

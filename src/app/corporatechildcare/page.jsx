@@ -74,17 +74,18 @@ export default function CorporateChildcarePage() {
           title="CORPORATE CHILDCARE SOLUTIONS"
           titleColor="text-msi-yellow"
           description="A single childcare model may not work for every workplace. The requirement depends on employee numbers, location, shifts, available space, commuting patterns and the ages of employees' children."
-          bgImage="/images/corporatechildcare/Corporate_Childcare_3b.png"
+          bgImage="/images/corporatechildcare/corporate_childcare_solutions_bg_v3.png"
           readMoreDrawerTitle="CORPORATE CHILDCARE SOLUTIONS"
           readMoreDrawerBody={corporateChildcareSolutionsDrawerBody}
         />
 
         <DualFeatureSection
           sectionTitle="Facilities for Corporates"
-          leftImage="/images/corporatechildcare/Corporate_Childcare_4.png"
+          leftImage="/images/corporatechildcare/near_campus_preferred_v2.jpeg"
+          leftImageClass="object-contain rounded-[10px]"
           leftTitle="Corporate Childcare Without Building a Crèche"
           leftSubtitle="NEAR-CAMPUS PREFERRED CENTRES"
-          leftSubtitleColor="text-msi-yellow font-linotte font-bold text-xl uppercase mb-3"
+          leftSubtitleColor="text-msi-yellow font-linotte font-bold text-2xl md:text-[32px] leading-tight uppercase mb-4"
           leftParagraphs={[
             "Not every organisation needs — or has the space for — an on-campus childcare centre.",
           ]}
@@ -101,6 +102,7 @@ export default function CorporateChildcarePage() {
           rightDrawerTitle="ON-CAMPUS CRÈCHE"
           rightDrawerEyebrow="Childcare Where Your Employees Work"
           rightDrawerBody={onCampusCrecheDrawerBody}
+          rightButtonBgColor="bg-msi-blue hover:bg-msi-blue/90"
         />
 
         <DesignPhilosophy
@@ -128,7 +130,7 @@ export default function CorporateChildcarePage() {
           title="RESERVED SEATS"
           titleColor="text-msi-yellow"
           description="Childcare availability can become a challenge when employees need to return to work quickly. Under a Reserved Seats arrangement, an organisation can secure an agreed number of places for eligible employees at selected MSI centres."
-          bgImage="/images/corporatechildcare/The_NeuroPi_Way_x.png"
+          bgImage="/images/corporatechildcare/reserved_seats_bg.png"
           readMoreDrawerTitle="RESERVED SEATS"
           readMoreDrawerBody={reservedSeatsDrawerBody}
         />
@@ -142,7 +144,7 @@ export default function CorporateChildcarePage() {
         />
 
         <DesignPhilosophy
-          image="/images/corporatechildcare/Corporate_Childcare_9.png"
+          image="/images/corporatechildcare/employee_childcare_journey.png"
           imageAspect="aspect-[16/9]"
           imageClass="object-contain"
           topBgClass="bg-msi-yellow"
@@ -168,8 +170,9 @@ export default function CorporateChildcarePage() {
           sectionTitle="FOR MODERN FAMILIES"
           leftImage="/images/corporatechildcare/Corporate_Childcare_10.png"
           leftTitle="Childcare Is Not New To Us. Operating It At Workplace Scale Isn't Either."
+          leftTitleColor="text-msi-purple"
           leftSubtitle="OUR CORPORATE EXPERIENCE"
-          leftSubtitleColor="text-msi-yellow font-linotte font-bold text-xl uppercase mb-3"
+          leftSubtitleColor="text-msi-yellow font-linotte font-bold text-2xl md:text-[32px] leading-tight uppercase mb-4"
           leftParagraphs={[
             "Childcare solutions designed for parents working night shifts, rotating schedules, healthcare, technology, emergency services and other non-traditional working hours.",
           ]}
@@ -186,6 +189,7 @@ export default function CorporateChildcarePage() {
           rightDrawerTitle="PARTNER WITH MY SCHOOL ITALY"
           rightDrawerEyebrow="Tell Us About Your Workforce. We will Help Design The Childcare Model."
           rightDrawerBody={partnerWithMsiDrawerBody}
+          rightButtonBgColor="bg-msi-blue hover:bg-msi-blue/90"
         />
 
         <FaqSection
@@ -217,6 +221,7 @@ export default function CorporateChildcarePage() {
           title="CHILDCARE THAT WORKS FOR WORKING PEOPLE"
           titleClass="text-msi-orange font-linotte font-bold text-2xl md:text-[32px] leading-tight uppercase my-3"
           content={childcareWorksContent}
+          imageSrc="/images/corporatechildcare/Corporate_Childcare_13.png"
         />
         <EnrolCta />
         <VideoShowcase

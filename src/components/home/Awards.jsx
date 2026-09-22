@@ -2,12 +2,12 @@
 import { motion } from 'framer-motion';
 
 const awards = [
-  { id: 1, image: "/images/awards/Iconic-Brand.png.bv_resized_ipad.png.bv (1).webp", alt: "Iconic Brand" },
-  { id: 2, image: "/images/awards/ida-awards.png.bv_resized_ipad.png.bv (1).webp", alt: "IDA Awards" },
-  { id: 3, image: "/images/awards/EBA_NationalWinner.png.bv_resized_ipad.png.bv.webp", alt: "EBA National Winner" },
-  { id: 4, image: "/images/awards/EBA_OneToWatch.png.bv_resized_ipad.png.bv.webp", alt: "EBA One to Watch" },
-  { id: 5, image: "/images/awards/MSME.png.bv_resized_ipad.png.bv.webp", alt: "MSME Award" },
-  { id: 6, image: "/images/awards/Queens-award-1.png.bv_resized_ipad.png.bv.webp", alt: "Queens Award" }
+  { id: 1, image: "/images/awards/iconic-brand-award.webp", alt: "Iconic Brand" },
+  { id: 2, image: "/images/awards/ida-award.webp", alt: "IDA Awards" },
+  { id: 3, image: "/images/awards/eba-national-winner-award.webp", alt: "EBA National Winner" },
+  { id: 4, image: "/images/awards/eba-one-to-watch-award.webp", alt: "EBA One to Watch" },
+  { id: 5, image: "/images/awards/msme-award.webp", alt: "MSME Award" },
+  { id: 6, image: "/images/awards/queens-award.webp", alt: "Queens Award" }
 ];
 
 export default function Awards() {

@@ -18,6 +18,7 @@ export default function DualFeatureSection({
   eyebrow = null,
   title = null,
   leftTitle = 'More Than "How Many Letters Does My Child Know?"',
+  leftTitleColor = "text-msi-purple",
   leftSubtitle = null,
   leftSubtitleColor = null,
   leftParagraphs = null,
@@ -113,14 +114,20 @@ export default function DualFeatureSection({
                 src={leftImage}
                 alt={leftImageAlt}
                 fill
-                className={leftImageClass}
+                className={`${leftImageClass} rounded-[10px]`}
               />
             </div>
             <div className="w-full md:max-w-[83%] bg-[#2CB3E9] p-[30px] rounded-[12px]">
-              <p>
-                <strong className="text-2xl md:text-3xl">{leftTitle}</strong>
-              </p>
-              {leftSubtitle && <h2 className={leftSubtitleColor ? leftSubtitleColor : ''}>{leftSubtitle}</h2>}
+              {leftTitle && (
+                <h3 className={leftTitleColor || "text-msi-purple"}>
+                  {leftTitle}
+                </h3>
+              )}
+              {leftSubtitle && (
+                <h2 className={leftSubtitleColor && leftSubtitleColor.includes('font-') ? leftSubtitleColor : `${leftSubtitleColor || 'text-msi-yellow'} font-linotte font-bold text-2xl md:text-[32px] leading-tight uppercase mb-4`}>
+                  {leftSubtitle}
+                </h2>
+              )}
               {leftParagraphs ? (
                 leftParagraphs.map((text, idx) => (
                   <p key={idx} className="text-msi-cream mb-2">
