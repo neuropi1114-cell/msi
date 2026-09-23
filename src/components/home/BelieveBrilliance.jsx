@@ -16,7 +16,7 @@ const BelieveBrilliance = () => {
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
             className="absolute left-0 top-0 w-[75%] h-[420px] lg:h-[480px] rounded-tl-[40px] overflow-hidden shadow-2xl"
           >
-            <img src="/images/believe/believe-brilliance-hero.webp" alt="Children learning" className="w-full h-full object-cover img-editorial" loading="lazy" />
+            <img src="/images/believe/believe-brilliance-hero.webp" alt="Children learning" className="w-full h-full object-top object-cover img-editorial" loading="lazy" />
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 40 }}

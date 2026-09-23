@@ -336,7 +336,7 @@ const AgeDetail = ({ group, reversed, first }) => {
       <img
         src={group.image}
         alt={group.alt}
-        className="w-full rounded-2xl shadow-xl"
+        className="w-full rounded-2xl shadow-xl object-cover"
         loading="lazy"
       />
     </motion.div>

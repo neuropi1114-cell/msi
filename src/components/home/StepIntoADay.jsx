@@ -32,11 +32,11 @@ const renderAcademicsDrawerContent = (title, subtitle) => (
       </h4>
       <div className="space-y-2.5">
         {[
-          "SOME CHILDREN LEARN BY LISTENING.",
-          "SOME NEED TO SEE.",
-          "SOME NEED TO TOUCH IT.",
-          "SOME NEED TO BUILD IT.",
-          "SOME NEED TO ASK \"WHY?\" TEN TIMES."
+          "Some Children Learn By Listening.",
+          "Some Need To See.",
+          "Some Need To Touch It.",
+          "Some Need To Build It.",
+          "Some Need To Ask \"Why?\" Ten Times."
         ].map((item, idx) => (
           <div
             key={idx}
@@ -178,7 +178,7 @@ const StepIntoADay = ({
           <img
             src={image}
             alt={altText || title || "Child at play"}
-            className="w-full rounded-2xl"
+            className="w-full rounded-2xl aspect-[4/3] object-cover"
             loading="lazy"
           />
           {/* Decorative offset frame */}
@@ -221,11 +221,11 @@ const StepIntoADay = ({
           ) : (
             <>
               <ul className="list-disc list-inside space-y-2 mb-6">
-                <li>SOME CHILDREN LEARN BY LISTENING.</li>
-                <li>SOME NEED TO SEE.</li>
-                <li>SOME NEED TO TOUCH IT.</li>
-                <li>SOME NEED TO BUILD IT.</li>
-                <li>SOME NEED TO ASK &ldquo;WHY?&rdquo; TEN TIMES.</li>
+                <li>Some Children Learn By Listening.</li>
+                <li>Some Need To See.</li>
+                <li>Some Need To Touch It.</li>
+                <li>Some Need To Build It.</li>
+                <li>Some Need To Ask &ldquo;Why?&rdquo; Ten Times.</li>
               </ul>
               <p className="leading-relaxed mb-4">
                 We make room for all of them.
