@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useRef, useSyncExternalStore } from 'react';
 import { createPortal } from 'react-dom';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { Menu, X, ChevronRight, ChevronDown, Phone, User, Sparkles } from 'lucide-react';
 
 const mainLogo = '/images/logo/The-Neuroscientific-European-Childcare-PDF_12-x-4-ft_Backside-1.png.bv_resized_desktop.png.bv.webp';
@@ -94,6 +95,7 @@ const navLinks = [
 ];
 
 const Header = () => {
+  const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -101,6 +103,14 @@ const Header = () => {
   const timeoutRef = useRef(null);
 
   const mounted = useSyncExternalStore(emptySubscribe, () => true, () => false);
+
+  const isLinkActive = (linkHref) => {
+    if (!pathname) return false;
+    if (linkHref === '/whyus') {
+      return pathname === '/whyus' || pathname === '/about' || pathname.startsWith('/whyus');
+    }
+    return pathname === linkHref || (linkHref !== '/' && pathname.startsWith(linkHref));
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -197,6 +207,7 @@ const Header = () => {
         <nav aria-label="Desktop navigation" className="hidden lg:flex items-center gap-4 xl:gap-5">
           {navLinks.map((link, index) => {
             const isOpen = activeDropdown === link.name;
+            const isActive = isLinkActive(link.href);
             const isMultiColumn = link.subLinks && link.subLinks.length > 8;
 
             return (
@@ -213,15 +224,29 @@ const Header = () => {
                 >
                   <Link
                     href={link.href}
-                    className="font-lato font-semibold text-[14px] xl:text-[15px] text-msi-purple hover:text-msi-orange transition-colors flex items-center gap-1 group py-1"
+                    className={`font-lato font-semibold text-[14px] xl:text-[15px] transition-colors flex items-center gap-1 group py-1 ${
+                      isActive ? 'text-msi-green font-bold' : 'text-msi-purple hover:text-msi-orange'
+                    }`}
                   >
                     <span>{link.name}</span>
                     <ChevronDown
                       className={`w-3.5 h-3.5 transition-transform duration-200 ${
-                        isOpen ? 'rotate-180 text-msi-orange' : 'text-msi-purple/70 group-hover:text-msi-orange'
+                        isOpen
+                          ? 'rotate-180 text-msi-orange'
+                          : isActive
+                          ? 'text-msi-green'
+                          : 'text-msi-purple/70 group-hover:text-msi-orange'
                       }`}
                     />
-                    <span className={`absolute bottom-0 left-0 h-0.5 bg-msi-orange transition-all duration-300 ${isOpen ? 'w-full' : 'w-0 group-hover:w-full'}`} />
+                    <span
+                      className={`absolute bottom-0 left-0 h-0.5 transition-all duration-300 ${
+                        isActive
+                          ? 'w-full bg-msi-green'
+                          : isOpen
+                          ? 'w-full bg-msi-orange'
+                          : 'w-0 bg-msi-orange group-hover:w-full'
+                      }`}
+                    />
                   </Link>
 
                   {/* Modern Solid Dropdown / Popover Mega-Menu */}
@@ -322,13 +347,16 @@ const Header = () => {
                 <nav aria-label="Mobile menu" className="flex flex-col gap-1 pb-6">
                   {navLinks.map((link) => {
                     const isExpanded = !!expandedMobile[link.name];
+                    const isActive = isLinkActive(link.href);
 
                     return (
                       <div key={link.name} className="border-b border-white/15 py-1">
                         <div className="flex items-center justify-between">
                           <Link
                             href={link.href}
-                            className="font-bold text-white px-2 py-2.5 text-sm uppercase tracking-wide hover:text-msi-cream transition-colors flex-1"
+                            className={`font-bold px-2 py-2.5 text-sm uppercase tracking-wide transition-colors flex-1 ${
+                              isActive ? 'text-msi-green font-extrabold' : 'text-white hover:text-msi-cream'
+                            }`}
                             onClick={() => setIsMenuOpen(false)}
                           >
                             {link.name}
