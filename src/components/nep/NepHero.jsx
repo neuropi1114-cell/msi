@@ -18,6 +18,7 @@ export default function NepHero({
   readMoreBgColor = "bg-msi-orange hover:bg-msi-orange/90",
   readMoreDrawerTitle = null,
   readMoreDrawerBody = null,
+  cardClass = "",
 }) {
   const [open, setOpen] = useState(false);
 
@@ -53,7 +54,7 @@ export default function NepHero({
         />
         <div className="container mx-auto px-4 md:px-12 w-full relative z-10">
           <div
-            className={`w-full md:w-[50%] lg:w-[45%] max-w-xl p-6 sm:p-8 md:p-10 rounded-2xl shadow-2xl ${boxBgClass}`}
+            className={`w-full md:w-[50%] lg:w-[45%] max-w-xl p-6 sm:p-8 md:p-10 rounded-2xl shadow-2xl ${boxBgClass} ${cardClass}`}
           >
             {eyebrow && <h3 style={{ color: '#FCF9F4' }}>{eyebrow}</h3>}
             <h2 className={titleColor ? titleColor : ''}>{title}</h2>

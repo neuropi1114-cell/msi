@@ -66,6 +66,7 @@ export default function WhyUsPage() {
           bgImage="/images/whyus/Why_MSI_3.png"
           readMoreDrawerTitle="OUR PHILOSOPHY"
           readMoreDrawerBody={philosophyDrawerBody}
+          cardClass="mt-100 md:mt-20 lg:mt-64"
         />
         <DesignPhilosophy
           eyebrow="Less Pressure. More Purposeful Learning."
