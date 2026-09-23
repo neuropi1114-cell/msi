@@ -10,7 +10,7 @@ export default function SectionHeader({
     <section className={className}>
       <div className="container mx-auto px-4 md:px-12 text-center">
         <ScrollReveal direction="up" delay={0.1}>
-          <h2 className="text-4xl md:text-5xl text-msi-purple font-bold mb-6">
+          <h2 className="mb-6 text-msi-purple">
             {title}
           </h2>
         </ScrollReveal>

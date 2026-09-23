@@ -6,7 +6,7 @@ export default function ExtendedTimingSection() {
   return (
     <>
       <NepHero
-        bgImage="/images/programs/early_drop_off.png"
+        bgImage="/images/programs/Programs_7.png"
         eyebrow="More Flexibility Around Your Working Day."
         title="EARLY DROP-OFF & LATE PICK-UP"
         titleColor="text-msi-yellow"

@@ -69,19 +69,19 @@ export default function OneJourneySection({
               className="lg:col-span-7 bg-white p-6 sm:p-8 md:p-10 rounded-2xl shadow-xl border border-gray-100"
             >
               {eyebrow && (
-                <h3 className={`text-base sm:text-lg font-medium text-msi-purple mb-2 ${eyebrowClass}`}>
+                <h3 className={`mb-2 text-msi-purple ${eyebrowClass}`}>
                   {eyebrow}
                 </h3>
               )}
               {title && (
-                <h2 className={`text-2xl sm:text-3xl md:text-4xl font-bold ${titleColor} mb-4`}>
+                <h2 className={`mb-4 ${titleColor !== 'text-msi-orange' ? titleColor : ''}`}>
                   {title}
                 </h2>
               )}
 
               <div className="mt-5 space-y-4">
                 {children || (
-                  <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
+                  <p className="leading-relaxed">
                     A child may first enter MSI as a tiny baby.<br />
                     Then become a curious toddler.<br />
                     A storyteller in Nursery.<br />
@@ -93,7 +93,7 @@ export default function OneJourneySection({
                 )}
 
                 {footerText && (
-                  <p className="font-semibold text-msi-purple text-base sm:text-lg pt-2 border-t border-gray-100">
+                  <p className="font-semibold text-msi-purple pt-2 border-t border-gray-100">
                     {footerText}
                   </p>
                 )}

@@ -12,6 +12,7 @@ export default function EnrichmentSection() {
       eyebrow="From “How Does It Work?” to “Can I Make It Work?”"
       eyebrowClass="text-msi-purple"
       title="ROBOTICS"
+      titleClass="text-msi-purple"
       p1="The purpose is not to turn preschoolers into engineers."
       p1Class="text-msi-purple"
       p2="It is to preserve the question every future engineer begins with: “What happens if I try this?”"
