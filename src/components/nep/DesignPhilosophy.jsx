@@ -9,6 +9,8 @@ import ReadMoreButton from '../common/ReadMoreButton';
 import Drawer from '../layout/Drawer';
 
 export default function DesignPhilosophy({
+  topId = null,
+  bottomId = null,
   image = "/images/nep/Web_1.png",
   imageAlt = "My School ITALY classroom designed with neuroscience principles",
   topBgClass = "bg-[#271344]",
@@ -52,7 +54,7 @@ export default function DesignPhilosophy({
   return (
     <div className="w-full">
       {/* Top Section */}
-      <section className={`${topBgClass} py-8 md:py-12`}>
+      <section id={topId || undefined} className={`${topBgClass} py-8 md:py-12 scroll-mt-24`}>
         <div className="container mx-auto px-4 md:px-12 max-w-[1240px]">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
             <ScrollReveal direction="right" delay={0.1} className="flex items-center justify-center">
@@ -113,7 +115,7 @@ export default function DesignPhilosophy({
 
       {/* Bottom Section: White Background */}
       {(bottomEyebrow || bottomTitle || bottomP1 || bottomDrawerBody) && (
-        <section className="bg-white pt-6 pb-2 md:pt-8 md:pb-4">
+        <section id={bottomId || undefined} className="bg-white pt-6 pb-2 md:pt-8 md:pb-4 scroll-mt-24">
           <div className="container mx-auto px-4 md:px-12 max-w-[1240px]">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-start">
               <div className="hidden md:block"></div>

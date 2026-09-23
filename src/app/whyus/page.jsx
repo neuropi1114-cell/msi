@@ -17,6 +17,8 @@ import CreativeLearning from '../../components/parents/CreativeLearning';
 import VideoShowcase from '../../components/home/VideoShowcase';
 import GalleryStrip from '../../components/common/GalleryStrip';
 
+import SectionScrollController from '../../components/common/SectionScrollController';
+
 import {
   metadata,
   centreVideos,
@@ -32,11 +34,12 @@ import {
 
 export { metadata };
 
-export default function WhyUsPage() {
+export default function WhyUsPage({ activeSlug = null }) {
   return (
     <>
       <TopBar />
       <Header />
+      <SectionScrollController activeSlug={activeSlug} />
       <main>
         <CloudHeader
           image="/images/whyus/hero_playroom.png"
@@ -50,25 +53,31 @@ export default function WhyUsPage() {
           subtitle="Why Should I Trust And Choose My School ITALY"
           description="Because Childhood Deserves to be understood, not hurried."
         />
-        <StorySection
-          eyebrow="From European Early Education To A New Understanding Of Childhood."
-          title="OUR STORY"
-          p1="My School ITALY began with a simple belief: early childhood education should respect the individuality of every child."
-          p2="Over the years, that belief has grown into an integrated preschool, crèche and daycare ecosystem where learning, care, development and family partnership come together."
-          drawerTitle="OUR STORY"
-          drawerBody={storyDrawerBody}
-        />
-        <NepHero
-          eyebrow="Childhood Is Not Preparation for Life. Childhood Is Life."
-          title="OUR PHILOSOPHY"
-          titleColor="text-msi-yellow"
-          description="We do not believe every child should develop in exactly the same way or at exactly the same pace. We meet the child where they are — and help them grow from there."
-          bgImage="/images/whyus/Why_MSI_3.png"
-          readMoreDrawerTitle="OUR PHILOSOPHY"
-          readMoreDrawerBody={philosophyDrawerBody}
-          cardClass="mt-24 md:mt-20 lg:mt-64"
-        />
+        <div id="our-story" className="scroll-mt-24">
+          <StorySection
+            eyebrow="From European Early Education To A New Understanding Of Childhood."
+            title="OUR STORY"
+            p1="My School ITALY began with a simple belief: early childhood education should respect the individuality of every child."
+            p2="Over the years, that belief has grown into an integrated preschool, crèche and daycare ecosystem where learning, care, development and family partnership come together."
+            drawerTitle="OUR STORY"
+            drawerBody={storyDrawerBody}
+          />
+        </div>
+        <div id="our-philosophy" className="scroll-mt-24">
+          <NepHero
+            eyebrow="Childhood Is Not Preparation for Life. Childhood Is Life."
+            title="OUR PHILOSOPHY"
+            titleColor="text-msi-yellow"
+            description="We do not believe every child should develop in exactly the same way or at exactly the same pace. We meet the child where they are — and help them grow from there."
+            bgImage="/images/whyus/Why_MSI_3.png"
+            readMoreDrawerTitle="OUR PHILOSOPHY"
+            readMoreDrawerBody={philosophyDrawerBody}
+            cardClass="mt-24 md:mt-20 lg:mt-64"
+          />
+        </div>
         <DesignPhilosophy
+          topId="european-approach"
+          bottomId="learning-environment"
           image="/images/whyus/Why_MSI_4.png"
           eyebrow="Less Pressure. More Purposeful Learning."
           title="THE EUROPEAN EARLY YEARS APPROACH"
@@ -87,6 +96,8 @@ export default function WhyUsPage() {
           bottomDrawerBody={learningEnvironmentDrawerBody}
         />
         <DualFeatureSection
+          leftId="books-stories"
+          rightId="teachers"
           sectionTitle="EXPLORE CORPORATE CHILDCARE"
           leftTitle={<span className="italic">Where A Story Becomes A World Of Learning</span>}
           leftSubtitle="OUR BOOKS & STORIES"
@@ -110,16 +121,22 @@ export default function WhyUsPage() {
           rightImage="/images/whyus/Why_MSI_6.png"
           leftImage="/images/whyus/Why_MSI_5.png"
         />
-        <HomeNeuroPiApproach />
+        <div id="inspire-me-eat" className="scroll-mt-24">
+          <HomeNeuroPiApproach />
+        </div>
 
-        <EarlyLearningSection
-          title="A Remarkable Window Of Development"
-          subtitle="WHY THE FIRST 2,000 DAYS MATTER"
-          p1="The period from pregnancy through roughly the first five years is a foundational stage for brain development, relationships, language, movement, emotional regulation and learning."
-          p2={null}
-          bgImage="/images/nep/early_learning_bg.png"
-        />
-        <SensoryCardsSection />
+        <div id="first-2000-days" className="scroll-mt-24">
+          <EarlyLearningSection
+            title="A Remarkable Window Of Development"
+            subtitle="WHY THE FIRST 2,000 DAYS MATTER"
+            p1="The period from pregnancy through roughly the first five years is a foundational stage for brain development, relationships, language, movement, emotional regulation and learning."
+            p2={null}
+            bgImage="/images/nep/early_learning_bg.png"
+          />
+        </div>
+        <div id="safety-wellbeing" className="scroll-mt-24">
+          <SensoryCardsSection />
+        </div>
 
         <CreativeLearning
           title="WHY FAMILIES CHOOSE MSI"

@@ -16,6 +16,8 @@ import CreativeLearning from '../../components/parents/CreativeLearning';
 import MissionCounters from '../../components/nep/MissionCounters';
 import GalleryStrip from '../../components/common/GalleryStrip';
 
+import SectionScrollController from '../../components/common/SectionScrollController';
+
 export const metadata = {
   title: 'Parents',
   description: 'My School ITALY parent resources, experience and daycare programs for children 45 days to 7 years.',
@@ -36,11 +38,12 @@ export const metadata = {
   },
 };
 
-export default function ParentsPage() {
+export default function ParentsPage({ activeSlug = null }) {
   return (
     <>
       <TopBar />
       <Header />
+      <SectionScrollController activeSlug={activeSlug} />
       <main>
         <CloudHeader
           image="/images/parents/hero_mangalyam.jpeg"
@@ -50,14 +53,22 @@ export default function ParentsPage() {
         <div data-nav-sentinel />
 
         <SectionHeader />
-        <StorySection />
-        <DesignPhilosophy />
-        <DualFeatureSection />
-        <FaqSection />
-        <VideoCarousel
-          eyebrow="Every Family Has An MSI Story"
-          title="PARENT STORIES & TESTIMONIALS"
-        />
+        <div id="your-journey" className="scroll-mt-24">
+          <StorySection />
+        </div>
+        <div id="starting-school" className="scroll-mt-24">
+          <DesignPhilosophy bottomId="childs-day" />
+        </div>
+        <DualFeatureSection leftId="childs-progress" rightId="home-learning" />
+        <div id="faq" className="scroll-mt-24">
+          <FaqSection />
+        </div>
+        <div id="testimonials" className="scroll-mt-24">
+          <VideoCarousel
+            eyebrow="Every Family Has An MSI Story"
+            title="PARENT STORIES & TESTIMONIALS"
+          />
+        </div>
         <Feedback eyebrow="" title="" />
 
         <CreativeLearning />

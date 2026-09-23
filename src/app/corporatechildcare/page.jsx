@@ -16,6 +16,7 @@ import VideoShowcase from '../../components/home/VideoShowcase';
 import GalleryStrip from '../../components/common/GalleryStrip';
 import { programVideos } from '../programs/programsdata';
 import { neuroPiWayGalleryImages } from '../neuropiway/theneuropiwaydata';
+import SectionScrollController from '../../components/common/SectionScrollController';
 import {
   metadata,
   corporateChildcareDrawerBody,
@@ -35,11 +36,12 @@ import {
 
 export { metadata };
 
-export default function CorporateChildcarePage() {
+export default function CorporateChildcarePage({ activeSlug = null }) {
   return (
     <>
       <TopBar />
       <Header />
+      <SectionScrollController activeSlug={activeSlug} />
       <main>
         <CloudHeader
           image="/images/corporatechildcare/Corporate_Childcare_1.png"
@@ -54,22 +56,24 @@ export default function CorporateChildcarePage() {
           description="Because Childhood Deserves to be understood, not hurried."
         />
 
-        <DesignPhilosophy
-          image="/images/corporatechildcare/Corporate_Childcare_2.jpeg"
-          imageAspect="aspect-[16/9]"
-          imageClass="object-contain"
-          eyebrow="You Take Care Of Your People."
-          title="We Help Take Care of Their Little People."
-          p1="When employees know their children are cared for, they can focus on their work."
-          p2={null}
-          drawerEyebrow="You Take Care of Your People. We Help Take Care of Their Little People."
-          drawerTitle="When Employees Know Their Children Are Cared For, They Can Focus on Their Work."
-          drawerBody={corporateChildcareDrawerBody}
-          bottomEyebrow={null}
-          bottomTitle={null}
-          bottomP1={null}
-          bottomP2={null}
-        />
+        <div id="solutions" className="scroll-mt-24">
+          <DesignPhilosophy
+            image="/images/corporatechildcare/Corporate_Childcare_2.jpeg"
+            imageAspect="aspect-[16/9]"
+            imageClass="object-contain"
+            eyebrow="You Take Care Of Your People."
+            title="We Help Take Care of Their Little People."
+            p1="When employees know their children are cared for, they can focus on their work."
+            p2={null}
+            drawerEyebrow="You Take Care of Your People. We Help Take Care of Their Little People."
+            drawerTitle="When Employees Know Their Children Are Cared For, They Can Focus on Their Work."
+            drawerBody={corporateChildcareDrawerBody}
+            bottomEyebrow={null}
+            bottomTitle={null}
+            bottomP1={null}
+            bottomP2={null}
+          />
+        </div>
 
         <NepHero
           eyebrow="One Organisation. Different Employees. Different Childcare Needs."
@@ -82,6 +86,8 @@ export default function CorporateChildcarePage() {
         />
 
         <DualFeatureSection
+          leftId="near-campus-centres"
+          rightId="on-campus-creche"
           sectionTitle="Facilities for Corporates"
           leftImage="/images/corporatechildcare/near_campus_preferred_v2.jpeg"
           leftImageClass="object-contain rounded-[10px]"
@@ -108,6 +114,8 @@ export default function CorporateChildcarePage() {
         />
 
         <DesignPhilosophy
+          topId="subsidy-programs"
+          bottomId="extended-hours"
           image="/images/corporatechildcare/Corporate_Childcare_6.png"
           imageAspect="aspect-[16/9]"
           imageClass="object-contain"
@@ -127,50 +135,58 @@ export default function CorporateChildcarePage() {
           bottomDrawerBody={extendedHoursChildcareDrawerBody}
         />
 
-        <NepHero
-          eyebrow="Childcare Capacity When Your Employees Need It"
-          title="RESERVED SEATS"
-          titleColor="text-msi-yellow"
-          description="Childcare availability can become a challenge when employees need to return to work quickly. Under a Reserved Seats arrangement, an organisation can secure an agreed number of places for eligible employees at selected MSI centres."
-          bgImage="/images/corporatechildcare/reserved_seats_bg.png"
-          readMoreDrawerTitle="RESERVED SEATS"
-          readMoreDrawerBody={reservedSeatsDrawerBody}
-        />
+        <div id="reserved-seats" className="scroll-mt-24">
+          <NepHero
+            eyebrow="Childcare Capacity When Your Employees Need It"
+            title="RESERVED SEATS"
+            titleColor="text-msi-yellow"
+            description="Childcare availability can become a challenge when employees need to return to work quickly. Under a Reserved Seats arrangement, an organisation can secure an agreed number of places for eligible employees at selected MSI centres."
+            bgImage="/images/corporatechildcare/reserved_seats_bg.png"
+            readMoreDrawerTitle="RESERVED SEATS"
+            readMoreDrawerBody={reservedSeatsDrawerBody}
+          />
+        </div>
 
-        <FaqSection
-          subheading="One Workforce. Many Locations. One Childcare Partner."
-          heading="MULTI-LOCATION SOLUTIONS"
-          showFaq={false}
-          imageSrc="/images/corporatechildcare/Corporate_Childcare_8_v2.png"
-          imageAspect="aspect-[16/9]"
-          imageClass="object-contain"
-          description={multiLocationSolutionsContent}
-        />
+        <div id="multi-location-solutions" className="scroll-mt-24">
+          <FaqSection
+            subheading="One Workforce. Many Locations. One Childcare Partner."
+            heading="MULTI-LOCATION SOLUTIONS"
+            showFaq={false}
+            imageSrc="/images/corporatechildcare/Corporate_Childcare_8_v2.png"
+            imageAspect="aspect-[16/9]"
+            imageClass="object-contain"
+            description={multiLocationSolutionsContent}
+          />
+        </div>
 
-        <DesignPhilosophy
-          image="/images/corporatechildcare/employee_childcare_journey.png"
-          imageAspect="aspect-[16/9]"
-          imageClass="object-contain"
-          topBgClass="bg-msi-yellow"
-          eyebrowClass="text-msi-purple"
-          titleClass="text-msi-purple"
-          p1Class="text-gray-800 font-medium"
-          eyebrow="Make Access Simple for Parents"
-          title="THE EMPLOYEE CHILDCARE JOURNEY"
-          p1="Corporate childcare should not create another complicated process for employees."
-          p2="We can create a clear journey."
-          drawerEyebrow="Make Access Simple for Parents"
-          drawerTitle="THE EMPLOYEE CHILDCARE JOURNEY"
-          drawerBody={employeeChildcareJourneyDrawerBody}
-          bottomEyebrow="More Flexibility Around Your Working Day."
-          bottomTitle="EARLY DROP-OFF & LATE PICK-UP"
-          bottomP1="An early meeting, a long commute or an unexpected late evening should not turn childcare into a daily struggle."
-          bottomP2="Selected MSI centres provide Early Drop-Off and Late Pick-Up options designed around the realities of working families."
-          bottomP1Class="text-gray-700 font-normal leading-relaxed mb-2"
-          bottomP2Class="text-gray-700 font-normal leading-relaxed"
-        />
+        <div id="employee-journey" className="scroll-mt-24">
+          <DesignPhilosophy
+            image="/images/corporatechildcare/employee_childcare_journey.png"
+            imageAspect="aspect-[16/9]"
+            imageClass="object-contain"
+            topBgClass="bg-msi-yellow"
+            eyebrowClass="text-msi-purple"
+            titleClass="text-msi-purple"
+            p1Class="text-gray-800 font-medium"
+            eyebrow="Make Access Simple for Parents"
+            title="THE EMPLOYEE CHILDCARE JOURNEY"
+            p1="Corporate childcare should not create another complicated process for employees."
+            p2="We can create a clear journey."
+            drawerEyebrow="Make Access Simple for Parents"
+            drawerTitle="THE EMPLOYEE CHILDCARE JOURNEY"
+            drawerBody={employeeChildcareJourneyDrawerBody}
+            bottomEyebrow="More Flexibility Around Your Working Day."
+            bottomTitle="EARLY DROP-OFF & LATE PICK-UP"
+            bottomP1="An early meeting, a long commute or an unexpected late evening should not turn childcare into a daily struggle."
+            bottomP2="Selected MSI centres provide Early Drop-Off and Late Pick-Up options designed around the realities of working families."
+            bottomP1Class="text-gray-700 font-normal leading-relaxed mb-2"
+            bottomP2Class="text-gray-700 font-normal leading-relaxed"
+          />
+        </div>
 
         <DualFeatureSection
+          leftId="corporate-experience"
+          rightId="partner"
           sectionTitle="FOR MODERN FAMILIES"
           leftImage="/images/corporatechildcare/Corporate_Childcare_10.png"
           leftTitle="Childcare Is Not New To Us. Operating It At Workplace Scale Isn't Either."

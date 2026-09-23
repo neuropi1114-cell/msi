@@ -13,35 +13,35 @@ const navLinks = [
     name: 'WHY MSI',
     href: '/whyus',
     subLinks: [
-      { name: 'Our Story', href: '/whyus#our-story' },
-      { name: 'Our Philosophy', href: '/whyus#our-philosophy' },
-      { name: 'Why the First 2,000 Days Matter', href: '/whyus#first-2000-days' },
-      { name: 'The European Early Years Approach', href: '/whyus#european-approach' },
-      { name: 'Our Learning Environment', href: '/whyus#learning-environment' },
-      { name: 'Our Books & Stories', href: '/whyus#books-stories' },
-      { name: 'Our Teachers', href: '/whyus#teachers' },
-      { name: 'Safety & Emotional Wellbeing', href: '/whyus#safety-wellbeing' },
-      { name: 'INSPIRE ME EAT — Nutrition & Food', href: '/whyus#inspire-me-eat' },
+      { name: 'Our Story', href: '/whyus/our-story' },
+      { name: 'Our Philosophy', href: '/whyus/our-philosophy' },
+      { name: 'Why the First 2,000 Days Matter', href: '/whyus/first-2000-days' },
+      { name: 'The European Early Years Approach', href: '/whyus/european-approach' },
+      { name: 'Our Learning Environment', href: '/whyus/learning-environment' },
+      { name: 'Our Books & Stories', href: '/whyus/books-stories' },
+      { name: 'Our Teachers', href: '/whyus/teachers' },
+      { name: 'Safety & Emotional Wellbeing', href: '/whyus/safety-wellbeing' },
+      { name: 'INSPIRE ME EAT — Nutrition & Food', href: '/whyus/inspire-me-eat' },
     ],
   },
   {
     name: 'PROGRAMS',
     href: '/programs',
     subLinks: [
-      { name: 'Baby Crèche — 45 Days+', href: '/programs#baby-creche' },
-      { name: 'Toddler / Playgroup', href: '/programs#toddler-playgroup' },
-      { name: 'Nursery', href: '/programs#nursery' },
-      { name: 'Kindergarten K1', href: '/programs#kindergarten-k1' },
-      { name: 'Kindergarten K2', href: '/programs#kindergarten-k2' },
-      { name: 'Daycare', href: '/programs#daycare' },
-      { name: '24-Hour Care — Where Available', href: '/programs#24-hour-care' },
-      { name: 'Early Drop-Off & Late Pick-Up', href: '/programs#extended-care' },
-      { name: 'Saturday & Holiday Care', href: '/programs#saturday-holiday-care' },
-      { name: 'Robotics', href: '/programs#robotics' },
-      { name: 'Gymnastics', href: '/programs#gymnastics' },
-      { name: 'Storytelling & Creative Arts', href: '/programs#storytelling-creative-arts' },
-      { name: 'Dance & Creative Movement', href: '/programs#dance-creative-movement' },
-      { name: 'Holiday & Summer Programs', href: '/programs#holiday-summer-programs' },
+      { name: 'Baby Crèche — 45 Days+', href: '/programs/baby-creche' },
+      { name: 'Toddler / Playgroup', href: '/programs/toddler-playgroup' },
+      { name: 'Nursery', href: '/programs/nursery' },
+      { name: 'Kindergarten K1', href: '/programs/kindergarten-k1' },
+      { name: 'Kindergarten K2', href: '/programs/kindergarten-k2' },
+      { name: 'Daycare', href: '/programs/daycare' },
+      { name: '24-Hour Care — Where Available', href: '/programs/24-hour-care' },
+      { name: 'Early Drop-Off & Late Pick-Up', href: '/programs/extended-care' },
+      { name: 'Saturday & Holiday Care', href: '/programs/saturday-holiday-care' },
+      { name: 'Robotics', href: '/programs/robotics' },
+      { name: 'Gymnastics', href: '/programs/gymnastics' },
+      { name: 'Storytelling & Creative Arts', href: '/programs/storytelling-creative-arts' },
+      { name: 'Dance & Creative Movement', href: '/programs/dance-creative-movement' },
+      { name: 'Holiday & Summer Programs', href: '/programs/holiday-summer-programs' },
     ],
   },
   {
@@ -49,47 +49,47 @@ const navLinks = [
     href: '/neuropiway',
     subLinks: [
       { name: 'The NeuroPi Way', href: '/neuropiway' },
-      { name: 'Five Pillars', href: '/neuropiway#five-pillars' },
-      { name: 'Learning the NeuroPi Way', href: '/neuropiway#learning-neuropi-way' },
-      { name: 'Reimagining The learning', href: '/neuropiway#reimagining-learning' },
-      { name: 'What is NeuroPi?', href: '/neuropiway#what-is-neuropi' },
-      { name: 'NeuroPi Connect', href: '/neuropiway#neuropi-connect' },
-      { name: 'Learning Cycle', href: '/neuropiway#learning-cycle' },
-      { name: 'The NeuroPi Classroom Method', href: '/neuropiway#classroom-method' },
-      { name: 'RISE — Developmental Observation', href: '/neuropiway#rise' },
-      { name: 'Developmental Milestones', href: '/neuropiway#developmental-milestones' },
-      { name: 'One Developmental Profile', href: '/neuropiway#one-developmental-profile' },
-      { name: 'NeuroPi Teacher Development', href: '/neuropiway#teacher-development' },
+      { name: 'Five Pillars', href: '/neuropiway/five-pillars' },
+      { name: 'Learning the NeuroPi Way', href: '/neuropiway/learning-neuropi-way' },
+      { name: 'Reimagining The learning', href: '/neuropiway/reimagining-learning' },
+      { name: 'What is NeuroPi?', href: '/neuropiway/what-is-neuropi' },
+      { name: 'NeuroPi Connect', href: '/neuropiway/neuropi-connect' },
+      { name: 'Learning Cycle', href: '/neuropiway/learning-cycle' },
+      { name: 'The NeuroPi Classroom Method', href: '/neuropiway/classroom-method' },
+      { name: 'RISE — Developmental Observation', href: '/neuropiway/rise' },
+      { name: 'Developmental Milestones', href: '/neuropiway/developmental-milestones' },
+      { name: 'One Developmental Profile', href: '/neuropiway/one-developmental-profile' },
+      { name: 'NeuroPi Teacher Development', href: '/neuropiway/teacher-development' },
     ],
   },
   {
     name: 'PARENTS',
     href: '/parents',
     subLinks: [
-      { name: 'Your Journey with MSI', href: '/parents#your-journey' },
-      { name: 'Starting School & Settling In', href: '/parents#starting-school' },
-      { name: "Your Child's Day at MSI", href: '/parents#childs-day' },
-      { name: "Understanding Your Child's Progress", href: '/parents#childs-progress' },
-      { name: 'Home Learning & Family Connection', href: '/parents#home-learning' },
-      { name: 'Parent Handbook', href: '/parents#parent-handbook' },
-      { name: 'Frequently Asked Questions', href: '/parents#faq' },
-      { name: 'Parent Stories & Testimonials', href: '/parents#testimonials' },
+      { name: 'Your Journey with MSI', href: '/parents/your-journey' },
+      { name: 'Starting School & Settling In', href: '/parents/starting-school' },
+      { name: "Your Child's Day at MSI", href: '/parents/childs-day' },
+      { name: "Understanding Your Child's Progress", href: '/parents/childs-progress' },
+      { name: 'Home Learning & Family Connection', href: '/parents/home-learning' },
+      { name: 'Parent Handbook', href: '/parents/parent-handbook' },
+      { name: 'Frequently Asked Questions', href: '/parents/faq' },
+      { name: 'Parent Stories & Testimonials', href: '/parents/testimonials' },
     ],
   },
   {
     name: 'CORPORATE CHILDCARE',
     href: '/corporatechildcare',
     subLinks: [
-      { name: 'Corporate Childcare Solutions', href: '/corporatechildcare#solutions' },
-      { name: 'On-Campus Crèche', href: '/corporatechildcare#on-campus-creche' },
-      { name: 'Near-Campus Preferred Centres', href: '/corporatechildcare#near-campus-centres' },
-      { name: 'Corporate Subsidy Programs', href: '/corporatechildcare#subsidy-programs' },
-      { name: 'Extended-Hours Childcare', href: '/corporatechildcare#extended-hours' },
-      { name: 'Reserved Seats', href: '/corporatechildcare#reserved-seats' },
-      { name: 'Multi-Location Solutions', href: '/corporatechildcare#multi-location-solutions' },
-      { name: 'The Employee Childcare Journey', href: '/corporatechildcare#employee-journey' },
-      { name: 'Our Corporate Experience', href: '/corporatechildcare#corporate-experience' },
-      { name: 'Partner With My School ITALY', href: '/corporatechildcare#partner' },
+      { name: 'Corporate Childcare Solutions', href: '/corporatechildcare/solutions' },
+      { name: 'On-Campus Crèche', href: '/corporatechildcare/on-campus-creche' },
+      { name: 'Near-Campus Preferred Centres', href: '/corporatechildcare/near-campus-centres' },
+      { name: 'Corporate Subsidy Programs', href: '/corporatechildcare/subsidy-programs' },
+      { name: 'Extended-Hours Childcare', href: '/corporatechildcare/extended-hours' },
+      { name: 'Reserved Seats', href: '/corporatechildcare/reserved-seats' },
+      { name: 'Multi-Location Solutions', href: '/corporatechildcare/multi-location-solutions' },
+      { name: 'The Employee Childcare Journey', href: '/corporatechildcare/employee-journey' },
+      { name: 'Our Corporate Experience', href: '/corporatechildcare/corporate-experience' },
+      { name: 'Partner With My School ITALY', href: '/corporatechildcare/partner' },
     ],
   },
 ];
@@ -111,6 +111,18 @@ const Header = () => {
     }
     return pathname === linkHref || (linkHref !== '/' && pathname.startsWith(linkHref));
   };
+
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.location.hash) {
+      const hash = window.location.hash.replace('#', '');
+      const el = document.getElementById(hash);
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 200);
+      }
+    }
+  }, [pathname]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -280,7 +292,22 @@ const Header = () => {
                           <Link
                             key={sub.name}
                             href={sub.href}
-                            onClick={() => setActiveDropdown(null)}
+                            onClick={(e) => {
+                              setActiveDropdown(null);
+                              const lastSlash = sub.href.lastIndexOf('/');
+                              if (lastSlash > 0) {
+                                const basePath = sub.href.substring(0, lastSlash);
+                                const targetId = sub.href.substring(lastSlash + 1);
+                                if (window.location.pathname.startsWith(basePath)) {
+                                  const el = document.getElementById(targetId);
+                                  if (el) {
+                                    e.preventDefault();
+                                    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                                    window.history.pushState(null, '', sub.href);
+                                  }
+                                }
+                              }
+                            }}
                             className="group/item flex items-center justify-between p-2 rounded-xl text-[13.5px] font-medium text-slate-800 hover:text-msi-purple hover:bg-slate-100 border-l-2 border-transparent hover:border-msi-orange transition-all duration-150"
                           >
                             <span className="truncate pr-2 group-hover/item:translate-x-1 transition-transform duration-200">
@@ -385,7 +412,22 @@ const Header = () => {
                                 key={sub.name}
                                 href={sub.href}
                                 className="text-white/95 text-xs py-2 px-2.5 hover:bg-white/15 rounded-lg flex items-center justify-between font-normal transition-colors"
-                                onClick={() => setIsMenuOpen(false)}
+                                onClick={(e) => {
+                                  setIsMenuOpen(false);
+                                  const lastSlash = sub.href.lastIndexOf('/');
+                                  if (lastSlash > 0) {
+                                    const basePath = sub.href.substring(0, lastSlash);
+                                    const targetId = sub.href.substring(lastSlash + 1);
+                                    if (window.location.pathname.startsWith(basePath)) {
+                                      const el = document.getElementById(targetId);
+                                      if (el) {
+                                        e.preventDefault();
+                                        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                                        window.history.pushState(null, '', sub.href);
+                                      }
+                                    }
+                                  }
+                                }}
                               >
                                 <span>{sub.name}</span>
                                 <ChevronRight className="w-3.5 h-3.5 text-white/50" />

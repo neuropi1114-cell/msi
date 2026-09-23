@@ -9,6 +9,8 @@ import ReadMoreButton from './ReadMoreButton';
 import Drawer from '../layout/Drawer';
 
 export default function DualFeatureSection({
+  leftId = null,
+  rightId = null,
   faqOnly = false,
   showFaq = false,
   variant = 'default',
@@ -108,7 +110,7 @@ export default function DualFeatureSection({
           </div>
         )}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-          <div className="flex flex-col items-end">
+          <div id={leftId || undefined} className="flex flex-col items-end scroll-mt-24">
             <div className={`rounded-[10px] overflow-hidden mb-6 relative ${leftAspect} w-full`}>
               <Image
                 src={leftImage}
@@ -177,7 +179,7 @@ export default function DualFeatureSection({
               )}
             </div>
           </div>
-          <div>
+          <div id={rightId || undefined} className="scroll-mt-24">
             <div className={`rounded-[10px] overflow-hidden mb-6 relative ${rightAspect} w-full`}>
               <Image
                 src={rightImage}

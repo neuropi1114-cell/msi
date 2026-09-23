@@ -16,17 +16,19 @@ import ExtendedTimingSection from '../../components/programs/ExtendedTimingSecti
 import EnrichmentSection from '../../components/programs/EnrichmentSection';
 import ExpressiveArtsSection from '../../components/programs/ExpressiveArtsSection';
 import HolidayProgramsSection from '../../components/programs/HolidayProgramsSection';
+import SectionScrollController from '../../components/common/SectionScrollController';
 import { metadata, programVideos } from './programsdata';
 
 const ContactUs = dynamic(() => import('../../components/common/ContactUs'), { ssr: true });
 
 export { metadata };
 
-export default function ProgramsPage() {
+export default function ProgramsPage({ activeSlug = null }) {
   return (
     <>
       <TopBar />
       <Header />
+      <SectionScrollController activeSlug={activeSlug} />
       <main>
         <CloudHeader
           image="/images/programs/Header_3.png"
@@ -47,14 +49,30 @@ export default function ProgramsPage() {
           className="pt-6 pb-2 bg-white"
         />
 
-        <EarlyYearsSection />
-        <NurserySection />
-        <KindergartenSection />
-        <DaycareSection />
-        <ExtendedTimingSection />
-        <EnrichmentSection />
-        <ExpressiveArtsSection />
-        <HolidayProgramsSection />
+        <div id="baby-creche" className="scroll-mt-24">
+          <EarlyYearsSection />
+        </div>
+        <div id="nursery" className="scroll-mt-24">
+          <NurserySection />
+        </div>
+        <div id="kindergarten-k1" className="scroll-mt-24">
+          <KindergartenSection />
+        </div>
+        <div id="daycare" className="scroll-mt-24">
+          <DaycareSection />
+        </div>
+        <div id="extended-care" className="scroll-mt-24">
+          <ExtendedTimingSection />
+        </div>
+        <div id="robotics" className="scroll-mt-24">
+          <EnrichmentSection />
+        </div>
+        <div id="storytelling-creative-arts" className="scroll-mt-24">
+          <ExpressiveArtsSection />
+        </div>
+        <div id="holiday-summer-programs" className="scroll-mt-24">
+          <HolidayProgramsSection />
+        </div>
 
         <OneJourneySection />
 
