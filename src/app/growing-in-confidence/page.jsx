@@ -3,7 +3,7 @@ import TopBar from '../../components/layout/TopBar';
 import Header from '../../components/layout/Header';
 import Footer from '../../components/layout/Footer';
 import Gallery from '../../components/home/Gallery';
-import ContactUs from '../../components/home/ContactUs';
+import ContactUs from '../../components/common/ContactUs';
 import AboutActivities from '../../components/about/AboutActivities';
 import BrighterFuture from '../../components/growing-in-confidence/BrighterFuture';
 

@@ -18,7 +18,7 @@ import ExpressiveArtsSection from '../../components/programs/ExpressiveArtsSecti
 import HolidayProgramsSection from '../../components/programs/HolidayProgramsSection';
 import { metadata, programVideos } from './programsdata';
 
-const ContactUs = dynamic(() => import('../../components/home/ContactUs'), { ssr: true });
+const ContactUs = dynamic(() => import('../../components/common/ContactUs'), { ssr: true });
 
 export { metadata };
 

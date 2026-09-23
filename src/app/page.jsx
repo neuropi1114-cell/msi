@@ -17,7 +17,7 @@ const FeaturedIn = dynamic(() => import('../components/home/FeaturedIn'), { ssr:
 const Blogs = dynamic(() => import('../components/home/Blogs'), { ssr: true });
 const StepIntoADay = dynamic(() => import('../components/home/StepIntoADay'), { ssr: true });
 const Footer = dynamic(() => import('../components/layout/Footer'), { ssr: true });
-const ContactUs = dynamic(() => import('../components/home/ContactUs'), { ssr: true });
+const ContactUs = dynamic(() => import('../components/common/ContactUs'), { ssr: true });
 
 export default function HomePage() {
   return (

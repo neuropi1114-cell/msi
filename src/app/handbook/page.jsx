@@ -3,7 +3,7 @@ import TopBar from '../../components/layout/TopBar';
 import Header from '../../components/layout/Header';
 import Footer from '../../components/layout/Footer';
 import HandbookFlipbook from '../../components/handbook/HandbookFlipbook';
-import ContactUs from '../../components/home/ContactUs';
+import ContactUs from '../../components/common/ContactUs';
 
 export const metadata = {
   title: 'Handbook',

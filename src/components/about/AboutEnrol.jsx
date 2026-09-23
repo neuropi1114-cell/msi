@@ -1,5 +1,5 @@
 'use client';
-import ContactUs from '../home/ContactUs';
+import ContactUs from '../common/ContactUs';
 
 export default function AboutEnrol() {
   return (

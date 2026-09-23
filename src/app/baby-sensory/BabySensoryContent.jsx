@@ -5,7 +5,7 @@ import Image from 'next/image';
 import TopBar from '../../components/layout/TopBar';
 import Header from '../../components/layout/Header';
 import Footer from '../../components/layout/Footer';
-import ContactUs from '../../components/home/ContactUs';
+import ContactUs from '../../components/common/ContactUs';
 import EarlyLearningSection from '../../components/common/EarlyLearningSection';
 import SensoryCardsSection from '../../components/common/SensoryCardsSection';
 import { Baby, BookOpen, Music } from 'lucide-react';

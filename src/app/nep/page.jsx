@@ -2,7 +2,7 @@ import React from 'react';
 import TopBar from '../../components/layout/TopBar';
 import Header from '../../components/layout/Header';
 import Footer from '../../components/layout/Footer';
-import ContactUs from '../../components/home/ContactUs';
+import ContactUs from '../../components/common/ContactUs';
 import Feedback from '../../components/home/Feedback';
 import NepHero from '../../components/nep/NepHero';
 import DesignPhilosophy from '../../components/nep/DesignPhilosophy';
