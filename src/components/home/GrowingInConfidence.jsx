@@ -16,7 +16,7 @@ const GrowingInConfidence = ({ growing = defaultGrowingData }) => {
               {growing.span}
             </span>
           )}
-          <h2 className="text-3xl md:text-5xl text-msi-orange font-bold uppercase tracking-wide mb-4">
+          <h2 className="mb-4">
             {growing.title}
           </h2>
           <p className="mb-8 leading-relaxed text-center  max-w-3xl mx-auto">

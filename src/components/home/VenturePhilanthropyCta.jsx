@@ -13,7 +13,7 @@ export default function VenturePhilanthropyCta() {
       className="mt-16 max-w-4xl mx-auto text-center"
     >
       <h3>MSI Venture Philanthropy</h3>
-      <h2 >
+      <h2>
         EDUCATION EXCELLENCE EVERYWHERE
       </h2>
 

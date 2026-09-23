@@ -42,11 +42,7 @@
   }
 
   h2 {
-    font-family: 'Linotte Rounded', 'Linotte', var(--font-fredoka), sans-serif;
-    font-size: 33.18px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #d16827;
+    @apply font-linotte text-3xl md:text-4xl text-msi-orange font-bold leading-tight uppercase not-italic;
   }
 
   h3 {

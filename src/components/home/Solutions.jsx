@@ -2,11 +2,12 @@ const Solutions = () => {
   return (
     <section className="py-24 bg-[#d16827] relative overflow-hidden">
       <div className="container mx-auto px-3 md:px-6 text-center mb-12">
-        <h2 className="text-3xl md:text-5xl text-white font-bold mb-4">
+        <h3 className='text-msi-purple' >
           YOU GO TO WORK.
           <br />
-          THEIR CHILDHOOD DOESN'T HAVE TO WAIT.
-        </h2>
+
+        </h3>
+        <h2 className="text-msi-purple">THEIR CHILDHOOD DOESN'T HAVE TO WAIT.</h2>
         <p className="text-white/90 max-w-2xl mx-auto text-lg">
           We offer family solutions for the diverse and multi-cultural global community.
         </p>
@@ -22,7 +23,7 @@ const Solutions = () => {
           />
           <div className="p-6 md:p-10">
             <h3 className="text-2xl text-[#2f9ed9] font-bold mb-3 text-center">
-              You focus on your work
+              You focus on your work.
             </h3>
             <p className="mb-2 leading-relaxed text-center text-lg md:text-xl">
               We remain focused on your child.

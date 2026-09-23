@@ -283,7 +283,7 @@ const AgeDetail = ({ group, reversed, first }) => {
                     onClick={() => toggleAccordion(i)}
                     className="w-full py-1 text-left cursor-pointer focus:outline-none"
                   >
-                    <h2 className="text-2xl md:text-3xl font-bold">
+                    <h2>
                       {item.title}
                     </h2>
                   </button>
@@ -299,7 +299,7 @@ const AgeDetail = ({ group, reversed, first }) => {
         </div>
       ) : (
         <>
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">
+          <h2 className="mb-4">
             {group.title}
           </h2>
           <p className="mb-6 leading-relaxed">{group.description}</p>
@@ -371,7 +371,7 @@ const AgeGroupsIntro = ({ data }) => {
             transition={{ duration: 0.6 }}
             className="text-center max-w-4xl mx-auto mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-msi-blue">
+            <h2 className="mb-4 text-msi-purple">
               {data.header.title}
             </h2>
             <h2>{data.header.subtitle}</h2>

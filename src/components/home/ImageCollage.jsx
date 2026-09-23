@@ -129,7 +129,7 @@ export default function ImageCollage({ images = defaultImages, title = "Glimpses
       <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mb-8">
         <div className="flex-1" />
         {title && (
-          <h2 className="text-3xl md:text-4xl text-msi-orange font-bold uppercase tracking-wide text-center">
+          <h2 className="text-center">
             {title}
           </h2>
         )}

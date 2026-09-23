@@ -156,7 +156,7 @@ const Hero = () => {
           >
             {/* Oversized display title */}
             <h2
-              className="font-linotte text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white font-medium mb-4 sm:mb-6 leading-[1.15] break-words tracking-tight"
+              className="text-white mb-4 sm:mb-6 break-words"
             >
               {slide.title}
             </h2>

@@ -138,7 +138,7 @@ export default function ContactUs({ intro }) {
               className="bg-white rounded-3xl shadow-xl p-8 md:p-10"
             >
               {intro && <div className="text-gray-600 text-center mb-6 leading-relaxed">{intro}</div>}
-              <h2 className="">
+              <h2>
                 ENROL YOUR CHILD
               </h2>
 

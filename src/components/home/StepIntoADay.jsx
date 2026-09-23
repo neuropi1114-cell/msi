@@ -193,9 +193,9 @@ const StepIntoADay = ({
                   {subtitle}
                 </h3>
               )}
-              <h3 className="font-linotte text-3xl md:text-4xl text-msi-orange font-bold leading-tight uppercase not-italic">
+              <h2>
                 {title}
-              </h3>
+              </h2>
             </div>
           ) : rightImage ? (
             <img

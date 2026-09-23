@@ -13,7 +13,7 @@ export default function CorporatePartners({ title = defaultTitle, description = 
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-3xl md:text-5xl  text-msi-purple font-bold mb-1"
+          className="mb-1"
         >
           {title}
         </motion.h2>
