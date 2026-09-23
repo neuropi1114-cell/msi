@@ -43,8 +43,8 @@ export default function EducationalProjectPage({ activeSlug = null }) {
       <main>
         <CloudHeader
           image="/images/nep/The_NeuroPi_Way_1.png"
-          imageClass="object-cover object-top"
-          heightClass="w-full aspect-[1672/941] min-h-[300px] max-h-[700px]"
+          imageClass="object-cover object-center"
+          heightClass="w-full aspect-[1672/941] min-h-[350px] md:min-h-[550px] max-h-[850px]"
         />
         <div data-nav-sentinel />
 
@@ -114,6 +114,13 @@ export default function EducationalProjectPage({ activeSlug = null }) {
           image="/images/nep/The_NeuroPi_Way_6.png"
           imageAspect="aspect-[4/3]"
           imageClass="object-cover"
+          title={null}
+          p1={null}
+          p2={null}
+          bottomEyebrow={null}
+          bottomTitle={null}
+          bottomP1={null}
+          bottomP2={null}
           eyebrow={
             <div className="space-y-4">
               <div>
@@ -230,7 +237,7 @@ export default function EducationalProjectPage({ activeSlug = null }) {
         <MissionCounters />
         <GalleryStrip images={neuroPiWayGalleryImages} />
       </main>
-      <ContactUs />
+      <ContactUs image="/images/nep/The_NeuroPi_Way_Enrol.png" />
       <Footer />
     </>
   );

@@ -274,18 +274,21 @@ export const neuroPiSensoryCards = [
     alt: 'RISE — DEVELOPMENTAL OBSERVATION',
     drawerTitle: 'RISE — DEVELOPMENTAL OBSERVATION',
     drawerBody: riseObservationDrawerBody,
+    aspect: 'aspect-square w-full',
   },
   {
     img: '/images/nep/The_NeuroPi_Way_11.png',
     alt: 'DEVELOPMENTAL MILESTONES & OBSERVATIONS',
     drawerTitle: 'DEVELOPMENTAL MILESTONES & OBSERVATIONS',
     drawerBody: milestonesObservationDrawerBody,
+    aspect: 'aspect-square w-full',
   },
   {
     img: '/images/nep/The_NeuroPi_Way_12.png',
     alt: 'THE NEUROPI WAY IN ONE PICTURE',
     drawerTitle: 'THE NEUROPI WAY IN ONE PICTURE',
     drawerBody: onePictureDrawerBody,
+    aspect: 'aspect-square w-full',
   },
 ];
 

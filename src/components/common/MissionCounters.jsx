@@ -38,7 +38,7 @@ export default function MissionCounters() {
           </div>
 
           <ScrollReveal direction="left" delay={0.45} className="w-full md:w-[25.41%] flex items-center justify-center mb-6 md:mb-0">
-            <h2 className="text-[60px] font-semibold text-center md:max-w-[74.602%]">By 2027</h2>
+            <h2 className="text-[60px] font-semibold text-center leading-[64px] md:max-w-[74.602%]">By 2030</h2>
           </ScrollReveal>
         </div>
 

@@ -64,7 +64,7 @@ export default function SensoryCardsSection({
                       alt={item.alt}
                       fill
                       style={{ objectPosition: item.objectPos || 'top' }}
-                      className="object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+                      className={`${item.objectFit || 'object-cover'} transition-transform duration-300 group-hover:scale-[1.03]`}
                     />
                   </div>
                   {item.text && (

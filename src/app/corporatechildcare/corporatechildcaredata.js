@@ -23,39 +23,39 @@ export const metadata = {
 };
 
 export const corporateChildcareDrawerBody = (
-  <div className="space-y-6  leading-relaxed  text-base pt-2">
+  <div className="space-y-6 leading-relaxed pt-2">
     {/* Highlight Quote Box */}
     <div className="bg-gradient-to-r from-msi-purple/10 via-msi-orange/5 to-transparent p-5 rounded-2xl border-l-4 border-msi-orange shadow-xs">
-      <p className="font-semibold text-msi-purple text-lg leading-snug">
+      <p className="font-semibold text-msi-purple leading-snug">
         &ldquo;When employees know their children are cared for, they can focus on their work.&rdquo;
       </p>
     </div>
 
     {/* Paragraph 1 */}
-    <p className="">
-      For working parents, childcare is not simply a family issue. It can directly influence <strong className="">return to work</strong>, <strong className="">attendance</strong>, <strong className="">productivity</strong>, <strong className="">employee retention</strong>, and complete peace of mind.
+    <p>
+      For working parents, childcare is not simply a family issue. It can directly influence <strong>return to work</strong>, <strong>attendance</strong>, <strong>productivity</strong>, <strong>employee retention</strong>, and complete peace of mind.
     </p>
 
     {/* Key Highlights Card List */}
     <div className="bg-[#f7f9fc] p-5 rounded-2xl border border-gray-100 space-y-3">
-      <h4 className="font-bold text-msi-purple text-sm uppercase tracking-wider mb-2">
+      <h4 className="font-bold text-msi-purple uppercase tracking-wider mb-2">
         Tailored Workplace Solutions
       </h4>
       <div className="flex items-start gap-3">
         <CheckCircle2 className="w-5 h-5 text-msi-orange shrink-0 mt-0.5" />
-        <span className="text-sm ">
+        <span>
           <strong>Professionally Managed Solutions:</strong> Crèche, daycare, and extended childcare tailored for today&apos;s corporate realities.
         </span>
       </div>
       <div className="flex items-start gap-3">
         <CheckCircle2 className="w-5 h-5 text-msi-orange shrink-0 mt-0.5" />
-        <span className="text-sm ">
+        <span>
           <strong>Flexible Campus Models:</strong> From on-site corporate crèches to reserved seats across multiple MSI centers.
         </span>
       </div>
       <div className="flex items-start gap-3">
         <CheckCircle2 className="w-5 h-5 text-msi-orange shrink-0 mt-0.5" />
-        <span className="text-sm ">
+        <span>
           <strong>Aligned Patterns:</strong> Custom models crafted around your organization&apos;s work shifts and policy goals.
         </span>
       </div>
@@ -63,10 +63,10 @@ export const corporateChildcareDrawerBody = (
 
     {/* Final Callout Banner */}
     <div className="bg-msi-purple text-white p-5 rounded-2xl shadow-md text-center">
-      <p className="text-xs uppercase tracking-widest text-msi-yellow font-bold mb-1">
+      <p className="uppercase tracking-widest text-msi-yellow font-bold mb-1">
         Our Promise To Your Workforce
       </p>
-      <p className="font-bold text-lg md:text-xl text-white">
+      <p className="font-bold text-white">
         You Take Care of Your People. <br />
         <span className="text-msi-orange">We Help Take Care of Their Little People.</span>
       </p>
@@ -75,59 +75,59 @@ export const corporateChildcareDrawerBody = (
 );
 
 export const corporateChildcareSolutionsDrawerBody = (
-  <div className="space-y-6  leading-relaxed  text-base pt-2">
+  <div className="space-y-6 leading-relaxed pt-2">
     {/* Highlight Quote Box */}
     <div className="bg-gradient-to-r from-msi-purple/10 via-msi-orange/5 to-transparent p-5 rounded-2xl border-l-4 border-msi-orange shadow-xs">
-      <p className="font-semibold text-msi-purple text-lg leading-snug">
+      <p className="font-semibold text-msi-purple leading-snug">
         One Organisation. Different Employees. Different Childcare Needs.
       </p>
     </div>
 
     {/* Paragraph */}
-    <p className="">
+    <p>
       A single childcare model may not work for every workplace. The requirement depends on employee numbers, location, shifts, available space, commuting patterns and the ages of employees&apos; children.
     </p>
 
     {/* Delivery Models Card */}
     <div className="bg-[#f7f9fc] p-5 rounded-2xl border border-gray-100 space-y-4">
-      <h4 className="font-bold text-msi-purple text-sm uppercase tracking-wider mb-2">
+      <h4 className="font-bold text-msi-purple uppercase tracking-wider mb-2">
         MSI Delivery Models
       </h4>
       <div className="space-y-3">
         <div className="flex items-start gap-3">
           <CheckCircle2 className="w-5 h-5 text-msi-orange shrink-0 mt-0.5" />
-          <span className="text-sm ">
-            <strong className="">On-Campus Crèche:</strong> Childcare within or adjacent to the corporate campus.
+          <span>
+            <strong>On-Campus Crèche:</strong> Childcare within or adjacent to the corporate campus.
           </span>
         </div>
         <div className="flex items-start gap-3">
           <CheckCircle2 className="w-5 h-5 text-msi-orange shrink-0 mt-0.5" />
-          <span className="text-sm ">
-            <strong className="">Near-Campus Preferred Centres:</strong> Access to an MSI centre conveniently located near the workplace.
+          <span>
+            <strong>Near-Campus Preferred Centres:</strong> Access to an MSI centre conveniently located near the workplace.
           </span>
         </div>
         <div className="flex items-start gap-3">
           <CheckCircle2 className="w-5 h-5 text-msi-orange shrink-0 mt-0.5" />
-          <span className="text-sm ">
-            <strong className="">Corporate Subsidy Programs:</strong> Employer-supported childcare with preferential arrangements for eligible employees.
+          <span>
+            <strong>Corporate Subsidy Programs:</strong> Employer-supported childcare with preferential arrangements for eligible employees.
           </span>
         </div>
         <div className="flex items-start gap-3">
           <CheckCircle2 className="w-5 h-5 text-msi-orange shrink-0 mt-0.5" />
-          <span className="text-sm ">
-            <strong className="">Reserved Seats:</strong> A defined number of childcare places reserved for the organisation&apos;s employees.
+          <span>
+            <strong>Reserved Seats:</strong> A defined number of childcare places reserved for the organisation&apos;s employees.
           </span>
         </div>
         <div className="flex items-start gap-3">
           <CheckCircle2 className="w-5 h-5 text-msi-orange shrink-0 mt-0.5" />
-          <span className="text-sm ">
-            <strong className="">Extended-Hours Childcare:</strong> Additional support for longer or non-standard working schedules.
+          <span>
+            <strong>Extended-Hours Childcare:</strong> Additional support for longer or non-standard working schedules.
           </span>
         </div>
         <div className="flex items-start gap-3">
           <CheckCircle2 className="w-5 h-5 text-msi-orange shrink-0 mt-0.5" />
-          <span className="text-sm ">
-            <strong className="">Multi-Location Solutions:</strong> Childcare access across multiple locations for distributed workforces.
+          <span>
+            <strong>Multi-Location Solutions:</strong> Childcare access across multiple locations for distributed workforces.
           </span>
         </div>
       </div>
@@ -135,7 +135,7 @@ export const corporateChildcareSolutionsDrawerBody = (
 
     {/* Final Callout Banner */}
     <div className="bg-msi-purple text-white p-5 rounded-2xl shadow-md text-center">
-      <p className="font-bold text-lg md:text-xl text-white">
+      <p className="font-bold text-white">
         One Childcare Partner. <br />
         <span className="text-msi-orange">Multiple Ways to Deliver.</span>
       </p>
@@ -144,25 +144,25 @@ export const corporateChildcareSolutionsDrawerBody = (
 );
 
 export const onCampusCrecheDrawerBody = (
-  <div className="space-y-6  leading-relaxed  text-base pt-2">
+  <div className="space-y-6 leading-relaxed pt-2">
     {/* Highlight Quote Box */}
     <div className="bg-gradient-to-r from-msi-purple/10 via-msi-orange/5 to-transparent p-5 rounded-2xl border-l-4 border-msi-orange shadow-xs">
-      <p className="font-semibold text-msi-purple text-lg leading-snug">
+      <p className="font-semibold text-msi-purple leading-snug">
         Childcare Where Your Employees Work
       </p>
     </div>
 
     {/* Intro Paragraph */}
-    <p className="">
+    <p>
       MSI can work with organisations to establish and operate childcare facilities within corporate campuses or designated workplace premises.
     </p>
 
     {/* Supported Areas Grid */}
     <div className="bg-[#f7f9fc] p-5 rounded-2xl border border-gray-100 space-y-3">
-      <h4 className="font-bold text-msi-purple text-sm uppercase tracking-wider mb-2">
+      <h4 className="font-bold text-msi-purple uppercase tracking-wider mb-2">
         Depending on the engagement, MSI can support areas including:
       </h4>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <div className="flex items-center gap-2">
           <CheckCircle2 className="w-4 h-4 text-msi-orange shrink-0" />
           <span>Space Planning &amp; Childcare Layout</span>
@@ -215,13 +215,13 @@ export const onCampusCrecheDrawerBody = (
     </div>
 
     {/* Concluding Paragraph */}
-    <p className="">
+    <p>
       The result is a childcare environment that gives parents the reassurance of having their child close to their workplace while the organisation benefits from a professionally managed childcare partner.
     </p>
 
     {/* Final Callout Banner */}
     <div className="bg-msi-purple text-white p-5 rounded-2xl shadow-md text-center">
-      <p className="font-bold text-lg md:text-xl text-white">
+      <p className="font-bold text-white">
         Closer to Work. <span className="text-msi-orange">Closer to Their Child.</span>
       </p>
     </div>
@@ -229,25 +229,25 @@ export const onCampusCrecheDrawerBody = (
 );
 
 export const nearCampusPreferredDrawerBody = (
-  <div className="space-y-6  leading-relaxed  text-base pt-2">
+  <div className="space-y-6 leading-relaxed pt-2">
     {/* Highlight Quote Box */}
     <div className="bg-gradient-to-r from-msi-purple/10 via-msi-orange/5 to-transparent p-5 rounded-2xl border-l-4 border-msi-orange shadow-xs">
-      <p className="font-semibold text-msi-purple text-lg leading-snug">
+      <p className="font-semibold text-msi-purple leading-snug">
         Corporate Childcare Without Building a Crèche
       </p>
     </div>
 
     {/* Intro Paragraph */}
-    <p className="">
+    <p>
       Not every organisation needs — or has the space for — an on-campus childcare centre. Employees can instead receive preferred access to an MSI centre located conveniently near their workplace.
     </p>
 
     {/* Agreement Benefits Card */}
     <div className="bg-[#f7f9fc] p-5 rounded-2xl border border-gray-100 space-y-3">
-      <h4 className="font-bold text-msi-purple text-sm uppercase tracking-wider mb-2">
+      <h4 className="font-bold text-msi-purple uppercase tracking-wider mb-2">
         Depending on the agreement, this can include:
       </h4>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <div className="flex items-center gap-2">
           <CheckCircle2 className="w-4 h-4 text-msi-orange shrink-0" />
           <span>Priority Access</span>
@@ -284,13 +284,13 @@ export const nearCampusPreferredDrawerBody = (
     </div>
 
     {/* Concluding Paragraph */}
-    <p className="">
+    <p>
       This model allows organisations to provide meaningful childcare support without establishing an entire childcare operation within their own premises.
     </p>
 
     {/* Final Callout Banner */}
     <div className="bg-msi-purple text-white p-5 rounded-2xl shadow-md text-center">
-      <p className="font-bold text-lg md:text-xl text-white">
+      <p className="font-bold text-white">
         Your Employees Get the Childcare Support. <br />
         <span className="text-msi-orange">You Don&apos;t Have to Build the Childcare Infrastructure.</span>
       </p>
@@ -299,25 +299,25 @@ export const nearCampusPreferredDrawerBody = (
 );
 
 export const corporateSubsidyDrawerBody = (
-  <div className="space-y-6  leading-relaxed  text-base pt-2">
+  <div className="space-y-6 leading-relaxed pt-2">
     {/* Highlight Quote Box */}
     <div className="bg-gradient-to-r from-msi-purple/10 via-msi-orange/5 to-transparent p-5 rounded-2xl border-l-4 border-msi-orange shadow-xs">
-      <p className="font-semibold text-msi-purple text-lg leading-snug">
+      <p className="font-semibold text-msi-purple leading-snug">
         Turn Childcare Into a Meaningful Employee Benefit
       </p>
     </div>
 
     {/* Intro Paragraph */}
-    <p className="">
+    <p>
       Organisations can support eligible employees by contributing towards childcare costs through a structured corporate subsidy arrangement.
     </p>
 
     {/* Model Definition Card */}
     <div className="bg-[#f7f9fc] p-5 rounded-2xl border border-gray-100 space-y-3">
-      <h4 className="font-bold text-msi-purple text-sm uppercase tracking-wider mb-2">
+      <h4 className="font-bold text-msi-purple uppercase tracking-wider mb-2">
         MSI can work with the organisation to define an appropriate model based on:
       </h4>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <div className="flex items-center gap-2">
           <CheckCircle2 className="w-4 h-4 text-msi-orange shrink-0" />
           <span>Employee Eligibility</span>
@@ -354,13 +354,13 @@ export const corporateSubsidyDrawerBody = (
     </div>
 
     {/* Concluding Paragraph */}
-    <p className="">
+    <p>
       Employees receive access to professional childcare at a corporate preferred arrangement while the organisation can offer a benefit that directly supports working families.
     </p>
 
     {/* Final Callout Banner */}
     <div className="bg-msi-purple text-white p-5 rounded-2xl shadow-md text-center">
-      <p className="font-bold text-lg md:text-xl text-white">
+      <p className="font-bold text-white">
         A Benefit Employees Can Actually Use Every Working Day
       </p>
     </div>
@@ -368,25 +368,25 @@ export const corporateSubsidyDrawerBody = (
 );
 
 export const extendedHoursChildcareDrawerBody = (
-  <div className="space-y-6  leading-relaxed  text-base pt-2">
+  <div className="space-y-6 leading-relaxed pt-2">
     {/* Highlight Quote Box */}
     <div className="bg-gradient-to-r from-msi-purple/10 via-msi-orange/5 to-transparent p-5 rounded-2xl border-l-4 border-msi-orange shadow-xs">
-      <p className="font-semibold text-msi-purple text-lg leading-snug">
+      <p className="font-semibold text-msi-purple leading-snug">
         Because Modern Work Doesn&apos;t Always End at 5 PM
       </p>
     </div>
 
     {/* Intro Paragraph */}
-    <p className="">
+    <p>
       Technology, healthcare, global services, customer support, operations and many other industries work beyond conventional school hours. MSI can design extended childcare arrangements around employee working patterns.
     </p>
 
     {/* Supported Arrangements Card */}
     <div className="bg-[#f7f9fc] p-5 rounded-2xl border border-gray-100 space-y-3">
-      <h4 className="font-bold text-msi-purple text-sm uppercase tracking-wider mb-2">
+      <h4 className="font-bold text-msi-purple uppercase tracking-wider mb-2">
         Depending on the location, these can include:
       </h4>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <div className="flex items-center gap-2">
           <CheckCircle2 className="w-4 h-4 text-msi-orange shrink-0" />
           <span>Early Drop-Off</span>
@@ -424,7 +424,7 @@ export const extendedHoursChildcareDrawerBody = (
 
     {/* Final Callout Banner */}
     <div className="bg-msi-purple text-white p-5 rounded-2xl shadow-md text-center">
-      <p className="font-bold text-lg md:text-xl text-white">
+      <p className="font-bold text-white">
         Childcare Designed Around the Working Day — <span className="text-msi-orange">Not Just the School Day.</span>
       </p>
     </div>
@@ -432,25 +432,25 @@ export const extendedHoursChildcareDrawerBody = (
 );
 
 export const reservedSeatsDrawerBody = (
-  <div className="space-y-6  leading-relaxed  text-base pt-2">
+  <div className="space-y-6 leading-relaxed pt-2">
     {/* Highlight Quote Box */}
     <div className="bg-gradient-to-r from-msi-purple/10 via-msi-orange/5 to-transparent p-5 rounded-2xl border-l-4 border-msi-orange shadow-xs">
-      <p className="font-semibold text-msi-purple text-lg leading-snug">
+      <p className="font-semibold text-msi-purple leading-snug">
         Childcare Capacity When Your Employees Need It
       </p>
     </div>
 
     {/* Intro Paragraph */}
-    <p className="">
+    <p>
       Childcare availability can become a challenge when employees need to return to work quickly. Under a Reserved Seats arrangement, an organisation can secure an agreed number of places for eligible employees at selected MSI centres.
     </p>
 
     {/* Useful For Card */}
     <div className="bg-[#f7f9fc] p-5 rounded-2xl border border-gray-100 space-y-3">
-      <h4 className="font-bold text-msi-purple text-sm uppercase tracking-wider mb-2">
+      <h4 className="font-bold text-msi-purple uppercase tracking-wider mb-2">
         This can be particularly useful for:
       </h4>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <div className="flex items-center gap-2">
           <CheckCircle2 className="w-4 h-4 text-msi-orange shrink-0" />
           <span>Return-to-Work Programs</span>
@@ -479,13 +479,13 @@ export const reservedSeatsDrawerBody = (
     </div>
 
     {/* Concluding Paragraph */}
-    <p className="">
+    <p>
       Instead of employees beginning their childcare search from zero, the organisation can provide access to a pre-arranged childcare network.
     </p>
 
     {/* Final Callout Banner */}
     <div className="bg-msi-purple text-white p-5 rounded-2xl shadow-md text-center">
-      <p className="font-bold text-lg md:text-xl text-white">
+      <p className="font-bold text-white">
         Guaranteed Places. <span className="text-msi-orange">Seamless Employee Transition.</span>
       </p>
     </div>
@@ -493,7 +493,7 @@ export const reservedSeatsDrawerBody = (
 );
 
 export const multiLocationSolutionsContent = (
-  <div className="text-[#464646] font-lato text-[15px] md:text-[17px] leading-relaxed space-y-4 mt-4">
+  <div className="text-[#464646] font-lato leading-relaxed space-y-4 mt-4">
     <p>
       Large organisations may have employees working across different campuses, business parks or cities.
     </p>
@@ -501,7 +501,7 @@ export const multiLocationSolutionsContent = (
       MSI can structure childcare arrangements across multiple locations through a combination of:
     </p>
     <div className="bg-[#f7f9fc] p-4 sm:p-5 rounded-2xl border border-gray-100 my-3">
-      <div className="flex flex-col sm:flex-row sm:flex-wrap gap-3 text-xs sm:text-sm  font-semibold">
+      <div className="flex flex-col sm:flex-row sm:flex-wrap gap-3 font-semibold">
         <div className="flex items-center gap-2">
           <CheckCircle2 className="w-4 h-4 text-msi-orange shrink-0" />
           <span>On-Campus Centres</span>
@@ -528,7 +528,7 @@ export const multiLocationSolutionsContent = (
       This gives HR teams a more consistent childcare proposition while allowing delivery to reflect the needs of each location.
     </p>
     <div className="pt-3 border-t border-gray-200">
-      <p className="text-lg sm:text-xl font-bold text-msi-purple">
+      <p className="font-bold text-msi-purple">
         One Corporate Childcare Strategy. Flexible Local Delivery.
       </p>
     </div>
@@ -536,86 +536,86 @@ export const multiLocationSolutionsContent = (
 );
 
 export const employeeChildcareJourneyDrawerBody = (
-  <div className="space-y-6  leading-relaxed  text-base pt-2">
+  <div className="space-y-6 leading-relaxed pt-2">
     {/* Highlight Quote Box */}
     <div className="bg-gradient-to-r from-msi-purple/10 via-msi-orange/5 to-transparent p-5 rounded-2xl border-l-4 border-msi-orange shadow-xs">
-      <p className="font-semibold text-msi-purple text-lg leading-snug">
+      <p className="font-semibold text-msi-purple leading-snug">
         Make Access Simple for Parents
       </p>
     </div>
 
     {/* Intro Paragraph */}
-    <p className="">
+    <p>
       Corporate childcare should not create another complicated process for employees. We can create a clear journey:
     </p>
 
     {/* Step by Step Timeline/Process List */}
     <div className="bg-[#f7f9fc] p-5 rounded-2xl border border-gray-100 space-y-3">
-      <h4 className="font-bold text-msi-purple text-sm uppercase tracking-wider mb-2">
+      <h4 className="font-bold text-msi-purple uppercase tracking-wider mb-2">
         The Employee Childcare Journey
       </h4>
-      <div className="space-y-3 text-sm ">
+      <div className="space-y-3">
         <div className="p-3 bg-white rounded-xl border border-gray-100 shadow-2xs">
-          <p className="font-bold text-msi-purple text-xs tracking-wider uppercase mb-1">
+          <p className="font-bold text-msi-purple tracking-wider uppercase mb-1">
             01 &mdash; CORPORATE REGISTRATION
           </p>
-          <p className="">
+          <p>
             The employee identifies themselves through the agreed corporate program.
           </p>
         </div>
         <div className="p-3 bg-white rounded-xl border border-gray-100 shadow-2xs">
-          <p className="font-bold text-msi-purple text-xs tracking-wider uppercase mb-1">
+          <p className="font-bold text-msi-purple tracking-wider uppercase mb-1">
             02 &mdash; PRIORITY COUNSELLING
           </p>
-          <p className="">
+          <p>
             Our team understands the child&apos;s age, childcare requirements, working hours and preferred location.
           </p>
         </div>
         <div className="p-3 bg-white rounded-xl border border-gray-100 shadow-2xs">
-          <p className="font-bold text-msi-purple text-xs tracking-wider uppercase mb-1">
+          <p className="font-bold text-msi-purple tracking-wider uppercase mb-1">
             03 &mdash; CENTRE SELECTION
           </p>
-          <p className="">
+          <p>
             The family identifies the most suitable participating MSI centre or on-campus facility.
           </p>
         </div>
         <div className="p-3 bg-white rounded-xl border border-gray-100 shadow-2xs">
-          <p className="font-bold text-msi-purple text-xs tracking-wider uppercase mb-1">
+          <p className="font-bold text-msi-purple tracking-wider uppercase mb-1">
             04 &mdash; EXPERIENCE / TRIAL
           </p>
-          <p className="">
+          <p>
             Where applicable, the family can experience the centre and settling process.
           </p>
         </div>
         <div className="p-3 bg-white rounded-xl border border-gray-100 shadow-2xs">
-          <p className="font-bold text-msi-purple text-xs tracking-wider uppercase mb-1">
+          <p className="font-bold text-msi-purple tracking-wider uppercase mb-1">
             05 &mdash; CORPORATE-PREFERRED ARRANGEMENT
           </p>
-          <p className="">
+          <p>
             Applicable corporate benefits, reserved access or preferential fees are applied.
           </p>
         </div>
         <div className="p-3 bg-white rounded-xl border border-gray-100 shadow-2xs">
-          <p className="font-bold text-msi-purple text-xs tracking-wider uppercase mb-1">
+          <p className="font-bold text-msi-purple tracking-wider uppercase mb-1">
             06 &mdash; ONBOARDING
           </p>
-          <p className="">
+          <p>
             The child&apos;s care requirements, routines and relevant information are captured.
           </p>
         </div>
         <div className="p-3 bg-white rounded-xl border border-gray-100 shadow-2xs">
-          <p className="font-bold text-msi-purple text-xs tracking-wider uppercase mb-1">
+          <p className="font-bold text-msi-purple tracking-wider uppercase mb-1">
             07 &mdash; DAILY CARE + LEARNING
           </p>
-          <p className="">
+          <p>
             The child begins their MSI journey.
           </p>
         </div>
         <div className="p-3 bg-white rounded-xl border border-gray-100 shadow-2xs">
-          <p className="font-bold text-msi-purple text-xs tracking-wider uppercase mb-1">
+          <p className="font-bold text-msi-purple tracking-wider uppercase mb-1">
             08 &mdash; PARENT CONNECTIVITY
           </p>
-          <p className="">
+          <p>
             Parents remain connected through MSI&apos;s communication ecosystem.
           </p>
         </div>
@@ -624,7 +624,7 @@ export const employeeChildcareJourneyDrawerBody = (
 
     {/* Final Callout Banner */}
     <div className="bg-msi-purple text-white p-5 rounded-2xl shadow-md text-center">
-      <p className="font-bold text-lg md:text-xl text-white">
+      <p className="font-bold text-white">
         From Employee Benefit <span className="text-msi-orange">to Everyday Support.</span>
       </p>
     </div>
@@ -632,21 +632,21 @@ export const employeeChildcareJourneyDrawerBody = (
 );
 
 export const partnerWithMsiDrawerBody = (
-  <div className="space-y-6  leading-relaxed  text-base pt-2">
+  <div className="space-y-6 leading-relaxed pt-2">
     {/* Highlight Quote Box */}
     <div className="bg-gradient-to-r from-msi-purple/10 via-msi-orange/5 to-transparent p-5 rounded-2xl border-l-4 border-msi-orange shadow-xs">
-      <p className="font-semibold text-msi-purple text-lg leading-snug">
+      <p className="font-semibold text-msi-purple leading-snug">
         Tell Us About Your Workforce. We will Help Design The Childcare Model.
       </p>
     </div>
 
     {/* Intro Paragraph */}
-    <p className="">
+    <p>
       Every organisation has a different childcare requirement. You may need:
     </p>
 
     {/* Options List */}
-    <div className="bg-[#f7f9fc] p-5 rounded-2xl border border-gray-100 space-y-2.5 text-sm ">
+    <div className="bg-[#f7f9fc] p-5 rounded-2xl border border-gray-100 space-y-2.5">
       <div className="flex items-center gap-2">
         <CheckCircle2 className="w-4 h-4 text-msi-orange shrink-0" />
         <span>An On-Campus Crèche</span>
@@ -671,17 +671,17 @@ export const partnerWithMsiDrawerBody = (
         <CheckCircle2 className="w-4 h-4 text-msi-orange shrink-0" />
         <span>A Multi-Location Childcare Program</span>
       </div>
-      <p className="font-semibold text-msi-purple text-xs pt-1">
+      <p className="font-semibold text-msi-purple pt-1">
         ...or a combination of several models.
       </p>
     </div>
 
     {/* Team Understanding Criteria */}
     <div className="bg-white p-5 rounded-2xl border border-gray-100 shadow-xs space-y-3">
-      <h4 className="font-bold text-msi-purple text-sm uppercase tracking-wider mb-2">
+      <h4 className="font-bold text-msi-purple uppercase tracking-wider mb-2">
         Our corporate team can work with you to understand:
       </h4>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <div className="flex items-center gap-2">
           <CheckCircle2 className="w-4 h-4 text-msi-orange shrink-0" />
           <span>Number of Employees</span>
@@ -727,7 +727,7 @@ export const partnerWithMsiDrawerBody = (
 
     {/* Final Callout Banner */}
     <div className="bg-msi-purple text-white p-5 rounded-2xl shadow-md text-center">
-      <p className="font-bold text-lg md:text-xl text-white">
+      <p className="font-bold text-white">
         From Analysis <span className="text-msi-orange">to Recommended Structure.</span>
       </p>
     </div>
@@ -735,48 +735,48 @@ export const partnerWithMsiDrawerBody = (
 );
 
 export const ourCorporateExperienceDrawerBody = (
-  <div className="space-y-6  leading-relaxed  text-base pt-2">
+  <div className="space-y-6 leading-relaxed pt-2">
     {/* Highlight Quote Box */}
     <div className="bg-gradient-to-r from-msi-purple/10 via-msi-orange/5 to-transparent p-5 rounded-2xl border-l-4 border-msi-orange shadow-xs">
-      <p className="font-semibold text-msi-purple text-lg leading-snug">
+      <p className="font-semibold text-msi-purple leading-snug">
         Childcare Is Not New To Us. Operating It At Workplace Scale Isn&apos;t Either.
       </p>
     </div>
 
     {/* Intro Paragraph */}
-    <p className="">
+    <p>
       My School ITALY has experience delivering early-years care and education within corporate and institutional environments.
     </p>
 
     {/* Model Brings Together Card */}
     <div className="bg-[#f7f9fc] p-5 rounded-2xl border border-gray-100 space-y-3">
-      <h4 className="font-bold text-msi-purple text-sm uppercase tracking-wider mb-2">
+      <h4 className="font-bold text-msi-purple uppercase tracking-wider mb-2">
         Our model brings together:
       </h4>
-      <p className="font-semibold text-msi-orange text-sm leading-relaxed">
+      <p className="font-semibold text-msi-orange leading-relaxed">
         Crèche + Preschool + Daycare + Extended Care + Learning + Nutrition + Safety + Parent Connectivity
       </p>
     </div>
 
     {/* Both Sides Card */}
     <div className="bg-white p-5 rounded-2xl border border-gray-100 shadow-xs space-y-4">
-      <p className="">
+      <p>
         This allows organisations to work with a childcare partner capable of understanding both sides of the relationship:
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div className="p-4 bg-[#f7f9fc] rounded-xl border border-gray-100">
-          <h5 className="font-bold text-msi-purple text-xs tracking-wider uppercase mb-1">
+          <h5 className="font-bold text-msi-purple tracking-wider uppercase mb-1">
             For the Organisation
           </h5>
-          <p className="text-sm ">
+          <p>
             Structured operations, defined processes and a scalable childcare model.
           </p>
         </div>
         <div className="p-4 bg-[#f7f9fc] rounded-xl border border-gray-100">
-          <h5 className="font-bold text-msi-purple text-xs tracking-wider uppercase mb-1">
+          <h5 className="font-bold text-msi-purple tracking-wider uppercase mb-1">
             For Employees
           </h5>
-          <p className="text-sm ">
+          <p>
             Knowing that while they are at work, their child is being cared for, engaged and understood.
           </p>
         </div>
@@ -785,7 +785,7 @@ export const ourCorporateExperienceDrawerBody = (
 
     {/* Final Callout Banner */}
     <div className="bg-msi-purple text-white p-5 rounded-2xl shadow-md text-center">
-      <p className="font-bold text-lg md:text-xl text-white">
+      <p className="font-bold text-white">
         Proven Experience. <span className="text-msi-orange">Scalable Corporate Care.</span>
       </p>
     </div>
@@ -793,43 +793,43 @@ export const ourCorporateExperienceDrawerBody = (
 );
 
 export const moreThanACrecheContent = (
-  <div className="text-[#464646] text-[16px] md:text-[17px] leading-snug space-y-2.5 mt-3">
+  <div className="text-[#464646] leading-snug space-y-2.5 mt-3">
     <p className="mb-2">
       Corporate childcare through MSI can bring together:
     </p>
 
     <div className="space-y-0">
-      <p className="font-bold text-msi-purple uppercase tracking-wider text-sm leading-none m-0 p-0">CARE</p>
-      <p className=" leading-snug m-0 p-0">Cr&egrave;che &bull; Daycare &bull; Extended Care</p>
+      <p className="font-bold text-msi-purple uppercase tracking-wider leading-none m-0 p-0">CARE</p>
+      <p className="leading-snug m-0 p-0">Cr&egrave;che &bull; Daycare &bull; Extended Care</p>
     </div>
 
     <div className="space-y-0">
-      <p className="font-bold text-msi-purple uppercase tracking-wider text-sm leading-none m-0 p-0">LEARNING</p>
-      <p className=" leading-snug m-0 p-0">Preschool &bull; Nursery &bull; Kindergarten</p>
+      <p className="font-bold text-msi-purple uppercase tracking-wider leading-none m-0 p-0">LEARNING</p>
+      <p className="leading-snug m-0 p-0">Preschool &bull; Nursery &bull; Kindergarten</p>
     </div>
 
     <div className="space-y-0">
-      <p className="font-bold text-msi-purple uppercase tracking-wider text-sm leading-none m-0 p-0">DEVELOPMENT</p>
-      <p className=" leading-snug m-0 p-0">Communication &bull; Cognitive &bull; Social-Emotional &bull; Physical &bull; Creative</p>
+      <p className="font-bold text-msi-purple uppercase tracking-wider leading-none m-0 p-0">DEVELOPMENT</p>
+      <p className="leading-snug m-0 p-0">Communication &bull; Cognitive &bull; Social-Emotional &bull; Physical &bull; Creative</p>
     </div>
 
     <div className="space-y-0">
-      <p className="font-bold text-msi-purple uppercase tracking-wider text-sm leading-none m-0 p-0">ENRICHMENT</p>
-      <p className=" leading-snug m-0 p-0">Gymnastics &bull; Neurobics &bull; Robotics &bull; Dance &bull; Storytelling</p>
+      <p className="font-bold text-msi-purple uppercase tracking-wider leading-none m-0 p-0">ENRICHMENT</p>
+      <p className="leading-snug m-0 p-0">Gymnastics &bull; Neurobics &bull; Robotics &bull; Dance &bull; Storytelling</p>
     </div>
 
     <div className="space-y-0">
-      <p className="font-bold text-msi-purple uppercase tracking-wider text-sm leading-none m-0 p-0">WELLBEING</p>
-      <p className=" leading-snug m-0 p-0">INSPIRE ME EAT &bull; Meals &bull; Rest &bull; Physical &amp; Emotional Safety</p>
+      <p className="font-bold text-msi-purple uppercase tracking-wider leading-none m-0 p-0">WELLBEING</p>
+      <p className="leading-snug m-0 p-0">INSPIRE ME EAT &bull; Meals &bull; Rest &bull; Physical &amp; Emotional Safety</p>
     </div>
 
     <div className="space-y-0">
-      <p className="font-bold text-msi-purple uppercase tracking-wider text-sm leading-none m-0 p-0">CONNECTIVITY</p>
-      <p className=" leading-snug m-0 p-0">Parent Updates &bull; Communication &bull; Developmental Observations</p>
+      <p className="font-bold text-msi-purple uppercase tracking-wider leading-none m-0 p-0">CONNECTIVITY</p>
+      <p className="leading-snug m-0 p-0">Parent Updates &bull; Communication &bull; Developmental Observations</p>
     </div>
 
     <div className="pt-3 border-t border-gray-200 mt-4">
-      <p className="text-xl font-bold text-msi-purple leading-tight">
+      <p className="font-bold text-msi-purple leading-tight">
         One Childcare Partnership. A Complete Ecosystem Around the Child.
       </p>
     </div>
@@ -843,13 +843,13 @@ export const childcareWorksContent = (
     </p>
 
     <div className="my-1.5 leading-snug">
-      <p className="font-bold text-msi-purple text-base md:text-lg">
+      <p className="font-bold text-msi-purple">
         Being present for their child
       </p>
-      <p className="text-xs text-msi-orange font-bold uppercase tracking-wider my-0.5">
+      <p className="text-msi-orange font-bold uppercase tracking-wider my-0.5">
         and
       </p>
-      <p className="font-bold text-msi-purple text-base md:text-lg">
+      <p className="font-bold text-msi-purple">
         being present at work.
       </p>
     </div>
@@ -869,10 +869,10 @@ export const childcareWorksContent = (
           className="w-auto h-12 md:h-16 object-contain"
         />
       </div>
-      <p className="text-sm font-semibold ">
+      <p className="font-semibold">
         Corporate Early Childhood Learning &amp; Care
       </p>
-      <p className="text-xs font-bold text-msi-orange tracking-wide uppercase">
+      <p className="font-bold text-msi-orange tracking-wide uppercase">
         On-Campus &bull; Near-Campus &bull; Subsidised &bull; Reserved &bull; Extended &bull; Multi-Location
       </p>
     </div>

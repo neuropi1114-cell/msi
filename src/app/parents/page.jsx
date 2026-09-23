@@ -75,7 +75,7 @@ export default function ParentsPage({ activeSlug = null }) {
         <MissionCounters />
         <GalleryStrip />
       </main>
-      <ContactUs />
+      <ContactUs image="/images/parents/Parents_Enrol.png" />
       <Footer />
     </>
   );

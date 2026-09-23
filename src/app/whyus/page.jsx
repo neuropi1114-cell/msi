@@ -42,9 +42,9 @@ export default function WhyUsPage({ activeSlug = null }) {
       <SectionScrollController activeSlug={activeSlug} />
       <main>
         <CloudHeader
-          image="/images/whyus/hero_playroom.png"
-          imageClass="object-cover object-top"
-          heightClass="w-full aspect-[2048/768] min-h-[250px] max-h-[600px]"
+          image="/images/nep/The_NeuroPi_Way_1.png"
+          imageClass="object-cover object-center"
+          heightClass="w-full aspect-[1672/941] min-h-[350px] md:min-h-[550px] max-h-[850px]"
         />
         <div data-nav-sentinel />
 

@@ -114,7 +114,6 @@ const Footer = () => {
               <li><Link href="/about" className="!text-white hover:text-msi-orange transition-colors">About Us</Link></li>
               <li><Link href="/programs" className="!text-white hover:text-msi-orange transition-colors">Programs</Link></li>
               <li><Link href="/corporatechildcare" className="!text-white hover:text-msi-orange transition-colors">Corporate Childcare</Link></li>
-              <li><Link href="/franchise-overview" className="!text-white hover:text-msi-orange transition-colors">For School Owners</Link></li>
               <li><Link href="/privacy-policy" className="!text-white hover:text-msi-orange transition-colors">Policy Framework</Link></li>
               <li><Link href="/media-coverage" className="!text-white hover:text-msi-orange transition-colors">Media</Link></li>
               <li><Link href="/blog" className="!text-white hover:text-msi-orange transition-colors">Blog</Link></li>

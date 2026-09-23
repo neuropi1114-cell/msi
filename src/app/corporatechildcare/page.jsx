@@ -93,7 +93,7 @@ export default function CorporateChildcarePage({ activeSlug = null }) {
           leftImageClass="object-contain rounded-[10px]"
           leftTitle="Corporate Childcare Without Building a Crèche"
           leftSubtitle="NEAR-CAMPUS PREFERRED CENTRES"
-          leftSubtitleColor="text-msi-yellow font-linotte font-bold text-2xl md:text-[32px] leading-tight uppercase mb-4"
+          leftSubtitleColor="text-msi-yellow font-linotte font-bold leading-tight uppercase mb-4"
           leftParagraphs={[
             "Not every organisation needs — or has the space for — an on-campus childcare centre.",
           ]}
@@ -103,7 +103,7 @@ export default function CorporateChildcarePage({ activeSlug = null }) {
           rightImage="/images/corporatechildcare/Corporate_Childcare_5.png"
           rightEyebrow="Childcare Where Your Employees Work"
           rightTitle="ON-CAMPUS CRÈCHE"
-          rightTitleColor="text-msi-orange font-linotte font-bold text-2xl md:text-[32px] leading-tight uppercase mb-4"
+          rightTitleColor="text-msi-orange font-linotte font-bold leading-tight uppercase mb-4"
           rightParagraphs={[
             "MSI can work with organisations to establish and operate childcare facilities within corporate campuses or designated workplace premises.",
           ]}
@@ -192,7 +192,7 @@ export default function CorporateChildcarePage({ activeSlug = null }) {
           leftTitle="Childcare Is Not New To Us. Operating It At Workplace Scale Isn't Either."
           leftTitleColor="text-msi-purple"
           leftSubtitle="OUR CORPORATE EXPERIENCE"
-          leftSubtitleColor="text-msi-yellow font-linotte font-bold text-2xl md:text-[32px] leading-tight uppercase mb-4"
+          leftSubtitleColor="text-msi-yellow font-linotte font-bold leading-tight uppercase mb-4"
           leftParagraphs={[
             "Childcare solutions designed for parents working night shifts, rotating schedules, healthcare, technology, emergency services and other non-traditional working hours.",
           ]}
@@ -202,7 +202,7 @@ export default function CorporateChildcarePage({ activeSlug = null }) {
           rightImage="/images/corporatechildcare/Corporate_Childcare_11.png"
           rightEyebrow="Tell Us About Your Workforce. We will Help Design The Childcare Model."
           rightTitle="PARTNER WITH MY SCHOOL ITALY"
-          rightTitleColor="text-msi-orange font-linotte font-bold text-2xl md:text-[32px] leading-tight uppercase mb-4"
+          rightTitleColor="text-msi-orange font-linotte font-bold leading-tight uppercase mb-4"
           rightParagraphs={[
             "Every organisation has a different childcare requirement. Our corporate team can work with you to understand the requirements.",
           ]}
@@ -239,7 +239,7 @@ export default function CorporateChildcarePage({ activeSlug = null }) {
         <NeuroPiApproach
           eyebrow="Supporting Children. Supporting Parents. Supporting Workplaces."
           title="CHILDCARE THAT WORKS FOR WORKING PEOPLE"
-          titleClass="text-msi-orange font-linotte font-bold text-2xl md:text-[32px] leading-tight uppercase my-3"
+          titleClass="text-msi-orange font-linotte font-bold leading-tight uppercase my-3"
           content={childcareWorksContent}
           imageSrc="/images/corporatechildcare/Corporate_Childcare_13.png"
         />
