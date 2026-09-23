@@ -7,9 +7,10 @@ import Drawer from '../layout/Drawer';
 
 const defaultCards = [
   {
-    img: '/images/baby-sensory/early_childhood_deserves.png',
+    img: '/images/baby-sensory/Why_MSI_9.png',
     alt: 'Early childhood development',
     text: 'Early childhood deserves much more than supervision or early academics.',
+    objectPos: 'object-center',
   },
   {
     img: '/images/baby-sensory/meaningful_experiences.png',
@@ -20,6 +21,7 @@ const defaultCards = [
     img: '/images/baby-sensory/early_years_influence.png',
     alt: 'Early years influence in child development',
     text: 'The early years are small in number, but enormous in influence.',
+    objectPos: 'center 5%',
   },
 ];
 
@@ -49,9 +51,8 @@ export default function SensoryCardsSection({
                     if (item.onClick) item.onClick();
                     else if (item.drawerBody) setActiveCard(item);
                   }}
-                  className={`rounded-[10px] overflow-hidden shadow-lg group bg-white ${
-                    isClickable ? 'cursor-pointer hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1' : ''
-                  }`}
+                  className={`rounded-[10px] overflow-hidden shadow-lg group bg-white ${isClickable ? 'cursor-pointer hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1' : ''
+                    }`}
                   initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
@@ -62,7 +63,8 @@ export default function SensoryCardsSection({
                       src={item.img}
                       alt={item.alt}
                       fill
-                      className={`object-cover ${item.objectPos || 'object-top'} transition-transform duration-300 group-hover:scale-[1.03]`}
+                      style={{ objectPosition: item.objectPos || 'top' }}
+                      className="object-cover transition-transform duration-300 group-hover:scale-[1.03]"
                     />
                   </div>
                   {item.text && (

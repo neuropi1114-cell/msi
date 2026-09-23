@@ -66,9 +66,10 @@ export default function WhyUsPage() {
           bgImage="/images/whyus/Why_MSI_3.png"
           readMoreDrawerTitle="OUR PHILOSOPHY"
           readMoreDrawerBody={philosophyDrawerBody}
-          cardClass="mt-100 md:mt-20 lg:mt-64"
+          cardClass="mt-24 md:mt-20 lg:mt-64"
         />
         <DesignPhilosophy
+          image="/images/whyus/Why_MSI_4.png"
           eyebrow="Less Pressure. More Purposeful Learning."
           title="THE EUROPEAN EARLY YEARS APPROACH"
           p1="For a young child, beginning preschool or daycare can mean a new environment, new adults, new children and a completely new routine."
@@ -106,6 +107,8 @@ export default function WhyUsPage() {
           rightDrawerEyebrow={<span className="italic">The Most Important Technology In A Classroom Is Still A Caring Adult.</span>}
           rightDrawerBody={teachersDrawerBody}
           rightButtonBgColor="bg-msi-blue hover:bg-msi-blue/90"
+          rightImage="/images/whyus/Why_MSI_6.png"
+          leftImage="/images/whyus/Why_MSI_5.png"
         />
         <HomeNeuroPiApproach />
 
@@ -126,7 +129,7 @@ export default function WhyUsPage() {
         <VideoShowcase title="OUR CENTRES" videosList={centreVideos} showVideoTitle={true} aspect="landscape" />
         <GalleryStrip />
       </main>
-      <ContactUs />
+      <ContactUs image="/images/whyus/Why_MSI_Enrol.png" />
       <Footer />
     </>
   );
