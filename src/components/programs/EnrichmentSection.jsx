@@ -2,9 +2,11 @@ import React from 'react';
 import DesignPhilosophy from '../nep/DesignPhilosophy';
 import { roboticsDrawerBody, gymnasticsDrawerBody } from '../../app/programs/programsdata';
 
-export default function EnrichmentSection() {
+export default function EnrichmentSection({ topId = "robotics", bottomId = "gymnastics" }) {
   return (
     <DesignPhilosophy
+      topId={topId}
+      bottomId={bottomId}
       topBgClass="bg-msi-yellow"
       image="/images/programs/Aperna_23.png"
       imageAspect="aspect-[16/9]"

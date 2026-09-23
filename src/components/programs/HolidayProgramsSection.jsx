@@ -1,9 +1,10 @@
 import React from 'react';
 import FaqSection from '../common/FaqSection';
 
-export default function HolidayProgramsSection() {
+export default function HolidayProgramsSection({ id = "holiday-summer-programs" }) {
   return (
-    <FaqSection
+    <div id={id} className="scroll-mt-24">
+      <FaqSection
       subheading="Holidays Become Adventures."
       heading="HOLIDAY & SUMMER PROGRAMS"
       showFaq={false}
@@ -30,5 +31,7 @@ export default function HolidayProgramsSection() {
         </div>
       }
     />
+    </div>
   );
 }
+

@@ -2,9 +2,11 @@ import React from 'react';
 import DualFeatureSection from '../common/DualFeatureSection';
 import { danceCreativeMovementDrawerBody, storytellingCreativeArtsDrawerBody } from '../../app/programs/programsdata';
 
-export default function ExpressiveArtsSection() {
+export default function ExpressiveArtsSection({ leftId = "dance-creative-movement", rightId = "storytelling-creative-arts" }) {
   return (
     <DualFeatureSection
+      leftId={leftId}
+      rightId={rightId}
       sectionTitle="EXPRESSIVE ART & DESIGN"
       leftImage="/images/programs/Aperna_24.png"
       leftAspect="aspect-[4/5]"

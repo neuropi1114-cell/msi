@@ -2,9 +2,11 @@ import React from 'react';
 import DualFeatureSection from '../common/DualFeatureSection';
 import { k1DrawerBody, k2DrawerBody } from '../../app/programs/programsdata';
 
-export default function KindergartenSection() {
+export default function KindergartenSection({ leftId = "kindergarten-k1", rightId = "kindergarten-k2" }) {
   return (
     <DualFeatureSection
+      leftId={leftId}
+      rightId={rightId}
       sectionTitle="KINDERGARTEN"
       leftImage="/images/programs/Programs_4.png"
       leftAspect="aspect-[4/5]"

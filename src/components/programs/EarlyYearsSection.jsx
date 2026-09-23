@@ -2,9 +2,11 @@ import React from 'react';
 import DesignPhilosophy from '../nep/DesignPhilosophy';
 import { ciaoBabyDrawerBody, preNurseryDrawerBody } from '../../app/programs/programsdata';
 
-export default function EarlyYearsSection() {
+export default function EarlyYearsSection({ topId = "baby-creche", bottomId = "toddler-playgroup" }) {
   return (
     <DesignPhilosophy
+      topId={topId}
+      bottomId={bottomId}
       image="/images/programs/Programs_2_1.png"
       imageAspect="aspect-[16/9]"
       imageClass="object-cover scale-[1.05]"

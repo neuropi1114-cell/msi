@@ -49,30 +49,16 @@ export default function ProgramsPage({ activeSlug = null }) {
           className="pt-6 pb-2 bg-white"
         />
 
-        <div id="baby-creche" className="scroll-mt-24">
-          <EarlyYearsSection />
-        </div>
+        <EarlyYearsSection />
         <div id="nursery" className="scroll-mt-24">
           <NurserySection />
         </div>
-        <div id="kindergarten-k1" className="scroll-mt-24">
-          <KindergartenSection />
-        </div>
-        <div id="daycare" className="scroll-mt-24">
-          <DaycareSection />
-        </div>
-        <div id="extended-care" className="scroll-mt-24">
-          <ExtendedTimingSection />
-        </div>
-        <div id="robotics" className="scroll-mt-24">
-          <EnrichmentSection />
-        </div>
-        <div id="storytelling-creative-arts" className="scroll-mt-24">
-          <ExpressiveArtsSection />
-        </div>
-        <div id="holiday-summer-programs" className="scroll-mt-24">
-          <HolidayProgramsSection />
-        </div>
+        <KindergartenSection />
+        <DaycareSection />
+        <ExtendedTimingSection />
+        <EnrichmentSection />
+        <ExpressiveArtsSection />
+        <HolidayProgramsSection />
 
         <OneJourneySection />
 

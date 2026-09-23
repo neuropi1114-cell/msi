@@ -2,9 +2,11 @@ import React from 'react';
 import DesignPhilosophy from '../nep/DesignPhilosophy';
 import { daycareDrawerBody, twentyFourHourCareDrawerBody } from '../../app/programs/programsdata';
 
-export default function DaycareSection() {
+export default function DaycareSection({ topId = "daycare", bottomId = "24-hour-care" }) {
   return (
     <DesignPhilosophy
+      topId={topId}
+      bottomId={bottomId}
       topBgClass="bg-msi-green"
       image="/images/programs/Daycare.png"
       imageAspect="aspect-[16/9]"
