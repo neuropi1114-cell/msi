@@ -17,7 +17,9 @@ import EnrichmentSection from '../../components/programs/EnrichmentSection';
 import ExpressiveArtsSection from '../../components/programs/ExpressiveArtsSection';
 import HolidayProgramsSection from '../../components/programs/HolidayProgramsSection';
 import SectionScrollController from '../../components/common/SectionScrollController';
-import { metadata, programVideos } from './programsdata';
+import Awards from '../../components/home/Awards';
+import GalleryStrip from '../../components/common/GalleryStrip';
+import { metadata, programVideos, programGalleryImages } from './programsdata';
 
 const ContactUs = dynamic(() => import('../../components/common/ContactUs'), { ssr: true });
 
@@ -70,9 +72,13 @@ export default function ProgramsPage({ activeSlug = null }) {
           aspect="landscape"
         />
 
+        <Awards />
+
+        <ContactUs image="/images/programs/Programs_Enrol.png" />
+        <GalleryStrip images={programGalleryImages} />
         <RecentNews />
       </main>
-      <ContactUs />
+
       <Footer />
     </>
   );

@@ -23,6 +23,21 @@ export const programVideos = [
   },
 ];
 
+export const programGalleryImages = [
+  '/images/programs/Programs_2_1.png',
+  '/images/programs/Aperna_5.png',
+  '/images/programs/Programs_4.png',
+  '/images/programs/Batch_3_6.png',
+  '/images/programs/Daycare.png',
+  '/images/programs/Programs_7.png',
+  '/images/programs/Aperna_17.png',
+  '/images/programs/Aperna_23.png',
+  '/images/programs/Aperna_24.png',
+  '/images/programs/Aperna_25.png',
+  '/images/programs/Aperna_27.png',
+  '/images/programs/Programs_Enrol.png',
+];
+
 export const metadata = {
   title: 'Programs | My School ITALY',
   description: 'Explore My School ITALY neuroscience-based programs: Infant (45 days–18 months), Toddler (18 months–3 years), Preschool (3–5 years), and Kindergarten (5–7 years).',
