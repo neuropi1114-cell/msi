@@ -2,13 +2,15 @@ import React from 'react';
 import TopBar from '../../components/layout/TopBar';
 import Header from '../../components/layout/Header';
 import Footer from '../../components/layout/Footer';
-import CloudHeader from '../../components/layout/CloudHeader';
-import AboutPremises from '../../components/about/AboutPremises';
-import AboutPhilosophy from '../../components/about/AboutPhilosophy';
-import AboutVideo from '../../components/about/AboutVideo';
-import AboutGuidingPrinciples from '../../components/about/AboutGuidingPrinciples';
-import Activities from '../../components/home/Activities';
-import AboutEnrol from '../../components/about/AboutEnrol';
+import AboutFounderMessage from '../../components/about/AboutFounderMessage';
+import AboutWhyCreated from '../../components/about/AboutWhyCreated';
+import AboutLeadership from '../../components/about/AboutLeadership';
+// import AboutPremises from '../../components/about/AboutPremises';
+// import AboutPhilosophy from '../../components/about/AboutPhilosophy';
+// import AboutVideo from '../../components/about/AboutVideo';
+// import AboutGuidingPrinciples from '../../components/about/AboutGuidingPrinciples';
+// import Activities from '../../components/home/Activities';
+// import AboutEnrol from '../../components/about/AboutEnrol';
 
 export const metadata = {
   title: 'About Us',
@@ -36,21 +38,15 @@ export default function AboutPage() {
       <TopBar />
       <Header />
       <main>
-        <CloudHeader
-          title="About Us"
-          subtitle="Discover the heart and science behind My School ITALY"
-          image="/images/about-hero.jpg"
-          textClass="text-[#d16827]"
-          imageClass="object-cover object-top"
-          heightClass="w-full aspect-[1600/1067] min-h-[320px] max-h-[650px]"
-        />
-        <div data-nav-sentinel />
-        <AboutPremises />
+        <AboutFounderMessage />
+        <AboutWhyCreated />
+        <AboutLeadership />
+        {/* <AboutPremises />
         <AboutPhilosophy />
         <AboutVideo />
         <AboutGuidingPrinciples />
         <Activities />
-        <AboutEnrol />
+        <AboutEnrol /> */}
       </main>
       <Footer />
     </>
