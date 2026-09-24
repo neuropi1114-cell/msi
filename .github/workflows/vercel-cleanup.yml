@@ -1,0 +1,26 @@
+name: Vercel Preview Cleanup
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Automatically runs daily at midnight
+  pull_request:
+    types: [closed] # Automatically cleans up when a PR is closed
+  workflow_dispatch: # Allows manual trigger from GitHub Actions tab
+
+jobs:
+  cleanup-old-deployments:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Remove Old Vercel Preview Deployments
+        env:
+          VERCEL_TOKEN: "vcp_6iv5LUJTFsJfIPT5R5QPcTVbyWoZ1Mcy2hNT6EgvCiG3ToHLaz2hHwKn"
+        run: |
+          npx vercel remove --token "$VERCEL_TOKEN" --yes --safe || true
