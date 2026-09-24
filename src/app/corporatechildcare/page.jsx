@@ -11,6 +11,7 @@ import FaqSection from '../../components/common/FaqSection';
 import NeuroPiApproach from '../../components/home/NeuroPiApproach';
 import CorporateContactUs from '../../components/home/CorporateContactUs';
 import CorporatePartners from '../../components/home/CorporatePartners';
+import { workingParentsPartners, corporateChildcarePartners } from '../../data/corporate-partners-data';
 import EnrolCta from '../../components/day-care/EnrolCta';
 import VideoShowcase from '../../components/home/VideoShowcase';
 import GalleryStrip from '../../components/common/GalleryStrip';
@@ -229,11 +230,13 @@ export default function CorporateChildcarePage({ activeSlug = null }) {
         <CorporatePartners
           title="Our Corporate Partners"
           description="We work with leading corporations to provide tailor-made family solutions for employees."
+          partners={corporateChildcarePartners}
         />
 
         <CorporatePartners
           title="Supporting Working Parents"
           description="Trusted by enterprise leaders worldwide for child development and parent support."
+          partners={workingParentsPartners}
           reverse
         />
         <NeuroPiApproach

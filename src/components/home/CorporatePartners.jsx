@@ -2,10 +2,19 @@
 import { motion } from 'framer-motion';
 import data from '../../data/corporate-partners.json';
 
-const { title: defaultTitle, description: defaultDescription, partners } = data;
+const { title: defaultTitle, description: defaultDescription, partners: defaultPartners } = data;
 
-export default function CorporatePartners({ title = defaultTitle, description = defaultDescription, reverse = false, id }) {
+export default function CorporatePartners({
+  title = defaultTitle,
+  description = defaultDescription,
+  partners = defaultPartners,
+  reverse = false,
+  speed = 70,
+  id
+}) {
   const marqueeClass = reverse ? 'animate-marquee-reverse' : 'animate-marquee';
+  const animationStyle = { animationDuration: `${speed}s` };
+
   return (
     <section id={id} className="py-16 bg-white overflow-hidden border-t border-gray-100">
       <div className="container mx-auto px-4 md:px-12 text-center mb-8">
@@ -30,7 +39,7 @@ export default function CorporatePartners({ title = defaultTitle, description = 
 
       {/* Marquee Container */}
       <div className="relative flex overflow-hidden group py-4">
-        <div className={`${marqueeClass} flex whitespace-nowrap items-center min-w-full shrink-0`}>
+        <div className={`${marqueeClass} flex whitespace-nowrap items-center min-w-full shrink-0`} style={animationStyle}>
           {partners.map((partner, index) => (
             <div key={index} className="mx-8 w-32 h-24 md:w-40 md:h-28 flex-shrink-0 flex items-center justify-center p-4 bg-white rounded-xl shadow-sm border border-gray-50 hover:shadow-md transition-shadow">
               <img
@@ -43,7 +52,7 @@ export default function CorporatePartners({ title = defaultTitle, description = 
             </div>
           ))}
         </div>
-        <div className={`${marqueeClass} flex whitespace-nowrap items-center min-w-full shrink-0`} aria-hidden="true">
+        <div className={`${marqueeClass} flex whitespace-nowrap items-center min-w-full shrink-0`} aria-hidden="true" style={animationStyle}>
           {partners.map((partner, index) => (
             <div key={`${index}-clone`} className="mx-8 w-32 h-24 md:w-40 md:h-28 flex-shrink-0 flex items-center justify-center p-4 bg-white rounded-xl shadow-sm border border-gray-50 hover:shadow-md transition-shadow">
               <img

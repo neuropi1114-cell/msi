@@ -25,9 +25,9 @@ const Solutions = () => {
             <h3 className="text-2xl text-[#2f9ed9] font-bold mb-3 text-center">
               You focus on your work.
             </h3>
-            <p className="mb-2 leading-relaxed text-center text-lg md:text-xl">
+            <h2 className="text-2xl md:text-3xl text-msi-purple font-bold mb-4 text-center">
               We remain focused on your child.
-            </p>
+            </h2>
             <p className="mb-2 leading-relaxed text-center text-lg md:text-xl">
               For working parents, childcare needs to understand real life.
               An early meeting. A long commute. A late call.
