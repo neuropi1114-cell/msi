@@ -30,6 +30,7 @@ import {
   teachersDrawerBody,
   whyChooseUsParagraphs,
   whyChooseUsFooter,
+  whyUsGalleryImages,
 } from './whyusdata';
 
 export { metadata };
@@ -42,7 +43,7 @@ export default function WhyUsPage({ activeSlug = null }) {
       <SectionScrollController activeSlug={activeSlug} />
       <main>
         <CloudHeader
-          image="/images/nep/The_NeuroPi_Way_1.png"
+          image="/images/whyus/Why_MSI_Header.png"
           imageClass="object-cover object-center"
           heightClass="w-full aspect-[1672/941] min-h-[350px] md:min-h-[550px] max-h-[850px]"
         />
@@ -55,6 +56,7 @@ export default function WhyUsPage({ activeSlug = null }) {
         />
         <div id="our-story" className="scroll-mt-24">
           <StorySection
+            imageSrc="/images/whyus/Why_MSI_2.png"
             eyebrow="From European Early Education To A New Understanding Of Childhood."
             title="OUR STORY"
             p1="My School ITALY began with a simple belief: early childhood education should respect the individuality of every child."
@@ -144,7 +146,7 @@ export default function WhyUsPage({ activeSlug = null }) {
           footerContent={whyChooseUsFooter}
         />
         <VideoShowcase title="OUR CENTRES" videosList={centreVideos} showVideoTitle={true} aspect="landscape" />
-        <GalleryStrip />
+        <GalleryStrip images={whyUsGalleryImages} />
       </main>
       <ContactUs image="/images/whyus/Why_MSI_Enrol.png" />
       <Footer />

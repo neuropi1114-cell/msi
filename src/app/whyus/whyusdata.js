@@ -276,3 +276,14 @@ export const whyChooseUsFooter = (
     We ask, &ldquo;How is this child growing?&rdquo;
   </p>
 );
+
+export const whyUsGalleryImages = [
+  '/images/whyus/Why_MSI_1.png',
+  '/images/whyus/Why_MSI_2.png',
+  '/images/whyus/Why_MSI_3.png',
+  '/images/whyus/Why_MSI_4.png',
+  '/images/whyus/Why_MSI_5.png',
+  '/images/whyus/Why_MSI_6.png',
+  '/images/whyus/Why_MSI_Enrol.png',
+  '/images/whyus/hero_playroom.png',
+];
