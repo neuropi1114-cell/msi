@@ -3,7 +3,9 @@ import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
-export default function AboutFounderMessage() {
+export default function AboutFounderMessage({
+  imageSrc = "/images/about/aperna-founder-new.png"
+}) {
   return (
     <section className="py-10 lg:py-14 bg-[#ffffff] text-[#111010] border-b border-black/[0.06]">
       <div className="container mx-auto px-4 md:px-8 max-w-7xl">
@@ -69,12 +71,12 @@ export default function AboutFounderMessage() {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="lg:col-span-5 flex justify-center items-end"
           >
-            <div className="relative aspect-[4/5] w-full max-w-[420px] max-h-[460px]">
+            <div className="relative aspect-[4/5] w-full max-w-[420px] max-h-[460px] rounded-3xl overflow-hidden shadow-lg border border-gray-100">
               <Image
-                src="/images/aperna-founder.png"
+                src={imageSrc}
                 alt="Dr Aperna Volluru - Founder, My School ITALY"
                 fill
-                className="object-contain object-bottom"
+                className="object-cover object-center rounded-3xl"
                 priority
               />
             </div>
