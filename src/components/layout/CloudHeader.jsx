@@ -46,16 +46,12 @@ export default function CloudHeader({
         </svg>
       </div>
 
-      <div className="relative z-20 px-4 text-center">
-        <h1>
-          {title}
-        </h1>
-        {subtitle && (
-          <p>
-            {subtitle}
-          </p>
-        )}
-      </div>
+      {(title || subtitle) && (
+        <div className="relative z-20 px-4 text-center">
+          {title && <h1>{title}</h1>}
+          {subtitle && <p>{subtitle}</p>}
+        </div>
+      )}
     </section>
   );
 }

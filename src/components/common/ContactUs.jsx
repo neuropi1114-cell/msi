@@ -25,7 +25,7 @@ const initialFormData = {
   agreePolicy: false
 };
 
-export default function ContactUs({ intro, image = "/images/home/Home_Page_Enrol.png" }) {
+export default function ContactUs({ intro, title = "ENROL YOUR CHILD", buttonText = "ENROL YOUR CHILD", image = "/images/home/Home_Page_Enrol.png" }) {
   const [formData, setFormData] = useState(initialFormData);
   const [errors, setErrors] = useState({});
   const [countryOpen, setCountryOpen] = useState(false);
@@ -49,12 +49,10 @@ export default function ContactUs({ intro, image = "/images/home/Home_Page_Enrol
 
   const validate = () => {
     const errs = {};
-    if (!formData.parentName.trim()) errs.parentName = 'Required';
-    if (!formData.email.trim()) errs.email = 'Required';
-    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) errs.email = 'Invalid email';
-    if (!formData.mobile.trim()) errs.mobile = 'Required';
-    if (!formData.program) errs.program = 'Select a program';
-    if (!formData.country) errs.country = 'Select a country';
+    if (!formData.parentName.trim()) errs.parentName = 'Parent / Guardian Name is required';
+    if (!formData.email.trim()) errs.email = 'Email ID is required';
+    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) errs.email = 'Invalid email format';
+    if (!formData.mobile.trim()) errs.mobile = 'Mobile number is required';
     if (!formData.agreePolicy) errs.agreePolicy = 'You must agree to the Privacy Policy';
     return errs;
   };
@@ -75,14 +73,16 @@ export default function ContactUs({ intro, image = "/images/home/Home_Page_Enrol
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
       });
+
       const data = await res.json();
-      if (data.success) {
+
+      if (res.ok && data.success) {
         setSubmitStatus('success');
-        setSubmitMessage(data.message);
+        setSubmitMessage(data.message || 'Thank you! Your enrolment inquiry has been received. We will contact you soon.');
         setFormData(initialFormData);
       } else {
         setSubmitStatus('error');
-        setSubmitMessage(data.message || 'Submission failed.');
+        setSubmitMessage(data.message || 'Submission failed. Please try again.');
         if (data.errors) setErrors(data.errors);
       }
     } catch {
@@ -139,12 +139,14 @@ export default function ContactUs({ intro, image = "/images/home/Home_Page_Enrol
             >
               {intro && <div className="text-gray-600 text-center mb-6 leading-relaxed">{intro}</div>}
               <h2>
-                ENROL YOUR CHILD
+                {title}
               </h2>
 
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div>
-                  <label htmlFor="parentName" className="block text-sm font-medium text-msi-purple mb-1">Parent / Guardian Name</label>
+                  <label htmlFor="parentName" className="block text-sm font-medium text-msi-purple mb-1">
+                    Parent / Guardian Name <span className="text-red-500">*</span>
+                  </label>
                   <input
                     id="parentName"
                     type="text"
@@ -154,11 +156,13 @@ export default function ContactUs({ intro, image = "/images/home/Home_Page_Enrol
                     className={inputClass('parentName')}
                     placeholder="Enter parent name"
                   />
-                  {errors.parentName && <p >{errors.parentName}</p>}
+                  {errors.parentName && <p className="text-red-500 text-xs mt-1">{errors.parentName}</p>}
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-msi-purple mb-1">Email ID</label>
+                  <label htmlFor="email" className="block text-sm font-medium text-msi-purple mb-1">
+                    Email ID <span className="text-red-500">*</span>
+                  </label>
                   <input
                     id="email"
                     type="email"
@@ -168,11 +172,13 @@ export default function ContactUs({ intro, image = "/images/home/Home_Page_Enrol
                     className={inputClass('email')}
                     placeholder="Enter email address"
                   />
-                  {errors.email && <p >{errors.email}</p>}
+                  {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
                 </div>
 
                 <div>
-                  <label htmlFor="mobile" className="block text-sm font-medium text-msi-purple mb-1">Mobile Number</label>
+                  <label htmlFor="mobile" className="block text-sm font-medium text-msi-purple mb-1">
+                    Mobile Number <span className="text-red-500">*</span>
+                  </label>
                   <div className="flex">
                     <div ref={phoneRef} className="relative">
                       <button
@@ -232,7 +238,7 @@ export default function ContactUs({ intro, image = "/images/home/Home_Page_Enrol
                       placeholder="Enter mobile number"
                     />
                   </div>
-                  {errors.mobile && <p >{errors.mobile}</p>}
+                  {errors.mobile && <p className="text-red-500 text-xs mt-1">{errors.mobile}</p>}
                 </div>
 
                 <div>
@@ -341,7 +347,7 @@ export default function ContactUs({ intro, image = "/images/home/Home_Page_Enrol
                   disabled={submitting}
                   className="w-full bg-msi-purple hover:bg-msi-purple/90 disabled:bg-gray-400 text-white font-bold py-4 rounded-lg transition-colors duration-300 text-lg"
                 >
-                  {submitting ? 'SUBMITTING...' : 'ENROL YOUR CHILD'}
+                  {submitting ? 'SUBMITTING...' : buttonText}
                 </button>
 
                 {submitStatus === 'success' && (

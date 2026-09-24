@@ -12,7 +12,7 @@ export default {
   changefreq: 'daily',
   priority: 0.7,
   transform: (config, path) => {
-    const staticPages = ['/privacy-policy', '/handbook', '/video-gallery', '/media-coverage', '/msi-venture-philanthropy'];
+    const staticPages = ['/policy-framework', '/privacy-policy', '/terms', '/handbook', '/video-gallery', '/media-coverage', '/msi-venture-philanthropy'];
     const priorityMap = {
       '/': 1.0,
       '/about': 0.8,

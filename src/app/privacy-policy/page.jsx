@@ -6,10 +6,10 @@ import CloudHeader from '../../components/layout/CloudHeader';
 import PrivacyPolicy from '../../components/privacy-policy/PrivacyPolicy';
 
 export const metadata = {
-  title: 'Privacy Policy',
+  title: 'Privacy Policy | My School ITALY',
   description: 'Learn how My School ITALY collects, uses, and protects your personal information. Read our complete privacy policy for MSI Services.',
   alternates: { canonical: '/privacy-policy' },
-    openGraph: {
+  openGraph: {
     title: 'Privacy Policy | My School ITALY',
     description: 'Learn how My School ITALY collects, uses, and protects your personal information. Read our complete privacy policy for MSI Services.',
     url: '/privacy-policy',
@@ -30,7 +30,7 @@ export default function PrivacyPolicyPage() {
     <>
       <TopBar />
       <Header />
-      <CloudHeader title="Privacy Policy" textClass="text-[#351C5A]" />
+      <CloudHeader image="/images/privacy-policy.png" />
       <main>
         <PrivacyPolicy />
       </main>

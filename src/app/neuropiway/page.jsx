@@ -237,7 +237,7 @@ export default function EducationalProjectPage({ activeSlug = null }) {
         <MissionCounters />
         <GalleryStrip images={neuroPiWayGalleryImages} />
       </main>
-      <ContactUs image="/images/nep/The_NeuroPi_Way_Enrol.png" />
+      <ContactUs image="/images/nep/The_NeuroPi_Way_Enrol.png" title="BOOK YOUR TOUR" buttonText="BOOK YOUR TOUR" />
       <Footer />
     </>
   );

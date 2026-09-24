@@ -2,9 +2,11 @@
 
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { Calendar, Clock } from 'lucide-react';
 import {
   lookingForOptions,
   spaceOptions,
+  shiftTimingOptions,
   initialCorporateFormData,
 } from '../../app/corporatechildcare/corporatecontactdata';
 
@@ -36,19 +38,23 @@ export default function CorporateContactUs({ imageSrc = "/images/corporatechildc
     });
   };
 
-  const validate = () => {
+  const validate = (actionType = 'proposal') => {
     const errs = {};
     if (!formData.organisationName.trim()) errs.organisationName = 'Required';
     if (!formData.contactPerson.trim()) errs.contactPerson = 'Required';
     if (!formData.email.trim()) errs.email = 'Required';
     else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) errs.email = 'Invalid email';
     if (!formData.phone.trim()) errs.phone = 'Required';
+    if (actionType === 'meeting') {
+      if (!formData.preferredDate) errs.preferredDate = 'Date required';
+      if (!formData.preferredTime) errs.preferredTime = 'Time required';
+    }
     return errs;
   };
 
   const handleSubmit = async (e, actionType = 'proposal') => {
     if (e) e.preventDefault();
-    const errs = validate();
+    const errs = validate(actionType);
     setErrors(errs);
     if (Object.keys(errs).length > 0) return;
 
@@ -57,7 +63,7 @@ export default function CorporateContactUs({ imageSrc = "/images/corporatechildc
     setSubmitMessage('');
 
     try {
-      const res = await fetch('/api/enrol', {
+      const res = await fetch('/api/corporate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ ...formData, actionType }),
@@ -301,19 +307,28 @@ export default function CorporateContactUs({ imageSrc = "/images/corporatechildc
                   </div>
                 </div>
 
-                <div>
-                  <label htmlFor="shiftTimings" className="block text-xs font-bold text-msi-purple uppercase mb-1">
+                {/* Working / Shift Timings Radio Selection */}
+                <div className="p-4 bg-[#f7f9fc] rounded-xl border border-gray-100">
+                  <label className="block text-xs font-bold text-msi-purple uppercase mb-2">
                     Working / Shift Timings
                   </label>
-                  <input
-                    id="shiftTimings"
-                    type="text"
-                    name="shiftTimings"
-                    value={formData.shiftTimings}
-                    onChange={handleChange}
-                    className={inputClass('shiftTimings')}
-                    placeholder="e.g. 9 AM - 6 PM / 24x7 Shift Rotations"
-                  />
+                  <div className="flex flex-wrap items-center gap-6 text-sm">
+                    {shiftTimingOptions.map((opt) => (
+                      <label key={opt} className="flex items-center gap-2 cursor-pointer font-medium">
+                        <input
+                          type="radio"
+                          name="shiftTimings"
+                          value={opt}
+                          checked={formData.shiftTimings === opt}
+                          onChange={handleChange}
+                          className="w-4 h-4 text-msi-purple focus:ring-msi-purple"
+                        />
+                        <span className={formData.shiftTimings === opt ? 'font-semibold text-msi-purple' : ''}>
+                          {opt}
+                        </span>
+                      </label>
+                    ))}
+                  </div>
                 </div>
 
                 {/* Do You Have Space Radio */}
@@ -363,6 +378,55 @@ export default function CorporateContactUs({ imageSrc = "/images/corporatechildc
                         </label>
                       );
                     })}
+                  </div>
+                </div>
+
+                {/* Preferred Date & Time Picker */}
+                <div className="p-4 bg-[#f7f9fc] rounded-xl border border-gray-100 space-y-3">
+                  <label className="block text-xs font-bold text-msi-purple uppercase tracking-wider">
+                    Preferred Discussion / Meeting Date &amp; Time
+                  </label>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                      <label htmlFor="preferredDate" className="block text-[11px] font-semibold text-gray-600 uppercase mb-1">
+                        Preferred Date
+                      </label>
+                      <div className="relative">
+                        <input
+                          id="preferredDate"
+                          type="date"
+                          name="preferredDate"
+                          min={new Date().toISOString().split('T')[0]}
+                          value={formData.preferredDate}
+                          onChange={handleChange}
+                          className={`${inputClass('preferredDate')} pr-10 cursor-pointer text-sm [&::-webkit-calendar-picker-indicator]:opacity-0 [&::-webkit-calendar-picker-indicator]:absolute [&::-webkit-calendar-picker-indicator]:inset-0 [&::-webkit-calendar-picker-indicator]:w-full [&::-webkit-calendar-picker-indicator]:h-full [&::-webkit-calendar-picker-indicator]:cursor-pointer`}
+                        />
+                        <Calendar className="w-5 h-5 text-msi-orange absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none z-10" />
+                      </div>
+                      {errors.preferredDate && (
+                        <p className="text-red-500 text-xs mt-1">{errors.preferredDate}</p>
+                      )}
+                    </div>
+
+                    <div>
+                      <label htmlFor="preferredTime" className="block text-[11px] font-semibold text-gray-600 uppercase mb-1">
+                        Preferred Time
+                      </label>
+                      <div className="relative">
+                        <input
+                          id="preferredTime"
+                          type="time"
+                          name="preferredTime"
+                          value={formData.preferredTime}
+                          onChange={handleChange}
+                          className={`${inputClass('preferredTime')} pr-10 cursor-pointer text-sm [&::-webkit-calendar-picker-indicator]:opacity-0 [&::-webkit-calendar-picker-indicator]:absolute [&::-webkit-calendar-picker-indicator]:inset-0 [&::-webkit-calendar-picker-indicator]:w-full [&::-webkit-calendar-picker-indicator]:h-full [&::-webkit-calendar-picker-indicator]:cursor-pointer`}
+                        />
+                        <Clock className="w-5 h-5 text-msi-orange absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none z-10" />
+                      </div>
+                      {errors.preferredTime && (
+                        <p className="text-red-500 text-xs mt-1">{errors.preferredTime}</p>
+                      )}
+                    </div>
                   </div>
                 </div>
 

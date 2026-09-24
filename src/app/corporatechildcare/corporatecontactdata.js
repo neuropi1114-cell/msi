@@ -11,6 +11,12 @@ export const lookingForOptions = [
 
 export const spaceOptions = ['Yes', 'No', 'Not Sure'];
 
+export const shiftTimingOptions = [
+  'Standard Hours (9 AM - 6 PM)',
+  '24x7 Shift Rotations',
+  'Flexible / Custom Shifts',
+];
+
 export const initialCorporateFormData = {
   organisationName: '',
   contactPerson: '',
@@ -24,5 +30,8 @@ export const initialCorporateFormData = {
   shiftTimings: '',
   hasSpace: '',
   lookingFor: [],
+  preferredDate: '',
+  preferredTime: '',
   additionalNotes: '',
 };
+
