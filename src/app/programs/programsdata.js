@@ -69,7 +69,7 @@ export const ciaoBabyDrawerBody = (
       <h3 className="text-xl sm:text-2xl font-black text-msi-orange tracking-tight uppercase">
         CIAO BABY: BABY CRÈCHE &mdash; 45 DAYS+
       </h3>
-      <p className="mt-3 text-gray-700 font-medium leading-relaxed">
+      <p>
         A warm, nurturing environment for babies beginning from 45 days, where care routines and early developmental experiences come together seamlessly.
       </p>
     </div>
@@ -77,14 +77,14 @@ export const ciaoBabyDrawerBody = (
     <div className="space-y-3">
       <div className="p-4 bg-purple-50/90 border-l-4 border-msi-purple rounded-r-xl shadow-2xs">
         <h4 className="font-extrabold text-msi-purple text-base uppercase mb-1">Individual Rhythms</h4>
-        <p className="text-gray-800 font-medium text-sm sm:text-base">
+        <p>
           Our caregivers pay close attention to each baby&apos;s individual rhythms &mdash; feeding, sleep, comfort, movement, sensory experiences and interaction.
         </p>
       </div>
 
       <div className="p-4 bg-blue-50/90 border-l-4 border-msi-blue rounded-r-xl shadow-2xs">
         <h4 className="font-extrabold text-msi-blue text-base uppercase mb-1">Sensory Exploration</h4>
-        <p className="text-gray-800 font-medium text-sm sm:text-base">
+        <p>
           Gentle conversation, music, touch, tummy time, movement and sensory exploration make everyday care meaningful.
         </p>
       </div>
@@ -107,7 +107,7 @@ export const preNurseryDrawerBody = (
       <h3 className="text-xl sm:text-2xl font-black text-msi-orange tracking-tight uppercase">
         PRE NURSERY
       </h3>
-      <p className="mt-3 text-gray-700 font-medium leading-relaxed">
+      <p>
         Toddlers learn by doing. They touch, move, imitate, experiment, repeat, question and discover the world around them.
       </p>
     </div>
@@ -126,7 +126,7 @@ export const preNurseryDrawerBody = (
     </div>
 
     <div className="p-4 rounded-xl bg-msi-cream border-l-4 border-msi-purple shadow-xs">
-      <p className="font-bold text-msi-purple text-sm sm:text-base leading-relaxed">
+      <p>
         The environment gives children freedom to explore while providing the security of familiar routines and caring adults.
       </p>
     </div>
@@ -148,7 +148,7 @@ export const nurseryDrawerBody = (
       <h3 className="text-xl sm:text-2xl font-black text-msi-orange tracking-tight uppercase">
         NURSERY
       </h3>
-      <p className="mt-3 text-gray-700 font-medium leading-relaxed">
+      <p>
         Nursery transforms children&apos;s natural curiosity into purposeful experiences across all domains of growth.
       </p>
     </div>
@@ -156,14 +156,14 @@ export const nurseryDrawerBody = (
     <div className="space-y-3">
       <div className="p-4 bg-yellow-50/90 border-l-4 border-msi-yellow rounded-r-xl shadow-2xs">
         <h4 className="font-extrabold text-msi-purple text-base uppercase mb-1">Foundational Skills</h4>
-        <p className="text-gray-800 font-medium text-sm sm:text-base">
+        <p>
           Through stories, conversation, play, movement, art, music and hands-on discovery, children begin developing language, early literacy, numeracy, communication, physical and social-emotional skills.
         </p>
       </div>
 
       <div className="p-4 bg-purple-50/90 border-l-4 border-msi-purple rounded-r-xl shadow-2xs">
         <h4 className="font-extrabold text-msi-purple text-base uppercase mb-1">Connected Learning</h4>
-        <p className="text-gray-800 font-medium text-sm sm:text-base">
+        <p>
           Rather than separating learning into isolated subjects, experiences are connected so children begin to understand relationships between ideas.
         </p>
       </div>
@@ -183,21 +183,21 @@ export const booksStoriesDrawerBody = (
       <h3 className="text-xl sm:text-2xl font-black text-msi-purple tracking-tight uppercase">
         BOOKS &amp; STORIES
       </h3>
-      <p className="mt-3 text-gray-700 font-medium leading-relaxed">
+      <p>
         Stories are at the heart of My School ITALY. Our original books and learning materials take children into worlds of animals, nature, people, places and discovery.
       </p>
     </div>
 
     <div className="p-5 rounded-2xl bg-gradient-to-r from-msi-purple/10 to-msi-blue/5 border-l-4 border-msi-purple">
-      <p className="font-bold text-msi-purple text-base mb-1">A story can lead into:</p>
-      <p className="font-semibold text-msi-orange text-sm sm:text-base">
+      <p>A story can lead into:</p>
+      <p>
         Language &rarr; Mathematics &rarr; Science &rarr; Social Understanding &rarr; Creativity &rarr; Movement &rarr; Values
       </p>
     </div>
 
     <div className="p-5 rounded-2xl bg-msi-blue/5 border-l-4 border-msi-blue">
-      <p className="font-bold text-msi-purple text-base mb-1">Our learning journey follows a simple rhythm:</p>
-      <p className="font-bold text-msi-blue tracking-wide text-xs sm:text-sm">
+      <p>Our learning journey follows a simple rhythm:</p>
+      <p>
         LISTEN &rarr; WATCH &rarr; CONNECT &rarr; PRACTISE &rarr; MOVE &amp; CREATE &rarr; PERFORM
       </p>
     </div>
@@ -213,7 +213,7 @@ export const k1DrawerBody = (
       <h3 className="text-xl sm:text-2xl font-black text-msi-purple tracking-tight uppercase">
         KINDERGARTEN K1
       </h3>
-      <p className="mt-3 text-gray-700 font-medium leading-relaxed">
+      <p>
         As children&apos;s language, attention and independence develop, K1 introduces increasingly structured learning while preserving the joy of discovery.
       </p>
     </div>
@@ -248,7 +248,7 @@ export const k2DrawerBody = (
       <h3 className="text-xl sm:text-2xl font-black text-msi-purple tracking-tight uppercase">
         KINDERGARTEN K2
       </h3>
-      <p className="mt-3 text-gray-700 font-medium leading-relaxed">
+      <p>
         K2 builds confidence and independence as children prepare for the next stage of formal schooling.
       </p>
     </div>
@@ -256,14 +256,14 @@ export const k2DrawerBody = (
     <div className="space-y-3">
       <div className="p-4 bg-orange-50/90 border-l-4 border-msi-orange rounded-r-xl shadow-2xs">
         <h4 className="font-extrabold text-msi-orange text-base uppercase mb-1">Academic Readiness</h4>
-        <p className="text-gray-800 font-medium text-sm sm:text-base">
+        <p>
           Children strengthen reading readiness, writing, mathematical thinking, scientific curiosity, communication, problem-solving and independent learning habits.
         </p>
       </div>
 
       <div className="p-4 bg-purple-50/90 border-l-4 border-msi-purple rounded-r-xl shadow-2xs">
         <h4 className="font-extrabold text-msi-purple text-base uppercase mb-1">Enthusiastic Learners</h4>
-        <p className="text-gray-800 font-medium text-sm sm:text-base">
+        <p>
           Our objective is not simply to prepare children for the next classroom. It is to help them become curious thinkers, confident communicators and enthusiastic learners.
         </p>
       </div>
@@ -286,7 +286,7 @@ export const daycareDrawerBody = (
       <h3 className="text-xl sm:text-2xl font-black text-msi-purple tracking-tight uppercase">
         DAYCARE
       </h3>
-      <p className="mt-3 text-gray-700 font-medium leading-relaxed">
+      <p>
         Daycare at MSI is more than supervision after school. Children remain within a familiar environment where care, relationships, play, meals, rest, movement, learning and friendships continue naturally.
       </p>
     </div>
@@ -321,13 +321,13 @@ export const gymnasticsDrawerBody = (
       <h3 className="text-xl sm:text-2xl font-black text-msi-orange tracking-tight uppercase">
         GYMNASTICS
       </h3>
-      <p className="mt-3 text-gray-700 font-medium leading-relaxed">
+      <p>
         Gymnastics gives children opportunities to develop balance, coordination, flexibility, strength, spatial awareness and body confidence.
       </p>
     </div>
 
     <div className="p-4 bg-purple-50/90 border-l-4 border-msi-purple rounded-r-xl shadow-2xs">
-      <p className="text-gray-800 font-medium text-sm sm:text-base">
+      <p>
         Through age-appropriate movement experiences, children learn to control their bodies, follow sequences, attempt challenges and experience the satisfaction of mastering a new movement.
       </p>
     </div>
@@ -349,7 +349,7 @@ export const roboticsDrawerBody = (
       <h3 className="text-xl sm:text-2xl font-black text-msi-purple tracking-tight uppercase">
         ROBOTICS &amp; STEAM
       </h3>
-      <p className="mt-3 text-gray-700 font-medium leading-relaxed">
+      <p>
         Our age-appropriate robotics experiences introduce children to early STEAM thinking, sequencing, patterns, cause and effect, construction and problem-solving.
       </p>
     </div>
@@ -384,13 +384,13 @@ export const danceCreativeMovementDrawerBody = (
       <h3 className="text-xl sm:text-2xl font-black text-msi-orange tracking-tight uppercase">
         DANCE &amp; CREATIVE MOVEMENT
       </h3>
-      <p className="mt-3 text-gray-700 font-medium leading-relaxed">
+      <p>
         Through music, rhythm, dance and creative movement, children develop coordination, body awareness, rhythm, expression, confidence and social participation.
       </p>
     </div>
 
     <div className="p-4 bg-purple-50/90 border-l-4 border-msi-purple rounded-r-xl shadow-2xs">
-      <p className="text-gray-800 font-medium text-sm sm:text-base">
+      <p>
         Sometimes children communicate best not through words &mdash; but through movement.
       </p>
     </div>
@@ -406,7 +406,7 @@ export const storytellingCreativeArtsDrawerBody = (
       <h3 className="text-xl sm:text-2xl font-black text-msi-purple tracking-tight uppercase">
         STORYTELLING &amp; CREATIVE ARTS
       </h3>
-      <p className="mt-3 text-gray-700 font-medium leading-relaxed">
+      <p>
         Stories, drama, drawing, painting, music, puppetry and creative expression give children opportunities to transform imagination into something they can share.
       </p>
     </div>
@@ -425,7 +425,7 @@ export const extendedDaycareDrawerBody = (
       <h3 className="text-xl sm:text-2xl font-black text-msi-purple tracking-tight uppercase">
         EXTENDED DAYCARE
       </h3>
-      <p className="mt-3 text-gray-700 font-medium leading-relaxed">
+      <p>
         Working days don&apos;t always fit neatly around school hours. Our Extended Daycare provides families with additional childcare beyond regular program timings.
       </p>
     </div>
@@ -444,7 +444,7 @@ export const emergencyExtendedCareDrawerBody = (
       <h3 className="text-xl sm:text-2xl font-black text-msi-blue tracking-tight uppercase">
         EMERGENCY EXTENDED CARE
       </h3>
-      <p className="mt-3 text-gray-700 font-medium leading-relaxed">
+      <p>
         Meetings run late. Travel gets delayed. Emergencies happen. Where available, MSI&apos;s Emergency Extended Care gives enrolled families additional support when unexpected circumstances arise.
       </p>
     </div>
@@ -460,7 +460,7 @@ export const twentyFourHourCareDrawerBody = (
       <h3 className="text-xl sm:text-2xl font-black text-msi-purple tracking-tight uppercase">
         24-HOUR CARE &mdash; WHERE AVAILABLE
       </h3>
-      <p className="mt-3 text-gray-700 font-medium leading-relaxed">
+      <p>
         Some professions don&apos;t operate from nine to five. At selected locations, MSI can provide extended childcare solutions designed for parents working night shifts, rotating schedules, healthcare, technology, emergency services and non-traditional hours.
       </p>
     </div>

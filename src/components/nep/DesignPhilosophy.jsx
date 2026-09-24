@@ -79,9 +79,9 @@ export default function DesignPhilosophy({
                 </h2>
               )}
 
-              {p1 && <p className={`${p1Class} text-[15px] md:text-[16px] leading-relaxed mb-1`}>{p1}</p>}
-              {p2 && <p className={`${p2Class || p1Class} text-[15px] md:text-[16px] leading-relaxed mb-1`}>{p2}</p>}
-              {p3 && <p className={`${p3Class || p1Class} text-[15px] md:text-[16px] leading-relaxed mb-3`}>{p3}</p>}
+              {p1 && <p className={`${p1Class}  leading-relaxed `}>{p1}</p>}
+              {p2 && <p className={`${p2Class || p1Class}  leading-relaxed `}>{p2}</p>}
+              {p3 && <p className={`${p3Class || p1Class}  leading-relaxed`}>{p3}</p>}
 
               {hasCustomDrawer ? (
                 <div className="w-fit self-start">
@@ -98,7 +98,7 @@ export default function DesignPhilosophy({
                     side="left"
                   >
                     {drawerEyebrow && (
-                      <p className="text-msi-purple font-bold text-lg leading-snug mb-3">
+                      <p className="text-msi-purple font-bold text-lg leading-snug">
                         {drawerEyebrow}
                       </p>
                     )}
@@ -130,9 +130,9 @@ export default function DesignPhilosophy({
                     {bottomTitle}
                   </h2>
                 )}
-                {bottomP1 && <p className={bottomP1Class !== null ? bottomP1Class : "text-gray-600 text-[15px] md:text-[16px] leading-relaxed mb-1"}>{bottomP1}</p>}
-                {bottomP2 && <p className={bottomP2Class !== null ? bottomP2Class : `text-gray-600 text-[15px] md:text-[16px] leading-relaxed ${bottomP3 ? 'mb-1' : 'mb-3'}`}>{bottomP2}</p>}
-                {bottomP3 && <p className="text-gray-600 text-[15px] md:text-[16px] leading-relaxed mb-3">{bottomP3}</p>}
+                {bottomP1 && <p className={bottomP1Class !== null ? bottomP1Class : " leading-relaxed "}>{bottomP1}</p>}
+                {bottomP2 && <p className={bottomP2Class !== null ? bottomP2Class : ` leading-relaxed ${bottomP3 ? '' : 'mb-3'}`}>{bottomP2}</p>}
+                {bottomP3 && <p className=" leading-relaxed">{bottomP3}</p>}
 
                 {hasBottomDrawer && (
                   <div className="w-fit self-start">
@@ -149,7 +149,7 @@ export default function DesignPhilosophy({
                       side="left"
                     >
                       {bottomDrawerEyebrow && (
-                        <p className="text-msi-purple font-bold text-lg leading-snug mb-3">
+                        <p className="text-msi-purple font-bold text-lg leading-snug">
                           {bottomDrawerEyebrow}
                         </p>
                       )}

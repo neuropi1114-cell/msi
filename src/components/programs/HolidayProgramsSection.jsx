@@ -19,13 +19,13 @@ export default function HolidayProgramsSection({ id = "holiday-summer-programs" 
           <p>
             Programs can combine:
           </p>
-          <p className="font-semibold text-msi-purple">
+          <p>
             Stories &bull; Science &bull; Nature &bull; Art &bull; Cooking &bull; Movement &bull; Gymnastics &bull; Robotics &bull; Music &bull; Drama &bull; Games &bull; Creative Projects
           </p>
           <p>
             Themes and activities change so children can experience something different while remaining within MSI&apos;s familiar environment.
           </p>
-          <p className="font-semibold text-msi-purple">
+          <p>
             Different Days. New Experiences. Endless Discovery.
           </p>
         </div>

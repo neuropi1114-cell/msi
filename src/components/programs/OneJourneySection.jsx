@@ -81,7 +81,7 @@ export default function OneJourneySection({
 
               <div className="mt-5 space-y-4">
                 {children || (
-                  <p className="leading-relaxed">
+                  <p>
                     A child may first enter MSI as a tiny baby.<br />
                     Then become a curious toddler.<br />
                     A storyteller in Nursery.<br />
@@ -93,7 +93,7 @@ export default function OneJourneySection({
                 )}
 
                 {footerText && (
-                  <p className="font-semibold text-msi-purple pt-2 border-t border-gray-100">
+                  <p>
                     {footerText}
                   </p>
                 )}

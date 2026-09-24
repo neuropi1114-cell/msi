@@ -33,9 +33,11 @@ export default function ProgramsPage({ activeSlug = null }) {
       <SectionScrollController activeSlug={activeSlug} />
       <main>
         <CloudHeader
-          image="/images/programs/Header_3.png"
-          imageClass="object-cover object-top"
-          heightClass="w-full aspect-[1670/942] min-h-[320px] max-h-[750px]"
+          image="/images/programs/Programs_Header.png"
+          imageClass="object-cover object-center"
+          heightClass="w-full aspect-[3/1] min-h-[260px] sm:min-h-[380px] md:min-h-[480px] max-h-[750px]"
+          cloudContainerClass="translate-y-[25%] sm:translate-y-[32%]"
+          cloudFill="fill-white"
         />
         <div data-nav-sentinel />
 
@@ -69,7 +71,7 @@ export default function ProgramsPage({ activeSlug = null }) {
           title="PROGRAMS IN ACTION"
           videosList={programVideos}
           showCarousel={true}
-          aspect="landscape"
+          aspect="portrait"
         />
 
         <Awards />
