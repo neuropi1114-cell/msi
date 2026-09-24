@@ -3,6 +3,7 @@ import { Analytics } from '@vercel/analytics/react';
 import Script from 'next/script';
 import './globals.css';
 import JsonLd from '../components/JsonLd';
+import LocalStorageImageCache from '../components/common/LocalStorageImageCache';
 
 const lato = Lato({
   subsets: ['latin'],
@@ -64,6 +65,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className="text-gray-800 bg-[#f7f9fc] min-h-screen font-lato" suppressHydrationWarning>
         <JsonLd />
+        <LocalStorageImageCache />
         {children}
         <Analytics />
         <Script

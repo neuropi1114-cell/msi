@@ -17,6 +17,8 @@ export default function CreativeLearning({
   footerContent = null,
   showFooter = true,
   imageSrc = "/images/parents/Parents_7_v2.png",
+  tourHref = "/book-your-tour",
+  tourText = "BOOK A TOUR",
 }) {
   return (
     <section className="pt-3 md:pt-5 pb-12 bg-white">
@@ -45,7 +47,7 @@ export default function CreativeLearning({
 
             <div className="flex flex-wrap items-center justify-center md:justify-start gap-6 mt-6">
               <UnderlineArrowLink href="/contact" text="FIND A CENTRE" color="green" />
-              <UnderlineArrowLink href="/book-your-tour" text="BOOK A TOUR" color="yellow" />
+              <UnderlineArrowLink href={tourHref} text={tourText} color="yellow" />
             </div>
           </ScrollReveal>
           <ScrollReveal direction="left" delay={0.25}>

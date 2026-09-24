@@ -144,6 +144,7 @@ export default function WhyUsPage({ activeSlug = null }) {
           title="WHY FAMILIES CHOOSE MSI"
           paragraphs={whyChooseUsParagraphs}
           footerContent={whyChooseUsFooter}
+          tourHref="/neuropiway"
         />
         <VideoShowcase title="OUR CENTRES" videosList={centreVideos} showVideoTitle={true} aspect="landscape" />
         <GalleryStrip images={whyUsGalleryImages} />
