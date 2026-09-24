@@ -20,35 +20,105 @@ const videos = [
   },
 ];
 
-function getEmbedUrl(url) {
-  const youtubeMatch = url.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/))([\w-]+)/);
-  if (youtubeMatch) {
-    return `https://www.youtube.com/embed/${youtubeMatch[1]}`;
+function getEmbedUrl(video, autoplay = false) {
+  if (!video) return '';
+  const url = video.url || '';
+  const videoId = video.id && typeof video.id === 'string' && video.id.length > 5 ? video.id : '';
+
+  if (url) {
+    const youtubeMatch = url.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/))([\w-]+)/);
+    if (youtubeMatch) {
+      return `https://www.youtube.com/embed/${youtubeMatch[1]}?autoplay=${autoplay ? 1 : 0}&rel=0`;
+    }
+    const vimeoMatch = url.match(/vimeo\.com\/(?:video\/)?(\d+)/);
+    if (vimeoMatch) {
+      return `https://player.vimeo.com/video/${vimeoMatch[1]}?title=0&byline=0&portrait=0&transparent=1&autoplay=${autoplay ? 1 : 0}`;
+    }
+    return url;
   }
-  const vimeoMatch = url.match(/vimeo\.com\/(?:video\/)?(\d+)/);
-  if (vimeoMatch) {
-    return `https://player.vimeo.com/video/${vimeoMatch[1]}?title=0&byline=0&portrait=0&transparent=1`;
+
+  if (videoId) {
+    return `https://www.youtube.com/embed/${videoId}?autoplay=${autoplay ? 1 : 0}&rel=0`;
   }
-  return url;
+
+  return '';
 }
 
-function VideoCard({ video, index, videoTitleColor = "text-msi-orange", aspect = "portrait", showVideoTitle = false }) {
-  const ref = useRef(null);
-  const [isVisible, setIsVisible] = useState(false);
+function getThumbnail(video) {
+  if (!video) return null;
+  if (video.thumbnail) return video.thumbnail;
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.3 }
-    );
-    if (ref.current) observer.observe(ref.current);
-    return () => observer.disconnect();
-  }, []);
+  const url = video.url || '';
+  if (url) {
+    const youtubeMatch = url.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/))([\w-]+)/);
+    if (youtubeMatch) {
+      return `https://img.youtube.com/vi/${youtubeMatch[1]}/hqdefault.jpg`;
+    }
+    const vimeoMatch = url.match(/vimeo\.com\/(?:video\/)?(\d+)/);
+    if (vimeoMatch) {
+      return `https://vumbnail.com/${vimeoMatch[1]}.jpg`;
+    }
+  }
+
+  if (video.id && typeof video.id === 'string' && video.id.length > 5) {
+    return `https://img.youtube.com/vi/${video.id}/hqdefault.jpg`;
+  }
+
+  return null;
+}
+
+export function VideoModal({ video, aspect = "portrait", onClose }) {
+  if (!video) return null;
+
+  const isPortrait = aspect === 'portrait' || aspect === 'aspect-[9/16]' || video.aspect === 'portrait' || video.isReel;
+
+  return (
+    <div
+      className="fixed inset-0 z-50 bg-black/85 flex items-center justify-center p-4 backdrop-blur-sm"
+      onClick={onClose}
+    >
+      <div
+        className={`relative w-full ${
+          isPortrait
+            ? 'max-w-[340px] sm:max-w-[380px] aspect-[9/16] max-h-[85vh]'
+            : 'max-w-4xl aspect-video'
+        }`}
+        onClick={(e) => e.stopPropagation()}
+      >
+        <button
+          onClick={onClose}
+          aria-label="Close video"
+          className="absolute -top-11 right-0 text-white hover:text-msi-orange font-bold text-sm sm:text-base bg-black/60 hover:bg-black px-3.5 py-1 rounded-full border border-white/20 transition-colors flex items-center gap-1 shadow-lg"
+        >
+          <span>Close</span>
+          <span className="text-lg leading-none">&times;</span>
+        </button>
+
+        {video.src ? (
+          <video
+            src={video.src}
+            controls
+            autoPlay
+            className="w-full h-full rounded-2xl shadow-2xl object-cover bg-black border border-white/10"
+          />
+        ) : (
+          <iframe
+            className="w-full h-full rounded-2xl shadow-2xl border border-white/10"
+            src={getEmbedUrl(video, true)}
+            title={video.title || 'Video player'}
+            allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
+            allowFullScreen
+          />
+        )}
+      </div>
+    </div>
+  );
+}
+
+export function VideoCard({ video, index, videoTitleColor = "text-msi-orange", aspect = "portrait", showVideoTitle = false, onPlay = null }) {
+  const ref = useRef(null);
+  const [localPlaying, setLocalPlaying] = useState(false);
+  const [imgError, setImgError] = useState(false);
 
   const aspectClass =
     aspect === 'portrait' || aspect === 'aspect-[9/16]'
@@ -57,35 +127,74 @@ function VideoCard({ video, index, videoTitleColor = "text-msi-orange", aspect =
       ? 'aspect-[16/9] w-full mx-auto'
       : aspect;
 
+  const thumbnail = getThumbnail(video);
+
+  const handleCardClick = () => {
+    if (onPlay) {
+      onPlay(video);
+    } else {
+      setLocalPlaying(true);
+    }
+  };
+
   return (
-    <motion.div
-      ref={ref}
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ delay: index * 0.15 }}
-      className="flex flex-col h-full items-center"
-    >
-      <div className={`relative w-full ${aspectClass} rounded-2xl overflow-hidden shadow-lg bg-black border border-gray-100`}>
-        {isVisible && (
-          <iframe
-            src={getEmbedUrl(video.url)}
-            className="absolute inset-0 w-full h-full"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-            title={video.title}
-          />
+    <>
+      <motion.div
+        ref={ref}
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ delay: index * 0.1 }}
+        className="flex flex-col h-full items-center"
+      >
+        <div
+          className={`relative w-full ${aspectClass} rounded-2xl overflow-hidden shadow-lg bg-black border border-gray-100 cursor-pointer group`}
+          onClick={handleCardClick}
+        >
+          {thumbnail && !imgError ? (
+            <img
+              src={thumbnail}
+              alt={video.title || 'Video preview'}
+              onError={() => setImgError(true)}
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            />
+          ) : video.src ? (
+            <video
+              src={video.src}
+              preload="metadata"
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+          ) : (
+            <div className="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center p-4">
+              <span className="text-white/70 text-xs text-center font-medium">{video.title}</span>
+            </div>
+          )}
+
+          {/* Play Button Overlay */}
+          <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors flex items-center justify-center">
+            <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full bg-msi-orange/90 text-white flex items-center justify-center shadow-xl group-hover:scale-110 group-hover:bg-msi-orange transition-all duration-300">
+              <svg className="w-6 h-6 sm:w-7 sm:h-7 fill-current ml-1" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        {showVideoTitle && video.title && (
+          <h3 className={`mt-3 text-center font-bold text-base md:text-lg tracking-wide not-italic ${videoTitleColor}`}>
+            {video.title}
+          </h3>
         )}
-      </div>
-      {showVideoTitle && video.title && (
-        <h3 className={`mt-3 text-center font-bold text-base md:text-lg tracking-wide not-italic ${videoTitleColor}`}>
-          {video.title}
-        </h3>
+      </motion.div>
+
+      {!onPlay && localPlaying && (
+        <VideoModal video={video} aspect={aspect} onClose={() => setLocalPlaying(false)} />
       )}
-    </motion.div>
+    </>
   );
 }
+
 
 export default function VideoShowcase({
   eyebrow = null,
@@ -99,6 +208,7 @@ export default function VideoShowcase({
   aspect = "portrait",
 }) {
   const [current, setCurrent] = useState(0);
+  const [activeVideo, setActiveVideo] = useState(null);
   const containerRef = useRef(null);
 
   const isPortrait = aspect === 'portrait' || aspect === 'aspect-[9/16]';
@@ -182,6 +292,7 @@ export default function VideoShowcase({
                     videoTitleColor={videoTitleColor}
                     aspect={aspect}
                     showVideoTitle={showVideoTitle}
+                    onPlay={(v) => setActiveVideo(v)}
                   />
                 </div>
               ))}
@@ -222,12 +333,22 @@ export default function VideoShowcase({
                   videoTitleColor={videoTitleColor}
                   aspect={aspect}
                   showVideoTitle={showVideoTitle}
+                  onPlay={(v) => setActiveVideo(v)}
                 />
               </div>
             ))}
           </div>
         )}
       </div>
+
+      {activeVideo && (
+        <VideoModal
+          video={activeVideo}
+          aspect={aspect}
+          onClose={() => setActiveVideo(null)}
+        />
+      )}
     </section>
   );
 }
+
