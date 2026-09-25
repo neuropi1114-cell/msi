@@ -295,25 +295,7 @@ export const neuroPiSensoryCards = [
   },
 ];
 
-export const metadata = {
-  title: 'The NeuroPi Way | Neuroscience-Informed Early Learning',
-  description: 'Discover how MSI uses observation, relationships, play and developmental understanding through the NeuroPi Way to personalise early learning.',
-  alternates: { canonical: 'https://www.myschoolitaly.com/neuropi-way/' },
-  openGraph: {
-    title: 'The NeuroPi Way | Neuroscience-Informed Early Learning',
-    description: 'Discover how MSI uses observation, relationships, play and developmental understanding through the NeuroPi Way to personalise early learning.',
-    url: 'https://www.myschoolitaly.com/neuropi-way/',
-    siteName: 'My School ITALY',
-    locale: 'en_US',
-    type: 'website',
-    images: [{ url: '/images/hero/Slider_1-scaled.jpg.bv.webp', width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'The NeuroPi Way | Neuroscience-Informed Early Learning',
-    description: 'Discover how MSI uses observation, relationships, play and developmental understanding through the NeuroPi Way to personalise early learning.',
-  },
-};
+
 
 export const nepHeroDrawerBody = (
   <div className="space-y-6 text-gray-700 text-sm sm:text-base leading-relaxed">

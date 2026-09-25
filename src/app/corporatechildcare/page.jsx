@@ -248,7 +248,7 @@ export default function CorporateChildcarePage({ activeSlug = null }) {
         />
         <EnrolCta />
         <VideoShowcase
-          eyebrow="Watch Our Programs Come Alive"
+          eyebrow="Watch Our Programs Come Alive."
           title="PROGRAMS IN ACTION"
           videosList={programVideos}
           showCarousel={true}

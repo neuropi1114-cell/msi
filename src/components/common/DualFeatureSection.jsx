@@ -32,6 +32,8 @@ export default function DualFeatureSection({
   leftDrawerTitle = null,
   leftDrawerEyebrow = null,
   leftDrawerBody = null,
+  leftReadMoreText = null,
+  leftButtonClassName = "",
   rightEyebrow = "Home Learning & Family Connection",
   rightTitle = "Learning Doesn't Stop at the School Gate",
   rightTitleColor = null,
@@ -44,6 +46,8 @@ export default function DualFeatureSection({
   rightDrawerTitle = null,
   rightDrawerEyebrow = null,
   rightDrawerBody = null,
+  rightReadMoreText = null,
+  rightButtonClassName = "",
 }) {
   const [leftOpen, setLeftOpen] = useState(false);
   const [rightOpen, setRightOpen] = useState(false);
@@ -153,11 +157,12 @@ export default function DualFeatureSection({
                 leftDrawerBody ? (
                   <>
                     <ReadMoreButton
+                      text={leftReadMoreText || "Read More"}
                       onClick={() => setLeftOpen(true)}
                       aria-haspopup="dialog"
                       aria-expanded={leftOpen}
                       bgColor={leftButtonBgColor}
-                      className="mt-6 font-bold"
+                      className={`mt-6 font-bold ${leftButtonClassName}`}
                     />
                     <Drawer
                       open={leftOpen}
@@ -218,11 +223,12 @@ export default function DualFeatureSection({
                 rightDrawerBody ? (
                   <>
                     <ReadMoreButton
+                      text={rightReadMoreText || "Read More"}
                       onClick={() => setRightOpen(true)}
                       aria-haspopup="dialog"
                       aria-expanded={rightOpen}
                       bgColor={rightButtonBgColor}
-                      className="mt-6 font-bold"
+                      className={`mt-6 font-bold ${rightButtonClassName}`}
                     />
                     <Drawer
                       open={rightOpen}

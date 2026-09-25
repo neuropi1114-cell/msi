@@ -30,6 +30,9 @@ export default function DesignPhilosophy({
   drawerTitle = null,
   drawerEyebrow = null,
   drawerBody = null,
+  readMoreText = null,
+  readMoreBgColor = null,
+  readMoreClassName = "",
   bottomEyebrow = "Your Child's Day At MSI",
   bottomTitle = "Care, Learning and Childhood \u2014 All in One Day",
   bottomP1 = "A child's day at MSI is designed around an age-appropriate rhythm rather than continuous instruction.",
@@ -40,6 +43,9 @@ export default function DesignPhilosophy({
   bottomDrawerTitle = null,
   bottomDrawerEyebrow = null,
   bottomDrawerBody = null,
+  bottomReadMoreText = null,
+  bottomReadMoreBgColor = null,
+  bottomReadMoreClassName = "",
 }) {
   const [open, setOpen] = useState(false);
   const [bottomOpen, setBottomOpen] = useState(false);
@@ -86,10 +92,12 @@ export default function DesignPhilosophy({
               {hasCustomDrawer ? (
                 <div className="w-fit self-start">
                   <ReadMoreButton
+                    text={readMoreText || "Read More"}
+                    bgColor={readMoreBgColor || "bg-msi-blue hover:bg-msi-blue/90"}
                     onClick={() => setOpen(true)}
                     aria-haspopup="dialog"
                     aria-expanded={open}
-                    className="mt-3 font-bold"
+                    className={`mt-3 font-bold ${readMoreClassName}`}
                   />
                   <Drawer
                     open={open}
@@ -137,10 +145,12 @@ export default function DesignPhilosophy({
                 {hasBottomDrawer && (
                   <div className="w-fit self-start">
                     <ReadMoreButton
+                      text={bottomReadMoreText || "Read More"}
+                      bgColor={bottomReadMoreBgColor || "bg-msi-blue hover:bg-msi-blue/90"}
                       onClick={() => setBottomOpen(true)}
                       aria-haspopup="dialog"
                       aria-expanded={bottomOpen}
-                      className="mt-3 font-bold"
+                      className={`mt-3 font-bold ${bottomReadMoreClassName}`}
                     />
                     <Drawer
                       open={bottomOpen}

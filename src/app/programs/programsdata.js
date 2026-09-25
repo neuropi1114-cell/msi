@@ -50,9 +50,6 @@ export const ciaoBabyDrawerBody = (
       <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-purple/10 text-msi-purple mb-2">
         The Smallest Children Deserve Our Greatest Care
       </span>
-      <h3 className="text-xl sm:text-2xl font-black text-msi-orange tracking-tight uppercase">
-        CIAO BABY: BABY CRÈCHE &mdash; 45 DAYS+
-      </h3>
       <p>
         A warm, nurturing environment for babies beginning from 45 days, where care routines and early developmental experiences come together seamlessly.
       </p>
@@ -88,9 +85,6 @@ export const preNurseryDrawerBody = (
       <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-blue/10 text-msi-blue mb-2">
         Little Feet. Big Curiosity.
       </span>
-      <h3 className="text-xl sm:text-2xl font-black text-msi-orange tracking-tight uppercase">
-        PRE NURSERY
-      </h3>
       <p>
         Toddlers learn by doing. They touch, move, imitate, experiment, repeat, question and discover the world around them.
       </p>
@@ -129,9 +123,6 @@ export const nurseryDrawerBody = (
       <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-yellow/20 text-msi-purple mb-2">
         Where Curiosity Begins To Become Learning
       </span>
-      <h3 className="text-xl sm:text-2xl font-black text-msi-orange tracking-tight uppercase">
-        NURSERY
-      </h3>
       <p>
         Nursery transforms children&apos;s natural curiosity into purposeful experiences across all domains of growth.
       </p>
@@ -164,9 +155,6 @@ export const nurseryDrawerBody = (
 export const booksStoriesDrawerBody = (
   <div className="space-y-6 text-gray-700 text-sm sm:text-base leading-relaxed">
     <div className="p-5 rounded-2xl bg-gradient-to-br from-purple-50 via-white to-blue-50 border border-purple-100 shadow-xs">
-      <h3 className="text-xl sm:text-2xl font-black text-msi-purple tracking-tight uppercase">
-        BOOKS &amp; STORIES
-      </h3>
       <p>
         Stories are at the heart of My School ITALY. Our original books and learning materials take children into worlds of animals, nature, people, places and discovery.
       </p>
@@ -194,9 +182,6 @@ export const k1DrawerBody = (
       <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-blue/10 text-msi-blue mb-2">
         Exploring The World To Making Connections
       </span>
-      <h3 className="text-xl sm:text-2xl font-black text-msi-purple tracking-tight uppercase">
-        KINDERGARTEN K1
-      </h3>
       <p>
         As children&apos;s language, attention and independence develop, K1 introduces increasingly structured learning while preserving the joy of discovery.
       </p>
@@ -229,9 +214,6 @@ export const k2DrawerBody = (
       <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-orange/10 text-msi-orange mb-2">
         Ready For School. Ready To Think.
       </span>
-      <h3 className="text-xl sm:text-2xl font-black text-msi-purple tracking-tight uppercase">
-        KINDERGARTEN K2
-      </h3>
       <p>
         K2 builds confidence and independence as children prepare for the next stage of formal schooling.
       </p>
@@ -267,9 +249,6 @@ export const daycareDrawerBody = (
       <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-green/20 text-msi-purple mb-2">
         Your Child&apos;s Day Continues With Purpose
       </span>
-      <h3 className="text-xl sm:text-2xl font-black text-msi-purple tracking-tight uppercase">
-        DAYCARE
-      </h3>
       <p>
         Daycare at MSI is more than supervision after school. Children remain within a familiar environment where care, relationships, play, meals, rest, movement, learning and friendships continue naturally.
       </p>
@@ -302,9 +281,6 @@ export const gymnasticsDrawerBody = (
       <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-purple/10 text-msi-purple mb-2">
         Strong Bodies Support Growing Minds
       </span>
-      <h3 className="text-xl sm:text-2xl font-black text-msi-orange tracking-tight uppercase">
-        GYMNASTICS
-      </h3>
       <p>
         Gymnastics gives children opportunities to develop balance, coordination, flexibility, strength, spatial awareness and body confidence.
       </p>
@@ -330,9 +306,6 @@ export const roboticsDrawerBody = (
       <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-yellow/20 text-msi-purple mb-2">
         From “How Does It Work?” to “Can I Make It Work?”
       </span>
-      <h3 className="text-xl sm:text-2xl font-black text-msi-purple tracking-tight uppercase">
-        ROBOTICS &amp; STEAM
-      </h3>
       <p>
         Our age-appropriate robotics experiences introduce children to early STEAM thinking, sequencing, patterns, cause and effect, construction and problem-solving.
       </p>
@@ -365,9 +338,6 @@ export const danceCreativeMovementDrawerBody = (
       <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-yellow/20 text-msi-purple mb-2">
         Let the Body Become Another Language
       </span>
-      <h3 className="text-xl sm:text-2xl font-black text-msi-orange tracking-tight uppercase">
-        DANCE &amp; CREATIVE MOVEMENT
-      </h3>
       <p>
         Through music, rhythm, dance and creative movement, children develop coordination, body awareness, rhythm, expression, confidence and social participation.
       </p>
@@ -387,9 +357,6 @@ export const storytellingCreativeArtsDrawerBody = (
       <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-orange/10 text-msi-orange mb-2">
         Imagine It. Tell It. Create It.
       </span>
-      <h3 className="text-xl sm:text-2xl font-black text-msi-purple tracking-tight uppercase">
-        STORYTELLING &amp; CREATIVE ARTS
-      </h3>
       <p>
         Stories, drama, drawing, painting, music, puppetry and creative expression give children opportunities to transform imagination into something they can share.
       </p>
@@ -406,9 +373,6 @@ export const storytellingCreativeArtsDrawerBody = (
 export const extendedDaycareDrawerBody = (
   <div className="space-y-6 text-gray-700 text-sm sm:text-base leading-relaxed">
     <div className="p-5 rounded-2xl bg-gradient-to-br from-purple-50 via-white to-blue-50 border border-purple-100 shadow-xs">
-      <h3 className="text-xl sm:text-2xl font-black text-msi-purple tracking-tight uppercase">
-        EXTENDED DAYCARE
-      </h3>
       <p>
         Working days don&apos;t always fit neatly around school hours. Our Extended Daycare provides families with additional childcare beyond regular program timings.
       </p>
@@ -425,9 +389,6 @@ export const extendedDaycareDrawerBody = (
 export const emergencyExtendedCareDrawerBody = (
   <div className="space-y-6 text-gray-700 text-sm sm:text-base leading-relaxed">
     <div className="p-5 rounded-2xl bg-gradient-to-br from-blue-50 via-white to-purple-50 border border-blue-100 shadow-xs">
-      <h3 className="text-xl sm:text-2xl font-black text-msi-blue tracking-tight uppercase">
-        EMERGENCY EXTENDED CARE
-      </h3>
       <p>
         Meetings run late. Travel gets delayed. Emergencies happen. Where available, MSI&apos;s Emergency Extended Care gives enrolled families additional support when unexpected circumstances arise.
       </p>
@@ -441,9 +402,6 @@ export const twentyFourHourCareDrawerBody = (
       <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-blue/10 text-msi-blue mb-2">
         Childcare Beyond Conventional Working Hours
       </span>
-      <h3 className="text-xl sm:text-2xl font-black text-msi-purple tracking-tight uppercase">
-        24-HOUR CARE &mdash; WHERE AVAILABLE
-      </h3>
       <p>
         Some professions don&apos;t operate from nine to five. At selected locations, MSI can provide extended childcare solutions designed for parents working night shifts, rotating schedules, healthcare, technology, emergency services and non-traditional hours.
       </p>
@@ -452,6 +410,57 @@ export const twentyFourHourCareDrawerBody = (
     <div className="p-6 rounded-2xl bg-gradient-to-r from-msi-purple to-[#271344] text-white shadow-lg text-center">
       <h4 className="font-extrabold text-msi-yellow text-base sm:text-lg uppercase tracking-wide">
         Because modern families need modern childcare.
+      </h4>
+    </div>
+  </div>
+);
+
+export const saturdayHolidayCareDrawerBody = (
+  <div className="space-y-6 text-gray-700 text-sm sm:text-base leading-relaxed">
+    <div className="p-5 rounded-2xl bg-gradient-to-br from-amber-50 via-white to-purple-50 border border-amber-100 shadow-xs">
+      <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-orange/10 text-msi-orange mb-2">
+        Because Your Working Calendar and the School Calendar Don&apos;t Always Match
+      </span>
+      <p>
+        Selected centres provide childcare on Saturdays and designated holidays. Children spend their day in a familiar environment with opportunities for play, creativity, movement, stories, rest and social interaction.
+      </p>
+    </div>
+
+    <div className="p-6 rounded-2xl bg-gradient-to-r from-msi-purple to-[#271344] text-white shadow-lg text-center">
+      <h4 className="font-extrabold text-msi-yellow text-base sm:text-lg uppercase tracking-wide">
+        Consistent Care When You Need It Most
+      </h4>
+    </div>
+  </div>
+);
+
+export const holidayProgramsDrawerBody = (
+  <div className="space-y-6 text-gray-700 text-sm sm:text-base leading-relaxed">
+    <div className="p-5 rounded-2xl bg-gradient-to-br from-yellow-50 via-white to-purple-50 border border-yellow-200 shadow-xs">
+      <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-yellow/20 text-msi-purple mb-2">
+        Holidays Become Adventures
+      </span>
+      <p>
+        Our holiday and summer programs transform school breaks into opportunities for exploration.
+      </p>
+    </div>
+
+    <div className="p-5 rounded-2xl bg-white border border-gray-100 shadow-md">
+      <h4 className="font-extrabold text-msi-purple text-base uppercase tracking-wider mb-3">
+        Programs Can Combine:
+      </h4>
+      <div className="flex flex-wrap gap-2.5">
+        {['Stories', 'Science', 'Nature', 'Art', 'Cooking', 'Movement', 'Gymnastics', 'Robotics', 'Music', 'Drama', 'Games', 'Creative Projects'].map((item, idx) => (
+          <span key={idx} className="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-amber-50/90 text-msi-orange border border-amber-100 shadow-2xs">
+            {item}
+          </span>
+        ))}
+      </div>
+    </div>
+
+    <div className="p-6 rounded-2xl bg-gradient-to-r from-msi-purple to-[#271344] text-white shadow-lg text-center">
+      <h4 className="font-extrabold text-msi-yellow text-base sm:text-lg uppercase tracking-wide">
+        Different Days. New Experiences. Endless Discovery.
       </h4>
     </div>
   </div>

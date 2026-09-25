@@ -43,7 +43,7 @@ export default function ProgramsPage({ activeSlug = null }) {
 
         <SectionHeader
           title="From 45 Days to the Growing Years"
-          subtitle="One continuous journey."
+          subtitle="One Continuous Journey."
           description={
             <>
               Through Baby Crèche, Toddler, Nursery, Kindergarten, Daycare,<br />
@@ -67,7 +67,7 @@ export default function ProgramsPage({ activeSlug = null }) {
         <OneJourneySection />
 
         <VideoShowcase
-          eyebrow="Watch Our Programs Come Alive"
+          eyebrow="Watch Our Programs Come Alive."
           title="PROGRAMS IN ACTION"
           videosList={programVideos}
           showCarousel={true}

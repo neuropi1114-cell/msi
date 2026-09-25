@@ -18,7 +18,6 @@ export default function ExpressiveArtsSection({ leftId = "dance-creative-movemen
         "Through music, rhythm, dance and creative movement, children develop coordination, body awareness, rhythm, expression, confidence and social participation.",
       ]}
       leftDrawerTitle="DANCE & CREATIVE MOVEMENT"
-      leftDrawerEyebrow={<span className="italic">Let the Body Become Another Language.</span>}
       leftDrawerBody={danceCreativeMovementDrawerBody}
       rightEyebrow={<span className="italic">Imagine It. Tell It. Create It.</span>}
       rightTitle="STORYTELLING & CREATIVE ARTS"
@@ -28,9 +27,8 @@ export default function ExpressiveArtsSection({ leftId = "dance-creative-movemen
         "Because creativity isn't an extra subject. It is another way of thinking.",
       ]}
       rightDrawerTitle="STORYTELLING & CREATIVE ARTS"
-      rightDrawerEyebrow={<span className="italic">Imagine It. Tell It. Create It.</span>}
       rightDrawerBody={storytellingCreativeArtsDrawerBody}
-      rightButtonBgColor="bg-msi-blue hover:bg-msi-blue/90"
+      rightButtonBgColor="bg-msi-green hover:bg-msi-green/90"
     />
   );
 }

@@ -19,16 +19,16 @@ export default function EarlyYearsSection({ topId = "baby-creche", bottomId = "t
       }
       p1="A warm, nurturing environment for babies beginning from 45 days, where care routines and early developmental experiences come together."
       p2={null}
-      drawerEyebrow="The Smallest Children Deserve Our Greatest Care."
       drawerTitle="EARLY YEARS - CIAO BABY: BABY CRÈCHE : 45 DAYS+"
       drawerBody={ciaoBabyDrawerBody}
       bottomEyebrow="Little Feet. Big Curiosity."
       bottomTitle="PRE NURSERY"
       bottomP1="Toddlers learn by doing."
       bottomP2="They touch, move, imitate, experiment, repeat, question and discover."
-      bottomDrawerEyebrow="Little Feet. Big Curiosity."
       bottomDrawerTitle="PRE NURSERY"
       bottomDrawerBody={preNurseryDrawerBody}
+      bottomReadMoreText="Explore"
+      bottomReadMoreBgColor="bg-msi-green hover:bg-msi-green/90"
     />
   );
 }

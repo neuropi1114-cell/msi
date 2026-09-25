@@ -1,6 +1,7 @@
 import React from 'react';
 import NepHero from '../nep/NepHero';
 import FaqSection from '../common/FaqSection';
+import { emergencyExtendedCareDrawerBody, saturdayHolidayCareDrawerBody } from '../../app/programs/programsdata';
 
 export default function ExtendedTimingSection({ topId = "extended-care", bottomId = "saturday-holiday-care" }) {
   return (
@@ -21,7 +22,11 @@ export default function ExtendedTimingSection({ topId = "extended-care", bottomI
               </p>
             </div>
           }
-          showReadMore={false}
+          showReadMore={true}
+          readMoreText="Check Availability"
+          readMoreClassName="tracking-wider"
+          readMoreDrawerTitle="EARLY DROP-OFF & LATE PICK-UP"
+          readMoreDrawerBody={emergencyExtendedCareDrawerBody}
         />
       </div>
 
@@ -29,17 +34,23 @@ export default function ExtendedTimingSection({ topId = "extended-care", bottomI
         <FaqSection
           subheading="Because Your Working Calendar and the School Calendar Don't Always Match."
           heading="SATURDAY & HOLIDAY CARE"
-        showFaq={false}
-        imageSrc="/images/programs/Aperna_17.png"
-        imageAlt="Saturday & Holiday Care"
-        description={
-          <div className="text-[#464646] font-lato text-[17px] leading-relaxed mt-4">
-            <p>
-              Selected centres provide childcare on Saturdays and designated holidays. Children spend their day in a familiar environment with opportunities for play, creativity, movement, stories, rest and social interaction.
-            </p>
-          </div>
-        }
-      />
+          showFaq={false}
+          imageSrc="/images/programs/Aperna_17.png"
+          imageAlt="Saturday & Holiday Care"
+          description={
+            <div className="text-[#464646] font-lato text-[17px] leading-relaxed mt-4">
+              <p>
+                Selected centres provide childcare on Saturdays and designated holidays. Children spend their day in a familiar environment with opportunities for play, creativity, movement, stories, rest and social interaction.
+              </p>
+            </div>
+          }
+          showReadMore={true}
+          readMoreText="Check Centre Timings"
+          readMoreBgColor="bg-msi-green hover:bg-msi-green/90"
+          readMoreClassName="tracking-wider"
+          readMoreDrawerTitle="SATURDAY & HOLIDAY CARE"
+          readMoreDrawerBody={saturdayHolidayCareDrawerBody}
+        />
       </div>
     </>
   );

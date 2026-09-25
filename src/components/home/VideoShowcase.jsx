@@ -234,7 +234,7 @@ export default function VideoShowcase({
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className={`text-center ${eyebrowClass || " uppercase tracking-wider mb-2"}`}
+            className={`text-center ${eyebrowClass || " tracking-wider mb-2"}`}
           >
             {eyebrow}
           </motion.h3>

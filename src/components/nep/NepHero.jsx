@@ -18,6 +18,7 @@ export default function NepHero({
   readMoreBgColor = "bg-msi-orange hover:bg-msi-orange/90",
   readMoreDrawerTitle = null,
   readMoreDrawerBody = null,
+  readMoreClassName = "",
   cardClass = "",
 }) {
   const [open, setOpen] = useState(false);
@@ -70,7 +71,7 @@ export default function NepHero({
                   onClick={() => setOpen(true)}
                   text={readMoreText}
                   bgColor={readMoreBgColor}
-                  className="font-bold shadow-md"
+                  className={`font-bold shadow-md ${readMoreClassName}`}
                   aria-haspopup="dialog"
                   aria-expanded={open}
                 />

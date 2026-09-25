@@ -17,17 +17,17 @@ export default function DaycareSection({ topId = "daycare", bottomId = "24-hour-
       p1="Children remain within a familiar environment where care, relationships, play, meals, rest, movement, learning and friendships continue naturally throughout the day."
       p1Class="text-msi-purple"
       p2={null}
-      drawerEyebrow="Your Child's Day Continues With Purpose."
       drawerTitle="DAYCARE"
       drawerBody={daycareDrawerBody}
+      readMoreText="Know More"
       bottomEyebrow="Childcare Beyond Conventional Working Hours."
       bottomTitle="24-HOUR CARE — WHERE AVAILABLE"
       bottomP1="Childcare solutions designed for parents working night shifts, rotating schedules, healthcare, technology, emergency services and other non-traditional working hours."
       bottomP2={null}
       bottomP3={null}
-      bottomDrawerEyebrow="Childcare Beyond Conventional Working Hours."
       bottomDrawerTitle="24-HOUR CARE — WHERE AVAILABLE"
       bottomDrawerBody={twentyFourHourCareDrawerBody}
+      bottomReadMoreBgColor="bg-msi-green hover:bg-msi-green/90"
     />
   );
 }

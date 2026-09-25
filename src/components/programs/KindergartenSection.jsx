@@ -18,7 +18,6 @@ export default function KindergartenSection({ leftId = "kindergarten-k1", rightI
         "Children build foundations in language and literacy, mathematics, science, understanding the world, communication, creativity, physical development and social-emotional learning.",
       ]}
       leftDrawerTitle="KINDERGARTEN K1"
-      leftDrawerEyebrow={<span className="italic">From Exploring The World To Making Connections.</span>}
       leftDrawerBody={k1DrawerBody}
       rightEyebrow={<span className="italic">Ready For School. Ready To Think.</span>}
       rightTitle="KINDERGARTEN K2"
@@ -27,9 +26,10 @@ export default function KindergartenSection({ leftId = "kindergarten-k1", rightI
         "Children strengthen reading readiness, writing, mathematical thinking, scientific curiosity, communication, problem-solving, creativity and independent learning habits.",
       ]}
       rightDrawerTitle="KINDERGARTEN K2"
-      rightDrawerEyebrow={<span className="italic">Ready For School. Ready To Think.</span>}
       rightDrawerBody={k2DrawerBody}
-      rightButtonBgColor="bg-msi-blue hover:bg-msi-blue/90"
+      rightReadMoreText="Explore Kindergarten"
+      rightButtonBgColor="bg-msi-green hover:bg-msi-green/90"
+      rightButtonClassName="tracking-wider"
     />
   );
 }
