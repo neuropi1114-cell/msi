@@ -283,7 +283,7 @@ const AgeDetail = ({ group, reversed, first }) => {
                     onClick={() => toggleAccordion(i)}
                     className="w-full py-1 text-left cursor-pointer focus:outline-none"
                   >
-                    <h2>
+                    <h2 className={item.title === 'PHYSICAL SAFETY' || item.title === 'EMOTIONAL SAFETY' ? 'text-msi-purple' : ''}>
                       {item.title}
                     </h2>
                   </button>
@@ -299,7 +299,7 @@ const AgeDetail = ({ group, reversed, first }) => {
         </div>
       ) : (
         <>
-          <h2 className="mb-4">
+          <h2 className={`mb-4 ${group.title === 'PHYSICAL SAFETY' || group.title === 'EMOTIONAL SAFETY' ? 'text-msi-purple' : ''}`}>
             {group.title}
           </h2>
           <p className="mb-6 leading-relaxed">{group.description}</p>
@@ -371,10 +371,12 @@ const AgeGroupsIntro = ({ data }) => {
             transition={{ duration: 0.6 }}
             className="text-center max-w-4xl mx-auto mb-16"
           >
-            <h2 className="mb-4 text-msi-purple">
+            <h3 className="">
               {data.header.title}
+            </h3>
+            <h2 className="text-3xl md:text-4xl text-msi-orange font-bold leading-tight not-italic mb-4">
+              {data.header.subtitle}
             </h2>
-            <h2>{data.header.subtitle}</h2>
             <p className="text-lg leading-relaxed">{data.header.description}</p>
           </motion.div>
         )}

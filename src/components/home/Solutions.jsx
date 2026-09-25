@@ -22,8 +22,8 @@ const Solutions = () => {
             loading="lazy"
           />
           <div className="p-6 md:p-10">
-            <h3 className="text-2xl text-[#2f9ed9] font-bold mb-3 text-center">
-              You focus on your work.
+            <h3 className=" text-center">
+              You Focus on your work
             </h3>
             <h2 className="text-2xl md:text-3xl text-msi-purple font-bold mb-4 text-center">
               We remain focused on your child.
