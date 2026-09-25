@@ -1,24 +1,8 @@
 import React from 'react';
 
-export const metadata = {
-  title: 'Why My School ITALY | Early Years Preschool & Daycare',
-  description: 'Discover the philosophy, learning environment, teachers, books, safety, emotional wellbeing and nutrition behind My School ITALY.',
-  alternates: { canonical: 'https://www.myschoolitaly.com/why-msi/' },
-  openGraph: {
-    title: 'Why My School ITALY | Early Years Preschool & Daycare',
-    description: 'Discover the philosophy, learning environment, teachers, books, safety, emotional wellbeing and nutrition behind My School ITALY.',
-    url: 'https://www.myschoolitaly.com/why-msi/',
-    siteName: 'My School ITALY',
-    locale: 'en_US',
-    type: 'website',
-    images: [{ url: '/images/hero/Slider_1-scaled.jpg.bv.webp', width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Why My School ITALY | Early Years Preschool & Daycare',
-    description: 'Discover the philosophy, learning environment, teachers, books, safety, emotional wellbeing and nutrition behind My School ITALY.',
-  },
-};
+import { buildPageMetadata } from '../../utils/seo';
+
+export const metadata = buildPageMetadata('/why-msi/');
 
 export const centreVideos = [
   {

@@ -1,4 +1,7 @@
 import React from 'react';
+import { buildPageMetadata } from '../../utils/seo';
+
+export const metadata = buildPageMetadata('/neuropi-way/');
 
 export const neuroscientificVideos = [
   {

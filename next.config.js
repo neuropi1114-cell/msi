@@ -4,17 +4,37 @@ const nextConfig = {
     return [
       {
         source: '/nep',
-        destination: '/neuropiway',
+        destination: '/neuropi-way/',
         permanent: true,
       },
       {
         source: '/the-neuropi-way',
-        destination: '/neuropiway',
+        destination: '/neuropi-way/',
         permanent: true,
       },
       {
         source: '/theneuropiway',
-        destination: '/neuropiway',
+        destination: '/neuropi-way/',
+        permanent: true,
+      },
+      {
+        source: '/neuropiway',
+        destination: '/neuropi-way/',
+        permanent: true,
+      },
+      {
+        source: '/whyus',
+        destination: '/why-msi/',
+        permanent: true,
+      },
+      {
+        source: '/day-care',
+        destination: '/programs/daycare/',
+        permanent: true,
+      },
+      {
+        source: '/ciao-baby',
+        destination: '/programs/baby-creche/',
         permanent: true,
       },
     ];

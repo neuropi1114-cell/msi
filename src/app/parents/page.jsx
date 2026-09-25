@@ -18,25 +18,9 @@ import GalleryStrip from '../../components/common/GalleryStrip';
 
 import SectionScrollController from '../../components/common/SectionScrollController';
 
-export const metadata = {
-  title: 'Parent Guide to Preschool & Daycare | My School ITALY',
-  description: 'Practical guidance for MSI parents on settling in, daily routines, communication, progress, home learning, workshops and family support.',
-  alternates: { canonical: 'https://www.myschoolitaly.com/parents/' },
-  openGraph: {
-    title: 'Parent Guide to Preschool & Daycare | My School ITALY',
-    description: 'Practical guidance for MSI parents on settling in, daily routines, communication, progress, home learning, workshops and family support.',
-    url: 'https://www.myschoolitaly.com/parents/',
-    siteName: 'My School ITALY',
-    locale: 'en_US',
-    type: 'website',
-    images: [{ url: '/images/hero/Slider_1-scaled.jpg.bv.webp', width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Parent Guide to Preschool & Daycare | My School ITALY',
-    description: 'Practical guidance for MSI parents on settling in, daily routines, communication, progress, home learning, workshops and family support.',
-  },
-};
+import { buildPageMetadata } from '../../utils/seo';
+
+export const metadata = buildPageMetadata('/parents/');
 
 export default function ParentsPage({ activeSlug = null }) {
   return (

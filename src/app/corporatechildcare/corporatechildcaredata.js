@@ -2,25 +2,9 @@ import React from 'react';
 import Image from 'next/image';
 import { CheckCircle2 } from 'lucide-react';
 
-export const metadata = {
-  title: 'Corporate Crèche & Childcare Solutions in Hyderabad | MSI',
-  description: 'Corporate crèche and childcare solutions for employers: on-campus, near-campus, subsidised, reserved-seat, extended-hours and multi-location models.',
-  alternates: { canonical: 'https://www.myschoolitaly.com/corporate-childcare/' },
-  openGraph: {
-    title: 'Corporate Crèche & Childcare Solutions in Hyderabad | MSI',
-    description: 'Corporate crèche and childcare solutions for employers: on-campus, near-campus, subsidised, reserved-seat, extended-hours and multi-location models.',
-    url: 'https://www.myschoolitaly.com/corporate-childcare/',
-    siteName: 'My School ITALY',
-    locale: 'en_US',
-    type: 'website',
-    images: [{ url: '/images/hero/Slider_1-scaled.jpg.bv.webp', width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Corporate Crèche & Childcare Solutions in Hyderabad | MSI',
-    description: 'Corporate crèche and childcare solutions for employers: on-campus, near-campus, subsidised, reserved-seat, extended-hours and multi-location models.',
-  },
-};
+import { buildPageMetadata } from '../../utils/seo';
+
+export const metadata = buildPageMetadata('/corporate-childcare/');
 
 export const corporateChildcareDrawerBody = (
   <div className="space-y-6 leading-relaxed pt-2">

@@ -38,25 +38,9 @@ export const programGalleryImages = [
   '/images/programs/Programs_Enrol.png',
 ];
 
-export const metadata = {
-  title: 'Preschool, Crèche & Daycare Programs | My School ITALY',
-  description: 'Explore Baby Crèche, Pre-Nursery, Nursery, K1, K2, daycare, extended care and enrichment programs at My School ITALY.',
-  alternates: { canonical: 'https://www.myschoolitaly.com/programs/' },
-  openGraph: {
-    title: 'Preschool, Crèche & Daycare Programs | My School ITALY',
-    description: 'Explore Baby Crèche, Pre-Nursery, Nursery, K1, K2, daycare, extended care and enrichment programs at My School ITALY.',
-    url: 'https://www.myschoolitaly.com/programs/',
-    siteName: 'My School ITALY',
-    locale: 'en_US',
-    type: 'website',
-    images: [{ url: '/images/hero/Slider_1-scaled.jpg.bv.webp', width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Preschool, Crèche & Daycare Programs | My School ITALY',
-    description: 'Explore Baby Crèche, Pre-Nursery, Nursery, K1, K2, daycare, extended care and enrichment programs at My School ITALY.',
-  },
-};
+import { buildPageMetadata } from '../../utils/seo';
+
+export const metadata = buildPageMetadata('/programs/');
 
 /* --- Rich Beautiful Card Drawer Bodies --- */
 

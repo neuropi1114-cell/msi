@@ -4,25 +4,9 @@ import Header from '../../components/layout/Header';
 import Footer from '../../components/layout/Footer';
 import ContactUs from '../../components/common/ContactUs';
 
-export const metadata = {
-  title: 'Baby Crèche & Infant Daycare in Hyderabad | 45 Days+',
-  description: 'Baby crèche and infant daycare in Hyderabad from 45 days+. Learn about settling-in, feeding, sleep, hygiene, nurturing care and parent communication at MSI.',
-  alternates: { canonical: 'https://www.myschoolitaly.com/programs/baby-creche/' },
-  openGraph: {
-    title: 'Baby Crèche & Infant Daycare in Hyderabad | 45 Days+',
-    description: 'Baby crèche and infant daycare in Hyderabad from 45 days+. Learn about settling-in, feeding, sleep, hygiene, nurturing care and parent communication at MSI.',
-    url: 'https://www.myschoolitaly.com/programs/baby-creche/',
-    siteName: 'My School ITALY',
-    locale: 'en_US',
-    type: 'website',
-    images: [{ url: '/images/hero/Slider_1-scaled.jpg.bv.webp', width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Baby Crèche & Infant Daycare in Hyderabad | 45 Days+',
-    description: 'Baby crèche and infant daycare in Hyderabad from 45 days+. Learn about settling-in, feeding, sleep, hygiene, nurturing care and parent communication at MSI.',
-  },
-};
+import { buildPageMetadata } from '../../utils/seo';
+
+export const metadata = buildPageMetadata('/programs/baby-creche/');
 
 export default function CiaoBabyPage() {
   const programs = [
