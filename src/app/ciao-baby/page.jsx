@@ -5,13 +5,13 @@ import Footer from '../../components/layout/Footer';
 import ContactUs from '../../components/common/ContactUs';
 
 export const metadata = {
-  title: 'Ciao Baby – My School ITALY',
-  description: 'Ciao Baby programs designed specifically for parents and their new babies. Observation, Baby Massage, Crying, Colic and Comfort workshops.',
-  alternates: { canonical: '/ciao-baby' },
-    openGraph: {
-    title: 'Ciao Baby – My School ITALY',
-    description: 'Ciao Baby programs designed specifically for parents and their new babies. Observation, Baby Massage, Crying, Colic and Comfort workshops.',
-    url: '/ciao-baby',
+  title: 'Baby Crèche & Infant Daycare in Hyderabad | 45 Days+',
+  description: 'Baby crèche and infant daycare in Hyderabad from 45 days+. Learn about settling-in, feeding, sleep, hygiene, nurturing care and parent communication at MSI.',
+  alternates: { canonical: 'https://www.myschoolitaly.com/programs/baby-creche/' },
+  openGraph: {
+    title: 'Baby Crèche & Infant Daycare in Hyderabad | 45 Days+',
+    description: 'Baby crèche and infant daycare in Hyderabad from 45 days+. Learn about settling-in, feeding, sleep, hygiene, nurturing care and parent communication at MSI.',
+    url: 'https://www.myschoolitaly.com/programs/baby-creche/',
     siteName: 'My School ITALY',
     locale: 'en_US',
     type: 'website',
@@ -19,8 +19,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Ciao Baby – My School ITALY',
-    description: 'Ciao Baby programs designed specifically for parents and their new babies. Observation, Baby Massage, Crying, Colic and Comfort workshops.',
+    title: 'Baby Crèche & Infant Daycare in Hyderabad | 45 Days+',
+    description: 'Baby crèche and infant daycare in Hyderabad from 45 days+. Learn about settling-in, feeding, sleep, hygiene, nurturing care and parent communication at MSI.',
   },
 };
 

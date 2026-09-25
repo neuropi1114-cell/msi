@@ -293,13 +293,13 @@ export const neuroPiSensoryCards = [
 ];
 
 export const metadata = {
-  title: 'The Educational Project - The NeuroPi Way',
-  description: 'Discover My School ITALY\'s educational project — a neuroscience-based approach that cultivates emotional intelligence, resilience, and a love for learning in every child.',
-  alternates: { canonical: '/neuropiway' },
+  title: 'The NeuroPi Way | Neuroscience-Informed Early Learning',
+  description: 'Discover how MSI uses observation, relationships, play and developmental understanding through the NeuroPi Way to personalise early learning.',
+  alternates: { canonical: 'https://www.myschoolitaly.com/neuropi-way/' },
   openGraph: {
-    title: 'The Educational Project - The NeuroPi Way | My School ITALY',
-    description: 'Discover My School ITALY\'s educational project — a neuroscience-based approach that cultivates emotional intelligence, resilience, and a love for learning in every child.',
-    url: '/neuropiway',
+    title: 'The NeuroPi Way | Neuroscience-Informed Early Learning',
+    description: 'Discover how MSI uses observation, relationships, play and developmental understanding through the NeuroPi Way to personalise early learning.',
+    url: 'https://www.myschoolitaly.com/neuropi-way/',
     siteName: 'My School ITALY',
     locale: 'en_US',
     type: 'website',
@@ -307,8 +307,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'The Educational Project - The NeuroPi Way | My School ITALY',
-    description: 'Discover My School ITALY\'s educational project — a neuroscience-based approach that cultivates emotional intelligence, resilience, and a love for learning in every child.',
+    title: 'The NeuroPi Way | Neuroscience-Informed Early Learning',
+    description: 'Discover how MSI uses observation, relationships, play and developmental understanding through the NeuroPi Way to personalise early learning.',
   },
 };
 

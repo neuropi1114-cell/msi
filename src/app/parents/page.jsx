@@ -19,13 +19,13 @@ import GalleryStrip from '../../components/common/GalleryStrip';
 import SectionScrollController from '../../components/common/SectionScrollController';
 
 export const metadata = {
-  title: 'Parents',
-  description: 'My School ITALY parent resources, experience and daycare programs for children 45 days to 7 years.',
-  alternates: { canonical: '/parents' },
+  title: 'Parent Guide to Preschool & Daycare | My School ITALY',
+  description: 'Practical guidance for MSI parents on settling in, daily routines, communication, progress, home learning, workshops and family support.',
+  alternates: { canonical: 'https://www.myschoolitaly.com/parents/' },
   openGraph: {
-    title: 'Parents | My School ITALY',
-    description: 'My School ITALY parent resources, experience and daycare programs for children 45 days to 7 years.',
-    url: '/parents',
+    title: 'Parent Guide to Preschool & Daycare | My School ITALY',
+    description: 'Practical guidance for MSI parents on settling in, daily routines, communication, progress, home learning, workshops and family support.',
+    url: 'https://www.myschoolitaly.com/parents/',
     siteName: 'My School ITALY',
     locale: 'en_US',
     type: 'website',
@@ -33,8 +33,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Parents | My School ITALY',
-    description: 'My School ITALY parent resources, experience and daycare programs for children 45 days to 7 years.',
+    title: 'Parent Guide to Preschool & Daycare | My School ITALY',
+    description: 'Practical guidance for MSI parents on settling in, daily routines, communication, progress, home learning, workshops and family support.',
   },
 };
 

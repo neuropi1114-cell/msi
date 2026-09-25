@@ -1,13 +1,13 @@
 import React from 'react';
 
 export const metadata = {
-  title: 'Why Choose Us | My School ITALY',
-  description: 'Discover why My School ITALY is the premier choice for early childhood education. Neuroscience-backed learning, Italian pedagogy, European safety standards, and complete childcare solutions.',
-  alternates: { canonical: '/whyus' },
+  title: 'Why My School ITALY | Early Years Preschool & Daycare',
+  description: 'Discover the philosophy, learning environment, teachers, books, safety, emotional wellbeing and nutrition behind My School ITALY.',
+  alternates: { canonical: 'https://www.myschoolitaly.com/why-msi/' },
   openGraph: {
-    title: 'Why Choose Us | My School ITALY',
-    description: 'Discover why My School ITALY is the premier choice for early childhood education. Neuroscience-backed learning, Italian pedagogy, European safety standards, and complete childcare solutions.',
-    url: '/whyus',
+    title: 'Why My School ITALY | Early Years Preschool & Daycare',
+    description: 'Discover the philosophy, learning environment, teachers, books, safety, emotional wellbeing and nutrition behind My School ITALY.',
+    url: 'https://www.myschoolitaly.com/why-msi/',
     siteName: 'My School ITALY',
     locale: 'en_US',
     type: 'website',
@@ -15,8 +15,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Why Choose Us | My School ITALY',
-    description: 'Discover why My School ITALY is the premier choice for early childhood education. Neuroscience-backed learning, Italian pedagogy, European safety standards, and complete childcare solutions.',
+    title: 'Why My School ITALY | Early Years Preschool & Daycare',
+    description: 'Discover the philosophy, learning environment, teachers, books, safety, emotional wellbeing and nutrition behind My School ITALY.',
   },
 };
 

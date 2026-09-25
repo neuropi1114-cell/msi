@@ -3,13 +3,13 @@ import Image from 'next/image';
 import { CheckCircle2 } from 'lucide-react';
 
 export const metadata = {
-  title: 'Corporate Childcare Solutions',
-  description: 'Empower your workforce with My School ITALY Corporate Childcare solutions. Tailor-made early childhood care and neuroscience-based learning for working parents.',
-  alternates: { canonical: '/corporatechildcare' },
+  title: 'Corporate Crèche & Childcare Solutions in Hyderabad | MSI',
+  description: 'Corporate crèche and childcare solutions for employers: on-campus, near-campus, subsidised, reserved-seat, extended-hours and multi-location models.',
+  alternates: { canonical: 'https://www.myschoolitaly.com/corporate-childcare/' },
   openGraph: {
-    title: 'Corporate Childcare Solutions | My School ITALY',
-    description: 'Empower your workforce with My School ITALY Corporate Childcare solutions. Tailor-made early childhood care and neuroscience-based learning for working parents.',
-    url: '/corporatechildcare',
+    title: 'Corporate Crèche & Childcare Solutions in Hyderabad | MSI',
+    description: 'Corporate crèche and childcare solutions for employers: on-campus, near-campus, subsidised, reserved-seat, extended-hours and multi-location models.',
+    url: 'https://www.myschoolitaly.com/corporate-childcare/',
     siteName: 'My School ITALY',
     locale: 'en_US',
     type: 'website',
@@ -17,8 +17,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Corporate Childcare Solutions | My School ITALY',
-    description: 'Empower your workforce with My School ITALY Corporate Childcare solutions. Tailor-made early childhood care and neuroscience-based learning for working parents.',
+    title: 'Corporate Crèche & Childcare Solutions in Hyderabad | MSI',
+    description: 'Corporate crèche and childcare solutions for employers: on-campus, near-campus, subsidised, reserved-seat, extended-hours and multi-location models.',
   },
 };
 

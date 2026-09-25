@@ -39,13 +39,13 @@ export const programGalleryImages = [
 ];
 
 export const metadata = {
-  title: 'Programs | My School ITALY',
-  description: 'Explore My School ITALY neuroscience-based programs: Infant (45 days–18 months), Toddler (18 months–3 years), Preschool (3–5 years), and Kindergarten (5–7 years).',
-  alternates: { canonical: '/programs' },
+  title: 'Preschool, Crèche & Daycare Programs | My School ITALY',
+  description: 'Explore Baby Crèche, Pre-Nursery, Nursery, K1, K2, daycare, extended care and enrichment programs at My School ITALY.',
+  alternates: { canonical: 'https://www.myschoolitaly.com/programs/' },
   openGraph: {
-    title: 'Programs | My School ITALY',
-    description: 'Explore My School ITALY neuroscience-based programs: Infant (45 days–18 months), Toddler (18 months–3 years), Preschool (3–5 years), and Kindergarten (5–7 years).',
-    url: '/programs',
+    title: 'Preschool, Crèche & Daycare Programs | My School ITALY',
+    description: 'Explore Baby Crèche, Pre-Nursery, Nursery, K1, K2, daycare, extended care and enrichment programs at My School ITALY.',
+    url: 'https://www.myschoolitaly.com/programs/',
     siteName: 'My School ITALY',
     locale: 'en_US',
     type: 'website',
@@ -53,8 +53,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Programs | My School ITALY',
-    description: 'Explore My School ITALY neuroscience-based programs: Infant (45 days–18 months), Toddler (18 months–3 years), Preschool (3–5 years), and Kindergarten (5–7 years).',
+    title: 'Preschool, Crèche & Daycare Programs | My School ITALY',
+    description: 'Explore Baby Crèche, Pre-Nursery, Nursery, K1, K2, daycare, extended care and enrichment programs at My School ITALY.',
   },
 };
 

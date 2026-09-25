@@ -7,6 +7,26 @@ import ageGroups from '../data/age-groups.json';
 
 import { workingParentsPartners, corporateChildcarePartners } from '../data/corporate-partners-data';
 
+export const metadata = {
+  title: 'Preschool & Daycare in Hyderabad | My School ITALY',
+  description: 'My School ITALY offers preschool, crèche, daycare and extended childcare in Hyderabad from 45 days+, with neuroscience-informed learning and caring support for working families.',
+  alternates: { canonical: 'https://www.myschoolitaly.com/' },
+  openGraph: {
+    title: 'Preschool & Daycare in Hyderabad | My School ITALY',
+    description: 'My School ITALY offers preschool, crèche, daycare and extended childcare in Hyderabad from 45 days+, with neuroscience-informed learning and caring support for working families.',
+    url: 'https://www.myschoolitaly.com/',
+    siteName: 'My School ITALY',
+    locale: 'en_US',
+    type: 'website',
+    images: [{ url: '/images/hero/hero-slide-1.png', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Preschool & Daycare in Hyderabad | My School ITALY',
+    description: 'My School ITALY offers preschool, crèche, daycare and extended childcare in Hyderabad from 45 days+, with neuroscience-informed learning and caring support for working families.',
+  },
+};
+
 const BelieveBrilliance = dynamic(() => import('../components/home/BelieveBrilliance'), { ssr: true });
 const GrowingInConfidence = dynamic(() => import('../components/home/GrowingInConfidence'), { ssr: true });
 const Solutions = dynamic(() => import('../components/home/Solutions'), { ssr: true });
