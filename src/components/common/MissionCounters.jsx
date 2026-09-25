@@ -6,8 +6,8 @@ export default function MissionCounters() {
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4 md:px-12" style={{ maxWidth: '1240px' }}>
         <div className="hidden md:flex justify-between mb-4">
-          <Image src="/images/nep/arrow1.webp" alt="" width={40} height={40} className="h-10 w-auto" />
-          <Image src="/images/nep/arrow1.webp" alt="" width={40} height={40} className="h-10 w-auto" />
+          <Image src="/images/nep/arrow1.webp" alt="Decorative arrow icon" width={40} height={40} className="h-10 w-auto" />
+          <Image src="/images/nep/arrow1.webp" alt="Decorative arrow icon" width={40} height={40} className="h-10 w-auto" />
         </div>
 
         <div className="flex flex-wrap items-center">
@@ -43,7 +43,7 @@ export default function MissionCounters() {
         </div>
 
         <div className="hidden md:flex justify-center mt-4">
-          <Image src="/images/nep/arrow2.webp" alt="" width={40} height={40} className="h-10 w-auto" />
+          <Image src="/images/nep/arrow2.webp" alt="Decorative arrow icon" width={40} height={40} className="h-10 w-auto" />
         </div>
       </div>
     </section>

@@ -8,6 +8,7 @@ export default function CloudHeader({
   subtitle,
   bgClass = 'bg-[#d16827]',
   image,
+  imageAlt,
   imageClass = 'object-cover object-top',
   heightClass = 'w-full aspect-[16/9] min-h-[280px] sm:min-h-[380px] max-h-[680px]',
   cloudFill = 'fill-white',
@@ -19,7 +20,7 @@ export default function CloudHeader({
       {image ? (
         <Image
           src={image}
-          alt=""
+          alt={imageAlt || title || "My School ITALY header"}
           fill
           className={imageClass}
           sizes="100vw"

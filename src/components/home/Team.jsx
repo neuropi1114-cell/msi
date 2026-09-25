@@ -64,7 +64,7 @@ export default function Team() {
           viewport={{ once: true }}
           className="flex justify-center mt-12"
         >
-          <img src="/images/team/image-bee.png.bv.webp" alt="" className="w-24 h-auto" loading="lazy" />
+          <img src="/images/team/image-bee.png.bv.webp" alt="My School ITALY mascot bee" className="w-24 h-auto" loading="lazy" />
         </motion.div>
 
       </div>

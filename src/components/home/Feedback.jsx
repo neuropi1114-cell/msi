@@ -87,7 +87,7 @@ export default function Feedback({
             ))}
           </div>
           <div className="flex justify-center mt-4">
-            <img src="/images/gallery/bee.png" alt="" className="w-auto h-6" loading="lazy" />
+            <img src="/images/gallery/bee.png" alt="My School ITALY mascot bee" className="w-auto h-6" loading="lazy" />
           </div>
         </motion.div>
 

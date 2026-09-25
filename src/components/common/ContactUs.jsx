@@ -191,7 +191,7 @@ export default function ContactUs({ intro, title = "ENROL YOUR CHILD", buttonTex
                       >
                         <img
                           src={`/images/flags/${countries.find(c => c.phone === formData.phoneCode)?.code || 'in'}.png`}
-                          alt=""
+                          alt="Country flag"
                           className="w-4 h-auto rounded-sm"
                         />
                         <span className="text-sm">{formData.phoneCode}</span>
@@ -220,7 +220,7 @@ export default function ContactUs({ intro, title = "ENROL YOUR CHILD", buttonTex
                               }}
                               className={`px-3 py-2 cursor-pointer flex items-center gap-2 hover:bg-orange-50 text-sm ${formData.phoneCode === country.phone ? 'bg-orange-100' : ''}`}
                             >
-                              <img src={`/images/flags/${country.code}.png`} alt="" className="w-4 h-auto rounded-sm" />
+                              <img src={`/images/flags/${country.code}.png`} alt={`${country.name} flag`} className="w-4 h-auto rounded-sm" />
                               <span>{country.name}</span>
                               <span className="text-gray-500 ml-auto">{country.phone}</span>
                             </li>
@@ -271,7 +271,7 @@ export default function ContactUs({ intro, title = "ENROL YOUR CHILD", buttonTex
                   >
                     {selectedCountry ? (
                       <span className="flex items-center gap-2">
-                        <img src={`/images/flags/${selectedCountry.code}.png`} alt="" className="w-5 h-auto rounded-sm" />
+                        <img src={`/images/flags/${selectedCountry.code}.png`} alt={`${selectedCountry.name} flag`} className="w-5 h-auto rounded-sm" />
                         {selectedCountry.name}
                       </span>
                     ) : (
@@ -305,7 +305,7 @@ export default function ContactUs({ intro, title = "ENROL YOUR CHILD", buttonTex
                           }}
                           className={`px-4 py-3 cursor-pointer flex items-center gap-2 hover:bg-orange-50 ${formData.country === country.name ? 'bg-orange-100' : ''}`}
                         >
-                          <img src={`/images/flags/${country.code}.png`} alt="" className="w-5 h-auto rounded-sm" />
+                          <img src={`/images/flags/${country.code}.png`} alt={`${country.name} flag`} className="w-5 h-auto rounded-sm" />
                           {country.name}
                         </li>
                       ))}
