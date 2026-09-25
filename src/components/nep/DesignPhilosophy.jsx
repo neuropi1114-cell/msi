@@ -33,7 +33,7 @@ export default function DesignPhilosophy({
   readMoreText = null,
   readMoreBgColor = null,
   readMoreClassName = "",
-  bottomEyebrow = "Your Child's Day At MSI",
+  bottomEyebrow = "Your Child's Day At MSI.",
   bottomTitle = "Care, Learning and Childhood \u2014 All in One Day",
   bottomP1 = "A child's day at MSI is designed around an age-appropriate rhythm rather than continuous instruction.",
   bottomP2 = "Depending on age and program, a day may move through:",

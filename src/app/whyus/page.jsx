@@ -51,7 +51,7 @@ export default function WhyUsPage({ activeSlug = null }) {
 
         <SectionHeader
           title="WHY MY SCHOOL ITALY?"
-          subtitle="Why Should I Trust And Choose My School ITALY"
+          subtitle="Why Should I Trust And Choose My School ITALY?"
           description="Because Childhood Deserves to be understood, not hurried."
         />
         <div id="our-story" className="scroll-mt-24">
@@ -87,28 +87,30 @@ export default function WhyUsPage({ activeSlug = null }) {
           p2="We do not expect every child to settle in the same way."
           p3="Curiosity is encouraged. Learning connects naturally across language, mathematics, science, creativity and the world around us."
           drawerTitle="THE EUROPEAN EARLY YEARS APPROACH"
-          drawerEyebrow="Less Pressure. More Purposeful Learning."
           drawerBody={europeanApproachDrawerBody}
-          bottomEyebrow="Designed for Growing Minds"
+          readMoreText="Know More"
+          readMoreClassName="tracking-wider"
+          bottomEyebrow="Designed for Growing Minds."
           bottomTitle="OUR LEARNING ENVIRONMENT"
           bottomP1="It's designed to be welcoming, organised, stimulating and child-friendly, with spaces for active learning as well as quieter moments."
           bottomP2=""
           bottomDrawerTitle="OUR LEARNING ENVIRONMENT"
-          bottomDrawerEyebrow="Designed for Growing Minds"
           bottomDrawerBody={learningEnvironmentDrawerBody}
+          bottomReadMoreText="Learn More"
+          bottomReadMoreBgColor="bg-msi-green hover:bg-msi-green/90"
+          bottomReadMoreClassName="tracking-wider"
         />
         <DualFeatureSection
           leftId="books-stories"
           rightId="teachers"
           sectionTitle="EXPLORE CORPORATE CHILDCARE"
-          leftTitle={<span className="italic">Where A Story Becomes A World Of Learning</span>}
+          leftTitle={<span className="italic">Where A Story Becomes A World Of Learning.</span>}
           leftSubtitle="OUR BOOKS & STORIES"
           leftSubtitleColor="text-msi-yellow"
           leftParagraphs={[
             "Stories are at the heart of My School ITALY. Our original books and learning materials take children into worlds of animals, nature, people, places and discovery — while naturally connecting learning across subjects.",
           ]}
           leftDrawerTitle="OUR BOOKS & STORIES"
-          leftDrawerEyebrow={<span className="italic">Where A Story Becomes A World Of Learning</span>}
           leftDrawerBody={booksStoriesDrawerBody}
           rightEyebrow={<span className="italic">The Most Important Technology In A Classroom Is Still A Caring Adult.</span>}
           rightTitle="OUR TEACHERS"
@@ -117,9 +119,10 @@ export default function WhyUsPage({ activeSlug = null }) {
             "MSI educators receive continuous development in our classroom approach, child observation, communication, engagement and emotional wellbeing.",
           ]}
           rightDrawerTitle="OUR TEACHERS"
-          rightDrawerEyebrow={<span className="italic">The Most Important Technology In A Classroom Is Still A Caring Adult.</span>}
           rightDrawerBody={teachersDrawerBody}
-          rightButtonBgColor="bg-msi-blue hover:bg-msi-blue/90"
+          rightReadMoreText="Discover Our Teaching Approach"
+          rightButtonBgColor="bg-msi-green hover:bg-msi-green/90"
+          rightButtonClassName="tracking-wider"
           rightImage="/images/whyus/Why_MSI_6.png"
           leftImage="/images/whyus/Why_MSI_5.png"
         />

@@ -148,9 +148,6 @@ export default function DualFeatureSection({
                   <p className="text-msi-cream">
                     At MSI, conversations about progress can go beyond academic achievement.
                   </p>
-                  <p className="text-msi-cream">
-                    We may talk about how your child is developing in areas such as:
-                  </p>
                 </>
               )}
               {showLeftReadMore && (

@@ -29,6 +29,7 @@ import {
   neuroPiSensoryCards,
   neuropiLearningCycleDrawerBody,
   teacherDevelopmentDrawerBody,
+  heartfulClassroomsDrawerBody,
   neuroPiWayGalleryImages,
 } from './theneuropiwaydata';
 
@@ -61,15 +62,15 @@ export default function EducationalProjectPage({ activeSlug = null }) {
           eyebrow="Better Understanding Around The Child."
           title="THE NEUROPI WAY"
           p1="The NeuroPi Approach is where the science of the brain meets the art of nurturing."
-          drawerTitle="Better Understanding Around The Child."
-          drawerEyebrow="NOT MORE TECHNOLOGY AROUND THE CHILD."
           drawerBody={neuropiDrawerBody}
           bottomEyebrow="Focus On Whole Child Growth."
           bottomTitle="FIVE PILLARS"
           bottomP1="Every child’s brain is a world of wonder. Here, we blend neuroscience, play, and empathy to nurture calm, confident, and connected learners."
           bottomDrawerTitle="Focus On Whole Child Growth."
-          bottomDrawerEyebrow="FIVE PILLARS"
           bottomDrawerBody={fivePillarsDrawerBody}
+          bottomReadMoreText="Explore"
+          bottomReadMoreBgColor="bg-msi-green hover:bg-msi-green/90"
+          bottomReadMoreClassName="tracking-wider"
         />
 
         <div id="learning-neuropi-way" className="scroll-mt-24">
@@ -90,19 +91,22 @@ export default function EducationalProjectPage({ activeSlug = null }) {
             leftAspect="aspect-[16/9]"
             rightImage="/images/nep/The_NeuroPi_Way_5.jpeg"
             rightAspect="aspect-[16/9]"
-            leftTitle={
+            leftTitle={null}
+            leftSubtitle={
               <span className="italic text-msi-yellow">
-                Heartful Classrooms
+                Heartful Classrooms :
                 <br />
                 Mindfulness &amp; Emotional Bonding for Calm, Connected, Confident Children.
               </span>
             }
-            showLeftReadMore={false}
+            showLeftReadMore={true}
+            leftDrawerTitle="Heartful Classrooms"
+            leftDrawerBody={heartfulClassroomsDrawerBody}
             rightEyebrow={
               <span className="italic">
                 Move &amp; Grow
                 <br />
-                Kinesthetic And Motor Based Learning For Enhanced Coordination &amp; Attention
+                Kinesthetic And Motor Based Learning For Enhanced Coordination &amp; Attention.
               </span>
             }
             rightTitleColor="text-msi-orange"
@@ -144,7 +148,7 @@ export default function EducationalProjectPage({ activeSlug = null }) {
         <div id="what-is-neuropi" className="scroll-mt-24">
           <AboutActivities
             title="WHAT IS NEUROPI?"
-            subtitle="Understanding The Child Behind The Learning"
+            subtitle="Understanding The Child Behind The Learning."
             description="NeuroPi is a human-development platform and neuroscience-informed educational approach designed to help educators and families better understand how a child learns, engages and develops over time. Instead of looking only at academic outcomes, NeuroPi encourages us to notice"
           />
         </div>
@@ -160,7 +164,7 @@ export default function EducationalProjectPage({ activeSlug = null }) {
           <NepHero
             bgImage="/images/nep/The_NeuroPi_Way_8_v2.png"
             flipBg={false}
-            eyebrow="One Child Lives In Two Important Worlds"
+            eyebrow="One Child Lives In Two Important Worlds."
             title="NEUROPI CONNECT — SCHOOL + HOME"
             titleColor="text-msi-yellow font-bold text-2xl md:text-3xl mb-3"
             description={
@@ -189,7 +193,6 @@ export default function EducationalProjectPage({ activeSlug = null }) {
             p1="The NeuroPi Way follows a continuous cycle. Because children keep changing. Our understanding of them should keep changing too."
             p1Class="text-msi-purple-deep font-semibold"
             drawerTitle="The NeuroPi Learning Cycle"
-            drawerEyebrow="OBSERVE → UNDERSTAND → PERSONALISE → ENGAGE → TRACK"
             drawerBody={neuropiLearningCycleDrawerBody}
           />
         </div>

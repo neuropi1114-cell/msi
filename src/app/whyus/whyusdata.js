@@ -40,9 +40,6 @@ export const storyDrawerBody = (
       <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-purple/10 text-msi-purple mb-2">
         European Early Education
       </span>
-      <h3 className="text-xl sm:text-2xl font-black text-msi-orange tracking-tight uppercase">
-        OUR STORY
-      </h3>
       <p className="mt-3 text-gray-700 font-medium leading-relaxed">
         My School ITALY began with a simple belief: early childhood education should respect the individuality of every child.
       </p>
@@ -87,9 +84,6 @@ export const philosophyDrawerBody = (
       <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-yellow/20 text-msi-purple mb-2">
         Childhood Is Not Preparation for Life. Childhood Is Life.
       </span>
-      <h3 className="text-xl sm:text-2xl font-black text-msi-orange tracking-tight uppercase">
-        OUR PHILOSOPHY
-      </h3>
       <p className="mt-3 text-gray-700 font-medium leading-relaxed">
         Children learn when they feel safe enough to explore, curious enough to question and confident enough to try.
       </p>
@@ -122,9 +116,6 @@ export const europeanApproachDrawerBody = (
       <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-purple/10 text-msi-purple mb-2">
         Less Pressure. More Purposeful Learning.
       </span>
-      <h3 className="text-xl sm:text-2xl font-black text-msi-purple tracking-tight uppercase">
-        THE EUROPEAN EARLY YEARS APPROACH
-      </h3>
       <p className="mt-3 text-gray-700 font-medium leading-relaxed">
         Our European-inspired approach respects childhood as a period of exploration and discovery rather than rigid instruction.
       </p>
@@ -155,11 +146,8 @@ export const learningEnvironmentDrawerBody = (
   <div className="space-y-6 text-gray-700 text-sm sm:text-base leading-relaxed">
     <div className="p-5 rounded-2xl bg-gradient-to-br from-blue-50 via-white to-green-50 border border-blue-100 shadow-xs">
       <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-blue/10 text-msi-blue mb-2">
-        Designed for Growing Minds
+        Designed for Growing Minds.
       </span>
-      <h3 className="text-xl sm:text-2xl font-black text-msi-blue tracking-tight uppercase">
-        OUR LEARNING ENVIRONMENT
-      </h3>
       <p className="mt-3 text-gray-700 font-medium leading-relaxed">
         A child&apos;s environment influences how they feel, move, interact and learn. MSI environments are welcoming, organized, stimulating and child-friendly.
       </p>
@@ -189,9 +177,6 @@ export const learningEnvironmentDrawerBody = (
 export const booksStoriesDrawerBody = (
   <div className="space-y-6 text-gray-700 text-sm sm:text-base leading-relaxed">
     <div className="p-5 rounded-2xl bg-gradient-to-br from-purple-50 via-white to-blue-50 border border-purple-100 shadow-xs">
-      <h3 className="text-xl sm:text-2xl font-black text-msi-purple tracking-tight uppercase">
-        OUR BOOKS &amp; STORIES
-      </h3>
       <p className="mt-3 text-gray-700 font-medium leading-relaxed">
         Stories are at the heart of My School ITALY. Our original books and learning materials take children into worlds of animals, nature, people, places and discovery.
       </p>
@@ -219,9 +204,6 @@ export const teachersDrawerBody = (
       <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-orange/10 text-msi-orange mb-2">
         The Most Important Technology In A Classroom Is Still A Caring Adult
       </span>
-      <h3 className="text-xl sm:text-2xl font-black text-msi-purple tracking-tight uppercase">
-        OUR TEACHERS
-      </h3>
       <div className="mt-3 space-y-1.5 font-bold text-msi-purple text-base sm:text-lg">
         <p>&bull; Children need teachers who notice.</p>
         <p>&bull; Teachers who listen.</p>

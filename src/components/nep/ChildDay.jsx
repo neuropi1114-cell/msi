@@ -33,7 +33,7 @@ export default function ChildDay({ showButton = true }) {
       <Drawer
         open={open}
         onClose={() => setOpen(false)}
-        title="Your Child's Day At MSI"
+        title="Your Child's Day At MSI."
         side="left"
       >
         <div className="space-y-5 text-gray-700 leading-relaxed">

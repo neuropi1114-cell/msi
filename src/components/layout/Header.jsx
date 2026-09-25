@@ -68,7 +68,7 @@ const navLinks = [
     subLinks: [
       { name: 'Your Journey with MSI', href: '/parents/your-journey' },
       { name: 'Starting School & Settling In', href: '/parents/starting-school' },
-      { name: "Your Child's Day at MSI", href: '/parents/childs-day' },
+      { name: "Your Child's Day At MSI.", href: '/parents/childs-day' },
       { name: "Understanding Your Child's Progress", href: '/parents/childs-progress' },
       { name: 'Home Learning & Family Connection', href: '/parents/home-learning' },
       { name: 'Parent Handbook', href: '/parents/parent-handbook' },
@@ -107,7 +107,13 @@ const Header = () => {
   const isLinkActive = (linkHref) => {
     if (!pathname) return false;
     if (linkHref === '/whyus') {
-      return pathname === '/whyus' || pathname === '/about' || pathname.startsWith('/whyus');
+      return pathname === '/whyus' || pathname === '/about' || pathname.startsWith('/whyus') || pathname.startsWith('/why-msi');
+    }
+    if (linkHref === '/neuropiway') {
+      return pathname === '/neuropiway' || pathname === '/neuropi-way' || pathname === '/nep' || pathname.startsWith('/neuropiway') || pathname.startsWith('/neuropi-way');
+    }
+    if (linkHref === '/corporatechildcare') {
+      return pathname === '/corporatechildcare' || pathname === '/corporate-childcare' || pathname.startsWith('/corporatechildcare') || pathname.startsWith('/corporate-childcare');
     }
     return pathname === linkHref || (linkHref !== '/' && pathname.startsWith(linkHref));
   };
@@ -164,11 +170,10 @@ const Header = () => {
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full transition-all duration-300 bg-white ${
-        isScrolled
+      className={`sticky top-0 z-50 w-full transition-all duration-300 bg-white ${isScrolled
           ? 'shadow-md py-2.5 border-b border-gray-200'
           : 'shadow-sm py-3.5 border-b border-gray-100'
-      }`}
+        }`}
     >
       <div className="container mx-auto px-4 md:px-12 flex justify-between items-center gap-6">
         {/* Brand Logo */}
@@ -236,37 +241,33 @@ const Header = () => {
                 >
                   <Link
                     href={link.href}
-                    className={`font-lato font-semibold text-[14px] xl:text-[15px] transition-colors flex items-center gap-1 group py-1 ${
-                      isActive ? 'text-msi-green font-bold' : 'text-msi-purple hover:text-msi-orange'
-                    }`}
+                    className={`font-lato font-semibold text-[14px] xl:text-[15px] transition-colors flex items-center gap-1 group py-1 ${isActive ? 'text-msi-green font-bold' : 'text-msi-purple hover:text-msi-orange'
+                      }`}
                   >
                     <span>{link.name}</span>
                     <ChevronDown
-                      className={`w-3.5 h-3.5 transition-transform duration-200 ${
-                        isOpen
+                      className={`w-3.5 h-3.5 transition-transform duration-200 ${isOpen
                           ? 'rotate-180 text-msi-orange'
                           : isActive
-                          ? 'text-msi-green'
-                          : 'text-msi-purple/70 group-hover:text-msi-orange'
-                      }`}
+                            ? 'text-msi-green'
+                            : 'text-msi-purple/70 group-hover:text-msi-orange'
+                        }`}
                     />
                     <span
-                      className={`absolute bottom-0 left-0 h-0.5 transition-all duration-300 ${
-                        isActive
+                      className={`absolute bottom-0 left-0 h-0.5 transition-all duration-300 ${isActive
                           ? 'w-full bg-msi-green'
                           : isOpen
-                          ? 'w-full bg-msi-orange'
-                          : 'w-0 bg-msi-orange group-hover:w-full'
-                      }`}
+                            ? 'w-full bg-msi-orange'
+                            : 'w-0 bg-msi-orange group-hover:w-full'
+                        }`}
                     />
                   </Link>
 
                   {/* Modern Solid Dropdown / Popover Mega-Menu */}
                   {isOpen && link.subLinks && (
                     <div
-                      className={`absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-white shadow-2xl rounded-2xl border border-gray-200 p-5 z-50 transition-all duration-200 transform origin-top animate-in fade-in slide-in-from-top-1 ${
-                        isMultiColumn ? 'w-[560px] xl:w-[620px]' : 'w-[320px]'
-                      }`}
+                      className={`absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-white shadow-2xl rounded-2xl border border-gray-200 p-5 z-50 transition-all duration-200 transform origin-top animate-in fade-in slide-in-from-top-1 ${isMultiColumn ? 'w-[560px] xl:w-[620px]' : 'w-[320px]'
+                        }`}
                     >
                       {/* Top Decorative Category Header */}
                       <div className="flex items-center justify-between pb-3 mb-3 border-b border-gray-100">
@@ -350,15 +351,13 @@ const Header = () => {
       {mounted &&
         createPortal(
           <div
-            className={`fixed inset-0 z-[9999] transition-opacity duration-300 ${
-              isMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
-            }`}
+            className={`fixed inset-0 z-[9999] transition-opacity duration-300 ${isMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
+              }`}
           >
             <div className="fixed inset-0 bg-black/60" onClick={() => setIsMenuOpen(false)} />
             <div
-              className={`fixed top-0 right-0 bottom-0 z-[10000] h-full w-[88%] max-w-sm bg-msi-orange shadow-2xl overflow-y-auto transition-transform duration-300 ${
-                isMenuOpen ? 'translate-x-0' : 'translate-x-full'
-              }`}
+              className={`fixed top-0 right-0 bottom-0 z-[10000] h-full w-[88%] max-w-sm bg-msi-orange shadow-2xl overflow-y-auto transition-transform duration-300 ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+                }`}
             >
               <div className="flex justify-end items-center p-4 sticky top-0 bg-msi-orange z-10 border-b border-white/10">
                 <button
@@ -381,9 +380,8 @@ const Header = () => {
                         <div className="flex items-center justify-between">
                           <Link
                             href={link.href}
-                            className={`font-bold px-2 py-2.5 text-sm uppercase tracking-wide transition-colors flex-1 ${
-                              isActive ? 'text-msi-green font-extrabold' : 'text-white hover:text-msi-cream'
-                            }`}
+                            className={`font-bold px-2 py-2.5 text-sm uppercase tracking-wide transition-colors flex-1 ${isActive ? 'text-msi-green font-extrabold' : 'text-white hover:text-msi-cream'
+                              }`}
                             onClick={() => setIsMenuOpen(false)}
                           >
                             {link.name}
@@ -396,9 +394,8 @@ const Header = () => {
                               aria-expanded={isExpanded}
                             >
                               <ChevronDown
-                                className={`w-5 h-5 transition-transform duration-300 ${
-                                  isExpanded ? 'rotate-180 text-white' : 'text-white/70'
-                                }`}
+                                className={`w-5 h-5 transition-transform duration-300 ${isExpanded ? 'rotate-180 text-white' : 'text-white/70'
+                                  }`}
                               />
                             </button>
                           )}
@@ -459,4 +456,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Header;

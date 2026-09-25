@@ -28,9 +28,6 @@ export const riseObservationDrawerBody = (
       <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-purple/10 text-msi-purple mb-2">
         Looking Beyond What a Child Knows
       </span>
-      <h3 className="text-xl sm:text-2xl font-black text-msi-orange tracking-tight uppercase">
-        1. RISE &mdash; DEVELOPMENTAL OBSERVATION
-      </h3>
       <p className="mt-3 text-gray-700 font-medium leading-relaxed">
         Early development cannot be understood through worksheets and academic outcomes alone.<br />
         At MSI, RISE gives teachers a simple framework for noticing important aspects of children&rsquo;s everyday learning behaviour.
@@ -123,9 +120,6 @@ export const milestonesObservationDrawerBody = (
       <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-blue/10 text-msi-blue mb-2">
         Development Is a Journey, Not a Race
       </span>
-      <h3 className="text-xl sm:text-2xl font-black text-msi-orange tracking-tight uppercase">
-        2. DEVELOPMENTAL MILESTONES &amp; OBSERVATIONS
-      </h3>
       <p className="mt-3 text-gray-700 font-medium leading-relaxed">
         Children do not all develop at exactly the same pace or in exactly the same way.<br />
         MSI teachers use age-appropriate developmental milestones and structured observations to help them notice progress across different areas of development.
@@ -199,9 +193,6 @@ export const onePictureDrawerBody = (
       <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-orange/10 text-msi-orange mb-2">
         A Living Picture of the Child
       </span>
-      <h3 className="text-xl sm:text-2xl font-black text-msi-purple tracking-tight uppercase">
-        3. THE NEUROPI WAY IN ONE PICTURE
-      </h3>
       <p className="mt-3 text-gray-700 font-medium leading-relaxed">
         Every child at MSI can have a continuously evolving NeuroPi Child Profile.<br />
         Rather than reducing development to marks or grades, the profile brings together meaningful observations across the child&rsquo;s journey.
@@ -302,11 +293,8 @@ export const nepHeroDrawerBody = (
     {/* Header Banner */}
     <div className="p-5 rounded-2xl bg-gradient-to-br from-purple-50 via-white to-orange-50 border border-purple-100 shadow-xs">
       <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-purple/10 text-msi-purple mb-2">
-        One Child Lives In Two Important Worlds
+        One Child Lives In Two Important Worlds.
       </span>
-      <h3 className="text-xl sm:text-2xl font-black text-msi-orange tracking-tight uppercase">
-        NEUROPI CONNECT &mdash; SCHOOL + HOME
-      </h3>
       <p className="mt-3 text-gray-700 font-medium leading-relaxed">
         Teachers know the child they see at school.<br />
         Parents know the child they see at home.<br />
@@ -411,9 +399,6 @@ export const nepHeroLearningDrawerBody = (
       <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-purple/10 text-msi-purple mb-2">
         Where Little Minds Grow With Science &amp; Soul.
       </span>
-      <h3 className="text-xl sm:text-2xl font-black text-msi-orange tracking-tight uppercase">
-        LEARNING THE NEUROPI WAY
-      </h3>
       <p className="mt-3 text-gray-700 font-medium leading-relaxed">
         Every NeuroPi classroom is a living lab of growth &mdash; where teachers guide with compassion, and children learn through wonder. It&rsquo;s not just about early education; it&rsquo;s about raising emotionally intelligent, resilient, and joyful minds ready to thrive in life.
       </p>
@@ -501,9 +486,6 @@ export const neuropiLearningCycleDrawerBody = (
       <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-purple/10 text-msi-purple mb-2">
         The NeuroPi Learning Cycle
       </span>
-      <h3 className="text-xl sm:text-2xl font-black text-msi-orange tracking-tight uppercase">
-        OBSERVE &rarr; UNDERSTAND &rarr; PERSONALISE &rarr; ENGAGE &rarr; TRACK
-      </h3>
       <p className="mt-3 text-gray-700 font-medium leading-relaxed">
         The NeuroPi Way follows a continuous cycle.
       </p>
@@ -766,9 +748,6 @@ export const earlyLearningDrawerBody = (
       <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-purple/10 text-msi-purple mb-2">
         Where Neuroscience-Informed Philosophy Becomes Daily Classroom Practice
       </span>
-      <h3 className="text-xl sm:text-2xl font-black text-msi-orange tracking-tight uppercase">
-        THE NEUROPI CLASSROOM METHOD
-      </h3>
       <p className="mt-3 text-gray-700 font-medium leading-relaxed">
         A philosophy becomes meaningful only when a teacher can use it.<br />
         The NeuroPi Classroom Method provides MSI educators with a consistent approach for turning observation into better classroom experiences.
@@ -831,9 +810,6 @@ export const teacherDevelopmentDrawerBody = (
       <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-purple/10 text-msi-purple mb-2">
         Continuous Professional Growth
       </span>
-      <h3 className="text-xl sm:text-2xl font-black text-msi-orange tracking-tight uppercase">
-        NEUROPI TEACHER DEVELOPMENT
-      </h3>
       <p className="mt-3 text-gray-800 font-bold leading-relaxed text-base sm:text-lg">
         To Understand Children Better, We Must Keep Developing the Adults Around Them.
       </p>
@@ -955,6 +931,59 @@ export const teacherDevelopmentDrawerBody = (
       </p>
       <p className="font-extrabold text-msi-yellow text-base sm:text-lg uppercase tracking-wide">
         Support the Child.
+      </p>
+    </div>
+  </div>
+);
+
+export const heartfulClassroomsDrawerBody = (
+  <div className="space-y-6 text-gray-700 text-sm sm:text-base leading-relaxed">
+    {/* Header Banner */}
+    <div className="p-5 rounded-2xl bg-gradient-to-br from-purple-50 via-white to-amber-50 border border-purple-100 shadow-xs">
+      <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-blue/10 text-msi-blue mb-2">
+        Mindfulness &amp; Emotional Bonding for Calm, Connected, Confident Children.
+      </span>
+      <p className="text-gray-700 font-medium leading-relaxed">
+        Parents naturally want to know how their child is progressing.<br />
+        At MSI, conversations about progress can go beyond academic achievement.
+      </p>
+    </div>
+
+    {/* Bullet Points List */}
+    <div className="p-5 rounded-2xl bg-white border border-gray-100 shadow-md space-y-3">
+      <h4 className="font-extrabold text-msi-purple text-base uppercase tracking-wider mb-3">
+        We may talk about how your child is developing in areas such as:
+      </h4>
+      <div className="space-y-2.5">
+        {[
+          'Emotional awareness and the ability to express feelings',
+          'Confidence, self-esteem and a growing sense of identity',
+          'Relationships, empathy, kindness and cooperation',
+          'Communication, listening and meaningful conversation',
+          'Curiosity, creativity and enthusiasm for learning',
+          'Attention, engagement and participation',
+          'Resilience, patience and response to challenges',
+          'Independence, responsibility and everyday self-care',
+          'Physical coordination, movement and sensory development',
+          'The ability to feel calm, safe, connected and ready to learn',
+        ].map((item, idx) => (
+          <div
+            key={idx}
+            className="flex items-start gap-3 p-3 bg-amber-50/80 border-l-4 border-msi-yellow rounded-r-xl shadow-2xs"
+          >
+            <span className="w-2 h-2 rounded-full bg-msi-orange mt-2 shrink-0" />
+            <p className="text-gray-800 font-medium text-sm sm:text-base">
+              {item}
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    {/* Footer Callout Accent Card */}
+    <div className="p-6 rounded-2xl bg-gradient-to-r from-msi-purple to-[#271344] text-white shadow-lg text-center">
+      <p className="font-semibold text-white text-sm sm:text-base leading-relaxed">
+        Together, these conversations help families and teachers understand the whole child &mdash; celebrating strengths, noticing emerging abilities and thoughtfully supporting the next steps in development.
       </p>
     </div>
   </div>
