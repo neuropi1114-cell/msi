@@ -16,10 +16,10 @@ export default function DesignPhilosophy({
   topBgClass = "bg-[#271344]",
   imageAspect = "aspect-[4/3]",
   imageClass = "object-cover",
-  eyebrow = "Small Steps Into A Big New World",
+  eyebrow = "Small Steps Into A Big New World.",
   eyebrowClass = "text-[#68BAE3]",
   title = "STARTING SCHOOL & SETTLING IN",
-  titleClass = "text-msi-orange",
+  titleClass = "text-msi-orange sm:whitespace-nowrap",
   p1 = "For a young child, beginning preschool or daycare can mean a new environment, new adults, new children and a completely new routine.",
   p1Class = "text-msi-cream",
   p2Class = null,
@@ -38,6 +38,7 @@ export default function DesignPhilosophy({
   bottomP1 = "A child's day at MSI is designed around an age-appropriate rhythm rather than continuous instruction.",
   bottomP2 = "Depending on age and program, a day may move through:",
   bottomP3 = null,
+  bottomEyebrowClass = "text-msi-blue",
   bottomP1Class = null,
   bottomP2Class = null,
   bottomDrawerTitle = null,
@@ -80,7 +81,7 @@ export default function DesignPhilosophy({
                 </h3>
               )}
               {title && (
-                <h2 className={`${titleClass} font-linotte font-bold text-2xl md:text-[32px] leading-tight uppercase mb-4`}>
+                <h2 className={titleClass || 'text-msi-orange'}>
                   {title}
                 </h2>
               )}
@@ -129,12 +130,12 @@ export default function DesignPhilosophy({
               <div className="hidden md:block"></div>
               <ScrollReveal direction="up" delay={0.2} className="flex flex-col justify-center items-start">
                 {bottomEyebrow && (
-                  <h3 className=" text-msi-blue ">
+                  <h3 className={bottomEyebrowClass || "text-msi-blue"}>
                     {bottomEyebrow}
                   </h3>
                 )}
                 {bottomTitle && (
-                  <h2 className="text-msi-orange font-linotte font-bold text-2xl md:text-[32px] leading-tight uppercase mb-4">
+                  <h2 className="text-msi-orange">
                     {bottomTitle}
                   </h2>
                 )}

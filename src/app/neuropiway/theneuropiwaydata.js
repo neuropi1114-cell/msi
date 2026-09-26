@@ -28,7 +28,7 @@ export const riseObservationDrawerBody = (
       <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-purple/10 text-msi-purple mb-2">
         Looking Beyond What a Child Knows
       </span>
-      <p className="mt-3 text-gray-700 font-medium leading-relaxed">
+      <p className="text-gray-700">
         Early development cannot be understood through worksheets and academic outcomes alone.<br />
         At MSI, RISE gives teachers a simple framework for noticing important aspects of children&rsquo;s everyday learning behaviour.
       </p>
@@ -46,7 +46,7 @@ export const riseObservationDrawerBody = (
             RESILIENCE
           </h4>
         </div>
-        <p className="text-gray-800 font-medium text-sm sm:text-base pl-8">
+        <p className="text-gray-800">
           How does the child respond when something is difficult? Do they try again? Seek help? Adapt? Persist?
         </p>
       </div>
@@ -61,7 +61,7 @@ export const riseObservationDrawerBody = (
             INDIVIDUAL LEARNING
           </h4>
         </div>
-        <p className="text-gray-800 font-medium text-sm sm:text-base pl-8">
+        <p className="text-gray-800">
           How does this particular child approach experiences? What interests them? How do they explore? What supports their participation and understanding?
         </p>
       </div>
@@ -76,7 +76,7 @@ export const riseObservationDrawerBody = (
             SAFETY &mdash; EMOTIONAL
           </h4>
         </div>
-        <p className="text-gray-800 font-medium text-sm sm:text-base pl-8">
+        <p className="text-gray-800">
           Does the child feel secure enough to communicate, participate, make mistakes, ask for help and express emotions? Emotional safety is an essential foundation for engagement and learning.
         </p>
       </div>
@@ -91,7 +91,7 @@ export const riseObservationDrawerBody = (
             ENGAGEMENT &amp; READINESS
           </h4>
         </div>
-        <p className="text-gray-800 font-medium text-sm sm:text-base pl-8">
+        <p className="text-gray-800">
           How does the child participate? What captures attention? What encourages curiosity, involvement and readiness for the next experience?
         </p>
       </div>
@@ -99,7 +99,7 @@ export const riseObservationDrawerBody = (
 
     {/* Summary Callout Banner */}
     <div className="p-4 rounded-xl bg-msi-cream border-l-4 border-msi-purple shadow-xs">
-      <p className="font-bold text-msi-purple text-sm sm:text-base leading-relaxed">
+      <p className="text-msi-purple">
         RISE helps teachers notice patterns over time, rather than judge a child from one activity or one day.
       </p>
     </div>
@@ -120,7 +120,7 @@ export const milestonesObservationDrawerBody = (
       <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-blue/10 text-msi-blue mb-2">
         Development Is a Journey, Not a Race
       </span>
-      <p className="mt-3 text-gray-700 font-medium leading-relaxed">
+      <p className="text-gray-700">
         Children do not all develop at exactly the same pace or in exactly the same way.<br />
         MSI teachers use age-appropriate developmental milestones and structured observations to help them notice progress across different areas of development.
       </p>
@@ -159,27 +159,27 @@ export const milestonesObservationDrawerBody = (
     {/* Everyday Experiences Section */}
     <div className="p-5 rounded-2xl bg-white border border-gray-100 shadow-md relative overflow-hidden">
       <div className="absolute top-0 left-0 w-2 h-full bg-msi-orange" />
-      <p className="font-semibold text-gray-800 leading-relaxed mb-3">
+      <p className="text-gray-800">
         Observations happen naturally through children&rsquo;s everyday experiences &mdash; during stories, conversations, play, movement, meals, projects, group experiences and independent exploration.
       </p>
-      <p className="text-gray-700 font-medium text-xs sm:text-sm pt-2 border-t border-gray-100">
+      <p className="text-gray-700">
         They are used to help educators plan appropriate learning opportunities and understand progress over time.
       </p>
     </div>
 
     {/* Disclaimer Callout Banner */}
     <div className="p-4 rounded-xl bg-amber-50/90 border-l-4 border-amber-400 shadow-xs">
-      <p className="font-semibold text-amber-900 text-xs sm:text-sm">
+      <p className="text-amber-900">
         Notice: They are not intended to diagnose medical, psychological or developmental conditions.
       </p>
     </div>
 
     {/* Footer Accent Card */}
     <div className="p-6 rounded-2xl bg-gradient-to-r from-msi-purple to-[#271344] text-white shadow-lg text-center space-y-2">
-      <p className="font-bold text-msi-yellow text-base sm:text-lg uppercase tracking-wide">
+      <p className="text-msi-yellow">
         Milestones provide reference points.
       </p>
-      <p className="font-extrabold text-white text-lg sm:text-xl pt-1">
+      <p className="text-white">
         The individual child remains the starting point.
       </p>
     </div>
@@ -193,7 +193,7 @@ export const onePictureDrawerBody = (
       <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-orange/10 text-msi-orange mb-2">
         A Living Picture of the Child
       </span>
-      <p className="mt-3 text-gray-700 font-medium leading-relaxed">
+      <p className="text-gray-700">
         Every child at MSI can have a continuously evolving NeuroPi Child Profile.<br />
         Rather than reducing development to marks or grades, the profile brings together meaningful observations across the child&rsquo;s journey.
       </p>
@@ -232,7 +232,7 @@ export const onePictureDrawerBody = (
     {/* School and Home Callout */}
     <div className="p-5 rounded-2xl bg-white border border-gray-100 shadow-md relative overflow-hidden">
       <div className="absolute top-0 left-0 w-2 h-full bg-msi-blue" />
-      <p className="font-semibold text-msi-purple leading-relaxed">
+      <p className="text-msi-purple">
         Where appropriate, information from both school and home can contribute to a richer understanding of the child.
       </p>
     </div>
@@ -252,10 +252,10 @@ export const onePictureDrawerBody = (
 
     {/* Footer Accent Card */}
     <div className="p-6 rounded-2xl bg-gradient-to-r from-msi-purple to-[#271344] text-white shadow-lg text-center space-y-2">
-      <p className="font-bold text-purple-200 text-sm sm:text-base">
+      <p className="text-purple-200">
         The purpose is not to compare one child with another.
       </p>
-      <p className="font-extrabold text-msi-yellow text-lg sm:text-xl pt-1">
+      <p className="text-msi-yellow">
         It is to understand how this child is growing over time.
       </p>
     </div>
@@ -295,7 +295,7 @@ export const nepHeroDrawerBody = (
       <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-purple/10 text-msi-purple mb-2">
         One Child Lives In Two Important Worlds.
       </span>
-      <p className="mt-3 text-gray-700 font-medium leading-relaxed">
+      <p className="text-gray-700">
         Teachers know the child they see at school.<br />
         Parents know the child they see at home.<br />
         <span className="text-msi-purple font-bold">Both perspectives matter.</span> NeuroPi Connect helps bring those worlds together.
@@ -311,7 +311,7 @@ export const nepHeroDrawerBody = (
           AT SCHOOL
         </h4>
       </div>
-      <p className="font-semibold text-msi-orange mb-3 text-sm sm:text-base">
+      <p className="text-msi-orange">
         Teachers can share and record:
       </p>
       <div className="flex flex-wrap gap-2">
@@ -345,7 +345,7 @@ export const nepHeroDrawerBody = (
           AT HOME
         </h4>
       </div>
-      <p className="font-semibold text-msi-orange mb-3 text-sm sm:text-base">
+      <p className="text-msi-orange">
         Parents can remain connected through:
       </p>
       <div className="flex flex-wrap gap-2">
@@ -371,7 +371,7 @@ export const nepHeroDrawerBody = (
 
     {/* Section 3: Callout Banner */}
     <div className="p-4 rounded-xl bg-msi-cream border-l-4 border-msi-green shadow-xs">
-      <p className="font-bold text-msi-purple italic text-sm sm:text-base">
+      <p className="text-msi-purple">
         &ldquo;Together, these create greater continuity around the child.&rdquo;
       </p>
     </div>
@@ -382,9 +382,9 @@ export const nepHeroDrawerBody = (
         SCHOOL AND HOME &mdash; ONE LEARNING PARTNERSHIP
       </h4>
       <div className="mt-3 space-y-1.5 text-base sm:text-lg text-white font-bold">
-        <p className="text-white drop-shadow-xs">Teachers see the child at school.</p>
-        <p className="text-white drop-shadow-xs">Parents understand the child at home.</p>
-        <p className="text-msi-yellow font-extrabold pt-2 text-lg sm:text-xl">
+        <p className="text-white">Teachers see the child at school.</p>
+        <p className="text-white">Parents understand the child at home.</p>
+        <p className="text-msi-yellow">
           NeuroPi connects the developmental journey.
         </p>
       </div>
@@ -399,7 +399,7 @@ export const nepHeroLearningDrawerBody = (
       <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-purple/10 text-msi-purple mb-2">
         Where Little Minds Grow With Science &amp; Soul.
       </span>
-      <p className="mt-3 text-gray-700 font-medium leading-relaxed">
+      <p className="text-gray-700">
         Every NeuroPi classroom is a living lab of growth &mdash; where teachers guide with compassion, and children learn through wonder. It&rsquo;s not just about early education; it&rsquo;s about raising emotionally intelligent, resilient, and joyful minds ready to thrive in life.
       </p>
     </div>
@@ -411,8 +411,8 @@ export const nepHeroLearningDrawerBody = (
           1
         </span>
         <div>
-          <p className="font-bold text-msi-purple text-base">Think Smart</p>
-          <p className="text-gray-700 text-sm">Cognitive curiosity through discovery learning</p>
+          <p className="text-msi-purple">Think Smart</p>
+          <p className="text-gray-700">Cognitive curiosity through discovery learning</p>
         </div>
       </div>
 
@@ -421,8 +421,8 @@ export const nepHeroLearningDrawerBody = (
           2
         </span>
         <div>
-          <p className="font-bold text-msi-blue text-base">Feel Deeply</p>
-          <p className="text-gray-700 text-sm">Emotional Literacy &amp; empathy through play</p>
+          <p className="text-msi-blue">Feel Deeply</p>
+          <p className="text-gray-700">Emotional Literacy &amp; empathy through play</p>
         </div>
       </div>
 
@@ -431,8 +431,8 @@ export const nepHeroLearningDrawerBody = (
           3
         </span>
         <div>
-          <p className="font-bold text-msi-orange text-base">Move Freely</p>
-          <p className="text-gray-700 text-sm">Mind-body connection through rhythm &amp; movement</p>
+          <p className="text-msi-orange">Move Freely</p>
+          <p className="text-gray-700">Mind-body connection through rhythm &amp; movement</p>
         </div>
       </div>
 
@@ -441,8 +441,8 @@ export const nepHeroLearningDrawerBody = (
           4
         </span>
         <div>
-          <p className="font-bold text-pink-700 text-base">Create Boldly</p>
-          <p className="text-gray-700 text-sm">Imagination through art and storytelling</p>
+          <p className="text-pink-700">Create Boldly</p>
+          <p className="text-gray-700">Imagination through art and storytelling</p>
         </div>
       </div>
 
@@ -451,8 +451,8 @@ export const nepHeroLearningDrawerBody = (
           5
         </span>
         <div>
-          <p className="font-bold text-green-700 text-base">Grow Calmly</p>
-          <p className="text-gray-700 text-sm">Mindfulness and self regulation woven into each day</p>
+          <p className="text-green-700">Grow Calmly</p>
+          <p className="text-gray-700">Mindfulness and self regulation woven into each day</p>
         </div>
       </div>
     </div>
@@ -462,17 +462,17 @@ export const nepHeroLearningDrawerBody = (
       <h4 className="font-black text-msi-yellow text-lg sm:text-xl uppercase tracking-wide">
         MY SCHOOL ITALY
       </h4>
-      <p className="text-purple-100 font-medium text-sm sm:text-base mt-1">
+      <p className="text-purple-100">
         Where Little Minds Grow with Science &amp; Soul.
       </p>
     </div>
 
     {/* Parent Testimonial Quote */}
     <div className="p-4 bg-amber-50/90 border border-amber-200/80 rounded-2xl shadow-xs">
-      <p className="text-xs font-bold text-msi-orange uppercase tracking-wider mb-1">
+      <p className="text-msi-orange">
         Parents Say:
       </p>
-      <p className="italic text-gray-800 text-sm font-semibold leading-relaxed">
+      <p className="text-gray-800">
         &ldquo;My child comes home peaceful, curious, and full of stories &ndash; NeuroPi feels like family. The perfect blend of heart and science.&rdquo;
       </p>
     </div>
@@ -486,7 +486,7 @@ export const neuropiLearningCycleDrawerBody = (
       <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-purple/10 text-msi-purple mb-2">
         The NeuroPi Learning Cycle
       </span>
-      <p className="mt-3 text-gray-700 font-medium leading-relaxed">
+      <p className="text-gray-700">
         The NeuroPi Way follows a continuous cycle.
       </p>
     </div>
@@ -503,14 +503,14 @@ export const neuropiLearningCycleDrawerBody = (
       {/* Step 1: OBSERVE */}
       <div className="p-5 rounded-2xl bg-white border border-gray-100 shadow-md relative overflow-hidden">
         <div className="absolute top-0 left-0 w-2 h-full bg-msi-purple" />
-        <p className="text-xs font-bold text-msi-purple uppercase tracking-wider mb-1">
+        <p className="text-msi-purple">
           What is happening?
         </p>
         <h4 className="text-lg font-black text-msi-purple uppercase tracking-wide mb-2 flex items-center gap-2">
           <span className="w-6 h-6 rounded-full bg-msi-purple text-white text-xs flex items-center justify-center font-bold">1</span>
           OBSERVE
         </h4>
-        <p className="text-gray-800 leading-relaxed">
+        <p className="text-gray-800">
           Teachers notice how the child participates, communicates, explores, responds and interacts during everyday experiences.
         </p>
       </div>
@@ -518,14 +518,14 @@ export const neuropiLearningCycleDrawerBody = (
       {/* Step 2: UNDERSTAND */}
       <div className="p-5 rounded-2xl bg-white border border-gray-100 shadow-md relative overflow-hidden">
         <div className="absolute top-0 left-0 w-2 h-full bg-msi-blue" />
-        <p className="text-xs font-bold text-msi-blue uppercase tracking-wider mb-1">
+        <p className="text-msi-blue">
           What might this tell us about this child?
         </p>
         <h4 className="text-lg font-black text-msi-blue uppercase tracking-wide mb-2 flex items-center gap-2">
           <span className="w-6 h-6 rounded-full bg-msi-blue text-white text-xs flex items-center justify-center font-bold">2</span>
           UNDERSTAND
         </h4>
-        <p className="text-gray-800 leading-relaxed">
+        <p className="text-gray-800">
           Individual observations are considered over time to identify emerging interests, strengths, needs and developmental patterns.
         </p>
       </div>
@@ -533,14 +533,14 @@ export const neuropiLearningCycleDrawerBody = (
       {/* Step 3: PERSONALISE */}
       <div className="p-5 rounded-2xl bg-white border border-gray-100 shadow-md relative overflow-hidden">
         <div className="absolute top-0 left-0 w-2 h-full bg-msi-orange" />
-        <p className="text-xs font-bold text-msi-orange uppercase tracking-wider mb-1">
+        <p className="text-msi-orange">
           How can we respond?
         </p>
         <h4 className="text-lg font-black text-msi-orange uppercase tracking-wide mb-2 flex items-center gap-2">
           <span className="w-6 h-6 rounded-full bg-msi-orange text-white text-xs flex items-center justify-center font-bold">3</span>
           PERSONALISE
         </h4>
-        <p className="text-gray-800 leading-relaxed">
+        <p className="text-gray-800">
           Teachers can adapt experiences &mdash; the level of support, type of activity, questions, materials, grouping or pace &mdash; according to what they are observing.
         </p>
       </div>
@@ -548,14 +548,14 @@ export const neuropiLearningCycleDrawerBody = (
       {/* Step 4: ENGAGE */}
       <div className="p-5 rounded-2xl bg-white border border-gray-100 shadow-md relative overflow-hidden">
         <div className="absolute top-0 left-0 w-2 h-full bg-pink-500" />
-        <p className="text-xs font-bold text-pink-600 uppercase tracking-wider mb-1">
+        <p className="text-pink-600">
           What experience will help the child participate and grow?
         </p>
         <h4 className="text-lg font-black text-pink-600 uppercase tracking-wide mb-2 flex items-center gap-2">
           <span className="w-6 h-6 rounded-full bg-pink-500 text-white text-xs flex items-center justify-center font-bold">4</span>
           ENGAGE
         </h4>
-        <p className="text-gray-800 leading-relaxed">
+        <p className="text-gray-800">
           Children are given meaningful opportunities to participate, experiment, communicate, move, create and discover.
         </p>
       </div>
@@ -563,14 +563,14 @@ export const neuropiLearningCycleDrawerBody = (
       {/* Step 5: TRACK */}
       <div className="p-5 rounded-2xl bg-white border border-gray-100 shadow-md relative overflow-hidden">
         <div className="absolute top-0 left-0 w-2 h-full bg-msi-green" />
-        <p className="text-xs font-bold text-green-700 uppercase tracking-wider mb-1">
+        <p className="text-green-700">
           What is changing over time?
         </p>
         <h4 className="text-lg font-black text-green-700 uppercase tracking-wide mb-2 flex items-center gap-2">
           <span className="w-6 h-6 rounded-full bg-msi-green text-white text-xs flex items-center justify-center font-bold">5</span>
           TRACK
         </h4>
-        <p className="text-gray-800 leading-relaxed">
+        <p className="text-gray-800">
           Developmental observations are recorded over time so that teachers and families can see growth, emerging abilities and areas where additional opportunities may help.
         </p>
       </div>
@@ -578,10 +578,10 @@ export const neuropiLearningCycleDrawerBody = (
 
     {/* Cycle Loop Footer Card */}
     <div className="p-6 rounded-2xl bg-gradient-to-r from-msi-purple to-[#271344] text-white shadow-lg text-center space-y-2">
-      <p className="font-extrabold text-msi-yellow text-base sm:text-lg uppercase tracking-wide">
+      <p className="text-msi-yellow">
         Because development never stands still &mdash; OBSERVE AGAIN
       </p>
-      <p className="text-purple-100 text-sm sm:text-base font-medium leading-relaxed">
+      <p className="text-purple-100">
         Then the cycle begins again. Because children keep changing. Our understanding of them should keep changing too.
       </p>
     </div>
@@ -590,7 +590,7 @@ export const neuropiLearningCycleDrawerBody = (
 
 export const neuropiDrawerBody = (
   <div className="space-y-4 text-gray-700 text-[15px] leading-relaxed">
-    <p className="font-semibold text-msi-purple text-base">
+    <p className="text-msi-purple">
       The NeuroPi Approach is where the science of the brain meets the art of nurturing.
     </p>
     <p>
@@ -606,22 +606,22 @@ export const neuropiDrawerBody = (
       <li>Parents bring knowledge of their child.</li>
     </ul>
     <div className="bg-orange-50/90 border-l-4 border-msi-orange p-4 rounded-r-xl">
-      <p className="font-bold text-msi-orange text-xs uppercase tracking-wider">
+      <p className="text-msi-orange">
         And at the centre of everything remains:
       </p>
-      <p className="text-xl font-extrabold text-msi-purple my-1">ONE CHILD.</p>
+      <p className="text-msi-purple">ONE CHILD.</p>
       <div className="space-y-1 text-gray-800 font-medium">
-        <p>Not compared.</p>
-        <p>Not labelled.</p>
-        <p>Not reduced to a score.</p>
-        <p className="text-msi-purple font-bold">Observed. Understood. Engaged. Supported.</p>
+        <p className="text-gray-800">Not compared.</p>
+        <p className="text-gray-800">Not labelled.</p>
+        <p className="text-gray-800">Not reduced to a score.</p>
+        <p className="text-msi-purple">Observed. Understood. Engaged. Supported.</p>
       </div>
     </div>
     <div className="pt-3 border-t border-gray-200">
-      <p className="font-extrabold text-msi-purple text-base">
+      <p className="text-msi-purple">
         MY SCHOOL ITALY &mdash; Powered by NeuroPi
       </p>
-      <p className="italic text-msi-orange font-semibold text-sm">
+      <p className="text-msi-orange">
         Where School and Home Become One Learning Partnership.
       </p>
     </div>
@@ -630,42 +630,42 @@ export const neuropiDrawerBody = (
 
 export const fivePillarsDrawerBody = (
   <div className="space-y-4 text-gray-700 text-[15px] leading-relaxed">
-    <p className="font-semibold text-msi-purple text-base">
+    <p className="text-msi-purple">
       Every child’s brain is a world of wonder. Here, we blend neuroscience, play, and empathy to nurture calm, confident, and connected learners.
     </p>
 
     <div className="space-y-3 pt-2">
       <div className="p-3.5 bg-purple-50/80 border-l-4 border-msi-purple rounded-r-xl">
-        <p className="font-extrabold text-msi-purple text-base">Brain-Based Learning</p>
-        <p className="text-gray-700 text-sm mt-0.5">
+        <p className="text-msi-purple">Brain-Based Learning</p>
+        <p className="text-gray-700">
           Each activity is designed to build focus, memory, and creative thinking.
         </p>
       </div>
 
       <div className="p-3.5 bg-blue-50/80 border-l-4 border-msi-blue rounded-r-xl">
-        <p className="font-extrabold text-msi-blue text-base">Mindful Routines</p>
-        <p className="text-gray-700 text-sm mt-0.5">
+        <p className="text-msi-blue">Mindful Routines</p>
+        <p className="text-gray-700">
           Calm, predictable rhythms that strengthen emotional regulation and self-awareness.
         </p>
       </div>
 
       <div className="p-3.5 bg-orange-50/80 border-l-4 border-msi-orange rounded-r-xl">
-        <p className="font-extrabold text-msi-orange text-base">Nutrition & Movement Integration</p>
-        <p className="text-gray-700 text-sm mt-0.5">
+        <p className="text-msi-orange">Nutrition & Movement Integration</p>
+        <p className="text-gray-700">
           Healthy bodies that fuel strong neural connections and cognitive clarity.
         </p>
       </div>
 
       <div className="p-3.5 bg-green-50/80 border-l-4 border-msi-green rounded-r-xl">
-        <p className="font-extrabold text-green-700 text-base">Social-Emotional Learning</p>
-        <p className="text-gray-700 text-sm mt-0.5">
+        <p className="text-green-700">Social-Emotional Learning</p>
+        <p className="text-gray-700">
           Building empathy, confidence, and communication from the very start.
         </p>
       </div>
 
       <div className="p-3.5 bg-yellow-50/80 border-l-4 text-amber-900 border-msi-yellow rounded-r-xl">
-        <p className="font-extrabold text-amber-800 text-base">Playful Discovery</p>
-        <p className="text-gray-700 text-sm mt-0.5">
+        <p className="text-amber-800">Playful Discovery</p>
+        <p className="text-gray-700">
           Curiosity-driven exploration that transforms play into powerful learning.
         </p>
       </div>
@@ -684,7 +684,7 @@ export const k1DrawerBody = (
     <p>
       Stories and real experiences help children connect what they learn with the world around them.
     </p>
-    <p className="font-semibold text-msi-purple">
+    <p className="text-msi-purple">
       Learning becomes meaningful when children can connect it.
     </p>
   </div>
@@ -701,7 +701,7 @@ export const k2DrawerBody = (
     <p>
       Our objective is not simply to prepare children for the next classroom. It is to help them become curious thinkers, confident communicators and enthusiastic learners.
     </p>
-    <p className="font-semibold text-msi-purple">
+    <p className="text-msi-purple">
       Ready for School. Ready for Learning. Ready for What Comes Next.
     </p>
   </div>
@@ -718,7 +718,7 @@ export const daycareDrawerBody = (
     <p>
       Parents remain connected to their child&apos;s experiences, helping create continuity between home, school and daycare.
     </p>
-    <p className="font-semibold text-msi-purple">
+    <p className="text-msi-purple">
       You focus on your work. We remain focused on your child.
     </p>
   </div>
@@ -735,7 +735,7 @@ export const twentyFourHourCareDrawerBody = (
     <p>
       Availability and operating hours vary by centre.
     </p>
-    <p className="font-semibold text-msi-purple">
+    <p className="text-msi-purple">
       Because modern families need modern childcare.
     </p>
   </div>
@@ -748,7 +748,7 @@ export const earlyLearningDrawerBody = (
       <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-purple/10 text-msi-purple mb-2">
         Where Neuroscience-Informed Philosophy Becomes Daily Classroom Practice
       </span>
-      <p className="mt-3 text-gray-700 font-medium leading-relaxed">
+      <p className="text-gray-700">
         A philosophy becomes meaningful only when a teacher can use it.<br />
         The NeuroPi Classroom Method provides MSI educators with a consistent approach for turning observation into better classroom experiences.
       </p>
@@ -762,19 +762,19 @@ export const earlyLearningDrawerBody = (
       <div className="space-y-3">
         <div className="p-3.5 bg-purple-50/90 border-l-4 border-msi-purple rounded-r-xl shadow-2xs flex items-center gap-3">
           <span className="w-2.5 h-2.5 rounded-full bg-msi-purple flex-shrink-0" />
-          <p className="font-bold text-msi-purple text-sm sm:text-base uppercase tracking-wide">
+          <p className="text-msi-purple">
             1. UNDERSTAND EVERY CHILD
           </p>
         </div>
         <div className="p-3.5 bg-blue-50/90 border-l-4 border-msi-blue rounded-r-xl shadow-2xs flex items-center gap-3">
           <span className="w-2.5 h-2.5 rounded-full bg-msi-blue flex-shrink-0" />
-          <p className="font-bold text-msi-blue text-sm sm:text-base uppercase tracking-wide">
+          <p className="text-msi-blue">
             2. ONE CONSISTENT METHOD
           </p>
         </div>
         <div className="p-3.5 bg-orange-50/90 border-l-4 border-msi-orange rounded-r-xl shadow-2xs flex items-center gap-3">
           <span className="w-2.5 h-2.5 rounded-full bg-msi-orange flex-shrink-0" />
-          <p className="font-bold text-msi-orange text-sm sm:text-base uppercase tracking-wide">
+          <p className="text-msi-orange">
             3. CONTINUOUSLY DEVELOP EVERY TEACHER
           </p>
         </div>
@@ -783,19 +783,19 @@ export const earlyLearningDrawerBody = (
 
     {/* Transformation Highlight Card */}
     <div className="p-6 rounded-2xl bg-gradient-to-r from-msi-purple to-[#271344] text-white shadow-lg text-center space-y-3">
-      <p className="font-bold text-purple-200 text-xs sm:text-sm uppercase tracking-widest">
+      <p className="text-purple-200">
         The result is a classroom where the question changes from:
       </p>
       <div className="p-3.5 rounded-xl bg-white/10 border border-white/20">
-        <p className="text-gray-300 line-through font-semibold text-sm sm:text-base">
+        <p className="text-gray-300">
           &ldquo;Did I teach today&rsquo;s lesson?&rdquo;
         </p>
       </div>
-      <p className="font-bold text-msi-yellow text-xs sm:text-sm uppercase tracking-widest pt-1">
+      <p className="text-msi-yellow">
         to:
       </p>
       <div className="p-4 rounded-xl bg-msi-yellow/20 border border-msi-yellow/40">
-        <p className="text-msi-yellow font-extrabold text-base sm:text-lg">
+        <p className="text-msi-yellow">
           &ldquo;How did each child experience today&rsquo;s learning?&rdquo;
         </p>
       </div>
@@ -810,10 +810,10 @@ export const teacherDevelopmentDrawerBody = (
       <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-purple/10 text-msi-purple mb-2">
         Continuous Professional Growth
       </span>
-      <p className="mt-3 text-gray-800 font-bold leading-relaxed text-base sm:text-lg">
+      <p className="text-gray-800">
         To Understand Children Better, We Must Keep Developing the Adults Around Them.
       </p>
-      <p className="mt-2 text-gray-700 font-medium leading-relaxed">
+      <p className="text-gray-700">
         The NeuroPi Way depends on the teacher. That is why teacher development is not treated as a one-time induction program. MSI educators continue developing their understanding.
       </p>
     </div>
@@ -856,10 +856,10 @@ export const teacherDevelopmentDrawerBody = (
       <div className="space-y-3">
         {/* 1. FOUNDATION EDUCATOR */}
         <div className="p-4 bg-purple-50/90 border-l-4 border-msi-purple rounded-r-xl shadow-2xs">
-          <p className="font-extrabold text-msi-purple text-base uppercase">
+          <p className="text-msi-purple">
             FOUNDATION EDUCATOR
           </p>
-          <p className="text-gray-700 text-sm font-medium mt-1">
+          <p className="text-gray-700">
             Understanding the NeuroPi philosophy and classroom foundations.
           </p>
         </div>
@@ -868,10 +868,10 @@ export const teacherDevelopmentDrawerBody = (
 
         {/* 2. PRACTITIONER */}
         <div className="p-4 bg-blue-50/90 border-l-4 border-msi-blue rounded-r-xl shadow-2xs">
-          <p className="font-extrabold text-msi-blue text-base uppercase">
+          <p className="text-msi-blue">
             PRACTITIONER
           </p>
-          <p className="text-gray-700 text-sm font-medium mt-1">
+          <p className="text-gray-700">
             Applying the method consistently in everyday teaching.
           </p>
         </div>
@@ -880,10 +880,10 @@ export const teacherDevelopmentDrawerBody = (
 
         {/* 3. LEAD EDUCATOR */}
         <div className="p-4 bg-orange-50/90 border-l-4 border-msi-orange rounded-r-xl shadow-2xs">
-          <p className="font-extrabold text-msi-orange text-base uppercase">
+          <p className="text-msi-orange">
             LEAD EDUCATOR
           </p>
-          <p className="text-gray-700 text-sm font-medium mt-1">
+          <p className="text-gray-700">
             Supporting quality practice within the classroom and team.
           </p>
         </div>
@@ -892,10 +892,10 @@ export const teacherDevelopmentDrawerBody = (
 
         {/* 4. MENTOR */}
         <div className="p-4 bg-amber-50/90 border-l-4 border-amber-500 rounded-r-xl shadow-2xs">
-          <p className="font-extrabold text-amber-800 text-base uppercase">
+          <p className="text-amber-800">
             MENTOR
           </p>
-          <p className="text-gray-700 text-sm font-medium mt-1">
+          <p className="text-gray-700">
             Helping other educators strengthen their practice.
           </p>
         </div>
@@ -904,10 +904,10 @@ export const teacherDevelopmentDrawerBody = (
 
         {/* 5. SCHOOL LEADER */}
         <div className="p-4 bg-green-50/90 border-l-4 border-msi-green rounded-r-xl shadow-2xs">
-          <p className="font-extrabold text-green-800 text-base uppercase">
+          <p className="text-green-800">
             SCHOOL LEADER
           </p>
-          <p className="text-gray-700 text-sm font-medium mt-1">
+          <p className="text-gray-700">
             Building a consistent NeuroPi learning culture across the school.
           </p>
         </div>
@@ -916,20 +916,20 @@ export const teacherDevelopmentDrawerBody = (
 
     {/* Summary Callout Banner */}
     <div className="p-4 rounded-xl bg-msi-cream border-l-4 border-msi-purple shadow-xs">
-      <p className="font-semibold text-msi-purple text-sm sm:text-base leading-relaxed">
+      <p className="text-msi-purple">
         Because the quality of an early-years system ultimately depends upon the quality of the interactions a child experiences every day.
       </p>
     </div>
 
     {/* Footer Accent Card */}
     <div className="p-6 rounded-2xl bg-gradient-to-r from-msi-purple to-[#271344] text-white shadow-lg text-center space-y-1.5">
-      <p className="font-extrabold text-msi-yellow text-base sm:text-lg uppercase tracking-wide">
+      <p className="text-msi-yellow">
         Develop the Teacher.
       </p>
-      <p className="font-extrabold text-white text-base sm:text-lg uppercase tracking-wide">
+      <p className="text-white">
         Strengthen the Classroom.
       </p>
-      <p className="font-extrabold text-msi-yellow text-base sm:text-lg uppercase tracking-wide">
+      <p className="text-msi-yellow">
         Support the Child.
       </p>
     </div>
@@ -943,7 +943,7 @@ export const heartfulClassroomsDrawerBody = (
       <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-blue/10 text-msi-blue mb-2">
         Mindfulness &amp; Emotional Bonding for Calm, Connected, Confident Children.
       </span>
-      <p className="text-gray-700 font-medium leading-relaxed">
+      <p className="text-gray-700">
         Parents naturally want to know how their child is progressing.<br />
         At MSI, conversations about progress can go beyond academic achievement.
       </p>
@@ -972,7 +972,7 @@ export const heartfulClassroomsDrawerBody = (
             className="flex items-start gap-3 p-3 bg-amber-50/80 border-l-4 border-msi-yellow rounded-r-xl shadow-2xs"
           >
             <span className="w-2 h-2 rounded-full bg-msi-orange mt-2 shrink-0" />
-            <p className="text-gray-800 font-medium text-sm sm:text-base">
+            <p className="text-gray-800">
               {item}
             </p>
           </div>
@@ -982,7 +982,7 @@ export const heartfulClassroomsDrawerBody = (
 
     {/* Footer Callout Accent Card */}
     <div className="p-6 rounded-2xl bg-gradient-to-r from-msi-purple to-[#271344] text-white shadow-lg text-center">
-      <p className="font-semibold text-white text-sm sm:text-base leading-relaxed">
+      <p className="text-white">
         Together, these conversations help families and teachers understand the whole child &mdash; celebrating strengths, noticing emerging abilities and thoughtfully supporting the next steps in development.
       </p>
     </div>

@@ -49,7 +49,7 @@ export default function ParentsPage({ activeSlug = null }) {
         </div>
         <div id="testimonials" className="scroll-mt-24">
           <VideoCarousel
-            eyebrow="Every Family Has An MSI Story"
+            eyebrow="Every Family Has An MSI Story."
             title="PARENT STORIES & TESTIMONIALS"
           />
         </div>

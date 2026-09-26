@@ -8,6 +8,7 @@ import Drawer from '../layout/Drawer';
 
 export default function FaqSection({
   subheading = "You Have Questions. We Want You to Ask Them.",
+  subheadingClass = null,
   heading = "FREQUENTLY ASKED QUESTIONS",
   description = null,
   showFaq = true,
@@ -32,7 +33,7 @@ export default function FaqSection({
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="w-full">
               <div className="mb-6 md:mb-10 lg:pr-8">
-                {subheading && <h3>{subheading}</h3>}
+                {subheading && <h3 className={subheadingClass || undefined}>{subheading}</h3>}
                 {heading && <h2>{heading}</h2>}
                 {description && (
                   typeof description === 'string' ? (

@@ -34,7 +34,7 @@ export default function DualFeatureSection({
   leftDrawerBody = null,
   leftReadMoreText = null,
   leftButtonClassName = "",
-  rightEyebrow = "Home Learning & Family Connection",
+  rightEyebrow = "Home Learning & Family Connection.",
   rightTitle = "Learning Doesn't Stop at the School Gate",
   rightTitleColor = null,
   rightParagraphs = null,
@@ -108,7 +108,7 @@ export default function DualFeatureSection({
       <div className="container mx-auto px-4 md:px-12 relative z-10" style={{ maxWidth: '1240px' }}>
         {sectionTitle && (
           <div className="mb-6 md:mb-8 text-right">
-            <h2 className="text-msi-orange font-linotte font-bold text-2xl md:text-[32px] leading-tight uppercase">
+            <h2 className="text-msi-orange">
               {sectionTitle}
             </h2>
           </div>
@@ -130,7 +130,7 @@ export default function DualFeatureSection({
                 </h3>
               )}
               {leftSubtitle && (
-                <h2 className={leftSubtitleColor && leftSubtitleColor.includes('font-') ? leftSubtitleColor : `${leftSubtitleColor || 'text-msi-yellow'} font-linotte font-bold text-2xl md:text-[32px] leading-tight uppercase mb-4`}>
+                <h2 className={leftSubtitleColor || 'text-msi-yellow'}>
                   {leftSubtitle}
                 </h2>
               )}
@@ -242,7 +242,10 @@ export default function DualFeatureSection({
                     </Drawer>
                   </>
                 ) : (
-                  <HomeLearningMore />
+                  <HomeLearningMore
+                    text={rightReadMoreText || "Discover"}
+                    bgColor={rightButtonBgColor !== "bg-msi-orange hover:bg-msi-orange/90" ? rightButtonBgColor : "bg-msi-green hover:bg-msi-green/90"}
+                  />
                 )
               )}
             </div>

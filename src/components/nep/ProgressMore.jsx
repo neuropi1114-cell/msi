@@ -38,16 +38,13 @@ export default function ProgressMore() {
         title="More Than How Many Letters Does My Child Know?"
         side="left"
       >
-        <div className="space-y-5 text-gray-700 leading-relaxed">
+        <div className="space-y-5 text-msi-purple leading-relaxed">
           {/* Header Banner */}
           <div className="p-5 rounded-2xl bg-gradient-to-br from-purple-50 via-white to-amber-50 border border-purple-100 shadow-xs">
             <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-purple/10 text-msi-purple mb-2">
               Holistic Growth Focus
             </span>
-            <h3 className="text-xl sm:text-2xl font-linotte font-bold text-msi-orange tracking-tight uppercase">
-              More Than &ldquo;How Many Letters Does My Child Know?&rdquo;
-            </h3>
-            <p className="mt-3 text-gray-700 text-sm sm:text-base leading-relaxed">
+            <p className="mt-3 text-msi-purple text-sm sm:text-base leading-relaxed">
               Parents naturally want to know how their child is progressing. At MSI, conversations about progress go beyond academic achievement.
             </p>
           </div>
@@ -61,7 +58,7 @@ export default function ProgressMore() {
               {areas.map((area, i) => (
                 <div key={i} className="flex items-center gap-2 p-2.5 bg-purple-50/70 border-l-3 border-msi-purple rounded-r-lg shadow-2xs">
                   <span className="w-2 h-2 rounded-full bg-msi-orange shrink-0"></span>
-                  <span className="font-medium text-gray-800 text-xs sm:text-sm">
+                  <span className="font-medium text-msi-purple text-xs sm:text-sm">
                     {area}
                   </span>
                 </div>
@@ -71,7 +68,7 @@ export default function ProgressMore() {
 
           {/* Meaningful Conversations Box */}
           <div className="p-4.5 rounded-xl bg-blue-50/80 border border-blue-100 shadow-2xs space-y-2">
-            <p className="text-gray-700 text-xs sm:text-sm">
+            <p className="text-msi-purple text-xs sm:text-sm">
               Developmental observations help make parent conversations more meaningful and specific.
             </p>
             <p className="text-msi-purple font-semibold text-xs sm:text-sm">

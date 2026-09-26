@@ -104,7 +104,7 @@ export default function StorySection({
         {drawerBody ? (
           drawerBody
         ) : (
-          <div className="space-y-5 text-gray-700 leading-relaxed">
+          <div className="space-y-5 text-msi-purple leading-relaxed">
             {/* Header Banner */}
             <div className="p-5 rounded-2xl bg-gradient-to-br from-purple-50 via-white to-amber-50 border border-purple-100 shadow-xs">
               <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-purple/10 text-msi-purple mb-2">

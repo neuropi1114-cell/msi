@@ -93,7 +93,7 @@ export default function EducationalProjectPage({ activeSlug = null }) {
             rightAspect="aspect-[16/9]"
             leftTitle={null}
             leftSubtitle={
-              <span className="italic text-msi-yellow">
+              <span className="text-msi-yellow">
                 Heartful Classrooms :
                 <br />
                 Mindfulness &amp; Emotional Bonding for Calm, Connected, Confident Children.
@@ -228,7 +228,7 @@ export default function EducationalProjectPage({ activeSlug = null }) {
             readMoreDrawerTitle="NEUROPI TEACHER DEVELOPMENT"
             readMoreDrawerBody={teacherDevelopmentDrawerBody}
           >
-            <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
+            <p className="text-gray-700">
               The NeuroPi Way depends on the teacher.
               <br />
               That is why teacher development is not treated as a one-time induction program.

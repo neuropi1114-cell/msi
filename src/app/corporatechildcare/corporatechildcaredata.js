@@ -11,7 +11,7 @@ export const corporateChildcareDrawerBody = (
     {/* Highlight Quote Box */}
     <div className="bg-gradient-to-r from-msi-purple/10 via-msi-orange/5 to-transparent p-5 rounded-2xl border-l-4 border-msi-orange shadow-xs">
       <p className="font-semibold text-msi-purple leading-snug">
-        &ldquo;When employees know their children are cared for, they can focus on their work.&rdquo;
+        You Take Care of Your People. We Help Take Care of Their Little People.
       </p>
     </div>
 
@@ -132,7 +132,7 @@ export const onCampusCrecheDrawerBody = (
     {/* Highlight Quote Box */}
     <div className="bg-gradient-to-r from-msi-purple/10 via-msi-orange/5 to-transparent p-5 rounded-2xl border-l-4 border-msi-orange shadow-xs">
       <p className="font-semibold text-msi-purple leading-snug">
-        Childcare Where Your Employees Work
+        Childcare Where Your Employees Work.
       </p>
     </div>
 
@@ -217,7 +217,7 @@ export const nearCampusPreferredDrawerBody = (
     {/* Highlight Quote Box */}
     <div className="bg-gradient-to-r from-msi-purple/10 via-msi-orange/5 to-transparent p-5 rounded-2xl border-l-4 border-msi-orange shadow-xs">
       <p className="font-semibold text-msi-purple leading-snug">
-        Corporate Childcare Without Building a Crèche
+        Corporate Childcare Without Building a Crèche.
       </p>
     </div>
 
@@ -287,7 +287,7 @@ export const corporateSubsidyDrawerBody = (
     {/* Highlight Quote Box */}
     <div className="bg-gradient-to-r from-msi-purple/10 via-msi-orange/5 to-transparent p-5 rounded-2xl border-l-4 border-msi-orange shadow-xs">
       <p className="font-semibold text-msi-purple leading-snug">
-        Turn Childcare Into a Meaningful Employee Benefit
+        Turn Childcare Into a Meaningful Employee Benefit.
       </p>
     </div>
 
@@ -356,7 +356,7 @@ export const extendedHoursChildcareDrawerBody = (
     {/* Highlight Quote Box */}
     <div className="bg-gradient-to-r from-msi-purple/10 via-msi-orange/5 to-transparent p-5 rounded-2xl border-l-4 border-msi-orange shadow-xs">
       <p className="font-semibold text-msi-purple leading-snug">
-        Because Modern Work Doesn&apos;t Always End at 5 PM
+        Because Modern Work Doesn&apos;t Always End at 5 PM.
       </p>
     </div>
 
@@ -420,7 +420,7 @@ export const reservedSeatsDrawerBody = (
     {/* Highlight Quote Box */}
     <div className="bg-gradient-to-r from-msi-purple/10 via-msi-orange/5 to-transparent p-5 rounded-2xl border-l-4 border-msi-orange shadow-xs">
       <p className="font-semibold text-msi-purple leading-snug">
-        Childcare Capacity When Your Employees Need It
+        Childcare Capacity When Your Employees Need It.
       </p>
     </div>
 
@@ -524,7 +524,7 @@ export const employeeChildcareJourneyDrawerBody = (
     {/* Highlight Quote Box */}
     <div className="bg-gradient-to-r from-msi-purple/10 via-msi-orange/5 to-transparent p-5 rounded-2xl border-l-4 border-msi-orange shadow-xs">
       <p className="font-semibold text-msi-purple leading-snug">
-        Make Access Simple for Parents
+        Make Access Simple for Parents.
       </p>
     </div>
 

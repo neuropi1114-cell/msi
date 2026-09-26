@@ -66,7 +66,6 @@ export default function CorporateChildcarePage({ activeSlug = null }) {
             title="We Help Take Care of Their Little People."
             p1="When employees know their children are cared for, they can focus on their work."
             p2={null}
-            drawerEyebrow="You Take Care of Your People. We Help Take Care of Their Little People."
             drawerTitle="When Employees Know Their Children Are Cared For, They Can Focus on Their Work."
             drawerBody={corporateChildcareDrawerBody}
             bottomEyebrow={null}
@@ -82,6 +81,7 @@ export default function CorporateChildcarePage({ activeSlug = null }) {
           titleColor="text-msi-yellow"
           description="A single childcare model may not work for every workplace. The requirement depends on employee numbers, location, shifts, available space, commuting patterns and the ages of employees' children."
           bgImage="/images/corporatechildcare/corporate_childcare_solutions_bg_v3.png"
+          readMoreText="Know More"
           readMoreDrawerTitle="CORPORATE CHILDCARE SOLUTIONS"
           readMoreDrawerBody={corporateChildcareSolutionsDrawerBody}
         />
@@ -92,26 +92,25 @@ export default function CorporateChildcarePage({ activeSlug = null }) {
           sectionTitle="Facilities for Corporates"
           leftImage="/images/corporatechildcare/near_campus_preferred_v2.jpeg"
           leftImageClass="object-contain rounded-[10px]"
-          leftTitle="Corporate Childcare Without Building a Crèche"
+          leftTitle="Corporate Childcare Without Building a Crèche."
           leftSubtitle="NEAR-CAMPUS PREFERRED CENTRES"
           leftSubtitleColor="text-msi-yellow font-linotte font-bold leading-tight uppercase mb-4"
           leftParagraphs={[
             "Not every organisation needs — or has the space for — an on-campus childcare centre.",
           ]}
           leftDrawerTitle="NEAR-CAMPUS PREFERRED CENTRES"
-          leftDrawerEyebrow="Corporate Childcare Without Building a Crèche"
           leftDrawerBody={nearCampusPreferredDrawerBody}
+          leftReadMoreText="Explore"
           rightImage="/images/corporatechildcare/Corporate_Childcare_5.png"
-          rightEyebrow="Childcare Where Your Employees Work"
+          rightEyebrow="Childcare Where Your Employees Work."
           rightTitle="ON-CAMPUS CRÈCHE"
           rightTitleColor="text-msi-orange font-linotte font-bold leading-tight uppercase mb-4"
           rightParagraphs={[
             "MSI can work with organisations to establish and operate childcare facilities within corporate campuses or designated workplace premises.",
           ]}
           rightDrawerTitle="ON-CAMPUS CRÈCHE"
-          rightDrawerEyebrow="Childcare Where Your Employees Work"
           rightDrawerBody={onCampusCrecheDrawerBody}
-          rightButtonBgColor="bg-msi-blue hover:bg-msi-blue/90"
+          rightButtonBgColor="bg-msi-green hover:bg-msi-green/90"
         />
 
         <DesignPhilosophy
@@ -120,25 +119,26 @@ export default function CorporateChildcarePage({ activeSlug = null }) {
           image="/images/corporatechildcare/Corporate_Childcare_6.png"
           imageAspect="aspect-[16/9]"
           imageClass="object-contain"
-          eyebrow="Turn Childcare Into a Meaningful Employee Benefit"
+          eyebrow="Turn Childcare Into a Meaningful Employee Benefit."
           title="CORPORATE SUBSIDY PROGRAMS"
           p1="Organisations can support eligible employees by contributing towards childcare costs through a structured corporate subsidy arrangement."
           p2={null}
-          drawerEyebrow="Turn Childcare Into a Meaningful Employee Benefit"
           drawerTitle="CORPORATE SUBSIDY PROGRAMS"
           drawerBody={corporateSubsidyDrawerBody}
-          bottomEyebrow="Because Modern Work Doesn't Always End at 5 PM"
+          bottomEyebrow="Because Modern Work Doesn't Always End at 5 PM."
+          bottomEyebrowClass="text-msi-blue sm:whitespace-nowrap"
           bottomTitle="EXTENDED-HOURS CHILDCARE"
           bottomP1="Technology, healthcare, global services, customer support, operations and many other industries work beyond conventional school hours."
           bottomP2={null}
-          bottomDrawerEyebrow="Because Modern Work Doesn't Always End at 5 PM"
           bottomDrawerTitle="EXTENDED-HOURS CHILDCARE"
           bottomDrawerBody={extendedHoursChildcareDrawerBody}
+          bottomReadMoreText="Explore"
+          bottomReadMoreBgColor="bg-msi-green hover:bg-msi-green/90"
         />
 
         <div id="reserved-seats" className="scroll-mt-24">
           <NepHero
-            eyebrow="Childcare Capacity When Your Employees Need It"
+            eyebrow="Childcare Capacity When Your Employees Need It."
             title="RESERVED SEATS"
             titleColor="text-msi-yellow"
             description="Childcare availability can become a challenge when employees need to return to work quickly. Under a Reserved Seats arrangement, an organisation can secure an agreed number of places for eligible employees at selected MSI centres."
@@ -151,6 +151,7 @@ export default function CorporateChildcarePage({ activeSlug = null }) {
         <div id="multi-location-solutions" className="scroll-mt-24">
           <FaqSection
             subheading="One Workforce. Many Locations. One Childcare Partner."
+            subheadingClass="sm:whitespace-nowrap"
             heading="MULTI-LOCATION SOLUTIONS"
             showFaq={false}
             imageSrc="/images/corporatechildcare/Corporate_Childcare_8_v2.png"
@@ -169,13 +170,13 @@ export default function CorporateChildcarePage({ activeSlug = null }) {
             eyebrowClass="text-msi-purple"
             titleClass="text-msi-purple"
             p1Class="text-gray-800 font-medium"
-            eyebrow="Make Access Simple for Parents"
+            eyebrow="Make Access Simple for Parents."
             title="THE EMPLOYEE CHILDCARE JOURNEY"
             p1="Corporate childcare should not create another complicated process for employees."
             p2="We can create a clear journey."
-            drawerEyebrow="Make Access Simple for Parents"
             drawerTitle="THE EMPLOYEE CHILDCARE JOURNEY"
             drawerBody={employeeChildcareJourneyDrawerBody}
+            readMoreText="Explore"
             bottomEyebrow="More Flexibility Around Your Working Day."
             bottomTitle="EARLY DROP-OFF & LATE PICK-UP"
             bottomP1="An early meeting, a long commute or an unexpected late evening should not turn childcare into a daily struggle."
@@ -198,7 +199,6 @@ export default function CorporateChildcarePage({ activeSlug = null }) {
             "Childcare solutions designed for parents working night shifts, rotating schedules, healthcare, technology, emergency services and other non-traditional working hours.",
           ]}
           leftDrawerTitle="OUR CORPORATE EXPERIENCE"
-          leftDrawerEyebrow="Childcare Is Not New To Us. Operating It At Workplace Scale Isn't Either."
           leftDrawerBody={ourCorporateExperienceDrawerBody}
           rightImage="/images/corporatechildcare/Corporate_Childcare_11.png"
           rightEyebrow="Tell Us About Your Workforce. We will Help Design The Childcare Model."
@@ -208,13 +208,13 @@ export default function CorporateChildcarePage({ activeSlug = null }) {
             "Every organisation has a different childcare requirement. Our corporate team can work with you to understand the requirements.",
           ]}
           rightDrawerTitle="PARTNER WITH MY SCHOOL ITALY"
-          rightDrawerEyebrow="Tell Us About Your Workforce. We will Help Design The Childcare Model."
           rightDrawerBody={partnerWithMsiDrawerBody}
-          rightButtonBgColor="bg-msi-blue hover:bg-msi-blue/90"
+          rightReadMoreText="Explore"
+          rightButtonBgColor="bg-msi-green hover:bg-msi-green/90"
         />
 
         <FaqSection
-          subheading="A Complete Early Childhood Ecosystem For Your Employees"
+          subheading="A Complete Early Childhood Ecosystem For Your Employees."
           heading="MORE THAN A CRÈCHE"
           showFaq={false}
           imageSrc="/images/corporatechildcare/Corporate_Childcare_12.png"
@@ -246,7 +246,11 @@ export default function CorporateChildcarePage({ activeSlug = null }) {
           content={childcareWorksContent}
           imageSrc="/images/corporatechildcare/Corporate_Childcare_13.png"
         />
-        <EnrolCta />
+        <EnrolCta
+          title="PARTNER WITH MSI"
+          buttonText="Partner With MSI"
+          buttonHref="#corporate-proposal"
+        />
         <VideoShowcase
           eyebrow="Watch Our Programs Come Alive."
           title="PROGRAMS IN ACTION"

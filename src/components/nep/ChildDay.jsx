@@ -17,7 +17,11 @@ const dayFlow = [
   'Home Time',
 ];
 
-export default function ChildDay({ showButton = true }) {
+export default function ChildDay({
+  showButton = true,
+  text = "Know More",
+  bgColor = "bg-msi-green hover:bg-msi-green/90",
+}) {
   const [open, setOpen] = useState(false);
 
   if (!showButton) return null;
@@ -26,6 +30,8 @@ export default function ChildDay({ showButton = true }) {
     <>
       <ReadMoreButton
         onClick={() => setOpen(true)}
+        text={text}
+        bgColor={bgColor}
         aria-haspopup="dialog"
         aria-expanded={open}
         className="mt-6 font-bold"
@@ -36,7 +42,7 @@ export default function ChildDay({ showButton = true }) {
         title="Your Child's Day At MSI."
         side="left"
       >
-        <div className="space-y-5 text-gray-700 leading-relaxed">
+        <div className="space-y-5 text-msi-purple leading-relaxed">
           {/* Header Banner */}
           <div className="p-5 rounded-2xl bg-gradient-to-br from-purple-50 via-white to-amber-50 border border-purple-100 shadow-xs">
             <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-purple/10 text-msi-purple mb-2">
@@ -68,7 +74,7 @@ export default function ChildDay({ showButton = true }) {
 
           {/* Infant Care Note */}
           <div className="p-4 rounded-xl bg-blue-50/80 border border-blue-100 shadow-2xs">
-            <p className="text-gray-700 text-xs sm:text-sm leading-relaxed">
+            <p className="text-msi-purple text-xs sm:text-sm leading-relaxed">
               Babies and younger children follow routines appropriate to their individual feeding, sleep and care requirements.
             </p>
           </div>

@@ -24,7 +24,7 @@ export default function NepHero({
   const [open, setOpen] = useState(false);
 
   const defaultDrawerBody = (
-    <div className="space-y-4 text-gray-700 text-sm sm:text-base leading-relaxed">
+    <div className="space-y-4 text-msi-purple text-sm sm:text-base leading-relaxed">
       <p className="font-bold text-msi-purple text-lg">
         The NeuroPi World of Childhood
       </p>

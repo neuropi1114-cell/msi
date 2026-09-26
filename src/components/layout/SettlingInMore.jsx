@@ -21,16 +21,13 @@ export default function SettlingInMore() {
         title="STARTING SCHOOL & SETTLING IN"
         side="left"
       >
-        <div className="space-y-6 text-gray-700 text-sm sm:text-base leading-relaxed">
+        <div className="space-y-6 text-msi-purple text-sm sm:text-base leading-relaxed">
           {/* Header Banner */}
           <div className="p-5 rounded-2xl bg-gradient-to-br from-purple-50 via-white to-amber-50 border border-purple-100 shadow-xs">
             <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-msi-purple/10 text-msi-purple mb-2">
-              Small Steps Into A Big New World
+              Small Steps Into A Big New World.
             </span>
-            <h3 className="text-xl sm:text-2xl font-black text-msi-orange tracking-tight uppercase">
-              STARTING SCHOOL &amp; SETTLING IN
-            </h3>
-            <p className="mt-3 text-gray-800 font-bold leading-relaxed text-base sm:text-lg">
+            <p className="mt-3 text-msi-purple font-bold leading-relaxed text-base sm:text-lg">
               For a young child, beginning preschool or daycare can mean a new environment, new adults, new children and a completely new routine.
             </p>
           </div>
@@ -44,7 +41,7 @@ export default function SettlingInMore() {
               <p className="font-bold text-msi-purple text-sm sm:text-base">
                 We do not expect every child to settle in the same way.
               </p>
-              <p className="text-gray-700 text-xs sm:text-sm mt-1">
+              <p className="text-msi-purple text-xs sm:text-sm mt-1">
                 Our educators work with families to understand familiar routines, comfort preferences, communication patterns and anything else that can make the transition gentler.
               </p>
             </div>
@@ -54,11 +51,11 @@ export default function SettlingInMore() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <div className="p-4 rounded-xl bg-blue-50/80 border border-blue-100 shadow-2xs">
               <p className="font-extrabold text-msi-blue text-sm uppercase">Confident Beginnings</p>
-              <p className="text-gray-700 text-xs sm:text-sm mt-1">Some children walk in confidently.</p>
+              <p className="text-msi-purple text-xs sm:text-sm mt-1">Some children walk in confidently.</p>
             </div>
             <div className="p-4 rounded-xl bg-orange-50/80 border border-orange-100 shadow-2xs">
               <p className="font-extrabold text-msi-orange text-sm uppercase">Gradual Beginnings</p>
-              <p className="text-gray-700 text-xs sm:text-sm mt-1">Some need more time.</p>
+              <p className="text-msi-purple text-xs sm:text-sm mt-1">Some need more time.</p>
             </div>
           </div>
 

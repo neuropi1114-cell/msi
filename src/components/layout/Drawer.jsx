@@ -80,7 +80,7 @@ const Drawer = ({ open, onClose, title, children, side = 'right' }) => {
             </div>
 
             {/* Drawer Body Content */}
-            <div className="px-6 md:px-8 pb-8 pt-6">{children}</div>
+            <div className="px-6 md:px-8 pb-8 pt-6 text-msi-purple">{children}</div>
           </motion.aside>
         </>
       )}
