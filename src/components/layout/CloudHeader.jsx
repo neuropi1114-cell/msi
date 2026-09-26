@@ -13,6 +13,7 @@ export default function CloudHeader({
   heightClass = 'w-full aspect-[16/9] min-h-[280px] sm:min-h-[380px] max-h-[680px]',
   cloudFill = 'fill-white',
   cloudContainerClass = 'translate-y-[30%] sm:translate-y-[35%]',
+  children,
 }) {
   return (
     <section className={`relative flex items-center justify-center overflow-hidden ${heightClass}`}>
@@ -51,6 +52,16 @@ export default function CloudHeader({
         <div className="relative z-20 px-4 text-center">
           {title && <h1>{title}</h1>}
           {subtitle && <p>{subtitle}</p>}
+        </div>
+      )}
+
+      {children && (
+        <div className="absolute inset-0 z-20 pointer-events-none">
+          <div className="container mx-auto h-full px-4 md:px-12 relative flex items-end justify-end pb-8 sm:pb-12 md:pb-16 pointer-events-none">
+            <div className="pointer-events-auto">
+              {children}
+            </div>
+          </div>
         </div>
       )}
     </section>

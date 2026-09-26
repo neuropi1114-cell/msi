@@ -8,6 +8,8 @@ export default function NepHero({
   eyebrow = null,
   title = "ABOUT NEUROPI CHILDREN",
   titleColor = null,
+  subtitle = null,
+  subtitleColor = null,
   description = "Once upon a time, in the world of NeuroPi, every child was seen as a tiny universe - full of dreams, neurons, and sparkles of curiosity. Their laughter wasn't just joy - it was learning in motion, connecting the brain and heart in beautiful harmony. Each child here grows at their own rhythm, blooming in colours of confidence, calm, and creativity. We don't rush them toward the future - we walk beside them as they discover it. In every classroom, magic and science hold hands. Mindful play becomes their compass; empathy becomes their light. They learn to breathe before they speak, to listen before they lead, and to care before they conquer. Every giggle builds a pathway, every question unlocks a possibility, and every hug strengthens the science of love. At NeuroPi, children don't just learn - they awaken. Because here, childhood isn't a race... it's a beautiful unfolding of brilliance.",
   bgImage = "/images/nep/hero-classroom.webp",
   bgPosition = "bg-cover bg-center",
@@ -20,6 +22,8 @@ export default function NepHero({
   readMoreDrawerBody = null,
   readMoreClassName = "",
   cardClass = "",
+  readMoreHref = null,
+  sectionClass = "min-h-[450px] md:min-h-[550px] lg:min-h-[600px] py-12 md:py-16",
 }) {
   const [open, setOpen] = useState(false);
 
@@ -48,7 +52,7 @@ export default function NepHero({
 
   return (
     <>
-      <section className="relative flex items-center min-h-[450px] md:min-h-[550px] lg:min-h-[600px] py-12 md:py-16 overflow-hidden">
+      <section className={`relative flex items-center overflow-hidden ${sectionClass}`}>
         <div
           className={`absolute inset-0 ${bgPosition} ${flipBg ? '[transform:scaleX(-1)]' : ''}`}
           style={{ backgroundImage: `url(${bgImage})` }}
@@ -59,6 +63,11 @@ export default function NepHero({
           >
             {eyebrow && <h3 style={{ color: '#FCF9F4' }}>{eyebrow}</h3>}
             <h2 className={titleColor ? titleColor : ''}>{title}</h2>
+            {subtitle && (
+              <h3 className={`mt-2 mb-4 font-linotte font-semibold text-base sm:text-lg uppercase tracking-wide ${subtitleColor || 'text-white/90'}`}>
+                {subtitle}
+              </h3>
+            )}
             {typeof description === 'string' ? (
               <p>{description}</p>
             ) : (
@@ -68,12 +77,13 @@ export default function NepHero({
             {showReadMore && (
               <div className="pt-2">
                 <ReadMoreButton
-                  onClick={() => setOpen(true)}
+                  href={readMoreHref}
+                  onClick={readMoreHref ? undefined : () => setOpen(true)}
                   text={readMoreText}
                   bgColor={readMoreBgColor}
                   className={`font-bold shadow-md ${readMoreClassName}`}
-                  aria-haspopup="dialog"
-                  aria-expanded={open}
+                  aria-haspopup={readMoreHref ? undefined : "dialog"}
+                  aria-expanded={readMoreHref ? undefined : open}
                 />
               </div>
             )}

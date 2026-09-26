@@ -19,9 +19,9 @@ export default function ReadMoreButton({
 
   const innerContent = (
     <>
-      <span>{content}</span>
+      <span className="text-center">{content}</span>
       {showArrow && (
-        <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+        <ArrowRight className="w-4 h-4 shrink-0 transition-transform duration-300 group-hover:translate-x-1" />
       )}
     </>
   );

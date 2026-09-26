@@ -32,6 +32,37 @@ export const seoMetadataMap = {
     "cta": "Book a School Tour",
     "notes": "Keep premium brand copy; add   location/service language above the fold without keyword stuffing."
   },
+  "/hitex/": {
+    "priority": "P0",
+    "pagePurpose": "HITEX Branch Centre Page",
+    "recommendedUrl": "https://www.myschoolitaly.com/hitex/",
+    "canonical": "https://www.myschoolitaly.com/hitex/",
+    "title": "Preschool, Daycare & Crèche in HITEX, Hyderabad | My School ITALY",
+    "description": "My School ITALY HITEX offers neuroscience-informed preschool, baby crèche, daycare, and corporate childcare near HiTech City, Hyderabad. Ages 45 days to 6 years.",
+    "h1": "HITEX — A Complete Day For A Growing Child",
+    "primaryKeyword": "preschool in HITEX Hyderabad",
+    "secondaryKeywords": [
+      "daycare HITEX Hyderabad",
+      "crèche HiTech City",
+      "corporate childcare HITEX",
+      "preschool HiTech City",
+      "The NeuroPi Way HITEX"
+    ],
+    "keywords": [
+      "preschool in HITEX Hyderabad",
+      "daycare HITEX Hyderabad",
+      "crèche HiTech City",
+      "corporate childcare HITEX",
+      "preschool HiTech City",
+      "The NeuroPi Way HITEX"
+    ],
+    "searchIntent": "Local / Commercial",
+    "internalLinksTo": "Programs; NeuroPi Way; Corporate Childcare; Contact",
+    "internalLinksFrom": "Homepage; Locations Hub; Footer",
+    "schema": "EducationalOrganization; ChildCare",
+    "cta": "Book a Tour at MSI HITEX",
+    "notes": "Dedicated HITEX campus page featuring programs, NeuroPi Way, parent partnership, and corporate childcare."
+  },
   "/preschool-daycare-hyderabad/": {
     "priority": "P0",
     "pagePurpose": "Hyderabad Locations Hub",

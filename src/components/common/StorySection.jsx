@@ -57,21 +57,27 @@ export default function StorySection({
   drawerTitle = "YOUR JOURNEY WITH MSI",
   drawerBody = null,
   className = "py-20 bg-[#f7f9fc]",
+  containerClass = "max-w-5xl mx-auto",
+  imageClass = "w-full h-auto rounded-2xl shadow-lg",
+  imageWrapperClass = "overflow-hidden rounded-2xl shadow-xl",
+  readMoreHref = null,
 }) {
   const [open, setOpen] = useState(false);
 
   return (
     <section className={className}>
       <div className="container mx-auto px-4 md:px-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
-          <ScrollReveal direction="right" delay={0.1}>
-            <Image
-              src={imageSrc}
-              alt={imageAlt}
-              width={800}
-              height={534}
-              className="w-full h-auto rounded-2xl shadow-lg"
-            />
+        <div className={`grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center ${containerClass}`}>
+          <ScrollReveal direction="right" delay={0.1} className="w-full">
+            <div className={imageWrapperClass}>
+              <Image
+                src={imageSrc}
+                alt={imageAlt}
+                width={800}
+                height={534}
+                className={imageClass}
+              />
+            </div>
           </ScrollReveal>
           <ScrollReveal direction="left" delay={0.2}>
             {typeof eyebrow === 'string' ? (
@@ -87,13 +93,14 @@ export default function StorySection({
               <h3>{eyebrow}</h3>
             )}
             <h2>{title}</h2>
-            {p1 && <p>{p1}</p>}
-            {p2 && <p>{p2}</p>}
+            {p1 && (typeof p1 === 'string' ? <p>{p1}</p> : p1)}
+            {p2 && (typeof p2 === 'string' ? <p>{p2}</p> : p2)}
 
             <ReadMoreButton
-              onClick={() => setOpen(true)}
-              aria-haspopup="dialog"
-              aria-expanded={open}
+              href={readMoreHref}
+              onClick={readMoreHref ? undefined : () => setOpen(true)}
+              aria-haspopup={readMoreHref ? undefined : "dialog"}
+              aria-expanded={readMoreHref ? undefined : open}
               className="mt-8 font-bold"
             />
           </ScrollReveal>

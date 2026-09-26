@@ -32,8 +32,13 @@ export default function OneJourneySection({
   videoUrl = null,
   showBeeIcon = true,
   showReadMore = false,
+  readMoreText = "Read More",
+  readMoreBgColor = "bg-msi-blue hover:bg-msi-blue/90",
   readMoreDrawerTitle = null,
   readMoreDrawerBody = null,
+  readMoreHref = null,
+  imageAspect = "aspect-[16/9]",
+  imageClass = "object-cover",
 }) {
   const [open, setOpen] = useState(false);
   const hasDrawer = Boolean(readMoreDrawerBody);
@@ -70,7 +75,16 @@ export default function OneJourneySection({
             >
               {eyebrow && (
                 <h3 className={`mb-2 text-msi-purple ${eyebrowClass}`}>
-                  {eyebrow}
+                  {typeof eyebrow === 'string' ? (
+                    eyebrow.split('\n').map((line, idx) => (
+                      <React.Fragment key={idx}>
+                        {line}
+                        {idx < eyebrow.split('\n').length - 1 && <br />}
+                      </React.Fragment>
+                    ))
+                  ) : (
+                    eyebrow
+                  )}
                 </h3>
               )}
               {title && (
@@ -100,11 +114,14 @@ export default function OneJourneySection({
               </div>
 
               {isReadMoreVisible && (
-                <div className="mt-5">
+                <div className="mt-6 md:mt-8 pt-2">
                   <ReadMoreButton
-                    onClick={() => setOpen(true)}
-                    aria-haspopup="dialog"
-                    aria-expanded={open}
+                    href={readMoreHref}
+                    text={readMoreText}
+                    bgColor={readMoreBgColor}
+                    onClick={readMoreHref ? undefined : () => setOpen(true)}
+                    aria-haspopup={readMoreHref ? undefined : "dialog"}
+                    aria-expanded={readMoreHref ? undefined : open}
                     className="font-bold shadow-md"
                   />
                 </div>
@@ -141,13 +158,13 @@ export default function OneJourneySection({
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="lg:col-span-5 aspect-[16/9] w-full relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white"
+                className={`lg:col-span-5 ${imageAspect} w-full relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white`}
               >
                 <Image
                   src={imageSrc}
                   alt={imageAlt}
                   fill
-                  className="object-cover"
+                  className={imageClass}
                   sizes="(max-width: 1024px) 100vw, 45vw"
                 />
               </motion.div>

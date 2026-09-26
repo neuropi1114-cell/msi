@@ -1,0 +1,2180 @@
+{
+  "metadata": {
+    "source_file": "MSI_Centre_Micro_Location_SEO_Map_with_Distance_Drive_Time.xlsx",
+    "title": "My School ITALY — Centre-by-Centre Micro-Location SEO Map",
+    "seo_note": "Use surrounding neighbourhood names naturally inside each centre page, as Footprints does. Do not stuff every locality into one paragraph. Mention only places genuinely served by the centre; verify travel relevance before publishing.",
+    "distance_drive_time_note": "Planning estimates for parent convenience. Road distance and drive time vary by exact starting point, route, school-hour traffic, roadworks and weather. Before publishing a precise number on the website, the local centre team should verify the route in Google Maps from a representative landmark in each micro-location."
+  },
+  "analysis_summary": {
+    "total_centres": 18,
+    "centres_by_city": {
+      "Hyderabad": 11,
+      "Pune": 2,
+      "Bhimavaram": 1,
+      "Tadepalligudem": 1,
+      "Berhampur / Brahmapur": 3
+    },
+    "total_distance_drive_time_records": 129,
+    "unique_micro_locations_in_distance_table": 90,
+    "proximity_band_counts": {
+      "Very Close": 44,
+      "Close": 75,
+      "Wider Catchment": 10
+    },
+    "website_usage_counts": {
+      "Yes": 119,
+      "Use selectively": 10
+    },
+    "centres_requiring_final_confirmation": [
+      {
+        "city": "Hyderabad",
+        "centre": "Avance H06 / Avance 2",
+        "verification_status": "Centre verified; confirm H06 naming/address before publishing"
+      },
+      {
+        "city": "Hyderabad",
+        "centre": "Kukatpally",
+        "verification_status": "Verified centre; verify exact catchment before publishing"
+      },
+      {
+        "city": "Hyderabad",
+        "centre": "Manikonda",
+        "verification_status": "Verified centre; micro-locations should be map-checked before final copy"
+      },
+      {
+        "city": "Hyderabad",
+        "centre": "Cyberabad Police Commissionerate",
+        "verification_status": "Verified listing; confirm public-enrolment wording"
+      },
+      {
+        "city": "Pune",
+        "centre": "Purna Nagar",
+        "verification_status": "Verified centre; verify outer catchment before publishing"
+      },
+      {
+        "city": "Tadepalligudem",
+        "centre": "Tadepalligudem",
+        "verification_status": "Centre address verified; micro-locations need local team confirmation"
+      },
+      {
+        "city": "Berhampur / Brahmapur",
+        "centre": "Tata Benz Square",
+        "verification_status": "Official MSI branch address; confirm exact active listing/name"
+      },
+      {
+        "city": "Berhampur / Brahmapur",
+        "centre": "Konisi",
+        "verification_status": "Google listing verified; confirm current active branch"
+      },
+      {
+        "city": "Berhampur / Brahmapur",
+        "centre": "Courtpeta",
+        "verification_status": "Google listing found; verify whether this is an active MSI centre before publishing"
+      }
+    ],
+    "data_integrity": {
+      "all_centre_micro_locations_have_matching_distance_records": true,
+      "all_distance_estimates_are_planning_estimates": true
+    }
+  },
+  "centres": [
+    {
+      "city": "Hyderabad",
+      "centre": "HITEX",
+      "verified_address_or_anchor": "Hitex Road, next to HITEX Exhibition Centre Gate, Shilpa Layout, Izzathnagar, Hyderabad 500084",
+      "primary_locality": "HITEX / Izzathnagar",
+      "micro_locations": [
+        "Izzathnagar",
+        "Shilpa Layout",
+        "Kothaguda",
+        "Kondapur",
+        "Hafeezpet",
+        "Madhapur",
+        "HITEC City"
+      ],
+      "nearby_employment_or_landmark_signals": [
+        "HITEX Exhibition Centre",
+        "Kondapur–HITEC City corridor"
+      ],
+      "suggested_natural_website_copy": "Conveniently located on HITEX Road beside the HITEX Exhibition Centre, My School ITALY HITEX serves families from Izzathnagar, Shilpa Layout, Kothaguda, Kondapur, Hafeezpet, Madhapur and the wider HITEC City corridor.",
+      "suggested_local_search_phrases": [
+        "preschool near HITEX",
+        "daycare near HITEX",
+        "preschool Izzathnagar",
+        "daycare Shilpa Layout",
+        "preschool near Kothaguda",
+        "daycare Kondapur"
+      ],
+      "verification_status": "Verified centre; micro-areas researched",
+      "sources": [
+        "https://myschoolitaly.com/contact-us/",
+        "Google Business: My School ITALY HITEX"
+      ],
+      "ready_website_copy": {
+        "suggested_heading": "Preschool & Daycare in HITEX",
+        "paragraph": "Conveniently located on HITEX Road beside the HITEX Exhibition Centre, My School ITALY HITEX serves families from Izzathnagar, Shilpa Layout, Kothaguda, Kondapur, Hafeezpet, Madhapur and the wider HITEC City corridor.",
+        "micro_location_keywords": [
+          "Izzathnagar",
+          "Shilpa Layout",
+          "Kothaguda",
+          "Kondapur",
+          "Hafeezpet",
+          "Madhapur",
+          "HITEC City"
+        ],
+        "cta": "Book a Centre Tour"
+      },
+      "distance_and_drive_time": [
+        {
+          "micro_location": "Izzathnagar",
+          "approx_road_distance": "0.5–2 km",
+          "approx_drive_time": "3–8 min",
+          "proximity_band": "Very Close",
+          "parent_friendly_website_wording": "Izzathnagar is very close to the centre — approximately 0.5–2 km by road, usually around 3–8 min depending on traffic.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Shilpa Layout",
+          "approx_road_distance": "0.5–2 km",
+          "approx_drive_time": "3–8 min",
+          "proximity_band": "Very Close",
+          "parent_friendly_website_wording": "Shilpa Layout is very close to the centre — approximately 0.5–2 km by road, usually around 3–8 min depending on traffic.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Kothaguda",
+          "approx_road_distance": "2–4 km",
+          "approx_drive_time": "8–15 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Kothaguda can typically reach the centre in about 8–15 min; the approximate road distance is 2–4 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Kondapur",
+          "approx_road_distance": "3–5 km",
+          "approx_drive_time": "10–18 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Kondapur can typically reach the centre in about 10–18 min; the approximate road distance is 3–5 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Hafeezpet",
+          "approx_road_distance": "4–7 km",
+          "approx_drive_time": "12–25 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Hafeezpet can typically reach the centre in about 12–25 min; the approximate road distance is 4–7 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Madhapur",
+          "approx_road_distance": "4–7 km",
+          "approx_drive_time": "12–25 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Madhapur can typically reach the centre in about 12–25 min; the approximate road distance is 4–7 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "HITEC City",
+          "approx_road_distance": "3–6 km",
+          "approx_drive_time": "10–22 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from HITEC City can typically reach the centre in about 10–22 min; the approximate road distance is 3–6 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        }
+      ]
+    },
+    {
+      "city": "Hyderabad",
+      "centre": "Q-City",
+      "verified_address_or_anchor": "Wipro Circle Road, Gachibowli, Nanakramguda, Hyderabad 500046",
+      "primary_locality": "Nanakramguda / Gachibowli",
+      "micro_locations": [
+        "Nanakramguda",
+        "Financial District",
+        "Gachibowli",
+        "Khajaguda",
+        "Puppalaguda",
+        "Narsingi",
+        "Kokapet",
+        "Gopanpally"
+      ],
+      "nearby_employment_or_landmark_signals": [
+        "Q-City",
+        "Wipro Circle",
+        "Financial District",
+        "western IT corridor"
+      ],
+      "suggested_natural_website_copy": "Located near Wipro Circle at Q-City, our centre is well placed for families living or working in Nanakramguda, the Financial District, Gachibowli, Khajaguda, Puppalaguda, Narsingi, Kokapet and Gopanpally.",
+      "suggested_local_search_phrases": [
+        "daycare near Q City",
+        "preschool Nanakramguda",
+        "daycare Financial District",
+        "preschool Gachibowli",
+        "childcare near Wipro Circle"
+      ],
+      "verification_status": "Verified centre; micro-areas researched",
+      "sources": [
+        "https://myschoolitaly.com/qcity-msi1/",
+        "https://hydrealtypro.com/financial-district/"
+      ],
+      "ready_website_copy": {
+        "suggested_heading": "Preschool & Daycare in Nanakramguda",
+        "paragraph": "Located near Wipro Circle at Q-City, our centre is well placed for families living or working in Nanakramguda, the Financial District, Gachibowli, Khajaguda, Puppalaguda, Narsingi, Kokapet and Gopanpally.",
+        "micro_location_keywords": [
+          "Nanakramguda",
+          "Financial District",
+          "Gachibowli",
+          "Khajaguda",
+          "Puppalaguda",
+          "Narsingi",
+          "Kokapet",
+          "Gopanpally"
+        ],
+        "cta": "Book a Centre Tour"
+      },
+      "distance_and_drive_time": [
+        {
+          "micro_location": "Nanakramguda",
+          "approx_road_distance": "0.5–2 km",
+          "approx_drive_time": "3–8 min",
+          "proximity_band": "Very Close",
+          "parent_friendly_website_wording": "Nanakramguda is very close to the centre — approximately 0.5–2 km by road, usually around 3–8 min depending on traffic.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Financial District",
+          "approx_road_distance": "1–4 km",
+          "approx_drive_time": "5–12 min",
+          "proximity_band": "Very Close",
+          "parent_friendly_website_wording": "Conveniently accessible from Financial District, approximately 1–4 km by road and typically around 5–12 min depending on traffic.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Gachibowli",
+          "approx_road_distance": "3–6 km",
+          "approx_drive_time": "10–20 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Gachibowli can typically reach the centre in about 10–20 min; the approximate road distance is 3–6 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Khajaguda",
+          "approx_road_distance": "4–7 km",
+          "approx_drive_time": "12–25 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Khajaguda can typically reach the centre in about 12–25 min; the approximate road distance is 4–7 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Puppalaguda",
+          "approx_road_distance": "5–8 km",
+          "approx_drive_time": "15–30 min",
+          "proximity_band": "Wider Catchment",
+          "parent_friendly_website_wording": "The centre is also within wider reach of Puppalaguda, approximately 5–8 km by road; allow around 15–30 min depending on traffic.",
+          "use_on_website": "Use selectively",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Narsingi",
+          "approx_road_distance": "5–8 km",
+          "approx_drive_time": "15–30 min",
+          "proximity_band": "Wider Catchment",
+          "parent_friendly_website_wording": "The centre is also within wider reach of Narsingi, approximately 5–8 km by road; allow around 15–30 min depending on traffic.",
+          "use_on_website": "Use selectively",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Kokapet",
+          "approx_road_distance": "5–9 km",
+          "approx_drive_time": "15–30 min",
+          "proximity_band": "Wider Catchment",
+          "parent_friendly_website_wording": "The centre is also within wider reach of Kokapet, approximately 5–9 km by road; allow around 15–30 min depending on traffic.",
+          "use_on_website": "Use selectively",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Gopanpally",
+          "approx_road_distance": "5–9 km",
+          "approx_drive_time": "15–30 min",
+          "proximity_band": "Wider Catchment",
+          "parent_friendly_website_wording": "The centre is also within wider reach of Gopanpally, approximately 5–9 km by road; allow around 15–30 min depending on traffic.",
+          "use_on_website": "Use selectively",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        }
+      ]
+    },
+    {
+      "city": "Hyderabad",
+      "centre": "Avance H04",
+      "verified_address_or_anchor": "aVance Business Hub, Phoenix Infocity SEZ, H04, HUDA Techno Enclave, Gachibowli, Hyderabad 500081",
+      "primary_locality": "Gachibowli / HUDA Techno Enclave",
+      "micro_locations": [
+        "Gachibowli",
+        "HUDA Techno Enclave",
+        "Kondapur",
+        "Whitefields",
+        "HITEC City",
+        "Nanakramguda",
+        "Financial District"
+      ],
+      "nearby_employment_or_landmark_signals": [
+        "aVance Business Hub",
+        "Phoenix Infocity",
+        "IT corridor"
+      ],
+      "suggested_natural_website_copy": "My School ITALY at aVance H04 supports families across Gachibowli and the HUDA Techno Enclave, with convenient access from Kondapur, Whitefields, HITEC City, Nanakramguda and the Financial District.",
+      "suggested_local_search_phrases": [
+        "corporate daycare Avance H04",
+        "daycare Gachibowli",
+        "creche HUDA Techno Enclave",
+        "childcare near Phoenix Infocity"
+      ],
+      "verification_status": "Verified address",
+      "sources": [
+        "https://myschoolitaly.com/avance/"
+      ],
+      "ready_website_copy": {
+        "suggested_heading": "Preschool & Daycare in Gachibowli",
+        "paragraph": "My School ITALY at aVance H04 supports families across Gachibowli and the HUDA Techno Enclave, with convenient access from Kondapur, Whitefields, HITEC City, Nanakramguda and the Financial District.",
+        "micro_location_keywords": [
+          "Gachibowli",
+          "HUDA Techno Enclave",
+          "Kondapur",
+          "Whitefields",
+          "HITEC City",
+          "Nanakramguda",
+          "Financial District"
+        ],
+        "cta": "Book a Centre Tour"
+      },
+      "distance_and_drive_time": [
+        {
+          "micro_location": "Gachibowli",
+          "approx_road_distance": "1–4 km",
+          "approx_drive_time": "5–15 min",
+          "proximity_band": "Very Close",
+          "parent_friendly_website_wording": "Conveniently accessible from Gachibowli, approximately 1–4 km by road and typically around 5–15 min depending on traffic.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "HUDA Techno Enclave",
+          "approx_road_distance": "0.5–2 km",
+          "approx_drive_time": "3–8 min",
+          "proximity_band": "Very Close",
+          "parent_friendly_website_wording": "HUDA Techno Enclave is very close to the centre — approximately 0.5–2 km by road, usually around 3–8 min depending on traffic.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Kondapur",
+          "approx_road_distance": "3–6 km",
+          "approx_drive_time": "10–20 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Kondapur can typically reach the centre in about 10–20 min; the approximate road distance is 3–6 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Whitefields",
+          "approx_road_distance": "2–5 km",
+          "approx_drive_time": "8–18 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Whitefields can typically reach the centre in about 8–18 min; the approximate road distance is 2–5 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "HITEC City",
+          "approx_road_distance": "2–5 km",
+          "approx_drive_time": "8–18 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from HITEC City can typically reach the centre in about 8–18 min; the approximate road distance is 2–5 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Nanakramguda",
+          "approx_road_distance": "4–7 km",
+          "approx_drive_time": "12–25 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Nanakramguda can typically reach the centre in about 12–25 min; the approximate road distance is 4–7 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Financial District",
+          "approx_road_distance": "4–8 km",
+          "approx_drive_time": "12–28 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Financial District can typically reach the centre in about 12–28 min; the approximate road distance is 4–8 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        }
+      ]
+    },
+    {
+      "city": "Hyderabad",
+      "centre": "Avance H06 / Avance 2",
+      "verified_address_or_anchor": "Phase 2, HITEC City, Hyderabad 500081",
+      "primary_locality": "HITEC City Phase 2",
+      "micro_locations": [
+        "HITEC City",
+        "Madhapur",
+        "Whitefields",
+        "Kondapur",
+        "Kothaguda",
+        "Gachibowli",
+        "Raidurg"
+      ],
+      "nearby_employment_or_landmark_signals": [
+        "aVance / HITEC City Phase 2",
+        "major technology campuses"
+      ],
+      "suggested_natural_website_copy": "Situated in HITEC City Phase 2, My School ITALY aVance is convenient for working families from HITEC City, Madhapur, Whitefields, Kondapur, Kothaguda, Gachibowli and Raidurg.",
+      "suggested_local_search_phrases": [
+        "daycare Avance H06",
+        "corporate creche HITEC City",
+        "daycare Madhapur",
+        "childcare Whitefields"
+      ],
+      "verification_status": "Centre verified; confirm H06 naming/address before publishing",
+      "sources": [
+        "https://myschoolitaly.com/pre-school/",
+        "Google Business: My School ITALY aVance"
+      ],
+      "ready_website_copy": {
+        "suggested_heading": "Preschool & Daycare in HITEC City Phase 2",
+        "paragraph": "Situated in HITEC City Phase 2, My School ITALY aVance is convenient for working families from HITEC City, Madhapur, Whitefields, Kondapur, Kothaguda, Gachibowli and Raidurg.",
+        "micro_location_keywords": [
+          "HITEC City",
+          "Madhapur",
+          "Whitefields",
+          "Kondapur",
+          "Kothaguda",
+          "Gachibowli",
+          "Raidurg"
+        ],
+        "cta": "Book a Centre Tour"
+      },
+      "distance_and_drive_time": [
+        {
+          "micro_location": "HITEC City",
+          "approx_road_distance": "0.5–3 km",
+          "approx_drive_time": "3–10 min",
+          "proximity_band": "Very Close",
+          "parent_friendly_website_wording": "HITEC City is very close to the centre — approximately 0.5–3 km by road, usually around 3–10 min depending on traffic.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Madhapur",
+          "approx_road_distance": "2–5 km",
+          "approx_drive_time": "8–18 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Madhapur can typically reach the centre in about 8–18 min; the approximate road distance is 2–5 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Whitefields",
+          "approx_road_distance": "2–4 km",
+          "approx_drive_time": "7–15 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Whitefields can typically reach the centre in about 7–15 min; the approximate road distance is 2–4 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Kondapur",
+          "approx_road_distance": "3–6 km",
+          "approx_drive_time": "10–20 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Kondapur can typically reach the centre in about 10–20 min; the approximate road distance is 3–6 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Kothaguda",
+          "approx_road_distance": "3–6 km",
+          "approx_drive_time": "10–20 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Kothaguda can typically reach the centre in about 10–20 min; the approximate road distance is 3–6 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Gachibowli",
+          "approx_road_distance": "3–6 km",
+          "approx_drive_time": "10–20 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Gachibowli can typically reach the centre in about 10–20 min; the approximate road distance is 3–6 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Raidurg",
+          "approx_road_distance": "3–6 km",
+          "approx_drive_time": "10–22 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Raidurg can typically reach the centre in about 10–22 min; the approximate road distance is 3–6 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        }
+      ]
+    },
+    {
+      "city": "Hyderabad",
+      "centre": "Mindspace",
+      "verified_address_or_anchor": "KTC Illumination, Mindspace Madhapur Road, opposite Westin Hotel, Vittal Rao Nagar, Madhapur, Hyderabad 500081",
+      "primary_locality": "Mindspace / Madhapur",
+      "micro_locations": [
+        "Vittal Rao Nagar",
+        "Madhapur",
+        "HITEC City",
+        "Kavuri Hills",
+        "Raidurg",
+        "Whitefields",
+        "Kondapur"
+      ],
+      "nearby_employment_or_landmark_signals": [
+        "Raheja Mindspace",
+        "Westin",
+        "Inorbit Mall",
+        "HITEC City"
+      ],
+      "suggested_natural_website_copy": "Our Mindspace centre, opposite The Westin in Madhapur, is convenient for families from Vittal Rao Nagar, Madhapur, HITEC City, Kavuri Hills, Raidurg, Whitefields and Kondapur.",
+      "suggested_local_search_phrases": [
+        "daycare near Mindspace",
+        "preschool Madhapur",
+        "creche near Westin Hyderabad",
+        "daycare HITEC City",
+        "preschool Vittal Rao Nagar"
+      ],
+      "verification_status": "Verified centre",
+      "sources": [
+        "Google Business: My School ITALY Mind Space"
+      ],
+      "ready_website_copy": {
+        "suggested_heading": "Preschool & Daycare in Mindspace",
+        "paragraph": "Our Mindspace centre, opposite The Westin in Madhapur, is convenient for families from Vittal Rao Nagar, Madhapur, HITEC City, Kavuri Hills, Raidurg, Whitefields and Kondapur.",
+        "micro_location_keywords": [
+          "Vittal Rao Nagar",
+          "Madhapur",
+          "HITEC City",
+          "Kavuri Hills",
+          "Raidurg",
+          "Whitefields",
+          "Kondapur"
+        ],
+        "cta": "Book a Centre Tour"
+      },
+      "distance_and_drive_time": [
+        {
+          "micro_location": "Vittal Rao Nagar",
+          "approx_road_distance": "0.5–2 km",
+          "approx_drive_time": "3–8 min",
+          "proximity_band": "Very Close",
+          "parent_friendly_website_wording": "Vittal Rao Nagar is very close to the centre — approximately 0.5–2 km by road, usually around 3–8 min depending on traffic.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Madhapur",
+          "approx_road_distance": "0.5–3 km",
+          "approx_drive_time": "3–12 min",
+          "proximity_band": "Very Close",
+          "parent_friendly_website_wording": "Madhapur is very close to the centre — approximately 0.5–3 km by road, usually around 3–12 min depending on traffic.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "HITEC City",
+          "approx_road_distance": "1–4 km",
+          "approx_drive_time": "5–15 min",
+          "proximity_band": "Very Close",
+          "parent_friendly_website_wording": "Conveniently accessible from HITEC City, approximately 1–4 km by road and typically around 5–15 min depending on traffic.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Kavuri Hills",
+          "approx_road_distance": "2–4 km",
+          "approx_drive_time": "8–15 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Kavuri Hills can typically reach the centre in about 8–15 min; the approximate road distance is 2–4 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Raidurg",
+          "approx_road_distance": "2–5 km",
+          "approx_drive_time": "8–18 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Raidurg can typically reach the centre in about 8–18 min; the approximate road distance is 2–5 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Whitefields",
+          "approx_road_distance": "3–5 km",
+          "approx_drive_time": "10–18 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Whitefields can typically reach the centre in about 10–18 min; the approximate road distance is 3–5 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Kondapur",
+          "approx_road_distance": "4–7 km",
+          "approx_drive_time": "12–25 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Kondapur can typically reach the centre in about 12–25 min; the approximate road distance is 4–7 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        }
+      ]
+    },
+    {
+      "city": "Hyderabad",
+      "centre": "Kavuri Hills",
+      "verified_address_or_anchor": "Kavuri Hills Phase 2 Road, Doctor's Colony, Madhapur, Hyderabad 500033",
+      "primary_locality": "Kavuri Hills / Madhapur",
+      "micro_locations": [
+        "Kavuri Hills",
+        "Doctor's Colony",
+        "Madhapur",
+        "Jubilee Hills",
+        "Venkatagiri",
+        "Megha Hills",
+        "HITEC City",
+        "Whitefields"
+      ],
+      "nearby_employment_or_landmark_signals": [
+        "Durgam Cheruvu",
+        "Madhapur Metro",
+        "Mindspace",
+        "Jubilee Hills"
+      ],
+      "suggested_natural_website_copy": "My School ITALY Kavuri Hills serves families across Kavuri Hills, Doctor's Colony and Madhapur, with easy access from Jubilee Hills, Venkatagiri, Megha Hills, HITEC City and Whitefields.",
+      "suggested_local_search_phrases": [
+        "preschool Kavuri Hills",
+        "daycare Madhapur",
+        "preschool near Jubilee Hills",
+        "daycare Doctors Colony",
+        "preschool near Durgam Cheruvu"
+      ],
+      "verification_status": "Verified centre; micro-areas researched",
+      "sources": [
+        "https://www.magicbricks.com/Kavuri-Hills-in-Hyderabad-Overview"
+      ],
+      "ready_website_copy": {
+        "suggested_heading": "Preschool & Daycare in Kavuri Hills",
+        "paragraph": "My School ITALY Kavuri Hills serves families across Kavuri Hills, Doctor's Colony and Madhapur, with easy access from Jubilee Hills, Venkatagiri, Megha Hills, HITEC City and Whitefields.",
+        "micro_location_keywords": [
+          "Kavuri Hills",
+          "Doctor's Colony",
+          "Madhapur",
+          "Jubilee Hills",
+          "Venkatagiri",
+          "Megha Hills",
+          "HITEC City",
+          "Whitefields"
+        ],
+        "cta": "Book a Centre Tour"
+      },
+      "distance_and_drive_time": [
+        {
+          "micro_location": "Kavuri Hills",
+          "approx_road_distance": "0.5–2 km",
+          "approx_drive_time": "3–8 min",
+          "proximity_band": "Very Close",
+          "parent_friendly_website_wording": "Kavuri Hills is very close to the centre — approximately 0.5–2 km by road, usually around 3–8 min depending on traffic.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Doctor's Colony",
+          "approx_road_distance": "0.5–2 km",
+          "approx_drive_time": "3–8 min",
+          "proximity_band": "Very Close",
+          "parent_friendly_website_wording": "Doctor's Colony is very close to the centre — approximately 0.5–2 km by road, usually around 3–8 min depending on traffic.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Madhapur",
+          "approx_road_distance": "2–4 km",
+          "approx_drive_time": "8–15 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Madhapur can typically reach the centre in about 8–15 min; the approximate road distance is 2–4 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Jubilee Hills",
+          "approx_road_distance": "3–6 km",
+          "approx_drive_time": "10–22 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Jubilee Hills can typically reach the centre in about 10–22 min; the approximate road distance is 3–6 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Venkatagiri",
+          "approx_road_distance": "3–6 km",
+          "approx_drive_time": "10–22 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Venkatagiri can typically reach the centre in about 10–22 min; the approximate road distance is 3–6 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Megha Hills",
+          "approx_road_distance": "2–4 km",
+          "approx_drive_time": "8–15 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Megha Hills can typically reach the centre in about 8–15 min; the approximate road distance is 2–4 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "HITEC City",
+          "approx_road_distance": "3–6 km",
+          "approx_drive_time": "10–22 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from HITEC City can typically reach the centre in about 10–22 min; the approximate road distance is 3–6 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Whitefields",
+          "approx_road_distance": "4–7 km",
+          "approx_drive_time": "12–25 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Whitefields can typically reach the centre in about 12–25 min; the approximate road distance is 4–7 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        }
+      ]
+    },
+    {
+      "city": "Hyderabad",
+      "centre": "Miyapur",
+      "verified_address_or_anchor": "Plot 26 & 27, Sri Rangapuram Colony / Sri Aurobindo Colony, near JP Nagar Road, Miyapur, Hyderabad 500049",
+      "primary_locality": "Miyapur / Sri Aurobindo Colony",
+      "micro_locations": [
+        "Sri Aurobindo Colony",
+        "JPN Nagar",
+        "Rangapuram",
+        "Madinaguda",
+        "Hafeezpet",
+        "Alwyn Cross Roads",
+        "Prasanth Nagar",
+        "Miyapur"
+      ],
+      "nearby_employment_or_landmark_signals": [
+        "Miyapur Metro corridor",
+        "Madinaguda",
+        "Hafeezpet"
+      ],
+      "suggested_natural_website_copy": "Our Miyapur centre is located in Sri Aurobindo Colony and is convenient for families from JPN Nagar, Rangapuram, Madinaguda, Hafeezpet, Alwyn Cross Roads, Prasanth Nagar and wider Miyapur.",
+      "suggested_local_search_phrases": [
+        "preschool Miyapur",
+        "daycare Sri Aurobindo Colony",
+        "preschool Madinaguda",
+        "daycare Hafeezpet",
+        "creche near Miyapur"
+      ],
+      "verification_status": "Verified centre; nearby areas researched",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/sri-aurobindo-colony-miyapur-hyderabad-liqlt"
+      ],
+      "ready_website_copy": {
+        "suggested_heading": "Preschool & Daycare in Miyapur",
+        "paragraph": "Our Miyapur centre is located in Sri Aurobindo Colony and is convenient for families from JPN Nagar, Rangapuram, Madinaguda, Hafeezpet, Alwyn Cross Roads, Prasanth Nagar and wider Miyapur.",
+        "micro_location_keywords": [
+          "Sri Aurobindo Colony",
+          "JPN Nagar",
+          "Rangapuram",
+          "Madinaguda",
+          "Hafeezpet",
+          "Alwyn Cross Roads",
+          "Prasanth Nagar",
+          "Miyapur"
+        ],
+        "cta": "Book a Centre Tour"
+      },
+      "distance_and_drive_time": [
+        {
+          "micro_location": "Sri Aurobindo Colony",
+          "approx_road_distance": "0.5–2 km",
+          "approx_drive_time": "3–8 min",
+          "proximity_band": "Very Close",
+          "parent_friendly_website_wording": "Sri Aurobindo Colony is very close to the centre — approximately 0.5–2 km by road, usually around 3–8 min depending on traffic.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "JPN Nagar",
+          "approx_road_distance": "1–3 km",
+          "approx_drive_time": "5–10 min",
+          "proximity_band": "Very Close",
+          "parent_friendly_website_wording": "Conveniently accessible from JPN Nagar, approximately 1–3 km by road and typically around 5–10 min depending on traffic.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Rangapuram",
+          "approx_road_distance": "0.5–2 km",
+          "approx_drive_time": "3–8 min",
+          "proximity_band": "Very Close",
+          "parent_friendly_website_wording": "Rangapuram is very close to the centre — approximately 0.5–2 km by road, usually around 3–8 min depending on traffic.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Madinaguda",
+          "approx_road_distance": "2–5 km",
+          "approx_drive_time": "8–18 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Madinaguda can typically reach the centre in about 8–18 min; the approximate road distance is 2–5 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Hafeezpet",
+          "approx_road_distance": "4–7 km",
+          "approx_drive_time": "12–25 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Hafeezpet can typically reach the centre in about 12–25 min; the approximate road distance is 4–7 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Alwyn Cross Roads",
+          "approx_road_distance": "2–5 km",
+          "approx_drive_time": "8–18 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Alwyn Cross Roads can typically reach the centre in about 8–18 min; the approximate road distance is 2–5 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Prasanth Nagar",
+          "approx_road_distance": "2–5 km",
+          "approx_drive_time": "8–18 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Prasanth Nagar can typically reach the centre in about 8–18 min; the approximate road distance is 2–5 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Miyapur",
+          "approx_road_distance": "1–4 km",
+          "approx_drive_time": "5–15 min",
+          "proximity_band": "Very Close",
+          "parent_friendly_website_wording": "Conveniently accessible from Miyapur, approximately 1–4 km by road and typically around 5–15 min depending on traffic.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        }
+      ]
+    },
+    {
+      "city": "Hyderabad",
+      "centre": "Kukatpally",
+      "verified_address_or_anchor": "Gokul Plots, Venkata Ramana Colony, KPHB Phase 9 / Hafeezpet, Hyderabad 500085",
+      "primary_locality": "Kukatpally / Gokul Plots",
+      "micro_locations": [
+        "Gokul Plots",
+        "KPHB Phase 9",
+        "Venkata Ramana Colony",
+        "Hafeezpet",
+        "Kondapur",
+        "Miyapur",
+        "Allwyn Colony",
+        "KPHB"
+      ],
+      "nearby_employment_or_landmark_signals": [
+        "KPHB–Hafeezpet–Kondapur residential corridor"
+      ],
+      "suggested_natural_website_copy": "Located in Gokul Plots near KPHB Phase 9, our Kukatpally centre is accessible to families from Venkata Ramana Colony, Hafeezpet, Kondapur, Miyapur, Allwyn Colony and the wider KPHB area.",
+      "suggested_local_search_phrases": [
+        "preschool Kukatpally",
+        "daycare KPHB",
+        "preschool Gokul Plots",
+        "daycare Hafeezpet",
+        "creche KPHB Phase 9"
+      ],
+      "verification_status": "Verified centre; verify exact catchment before publishing",
+      "sources": [
+        "Google Business: My School ITALY Kukatpally"
+      ],
+      "ready_website_copy": {
+        "suggested_heading": "Preschool & Daycare in Kukatpally",
+        "paragraph": "Located in Gokul Plots near KPHB Phase 9, our Kukatpally centre is accessible to families from Venkata Ramana Colony, Hafeezpet, Kondapur, Miyapur, Allwyn Colony and the wider KPHB area.",
+        "micro_location_keywords": [
+          "Gokul Plots",
+          "KPHB Phase 9",
+          "Venkata Ramana Colony",
+          "Hafeezpet",
+          "Kondapur",
+          "Miyapur",
+          "Allwyn Colony",
+          "KPHB"
+        ],
+        "cta": "Book a Centre Tour"
+      },
+      "distance_and_drive_time": [
+        {
+          "micro_location": "Gokul Plots",
+          "approx_road_distance": "0.5–2 km",
+          "approx_drive_time": "3–8 min",
+          "proximity_band": "Very Close",
+          "parent_friendly_website_wording": "Gokul Plots is very close to the centre — approximately 0.5–2 km by road, usually around 3–8 min depending on traffic.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "KPHB Phase 9",
+          "approx_road_distance": "0.5–2 km",
+          "approx_drive_time": "3–8 min",
+          "proximity_band": "Very Close",
+          "parent_friendly_website_wording": "KPHB Phase 9 is very close to the centre — approximately 0.5–2 km by road, usually around 3–8 min depending on traffic.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Venkata Ramana Colony",
+          "approx_road_distance": "0.5–2 km",
+          "approx_drive_time": "3–8 min",
+          "proximity_band": "Very Close",
+          "parent_friendly_website_wording": "Venkata Ramana Colony is very close to the centre — approximately 0.5–2 km by road, usually around 3–8 min depending on traffic.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Hafeezpet",
+          "approx_road_distance": "2–5 km",
+          "approx_drive_time": "8–18 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Hafeezpet can typically reach the centre in about 8–18 min; the approximate road distance is 2–5 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Kondapur",
+          "approx_road_distance": "4–7 km",
+          "approx_drive_time": "12–25 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Kondapur can typically reach the centre in about 12–25 min; the approximate road distance is 4–7 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Miyapur",
+          "approx_road_distance": "4–7 km",
+          "approx_drive_time": "12–25 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Miyapur can typically reach the centre in about 12–25 min; the approximate road distance is 4–7 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Allwyn Colony",
+          "approx_road_distance": "2–5 km",
+          "approx_drive_time": "8–18 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Allwyn Colony can typically reach the centre in about 8–18 min; the approximate road distance is 2–5 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "KPHB",
+          "approx_road_distance": "2–5 km",
+          "approx_drive_time": "8–18 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from KPHB can typically reach the centre in about 8–18 min; the approximate road distance is 2–5 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        }
+      ]
+    },
+    {
+      "city": "Hyderabad",
+      "centre": "Kondapur / Sumadhura Horizon",
+      "verified_address_or_anchor": "Sumadhura Horizon, Botanical Garden Road, Block I, NCB Enclave, Gachibowli, Hyderabad 500084",
+      "primary_locality": "Botanical Garden Road / Kondapur",
+      "micro_locations": [
+        "NCB Enclave",
+        "Botanical Garden Road",
+        "Kondapur",
+        "Kothaguda",
+        "Whitefields",
+        "Masjid Banda",
+        "New Hafeezpet",
+        "Gachibowli",
+        "Sri Ram Nagar"
+      ],
+      "nearby_employment_or_landmark_signals": [
+        "Botanical Garden",
+        "Kothaguda X Road",
+        "CHIREC / Kondapur corridor"
+      ],
+      "suggested_natural_website_copy": "Our Kondapur centre at Sumadhura Horizon on Botanical Garden Road is well placed for families from NCB Enclave, Kondapur, Kothaguda, Whitefields, Masjid Banda, New Hafeezpet, Gachibowli and Sri Ram Nagar.",
+      "suggested_local_search_phrases": [
+        "preschool Kondapur",
+        "daycare Botanical Garden Road",
+        "preschool NCB Enclave",
+        "daycare Kothaguda",
+        "preschool Whitefields",
+        "daycare Masjid Banda"
+      ],
+      "verification_status": "Verified centre; strong micro-location evidence",
+      "sources": [
+        "https://www.nobroker.in/locality-iq/ncb-enclave-gachibowli-hyderabad-liqlt",
+        "https://www.nobroker.in/locality-iq/botanical-garden-road-kondapur-hyderabad-liqlt"
+      ],
+      "ready_website_copy": {
+        "suggested_heading": "Preschool & Daycare in Botanical Garden Road",
+        "paragraph": "Our Kondapur centre at Sumadhura Horizon on Botanical Garden Road is well placed for families from NCB Enclave, Kondapur, Kothaguda, Whitefields, Masjid Banda, New Hafeezpet, Gachibowli and Sri Ram Nagar.",
+        "micro_location_keywords": [
+          "NCB Enclave",
+          "Botanical Garden Road",
+          "Kondapur",
+          "Kothaguda",
+          "Whitefields",
+          "Masjid Banda",
+          "New Hafeezpet",
+          "Gachibowli",
+          "Sri Ram Nagar"
+        ],
+        "cta": "Book a Centre Tour"
+      },
+      "distance_and_drive_time": [
+        {
+          "micro_location": "NCB Enclave",
+          "approx_road_distance": "0.5–2 km",
+          "approx_drive_time": "3–8 min",
+          "proximity_band": "Very Close",
+          "parent_friendly_website_wording": "NCB Enclave is very close to the centre — approximately 0.5–2 km by road, usually around 3–8 min depending on traffic.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Botanical Garden Road",
+          "approx_road_distance": "0.5–2 km",
+          "approx_drive_time": "3–8 min",
+          "proximity_band": "Very Close",
+          "parent_friendly_website_wording": "Botanical Garden Road is very close to the centre — approximately 0.5–2 km by road, usually around 3–8 min depending on traffic.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Kondapur",
+          "approx_road_distance": "1–4 km",
+          "approx_drive_time": "5–15 min",
+          "proximity_band": "Very Close",
+          "parent_friendly_website_wording": "Conveniently accessible from Kondapur, approximately 1–4 km by road and typically around 5–15 min depending on traffic.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Kothaguda",
+          "approx_road_distance": "2–4 km",
+          "approx_drive_time": "8–15 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Kothaguda can typically reach the centre in about 8–15 min; the approximate road distance is 2–4 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Whitefields",
+          "approx_road_distance": "2–5 km",
+          "approx_drive_time": "8–18 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Whitefields can typically reach the centre in about 8–18 min; the approximate road distance is 2–5 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Masjid Banda",
+          "approx_road_distance": "2–5 km",
+          "approx_drive_time": "8–18 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Masjid Banda can typically reach the centre in about 8–18 min; the approximate road distance is 2–5 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "New Hafeezpet",
+          "approx_road_distance": "3–6 km",
+          "approx_drive_time": "10–20 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from New Hafeezpet can typically reach the centre in about 10–20 min; the approximate road distance is 3–6 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Gachibowli",
+          "approx_road_distance": "3–6 km",
+          "approx_drive_time": "10–20 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Gachibowli can typically reach the centre in about 10–20 min; the approximate road distance is 3–6 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Sri Ram Nagar",
+          "approx_road_distance": "2–5 km",
+          "approx_drive_time": "8–18 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Sri Ram Nagar can typically reach the centre in about 8–18 min; the approximate road distance is 2–5 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        }
+      ]
+    },
+    {
+      "city": "Hyderabad",
+      "centre": "Manikonda",
+      "verified_address_or_anchor": "Plot 28, Matrusri Colony, Puppalguda, Manikonda, Hyderabad 500089",
+      "primary_locality": "Manikonda / Puppalguda",
+      "micro_locations": [
+        "Manikonda",
+        "Puppalguda",
+        "Alkapur Township",
+        "Narsingi",
+        "Khajaguda",
+        "Neknampur",
+        "Shaikpet",
+        "Financial District"
+      ],
+      "nearby_employment_or_landmark_signals": [
+        "Manikonda–Narsingi corridor",
+        "Financial District access"
+      ],
+      "suggested_natural_website_copy": "Our Manikonda centre in Matrusri Colony, Puppalguda, is convenient for families from Manikonda, Puppalguda, Alkapur Township, Narsingi, Khajaguda, Neknampur, Shaikpet and the Financial District corridor.",
+      "suggested_local_search_phrases": [
+        "preschool Manikonda",
+        "daycare Puppalguda",
+        "preschool Alkapur Township",
+        "daycare Narsingi",
+        "childcare Khajaguda"
+      ],
+      "verification_status": "Verified centre; micro-locations should be map-checked before final copy",
+      "sources": [
+        "Google Business: My School ITALY Manikonda",
+        "https://hydrealtypro.com/financial-district/"
+      ],
+      "ready_website_copy": {
+        "suggested_heading": "Preschool & Daycare in Manikonda",
+        "paragraph": "Our Manikonda centre in Matrusri Colony, Puppalguda, is convenient for families from Manikonda, Puppalguda, Alkapur Township, Narsingi, Khajaguda, Neknampur, Shaikpet and the Financial District corridor.",
+        "micro_location_keywords": [
+          "Manikonda",
+          "Puppalguda",
+          "Alkapur Township",
+          "Narsingi",
+          "Khajaguda",
+          "Neknampur",
+          "Shaikpet",
+          "Financial District"
+        ],
+        "cta": "Book a Centre Tour"
+      },
+      "distance_and_drive_time": [
+        {
+          "micro_location": "Manikonda",
+          "approx_road_distance": "0.5–3 km",
+          "approx_drive_time": "3–12 min",
+          "proximity_band": "Very Close",
+          "parent_friendly_website_wording": "Manikonda is very close to the centre — approximately 0.5–3 km by road, usually around 3–12 min depending on traffic.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Puppalguda",
+          "approx_road_distance": "0.5–3 km",
+          "approx_drive_time": "3–12 min",
+          "proximity_band": "Very Close",
+          "parent_friendly_website_wording": "Puppalguda is very close to the centre — approximately 0.5–3 km by road, usually around 3–12 min depending on traffic.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Alkapur Township",
+          "approx_road_distance": "2–4 km",
+          "approx_drive_time": "8–15 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Alkapur Township can typically reach the centre in about 8–15 min; the approximate road distance is 2–4 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Narsingi",
+          "approx_road_distance": "3–6 km",
+          "approx_drive_time": "10–20 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Narsingi can typically reach the centre in about 10–20 min; the approximate road distance is 3–6 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Khajaguda",
+          "approx_road_distance": "3–6 km",
+          "approx_drive_time": "10–20 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Khajaguda can typically reach the centre in about 10–20 min; the approximate road distance is 3–6 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Neknampur",
+          "approx_road_distance": "2–5 km",
+          "approx_drive_time": "8–18 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Neknampur can typically reach the centre in about 8–18 min; the approximate road distance is 2–5 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Shaikpet",
+          "approx_road_distance": "4–7 km",
+          "approx_drive_time": "12–25 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Shaikpet can typically reach the centre in about 12–25 min; the approximate road distance is 4–7 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Financial District",
+          "approx_road_distance": "6–10 km",
+          "approx_drive_time": "18–35 min",
+          "proximity_band": "Wider Catchment",
+          "parent_friendly_website_wording": "The centre is also within wider reach of Financial District, approximately 6–10 km by road; allow around 18–35 min depending on traffic.",
+          "use_on_website": "Use selectively",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        }
+      ]
+    },
+    {
+      "city": "Hyderabad",
+      "centre": "Cyberabad Police Commissionerate",
+      "verified_address_or_anchor": "Old Mumbai Highway, next to CARE Hospital, Sri Shyam Nagar / Telecom Nagar Extension, Gachibowli, Hyderabad 500032",
+      "primary_locality": "Gachibowli / Telecom Nagar",
+      "micro_locations": [
+        "Telecom Nagar",
+        "Sri Shyam Nagar",
+        "Gachibowli",
+        "Khajaguda",
+        "Nanakramguda",
+        "Financial District",
+        "Raidurg"
+      ],
+      "nearby_employment_or_landmark_signals": [
+        "Cyberabad Police Commissionerate",
+        "CARE Hospital",
+        "Old Mumbai Highway"
+      ],
+      "suggested_natural_website_copy": "The MSI childcare centre at the Cyberabad Police Commissionerate is positioned in the Gachibowli–Telecom Nagar area, with nearby access from Sri Shyam Nagar, Khajaguda, Nanakramguda, the Financial District and Raidurg.",
+      "suggested_local_search_phrases": [
+        "childcare Cyberabad Police Commissionerate",
+        "daycare Gachibowli",
+        "creche Telecom Nagar",
+        "childcare near CARE Hospital Gachibowli"
+      ],
+      "verification_status": "Verified listing; confirm public-enrolment wording",
+      "sources": [
+        "https://myschoolitaly.com/pre-school/",
+        "Google Business: MY SCHOOL ITALY Cyberabad Police Commissionerate"
+      ],
+      "ready_website_copy": {
+        "suggested_heading": "Preschool & Daycare in Gachibowli",
+        "paragraph": "The MSI childcare centre at the Cyberabad Police Commissionerate is positioned in the Gachibowli–Telecom Nagar area, with nearby access from Sri Shyam Nagar, Khajaguda, Nanakramguda, the Financial District and Raidurg.",
+        "micro_location_keywords": [
+          "Telecom Nagar",
+          "Sri Shyam Nagar",
+          "Gachibowli",
+          "Khajaguda",
+          "Nanakramguda",
+          "Financial District",
+          "Raidurg"
+        ],
+        "cta": "Book a Centre Tour"
+      },
+      "distance_and_drive_time": [
+        {
+          "micro_location": "Telecom Nagar",
+          "approx_road_distance": "0.5–2 km",
+          "approx_drive_time": "3–8 min",
+          "proximity_band": "Very Close",
+          "parent_friendly_website_wording": "Telecom Nagar is very close to the centre — approximately 0.5–2 km by road, usually around 3–8 min depending on traffic.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Sri Shyam Nagar",
+          "approx_road_distance": "0.5–2 km",
+          "approx_drive_time": "3–8 min",
+          "proximity_band": "Very Close",
+          "parent_friendly_website_wording": "Sri Shyam Nagar is very close to the centre — approximately 0.5–2 km by road, usually around 3–8 min depending on traffic.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Gachibowli",
+          "approx_road_distance": "1–4 km",
+          "approx_drive_time": "5–15 min",
+          "proximity_band": "Very Close",
+          "parent_friendly_website_wording": "Conveniently accessible from Gachibowli, approximately 1–4 km by road and typically around 5–15 min depending on traffic.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Khajaguda",
+          "approx_road_distance": "2–5 km",
+          "approx_drive_time": "8–18 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Khajaguda can typically reach the centre in about 8–18 min; the approximate road distance is 2–5 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Nanakramguda",
+          "approx_road_distance": "4–7 km",
+          "approx_drive_time": "12–25 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Nanakramguda can typically reach the centre in about 12–25 min; the approximate road distance is 4–7 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Financial District",
+          "approx_road_distance": "4–8 km",
+          "approx_drive_time": "12–28 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Financial District can typically reach the centre in about 12–28 min; the approximate road distance is 4–8 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Raidurg",
+          "approx_road_distance": "3–6 km",
+          "approx_drive_time": "10–22 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Raidurg can typically reach the centre in about 10–22 min; the approximate road distance is 3–6 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        }
+      ]
+    },
+    {
+      "city": "Pune",
+      "centre": "Balewadi",
+      "verified_address_or_anchor": "S.No. 50/51, Plot A-10, Balewadi, Pune 411045",
+      "primary_locality": "Balewadi",
+      "micro_locations": [
+        "Balewadi",
+        "Baner",
+        "Pimple Nilakh",
+        "Wakad",
+        "Mahalunge",
+        "Aundh",
+        "Hinjawadi"
+      ],
+      "nearby_employment_or_landmark_signals": [
+        "Balewadi High Street",
+        "Baner–Balewadi corridor",
+        "west Pune IT commute"
+      ],
+      "suggested_natural_website_copy": "My School ITALY Balewadi is convenient for families across Balewadi, Baner, Pimple Nilakh, Wakad, Mahalunge and Aundh, as well as parents commuting toward Hinjawadi.",
+      "suggested_local_search_phrases": [
+        "preschool Balewadi",
+        "daycare Balewadi",
+        "preschool Baner",
+        "daycare Wakad",
+        "preschool Pimple Nilakh",
+        "creche near Balewadi High Street"
+      ],
+      "verification_status": "Verified centre; nearby areas researched",
+      "sources": [
+        "https://myschoolitaly.com/balewadi/",
+        "https://www.bigestate.io/in/pune/balewadi/overview"
+      ],
+      "ready_website_copy": {
+        "suggested_heading": "Preschool & Daycare in Balewadi",
+        "paragraph": "My School ITALY Balewadi is convenient for families across Balewadi, Baner, Pimple Nilakh, Wakad, Mahalunge and Aundh, as well as parents commuting toward Hinjawadi.",
+        "micro_location_keywords": [
+          "Balewadi",
+          "Baner",
+          "Pimple Nilakh",
+          "Wakad",
+          "Mahalunge",
+          "Aundh",
+          "Hinjawadi"
+        ],
+        "cta": "Book a Centre Tour"
+      },
+      "distance_and_drive_time": [
+        {
+          "micro_location": "Balewadi",
+          "approx_road_distance": "0.5–3 km",
+          "approx_drive_time": "3–12 min",
+          "proximity_band": "Very Close",
+          "parent_friendly_website_wording": "Balewadi is very close to the centre — approximately 0.5–3 km by road, usually around 3–12 min depending on traffic.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Baner",
+          "approx_road_distance": "2–5 km",
+          "approx_drive_time": "8–18 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Baner can typically reach the centre in about 8–18 min; the approximate road distance is 2–5 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Pimple Nilakh",
+          "approx_road_distance": "3–6 km",
+          "approx_drive_time": "10–20 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Pimple Nilakh can typically reach the centre in about 10–20 min; the approximate road distance is 3–6 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Wakad",
+          "approx_road_distance": "4–8 km",
+          "approx_drive_time": "12–28 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Wakad can typically reach the centre in about 12–28 min; the approximate road distance is 4–8 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Mahalunge",
+          "approx_road_distance": "3–6 km",
+          "approx_drive_time": "10–20 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Mahalunge can typically reach the centre in about 10–20 min; the approximate road distance is 3–6 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Aundh",
+          "approx_road_distance": "5–9 km",
+          "approx_drive_time": "15–30 min",
+          "proximity_band": "Wider Catchment",
+          "parent_friendly_website_wording": "The centre is also within wider reach of Aundh, approximately 5–9 km by road; allow around 15–30 min depending on traffic.",
+          "use_on_website": "Use selectively",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Hinjawadi",
+          "approx_road_distance": "7–12 km",
+          "approx_drive_time": "20–40 min",
+          "proximity_band": "Wider Catchment",
+          "parent_friendly_website_wording": "The centre is also within wider reach of Hinjawadi, approximately 7–12 km by road; allow around 20–40 min depending on traffic.",
+          "use_on_website": "Use selectively",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        }
+      ]
+    },
+    {
+      "city": "Pune",
+      "centre": "Purna Nagar",
+      "verified_address_or_anchor": "Privia Prestige, S.No. 26A & 46A, Spine Road, Vitthal Nagar, Purnanagar, Chinchwad, Pune 411019",
+      "primary_locality": "Purnanagar / Chinchwad",
+      "micro_locations": [
+        "Purnanagar",
+        "Vitthal Nagar",
+        "Chinchwad",
+        "Chikhali",
+        "Akurdi",
+        "Nigdi",
+        "Bhosari",
+        "Pimpri"
+      ],
+      "nearby_employment_or_landmark_signals": [
+        "Spine Road",
+        "Pimpri-Chinchwad residential and industrial corridor"
+      ],
+      "suggested_natural_website_copy": "Our Purnanagar centre on Spine Road serves families from Purnanagar, Vitthal Nagar and Chinchwad, with convenient access from Chikhali, Akurdi, Nigdi, Bhosari and Pimpri.",
+      "suggested_local_search_phrases": [
+        "preschool Purnanagar",
+        "daycare Chinchwad",
+        "preschool Spine Road Pune",
+        "daycare Chikhali",
+        "preschool Akurdi",
+        "creche Pimpri Chinchwad"
+      ],
+      "verification_status": "Verified centre; verify outer catchment before publishing",
+      "sources": [
+        "https://myschoolitaly.com/purna-nagar/"
+      ],
+      "ready_website_copy": {
+        "suggested_heading": "Preschool & Daycare in Purnanagar",
+        "paragraph": "Our Purnanagar centre on Spine Road serves families from Purnanagar, Vitthal Nagar and Chinchwad, with convenient access from Chikhali, Akurdi, Nigdi, Bhosari and Pimpri.",
+        "micro_location_keywords": [
+          "Purnanagar",
+          "Vitthal Nagar",
+          "Chinchwad",
+          "Chikhali",
+          "Akurdi",
+          "Nigdi",
+          "Bhosari",
+          "Pimpri"
+        ],
+        "cta": "Book a Centre Tour"
+      },
+      "distance_and_drive_time": [
+        {
+          "micro_location": "Purnanagar",
+          "approx_road_distance": "0.5–2 km",
+          "approx_drive_time": "3–8 min",
+          "proximity_band": "Very Close",
+          "parent_friendly_website_wording": "Purnanagar is very close to the centre — approximately 0.5–2 km by road, usually around 3–8 min depending on traffic.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Vitthal Nagar",
+          "approx_road_distance": "0.5–3 km",
+          "approx_drive_time": "3–10 min",
+          "proximity_band": "Very Close",
+          "parent_friendly_website_wording": "Vitthal Nagar is very close to the centre — approximately 0.5–3 km by road, usually around 3–10 min depending on traffic.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Chinchwad",
+          "approx_road_distance": "2–5 km",
+          "approx_drive_time": "8–18 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Chinchwad can typically reach the centre in about 8–18 min; the approximate road distance is 2–5 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Chikhali",
+          "approx_road_distance": "2–5 km",
+          "approx_drive_time": "8–18 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Chikhali can typically reach the centre in about 8–18 min; the approximate road distance is 2–5 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Akurdi",
+          "approx_road_distance": "4–7 km",
+          "approx_drive_time": "12–25 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Akurdi can typically reach the centre in about 12–25 min; the approximate road distance is 4–7 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Nigdi",
+          "approx_road_distance": "4–8 km",
+          "approx_drive_time": "12–28 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Nigdi can typically reach the centre in about 12–28 min; the approximate road distance is 4–8 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Bhosari",
+          "approx_road_distance": "5–9 km",
+          "approx_drive_time": "15–30 min",
+          "proximity_band": "Wider Catchment",
+          "parent_friendly_website_wording": "The centre is also within wider reach of Bhosari, approximately 5–9 km by road; allow around 15–30 min depending on traffic.",
+          "use_on_website": "Use selectively",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Pimpri",
+          "approx_road_distance": "5–9 km",
+          "approx_drive_time": "15–30 min",
+          "proximity_band": "Wider Catchment",
+          "parent_friendly_website_wording": "The centre is also within wider reach of Pimpri, approximately 5–9 km by road; allow around 15–30 min depending on traffic.",
+          "use_on_website": "Use selectively",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        }
+      ]
+    },
+    {
+      "city": "Bhimavaram",
+      "centre": "Bhimavaram",
+      "verified_address_or_anchor": "Opp. Padmalaya Theatre / Vinayaka Temple, Balusumoodi, Bhimavaram, Andhra Pradesh 534208",
+      "primary_locality": "Balusumoodi",
+      "micro_locations": [
+        "Balusumoodi",
+        "Gunupudi",
+        "Rayalam",
+        "Bank Colony",
+        "Sreeramapuram",
+        "Bhimavaram town centre"
+      ],
+      "nearby_employment_or_landmark_signals": [
+        "Padmalaya Theatre",
+        "Bhimavaram Town",
+        "Bhimavaram Junction"
+      ],
+      "suggested_natural_website_copy": "My School ITALY Bhimavaram in Balusumoodi is convenient for families from Gunupudi, Rayalam, Bank Colony, Sreeramapuram and central Bhimavaram.",
+      "suggested_local_search_phrases": [
+        "preschool Bhimavaram",
+        "daycare Bhimavaram",
+        "preschool Balusumoodi",
+        "daycare Gunupudi",
+        "nursery Bhimavaram"
+      ],
+      "verification_status": "Verified centre; nearby areas researched",
+      "sources": [
+        "https://bhimavaram.myschoolitaly.com/",
+        "https://www.onefivenine.com/india/villages/West-Godavari/Bhimavaram/Balusumoodi"
+      ],
+      "ready_website_copy": {
+        "suggested_heading": "Preschool & Daycare in Balusumoodi",
+        "paragraph": "My School ITALY Bhimavaram in Balusumoodi is convenient for families from Gunupudi, Rayalam, Bank Colony, Sreeramapuram and central Bhimavaram.",
+        "micro_location_keywords": [
+          "Balusumoodi",
+          "Gunupudi",
+          "Rayalam",
+          "Bank Colony",
+          "Sreeramapuram",
+          "Bhimavaram town centre"
+        ],
+        "cta": "Book a Centre Tour"
+      },
+      "distance_and_drive_time": [
+        {
+          "micro_location": "Balusumoodi",
+          "approx_road_distance": "0.5–2 km",
+          "approx_drive_time": "3–8 min",
+          "proximity_band": "Very Close",
+          "parent_friendly_website_wording": "Balusumoodi is very close to the centre — approximately 0.5–2 km by road, usually around 3–8 min depending on traffic.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Gunupudi",
+          "approx_road_distance": "2–4 km",
+          "approx_drive_time": "7–15 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Gunupudi can typically reach the centre in about 7–15 min; the approximate road distance is 2–4 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Rayalam",
+          "approx_road_distance": "2–5 km",
+          "approx_drive_time": "8–18 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Rayalam can typically reach the centre in about 8–18 min; the approximate road distance is 2–5 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Bank Colony",
+          "approx_road_distance": "1–4 km",
+          "approx_drive_time": "5–15 min",
+          "proximity_band": "Very Close",
+          "parent_friendly_website_wording": "Conveniently accessible from Bank Colony, approximately 1–4 km by road and typically around 5–15 min depending on traffic.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Sreeramapuram",
+          "approx_road_distance": "2–5 km",
+          "approx_drive_time": "8–18 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Sreeramapuram can typically reach the centre in about 8–18 min; the approximate road distance is 2–5 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Bhimavaram town centre",
+          "approx_road_distance": "1–4 km",
+          "approx_drive_time": "5–15 min",
+          "proximity_band": "Very Close",
+          "parent_friendly_website_wording": "Conveniently accessible from Bhimavaram town centre, approximately 1–4 km by road and typically around 5–15 min depending on traffic.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        }
+      ]
+    },
+    {
+      "city": "Tadepalligudem",
+      "centre": "Tadepalligudem",
+      "verified_address_or_anchor": "D.No. 4-33, 4/A, Subbaraopeta, near Municipal Commissioner Quarters, Karri Satyavathi Nagar, Tadepalligudem 534101",
+      "primary_locality": "Subbaraopeta / Karri Satyavathi Nagar",
+      "micro_locations": [
+        "Subbaraopeta",
+        "Karri Satyavathi Nagar",
+        "Tadepalligudem town centre",
+        "Pentapadu",
+        "Kadiyaddha"
+      ],
+      "nearby_employment_or_landmark_signals": [
+        "Municipal Commissioner Quarters",
+        "central Tadepalligudem"
+      ],
+      "suggested_natural_website_copy": "My School ITALY Tadepalligudem is located in Subbaraopeta near Karri Satyavathi Nagar and serves families across central Tadepalligudem, with wider reach toward Pentapadu and Kadiyaddha.",
+      "suggested_local_search_phrases": [
+        "preschool Tadepalligudem",
+        "daycare Tadepalligudem",
+        "preschool Subbaraopeta",
+        "nursery Tadepalligudem"
+      ],
+      "verification_status": "Centre address verified; micro-locations need local team confirmation",
+      "sources": [
+        "Google Business: My School ITALY Tadepalligudem"
+      ],
+      "ready_website_copy": {
+        "suggested_heading": "Preschool & Daycare in Subbaraopeta",
+        "paragraph": "My School ITALY Tadepalligudem is located in Subbaraopeta near Karri Satyavathi Nagar and serves families across central Tadepalligudem, with wider reach toward Pentapadu and Kadiyaddha.",
+        "micro_location_keywords": [
+          "Subbaraopeta",
+          "Karri Satyavathi Nagar",
+          "Tadepalligudem town centre",
+          "Pentapadu",
+          "Kadiyaddha"
+        ],
+        "cta": "Book a Centre Tour"
+      },
+      "distance_and_drive_time": [
+        {
+          "micro_location": "Subbaraopeta",
+          "approx_road_distance": "0.5–2 km",
+          "approx_drive_time": "3–8 min",
+          "proximity_band": "Very Close",
+          "parent_friendly_website_wording": "Subbaraopeta is very close to the centre — approximately 0.5–2 km by road, usually around 3–8 min depending on traffic.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Karri Satyavathi Nagar",
+          "approx_road_distance": "0.5–2 km",
+          "approx_drive_time": "3–8 min",
+          "proximity_band": "Very Close",
+          "parent_friendly_website_wording": "Karri Satyavathi Nagar is very close to the centre — approximately 0.5–2 km by road, usually around 3–8 min depending on traffic.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Tadepalligudem town centre",
+          "approx_road_distance": "1–4 km",
+          "approx_drive_time": "5–15 min",
+          "proximity_band": "Very Close",
+          "parent_friendly_website_wording": "Conveniently accessible from Tadepalligudem town centre, approximately 1–4 km by road and typically around 5–15 min depending on traffic.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Pentapadu",
+          "approx_road_distance": "5–9 km",
+          "approx_drive_time": "12–25 min",
+          "proximity_band": "Wider Catchment",
+          "parent_friendly_website_wording": "The centre is also within wider reach of Pentapadu, approximately 5–9 km by road; allow around 12–25 min depending on traffic.",
+          "use_on_website": "Use selectively",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Kadiyaddha",
+          "approx_road_distance": "4–8 km",
+          "approx_drive_time": "10–25 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Kadiyaddha can typically reach the centre in about 10–25 min; the approximate road distance is 4–8 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        }
+      ]
+    },
+    {
+      "city": "Berhampur / Brahmapur",
+      "centre": "Tata Benz Square",
+      "verified_address_or_anchor": "Tata Benz Square, Berhampur, Odisha 760001",
+      "primary_locality": "Tata Benz Square / Godavarish Nagar",
+      "micro_locations": [
+        "Tata Benz Square",
+        "Godavarish Nagar",
+        "Kamapalli",
+        "Courtpeta",
+        "Gandhi Nagar",
+        "Lanjipalli"
+      ],
+      "nearby_employment_or_landmark_signals": [
+        "Tata Benz Square",
+        "central Brahmapur / Berhampur"
+      ],
+      "suggested_natural_website_copy": "Our Tata Benz Square centre is convenient for families from Godavarish Nagar, Kamapalli, Courtpeta, Gandhi Nagar, Lanjipalli and central Berhampur/Brahmapur.",
+      "suggested_local_search_phrases": [
+        "preschool Berhampur",
+        "preschool Brahmapur",
+        "daycare Tata Benz Square",
+        "preschool Kamapalli",
+        "daycare Courtpeta"
+      ],
+      "verification_status": "Official MSI branch address; confirm exact active listing/name",
+      "sources": [
+        "https://myschoolitaly.com/berhampur/"
+      ],
+      "ready_website_copy": {
+        "suggested_heading": "Preschool & Daycare in Tata Benz Square",
+        "paragraph": "Our Tata Benz Square centre is convenient for families from Godavarish Nagar, Kamapalli, Courtpeta, Gandhi Nagar, Lanjipalli and central Berhampur/Brahmapur.",
+        "micro_location_keywords": [
+          "Tata Benz Square",
+          "Godavarish Nagar",
+          "Kamapalli",
+          "Courtpeta",
+          "Gandhi Nagar",
+          "Lanjipalli"
+        ],
+        "cta": "Book a Centre Tour"
+      },
+      "distance_and_drive_time": [
+        {
+          "micro_location": "Tata Benz Square",
+          "approx_road_distance": "0.5–2 km",
+          "approx_drive_time": "3–8 min",
+          "proximity_band": "Very Close",
+          "parent_friendly_website_wording": "Tata Benz Square is very close to the centre — approximately 0.5–2 km by road, usually around 3–8 min depending on traffic.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Godavarish Nagar",
+          "approx_road_distance": "0.5–3 km",
+          "approx_drive_time": "3–10 min",
+          "proximity_band": "Very Close",
+          "parent_friendly_website_wording": "Godavarish Nagar is very close to the centre — approximately 0.5–3 km by road, usually around 3–10 min depending on traffic.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Kamapalli",
+          "approx_road_distance": "2–4 km",
+          "approx_drive_time": "7–15 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Kamapalli can typically reach the centre in about 7–15 min; the approximate road distance is 2–4 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Courtpeta",
+          "approx_road_distance": "2–5 km",
+          "approx_drive_time": "8–18 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Courtpeta can typically reach the centre in about 8–18 min; the approximate road distance is 2–5 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Gandhi Nagar",
+          "approx_road_distance": "2–5 km",
+          "approx_drive_time": "8–18 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Gandhi Nagar can typically reach the centre in about 8–18 min; the approximate road distance is 2–5 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Lanjipalli",
+          "approx_road_distance": "3–6 km",
+          "approx_drive_time": "10–20 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Lanjipalli can typically reach the centre in about 10–20 min; the approximate road distance is 3–6 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        }
+      ]
+    },
+    {
+      "city": "Berhampur / Brahmapur",
+      "centre": "Konisi",
+      "verified_address_or_anchor": "Gouri Sankar Inn, Ramahari Nagar, opposite Indian Oil Petrol Pump, Konisi, Brahmapur, Odisha 761008",
+      "primary_locality": "Konisi / Ramahari Nagar",
+      "micro_locations": [
+        "Konisi",
+        "Ramahari Nagar",
+        "Golanthara",
+        "Haladiapadar",
+        "Ralabha",
+        "Rangipur",
+        "Gopalpur Road corridor"
+      ],
+      "nearby_employment_or_landmark_signals": [
+        "Konisi",
+        "Golanthara",
+        "southern Brahmapur corridor"
+      ],
+      "suggested_natural_website_copy": "Our Konisi centre in Ramahari Nagar serves families in Konisi and the southern Brahmapur corridor, including Golanthara, Haladiapadar, Ralabha and Rangipur.",
+      "suggested_local_search_phrases": [
+        "preschool Konisi",
+        "daycare Konisi",
+        "preschool Golanthara",
+        "daycare Haladiapadar",
+        "preschool near Gopalpur Road"
+      ],
+      "verification_status": "Google listing verified; confirm current active branch",
+      "sources": [
+        "Google Business: My School ITALY Berhampur (Konisi)",
+        "https://ganjam.odisha.gov.in/sites/default/files/2026-02/KONISI%20SRO_2026-28_UPDATE.pdf"
+      ],
+      "ready_website_copy": {
+        "suggested_heading": "Preschool & Daycare in Konisi",
+        "paragraph": "Our Konisi centre in Ramahari Nagar serves families in Konisi and the southern Brahmapur corridor, including Golanthara, Haladiapadar, Ralabha and Rangipur.",
+        "micro_location_keywords": [
+          "Konisi",
+          "Ramahari Nagar",
+          "Golanthara",
+          "Haladiapadar",
+          "Ralabha",
+          "Rangipur",
+          "Gopalpur Road corridor"
+        ],
+        "cta": "Book a Centre Tour"
+      },
+      "distance_and_drive_time": [
+        {
+          "micro_location": "Konisi",
+          "approx_road_distance": "0.5–3 km",
+          "approx_drive_time": "3–10 min",
+          "proximity_band": "Very Close",
+          "parent_friendly_website_wording": "Konisi is very close to the centre — approximately 0.5–3 km by road, usually around 3–10 min depending on traffic.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Ramahari Nagar",
+          "approx_road_distance": "0.5–2 km",
+          "approx_drive_time": "3–8 min",
+          "proximity_band": "Very Close",
+          "parent_friendly_website_wording": "Ramahari Nagar is very close to the centre — approximately 0.5–2 km by road, usually around 3–8 min depending on traffic.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Golanthara",
+          "approx_road_distance": "3–6 km",
+          "approx_drive_time": "8–18 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Golanthara can typically reach the centre in about 8–18 min; the approximate road distance is 3–6 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Haladiapadar",
+          "approx_road_distance": "3–7 km",
+          "approx_drive_time": "10–20 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Haladiapadar can typically reach the centre in about 10–20 min; the approximate road distance is 3–7 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Ralabha",
+          "approx_road_distance": "4–8 km",
+          "approx_drive_time": "10–25 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Ralabha can typically reach the centre in about 10–25 min; the approximate road distance is 4–8 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Rangipur",
+          "approx_road_distance": "4–8 km",
+          "approx_drive_time": "10–25 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Rangipur can typically reach the centre in about 10–25 min; the approximate road distance is 4–8 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Gopalpur Road corridor",
+          "approx_road_distance": "3–7 km",
+          "approx_drive_time": "10–20 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Gopalpur Road corridor can typically reach the centre in about 10–20 min; the approximate road distance is 3–7 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        }
+      ]
+    },
+    {
+      "city": "Berhampur / Brahmapur",
+      "centre": "Courtpeta",
+      "verified_address_or_anchor": "Courtpeta Square, Techno Project Office, Courtpeta Chakka, Gopalpura Road, Ashok Nagar, Brahmapur, Odisha 760004",
+      "primary_locality": "Courtpeta / Ashok Nagar",
+      "micro_locations": [
+        "Courtpeta",
+        "Ashok Nagar",
+        "Gandhi Nagar",
+        "Kamapalli",
+        "Gate Bazar",
+        "Gopalpura Road"
+      ],
+      "nearby_employment_or_landmark_signals": [
+        "Courtpeta Square",
+        "central Brahmapur"
+      ],
+      "suggested_natural_website_copy": "The Courtpeta centre is positioned for families from Courtpeta, Ashok Nagar, Gandhi Nagar, Kamapalli, Gate Bazar and the Gopalpura Road area of Brahmapur.",
+      "suggested_local_search_phrases": [
+        "preschool Courtpeta",
+        "daycare Brahmapur",
+        "preschool Ashok Nagar",
+        "daycare Kamapalli",
+        "preschool Berhampur"
+      ],
+      "verification_status": "Google listing found; verify whether this is an active MSI centre before publishing",
+      "sources": [
+        "Google Business: My School Italy Courtpeta"
+      ],
+      "ready_website_copy": {
+        "suggested_heading": "Preschool & Daycare in Courtpeta",
+        "paragraph": "The Courtpeta centre is positioned for families from Courtpeta, Ashok Nagar, Gandhi Nagar, Kamapalli, Gate Bazar and the Gopalpura Road area of Brahmapur.",
+        "micro_location_keywords": [
+          "Courtpeta",
+          "Ashok Nagar",
+          "Gandhi Nagar",
+          "Kamapalli",
+          "Gate Bazar",
+          "Gopalpura Road"
+        ],
+        "cta": "Book a Centre Tour"
+      },
+      "distance_and_drive_time": [
+        {
+          "micro_location": "Courtpeta",
+          "approx_road_distance": "0.5–2 km",
+          "approx_drive_time": "3–8 min",
+          "proximity_band": "Very Close",
+          "parent_friendly_website_wording": "Courtpeta is very close to the centre — approximately 0.5–2 km by road, usually around 3–8 min depending on traffic.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Ashok Nagar",
+          "approx_road_distance": "0.5–3 km",
+          "approx_drive_time": "3–10 min",
+          "proximity_band": "Very Close",
+          "parent_friendly_website_wording": "Ashok Nagar is very close to the centre — approximately 0.5–3 km by road, usually around 3–10 min depending on traffic.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Gandhi Nagar",
+          "approx_road_distance": "1–4 km",
+          "approx_drive_time": "5–15 min",
+          "proximity_band": "Very Close",
+          "parent_friendly_website_wording": "Conveniently accessible from Gandhi Nagar, approximately 1–4 km by road and typically around 5–15 min depending on traffic.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Kamapalli",
+          "approx_road_distance": "2–5 km",
+          "approx_drive_time": "8–18 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Kamapalli can typically reach the centre in about 8–18 min; the approximate road distance is 2–5 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Gate Bazar",
+          "approx_road_distance": "2–5 km",
+          "approx_drive_time": "8–18 min",
+          "proximity_band": "Close",
+          "parent_friendly_website_wording": "Families from Gate Bazar can typically reach the centre in about 8–18 min; the approximate road distance is 2–5 km.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        },
+        {
+          "micro_location": "Gopalpura Road",
+          "approx_road_distance": "0.5–3 km",
+          "approx_drive_time": "3–10 min",
+          "proximity_band": "Very Close",
+          "parent_friendly_website_wording": "Gopalpura Road is very close to the centre — approximately 0.5–3 km by road, usually around 3–10 min depending on traffic.",
+          "use_on_website": "Yes",
+          "verification_note": "Planning estimate — verify in Google Maps from a representative landmark before publishing an exact figure."
+        }
+      ]
+    }
+  ],
+  "usage_guidelines": {
+    "title": "How to Use Micro-Locations Without Keyword Stuffing",
+    "objective": "The objective is local relevance, not repetition. Google-facing pages should still read beautifully for parents.",
+    "rules": [
+      {
+        "rule": "1. Main centre paragraph",
+        "instruction": "Use 4–7 genuinely nearby micro-locations once in a natural sentence.",
+        "example": "Our Kondapur centre on Botanical Garden Road is convenient for families from NCB Enclave, Kothaguda, Whitefields and Masjid Banda."
+      },
+      {
+        "rule": "2. Nearby areas section",
+        "instruction": "Add a small 'Areas We Serve' or 'Convenient for Families From' section with 5–8 neighbourhoods.",
+        "example": "Kondapur • Kothaguda • Whitefields • Masjid Banda • NCB Enclave • New Hafeezpet"
+      },
+      {
+        "rule": "3. FAQs",
+        "instruction": "Use 2–3 locality questions where they are genuinely useful.",
+        "example": "Is MSI Kondapur convenient from Whitefields? / Do you offer daycare near Kothaguda?"
+      },
+      {
+        "rule": "4. Directions",
+        "instruction": "Mention real roads, junctions and landmarks, not only locality names.",
+        "example": "Located on Botanical Garden Road near the Kondapur–Kothaguda corridor."
+      },
+      {
+        "rule": "5. Internal links",
+        "instruction": "Link locality terms to the correct centre page only.",
+        "example": "'daycare near HITEX' → HITEX centre page, not the generic Hyderabad page."
+      },
+      {
+        "rule": "6. Avoid doorway pages",
+        "instruction": "Do not create a separate thin page for every micro-locality unless MSI has a real centre or genuinely distinct content there.",
+        "example": "Do not create 20 nearly identical pages called Preschool Hafeezpet, Preschool Kothaguda, etc."
+      },
+      {
+        "rule": "7. Google Business Profile",
+        "instruction": "Keep centre name, address, phone, hours and landing-page URL consistent with the website.",
+        "example": "Each eligible centre should link to its own location page."
+      },
+      {
+        "rule": "8. Verify before launch",
+        "instruction": "Local teams should check the final micro-location list for actual parent catchment and practical drive routes.",
+        "example": "Especially important for Tadepalligudem and additional Berhampur listings."
+      }
+    ]
+  },
+  "website_style_guidelines": [
+    {
+      "guideline": "Publish ranges, not false precision.",
+      "instruction": "Prefer “approximately 3–5 km / 10–18 minutes” over “4.2 km / 13 minutes” unless the route has been checked from a fixed landmark."
+    },
+    {
+      "guideline": "Drive time is traffic-sensitive.",
+      "instruction": "For Hyderabad and Pune especially, use “typically” or “approximately” and add “depending on traffic.”"
+    },
+    {
+      "guideline": "Use the closest 4–7 areas prominently.",
+      "instruction": "Very Close and Close areas can appear in the main centre page. Wider Catchment areas are better in an FAQ or ‘Areas We Serve’ section."
+    },
+    {
+      "guideline": "Verify before launch.",
+      "instruction": "Centre managers should check representative Google Maps routes during school-run hours and update the range if needed."
+    }
+  ]
+}

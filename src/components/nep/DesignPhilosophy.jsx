@@ -33,6 +33,7 @@ export default function DesignPhilosophy({
   readMoreText = null,
   readMoreBgColor = null,
   readMoreClassName = "",
+  readMoreHref = null,
   bottomEyebrow = "Your Child's Day At MSI.",
   bottomTitle = "Care, Learning and Childhood \u2014 All in One Day",
   bottomP1 = "A child's day at MSI is designed around an age-appropriate rhythm rather than continuous instruction.",
@@ -90,7 +91,16 @@ export default function DesignPhilosophy({
               {p2 && <p className={`${p2Class || p1Class}  leading-relaxed `}>{p2}</p>}
               {p3 && <p className={`${p3Class || p1Class}  leading-relaxed`}>{p3}</p>}
 
-              {hasCustomDrawer ? (
+              {readMoreHref ? (
+                <div className="w-fit self-start">
+                  <ReadMoreButton
+                    href={readMoreHref}
+                    text={readMoreText || "Read More"}
+                    bgColor={readMoreBgColor || "bg-msi-blue hover:bg-msi-blue/90"}
+                    className={`mt-3 font-bold ${readMoreClassName}`}
+                  />
+                </div>
+              ) : hasCustomDrawer ? (
                 <div className="w-fit self-start">
                   <ReadMoreButton
                     text={readMoreText || "Read More"}

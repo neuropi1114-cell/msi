@@ -33,6 +33,7 @@ export default function DualFeatureSection({
   leftDrawerEyebrow = null,
   leftDrawerBody = null,
   leftReadMoreText = null,
+  leftReadMoreHref = null,
   leftButtonClassName = "",
   rightEyebrow = "Home Learning & Family Connection.",
   rightTitle = "Learning Doesn't Stop at the School Gate",
@@ -47,6 +48,7 @@ export default function DualFeatureSection({
   rightDrawerEyebrow = null,
   rightDrawerBody = null,
   rightReadMoreText = null,
+  rightReadMoreHref = null,
   rightButtonClassName = "",
 }) {
   const [leftOpen, setLeftOpen] = useState(false);
@@ -151,7 +153,14 @@ export default function DualFeatureSection({
                 </>
               )}
               {showLeftReadMore && (
-                leftDrawerBody ? (
+                leftReadMoreHref ? (
+                  <ReadMoreButton
+                    href={leftReadMoreHref}
+                    text={leftReadMoreText || "Read More"}
+                    bgColor={leftButtonBgColor}
+                    className={`mt-6 font-bold ${leftButtonClassName}`}
+                  />
+                ) : leftDrawerBody ? (
                   <>
                     <ReadMoreButton
                       text={leftReadMoreText || "Read More"}
@@ -217,7 +226,14 @@ export default function DualFeatureSection({
                 )}
               </div>
               {showRightReadMore && (
-                rightDrawerBody ? (
+                rightReadMoreHref ? (
+                  <ReadMoreButton
+                    href={rightReadMoreHref}
+                    text={rightReadMoreText || "Read More"}
+                    bgColor={rightButtonBgColor}
+                    className={`mt-6 font-bold ${rightButtonClassName}`}
+                  />
+                ) : rightDrawerBody ? (
                   <>
                     <ReadMoreButton
                       text={rightReadMoreText || "Read More"}
