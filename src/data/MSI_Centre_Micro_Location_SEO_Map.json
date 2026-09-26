@@ -192,9 +192,9 @@
     },
     {
       "city": "Hyderabad",
-      "centre": "Q-City",
-      "verified_address_or_anchor": "Wipro Circle Road, Gachibowli, Nanakramguda, Hyderabad 500046",
-      "primary_locality": "Nanakramguda / Gachibowli",
+      "centre": "The Square",
+      "verified_address_or_anchor": "The Square Tech Park, Wipro Circle Road, Nanakramguda, Financial District, Gachibowli, Hyderabad 500032",
+      "primary_locality": "Nanakramguda / Financial District / Gachibowli",
       "micro_locations": [
         "Nanakramguda",
         "Financial District",
@@ -206,12 +206,18 @@
         "Gopanpally"
       ],
       "nearby_employment_or_landmark_signals": [
+        "The Square",
         "Q-City",
         "Wipro Circle",
         "Financial District",
         "western IT corridor"
       ],
-      "suggested_natural_website_copy": "Located near Wipro Circle at Q-City, our centre is well placed for families living or working in Nanakramguda, the Financial District, Gachibowli, Khajaguda, Puppalaguda, Narsingi, Kokapet and Gopanpally.",
+      "google_maps_embed_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.6785965778686!2d78.32855267577976!3d17.427205301655526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb930c4010ef93%3A0x13e1808c1f420e4!2sMy%20School%20ITALY%20%7C%20Q-City!5e0!3m2!1sen!2sin!4v1790410256498!5m2!1sen!2sin",
+      "geo_coordinates": {
+        "latitude": 17.4272053,
+        "longitude": 78.3285527
+      },
+      "suggested_natural_website_copy": "Located near Wipro Circle at The Square, our centre is well placed for families living or working in Nanakramguda, the Financial District, Gachibowli, Khajaguda, Puppalaguda, Narsingi, Kokapet and Gopanpally.",
       "suggested_local_search_phrases": [
         "daycare near Q City",
         "preschool Nanakramguda",

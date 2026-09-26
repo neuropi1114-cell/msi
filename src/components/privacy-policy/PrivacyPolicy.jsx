@@ -101,7 +101,7 @@ const contactOfficer = {
     name: 'Mr Antonio Andreazzo',
     designation: 'Compliance Officer',
     email: 'info@myschoolitaly.com',
-    address: 'My School ITALY, Q-City Block B, Grd Flr, RR District, Hyderabad, Telangana, India 500032',
+    address: 'My School ITALY, The Square Block B, Grd Flr, RR District, Hyderabad, Telangana, India 500032',
   },
 };
 

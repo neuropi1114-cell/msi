@@ -87,9 +87,9 @@ export default function DesignPhilosophy({
                 </h2>
               )}
 
-              {p1 && <p className={`${p1Class}  leading-relaxed `}>{p1}</p>}
-              {p2 && <p className={`${p2Class || p1Class}  leading-relaxed `}>{p2}</p>}
-              {p3 && <p className={`${p3Class || p1Class}  leading-relaxed`}>{p3}</p>}
+              {p1 && (typeof p1 === 'string' ? <p className={`${p1Class} leading-relaxed`}>{p1}</p> : p1)}
+              {p2 && (typeof p2 === 'string' ? <p className={`${p2Class || p1Class} leading-relaxed`}>{p2}</p> : p2)}
+              {p3 && (typeof p3 === 'string' ? <p className={`${p3Class || p1Class} leading-relaxed`}>{p3}</p> : p3)}
 
               {readMoreHref ? (
                 <div className="w-fit self-start">

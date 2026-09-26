@@ -6,7 +6,7 @@ import { Phone } from 'lucide-react';
 const FOOTER_LOGO = '/images/logo/The-Neuroscientific-European-Childcare-PDF_12-x-4-ft_Backside-1.png.bv_resized_desktop.png.bv.webp';
 
 const HYDERABAD_BRANCHES = [
-  'Hitex', 'Q-city', 'Avance 1', 'Avance 2', 'Mindscape',
+  'Hitex', 'The Square', 'Avance 1', 'Avance 2', 'Mindscape',
   'Kavuri Hills', 'Cyberabad Police Commissionerate', 'Miyapur',
   'Kukatpally', 'Kondapur', 'Manikonda'
 ];
@@ -67,6 +67,10 @@ const Footer = () => {
               <li key={branch} className="flex items-center !text-white">
                 {branch === 'Hitex' ? (
                   <Link href="/hitex" className="!text-white hover:!text-msi-orange transition-colors font-medium underline underline-offset-2 decoration-msi-orange">
+                    {branch}
+                  </Link>
+                ) : branch === 'The Square' || branch === 'Q-city' || branch === 'Q-City' ? (
+                  <Link href="/qcity" className="!text-white hover:!text-msi-orange transition-colors font-medium underline underline-offset-2 decoration-msi-orange">
                     {branch}
                   </Link>
                 ) : (

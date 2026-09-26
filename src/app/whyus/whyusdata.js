@@ -17,7 +17,7 @@ export const centreVideos = [
   },
   {
     id: 3,
-    title: "Q-City Tech Park",
+    title: "The Square Tech Park",
     url: "https://vimeo.com/1228236323",
   },
   {

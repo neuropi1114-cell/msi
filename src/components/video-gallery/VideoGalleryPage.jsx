@@ -111,7 +111,7 @@ function VideoSection({ category, onPlay }) {
 }
 
 const schools = [
-  { id: 'lwekHckHeck', title: 'Q-City Branch' },
+  { id: 'lwekHckHeck', title: 'The Square Branch' },
   { id: 'uAXR0G6-t6I', title: 'Hitex Branch' },
   { id: 'MV6PxQkmluY', title: "OPENING OF NATURE'S LAP" },
 ];

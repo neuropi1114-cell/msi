@@ -73,7 +73,7 @@ export default function HitexPage({ activeSlug = null }) {
         <CloudHeader
           image="/images/hitex/HITEX_1.png"
           imageClass="object-cover object-center"
-          heightClass="w-full aspect-[2172/724] max-h-[650px]"
+          heightClass="w-full aspect-[2172/724] min-h-[220px] sm:min-h-[320px] md:min-h-[420px] max-h-[650px]"
         >
           <WatchCentreButton video={centreVideos[0]} />
         </CloudHeader>
