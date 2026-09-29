@@ -6,9 +6,17 @@ import { Phone } from 'lucide-react';
 const FOOTER_LOGO = '/images/logo/The-Neuroscientific-European-Childcare-PDF_12-x-4-ft_Backside-1.png.bv_resized_desktop.png.bv.webp';
 
 const HYDERABAD_BRANCHES = [
-  'Hitex', 'The Square', 'Avance 1', 'Avance 2', 'Mindscape',
-  'Kavuri Hills', 'Cyberabad Police Commissionerate', 'Miyapur',
-  'Kukatpally', 'Kondapur', 'Manikonda'
+  { label: 'Hitex', href: '/hitex' },
+  { label: 'The Square', href: '/qcity' },
+  { label: 'Avance 1', href: '/avance' },
+  { label: 'Avance 2', href: '/avance' },
+  { label: 'Mindscape', href: '/mindspace' },
+  { label: 'Kavuri Hills', href: '/kavuri-hills' },
+  { label: 'Cyberabad Police Commissionerate', href: '/cyberabad-police-commissionerate' },
+  { label: 'Miyapur', href: '/miyapur' },
+  { label: 'Kukatpally', href: '/kukatpally' },
+  { label: 'Kondapur', href: '/kondapur' },
+  { label: 'Manikonda', href: '/manikonda' },
 ];
 
 const PAN_INDIA_BRANCHES = [
@@ -55,28 +63,20 @@ const Footer = () => {
         </div>
 
         {/* Tagline */}
-        <p className="text-center font-bold text-lg uppercase tracking-wider mb-2 !text-white">
+        <p className="text-center font-bold text-lg uppercase tracking-wider mb-2 text-white">
           While you build their future, we care for their childhood.
         </p>
 
         {/* Locations under tagline */}
         <div className="text-center mb-10">
-          <h3 className="!text-msi-orange font-bold mb-2 text-sm tracking-wider uppercase">HYDERABAD</h3>
-          <ul className="text-sm flex flex-wrap justify-center gap-x-1 gap-y-1 mb-4 !text-white">
+          <h3 className="text-msi-orange font-bold mb-2 text-sm tracking-wider uppercase">HYDERABAD</h3>
+          <ul className="text-sm flex flex-wrap justify-center gap-x-1 gap-y-1 mb-4 text-white">
             {HYDERABAD_BRANCHES.map((branch, i) => (
-              <li key={branch} className="flex items-center !text-white">
-                {branch === 'Hitex' ? (
-                  <Link href="/hitex" className="!text-white hover:!text-msi-orange transition-colors font-medium underline underline-offset-2 decoration-msi-orange">
-                    {branch}
-                  </Link>
-                ) : branch === 'The Square' || branch === 'Q-city' || branch === 'Q-City' ? (
-                  <Link href="/qcity" className="!text-white hover:!text-msi-orange transition-colors font-medium underline underline-offset-2 decoration-msi-orange">
-                    {branch}
-                  </Link>
-                ) : (
-                  <span className="!text-white hover:!text-msi-orange transition-colors">{branch}</span>
-                )}
-                {i < HYDERABAD_BRANCHES.length - 1 && <span className="!text-white/40 ml-1">|</span>}
+              <li key={branch.label} className="flex items-center text-white">
+                <Link href={branch.href} className="text-white hover:text-msi-orange transition-colors font-medium underline underline-offset-2 decoration-msi-orange">
+                  {branch.label}
+                </Link>
+                {i < HYDERABAD_BRANCHES.length - 1 && <span className="text-white/40 ml-1">|</span>}
               </li>
             ))}
           </ul>
