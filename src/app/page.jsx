@@ -1,4 +1,3 @@
-import dynamic from 'next/dynamic';
 import TopBar from '../components/layout/TopBar';
 import Header from '../components/layout/Header';
 import Hero from '../components/home/Hero';
@@ -11,19 +10,18 @@ import { buildPageMetadata } from '../utils/seo';
 
 export const metadata = buildPageMetadata('/');
 
-const BelieveBrilliance = dynamic(() => import('../components/home/BelieveBrilliance'), { ssr: true });
-const GrowingInConfidence = dynamic(() => import('../components/home/GrowingInConfidence'), { ssr: true });
-const Solutions = dynamic(() => import('../components/home/Solutions'), { ssr: true });
-const CorporatePartners = dynamic(() => import('../components/home/CorporatePartners'), { ssr: true });
-const VideoShowcase = dynamic(() => import('../components/home/VideoShowcase'), { ssr: true });
-const Awards = dynamic(() => import('../components/home/Awards'), { ssr: true });
-// const Team = dynamic(() => import('../components/home/Team'), { ssr: true });
-const VenturePhilanthropyCta = dynamic(() => import('../components/home/VenturePhilanthropyCta'), { ssr: true });
-const FeaturedIn = dynamic(() => import('../components/home/FeaturedIn'), { ssr: true });
-const Blogs = dynamic(() => import('../components/home/Blogs'), { ssr: true });
-const StepIntoADay = dynamic(() => import('../components/home/StepIntoADay'), { ssr: true });
-const Footer = dynamic(() => import('../components/layout/Footer'), { ssr: true });
-const ContactUs = dynamic(() => import('../components/common/ContactUs'), { ssr: true });
+import BelieveBrilliance from '../components/home/BelieveBrilliance';
+import GrowingInConfidence from '../components/home/GrowingInConfidence';
+import Solutions from '../components/home/Solutions';
+import CorporatePartners from '../components/home/CorporatePartners';
+import VideoShowcase from '../components/home/VideoShowcase';
+import Awards from '../components/home/Awards';
+import VenturePhilanthropyCta from '../components/home/VenturePhilanthropyCta';
+import FeaturedIn from '../components/home/FeaturedIn';
+import Blogs from '../components/home/Blogs';
+import StepIntoADay from '../components/home/StepIntoADay';
+import Footer from '../components/layout/Footer';
+import ContactUs from '../components/common/ContactUs';
 
 export default function HomePage() {
   return (

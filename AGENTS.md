@@ -1140,6 +1140,613 @@ WORKING CODE > REWRITING EVERYTHING
 
 ---
 
+
+# 47. McMASTER-LEVEL PERFORMANCE STANDARD
+
+Treat **speed as a core product feature**, not a final optimization step.
+
+The application should feel immediate even on average devices and average mobile networks.
+
+Performance priority:
+
+```text
+SERVER HTML
+   ↓
+USEFUL CONTENT IMMEDIATELY
+   ↓
+MINIMAL JAVASCRIPT
+   ↓
+CACHE AGGRESSIVELY
+   ↓
+PREFETCH LIKELY NAVIGATION
+   ↓
+LOAD ONLY WHAT IS REQUIRED
+```
+
+The goal is not to imitate an old visual style.
+
+The goal is to reproduce the **speed philosophy** of extremely fast commerce/catalog websites while keeping the current modern UI.
+
+---
+
+## 47.1 HTML-FIRST / SERVER-FIRST
+
+Prefer delivering meaningful content in the first server response.
+
+Use:
+
+```text
+Server Components
+Static Generation
+Server Rendering
+Cached server data
+Streaming where useful
+```
+
+Avoid making important page content depend on:
+
+```text
+Client hydration
+useEffect()
+Client-side fetch after mount
+Large JavaScript bundles
+Loading screens that hide server-renderable content
+```
+
+If the content can be rendered on the server:
+
+```text
+RENDER IT ON THE SERVER.
+```
+
+---
+
+## 47.2 KEEP CLIENT BOUNDARIES SMALL
+
+Do not add `"use client"` to:
+
+```text
+Entire pages
+Entire layouts
+Large sections
+Content-only components
+SEO content
+Static cards
+Static service sections
+```
+
+because one small interactive element needs JavaScript.
+
+Instead:
+
+```text
+Server Section
+├── Server Content
+├── Server Content
+└── Small Client Component
+```
+
+Push client components as far down the component tree as practical.
+
+---
+
+## 47.3 NAVIGATION MUST FEEL INSTANT
+
+Use Next.js `<Link>` for internal navigation so the framework can optimize transitions.
+
+For high-value destinations, use sensible prefetching.
+
+Examples:
+
+```text
+Primary navigation
+Service pages
+Product/category pages
+Frequently used dashboard routes
+Likely next-step pages
+```
+
+Where appropriate, intent-based prefetching may begin when the user:
+
+```text
+hovers
+focuses
+touches
+```
+
+a navigation target.
+
+Do not prefetch hundreds of routes unnecessarily.
+
+Prefetch **probable next actions**, not the entire application.
+
+---
+
+## 47.4 DO NOT RELOAD SHARED UI
+
+Persistent interface elements should remain stable across navigation whenever the current architecture allows it.
+
+Reuse layouts for:
+
+```text
+Navbar
+Sidebar
+Footer
+Account controls
+Shared navigation
+Persistent filters
+```
+
+Do not rebuild or refetch unchanged shared UI on every route transition.
+
+Use App Router layouts and nested layouts where they improve reuse and navigation performance.
+
+---
+
+## 47.5 CACHE BY DEFAULT WHEN DATA ALLOWS IT
+
+Before making a request dynamic, ask:
+
+```text
+Does this data actually need to be fresh on every request?
+```
+
+Use the project's supported Next.js caching strategy for stable data.
+
+Consider:
+
+```text
+Static generation
+Request memoization
+Server cache
+Revalidation
+CDN / edge caching
+HTTP cache headers
+Database/query caching where justified
+```
+
+Choose revalidation based on the actual business requirement.
+
+Do not disable caching globally because one endpoint is dynamic.
+
+Do not cache:
+
+```text
+Private user-specific data incorrectly
+Sensitive data
+Data that must always be real-time
+```
+
+---
+
+## 47.6 AVOID REQUEST WATERFALLS
+
+Do not unnecessarily load data like:
+
+```text
+Request A
+   ↓
+wait
+   ↓
+Request B
+   ↓
+wait
+   ↓
+Request C
+```
+
+when independent requests can safely execute together.
+
+Prefer parallel server-side fetching for independent resources.
+
+Structure data requirements so critical page content is not delayed by unrelated secondary requests.
+
+---
+
+## 47.7 PRIORITIZE THE CRITICAL RENDERING PATH
+
+Above-the-fold content should require the minimum possible work.
+
+Prioritize:
+
+```text
+Primary HTML
+Critical styles
+LCP image
+Primary font resources
+Essential page data
+```
+
+Defer:
+
+```text
+Below-the-fold media
+Non-critical widgets
+Secondary analytics
+Heavy animation code
+Optional embeds
+Large interactive modules
+```
+
+Do not block first render with resources the user cannot yet see.
+
+---
+
+## 47.8 CONTROL JAVASCRIPT BUNDLE SIZE
+
+Every client dependency has a performance cost.
+
+Before adding a package, consider:
+
+```text
+Can HTML do it?
+Can CSS do it?
+Can a Server Component do it?
+Can an existing dependency do it?
+Can a small local function do it?
+```
+
+Avoid shipping heavy libraries for tiny features.
+
+Prefer direct imports where supported.
+
+Do not import an entire utility or icon library when only a small portion is required.
+
+Use dynamic imports for genuinely heavy, non-critical client features where appropriate.
+
+---
+
+## 47.9 THIRD-PARTY SCRIPTS ARE EXPENSIVE
+
+Treat every third-party script as performance-sensitive.
+
+Examples:
+
+```text
+Analytics
+Chat widgets
+Heatmaps
+Tracking pixels
+Video embeds
+Social embeds
+Ad scripts
+External forms
+```
+
+Load them only when required.
+
+Prefer delayed, lazy, consent-aware, or interaction-based loading when compatible with the feature.
+
+Do not allow third-party scripts to block important page content.
+
+---
+
+## 47.10 IMAGE DELIVERY MUST BE DISCIPLINED
+
+Images should never be larger than necessary for their rendered size.
+
+Use:
+
+```tsx
+import Image from "next/image";
+```
+
+where appropriate.
+
+Always consider:
+
+```text
+width
+height
+sizes
+responsive behavior
+compression
+modern formats
+LCP priority
+lazy loading
+```
+
+Reserve dimensions before an image loads to prevent CLS.
+
+Do not mark many images as high priority.
+
+Normally only the actual LCP/hero image should receive special priority.
+
+---
+
+## 47.11 FONT PERFORMANCE
+
+Keep font usage controlled.
+
+Prefer:
+
+```text
+Few font families
+Few font weights
+Subsetted fonts
+next/font
+Local/self-hosted optimized fonts where appropriate
+```
+
+Avoid loading unnecessary:
+
+```text
+300
+400
+500
+600
+700
+800
+900
+```
+
+when the design only uses a few weights.
+
+Do not block meaningful content longer than necessary for decorative typography.
+
+---
+
+## 47.12 ANIMATION MUST NOT MAKE THE SITE FEEL SLOW
+
+Animation should enhance usability, not delay it.
+
+Avoid:
+
+```text
+Long entrance sequences
+Page-load animations that hide content
+Animating every element
+Large animation libraries for simple transitions
+Heavy scroll effects
+Expensive blur/filter effects across huge areas
+```
+
+Prefer CSS transitions for simple interactions.
+
+If motion is used:
+
+```text
+Short
+Purposeful
+GPU-friendly
+Non-blocking
+Accessible
+```
+
+Respect `prefers-reduced-motion`.
+
+Never sacrifice responsiveness for visual effects.
+
+---
+
+## 47.13 PREVENT LAYOUT SHIFT
+
+Space must be known before dynamic content appears.
+
+Reserve space for:
+
+```text
+Images
+Videos
+Carousels
+Embeds
+Async content
+Ads
+Skeletons
+Dynamic cards
+```
+
+Avoid inserting banners or content above already rendered content after page load.
+
+A page should feel physically stable while loading.
+
+---
+
+## 47.14 STREAM SLOW CONTENT WHEN APPROPRIATE
+
+Do not make the entire page wait for one slow non-critical section.
+
+Where useful, use:
+
+```text
+Suspense
+Streaming
+Segment-level loading states
+```
+
+Render important content first.
+
+Slow secondary content can arrive afterward without blocking the page shell.
+
+Do not overuse loading boundaries for tiny components.
+
+---
+
+## 47.15 DATABASE AND API PERFORMANCE MATTER
+
+Frontend optimization cannot compensate for slow backend requests.
+
+For server data:
+
+```text
+Request only required fields
+Avoid duplicate queries
+Avoid N+1 queries
+Paginate large datasets
+Use appropriate indexes
+Cache stable queries when justified
+Parallelize independent calls
+```
+
+Do not transfer large payloads when the page only needs a small subset.
+
+---
+
+## 47.16 KEEP PAYLOADS SMALL
+
+Avoid sending unnecessary data from server to client.
+
+Do not serialize huge objects into Client Components.
+
+Pass only the fields the client actually needs.
+
+Prefer:
+
+```text
+Small props
+Small JSON payloads
+Server-rendered output
+Paginated results
+Incremental loading
+```
+
+over sending complete datasets upfront.
+
+---
+
+## 47.17 PERFORMANCE BUDGETS
+
+For important public pages, target strong real-world Core Web Vitals.
+
+Use these as engineering targets where realistic:
+
+```text
+LCP  ≤ 2.5s
+INP  ≤ 200ms
+CLS  ≤ 0.1
+```
+
+Also watch:
+
+```text
+Initial JavaScript
+Total transferred bytes
+Number of network requests
+Server response time
+Image weight
+Third-party script cost
+Hydration work
+Long main-thread tasks
+```
+
+Do not chase a perfect synthetic score by breaking real UX.
+
+Prioritize actual user-perceived performance.
+
+---
+
+## 47.18 PERFORMANCE VALIDATION
+
+After meaningful frontend changes, check for performance regressions.
+
+Use appropriate available tooling such as:
+
+```text
+Chrome DevTools
+Lighthouse
+Next.js build output
+Bundle analyzer if already available
+Network waterfall
+Performance panel
+Core Web Vitals
+Production monitoring
+```
+
+Check especially:
+
+```text
+What loads before first paint?
+What is the LCP element?
+What JavaScript reaches the browser?
+Which requests block rendering?
+Are duplicate requests occurring?
+Are images oversized?
+Are fonts excessive?
+Is hydration doing unnecessary work?
+```
+
+Fix the cause instead of hiding the symptom.
+
+---
+
+## 47.19 FAST-PAGE DECISION ORDER
+
+When building or reviewing a page, use this order:
+
+```text
+1. Can it be static?
+2. Can it be rendered on the server?
+3. Can the result be cached?
+4. Can JavaScript be removed?
+5. Can an existing component be reused?
+6. Can data requests run in parallel?
+7. Can below-the-fold resources be deferred?
+8. Can the next likely navigation be prefetched?
+9. Can the payload be reduced?
+10. Can layout shift be eliminated?
+```
+
+---
+
+## 47.20 PERFORMANCE ANTI-PATTERNS
+
+Avoid architectures such as:
+
+```text
+Beautiful UI
++ Entire page "use client"
++ Large animation framework everywhere
++ Multiple giant background videos
++ Oversized images
++ Many third-party scripts
++ Client-side fetching for server-renderable content
++ Unnecessary state
++ Unnecessary effects
++ Huge icon imports
++ No caching
+= SLOW WEBSITE
+```
+
+Prefer:
+
+```text
+Modern UI
++ Server Components
++ Semantic HTML
++ Small client islands
++ Optimized media
++ Cached data
++ Prefetched navigation
++ Stable layouts
++ Minimal dependencies
++ Minimal JavaScript
+= FAST PREMIUM WEBSITE
+```
+
+---
+
+## 47.21 PERFORMANCE MUST SURVIVE DESIGN CHANGES
+
+Do not allow a visual redesign to silently introduce:
+
+```text
+Massive JS bundles
+Huge videos
+Unoptimized images
+Hydration-heavy sections
+Excessive DOM nodes
+Unnecessary animation
+Render-blocking dependencies
+Layout instability
+```
+
+Premium design should remain fast.
+
+Performance and visual quality are not competing requirements.
+
+---
+
+
 # FINAL INSTRUCTION
 
 For **every single task**:
@@ -1184,6 +1791,20 @@ DO NOT MODIFY UNRELATED CODE.
 FOLLOW THE EXISTING PROJECT ARCHITECTURE.
 
 PRESERVE PERFORMANCE, ACCESSIBILITY AND SEO.
+
+RENDER IMPORTANT CONTENT SERVER-SIDE FIRST.
+
+KEEP CLIENT-SIDE JAVASCRIPT AS SMALL AS PRACTICAL.
+
+CACHE STABLE DATA AND STATIC CONTENT WHERE APPROPRIATE.
+
+PREFETCH HIGH-VALUE LIKELY NAVIGATION WITHOUT OVER-PREFETCHING.
+
+AVOID REQUEST WATERFALLS AND UNNECESSARY THIRD-PARTY SCRIPTS.
+
+PROTECT LCP, INP AND CLS.
+
+MAKE THE WEBSITE FEEL IMMEDIATE, NOT JUST LOOK MODERN.
 
 MAKE THE SMALLEST PRODUCTION-QUALITY CHANGE POSSIBLE.
 ```
