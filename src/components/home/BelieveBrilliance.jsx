@@ -1,7 +1,6 @@
-'use client';
 import React from 'react';
-import { motion } from 'framer-motion';
 import UnderlineArrowLink from '../common/UnderlineArrowLink';
+import ScrollReveal from '../common/ScrollReveal';
 
 const BelieveBrilliance = () => {
   return (
@@ -9,36 +8,26 @@ const BelieveBrilliance = () => {
       <div className="container mx-auto px-6 md:px-12 lg:px-20 flex flex-col md:flex-row items-center gap-16 lg:gap-24">
         {/* Left Images Collage — editorial overlapping */}
         <div className="md:w-1/2 relative min-h-[500px] lg:min-h-[600px] w-full mt-10 md:mt-0">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.92 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+          <ScrollReveal
+            direction="zoom"
+            duration={0.9}
             className="absolute left-0 top-0 w-[75%] h-[420px] lg:h-[480px] rounded-tl-[40px] overflow-hidden shadow-2xl"
           >
             <img src="/images/believe/believe-brilliance-hero.webp" alt="Children learning" className="w-full h-full object-[95%_top] object-cover img-editorial" loading="lazy" />
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.9, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
+          </ScrollReveal>
+          <ScrollReveal
+            direction="up"
+            delay={0.2}
+            duration={0.8}
             className="absolute right-0 bottom-0 w-[55%] h-[320px] lg:h-[360px] rounded-br-[40px] overflow-hidden z-10 shadow-xl border-4 border-white"
           >
             <img src="/images/believe/believe-brilliance-collage.png" alt="Happy child" className="w-full h-full object-cover img-editorial" loading="lazy" />
-          </motion.div>
-          {/* Decorative handwritten note */}
-
+          </ScrollReveal>
         </div>
 
         {/* Right Content — with editorial spacing */}
         <div className="md:w-1/2 md:pl-4 lg:pl-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
+          <ScrollReveal direction="up" duration={0.6}>
             <h3>
               From 45 Days to 8 Years
             </h3>
@@ -57,7 +46,7 @@ const BelieveBrilliance = () => {
               <UnderlineArrowLink href="/book-your-tour" text="BOOK A SCHOOL TOUR" color="yellow" />
               <UnderlineArrowLink href="/contact" text="FIND A CENTRE" color="green" />
             </div>
-          </motion.div>
+          </ScrollReveal>
         </div>
       </div>
     </section>
@@ -65,3 +54,4 @@ const BelieveBrilliance = () => {
 };
 
 export default BelieveBrilliance;
+

@@ -1,5 +1,4 @@
-'use client';
-import { motion } from 'framer-motion';
+import ScrollReveal from '../common/ScrollReveal';
 
 export default function BrighterFuture({
   variant = 'hero',
@@ -28,11 +27,9 @@ export default function BrighterFuture({
           />
         )}
         <div className="container mx-auto px-4 md:px-12 relative z-10 flex items-center justify-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+          <ScrollReveal
+            direction="up"
+            duration={0.6}
             className={`w-full max-w-[49%] text-left rounded-t-[10px] p-[50px] ${boxBg || 'bg-msi-orange/90'}`}
           >
             <h3
@@ -55,7 +52,7 @@ export default function BrighterFuture({
             >
               {defaultDesc}
             </p>
-          </motion.div>
+          </ScrollReveal>
         </div>
       </section>
     );
@@ -71,11 +68,9 @@ export default function BrighterFuture({
       <div className="absolute inset-0 bg-gradient-to-r from-msi-purple/80 via-msi-purple/50 to-transparent" />
       <div className="grain-overlay absolute inset-0 pointer-events-none" />
       <div className="relative container mx-auto px-6 md:px-12 lg:px-20">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+        <ScrollReveal
+          direction="up"
+          duration={0.8}
           className="max-w-2xl"
         >
           {defaultSubtitle && (
@@ -89,8 +84,9 @@ export default function BrighterFuture({
           <p className="text-white/70 text-lg leading-relaxed max-w-xl">
             {defaultDesc}
           </p>
-        </motion.div>
+        </ScrollReveal>
       </div>
     </section>
   );
 }
+
