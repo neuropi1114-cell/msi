@@ -14,7 +14,9 @@ import VideoCarousel from '../../components/home/VideoCarousel';
 import Feedback from '../../components/home/Feedback';
 import CreativeLearning from '../../components/parents/CreativeLearning';
 import MissionCounters from '../../components/nep/MissionCounters';
+import PresentationSection from '../../components/common/PresentationSection';
 import GalleryStrip from '../../components/common/GalleryStrip';
+import Blogs from '../../components/home/Blogs';
 
 import SectionScrollController from '../../components/common/SectionScrollController';
 
@@ -57,9 +59,11 @@ export default function ParentsPage({ activeSlug = null }) {
 
         <CreativeLearning />
         <MissionCounters />
+        <PresentationSection id="brochure" title="BROCHURE" />
         <GalleryStrip />
       </main>
       <ContactUs image="/images/parents/Parents_Enrol.png" />
+      <Blogs />
       <Footer />
     </>
   );

@@ -7,7 +7,7 @@ import CloudHeader from '../../components/layout/CloudHeader';
 import SectionHeader from '../../components/common/SectionHeader';
 import VideoShowcase from '../../components/home/VideoShowcase';
 import OneJourneySection from '../../components/programs/OneJourneySection';
-import RecentNews from '../../components/day-care/RecentNews';
+import Blogs from '../../components/home/Blogs';
 import EarlyYearsSection from '../../components/programs/EarlyYearsSection';
 import NurserySection from '../../components/programs/NurserySection';
 import KindergartenSection from '../../components/programs/KindergartenSection';
@@ -78,9 +78,9 @@ export default function ProgramsPage({ activeSlug = null }) {
 
         <ContactUs image="/images/programs/Programs_Enrol.png" />
         <GalleryStrip images={programGalleryImages} />
-        <RecentNews />
       </main>
 
+      <Blogs />
       <Footer />
     </>
   );

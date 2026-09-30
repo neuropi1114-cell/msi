@@ -37,7 +37,10 @@ const posts = [
   }
 ];
 
-export default function Blogs() {
+export default function Blogs({
+  eyebrow = "Parenting Insights, Expert Guidance, and Stories That Inspire.",
+  title = "From The Founder's Desk",
+}) {
   return (
     <section className="py-20 bg-white relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full overflow-hidden leading-[0] rotate-180">
@@ -56,14 +59,14 @@ export default function Blogs() {
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
           >
-            What&rsquo;s Going on in our Blog?
+            {eyebrow}
           </motion.h3>
           <motion.h2
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            Recent BLOGs
+            {title}
           </motion.h2>
         </div>
 

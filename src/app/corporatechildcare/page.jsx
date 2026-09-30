@@ -17,6 +17,8 @@ import VideoShowcase from '../../components/home/VideoShowcase';
 import GalleryStrip from '../../components/common/GalleryStrip';
 import { programVideos } from '../programs/programsdata';
 import { neuroPiWayGalleryImages } from '../neuropiway/theneuropiwaydata';
+import PresentationSection from '../../components/common/PresentationSection';
+import Blogs from '../../components/home/Blogs';
 import SectionScrollController from '../../components/common/SectionScrollController';
 import {
   metadata,
@@ -126,7 +128,7 @@ export default function CorporateChildcarePage({ activeSlug = null }) {
           drawerTitle="CORPORATE SUBSIDY PROGRAMS"
           drawerBody={corporateSubsidyDrawerBody}
           bottomEyebrow="Because Modern Work Doesn't Always End at 5 PM."
-          bottomEyebrowClass="text-msi-blue sm:whitespace-nowrap"
+          bottomEyebrowClass="text-msi-blue"
           bottomTitle="EXTENDED-HOURS CHILDCARE"
           bottomP1="Technology, healthcare, global services, customer support, operations and many other industries work beyond conventional school hours."
           bottomP2={null}
@@ -151,7 +153,7 @@ export default function CorporateChildcarePage({ activeSlug = null }) {
         <div id="multi-location-solutions" className="scroll-mt-24">
           <FaqSection
             subheading="One Workforce. Many Locations. One Childcare Partner."
-            subheadingClass="sm:whitespace-nowrap"
+            subheadingClass="text-gray-600"
             heading="MULTI-LOCATION SOLUTIONS"
             showFaq={false}
             imageSrc="/images/corporatechildcare/Corporate_Childcare_8_v2.png"
@@ -221,6 +223,14 @@ export default function CorporateChildcarePage({ activeSlug = null }) {
           description={moreThanACrecheContent}
         />
 
+        <PresentationSection
+          id="brochure"
+          title="CORPORATE BROCHURE"
+          subtitle="Explore our interactive corporate presentation and brochure."
+          embedUrl="https://online.fliphtml5.com/uawhd/omhr/"
+          iframeTitle="Corporate Presentation"
+        />
+
 
 
 
@@ -265,6 +275,7 @@ export default function CorporateChildcarePage({ activeSlug = null }) {
         <GalleryStrip images={neuroPiWayGalleryImages} />
 
       </main>
+      <Blogs />
       <Footer />
     </>
   );

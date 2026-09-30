@@ -15,6 +15,7 @@ import VideoShowcase from '../../components/home/VideoShowcase';
 import EarlyLearningSection from '../../components/common/EarlyLearningSection';
 import SensoryCardsSection from '../../components/common/SensoryCardsSection';
 import OneJourneySection from '../../components/programs/OneJourneySection';
+import Blogs from '../../components/home/Blogs';
 
 import SectionScrollController from '../../components/common/SectionScrollController';
 
@@ -241,6 +242,7 @@ export default function EducationalProjectPage({ activeSlug = null }) {
         <GalleryStrip images={neuroPiWayGalleryImages} />
       </main>
       <ContactUs image="/images/nep/The_NeuroPi_Way_Enrol.png" title="BOOK YOUR TOUR" buttonText="BOOK YOUR TOUR" />
+      <Blogs />
       <Footer />
     </>
   );

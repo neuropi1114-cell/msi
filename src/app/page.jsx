@@ -50,9 +50,10 @@ export default function HomePage() {
         {/* <Team /> */}
         <VenturePhilanthropyCta />
 
-        <Blogs />
+
         <ContactUs />
       </main>
+      <Blogs />
       <Footer />
     </>
   );

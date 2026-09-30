@@ -10,7 +10,10 @@ export default function SectionScrollController({ activeSlug }) {
         : null);
 
     if (targetId) {
-      const el = document.getElementById(targetId);
+      const el =
+        document.getElementById(targetId) ||
+        document.getElementById(targetId.toLowerCase()) ||
+        document.getElementById(targetId.toUpperCase());
       if (el) {
         setTimeout(() => {
           el.scrollIntoView({ behavior: 'smooth', block: 'start' });

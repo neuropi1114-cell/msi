@@ -19,7 +19,7 @@ export default function DesignPhilosophy({
   eyebrow = "Small Steps Into A Big New World.",
   eyebrowClass = "text-[#68BAE3]",
   title = "STARTING SCHOOL & SETTLING IN",
-  titleClass = "text-msi-orange sm:whitespace-nowrap",
+  titleClass = "text-msi-orange",
   p1 = "For a young child, beginning preschool or daycare can mean a new environment, new adults, new children and a completely new routine.",
   p1Class = "text-msi-cream",
   p2Class = null,

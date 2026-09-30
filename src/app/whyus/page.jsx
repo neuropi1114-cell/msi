@@ -16,6 +16,7 @@ import HomeNeuroPiApproach from '../../components/home/NeuroPiApproach';
 import CreativeLearning from '../../components/parents/CreativeLearning';
 import VideoShowcase from '../../components/home/VideoShowcase';
 import GalleryStrip from '../../components/common/GalleryStrip';
+import Blogs from '../../components/home/Blogs';
 
 import SectionScrollController from '../../components/common/SectionScrollController';
 
@@ -153,6 +154,7 @@ export default function WhyUsPage({ activeSlug = null }) {
         <GalleryStrip images={whyUsGalleryImages} />
       </main>
       <ContactUs image="/images/whyus/Why_MSI_Enrol.png" />
+      <Blogs />
       <Footer />
     </>
   );
