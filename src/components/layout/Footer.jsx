@@ -9,8 +9,8 @@ const HYDERABAD_BRANCHES = [
   { label: 'Hitex', href: '/hitex' },
   { label: 'The Square', href: '/qcity' },
   { label: 'Avance 1', href: '/avance' },
-  { label: 'Avance 2', href: '/avance' },
-  { label: 'Mindscape', href: '/mindspace' },
+  { label: 'Avance 2', href: '/avance-2' },
+  { label: 'Mindspace', href: '/mindspace' },
   { label: 'Kavuri Hills', href: '/kavuri-hills' },
   { label: 'Cyberabad Police Commissionerate', href: '/cyberabad-police-commissionerate' },
   { label: 'Miyapur', href: '/miyapur' },
@@ -21,13 +21,13 @@ const HYDERABAD_BRANCHES = [
 
 const PAN_INDIA_BRANCHES = [
   { label: 'Berhampur – Odisha', href: '/berhampur' },
-  { label: 'Tanuku – AP' },
+  { label: 'Tanuku – AP', href: '/contact?location=tanuku' },
   { label: 'Tadepalligudem – AP', href: '/tadepalligudem' },
-  { label: 'Manpada – Thane' },
-  { label: 'Balewadi – Pune' },
+  { label: 'Manpada – Thane', href: '/contact?location=manpada' },
+  { label: 'Balewadi – Pune', href: '/contact?location=balewadi' },
   { label: 'Purna Nagar – Pune', href: '/purna-nagar' },
-  { label: 'Chakshu – Jaipur' },
-  { label: 'Noida – UP' },
+  { label: 'Chakshu – Jaipur', href: '/contact?location=jaipur' },
+  { label: 'Noida – UP', href: '/contact?location=noida' },
 ];
 
 const NAV_LINKS = [

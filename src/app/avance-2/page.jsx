@@ -13,28 +13,28 @@ import CampusLocationModule from '../../components/common/CampusLocationModule';
 import JsonLd from '../../components/JsonLd';
 
 export const metadata = {
-  title: 'My School ITALY — aVance 1 (H04) | Corporate Daycare & Preschool Gachibowli',
-  description: 'Neuroscience-informed corporate daycare, crèche, and preschool at aVance H04, Phoenix Infocity, Gachibowli, Hyderabad.',
-  alternates: { canonical: '/avance' },
+  title: 'My School ITALY — aVance 2 (H06) | Corporate Daycare & Preschool HITEC City',
+  description: 'Neuroscience-informed corporate daycare, crèche, and preschool at aVance H06, HITEC City Phase 2, Phoenix Infocity, Hyderabad.',
+  alternates: { canonical: '/avance-2' },
 };
 
 const schemaData = {
   '@context': 'https://schema.org',
   '@type': 'ChildCare',
-  name: 'My School ITALY — aVance 1 Campus',
-  description: 'Corporate childcare, baby crèche, and preschool at aVance Business Hub H04, Gachibowli.',
-  url: 'https://myschoolitaly.com/avance',
+  name: 'My School ITALY — aVance 2 Campus',
+  description: 'Corporate childcare, baby crèche, and preschool at aVance H06, HITEC City Phase 2.',
+  url: 'https://myschoolitaly.com/avance-2',
   telephone: '+917093904680',
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'aVance Business Hub, Phoenix Infocity SEZ, Building H04, HUDA Techno Enclave',
+    streetAddress: 'aVance Business Hub, Building H06, HITEC City Phase 2',
     addressLocality: 'Gachibowli, Hyderabad',
     postalCode: '500081',
     addressCountry: 'IN',
   },
 };
 
-export default function AvancePage() {
+export default function Avance2Page() {
   return (
     <>
       <JsonLd schema={schemaData} />
@@ -50,7 +50,7 @@ export default function AvancePage() {
         <div data-nav-sentinel />
 
         <SectionHeader
-          title="MY SCHOOL ITALY — AVANCE"
+          title="MY SCHOOL ITALY — AVANCE 2 (H06)"
           subtitle={null}
           description="We Begin By Understanding The Child."
           descriptionClassName="text-xl md:text-2xl font-normal"
@@ -62,11 +62,11 @@ export default function AvancePage() {
             imageWrapperClass="overflow-hidden rounded-2xl shadow-2xl border border-gray-100"
             imageClass="w-full h-auto object-cover scale-115 transform hover:scale-125 transition-transform duration-500"
             imageSrc="/images/hitex/Hitex_3.png"
-            imageAlt="Children at My School ITALY aVance"
+            imageAlt="Children at My School ITALY aVance 2"
             eyebrow="A Complete Day For A Growing Child."
             title="PROGRAMS DESIGNED AROUND YOUR CHILD'S DAY"
             readMoreHref="/programs"
-            p1="Situated inside aVance Business Hub (Phoenix Infocity SEZ), our campus serves corporate employees and neighbourhood families across Gachibowli, HUDA Techno Enclave, and HITEC City."
+            p1="Situated inside Building H06 at aVance Business Hub (HITEC City Phase 2), our campus serves corporate employees and neighbourhood families across HITEC City, Madhapur, Whitefields, Kondapur, and Raidurg."
             p2={
               <div className="space-y-3 mt-4 text-msi-purple">
                 <p>
@@ -82,10 +82,10 @@ export default function AvancePage() {
 
         <NepHero
           eyebrow="We Begin By Understanding The Child."
-          title="WHY FAMILIES CHOOSE MSI AVANCE?"
+          title="WHY FAMILIES CHOOSE MSI AVANCE 2?"
           titleColor="text-msi-yellow"
           subtitle="BECAUSE EVERY CHILD DESERVES TO BE KNOWN BEFORE THEY ARE TAUGHT."
-          description="Located right inside the IT hub of Gachibowli, MSI aVance brings working parents peace of mind with close-proximity professional childcare and neuroscience-based education."
+          description="Situated in HITEC City Phase 2, MSI aVance 2 brings working parents peace of mind with close-proximity professional childcare and neuroscience-based education."
           bgImage="/images/hitex/Hitex_2.png"
           bgPosition="bg-cover bg-center"
           sectionClass="w-full aspect-[2172/724] max-h-[650px] py-8 md:py-12"
@@ -113,24 +113,24 @@ export default function AvancePage() {
           readMoreHref="/parents"
         >
           <p className="text-msi-purple text-sm sm:text-base leading-relaxed">
-            Starting preschool or daycare is a milestone for the whole family. At MSI aVance, we create an open, connected relationship between home and school.
+            Starting preschool or daycare is a milestone for the whole family. At MSI aVance 2, we create an open, connected relationship between home and school.
           </p>
         </OneJourneySection>
 
         <CampusLocationModule
-          eyebrow="Find us in Gachibowli, Hyderabad"
-          campusName="My School ITALY — aVance"
-          description="Located inside aVance Business Hub at Phoenix Infocity SEZ, our centre serves working parents in Gachibowli, HUDA Techno Enclave, HITEC City, and Financial District."
-          address="aVance Business Hub, Phoenix Infocity SEZ, H04 & H06, HUDA Techno Enclave, Gachibowli, Hyderabad 500081"
-          landmark="aVance Business Hub, Phoenix Infocity"
+          eyebrow="Find us in HITEC City Phase 2, Hyderabad"
+          campusName="My School ITALY — aVance 2 (Building H06)"
+          description="Located inside aVance Business Hub Building H06 at HITEC City Phase 2, our centre serves working parents in HITEC City, Madhapur, Whitefields, Kondapur, Kothaguda, Gachibowli, and Raidurg."
+          address="aVance Business Hub, Building H06, HITEC City Phase 2, Gachibowli, Hyderabad 500081"
+          landmark="aVance Business Hub, Building H06"
           distanceHeading="Drive-Time from Nearby Neighbourhoods"
           distanceBlock={[
-            { area: "HUDA Techno Enclave", distance: "0.5–2 km", time: "3–8 min" },
-            { area: "Gachibowli", distance: "1–4 km", time: "5–15 min" },
-            { area: "HITEC City", distance: "2–5 km", time: "8–18 min" },
-            { area: "Whitefields", distance: "2–5 km", time: "8–18 min" },
-            { area: "Kondapur", distance: "3–6 km", time: "10–20 min" },
-            { area: "Financial District", distance: "4–8 km", time: "12–28 min" },
+            { area: "HITEC City Phase 2", distance: "0.5–2 km", time: "3–8 min" },
+            { area: "Madhapur", distance: "1–3 km", time: "5–12 min" },
+            { area: "Whitefields", distance: "2–4 km", time: "6–14 min" },
+            { area: "Kondapur", distance: "2–5 km", time: "8–18 min" },
+            { area: "Kothaguda", distance: "3–5 km", time: "10–18 min" },
+            { area: "Raidurg", distance: "3–6 km", time: "10–20 min" },
           ]}
           googleMapsUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16414.619481663394!2d78.35156888715818!3d17.4458968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9320879c0511%3A0x2d0d280422d07cba!2sMy%20School%20ITALY%20%7C%20aVance!5e1!3m2!1sen!2sin!4v1790701244786!5m2!1sen!2sin"
           directionsUrl="https://www.google.com/maps/dir/?api=1&destination=My+School+ITALY+%7C+aVance"
@@ -138,7 +138,7 @@ export default function AvancePage() {
       </main>
 
       <div id="enroll">
-        <ContactUs image="/images/whyus/Why_MSI_Enrol.png" title="BOOK A TOUR AT MSI AVANCE" buttonText="BOOK A TOUR" />
+        <ContactUs image="/images/whyus/Why_MSI_Enrol.png" title="BOOK A TOUR AT MSI AVANCE 2" buttonText="BOOK A TOUR" />
       </div>
       <Footer />
     </>

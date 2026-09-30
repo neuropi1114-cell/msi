@@ -123,7 +123,7 @@ export default function BlogPost2Page() {
 
             <h2 className="text-2xl md:text-3xl  font-bold text-msi-purple mt-10 mb-4">Where Learning Begins: MySchoolITALY</h2>
             <p className="text-gray-700 leading-relaxed mb-6">
-              At <strong>MySchoolITALY</strong>, we blend play-based learning with evidence-backed methods to help your child grow smarter, happier, and more confident. Our centers across <strong>Hitex, Kaveri Hills, Kondapur, Avance, Avance 2, KPHB, Miyapur, Jubilee Hills, Madhapur, Mindspace, and Q City</strong> are thoughtfully designed to support every stage of early childhood development.
+              At <strong>MySchoolITALY</strong>, we blend play-based learning with evidence-backed methods to help your child grow smarter, happier, and more confident. Our centers across <strong>Hitex, Kaveri Hills, Kondapur, aVance Business Hub, KPHB, Miyapur, Jubilee Hills, Madhapur, Mindspace, and Q City</strong> are thoughtfully designed to support every stage of early childhood development.
             </p>
             <p className="text-gray-700 leading-relaxed mb-6">
               Want your child to thrive both at home and at school? Contact us today to schedule a school tour or learn more about our <strong>preschool and daycare programs</strong>.
