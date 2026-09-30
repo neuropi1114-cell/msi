@@ -51,6 +51,7 @@ export default function BerhampurPage() {
         <div data-nav-sentinel />
 
         <SectionHeader
+          titleTag="h1"
           title="MY SCHOOL ITALY — BERHAMPUR (BRAHMAPUR)"
           subtitle={null}
           description="We Begin By Understanding The Child."

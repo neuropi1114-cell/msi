@@ -51,6 +51,7 @@ export default function TadepalligudemPage() {
         <div data-nav-sentinel />
 
         <SectionHeader
+          titleTag="h1"
           title="MY SCHOOL ITALY — TADEPALLIGUDEM"
           subtitle={null}
           description="We Begin By Understanding The Child."

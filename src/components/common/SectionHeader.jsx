@@ -5,15 +5,16 @@ export default function SectionHeader({
   subtitle = "You Are Not Dropping Your Child at School. You Are Joining Their Journey.",
   description = "Choosing your child's first school or childcare environment is a deeply important decision.",
   className = "py-20 bg-white",
-  descriptionClassName = ""
+  descriptionClassName = "",
+  titleTag: Tag = "h2"
 }) {
   return (
     <section className={className}>
       <div className="container mx-auto px-4 md:px-12 text-center">
         <ScrollReveal direction="up" delay={0.1}>
-          <h2 className="text-msi-purple mb-2">
+          <Tag className="text-msi-purple mb-2">
             {title}
-          </h2>
+          </Tag>
         </ScrollReveal>
         <ScrollReveal direction="zoom" delay={0.25}>
           <div className="w-24 h-1 bg-msi-orange mx-auto mt-2 mb-3" />

@@ -44,6 +44,7 @@
 
   }
 
+  h1,
   h2 {
     @apply font-linotte text-3xl md:text-4xl text-msi-orange font-bold leading-tight uppercase not-italic;
   }

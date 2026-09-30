@@ -51,6 +51,7 @@ export default function PurnaNagarPage() {
         <div data-nav-sentinel />
 
         <SectionHeader
+          titleTag="h1"
           title="MY SCHOOL ITALY — PURNA NAGAR (PUNE)"
           subtitle={null}
           description="We Begin By Understanding The Child."
