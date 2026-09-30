@@ -13,28 +13,29 @@ import CampusLocationModule from '../../components/common/CampusLocationModule';
 import JsonLd from '../../components/JsonLd';
 
 export const metadata = {
-  title: 'My School ITALY — Kondapur | Preschool & Daycare Botanical Garden Road',
-  description: 'Neuroscience-informed preschool, daycare, and crèche at Sumadhura Horizon, Botanical Garden Road, Kondapur, Hyderabad.',
-  alternates: { canonical: '/kondapur' },
+  title: 'My School ITALY — Berhampur / Brahmapur | Preschool & Daycare Odisha',
+  description: 'Neuroscience-informed preschool, daycare, and crèche at Tata Benz Square, Berhampur / Brahmapur, Odisha.',
+  alternates: { canonical: '/berhampur' },
 };
 
 const schemaData = {
   '@context': 'https://schema.org',
   '@type': 'ChildCare',
-  name: 'My School ITALY — Kondapur Campus',
-  description: 'Neuroscience-informed preschool and daycare at Sumadhura Horizon, Botanical Garden Road, Kondapur.',
-  url: 'https://myschoolitaly.com/kondapur',
+  name: 'My School ITALY — Berhampur Campus',
+  description: 'Neuroscience-informed preschool and daycare at Tata Benz Square, Berhampur / Brahmapur, Odisha.',
+  url: 'https://myschoolitaly.com/berhampur',
   telephone: '+917093904680',
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'Sumadhura Horizon, Botanical Garden Road, Block I, NCB Enclave',
-    addressLocality: 'Kondapur, Gachibowli, Hyderabad',
-    postalCode: '500084',
+    streetAddress: 'Tata Benz Square',
+    addressLocality: 'Berhampur / Brahmapur',
+    addressRegion: 'Odisha',
+    postalCode: '760001',
     addressCountry: 'IN',
   },
 };
 
-export default function KondapurPage() {
+export default function BerhampurPage() {
   return (
     <>
       <JsonLd schema={schemaData} />
@@ -50,7 +51,7 @@ export default function KondapurPage() {
         <div data-nav-sentinel />
 
         <SectionHeader
-          title="MY SCHOOL ITALY — KONDAPUR"
+          title="MY SCHOOL ITALY — BERHAMPUR (BRAHMAPUR)"
           subtitle={null}
           description="We Begin By Understanding The Child."
           descriptionClassName="text-xl md:text-2xl font-normal"
@@ -62,11 +63,11 @@ export default function KondapurPage() {
             imageWrapperClass="overflow-hidden rounded-2xl shadow-2xl border border-gray-100"
             imageClass="w-full h-auto object-cover scale-115 transform hover:scale-125 transition-transform duration-500"
             imageSrc="/images/hitex/Hitex_3.png"
-            imageAlt="Children at My School ITALY Kondapur"
+            imageAlt="Children at My School ITALY Berhampur"
             eyebrow="A Complete Day For A Growing Child."
             title="PROGRAMS DESIGNED AROUND YOUR CHILD'S DAY"
             readMoreHref="/programs"
-            p1="At Sumadhura Horizon on Botanical Garden Road, our Kondapur centre provides quality early childhood education and care for families in NCB Enclave, Kothaguda, and Gachibowli."
+            p1="Located at Tata Benz Square in Berhampur, our campus brings neuroscience-informed early childhood education and care to families across central Brahmapur and surrounding neighbourhoods."
             p2={
               <div className="space-y-3 mt-4 text-msi-purple">
                 <p>
@@ -82,10 +83,10 @@ export default function KondapurPage() {
 
         <NepHero
           eyebrow="We Begin By Understanding The Child."
-          title="WHY FAMILIES CHOOSE MSI KONDAPUR?"
+          title="WHY FAMILIES CHOOSE MSI BERHAMPUR?"
           titleColor="text-msi-yellow"
           subtitle="BECAUSE EVERY CHILD DESERVES TO BE KNOWN BEFORE THEY ARE TAUGHT."
-          description="Conveniently situated near Botanical Garden Road and Kothaguda X Road, MSI Kondapur delivers European early years principles infused with neuroscience."
+          description="Positioned conveniently at Tata Benz Square, MSI Berhampur delivers European early childhood principles infused with neuroscience research for young learners in Odisha."
           bgImage="/images/hitex/Hitex_2.png"
           bgPosition="bg-cover bg-center"
           sectionClass="w-full aspect-[2172/724] max-h-[650px] py-8 md:py-12"
@@ -113,32 +114,32 @@ export default function KondapurPage() {
           readMoreHref="/parents"
         >
           <p className="text-msi-purple text-sm sm:text-base leading-relaxed">
-            Starting preschool or daycare is a milestone for the whole family. At MSI Kondapur, we create an open, connected relationship between home and school.
+            Starting preschool or daycare is a milestone for the whole family. At MSI Berhampur, we create an open, connected relationship between home and school.
           </p>
         </OneJourneySection>
 
         <CampusLocationModule
-          eyebrow="Find us in Kondapur, Hyderabad"
-          campusName="My School ITALY — Kondapur"
-          description="Situated at Sumadhura Horizon on Botanical Garden Road, our centre serves families from NCB Enclave, Kondapur, Kothaguda, Whitefields, and Gachibowli."
-          address="Sumadhura Horizon, Botanical Garden Road, Block I, NCB Enclave, Gachibowli, Hyderabad 500084"
-          landmark="Sumadhura Horizon, Botanical Garden Road"
+          eyebrow="Find us in Berhampur / Brahmapur, Odisha"
+          campusName="My School ITALY — Berhampur (Brahmapur)"
+          description="Our Tata Benz Square centre is convenient for families from Godavarish Nagar, Kamapalli, Courtpeta, Gandhi Nagar, Lanjipalli, and central Berhampur/Brahmapur."
+          address="Tata Benz Square, Berhampur, Odisha 760001"
+          landmark="Tata Benz Square, Berhampur"
           distanceHeading="Drive-Time from Nearby Neighbourhoods"
           distanceBlock={[
-            { area: "NCB Enclave", distance: "0.5–2 km", time: "3–8 min" },
-            { area: "Botanical Garden Road", distance: "0.5–2 km", time: "3–8 min" },
-            { area: "Kondapur", distance: "1–4 km", time: "5–15 min" },
-            { area: "Kothaguda", distance: "2–4 km", time: "8–15 min" },
-            { area: "Whitefields", distance: "2–5 km", time: "8–18 min" },
-            { area: "Gachibowli", distance: "3–6 km", time: "10–20 min" },
+            { area: "Tata Benz Square", distance: "0.5–2 km", time: "3–8 min" },
+            { area: "Godavarish Nagar", distance: "0.5–2 km", time: "3–8 min" },
+            { area: "Kamapalli", distance: "1–3 km", time: "5–10 min" },
+            { area: "Courtpeta", distance: "1–4 km", time: "5–12 min" },
+            { area: "Gandhi Nagar", distance: "2–4 km", time: "8–15 min" },
+            { area: "Lanjipalli", distance: "2–5 km", time: "8–18 min" },
           ]}
-          googleMapsUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30446.89358374125!2d78.29937797431639!3d17.4663324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93b1f9a15557%3A0x7a97437ae9c62a1d!2sMy%20School%20ITALY%20%7C%20Kondapur!5e0!3m2!1sen!2sin!4v1790742033628!5m2!1sen!2sin"
-          directionsUrl="https://www.google.com/maps/dir/?api=1&destination=My+School+ITALY+%7C+Kondapur"
+          googleMapsUrl="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d30127.848082200635!2d84.789401!3d19.283192!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3d50769da1aafd%3A0xf80d8c1376931eb7!2sMy%20School%20Italy%20Brahmapur!5e0!3m2!1sen!2sus!4v1790742609364!5m2!1sen!2sus"
+          directionsUrl="https://www.google.com/maps/dir/?api=1&destination=My+School+Italy+Brahmapur"
         />
       </main>
 
       <div id="enroll">
-        <ContactUs image="/images/whyus/Why_MSI_Enrol.png" title="BOOK A TOUR AT MSI KONDAPUR" buttonText="BOOK A TOUR" />
+        <ContactUs image="/images/whyus/Why_MSI_Enrol.png" title="BOOK A TOUR AT MSI BERHAMPUR" buttonText="BOOK A TOUR" />
       </div>
       <Footer />
     </>

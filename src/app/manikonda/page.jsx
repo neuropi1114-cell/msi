@@ -132,8 +132,8 @@ export default function ManikondaPage() {
             { area: "Khajaguda", distance: "3–6 km", time: "10–20 min" },
             { area: "Neknampur", distance: "2–5 km", time: "8–18 min" },
           ]}
-          googleMapsUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16415.571357186036!2d78.34850008715823!3d17.435321100000017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9314cc8b60a9%3A0x4f15f50d45a860dc!2sMY%20SCHOOL%20ITALY!5e1!3m2!1sen!2sin!4v1790701145419!5m2!1sen!2sin"
-          directionsUrl="https://www.google.com/maps/dir/?api=1&destination=My+School+ITALY+%7C+Manikonda"
+          googleMapsUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.2526830194047!2d78.36312367577933!3d17.399657202450314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9585718ecd8f%3A0x2b53bfa37e723427!2sMy%20School%20ITALY%20Manikonda!5e0!3m2!1sen!2sin!4v1790741824251!5m2!1sen!2sin"
+          directionsUrl="https://www.google.com/maps/dir/?api=1&destination=My+School+ITALY+Manikonda"
         />
       </main>
 

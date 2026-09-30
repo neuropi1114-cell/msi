@@ -13,28 +13,29 @@ import CampusLocationModule from '../../components/common/CampusLocationModule';
 import JsonLd from '../../components/JsonLd';
 
 export const metadata = {
-  title: 'My School ITALY — Kondapur | Preschool & Daycare Botanical Garden Road',
-  description: 'Neuroscience-informed preschool, daycare, and crèche at Sumadhura Horizon, Botanical Garden Road, Kondapur, Hyderabad.',
-  alternates: { canonical: '/kondapur' },
+  title: 'My School ITALY — Tadepalligudem | Preschool & Daycare Andhra Pradesh',
+  description: 'Neuroscience-informed preschool, daycare, and crèche at Subbaraopeta, near Karri Satyavathi Nagar, Tadepalligudem, Andhra Pradesh.',
+  alternates: { canonical: '/tadepalligudem' },
 };
 
 const schemaData = {
   '@context': 'https://schema.org',
   '@type': 'ChildCare',
-  name: 'My School ITALY — Kondapur Campus',
-  description: 'Neuroscience-informed preschool and daycare at Sumadhura Horizon, Botanical Garden Road, Kondapur.',
-  url: 'https://myschoolitaly.com/kondapur',
+  name: 'My School ITALY — Tadepalligudem Campus',
+  description: 'Neuroscience-informed preschool and daycare in Subbaraopeta, Tadepalligudem.',
+  url: 'https://myschoolitaly.com/tadepalligudem',
   telephone: '+917093904680',
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'Sumadhura Horizon, Botanical Garden Road, Block I, NCB Enclave',
-    addressLocality: 'Kondapur, Gachibowli, Hyderabad',
-    postalCode: '500084',
+    streetAddress: 'D.No. 4-33, 4/A, Subbaraopeta, near Municipal Commissioner Quarters, Karri Satyavathi Nagar',
+    addressLocality: 'Tadepalligudem',
+    addressRegion: 'Andhra Pradesh',
+    postalCode: '534101',
     addressCountry: 'IN',
   },
 };
 
-export default function KondapurPage() {
+export default function TadepalligudemPage() {
   return (
     <>
       <JsonLd schema={schemaData} />
@@ -50,7 +51,7 @@ export default function KondapurPage() {
         <div data-nav-sentinel />
 
         <SectionHeader
-          title="MY SCHOOL ITALY — KONDAPUR"
+          title="MY SCHOOL ITALY — TADEPALLIGUDEM"
           subtitle={null}
           description="We Begin By Understanding The Child."
           descriptionClassName="text-xl md:text-2xl font-normal"
@@ -62,11 +63,11 @@ export default function KondapurPage() {
             imageWrapperClass="overflow-hidden rounded-2xl shadow-2xl border border-gray-100"
             imageClass="w-full h-auto object-cover scale-115 transform hover:scale-125 transition-transform duration-500"
             imageSrc="/images/hitex/Hitex_3.png"
-            imageAlt="Children at My School ITALY Kondapur"
+            imageAlt="Children at My School ITALY Tadepalligudem"
             eyebrow="A Complete Day For A Growing Child."
             title="PROGRAMS DESIGNED AROUND YOUR CHILD'S DAY"
             readMoreHref="/programs"
-            p1="At Sumadhura Horizon on Botanical Garden Road, our Kondapur centre provides quality early childhood education and care for families in NCB Enclave, Kothaguda, and Gachibowli."
+            p1="Located in Subbaraopeta near Karri Satyavathi Nagar, My School ITALY Tadepalligudem provides a nurturing, neuroscience-informed foundation for young learners."
             p2={
               <div className="space-y-3 mt-4 text-msi-purple">
                 <p>
@@ -82,10 +83,10 @@ export default function KondapurPage() {
 
         <NepHero
           eyebrow="We Begin By Understanding The Child."
-          title="WHY FAMILIES CHOOSE MSI KONDAPUR?"
+          title="WHY FAMILIES CHOOSE MSI TADEPALLIGUDEM?"
           titleColor="text-msi-yellow"
           subtitle="BECAUSE EVERY CHILD DESERVES TO BE KNOWN BEFORE THEY ARE TAUGHT."
-          description="Conveniently situated near Botanical Garden Road and Kothaguda X Road, MSI Kondapur delivers European early years principles infused with neuroscience."
+          description="Serving families across Tadepalligudem town centre, Pentapadu, and Kadiyaddha, our campus brings European pedagogy and neuroscience research together."
           bgImage="/images/hitex/Hitex_2.png"
           bgPosition="bg-cover bg-center"
           sectionClass="w-full aspect-[2172/724] max-h-[650px] py-8 md:py-12"
@@ -113,32 +114,31 @@ export default function KondapurPage() {
           readMoreHref="/parents"
         >
           <p className="text-msi-purple text-sm sm:text-base leading-relaxed">
-            Starting preschool or daycare is a milestone for the whole family. At MSI Kondapur, we create an open, connected relationship between home and school.
+            Starting preschool or daycare is a milestone for the whole family. At MSI Tadepalligudem, we create an open, connected relationship between home and school.
           </p>
         </OneJourneySection>
 
         <CampusLocationModule
-          eyebrow="Find us in Kondapur, Hyderabad"
-          campusName="My School ITALY — Kondapur"
-          description="Situated at Sumadhura Horizon on Botanical Garden Road, our centre serves families from NCB Enclave, Kondapur, Kothaguda, Whitefields, and Gachibowli."
-          address="Sumadhura Horizon, Botanical Garden Road, Block I, NCB Enclave, Gachibowli, Hyderabad 500084"
-          landmark="Sumadhura Horizon, Botanical Garden Road"
+          eyebrow="Find us in Tadepalligudem, Andhra Pradesh"
+          campusName="My School ITALY — Tadepalligudem"
+          description="Situated in Subbaraopeta near Karri Satyavathi Nagar, our centre serves families across central Tadepalligudem, Pentapadu, and Kadiyaddha."
+          address="D.No. 4-33, 4/A, Subbaraopeta, near Municipal Commissioner Quarters, Karri Satyavathi Nagar, Tadepalligudem, Andhra Pradesh 534101"
+          landmark="Near Municipal Commissioner Quarters, Subbaraopeta"
           distanceHeading="Drive-Time from Nearby Neighbourhoods"
           distanceBlock={[
-            { area: "NCB Enclave", distance: "0.5–2 km", time: "3–8 min" },
-            { area: "Botanical Garden Road", distance: "0.5–2 km", time: "3–8 min" },
-            { area: "Kondapur", distance: "1–4 km", time: "5–15 min" },
-            { area: "Kothaguda", distance: "2–4 km", time: "8–15 min" },
-            { area: "Whitefields", distance: "2–5 km", time: "8–18 min" },
-            { area: "Gachibowli", distance: "3–6 km", time: "10–20 min" },
+            { area: "Subbaraopeta", distance: "0.5–2 km", time: "3–8 min" },
+            { area: "Karri Satyavathi Nagar", distance: "0.5–2 km", time: "3–8 min" },
+            { area: "Tadepalligudem Town Centre", distance: "1–4 km", time: "5–15 min" },
+            { area: "Pentapadu", distance: "3–6 km", time: "10–20 min" },
+            { area: "Kadiyaddha", distance: "4–8 km", time: "12–25 min" },
           ]}
-          googleMapsUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30446.89358374125!2d78.29937797431639!3d17.4663324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93b1f9a15557%3A0x7a97437ae9c62a1d!2sMy%20School%20ITALY%20%7C%20Kondapur!5e0!3m2!1sen!2sin!4v1790742033628!5m2!1sen!2sin"
-          directionsUrl="https://www.google.com/maps/dir/?api=1&destination=My+School+ITALY+%7C+Kondapur"
+          googleMapsUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.225900787082!2d81.5322049!3d16.815145700000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a37b5bcee9f2cc9%3A0x82d55cf653784682!2sMy%20School%20ITALY%20%7C%20Tadepalligudem!5e0!3m2!1sen!2sus!4v1790742659780!5m2!1sen!2sus"
+          directionsUrl="https://www.google.com/maps/dir/?api=1&destination=My+School+ITALY+%7C+Tadepalligudem"
         />
       </main>
 
       <div id="enroll">
-        <ContactUs image="/images/whyus/Why_MSI_Enrol.png" title="BOOK A TOUR AT MSI KONDAPUR" buttonText="BOOK A TOUR" />
+        <ContactUs image="/images/whyus/Why_MSI_Enrol.png" title="BOOK A TOUR AT MSI TADEPALLIGUDEM" buttonText="BOOK A TOUR" />
       </div>
       <Footer />
     </>

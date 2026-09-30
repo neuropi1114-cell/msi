@@ -20,9 +20,14 @@ const HYDERABAD_BRANCHES = [
 ];
 
 const PAN_INDIA_BRANCHES = [
-  'Berhampur – Odisha', 'Tanuku – AP', 'Tadepalligudem – AP',
-  'Manpada – Thane', 'Balewadi – Pune', 'Purna Nagar – Pune',
-  'Chakshu – Jaipur', 'Noida – UP'
+  { label: 'Berhampur – Odisha', href: '/berhampur' },
+  { label: 'Tanuku – AP' },
+  { label: 'Tadepalligudem – AP', href: '/tadepalligudem' },
+  { label: 'Manpada – Thane' },
+  { label: 'Balewadi – Pune' },
+  { label: 'Purna Nagar – Pune', href: '/purna-nagar' },
+  { label: 'Chakshu – Jaipur' },
+  { label: 'Noida – UP' },
 ];
 
 const NAV_LINKS = [
@@ -84,8 +89,14 @@ const Footer = () => {
           <h3 className="!text-msi-orange font-bold mb-2 text-sm tracking-wider uppercase">PAN – INDIA</h3>
           <ul className="text-sm flex flex-wrap justify-center gap-x-1 gap-y-1 !text-white">
             {PAN_INDIA_BRANCHES.map((branch, i) => (
-              <li key={branch} className="flex items-center !text-white">
-                <span className="!text-white hover:!text-msi-orange transition-colors">{branch}</span>
+              <li key={branch.label} className="flex items-center !text-white">
+                {branch.href ? (
+                  <Link href={branch.href} className="!text-white hover:!text-msi-orange transition-colors font-medium underline underline-offset-2 decoration-msi-orange">
+                    {branch.label}
+                  </Link>
+                ) : (
+                  <span className="!text-white hover:!text-msi-orange transition-colors">{branch.label}</span>
+                )}
                 {i < PAN_INDIA_BRANCHES.length - 1 && <span className="!text-white/40 ml-1">|</span>}
               </li>
             ))}
