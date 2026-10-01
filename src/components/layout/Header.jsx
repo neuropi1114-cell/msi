@@ -208,9 +208,9 @@ const Header = () => {
             <a href="https://youtube.com/@myschoolitaly" target="_blank" rel="noopener noreferrer" aria-label="MySchoolItaly YouTube" className="p-0.5 hover:opacity-80 transition-opacity">
               <img src="/youtube.svg" alt="YouTube" className="w-4 h-4" />
             </a>
-            <Link href="/login" aria-label="Login" className="p-0.5 text-msi-purple hover:text-msi-green transition-colors flex items-center">
+            <a href="https://neuropiconnect.com/" target="_blank" rel="noopener noreferrer" aria-label="Login" className="p-0.5 text-msi-purple hover:text-msi-green transition-colors flex items-center">
               <User className="w-4 h-4" />
-            </Link>
+            </a>
           </div>
           <a
             href="tel:+917093904680"
@@ -329,13 +329,15 @@ const Header = () => {
 
         {/* Right Desktop CTA & Mobile Toggle */}
         <div className="flex items-center gap-3">
-          <Link
-            href="/login"
+          <a
+            href="https://neuropiconnect.com/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden sm:inline-flex items-center gap-2 bg-msi-orange text-white font-bold text-base md:text-lg px-7 py-3 rounded-full shadow-md hover:bg-[#b8561b] hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
           >
             <User className="w-5 h-5" />
             <span>LOGIN</span>
-          </Link>
+          </a>
 
           <button
             className="p-2.5 rounded-full bg-msi-purple/10 text-msi-purple hover:bg-msi-purple hover:text-white transition-all duration-300 lg:hidden"
@@ -438,14 +440,16 @@ const Header = () => {
                   })}
 
                   <div className="mt-6 pt-2">
-                    <Link
-                      href="/login"
+                    <a
+                      href="https://neuropiconnect.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="flex items-center justify-center gap-2 bg-white text-msi-purple font-bold text-base md:text-lg px-7 py-3.5 rounded-full shadow-lg hover:bg-msi-cream transition-colors"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       <User className="w-5 h-5" />
                       <span>LOGIN</span>
-                    </Link>
+                    </a>
                   </div>
                 </nav>
               </div>

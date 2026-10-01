@@ -36,6 +36,7 @@ const NAV_LINKS = [
   { href: '/about', label: 'About Us' },
   { href: '/programs', label: 'Programs' },
   { href: '/corporatechildcare', label: 'Corporate Childcare' },
+  { href: '/hyderabad', label: 'Hyderabad Hub' },
   { href: '/policy-framework', label: 'Policy Framework' },
   { href: '/media-coverage', label: 'Media' },
   { href: '/blog', label: 'Blog' },
@@ -77,7 +78,7 @@ const Footer = () => {
         <div className="text-center mb-10">
           <h3 className="font-bold mb-2 text-sm tracking-wider uppercase">
             <Link href="/hyderabad" className="text-msi-orange hover:text-amber-400 font-bold transition-colors">
-              HYDERABAD
+              HYDERABAD HUB
             </Link>
           </h3>
           <ul className="text-sm flex flex-wrap justify-center gap-x-1 gap-y-1 mb-4 text-white">

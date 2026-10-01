@@ -28,6 +28,14 @@ export const metadata = {
 
 const posts = [
   {
+    id: 4,
+    title: 'What to Expect from Top Childcare Centers in Hyderabad',
+    excerpt: 'When parents search for top childcare centers in Hyderabad, they are looking for a nurturing environment where children can learn, grow, and thrive — a space that feels like a second home.',
+    date: 'October 2025',
+    slug: '/what-to-expect-from-top-childcare-centers-in-hyderabad',
+    image: '/images/blog/top-childcare-centers-hyderabad-1.webp',
+  },
+  {
     id: 1,
     title: 'Spooktacular Halloween Celebration at MySchoolITALY @ Hitex',
     excerpt: 'This October, MySchoolITALY at Hitex turned into a festive wonderland of pumpkins, costumes, and spooky surprises as our students and teachers came together to celebrate Halloween 2025.',
@@ -40,7 +48,7 @@ const posts = [
     title: 'Brain-Boosting Activities You Can Do at Home',
     excerpt: 'As parents, you play a powerful role in shaping your child\'s early brain development. Discover neuroscience-backed activities to support your child\'s development at home.',
     date: '2025',
-    slug: '/blog/2',
+    slug: '/brain-boosting-activities-you-can-do-at-home',
     image: '/images/blog/brain-boosting-activities-featured.jpg',
   },
   {
@@ -48,7 +56,7 @@ const posts = [
     title: 'What is Neuroscience-Based Early Childhood Education',
     excerpt: 'Early childhood is a critical period for brain development. Discover how neuroscience-based education uses brain science to design teaching methods for young children.',
     date: 'September 19, 2025',
-    slug: '/blog/3',
+    slug: '/what-is-neuroscience-based-early-childhood-education',
     image: '/images/blog/neuroscience-education-featured.jpg',
   },
 ];

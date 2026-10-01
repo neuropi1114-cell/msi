@@ -44,7 +44,7 @@ const BelieveBrilliance = () => {
 
             <div className="flex flex-wrap gap-6">
               <UnderlineArrowLink href="/book-your-tour" text="BOOK A SCHOOL TOUR" color="yellow" />
-              <UnderlineArrowLink href="/contact" text="FIND A CENTRE" color="green" />
+              <UnderlineArrowLink href="/hyderabad" text="FIND A CENTRE" color="green" />
             </div>
           </ScrollReveal>
         </div>

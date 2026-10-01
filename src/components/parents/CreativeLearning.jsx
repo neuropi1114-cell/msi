@@ -46,7 +46,7 @@ export default function CreativeLearning({
             </div>
 
             <div className="flex flex-wrap items-center justify-center md:justify-start gap-6 mt-6">
-              <UnderlineArrowLink href="/contact" text="FIND A CENTRE" color="green" />
+              <UnderlineArrowLink href="/hyderabad" text="FIND A CENTRE" color="green" />
               <UnderlineArrowLink href={tourHref} text={tourText} color="yellow" />
             </div>
           </ScrollReveal>

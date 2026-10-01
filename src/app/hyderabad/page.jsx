@@ -33,9 +33,9 @@ export default function HyderabadPage() {
       <main>
         {/* 1. Hero Banner */}
         <CloudHeader
-          image="/images/hitex/HITEX_1.png"
+          image="/images/cheerful-rainy-day.png"
           imageClass="object-cover object-center"
-          heightClass="w-full aspect-[2172/724] min-h-[220px] sm:min-h-[320px] md:min-h-[420px] max-h-[650px]"
+          heightClass="w-full aspect-[16/7] min-h-[240px] sm:min-h-[340px] md:min-h-[460px] max-h-[680px]"
         />
         <div data-nav-sentinel />
 
