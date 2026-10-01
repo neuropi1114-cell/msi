@@ -217,3 +217,26 @@ export const qcityCorporateDrawer = (
 
 export const qcityGalleryImages = hitexGalleryImages;
 
+export const qcityCampusLocation = {
+  id: 'qcity',
+  name: 'The Square (Q-City)',
+  fullName: 'My School ITALY — The Square',
+  slug: '/qcity',
+  zone: 'Financial District & Gachibowli',
+  description: 'My School ITALY The Square brings MSI’s neuroscience-informed early-years approach closer to families in Nanakramguda, Financial District, Gachibowli, Khajaguda, Puppalaguda, Narsingi, Kokapet and Gopanpally. The centre offers families a convenient early-learning and care option that fits naturally into everyday home-and-work routines.',
+  address: 'The Square Tech Park, Wipro Circle Road, Nanakramguda, Financial District, Hyderabad 500032',
+  landmark: 'Near Wipro Circle & Financial District Corridor',
+  nearby: ['Nanakramguda', 'Financial District', 'Gachibowli', 'Khajaguda', 'Puppalaguda', 'Narsingi', 'Kokapet'],
+  driveTimes: [
+    { area: 'Nanakramguda', distance: '0.5–2 km', time: '3–8 min' },
+    { area: 'Financial District', distance: '0.5–2 km', time: '3–8 min' },
+    { area: 'Gachibowli', distance: '2–4 km', time: '8–15 min' },
+    { area: 'Kokapet', distance: '4–7 km', time: '12–22 min' },
+  ],
+  googleMapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.6785965778686!2d78.32855267577976!3d17.427205301655526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb930c4010ef93%3A0x13e1808c1f420e4!2sMy%20School%20ITALY%20%7C%20Q-City!5e0!3m2!1sen!2sin!4v1790410256498!5m2!1sen!2sin',
+  directionsUrl: 'https://www.google.com/maps/dir/?api=1&destination=My+School+ITALY+%7C+Q-City',
+  phone: '+917093904680',
+  badge: 'Tech Park Hub',
+  badgeBg: 'bg-blue-600 text-white',
+};
+

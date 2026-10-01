@@ -1,0 +1,21 @@
+export const avanceCampusLocation = {
+  id: 'avance',
+  name: 'aVance 1 (H04)',
+  fullName: 'My School ITALY — aVance 1',
+  slug: '/avance',
+  zone: 'HiTech City & SEZ',
+  description: 'Located inside aVance Business Hub at Phoenix Infocity SEZ, our centre serves working parents in Gachibowli, HUDA Techno Enclave, HITEC City, and Financial District with neuroscience-informed early childhood education and crèche care.',
+  address: 'aVance Business Hub, Phoenix Infocity SEZ, H04 & H06, HUDA Techno Enclave, Gachibowli, Hyderabad 500081',
+  landmark: 'aVance Business Hub, Building H04',
+  nearby: ['HUDA Techno Enclave', 'Gachibowli', 'HITEC City', 'Whitefields', 'Kondapur'],
+  driveTimes: [
+    { area: 'HUDA Techno Enclave', distance: '0.5–2 km', time: '3–8 min' },
+    { area: 'Gachibowli', distance: '1–4 km', time: '5–15 min' },
+    { area: 'HITEC City', distance: '2–5 km', time: '8–18 min' },
+  ],
+  googleMapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16414.619481663394!2d78.35156888715818!3d17.4458968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9320879c0511%3A0x2d0d280422d07cba!2sMy%20School%20ITALY%20%7C%20aVance!5e1!3m2!1sen!2sin!4v1790701244786!5m2!1sen!2sin',
+  directionsUrl: 'https://www.google.com/maps/dir/?api=1&destination=My+School+ITALY+%7C+aVance',
+  phone: '+917093904680',
+  badge: 'Corporate SEZ',
+  badgeBg: 'bg-purple-600 text-white',
+};

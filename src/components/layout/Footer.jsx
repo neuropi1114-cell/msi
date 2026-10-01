@@ -74,7 +74,11 @@ const Footer = () => {
 
         {/* Locations under tagline */}
         <div className="text-center mb-10">
-          <h3 className="text-msi-orange font-bold mb-2 text-sm tracking-wider uppercase">HYDERABAD</h3>
+          <h3 className="font-bold mb-2 text-sm tracking-wider uppercase">
+            <Link href="/hyderabad" className="text-msi-orange hover:text-amber-400 font-bold transition-colors">
+              HYDERABAD
+            </Link>
+          </h3>
           <ul className="text-sm flex flex-wrap justify-center gap-x-1 gap-y-1 mb-4 text-white">
             {HYDERABAD_BRANCHES.map((branch, i) => (
               <li key={branch.label} className="flex items-center text-white">

@@ -1,0 +1,21 @@
+export const kondapurCampusLocation = {
+  id: 'kondapur',
+  name: 'Kondapur Campus',
+  fullName: 'My School ITALY — Kondapur',
+  slug: '/kondapur',
+  zone: 'Madhapur & Kondapur',
+  description: 'Situated at Sumadhura Horizon on Botanical Garden Road, our centre serves families from NCB Enclave, Kondapur, Kothaguda, Whitefields, and Gachibowli.',
+  address: 'Sumadhura Horizon, Botanical Garden Road, Block I, NCB Enclave, Gachibowli, Hyderabad 500084',
+  landmark: 'Sumadhura Horizon, Botanical Garden Road',
+  nearby: ['NCB Enclave', 'Botanical Garden Road', 'Kondapur', 'Kothaguda', 'Whitefields'],
+  driveTimes: [
+    { area: 'NCB Enclave', distance: '0.5–2 km', time: '3–8 min' },
+    { area: 'Botanical Garden Road', distance: '0.5–2 km', time: '3–8 min' },
+    { area: 'Kothaguda', distance: '2–4 km', time: '8–15 min' },
+  ],
+  googleMapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30446.89358374125!2d78.29937797431639!3d17.4663324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93b1f9a15557%3A0x7a97437ae9c62a1d!2sMy%20School%20ITALY%20%7C%20Kondapur!5e0!3m2!1sen!2sin!4v1790742033628!5m2!1sen!2sin',
+  directionsUrl: 'https://www.google.com/maps/dir/?api=1&destination=My+School+ITALY+%7C+Kondapur',
+  phone: '+917093904680',
+  badge: 'Botanical Garden',
+  badgeBg: 'bg-emerald-600 text-white',
+};

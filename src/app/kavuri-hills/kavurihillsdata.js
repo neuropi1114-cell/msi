@@ -1,0 +1,21 @@
+export const kavuriHillsCampusLocation = {
+  id: 'kavuri-hills',
+  name: 'Kavuri Hills Campus',
+  fullName: 'My School ITALY — Kavuri Hills',
+  slug: '/kavuri-hills',
+  zone: 'Madhapur & Kondapur',
+  description: "Located in Kavuri Hills Phase 2 Road near Doctor's Colony, this centre is easily accessible for families in Kavuri Hills, Madhapur, Jubilee Hills, and HITEC City.",
+  address: "Kavuri Hills Phase 2 Road, Doctor's Colony, Madhapur, Hyderabad 500033",
+  landmark: "Doctor's Colony, Near Durgam Cheruvu Metro",
+  nearby: ['Kavuri Hills', "Doctor's Colony", 'Madhapur', 'Jubilee Hills', 'HITEC City'],
+  driveTimes: [
+    { area: 'Kavuri Hills', distance: '0.5–2 km', time: '3–8 min' },
+    { area: 'Madhapur', distance: '2–4 km', time: '8–15 min' },
+    { area: 'Jubilee Hills', distance: '3–6 km', time: '10–22 min' },
+  ],
+  googleMapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16415.509936034363!2d78.3740335871582!3d17.43600370000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91154133e013%3A0x64197f0e69be15a1!2sMy%20School%20ITALY%20%7C%20Kavuri%20Hills!5e1!3m2!1sen!2sin!4v1790701203506!5m2!1sen!2sin',
+  directionsUrl: 'https://www.google.com/maps/dir/?api=1&destination=My+School+ITALY+%7C+Kavuri+Hills',
+  phone: '+917093904680',
+  badge: 'Jubilee–Madhapur',
+  badgeBg: 'bg-emerald-600 text-white',
+};

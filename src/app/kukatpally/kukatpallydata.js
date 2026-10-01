@@ -1,0 +1,21 @@
+export const kukatpallyCampusLocation = {
+  id: 'kukatpally',
+  name: 'Kukatpally Campus',
+  fullName: 'My School ITALY — Kukatpally',
+  slug: '/kukatpally',
+  zone: 'Kukatpally & Miyapur',
+  description: 'Located in Gokul Plots near KPHB Phase 9, our Kukatpally centre is accessible to families from Venkata Ramana Colony, Hafeezpet, Kondapur, Miyapur, and KPHB.',
+  address: 'Gokul Plots, Venkata Ramana Colony, KPHB Phase 9 / Hafeezpet, Hyderabad 500085',
+  landmark: 'Gokul Plots, Near KPHB Phase 9',
+  nearby: ['Gokul Plots', 'KPHB Phase 9', 'Venkata Ramana Colony', 'Hafeezpet', 'Kondapur'],
+  driveTimes: [
+    { area: 'Gokul Plots', distance: '0.5–2 km', time: '3–8 min' },
+    { area: 'KPHB Phase 9', distance: '0.5–2 km', time: '3–8 min' },
+    { area: 'Hafeezpet', distance: '2–5 km', time: '8–18 min' },
+  ],
+  googleMapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16410.739804152883!2d78.3613766871582!3d17.488937400000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93cf4f823625%3A0x4638fdc567e40351!2sMy%20School%20ITALY%20%7C%20Kukatpally!5e1!3m2!1sen!2sin!4v1790701224290!5m2!1sen!2sin',
+  directionsUrl: 'https://www.google.com/maps/dir/?api=1&destination=My+School+ITALY+%7C+Kukatpally',
+  phone: '+917093904680',
+  badge: 'KPHB Phase 9',
+  badgeBg: 'bg-rose-600 text-white',
+};

@@ -1,0 +1,21 @@
+export const cyberabadCampusLocation = {
+  id: 'cyberabad-police-commissionerate',
+  name: 'Cyberabad Police Comm.',
+  fullName: 'My School ITALY — Cyberabad Police Commissionerate',
+  slug: '/cyberabad-police-commissionerate',
+  zone: 'Financial District & Gachibowli',
+  description: 'Positioned on Old Mumbai Highway next to CARE Hospital, this centre serves families in Gachibowli, Telecom Nagar, Sri Shyam Nagar, Khajaguda, and Nanakramguda.',
+  address: 'Old Mumbai Highway, next to CARE Hospital, Sri Shyam Nagar / Telecom Nagar Extension, Gachibowli, Hyderabad 500032',
+  landmark: 'Next to CARE Hospital, Old Mumbai Highway',
+  nearby: ['Telecom Nagar', 'Sri Shyam Nagar', 'Gachibowli', 'Khajaguda', 'Nanakramguda'],
+  driveTimes: [
+    { area: 'Telecom Nagar', distance: '0.5–2 km', time: '3–8 min' },
+    { area: 'Gachibowli', distance: '1–3 km', time: '5–12 min' },
+    { area: 'Khajaguda', distance: '2–5 km', time: '8–18 min' },
+  ],
+  googleMapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16415.571357186036!2d78.34850008715823!3d17.435321100000017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9314cc8b60a9%3A0x4f15f50d45a860dc!2sMY%20SCHOOL%20ITALY%20%7C%20Cyberabad%20Police%20Commissionerate!5e1!3m2!1sen!2sin!4v1790701145419!5m2!1sen!2sin',
+  directionsUrl: 'https://www.google.com/maps/dir/?api=1&destination=MY+SCHOOL+ITALY+%7C+Cyberabad+Police+Commissionerate',
+  phone: '+917093904680',
+  badge: 'CARE Hospital Belt',
+  badgeBg: 'bg-blue-600 text-white',
+};

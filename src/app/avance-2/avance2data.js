@@ -1,0 +1,21 @@
+export const avance2CampusLocation = {
+  id: 'avance-2',
+  name: 'aVance 2 (H06)',
+  fullName: 'My School ITALY — aVance 2',
+  slug: '/avance-2',
+  zone: 'HiTech City & SEZ',
+  description: 'Located inside aVance Business Hub Building H06 at HITEC City Phase 2, our centre serves working parents in HITEC City, Madhapur, Whitefields, Kondapur, Kothaguda, Gachibowli, and Raidurg.',
+  address: 'aVance Business Hub, Building H06, HITEC City Phase 2, Gachibowli, Hyderabad 500081',
+  landmark: 'aVance Business Hub, Building H06',
+  nearby: ['HITEC City Phase 2', 'Madhapur', 'Whitefields', 'Kondapur', 'Raidurg'],
+  driveTimes: [
+    { area: 'HITEC City Phase 2', distance: '0.5–2 km', time: '3–8 min' },
+    { area: 'Madhapur', distance: '1–3 km', time: '5–12 min' },
+    { area: 'Raidurg', distance: '3–6 km', time: '10–20 min' },
+  ],
+  googleMapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16414.619481663394!2d78.35156888715818!3d17.4458968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9320879c0511%3A0x2d0d280422d07cba!2sMy%20School%20ITALY%20%7C%20aVance!5e1!3m2!1sen!2sin!4v1790701244786!5m2!1sen!2sin',
+  directionsUrl: 'https://www.google.com/maps/dir/?api=1&destination=My+School+ITALY+%7C+aVance',
+  phone: '+917093904680',
+  badge: 'Phase 2 SEZ',
+  badgeBg: 'bg-purple-600 text-white',
+};

@@ -1,0 +1,21 @@
+export const mindspaceCampusLocation = {
+  id: 'mindspace',
+  name: 'Mindspace Campus',
+  fullName: 'My School ITALY — Mindspace',
+  slug: '/mindspace',
+  zone: 'Madhapur & Kondapur',
+  description: 'Located in KTC Illumination opposite The Westin on Mindspace Road, our centre serves Vittal Rao Nagar, Madhapur, HITEC City, Kavuri Hills, and Raidurg with top-tier daycare and early education.',
+  address: 'KTC Illumination, Mindspace Madhapur Road, opposite Westin Hotel, Vittal Rao Nagar, Madhapur, Hyderabad 500081',
+  landmark: 'Opposite Westin Hotel, Mindspace Road',
+  nearby: ['Vittal Rao Nagar', 'Madhapur', 'HITEC City', 'Kavuri Hills', 'Raidurg'],
+  driveTimes: [
+    { area: 'Vittal Rao Nagar', distance: '0.5–2 km', time: '3–8 min' },
+    { area: 'Madhapur', distance: '0.5–3 km', time: '3–12 min' },
+    { area: 'HITEC City', distance: '1–4 km', time: '5–15 min' },
+  ],
+  googleMapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16414.619481663394!2d78.35156888715818!3d17.4458968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb932ecd575185%3A0x579e0ed2a9ab3933!2sMy%20School%20ITALY%20%7C%20Mind%20Space!5e1!3m2!1sen!2sin!4v1790701272875!5m2!1sen!2sin',
+  directionsUrl: 'https://www.google.com/maps/dir/?api=1&destination=My+School+ITALY+%7C+Mind+Space',
+  phone: '+917093904680',
+  badge: 'Opp. Westin Hotel',
+  badgeBg: 'bg-emerald-600 text-white',
+};

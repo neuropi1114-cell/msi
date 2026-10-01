@@ -1,0 +1,21 @@
+export const miyapurCampusLocation = {
+  id: 'miyapur',
+  name: 'Miyapur Campus',
+  fullName: 'My School ITALY — Miyapur',
+  slug: '/miyapur',
+  zone: 'Kukatpally & Miyapur',
+  description: 'Situated in Sri Aurobindo Colony near JP Nagar Road, our Miyapur centre serves families from JPN Nagar, Rangapuram, Madinaguda, Hafeezpet, and Alwyn Cross Roads.',
+  address: 'Plot 26 & 27, Sri Rangapuram Colony / Sri Aurobindo Colony, near JP Nagar Road, Miyapur, Hyderabad 500049',
+  landmark: 'Near JP Nagar Road, Sri Aurobindo Colony',
+  nearby: ['Sri Aurobindo Colony', 'JPN Nagar', 'Rangapuram', 'Madinaguda', 'Hafeezpet'],
+  driveTimes: [
+    { area: 'Sri Aurobindo Colony', distance: '0.5–2 km', time: '3–8 min' },
+    { area: 'Madinaguda', distance: '2–5 km', time: '8–18 min' },
+    { area: 'Hafeezpet', distance: '4–7 km', time: '12–25 min' },
+  ],
+  googleMapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16409.270435700113!2d78.3424555871582!3d17.5052116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93c95c62e035%3A0xdbcc3243d9a54206!2sMy%20School%20Italy%20Miyapur!5e1!3m2!1sen!2sin!4v1790701179304!5m2!1sen!2sin',
+  directionsUrl: 'https://www.google.com/maps/dir/?api=1&destination=My+School+Italy+Miyapur',
+  phone: '+917093904680',
+  badge: 'Miyapur Hub',
+  badgeBg: 'bg-rose-600 text-white',
+};

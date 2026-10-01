@@ -296,3 +296,26 @@ export const hitexGalleryImages = [
   '/images/hitex/Hitex_6.png',
   '/images/hitex/Hitex_7.png',
 ];
+
+export const hitexCampusLocation = {
+  id: 'hitex',
+  name: 'Hitex Campus',
+  fullName: 'My School ITALY — Hitex',
+  slug: '/hitex',
+  zone: 'HiTech City & SEZ',
+  description: 'My School ITALY HITEX brings MSI’s neuroscience-informed early-years approach closer to families in Izzathnagar, Shilpa Layout, Kothaguda, Kondapur, Hafeezpet, Madhapur and the wider HiTech City corridor. The centre offers families a convenient early-learning and care option that can fit naturally into everyday home-and-work routines.',
+  address: 'Hitex Road, next to HITEX Exhibition Centre Gate, Shilpa Layout, Izzathnagar, Hyderabad 500084',
+  landmark: 'Next to HITEX Exhibition Centre Gate',
+  nearby: ['Izzathnagar', 'Shilpa Layout', 'Kothaguda', 'Kondapur', 'Hafeezpet', 'Madhapur', 'HiTech City'],
+  driveTimes: [
+    { area: 'Izzathnagar', distance: '0.5–2 km', time: '3–8 min' },
+    { area: 'Shilpa Layout', distance: '0.5–2 km', time: '3–8 min' },
+    { area: 'Kothaguda', distance: '2–4 km', time: '8–15 min' },
+    { area: 'Kondapur', distance: '3–5 km', time: '10–18 min' },
+  ],
+  googleMapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.436156515814!2d78.3705013!3d17.4766957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93c69d117a9d%3A0xcb96668338dda37c!2sMy%20School%20ITALY%20%7C%20Hitex!5e0!3m2!1sen!2sin!4v1790392418324!5m2!1sen!2sin',
+  directionsUrl: 'https://www.google.com/maps/dir/?api=1&destination=My+School+ITALY+%7C+Hitex',
+  phone: '+917093904680',
+  badge: 'Flagship Campus',
+  badgeBg: 'bg-amber-500 text-white',
+};
