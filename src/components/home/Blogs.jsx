@@ -1,41 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
-import ReadMoreButton from '../common/ReadMoreButton';
 
-const posts = [
-  {
-    id: 5461,
-    title: "🎃 Spooktacular Halloween Celebration at MySchoolITALY @ Hitex! 👻",
-    image: "/images/blog/thumbs/halloween-celebration.jpg",
-    link: "/blog/1",
-    badge: "Blog",
-    fitHeight: false
-  },
-  {
-    id: 4581,
-    title: "Brain-Boosting Activities You Can Do at Home",
-    image: "/images/blog/thumbs/brain-boosting-activities.jpg",
-    link: "/blog/2",
-    badge: "Blog",
-    fitHeight: true
-  },
-  {
-    id: 4506,
-    title: "What is Neuroscience-Based Early Childhood Education",
-    image: "/images/blog/thumbs/neuroscience-education.jpg",
-    link: "/blog/3",
-    badge: "Blog",
-    fitHeight: true
-  },
-  {
-    id: 4223,
-    title: "Childcare Centers Near Me: Questions Every Hyderabad Parent Should Ask",
-    image: "/images/blog/thumbs/childcare-centers.jpg",
-    link: "/blog/4",
-    badge: "Blog",
-    fitHeight: false
-  }
-];
 
 export default function Blogs({
   eyebrow = "Parenting Insights, Expert Guidance, and Stories That Inspire.",
@@ -70,53 +35,23 @@ export default function Blogs({
           </motion.h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {posts.map((post, index) => (
-            <motion.article
-              key={post.id}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col"
-            >
-              <a href={post.link} tabIndex={-1}>
-                <div className={`relative overflow-hidden ${post.fitHeight ? 'h-48' : 'aspect-[4/3]'}`}>
-                  <img
-                    src={post.image}
-                    alt={post.title}
-                    className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
-                    loading="lazy"
-                  />
-                </div>
-              </a>
-              <div className="px-5 pt-5 pb-4 flex flex-col flex-grow">
-                <span className="inline-block bg-[#d16827] text-white text-xs font-bold px-3 py-1 rounded-full uppercase mb-3 self-start">
-                  {post.badge}
-                </span>
-                <h3>
-                  <a href={post.link}>
-                    {post.title}
-                  </a>
-                </h3>
-                <a
-                  href={post.link}
-                  className="mt-auto inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-msi-orange hover:text-msi-purple transition-colors pt-3"
-                >
-                  Read More <span aria-hidden="true">&raquo;</span>
-                </a>
-              </div>
-            </motion.article>
-          ))}
-        </div>
-
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-12 text-center"
+          transition={{ duration: 0.5 }}
+          className="w-full h-[550px] sm:h-[650px] md:h-[750px] rounded-2xl overflow-hidden shadow-xl border border-gray-100 bg-white"
         >
-          <ReadMoreButton href="/blog/" />
+          <iframe
+            src="https://fliphtml5.com/bookcase/qdgpzz/"
+            title="From The Founder's Desk Bookcase"
+            className="w-full h-full border-0"
+            style={{ width: '100%', height: '100%' }}
+            seamless="seamless"
+            scrolling="no"
+            allowTransparency={true}
+            allowFullScreen={true}
+          />
         </motion.div>
       </div>
     </section>
