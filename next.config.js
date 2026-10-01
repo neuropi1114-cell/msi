@@ -57,6 +57,26 @@ const nextConfig = {
       },
     ];
   },
+  async rewrites() {
+    return [
+      {
+        source: '/%f0%9f%8e%83-spooktacular-halloween-celebration-at-myschoolitaly-hitex-%f0%9f%91%bb',
+        destination: '/spooktacular-halloween-celebration-at-myschoolitaly-hitex',
+      },
+      {
+        source: '/%F0%9F%8E%83-spooktacular-halloween-celebration-at-myschoolitaly-hitex-%F0%9F%91%BB',
+        destination: '/spooktacular-halloween-celebration-at-myschoolitaly-hitex',
+      },
+      {
+        source: '/blog/%f0%9f%8e%83-spooktacular-halloween-celebration-at-myschoolitaly-hitex-%f0%9f%91%bb',
+        destination: '/spooktacular-halloween-celebration-at-myschoolitaly-hitex',
+      },
+      {
+        source: '/blog/%F0%9F%8E%83-spooktacular-halloween-celebration-at-myschoolitaly-hitex-%F0%9F%91%BB',
+        destination: '/spooktacular-halloween-celebration-at-myschoolitaly-hitex',
+      },
+    ];
+  },
 };
 
 export default nextConfig;

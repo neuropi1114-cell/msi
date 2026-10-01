@@ -122,7 +122,7 @@ export default function Avance2Page() {
           campusName="My School ITALY — aVance 2 (Building H06)"
           description="Located inside aVance Business Hub Building H06 at HITEC City Phase 2, our centre serves working parents in HITEC City, Madhapur, Whitefields, Kondapur, Kothaguda, Gachibowli, and Raidurg."
           address="aVance Business Hub, Building H06, HITEC City Phase 2, Gachibowli, Hyderabad 500081"
-          landmark="aVance Business Hub, Building H06"
+          landmark="Below Optum, aVance Business Hub, Building H06"
           distanceHeading="Drive-Time from Nearby Neighbourhoods"
           distanceBlock={[
             { area: "HITEC City Phase 2", distance: "0.5–2 km", time: "3–8 min" },

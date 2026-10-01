@@ -40,6 +40,7 @@ const NAV_LINKS = [
   { href: '/media-coverage', label: 'Media' },
   { href: '/blog', label: 'Blog' },
   { href: '/admissions', label: 'Enroll' },
+  { href: '/contact-us', label: 'Contact Us' },
   { href: '/contact', label: 'Book A Tour' },
 ];
 
@@ -152,8 +153,8 @@ const Footer = () => {
               </li>
               <li className="flex items-center !text-white">
                 <Image src="/whatsapp-icon.svg" alt="" width={16} height={16} className="mr-2 flex-shrink-0" />
-                <a href="https://wa.me/917093904680" target="_blank" rel="noopener noreferrer" className="!text-white hover:!text-msi-orange transition-colors font-normal">
-                  (+91) 70939 04680
+                <a href="https://wa.me/917075947070" target="_blank" rel="noopener noreferrer" className="!text-white hover:!text-msi-orange transition-colors font-normal">
+                  (+91) 70759 47070
                 </a>
               </li>
             </ul>

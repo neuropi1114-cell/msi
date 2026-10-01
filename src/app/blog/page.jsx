@@ -32,7 +32,7 @@ const posts = [
     title: 'Spooktacular Halloween Celebration at MySchoolITALY @ Hitex',
     excerpt: 'This October, MySchoolITALY at Hitex turned into a festive wonderland of pumpkins, costumes, and spooky surprises as our students and teachers came together to celebrate Halloween 2025.',
     date: 'October 2025',
-    slug: '/blog/1',
+    slug: '/🎃-spooktacular-halloween-celebration-at-myschoolitaly-hitex-👻',
     image: '/images/blog/halloween/halloween-01.jpg',
   },
   {

@@ -6,7 +6,7 @@ export const avance2CampusLocation = {
   zone: 'HiTech City & SEZ',
   description: 'Located inside aVance Business Hub Building H06 at HITEC City Phase 2, our centre serves working parents in HITEC City, Madhapur, Whitefields, Kondapur, Kothaguda, Gachibowli, and Raidurg.',
   address: 'aVance Business Hub, Building H06, HITEC City Phase 2, Gachibowli, Hyderabad 500081',
-  landmark: 'aVance Business Hub, Building H06',
+  landmark: 'Below Optum, aVance Business Hub, Building H06',
   nearby: ['HITEC City Phase 2', 'Madhapur', 'Whitefields', 'Kondapur', 'Raidurg'],
   driveTimes: [
     { area: 'HITEC City Phase 2', distance: '0.5–2 km', time: '3–8 min' },

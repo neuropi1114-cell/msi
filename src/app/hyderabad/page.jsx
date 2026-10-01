@@ -6,6 +6,8 @@ import ContactUs from '../../components/common/ContactUs';
 import CloudHeader from '../../components/layout/CloudHeader';
 import SectionHeader from '../../components/common/SectionHeader';
 import JsonLd from '../../components/JsonLd';
+import CampusLocationModule from '../../components/common/CampusLocationModule';
+import { HYDERABAD_CAMPUSES } from '../../data/hyderabadCampuses';
 
 export const metadata = {
   title: 'My School ITALY — Hyderabad Locations Map',
@@ -63,6 +65,9 @@ export default function HyderabadPage() {
             </div>
           </div>
         </section>
+
+        {/* 4. All Individual Hyderabad Campus Location Maps & Details */}
+        <CampusLocationModule campuses={HYDERABAD_CAMPUSES} />
       </main>
 
       {/* 4. Book Tour / Contact Form */}

@@ -1,12 +1,12 @@
 export const avanceCampusLocation = {
   id: 'avance',
   name: 'aVance 1 (H04)',
-  fullName: 'My School ITALY — aVance 1',
+  fullName: 'My School ITALY — aVance 1 (H04)',
   slug: '/avance',
   zone: 'HiTech City & SEZ',
-  description: 'Located inside aVance Business Hub at Phoenix Infocity SEZ, our centre serves working parents in Gachibowli, HUDA Techno Enclave, HITEC City, and Financial District with neuroscience-informed early childhood education and crèche care.',
-  address: 'aVance Business Hub, Phoenix Infocity SEZ, H04 & H06, HUDA Techno Enclave, Gachibowli, Hyderabad 500081',
-  landmark: 'aVance Business Hub, Building H04',
+  description: 'Located inside aVance Business Hub (Building H04) at Phoenix Infocity SEZ, our centre serves working parents in Gachibowli, HUDA Techno Enclave, HITEC City, and Financial District with neuroscience-informed early childhood education and crèche care.',
+  address: 'aVance Business Hub, Phoenix Infocity SEZ, H04, HUDA Techno Enclave, Gachibowli, Hyderabad 500081',
+  landmark: 'Above ICICI Bank, aVance Business Hub, Building H04',
   nearby: ['HUDA Techno Enclave', 'Gachibowli', 'HITEC City', 'Whitefields', 'Kondapur'],
   driveTimes: [
     { area: 'HUDA Techno Enclave', distance: '0.5–2 km', time: '3–8 min' },
