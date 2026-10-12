@@ -60,6 +60,19 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning className={`${lato.variable} ${fredoka.variable}`}>
       <head>
+        {/* Google tag (gtag.js) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-WFLXED7JMB" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'G-WFLXED7JMB');
+            `,
+          }}
+        />
         <link rel="preload" as="image" href="/images/hero/Slider_1-scaled.jpg.bv.webp" fetchPriority="high" />
         <link rel="manifest" href="/manifest.json" />
       </head>
@@ -68,21 +81,6 @@ export default function RootLayout({ children }) {
         <LocalStorageImageCache />
         {children}
         <Analytics />
-        {/* Google Analytics (GA4) */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-WFLXED7JMB"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-WFLXED7JMB', {
-              page_path: window.location.pathname,
-            });
-          `}
-        </Script>
         <Script
           src="https://cdn.chatway.app/widget.js?id=23D3hS7Mt4QI"
           strategy="lazyOnload"
