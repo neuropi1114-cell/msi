@@ -68,6 +68,21 @@ export default function RootLayout({ children }) {
         <LocalStorageImageCache />
         {children}
         <Analytics />
+        {/* Google Analytics (GA4) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-WFLXED7JMB"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-WFLXED7JMB', {
+              page_path: window.location.pathname,
+            });
+          `}
+        </Script>
         <Script
           src="https://cdn.chatway.app/widget.js?id=23D3hS7Mt4QI"
           strategy="lazyOnload"
