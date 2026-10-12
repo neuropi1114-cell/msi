@@ -25,9 +25,10 @@ const schemaData = {
   description: 'Neuroscience-informed preschool and daycare on Spine Road, Purnanagar, Chinchwad, Pune.',
   url: 'https://myschoolitaly.com/purna-nagar',
   telephone: '+917093904680',
+  email: ['purnanagar@myschoolitaly.com', 'myschoolitaly7@gmail.com'],
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'Privia Prestige, S.No. 26A & 46A, Spine Road, Vitthal Nagar, Purnanagar, Chinchwad',
+    streetAddress: 'Privia Prestige, S.No. 26A & 46A, Spine Rd, next to Indian Oil Pump, Vitthal Nagar, Purnanagar, Chinchwad',
     addressLocality: 'Pune',
     addressRegion: 'Maharashtra',
     postalCode: '411019',
@@ -44,7 +45,8 @@ export default function PurnaNagarPage() {
 
       <main>
         <CloudHeader
-          image="/images/hitex/HITEX_1.png"
+          image="/images/purna-nagar/purna-nagar-header.png"
+          imageAlt="My School ITALY Purna Nagar Daycare & Preschool Pune"
           imageClass="object-cover object-center"
           heightClass="w-full aspect-[2172/724] min-h-[220px] sm:min-h-[320px] md:min-h-[420px] max-h-[650px]"
         />
@@ -63,7 +65,7 @@ export default function PurnaNagarPage() {
             containerClass="max-w-[1240px] mx-auto"
             imageWrapperClass="overflow-hidden rounded-2xl shadow-2xl border border-gray-100"
             imageClass="w-full h-auto object-cover scale-115 transform hover:scale-125 transition-transform duration-500"
-            imageSrc="/images/hitex/Hitex_3.png"
+            imageSrc="/images/purna-nagar/bright-kindergarten-group-lesson.png"
             imageAlt="Children at My School ITALY Purna Nagar Pune"
             eyebrow="A Complete Day For A Growing Child."
             title="PROGRAMS DESIGNED AROUND YOUR CHILD'S DAY"
@@ -88,26 +90,33 @@ export default function PurnaNagarPage() {
           titleColor="text-msi-yellow"
           subtitle="BECAUSE EVERY CHILD DESERVES TO BE KNOWN BEFORE THEY ARE TAUGHT."
           description="Positioned along the Spine Road corridor in Pimpri-Chinchwad, MSI Purna Nagar combines European early learning methodology with neuroscience principles."
-          bgImage="/images/hitex/Hitex_2.png"
+          bgImage="/images/purna-nagar/colorful-kindergarten-classroom-murals.png"
           bgPosition="bg-cover bg-center"
-          sectionClass="w-full aspect-[2172/724] max-h-[650px] py-8 md:py-12"
+          sectionClass="w-full min-h-[460px] sm:min-h-[500px] md:aspect-[2172/724] md:max-h-[650px] py-8 md:py-12"
           readMoreHref="/why-msi"
+          cardClass="my-auto"
         />
 
         <DesignPhilosophy
           topId="neuropi-way"
           bottomId="parents-journey"
-          image="/images/hitex/Hitex_4.png"
+          image="/images/purna-nagar/colorful-preschool-classroom-group-scene.png"
           eyebrow="Start With The Child • The NeuroPi Way™"
           title={<>WE DON'T BEGIN WITH THE LESSON.<br />WE BEGIN WITH THE CHILD.</>}
           titleClass="text-msi-orange font-linotte font-bold text-2xl md:text-3xl leading-tight uppercase mb-3"
           p1="The NeuroPi Way™ begins with understanding who the child is — observing how each child engages and develops, personalising learning for their growth."
           readMoreHref="/neuropi-way"
+          bottomEyebrow={null}
+          bottomTitle={null}
+          bottomP1={null}
+          bottomP2={null}
+          bottomP3={null}
         />
 
         <OneJourneySection
-          imageSrc="/images/hitex/Hitex_5.png"
-          bgImageSrc="/images/hitex/Hitex_5.png"
+          imageSrc="/images/purna-nagar/purna-nagar-parent-journey.png"
+          bgImageSrc="/images/purna-nagar/purna-nagar-parent-journey.png"
+          imageAspect="aspect-[4/3] max-h-[500px] mx-auto"
           eyebrow="You Are Not Dropping Your Child At School. You Are Joining Their Journey."
           title="YOU ARE PART OF THE JOURNEY"
           titleColor="text-msi-orange font-linotte font-bold text-2xl md:text-3xl uppercase mb-4"
@@ -123,8 +132,9 @@ export default function PurnaNagarPage() {
           eyebrow="Find us in Purna Nagar, Pune"
           campusName="My School ITALY — Purna Nagar"
           description="Our Purnanagar centre on Spine Road serves families from Purnanagar, Vitthal Nagar, and Chinchwad, with convenient access from Chikhali, Akurdi, Nigdi, Bhosari, and Pimpri."
-          address="Privia Prestige, S.No. 26A & 46A, Spine Road, Vitthal Nagar, Purnanagar, Chinchwad, Pune, Maharashtra 411019"
-          landmark="Privia Prestige, Spine Road"
+          address="My School ITALY, Privia Prestige, S.No. 26A & 46A, Spine Rd, next to Indian Oil Pump, Vitthal Nagar, Purnanagar, Chinchwad, Pune - 411019"
+          landmark="Privia Prestige, Spine Road (Next to Indian Oil Pump)"
+          email={['purnanagar@myschoolitaly.com', 'myschoolitaly7@gmail.com']}
           distanceHeading="Drive-Time from Nearby Neighbourhoods"
           distanceBlock={[
             { area: "Purnanagar", distance: "0.5–2 km", time: "3–8 min" },
@@ -134,13 +144,13 @@ export default function PurnaNagarPage() {
             { area: "Akurdi", distance: "3–6 km", time: "10–20 min" },
             { area: "Bhosari", distance: "3–6 km", time: "10–20 min" },
           ]}
-          googleMapsUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.0066271172914!2d73.80979529999999!3d18.6636986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9dfc12d1cb1%3A0x56cd72ed36fb7e0c!2sMy%20School%20ITALY%20%7C%20Purna%20Nagar!5e0!3m2!1sen!2sin!4v1790742879853!5m2!1sen!2sin"
+          googleMapsUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.0066271172914!2d73.80979529999999!3d18.6636986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9dfc12d1cb1%3A0x56cd72ed36fb7e0c!2sMy%20School%20ITALY%20%7C%20Purna%20Nagar!5e0!3m2!1sen!2sin!4v1791776872022!5m2!1sen!2sin"
           directionsUrl="https://www.google.com/maps/dir/?api=1&destination=My+School+ITALY+%7C+Purna+Nagar"
         />
       </main>
 
       <div id="enroll">
-        <ContactUs image="/images/whyus/Why_MSI_Enrol.png" title="BOOK A TOUR AT MSI PURNA NAGAR" buttonText="BOOK A TOUR" />
+        <ContactUs image="/images/purna-nagar/purna-nagar-book-tour.png" title="BOOK A TOUR AT MSI PURNA NAGAR" buttonText="BOOK A TOUR" />
       </div>
       <Footer />
     </>

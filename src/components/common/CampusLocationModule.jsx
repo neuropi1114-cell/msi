@@ -67,6 +67,7 @@ export default function CampusLocationModule({
   address = "Hitex Road, next to HITEX Exhibition Centre Gate, Shilpa Layout, Izzathnagar, Hyderabad 500084",
   nearby = "Izzathnagar • Shilpa Layout • Kothaguda • Kondapur • Hafeezpet • Madhapur • HiTech City",
   landmark = "Next to HITEX Exhibition Centre Gate",
+  email = null,
   distanceHeading = "How Close Is MSI HITEX to Your Neighbourhood?",
   distanceBlock = [
     { area: "Izzathnagar", distance: "0.5–2 km", time: "3–8 min" },
@@ -164,7 +165,7 @@ export default function CampusLocationModule({
                 <option value="">Select Your Area / Landmark</option>
                 {LANDMARK_PRESETS.map((preset) => (
                   <option key={preset.name} value={preset.name}>
-                    📍 {preset.name}
+                    {preset.name}
                   </option>
                 ))}
               </select>
@@ -264,7 +265,7 @@ export default function CampusLocationModule({
                           )}
                           {distToUser !== undefined && (
                             <span className="text-xs font-bold text-green-700 bg-green-100 px-2.5 py-0.5 rounded-full">
-                              📍 {distToUser} km from you
+                              {distToUser} km from you
                             </span>
                           )}
                         </div>
@@ -324,6 +325,29 @@ export default function CampusLocationModule({
                           <div className="text-xs sm:text-sm text-msi-purple">
                             <span className="font-bold text-msi-purple">Landmark: </span>
                             <span className="text-msi-purple/80 font-medium">{c.landmark}</span>
+                          </div>
+                        )}
+
+                        {/* Email Info */}
+                        {c.email && (
+                          <div className="text-xs sm:text-sm text-msi-purple mt-2">
+                            <span className="font-bold text-msi-purple">Email: </span>
+                            <span className="text-msi-purple/80 font-medium">
+                              {Array.isArray(c.email) ? (
+                                c.email.map((item, idx) => (
+                                  <span key={item}>
+                                    {idx > 0 && <span className="mr-1 text-msi-purple/40">/</span>}
+                                    <a href={`mailto:${item}`} className="hover:text-msi-orange underline transition-colors">
+                                      {item}
+                                    </a>
+                                  </span>
+                                ))
+                              ) : (
+                                <a href={`mailto:${c.email}`} className="hover:text-msi-orange underline transition-colors">
+                                  {c.email}
+                                </a>
+                              )}
+                            </span>
                           </div>
                         )}
                       </div>
@@ -467,6 +491,30 @@ export default function CampusLocationModule({
                   <div className="flex items-center gap-2">
                     <span className="font-bold text-msi-purple min-w-[80px]">Landmark:</span>
                     <span className="text-msi-purple/80 font-medium">{landmark}</span>
+                  </div>
+                </div>
+              )}
+
+              {email && (
+                <div className="space-y-2.5 text-xs sm:text-sm text-msi-purple mt-2.5">
+                  <div className="flex items-start gap-2">
+                    <span className="font-bold text-msi-purple min-w-[80px]">Email:</span>
+                    <div className="text-msi-purple/80 font-medium flex flex-wrap gap-x-2">
+                      {Array.isArray(email) ? (
+                        email.map((item, idx) => (
+                          <span key={item}>
+                            {idx > 0 && <span className="mr-2 text-msi-purple/40">/</span>}
+                            <a href={`mailto:${item}`} className="hover:text-msi-orange underline transition-colors">
+                              {item}
+                            </a>
+                          </span>
+                        ))
+                      ) : (
+                        <a href={`mailto:${email}`} className="hover:text-msi-orange underline transition-colors">
+                          {email}
+                        </a>
+                      )}
+                    </div>
                   </div>
                 </div>
               )}

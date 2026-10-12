@@ -52,26 +52,32 @@ export default function NepHero({
 
   return (
     <>
-      <section className={`relative flex items-center overflow-hidden ${sectionClass}`}>
+      <section className={`relative flex items-center overflow-hidden min-h-[440px] sm:min-h-[480px] md:min-h-0 ${sectionClass}`}>
         <div
           className={`absolute inset-0 ${bgPosition} ${flipBg ? '[transform:scaleX(-1)]' : ''}`}
           style={{ backgroundImage: `url(${bgImage})` }}
         />
         <div className="container mx-auto px-4 md:px-12 w-full relative z-10">
           <div
-            className={`w-full md:w-[50%] lg:w-[45%] max-w-xl p-6 sm:p-8 md:p-10 rounded-2xl shadow-2xl ${boxBgClass} ${cardClass}`}
+            className={`w-full md:w-[50%] lg:w-[45%] max-w-xl p-5 sm:p-8 md:p-10 rounded-2xl shadow-2xl ${boxBgClass} ${cardClass}`}
           >
-            {eyebrow && <h3 style={{ color: '#FCF9F4' }}>{eyebrow}</h3>}
-            <h2 className={titleColor ? titleColor : ''}>{title}</h2>
+            {eyebrow && (
+              <h3 className="not-italic text-xs sm:text-sm font-semibold tracking-wide uppercase mb-1.5" style={{ color: '#FCF9F4' }}>
+                {eyebrow}
+              </h3>
+            )}
+            <h2 className={`text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-tight ${titleColor ? titleColor : ''}`}>
+              {title}
+            </h2>
             {subtitle && (
-              <h3 className={`mt-2 mb-4 font-linotte font-semibold text-base sm:text-lg uppercase tracking-wide ${subtitleColor || 'text-white/90'}`}>
+              <h3 className={`mt-2 mb-3 sm:mb-4 font-linotte font-semibold not-italic text-xs sm:text-sm md:text-base lg:text-lg uppercase tracking-wide leading-snug ${subtitleColor || 'text-white/90'}`}>
                 {subtitle}
               </h3>
             )}
             {typeof description === 'string' ? (
-              <p>{description}</p>
+              <p className="text-xs sm:text-sm md:text-base text-white/95 leading-relaxed">{description}</p>
             ) : (
-              <div>{description}</div>
+              <div className="text-xs sm:text-sm md:text-base text-white/95 leading-relaxed">{description}</div>
             )}
 
             {showReadMore && (
