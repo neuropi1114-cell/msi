@@ -16,6 +16,7 @@ import GalleryStrip from '../../components/common/GalleryStrip';
 import GridGallery from '../../components/common/GridGallery';
 import SectionScrollController from '../../components/common/SectionScrollController';
 import CampusLocationModule from '../../components/common/CampusLocationModule';
+import FaqSection from '../../components/common/FaqSection';
 import JsonLd from '../../components/JsonLd';
 
 import { buildPageMetadata } from '../../utils/seo';
@@ -25,23 +26,36 @@ export const metadata = buildPageMetadata('/hitex/');
 
 const hitexSchema = {
   '@context': 'https://schema.org',
-  '@type': 'ChildCare',
-  name: 'My School ITALY — HITEX Campus',
-  description: 'Neuroscience-informed preschool, baby crèche, daycare, and corporate childcare in HITEX, HiTech City, Hyderabad.',
+  '@type': ['Preschool', 'LocalBusiness'],
+  '@id': 'https://www.myschoolitaly.com/hitex/#school',
+  name: 'My School ITALY | Hitex',
+  description:
+    'My School ITALY Hitex is a preschool, nursery, kindergarten and daycare centre located near HITEX Exhibition Centre, Hyderabad.',
   url: 'https://www.myschoolitaly.com/hitex/',
   telephone: '+917093904680',
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'Hitex, HiTech City',
+    streetAddress: 'HITEX Road, next to HITEX Exhibition Centre Gate, Shilpa Layout, Izzathnagar',
     addressLocality: 'Hyderabad',
+    addressRegion: 'Telangana',
     postalCode: '500084',
     addressCountry: 'IN',
   },
   geo: {
     '@type': 'GeoCoordinates',
-    latitude: '17.4716',
-    longitude: '78.3727',
+    latitude: '17.4767',
+    longitude: '78.3705',
   },
+  hasMap: 'https://www.google.com/maps/search/?api=1&query=My+School+ITALY+Hitex',
+  areaServed: [
+    'HITEX',
+    'Izzathnagar',
+    'Shilpa Layout',
+    'Kothaguda',
+    'Kondapur',
+    'Madhapur',
+    'Hitech City',
+  ],
   openingHoursSpecification: [
     {
       '@type': 'OpeningHoursSpecification',
@@ -81,9 +95,10 @@ export default function HitexPage({ activeSlug = null }) {
 
         {/* 2. Section Header */}
         <SectionHeader
-          title="MY SCHOOL ITALY — HITEX"
-          subtitle={null}
-          description="We Begin By Understanding The Child."
+          titleTag="h1"
+          title="PRESCHOOL & DAYCARE IN HITEX, HYDERABAD"
+          subtitle="MY SCHOOL ITALY — HITEX"
+          description="We Begin By Understanding The Child. Neuroscience-informed early years, daycare, and kindergarten near HITEX Exhibition Centre, Shilpa Layout & Izzathnagar."
           descriptionClassName="text-xl md:text-2xl font-normal"
         />
 
@@ -238,7 +253,17 @@ export default function HitexPage({ activeSlug = null }) {
         <GridGallery />
         <GalleryStrip images={hitexGalleryImages} />
 
-        {/* 7. Campus Location Module */}
+        {/* 7. Frequently Asked Questions */}
+        <div id="faq" className="scroll-mt-24">
+          <FaqSection
+            subheading="My School ITALY Hitex"
+            heading="FREQUENTLY ASKED QUESTIONS"
+            description="Find answers to common questions about our preschool, nursery, kindergarten, and daycare admissions, safety, and schedules at HITEX."
+            className="py-12 md:py-16 bg-[#FAFAFA]"
+          />
+        </div>
+
+        {/* 8. Campus Location Module */}
         <CampusLocationModule />
       </main>
 

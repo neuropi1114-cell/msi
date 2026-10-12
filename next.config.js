@@ -55,6 +55,16 @@ const nextConfig = {
         destination: '/programs/baby-creche/',
         permanent: true,
       },
+      {
+        source: '/hitex-msi',
+        destination: '/hitex/',
+        permanent: true,
+      },
+      {
+        source: '/hitex-msi/:path*',
+        destination: '/hitex/',
+        permanent: true,
+      },
     ];
   },
   async rewrites() {

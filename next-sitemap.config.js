@@ -15,6 +15,7 @@ export default {
     const staticPages = ['/policy-framework', '/privacy-policy', '/terms', '/handbook', '/video-gallery', '/media-coverage', '/msi-venture-philanthropy'];
     const priorityMap = {
       '/': 1.0,
+      '/hitex': 0.9,
       '/about': 0.8,
       '/programs': 0.9,
       '/admissions': 0.9,
