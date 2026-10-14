@@ -17,7 +17,7 @@ import GridGallery from '../../components/common/GridGallery';
 import SectionScrollController from '../../components/common/SectionScrollController';
 import CampusLocationModule from '../../components/common/CampusLocationModule';
 import FaqSection from '../../components/common/FaqSection';
-import JsonLd from '../../components/JsonLd';
+import HitexStructuredData from '../../components/seo/HitexStructuredData';
 
 import { centreVideos, whyUsGalleryImages } from '../whyus/whyusdata';
 
@@ -67,47 +67,6 @@ export const metadata = {
   },
 };
 
-const hitexSchema = {
-  '@context': 'https://schema.org',
-  '@type': ['Preschool', 'LocalBusiness'],
-  '@id': 'https://www.myschoolitaly.com/hitex/#school',
-  name: 'My School ITALY | Hitex',
-  description: SEO_DESCRIPTION,
-  url: PAGE_URL,
-  telephone: '+917093904680',
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: 'HITEX Road, next to HITEX Exhibition Centre Gate, Shilpa Layout, Izzathnagar',
-    addressLocality: 'Hyderabad',
-    addressRegion: 'Telangana',
-    postalCode: '500084',
-    addressCountry: 'IN',
-  },
-  geo: {
-    '@type': 'GeoCoordinates',
-    latitude: '17.4767',
-    longitude: '78.3705',
-  },
-  hasMap: 'https://www.google.com/maps/search/?api=1&query=My+School+ITALY+Hitex',
-  areaServed: [
-    'HITEX',
-    'Izzathnagar',
-    'Shilpa Layout',
-    'Kothaguda',
-    'Kondapur',
-    'Madhapur',
-    'Hitech City',
-  ],
-  openingHoursSpecification: [
-    {
-      '@type': 'OpeningHoursSpecification',
-      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-      opens: '08:00',
-      closes: '19:30',
-    },
-  ],
-};
-
 import {
   hitexProgramsDrawer,
   hitexWhyUsDrawer,
@@ -119,7 +78,7 @@ import {
 export default function HitexPage({ activeSlug = null }) {
   return (
     <>
-      <JsonLd schema={hitexSchema} />
+      <HitexStructuredData />
       <TopBar />
       <Header />
       <SectionScrollController activeSlug={activeSlug} />
