@@ -47,7 +47,17 @@ export function getSeoData(path = '/') {
  */
 export function buildPageMetadata(path = '/', overrides = {}) {
   const seo = getSeoData(path);
-  const title = overrides.title || seo.title;
+  const rawTitle = overrides.title || seo.title;
+  const titleString =
+    typeof rawTitle === 'object' && rawTitle !== null
+      ? rawTitle.absolute || rawTitle.default || ''
+      : rawTitle || '';
+  const title =
+    typeof rawTitle === 'object' && rawTitle !== null
+      ? rawTitle
+      : typeof rawTitle === 'string' && rawTitle.includes('| My School ITALY')
+      ? { absolute: rawTitle }
+      : rawTitle;
   const description = overrides.description || seo.description;
   const canonicalUrl = overrides.canonical || seo.canonical || `${DEFAULT_SITE_URL}${normalizePath(path)}`;
   const keywords = overrides.keywords || seo.keywords || [];
@@ -62,24 +72,24 @@ export function buildPageMetadata(path = '/', overrides = {}) {
       canonical: canonicalUrl,
     },
     openGraph: {
-      title,
+      title: titleString,
       description,
       url: canonicalUrl,
       siteName: 'My School ITALY',
-      locale: 'en_US',
+      locale: 'en_IN',
       type: overrides.type || 'website',
       images: [
         {
           url: absoluteOgImage,
           width: 1200,
           height: 630,
-          alt: title,
+          alt: titleString,
         },
       ],
     },
     twitter: {
       card: 'summary_large_image',
-      title,
+      title: titleString,
       description,
       images: [absoluteOgImage],
     },

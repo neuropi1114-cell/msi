@@ -19,19 +19,61 @@ import CampusLocationModule from '../../components/common/CampusLocationModule';
 import FaqSection from '../../components/common/FaqSection';
 import JsonLd from '../../components/JsonLd';
 
-import { buildPageMetadata } from '../../utils/seo';
 import { centreVideos, whyUsGalleryImages } from '../whyus/whyusdata';
 
-export const metadata = buildPageMetadata('/hitex/');
+const SITE_URL = 'https://www.myschoolitaly.com';
+const PAGE_URL = `${SITE_URL}/hitex`;
+const SEO_TITLE = 'Preschool & Daycare in HITEX, Hyderabad | My School ITALY';
+const SEO_DESCRIPTION =
+  'My School ITALY Hitex offers preschool, nursery, kindergarten and daycare near HITEX Exhibition Centre, Hyderabad. Explore our programs and book a school tour.';
+
+export const metadata = {
+  // SEO Title
+  title: {
+    absolute: SEO_TITLE,
+  },
+  // SEO Description
+  description: SEO_DESCRIPTION,
+  // Canonical URL
+  alternates: {
+    canonical: PAGE_URL,
+  },
+  // Search Engine Crawling
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      maxImagePreview: 'large',
+      maxSnippet: -1,
+      maxVideoPreview: -1,
+    },
+  },
+  // Open Graph
+  openGraph: {
+    title: SEO_TITLE,
+    description: SEO_DESCRIPTION,
+    url: PAGE_URL,
+    siteName: 'My School ITALY',
+    locale: 'en_IN',
+    type: 'website',
+  },
+  // Twitter / X
+  twitter: {
+    card: 'summary',
+    title: SEO_TITLE,
+    description: SEO_DESCRIPTION,
+  },
+};
 
 const hitexSchema = {
   '@context': 'https://schema.org',
   '@type': ['Preschool', 'LocalBusiness'],
   '@id': 'https://www.myschoolitaly.com/hitex/#school',
   name: 'My School ITALY | Hitex',
-  description:
-    'My School ITALY Hitex is a preschool, nursery, kindergarten and daycare centre located near HITEX Exhibition Centre, Hyderabad.',
-  url: 'https://www.myschoolitaly.com/hitex/',
+  description: SEO_DESCRIPTION,
+  url: PAGE_URL,
   telephone: '+917093904680',
   address: {
     '@type': 'PostalAddress',
