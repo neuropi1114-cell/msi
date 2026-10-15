@@ -3,6 +3,10 @@ import { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 import { programs } from '../../data/programs';
+import {
+  HYDERABAD_BRANCHES,
+  findRespectiveBranch,
+} from '../../data/branches';
 
 const countries = [
   { name: "Bangladesh", code: "bd", phone: "+880" },
@@ -19,14 +23,36 @@ const initialFormData = {
   email: '',
   mobile: '',
   program: '',
+  branchId: '',
   country: '',
   phoneCode: '+91',
   message: '',
   agreePolicy: false
 };
 
-export default function ContactUs({ intro, title = "ENROL YOUR CHILD", buttonText = "ENROL YOUR CHILD", image = "/images/home/Home_Page_Enrol.png" }) {
-  const [formData, setFormData] = useState(initialFormData);
+export default function ContactUs({
+  intro,
+  title = "ENROL YOUR CHILD",
+  buttonText = "ENROL YOUR CHILD",
+  image = "/images/home/Home_Page_Enrol.png",
+  defaultBranch = "",
+  defaultBranchId = null,
+}) {
+  const respectiveBranch = findRespectiveBranch({
+    pathname: typeof window !== 'undefined' ? window.location.pathname : '',
+    search: typeof window !== 'undefined' ? window.location.search : '',
+    title,
+    defaultBranch,
+    defaultBranchId,
+  });
+
+  const isRespectivePage = Boolean(respectiveBranch);
+  const initialBranchId = respectiveBranch ? String(respectiveBranch.id) : '';
+
+  const [formData, setFormData] = useState(() => ({
+    ...initialFormData,
+    branchId: initialBranchId,
+  }));
   const [errors, setErrors] = useState({});
   const [countryOpen, setCountryOpen] = useState(false);
   const [phoneOpen, setPhoneOpen] = useState(false);
@@ -67,11 +93,20 @@ export default function ContactUs({ intro, title = "ENROL YOUR CHILD", buttonTex
     setSubmitStatus(null);
     setSubmitMessage('');
 
+    const activeBranchId = respectiveBranch
+      ? respectiveBranch.id
+      : formData.branchId
+      ? Number(formData.branchId)
+      : null;
+
     try {
       const res = await fetch('/api/enrol', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          ...formData,
+          branchId: activeBranchId,
+        }),
       });
 
       const data = await res.json();
@@ -79,7 +114,10 @@ export default function ContactUs({ intro, title = "ENROL YOUR CHILD", buttonTex
       if (res.ok && data.success) {
         setSubmitStatus('success');
         setSubmitMessage(data.message || 'Thank you! Your enrolment inquiry has been received. We will contact you soon.');
-        setFormData(initialFormData);
+        setFormData({
+          ...initialFormData,
+          branchId: initialBranchId,
+        });
       } else {
         setSubmitStatus('error');
         setSubmitMessage(data.message || 'Submission failed. Please try again.');
@@ -255,7 +293,41 @@ export default function ContactUs({ intro, title = "ENROL YOUR CHILD", buttonTex
                       <option key={idx} value={program}>{program}</option>
                     ))}
                   </select>
-                  {errors.program && <p >{errors.program}</p>}
+                  {errors.program && <p className="text-red-500 text-xs mt-1">{errors.program}</p>}
+                </div>
+
+                <div>
+                  <label htmlFor="branchId" className="block text-sm font-medium text-msi-purple mb-1">
+                    {isRespectivePage ? 'Branch' : 'Select Branch'}
+                  </label>
+                  <select
+                    id="branchId"
+                    name="branchId"
+                    value={respectiveBranch ? String(respectiveBranch.id) : formData.branchId}
+                    onChange={handleChange}
+                    disabled={isRespectivePage}
+                    className={`${inputClass('branchId')} ${
+                      isRespectivePage
+                        ? 'bg-gray-100 text-gray-800 font-semibold cursor-not-allowed opacity-95'
+                        : 'bg-white'
+                    }`}
+                  >
+                    {isRespectivePage ? (
+                      <option value={respectiveBranch.id}>
+                        {respectiveBranch.displayName}
+                      </option>
+                    ) : (
+                      <>
+                        <option value="">Select Branch</option>
+                        {HYDERABAD_BRANCHES.map((b) => (
+                          <option key={b.id} value={b.id}>
+                            {b.displayName}
+                          </option>
+                        ))}
+                      </>
+                    )}
+                  </select>
+                  {errors.branchId && <p className="text-red-500 text-xs mt-1">{errors.branchId}</p>}
                 </div>
 
                 <div ref={countryRef} className="relative">

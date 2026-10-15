@@ -1,9 +1,10 @@
 import { NextResponse } from 'next/server';
+import { getBranchById, DEFAULT_TENANT_ID } from '../../../data/branches';
 
 export async function POST(request) {
   try {
     const body = await request.json();
-    const { parentName, email, mobile, program, country, phoneCode, message, agreePolicy } = body;
+    const { parentName, email, mobile, program, country, phoneCode, message, agreePolicy, branchId } = body;
 
     const errors = {};
     if (!parentName?.trim()) errors.parentName = 'Parent name is required';
@@ -16,6 +17,14 @@ export async function POST(request) {
       return NextResponse.json({ success: false, errors }, { status: 400 });
     }
 
+    // Resolve branch & tenant:
+    // All Hyderabad branches map to tenantId: 1
+    // Other branches map to their respective tenantId (Pune: 7, Bhimavaram: 8, Nashik: 9, Tadepalligudem: 10)
+    const numericBranchId = branchId !== undefined && branchId !== null && branchId !== '' ? parseInt(branchId, 10) : null;
+    const resolvedBranch = numericBranchId ? getBranchById(numericBranchId) : null;
+    const finalBranchId = resolvedBranch ? resolvedBranch.id : numericBranchId;
+    const finalTenantId = resolvedBranch ? resolvedBranch.tenantId : DEFAULT_TENANT_ID;
+
     const crmPayload = {
       parentGuardianName: parentName.trim(),
       emailId: email.trim(),
@@ -25,7 +34,8 @@ export async function POST(request) {
       countryName: country || '',
       messageInquiry: message?.trim() || '',
       privacyPolicyAgreed: Boolean(agreePolicy),
-      tenantId: 1,
+      branchId: finalBranchId,
+      tenantId: finalTenantId,
       createdBy: 1,
     };
 

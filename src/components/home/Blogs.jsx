@@ -49,7 +49,6 @@ export default function Blogs({
             style={{ width: '100%', height: '100%' }}
             seamless="seamless"
             scrolling="no"
-            allowTransparency={true}
             allowFullScreen={true}
           />
         </motion.div>
