@@ -81,7 +81,11 @@ const Footer = ({
   const currentYear = new Date().getFullYear();
   const actualPhoneHref = formatPhoneHref(phone, phoneHref);
   const actualWhatsappHref = formatWhatsappHref(whatsapp, whatsappHref);
-  const actualEmailHref = emailHref || `mailto:${email}`;
+  const emailList = Array.isArray(email)
+    ? email
+    : typeof email === 'string' && email.includes('/')
+    ? email.split('/').map((e) => e.trim()).filter(Boolean)
+    : [email];
 
   return (
     <footer className="bg-msi-purple text-white pt-16 overflow-hidden">
@@ -176,11 +180,18 @@ const Footer = ({
                   {phone}
                 </a>
               </li>
-              <li className="flex items-center !text-white">
-                <Image src="/gmail.svg" alt="" width={16} height={16} className="mr-2 flex-shrink-0" />
-                <a href={actualEmailHref} className="!text-white hover:!text-msi-orange transition-colors font-normal">
-                  {email}
-                </a>
+              <li className="flex items-start !text-white">
+                <Image src="/gmail.svg" alt="" width={16} height={16} className="mr-2 flex-shrink-0 mt-1" />
+                <div className="flex flex-wrap items-center gap-x-1.5">
+                  {emailList.map((item, idx) => (
+                    <React.Fragment key={item}>
+                      {idx > 0 && <span className="text-white/40">/</span>}
+                      <a href={`mailto:${item}`} className="!text-white hover:!text-msi-orange transition-colors font-normal">
+                        {item}
+                      </a>
+                    </React.Fragment>
+                  ))}
+                </div>
               </li>
               <li className="flex items-center !text-white">
                 <Image src="/whatsapp-icon.svg" alt="" width={16} height={16} className="mr-2 flex-shrink-0" />

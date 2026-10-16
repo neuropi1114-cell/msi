@@ -45,7 +45,7 @@ export default function PurnaNagarPage() {
         phoneHref="tel:+919766112231"
         whatsapp="(+91) 97661 12280"
         whatsappHref="https://wa.me/919766112280"
-        email="purnanagar@myschoolitaly.com"
+        email={['purnanagar@myschoolitaly.com', 'myschoolitaly7@gmail.com']}
       />
       <Header
         phone="(+91) 97661 12231"
@@ -168,7 +168,7 @@ export default function PurnaNagarPage() {
         phoneHref="tel:+919766112231"
         whatsapp="(+91) 97661 12280"
         whatsappHref="https://wa.me/919766112280"
-        email="purnanagar@myschoolitaly.com"
+        email={['purnanagar@myschoolitaly.com', 'myschoolitaly7@gmail.com']}
       />
     </>
   );

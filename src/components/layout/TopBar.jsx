@@ -26,7 +26,11 @@ const TopBar = ({
 }) => {
   const actualPhoneHref = formatPhoneHref(phone, phoneHref);
   const actualWhatsappHref = formatWhatsappHref(whatsapp, whatsappHref);
-  const actualEmailHref = emailHref || `mailto:${email}`;
+  const emailList = Array.isArray(email)
+    ? email
+    : typeof email === 'string' && email.includes('/')
+    ? email.split('/').map((e) => e.trim()).filter(Boolean)
+    : [email];
 
   return (
     <div className="hidden md:flex bg-msi-purple text-white text-xs lg:text-sm py-2 px-4 md:px-12 justify-between items-center z-50 relative">
@@ -43,10 +47,17 @@ const TopBar = ({
           <img src="/whatsapp-icon.svg" alt="WhatsApp" className="w-4 h-4 mr-2" />
           {whatsapp}
         </a>
-        <a href={actualEmailHref} className="flex items-center text-msi-cream">
-          <img src="/gmail.svg" alt="Gmail" className="w-4 h-4 mr-2" />
-          {email}
-        </a>
+        <div className="flex items-center text-msi-cream gap-1.5">
+          <img src="/gmail.svg" alt="Gmail" className="w-4 h-4 mr-1 shrink-0" />
+          {emailList.map((item, idx) => (
+            <React.Fragment key={item}>
+              {idx > 0 && <span className="text-msi-cream/50">/</span>}
+              <a href={`mailto:${item}`} className="text-msi-cream hover:text-msi-orange transition-colors">
+                {item}
+              </a>
+            </React.Fragment>
+          ))}
+        </div>
       </div>
       
       <div className="flex items-center space-x-3">
