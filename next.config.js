@@ -141,25 +141,35 @@ const nextConfig = {
         destination: '/avance-2/',
         permanent: true,
       },
-    ];
-  },
-  async rewrites() {
-    return [
+      {
+        source: '/q-city',
+        destination: '/qcity/',
+        permanent: true,
+      },
+      {
+        source: '/q-city/:path*',
+        destination: '/qcity/',
+        permanent: true,
+      },
       {
         source: '/%f0%9f%8e%83-spooktacular-halloween-celebration-at-myschoolitaly-hitex-%f0%9f%91%bb',
-        destination: '/spooktacular-halloween-celebration-at-myschoolitaly-hitex',
+        destination: '/spooktacular-halloween-celebration-at-myschoolitaly-hitex/',
+        permanent: true,
       },
       {
         source: '/%F0%9F%8E%83-spooktacular-halloween-celebration-at-myschoolitaly-hitex-%F0%9F%91%BB',
-        destination: '/spooktacular-halloween-celebration-at-myschoolitaly-hitex',
+        destination: '/spooktacular-halloween-celebration-at-myschoolitaly-hitex/',
+        permanent: true,
       },
       {
         source: '/blog/%f0%9f%8e%83-spooktacular-halloween-celebration-at-myschoolitaly-hitex-%f0%9f%91%bb',
-        destination: '/spooktacular-halloween-celebration-at-myschoolitaly-hitex',
+        destination: '/spooktacular-halloween-celebration-at-myschoolitaly-hitex/',
+        permanent: true,
       },
       {
         source: '/blog/%F0%9F%8E%83-spooktacular-halloween-celebration-at-myschoolitaly-hitex-%F0%9F%91%BB',
-        destination: '/spooktacular-halloween-celebration-at-myschoolitaly-hitex',
+        destination: '/spooktacular-halloween-celebration-at-myschoolitaly-hitex/',
+        permanent: true,
       },
     ];
   },

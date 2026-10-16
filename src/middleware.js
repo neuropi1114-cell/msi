@@ -47,8 +47,14 @@ const PRESERVED_301_REDIRECTS = {
   '/kavurihills-msi/': '/kavuri-hills/',
   '/qcity-msi1': '/qcity/',
   '/qcity-msi1/': '/qcity/',
+  '/q-city': '/qcity/',
+  '/q-city/': '/qcity/',
   '/avance2-msi': '/avance-2/',
   '/avance2-msi/': '/avance-2/',
+  '/🎃-spooktacular-halloween-celebration-at-myschoolitaly-hitex-👻': '/spooktacular-halloween-celebration-at-myschoolitaly-hitex/',
+  '/🎃-spooktacular-halloween-celebration-at-myschoolitaly-hitex-👻/': '/spooktacular-halloween-celebration-at-myschoolitaly-hitex/',
+  '/blog/🎃-spooktacular-halloween-celebration-at-myschoolitaly-hitex-👻': '/spooktacular-halloween-celebration-at-myschoolitaly-hitex/',
+  '/blog/🎃-spooktacular-halloween-celebration-at-myschoolitaly-hitex-👻/': '/spooktacular-halloween-celebration-at-myschoolitaly-hitex/',
 };
 
 // Check if the URL is an old WordPress path that must return 410 Gone
