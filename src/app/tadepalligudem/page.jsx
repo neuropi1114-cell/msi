@@ -15,7 +15,7 @@ import JsonLd from '../../components/JsonLd';
 export const metadata = {
   title: 'My School ITALY — Tadepalligudem | Preschool & Daycare Andhra Pradesh',
   description: 'Neuroscience-informed preschool, daycare, and crèche at Subbaraopeta, near Karri Satyavathi Nagar, Tadepalligudem, Andhra Pradesh.',
-  alternates: { canonical: '/tadepalligudem' },
+  alternates: { canonical: '/tadepalligudem/' },
 };
 
 const schemaData = {
@@ -23,7 +23,7 @@ const schemaData = {
   '@type': 'ChildCare',
   name: 'My School ITALY — Tadepalligudem Campus',
   description: 'Neuroscience-informed preschool and daycare in Subbaraopeta, Tadepalligudem.',
-  url: 'https://myschoolitaly.com/tadepalligudem',
+  url: 'https://www.myschoolitaly.com/tadepalligudem/',
   telephone: '+917093904680',
   address: {
     '@type': 'PostalAddress',

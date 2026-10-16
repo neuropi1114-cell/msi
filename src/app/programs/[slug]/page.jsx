@@ -13,7 +13,7 @@ export async function generateMetadata({ params }) {
   return {
     title: `${formattedTitle} | My School ITALY`,
     description: `Explore ${formattedTitle} at My School ITALY — European early childhood education & daycare.`,
-    alternates: { canonical: `/programs/${slug}` },
+    alternates: { canonical: `/programs/${slug}/` },
   };
 }
 

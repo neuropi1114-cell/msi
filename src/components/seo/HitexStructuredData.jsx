@@ -3,9 +3,9 @@ import React from 'react';
 const preschoolSchema = {
   '@context': 'https://schema.org',
   '@type': ['Preschool', 'LocalBusiness'],
-  '@id': 'https://www.myschoolitaly.com/hitex#preschool',
+  '@id': 'https://www.myschoolitaly.com/hitex/#preschool',
   name: 'My School ITALY | Hitex',
-  url: 'https://www.myschoolitaly.com/hitex',
+  url: 'https://www.myschoolitaly.com/hitex/',
   description:
     'My School ITALY Hitex offers preschool, nursery, kindergarten and daycare near HITEX Exhibition Centre, Hyderabad. Explore our programs and book a school tour.',
   telephone: '+917093904680',

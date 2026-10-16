@@ -37,7 +37,7 @@ const galleryImages = [
   '/images/blog/halloween/halloween-28.jpg',
 ];
 
-const ROUTE_PATH = '/spooktacular-halloween-celebration-at-myschoolitaly-hitex';
+const ROUTE_PATH = '/spooktacular-halloween-celebration-at-myschoolitaly-hitex/';
 
 export const metadata = {
   title: 'Spooktacular Halloween Celebration at MySchoolITALY @ Hitex',

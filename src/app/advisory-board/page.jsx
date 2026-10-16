@@ -8,12 +8,12 @@ export const metadata = {
   title: 'Our Advisory Board',
   description:
     'Meet the expert advisory board of My School ITALY — leading paediatricians and surgeons guiding our neuroscientific approach to early childhood education and childcare.',
-  alternates: { canonical: '/advisory-board' },
+  alternates: { canonical: '/advisory-board/' },
   openGraph: {
     title: 'Our Advisory Board | My School ITALY',
     description:
       'Meet the expert advisory board of My School ITALY — leading paediatricians and surgeons guiding our neuroscientific approach to early childhood education and childcare.',
-    url: '/advisory-board',
+    url: '/advisory-board/',
     siteName: 'My School ITALY',
     locale: 'en_US',
     type: 'website',

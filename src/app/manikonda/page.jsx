@@ -15,7 +15,7 @@ import JsonLd from '../../components/JsonLd';
 export const metadata = {
   title: 'My School ITALY — Manikonda | Preschool & Daycare Puppalguda',
   description: 'Neuroscience-informed preschool, daycare, and crèche in Matrusri Colony, Puppalguda, Manikonda, Hyderabad.',
-  alternates: { canonical: '/manikonda' },
+  alternates: { canonical: '/manikonda/' },
 };
 
 const schemaData = {
@@ -23,7 +23,7 @@ const schemaData = {
   '@type': 'ChildCare',
   name: 'My School ITALY — Manikonda Campus',
   description: 'Neuroscience-based early learning and daycare in Manikonda & Puppalguda.',
-  url: 'https://myschoolitaly.com/manikonda',
+  url: 'https://www.myschoolitaly.com/manikonda/',
   telephone: '+917093904680',
   address: {
     '@type': 'PostalAddress',

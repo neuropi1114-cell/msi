@@ -36,7 +36,7 @@ export const seoMetadataMap = {
     "priority": "P0",
     "pagePurpose": "HITEX Branch Centre Page",
     "recommendedUrl": "https://www.myschoolitaly.com/hitex/",
-    "canonical": "https://www.myschoolitaly.com/hitex",
+    "canonical": "https://www.myschoolitaly.com/hitex/",
     "title": "Preschool & Daycare in HITEX, Hyderabad | My School ITALY",
     "description": "My School ITALY Hitex offers preschool, nursery, kindergarten and daycare near HITEX Exhibition Centre, Hyderabad. Explore our programs and book a school tour.",
     "h1": "Preschool & Daycare in HITEX, Hyderabad",

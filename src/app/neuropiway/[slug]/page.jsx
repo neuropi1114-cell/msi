@@ -13,7 +13,7 @@ export async function generateMetadata({ params }) {
   return {
     title: `${formattedTitle} | My School ITALY`,
     description: `Discover ${formattedTitle} at My School ITALY — Neuroscience-informed pedagogy.`,
-    alternates: { canonical: `/neuropiway/${slug}` },
+    alternates: { canonical: `/neuropiway/${slug}/` },
   };
 }
 

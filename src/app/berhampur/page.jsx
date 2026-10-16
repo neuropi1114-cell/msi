@@ -15,7 +15,7 @@ import JsonLd from '../../components/JsonLd';
 export const metadata = {
   title: 'My School ITALY — Berhampur / Brahmapur | Preschool & Daycare Odisha',
   description: 'Neuroscience-informed preschool, daycare, and crèche at Tata Benz Square, Berhampur / Brahmapur, Odisha.',
-  alternates: { canonical: '/berhampur' },
+  alternates: { canonical: '/berhampur/' },
 };
 
 const schemaData = {
@@ -23,7 +23,7 @@ const schemaData = {
   '@type': 'ChildCare',
   name: 'My School ITALY — Berhampur Campus',
   description: 'Neuroscience-informed preschool and daycare at Tata Benz Square, Berhampur / Brahmapur, Odisha.',
-  url: 'https://myschoolitaly.com/berhampur',
+  url: 'https://www.myschoolitaly.com/berhampur/',
   telephone: '+917093904680',
   address: {
     '@type': 'PostalAddress',

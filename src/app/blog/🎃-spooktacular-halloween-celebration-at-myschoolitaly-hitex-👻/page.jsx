@@ -2,10 +2,10 @@ import BlogPostPage, { metadata as baseMetadata } from '../../spooktacular-hallo
 
 export const metadata = {
   ...baseMetadata,
-  alternates: { canonical: '/🎃-spooktacular-halloween-celebration-at-myschoolitaly-hitex-👻' },
+  alternates: { canonical: '/spooktacular-halloween-celebration-at-myschoolitaly-hitex/' },
   openGraph: {
     ...baseMetadata?.openGraph,
-    url: '/🎃-spooktacular-halloween-celebration-at-myschoolitaly-hitex-👻',
+    url: '/spooktacular-halloween-celebration-at-myschoolitaly-hitex/',
   },
 };
 

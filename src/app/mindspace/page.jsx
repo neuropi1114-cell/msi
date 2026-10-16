@@ -15,7 +15,7 @@ import JsonLd from '../../components/JsonLd';
 export const metadata = {
   title: 'My School ITALY — Mindspace | Preschool & Daycare Madhapur',
   description: 'Neuroscience-informed preschool, daycare, and crèche opposite Westin Hotel, Raheja Mindspace Road, Madhapur, Hyderabad.',
-  alternates: { canonical: '/mindspace' },
+  alternates: { canonical: '/mindspace/' },
 };
 
 const schemaData = {
@@ -23,7 +23,7 @@ const schemaData = {
   '@type': 'ChildCare',
   name: 'My School ITALY — Mindspace Campus',
   description: 'Neuroscience-informed preschool and daycare opposite Westin Hotel, Mindspace, Madhapur.',
-  url: 'https://myschoolitaly.com/mindspace',
+  url: 'https://www.myschoolitaly.com/mindspace/',
   telephone: '+917093904680',
   address: {
     '@type': 'PostalAddress',

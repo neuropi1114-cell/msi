@@ -22,7 +22,7 @@ import HitexStructuredData from '../../components/seo/HitexStructuredData';
 import { centreVideos, whyUsGalleryImages } from '../whyus/whyusdata';
 
 const SITE_URL = 'https://www.myschoolitaly.com';
-const PAGE_URL = `${SITE_URL}/hitex`;
+const PAGE_URL = `${SITE_URL}/hitex/`;
 const SEO_TITLE = 'Preschool & Daycare in HITEX, Hyderabad | My School ITALY';
 const SEO_DESCRIPTION =
   'My School ITALY Hitex offers preschool, nursery, kindergarten and daycare near HITEX Exhibition Centre, Hyderabad. Explore our programs and book a school tour.';

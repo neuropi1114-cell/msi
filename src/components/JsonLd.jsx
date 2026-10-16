@@ -1,4 +1,4 @@
-const siteUrl = 'https://myschoolitaly.com';
+const siteUrl = 'https://www.myschoolitaly.com';
 
 const globalOrganizationSchema = {
   '@context': 'https://schema.org',

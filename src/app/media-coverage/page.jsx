@@ -6,11 +6,11 @@ import MediaCoveragePage from '../../components/media-coverage/MediaCoveragePage
 export const metadata = {
   title: 'Media Coverage',
   description: 'Explore media coverage and press mentions featuring My School ITALY — neuroscience-based preschool and daycare recognised in leading publications for innovative early childhood education.',
-  alternates: { canonical: '/media-coverage' },
+  alternates: { canonical: '/media-coverage/' },
   openGraph: {
     title: 'Media Coverage | My School ITALY',
     description: 'Explore media coverage and press mentions featuring My School ITALY — neuroscience-based preschool and daycare recognised in leading publications for innovative early childhood education.',
-    url: '/media-coverage',
+    url: '/media-coverage/',
     siteName: 'My School ITALY',
     locale: 'en_US',
     type: 'website',

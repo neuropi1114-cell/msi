@@ -59,7 +59,10 @@ export function buildPageMetadata(path = '/', overrides = {}) {
       ? { absolute: rawTitle }
       : rawTitle;
   const description = overrides.description || seo.description;
-  const canonicalUrl = overrides.canonical || seo.canonical || `${DEFAULT_SITE_URL}${normalizePath(path)}`;
+  let canonicalUrl = overrides.canonical || seo.canonical || `${DEFAULT_SITE_URL}${normalizePath(path)}`;
+  if (!canonicalUrl.endsWith('/')) {
+    canonicalUrl = `${canonicalUrl}/`;
+  }
   const keywords = overrides.keywords || seo.keywords || [];
   const ogImage = overrides.image || DEFAULT_IMAGE;
   const absoluteOgImage = ogImage.startsWith('http') ? ogImage : `${DEFAULT_SITE_URL}${ogImage}`;

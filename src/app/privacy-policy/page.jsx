@@ -8,11 +8,11 @@ import PrivacyPolicy from '../../components/privacy-policy/PrivacyPolicy';
 export const metadata = {
   title: 'Privacy Policy | My School ITALY',
   description: 'Learn how My School ITALY collects, uses, and protects your personal information. Read our complete privacy policy for MSI Services.',
-  alternates: { canonical: '/privacy-policy' },
+  alternates: { canonical: '/privacy-policy/' },
   openGraph: {
     title: 'Privacy Policy | My School ITALY',
     description: 'Learn how My School ITALY collects, uses, and protects your personal information. Read our complete privacy policy for MSI Services.',
-    url: '/privacy-policy',
+    url: '/privacy-policy/',
     siteName: 'My School ITALY',
     locale: 'en_US',
     type: 'website',

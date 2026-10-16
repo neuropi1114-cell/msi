@@ -15,7 +15,7 @@ import JsonLd from '../../components/JsonLd';
 export const metadata = {
   title: 'My School ITALY — Kavuri Hills | Preschool & Daycare Madhapur',
   description: 'Neuroscience-informed preschool, daycare, and crèche in Kavuri Hills Phase 2, Doctor\'s Colony, Madhapur, Hyderabad.',
-  alternates: { canonical: '/kavuri-hills' },
+  alternates: { canonical: '/kavuri-hills/' },
 };
 
 const schemaData = {
@@ -23,7 +23,7 @@ const schemaData = {
   '@type': 'ChildCare',
   name: 'My School ITALY — Kavuri Hills',
   description: 'Neuroscience-based early childhood education and daycare in Kavuri Hills, Madhapur.',
-  url: 'https://myschoolitaly.com/kavuri-hills',
+  url: 'https://www.myschoolitaly.com/kavuri-hills/',
   telephone: '+917093904680',
   address: {
     '@type': 'PostalAddress',

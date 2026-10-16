@@ -15,7 +15,7 @@ import JsonLd from '../../components/JsonLd';
 export const metadata = {
   title: 'My School ITALY — Kukatpally | Preschool & Daycare KPHB',
   description: 'Neuroscience-informed preschool, daycare, and crèche in Gokul Plots, KPHB Phase 9, Kukatpally, Hyderabad.',
-  alternates: { canonical: '/kukatpally' },
+  alternates: { canonical: '/kukatpally/' },
 };
 
 const schemaData = {
@@ -23,7 +23,7 @@ const schemaData = {
   '@type': 'ChildCare',
   name: 'My School ITALY — Kukatpally',
   description: 'Neuroscience-based early years education and daycare in Kukatpally, KPHB.',
-  url: 'https://myschoolitaly.com/kukatpally',
+  url: 'https://www.myschoolitaly.com/kukatpally/',
   telephone: '+917093904680',
   address: {
     '@type': 'PostalAddress',

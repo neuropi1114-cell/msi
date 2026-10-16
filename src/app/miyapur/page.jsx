@@ -15,7 +15,7 @@ import JsonLd from '../../components/JsonLd';
 export const metadata = {
   title: 'My School ITALY — Miyapur | Preschool & Daycare Miyapur',
   description: 'Neuroscience-informed preschool, daycare, and crèche in Sri Aurobindo Colony, Miyapur, Hyderabad.',
-  alternates: { canonical: '/miyapur' },
+  alternates: { canonical: '/miyapur/' },
 };
 
 const schemaData = {
@@ -23,7 +23,7 @@ const schemaData = {
   '@type': 'ChildCare',
   name: 'My School ITALY — Miyapur',
   description: 'Neuroscience-based early years education and daycare in Miyapur, Hyderabad.',
-  url: 'https://myschoolitaly.com/miyapur',
+  url: 'https://www.myschoolitaly.com/miyapur/',
   telephone: '+917093904680',
   address: {
     '@type': 'PostalAddress',

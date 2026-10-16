@@ -7,11 +7,11 @@ import ContactUs from '../../components/common/ContactUs';
 export const metadata = {
   title: 'Contact Us',
   description: 'Get in touch with My School ITALY. Find a location near you, book a tour, or ask about our neuroscience-based preschool and daycare programs.',
-  alternates: { canonical: '/contact' },
+  alternates: { canonical: '/contact/' },
   openGraph: {
     title: 'Contact Us | My School ITALY',
     description: 'Get in touch with My School ITALY. Find a location near you, book a tour, or ask about our neuroscience-based preschool and daycare programs.',
-    url: '/contact',
+    url: '/contact/',
     siteName: 'My School ITALY',
     locale: 'en_US',
     type: 'website',

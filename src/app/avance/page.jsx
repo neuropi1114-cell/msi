@@ -16,7 +16,7 @@ import JsonLd from '../../components/JsonLd';
 export const metadata = {
   title: 'My School ITALY — aVance 1 (H04) | Corporate Daycare & Preschool Gachibowli',
   description: 'Neuroscience-informed corporate daycare, crèche, and preschool at aVance H04, Phoenix Infocity, Gachibowli, Hyderabad.',
-  alternates: { canonical: '/avance' },
+  alternates: { canonical: '/avance/' },
 };
 
 const schemaData = {
@@ -24,7 +24,7 @@ const schemaData = {
   '@type': 'ChildCare',
   name: 'My School ITALY — aVance 1 Campus',
   description: 'Corporate childcare, baby crèche, and preschool at aVance Business Hub H04, Gachibowli.',
-  url: 'https://myschoolitaly.com/avance',
+  url: 'https://www.myschoolitaly.com/avance/',
   telephone: '+917093904680',
   address: {
     '@type': 'PostalAddress',

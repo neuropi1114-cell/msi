@@ -1,14 +1,13 @@
-# *
+# Allow all crawlers
 User-agent: *
 Allow: /
 
-# *
-User-agent: *
+# Disallow internal and API routes
 Disallow: /api/
 Disallow: /admin/
-
-# Host
-Host: https://myschoolitaly.com
+Disallow: /_next/
+Disallow: /manifest.json
 
 # Sitemaps
-Sitemap: https://myschoolitaly.com/sitemap.xml
+Sitemap: https://www.myschoolitaly.com/sitemap.xml
+Sitemap: https://www.myschoolitaly.com/sitemap-0.xml

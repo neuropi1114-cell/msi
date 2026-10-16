@@ -6,7 +6,7 @@ import Footer from '../../components/layout/Footer';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 
-const ROUTE_PATH = '/what-is-neuroscience-based-early-childhood-education';
+const ROUTE_PATH = '/what-is-neuroscience-based-early-childhood-education/';
 
 export const metadata = {
   title: 'What is Neuroscience-Based Early Childhood Education',

@@ -9,11 +9,11 @@ import { ArrowRight, Calendar } from 'lucide-react';
 export const metadata = {
   title: 'Blog',
   description: 'Explore the My School ITALY blog — insights on neuroscience-based early childhood education, parenting tips, school activities, and child development milestones.',
-  alternates: { canonical: '/blog' },
+  alternates: { canonical: '/blog/' },
   openGraph: {
     title: 'Blog | My School ITALY',
     description: 'Explore the My School ITALY blog — insights on neuroscience-based early childhood education, parenting tips, school activities, and child development milestones.',
-    url: '/blog',
+    url: '/blog/',
     siteName: 'My School ITALY',
     locale: 'en_US',
     type: 'website',

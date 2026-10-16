@@ -15,7 +15,7 @@ import JsonLd from '../../components/JsonLd';
 export const metadata = {
   title: 'My School ITALY — Purna Nagar | Preschool & Daycare Pune',
   description: 'Neuroscience-informed preschool, daycare, and crèche on Spine Road, Purnanagar, Chinchwad, Pune.',
-  alternates: { canonical: '/purna-nagar' },
+  alternates: { canonical: '/purna-nagar/' },
 };
 
 const schemaData = {
@@ -23,7 +23,7 @@ const schemaData = {
   '@type': 'ChildCare',
   name: 'My School ITALY — Purna Nagar Campus',
   description: 'Neuroscience-informed preschool and daycare on Spine Road, Purnanagar, Chinchwad, Pune.',
-  url: 'https://myschoolitaly.com/purna-nagar',
+  url: 'https://www.myschoolitaly.com/purna-nagar/',
   telephone: '+917093904680',
   email: ['purnanagar@myschoolitaly.com', 'myschoolitaly7@gmail.com'],
   address: {

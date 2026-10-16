@@ -12,14 +12,14 @@ import { HYDERABAD_CAMPUSES } from '../../data/hyderabadCampuses';
 export const metadata = {
   title: 'My School ITALY — Hyderabad Locations Map',
   description: 'View all My School ITALY preschool, crèche, and daycare campus locations across Hyderabad on Google Maps.',
-  alternates: { canonical: '/hyderabad' },
+  alternates: { canonical: '/hyderabad/' },
 };
 
 const hyderabadSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'My School ITALY — Hyderabad',
-  url: 'https://www.myschoolitaly.com/hyderabad',
+  url: 'https://www.myschoolitaly.com/hyderabad/',
   description: 'Neuroscience-informed early learning and daycare network in Hyderabad.',
 };
 

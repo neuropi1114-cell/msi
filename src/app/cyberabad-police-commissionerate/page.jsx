@@ -15,7 +15,7 @@ import JsonLd from '../../components/JsonLd';
 export const metadata = {
   title: 'My School ITALY — Cyberabad Police Commissionerate | Preschool & Daycare Gachibowli',
   description: 'Neuroscience-informed preschool, daycare, and crèche at Cyberabad Police Commissionerate, Gachibowli, Hyderabad.',
-  alternates: { canonical: '/cyberabad-police-commissionerate' },
+  alternates: { canonical: '/cyberabad-police-commissionerate/' },
 };
 
 const schemaData = {
@@ -23,7 +23,7 @@ const schemaData = {
   '@type': 'ChildCare',
   name: 'My School ITALY — Cyberabad Police Commissionerate',
   description: 'Neuroscience-informed preschool, crèche, and daycare at Cyberabad Police Commissionerate, Gachibowli.',
-  url: 'https://myschoolitaly.com/cyberabad-police-commissionerate',
+  url: 'https://www.myschoolitaly.com/cyberabad-police-commissionerate/',
   telephone: '+917093904680',
   address: {
     '@type': 'PostalAddress',

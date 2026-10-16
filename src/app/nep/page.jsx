@@ -14,11 +14,11 @@ import NepNews from '../../components/nep/NepNews';
 export const metadata = {
   title: 'The Educational Project',
   description: 'Discover My School ITALY\'s educational project — a neuroscience-based approach that cultivates emotional intelligence, resilience, and a love for learning in every child.',
-  alternates: { canonical: '/nep' },
+  alternates: { canonical: '/neuropi-way/' },
   openGraph: {
     title: 'The Educational Project | My School ITALY',
     description: 'Discover My School ITALY\'s educational project — a neuroscience-based approach that cultivates emotional intelligence, resilience, and a love for learning in every child.',
-    url: '/nep',
+    url: '/neuropi-way/',
     siteName: 'My School ITALY',
     locale: 'en_US',
     type: 'website',

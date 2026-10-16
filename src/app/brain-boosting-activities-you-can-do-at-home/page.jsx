@@ -6,7 +6,7 @@ import Footer from '../../components/layout/Footer';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 
-const ROUTE_PATH = '/brain-boosting-activities-you-can-do-at-home';
+const ROUTE_PATH = '/brain-boosting-activities-you-can-do-at-home/';
 
 export const metadata = {
   title: 'Brain-Boosting Activities You Can Do at Home',

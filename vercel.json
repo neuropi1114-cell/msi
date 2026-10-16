@@ -5,7 +5,7 @@
       "has": [
         {
           "type": "host",
-          "value": "(?!myschoolitaly\\.com$).*"
+          "value": ".*\\.vercel\\.app"
         }
       ],
       "headers": [
@@ -22,10 +22,21 @@
       "has": [
         {
           "type": "host",
+          "value": "myschoolitaly.com"
+        }
+      ],
+      "destination": "https://www.myschoolitaly.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
           "value": "msi-mu.vercel.app"
         }
       ],
-      "destination": "https://myschoolitaly.com/:path*",
+      "destination": "https://www.myschoolitaly.com/:path*",
       "permanent": true
     }
   ]

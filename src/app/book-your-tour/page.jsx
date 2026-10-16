@@ -9,12 +9,12 @@ export const metadata = {
   title: 'Book Your Tour | My School ITALY',
   description:
     'Book a tour at My School ITALY, the neuroscientific European preschool. Visit our campus, explore our programs, and experience our neuroscience-based early childhood education.',
-  alternates: { canonical: '/book-your-tour' },
+  alternates: { canonical: '/book-your-tour/' },
   openGraph: {
     title: 'Book Your Tour | My School ITALY',
     description:
       'Book a tour at My School ITALY, the neuroscientific European preschool. Visit our campus, explore our programs, and experience our neuroscience-based early childhood education.',
-    url: '/book-your-tour',
+    url: '/book-your-tour/',
     siteName: 'My School ITALY',
     locale: 'en_US',
     type: 'website',

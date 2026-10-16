@@ -8,11 +8,11 @@ import PolicyFramework from '../../components/policy-framework/PolicyFramework';
 export const metadata = {
   title: 'MSI Early Childhood Policy Framework | My School ITALY',
   description: 'Development Before Performance. Understanding Before Expectation. The Child Before the System. Explore our comprehensive policy framework covering Developmental, Care & Protection, and Partnership policies.',
-  alternates: { canonical: '/policy-framework' },
+  alternates: { canonical: '/policy-framework/' },
   openGraph: {
     title: 'MSI Early Childhood Policy Framework | My School ITALY',
     description: 'Development Before Performance. Understanding Before Expectation. The Child Before the System. Explore our comprehensive policy framework.',
-    url: '/policy-framework',
+    url: '/policy-framework/',
     siteName: 'My School ITALY',
     locale: 'en_US',
     type: 'website',

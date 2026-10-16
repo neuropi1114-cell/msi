@@ -10,11 +10,11 @@ import BrighterFuture from '../../components/growing-in-confidence/BrighterFutur
 export const metadata = {
   title: 'Growing In Confidence – My School ITALY',
   description: 'Preschool program for children 3-7 years. Building confidence through gymnastics, robotics, and academics.',
-  alternates: { canonical: '/growing-in-confidence' },
+  alternates: { canonical: '/growing-in-confidence/' },
     openGraph: {
     title: 'Growing In Confidence – My School ITALY',
     description: 'Preschool program for children 3-7 years. Building confidence through gymnastics, robotics, and academics.',
-    url: '/growing-in-confidence',
+    url: '/growing-in-confidence/',
     siteName: 'My School ITALY',
     locale: 'en_US',
     type: 'website',

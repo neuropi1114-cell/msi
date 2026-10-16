@@ -15,7 +15,7 @@ import JsonLd from '../../components/JsonLd';
 export const metadata = {
   title: 'My School ITALY — Kondapur | Preschool & Daycare Botanical Garden Road',
   description: 'Neuroscience-informed preschool, daycare, and crèche at Sumadhura Horizon, Botanical Garden Road, Kondapur, Hyderabad.',
-  alternates: { canonical: '/kondapur' },
+  alternates: { canonical: '/kondapur/' },
 };
 
 const schemaData = {
@@ -23,7 +23,7 @@ const schemaData = {
   '@type': 'ChildCare',
   name: 'My School ITALY — Kondapur Campus',
   description: 'Neuroscience-informed preschool and daycare at Sumadhura Horizon, Botanical Garden Road, Kondapur.',
-  url: 'https://myschoolitaly.com/kondapur',
+  url: 'https://www.myschoolitaly.com/kondapur/',
   telephone: '+917093904680',
   address: {
     '@type': 'PostalAddress',

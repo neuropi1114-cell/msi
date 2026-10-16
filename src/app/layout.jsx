@@ -20,7 +20,7 @@ const fredoka = Fredoka({
 });
 
 export const metadata = {
-  metadataBase: new URL('https://myschoolitaly.com'),
+  metadataBase: new URL('https://www.myschoolitaly.com'),
   title: {
     default: 'My School ITALY | Neuroscience-Based Preschool & Daycare',
     template: '%s | My School ITALY',
@@ -32,7 +32,7 @@ export const metadata = {
     title: 'My School ITALY | Neuroscience-Based Preschool & Daycare',
     description: 'Rooted in the science of early brain development, our preschool chain blends neuroscience, play-based learning, and emotional intelligence.',
     type: 'website',
-    url: '/',
+    url: 'https://www.myschoolitaly.com/',
     siteName: 'My School ITALY',
     locale: 'en_US',
     images: [{ url: '/images/hero/Slider_1-scaled.jpg.bv.webp', width: 1200, height: 630 }],
@@ -46,9 +46,9 @@ export const metadata = {
     icon: '/favicon.png',
   },
   alternates: {
-    canonical: '/',
+    canonical: 'https://www.myschoolitaly.com/',
     languages: {
-      en: '/',
+      en: 'https://www.myschoolitaly.com/',
     },
   },
   other: {

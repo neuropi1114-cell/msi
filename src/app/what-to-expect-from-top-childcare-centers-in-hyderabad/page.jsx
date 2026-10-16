@@ -6,7 +6,7 @@ import Footer from '../../components/layout/Footer';
 import Link from 'next/link';
 import { ArrowLeft, Calendar, ShieldCheck, HeartHandshake, BookOpen, Utensils, Sparkles, Trees, PartyPopper, MessageCircle, Palette, Heart } from 'lucide-react';
 
-const ROUTE_PATH = '/what-to-expect-from-top-childcare-centers-in-hyderabad';
+const ROUTE_PATH = '/what-to-expect-from-top-childcare-centers-in-hyderabad/';
 
 export const metadata = {
   title: 'What to Expect from Top Childcare Centers in Hyderabad',
