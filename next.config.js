@@ -71,6 +71,76 @@ const nextConfig = {
         destination: '/hitex/',
         permanent: true,
       },
+      {
+        source: '/about-us',
+        destination: '/about/',
+        permanent: true,
+      },
+      {
+        source: '/about-us/:path*',
+        destination: '/about/',
+        permanent: true,
+      },
+      {
+        source: '/mnr',
+        destination: '/about/',
+        permanent: true,
+      },
+      {
+        source: '/mnr/:path*',
+        destination: '/about/',
+        permanent: true,
+      },
+      {
+        source: '/peter-gseller',
+        destination: '/about/',
+        permanent: true,
+      },
+      {
+        source: '/peter-gseller/:path*',
+        destination: '/about/',
+        permanent: true,
+      },
+      {
+        source: '/balewadi',
+        destination: '/purna-nagar/',
+        permanent: true,
+      },
+      {
+        source: '/balewadi/:path*',
+        destination: '/purna-nagar/',
+        permanent: true,
+      },
+      {
+        source: '/kavurihills-msi',
+        destination: '/kavuri-hills/',
+        permanent: true,
+      },
+      {
+        source: '/kavurihills-msi/:path*',
+        destination: '/kavuri-hills/',
+        permanent: true,
+      },
+      {
+        source: '/qcity-msi1',
+        destination: '/qcity/',
+        permanent: true,
+      },
+      {
+        source: '/qcity-msi1/:path*',
+        destination: '/qcity/',
+        permanent: true,
+      },
+      {
+        source: '/avance2-msi',
+        destination: '/avance-2/',
+        permanent: true,
+      },
+      {
+        source: '/avance2-msi/:path*',
+        destination: '/avance-2/',
+        permanent: true,
+      },
     ];
   },
   async rewrites() {
