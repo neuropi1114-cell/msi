@@ -95,7 +95,19 @@ const navLinks = [
   },
 ];
 
-const Header = () => {
+const formatPhoneHref = (phone, phoneHref) => {
+  if (phoneHref) return phoneHref;
+  const digits = String(phone).replace(/[^\d+]/g, '');
+  if (digits.startsWith('+')) return `tel:${digits}`;
+  if (digits.length === 10) return `tel:+91${digits}`;
+  return `tel:${digits}`;
+};
+
+const Header = ({
+  phone = '(+91) 70939 04680',
+  phoneHref,
+}) => {
+  const actualPhoneHref = formatPhoneHref(phone, phoneHref);
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -213,11 +225,11 @@ const Header = () => {
             </a>
           </div>
           <a
-            href="tel:+917093904680"
+            href={actualPhoneHref}
             className="flex items-center gap-1 font-normal text-[11px] sm:text-xs text-msi-blue hover:text-msi-green transition-colors whitespace-nowrap"
           >
             <Phone className="w-3 h-3 text-msi-orange shrink-0" />
-            <span>(+91) 70939 04680</span>
+            <span>{phone}</span>
           </a>
         </div>
 

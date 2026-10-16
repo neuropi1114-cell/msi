@@ -114,6 +114,13 @@ export default function ContactUs({
       if (res.ok && data.success) {
         setSubmitStatus('success');
         setSubmitMessage(data.message || 'Thank you! Your enrolment inquiry has been received. We will contact you soon.');
+        if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+          window.gtag('event', 'generate_lead', {
+            event_category: 'form',
+            event_label: title || 'Enquiry Form',
+            value: 1,
+          });
+        }
         setFormData({
           ...initialFormData,
           branchId: initialBranchId,

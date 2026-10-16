@@ -76,6 +76,13 @@ export default function CorporateContactUs({ imageSrc = "/images/corporatechildc
             ? 'Thank you! We will reach out to schedule a meeting with your team.'
             : 'Thank you! Your corporate childcare proposal request has been received.'
         );
+        if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+          window.gtag('event', 'generate_lead', {
+            event_category: 'form',
+            event_label: 'Corporate Childcare Enquiry',
+            value: 1,
+          });
+        }
         setFormData(initialCorporateFormData);
       } else {
         setSubmitStatus('error');

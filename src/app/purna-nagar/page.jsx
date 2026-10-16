@@ -24,7 +24,7 @@ const schemaData = {
   name: 'My School ITALY — Purna Nagar Campus',
   description: 'Neuroscience-informed preschool and daycare on Spine Road, Purnanagar, Chinchwad, Pune.',
   url: 'https://www.myschoolitaly.com/purna-nagar/',
-  telephone: '+917093904680',
+  telephone: '+919766112231',
   email: ['purnanagar@myschoolitaly.com', 'myschoolitaly7@gmail.com'],
   address: {
     '@type': 'PostalAddress',
@@ -40,8 +40,17 @@ export default function PurnaNagarPage() {
   return (
     <>
       <JsonLd schema={schemaData} />
-      <TopBar />
-      <Header />
+      <TopBar
+        phone="(+91) 97661 12231"
+        phoneHref="tel:+919766112231"
+        whatsapp="(+91) 97661 12280"
+        whatsappHref="https://wa.me/919766112280"
+        email="purnanagar@myschoolitaly.com"
+      />
+      <Header
+        phone="(+91) 97661 12231"
+        phoneHref="tel:+919766112231"
+      />
 
       <main>
         <CloudHeader
@@ -152,7 +161,15 @@ export default function PurnaNagarPage() {
       <div id="enroll">
         <ContactUs image="/images/purna-nagar/purna-nagar-book-tour.png" title="BOOK A TOUR AT MSI PURNA NAGAR" buttonText="BOOK A TOUR" />
       </div>
-      <Footer />
+      <Footer
+        address="Privia Prestige, S.No. 26A & 46A, Spine Rd, next to Indian Oil Pump, Vitthal Nagar, Purnanagar, Chinchwad, Pune - 411019"
+        addressLabel="PUNE:"
+        phone="(+91) 97661 12231"
+        phoneHref="tel:+919766112231"
+        whatsapp="(+91) 97661 12280"
+        whatsappHref="https://wa.me/919766112280"
+        email="purnanagar@myschoolitaly.com"
+      />
     </>
   );
 }

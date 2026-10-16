@@ -190,6 +190,6 @@ export const config = {
      * - _next/image
      * - favicon.ico, favicon.png, favicon.svg
      */
-    '/((?!_next/static|_next/image|favicon\\.ico|favicon\\.png|favicon\\.svg).*)',
+    '/((?!_next/static|_next/image|images|videos|favicon\\.ico|favicon\\.png|favicon\\.svg).*)',
   ],
 };

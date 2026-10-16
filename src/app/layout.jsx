@@ -1,9 +1,11 @@
 import { Lato, Fredoka } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/react';
+import { GoogleAnalytics } from '@next/third-parties/google';
 import Script from 'next/script';
 import './globals.css';
 import JsonLd from '../components/JsonLd';
 import LocalStorageImageCache from '../components/common/LocalStorageImageCache';
+import AnalyticsListener from '../components/common/AnalyticsListener';
 
 const lato = Lato({
   subsets: ['latin'],
@@ -60,23 +62,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning className={`${lato.variable} ${fredoka.variable}`}>
       <head>
-        {/* Google tag (gtag.js) */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-WFLXED7JMB" />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-
-              gtag('config', 'G-WFLXED7JMB');
-            `,
-          }}
-        />
         <link rel="preload" as="image" href="/images/hero/Slider_1-scaled.jpg.bv.webp" fetchPriority="high" />
         <link rel="manifest" href="/manifest.json" />
       </head>
       <body className="text-gray-800 bg-[#f7f9fc] min-h-screen font-lato" suppressHydrationWarning>
+        <GoogleAnalytics gaId="G-WFLXED7JMB" />
+        <AnalyticsListener />
         <JsonLd />
         <LocalStorageImageCache />
         {children}

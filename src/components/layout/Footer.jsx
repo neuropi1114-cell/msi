@@ -52,8 +52,36 @@ const SOCIAL_LINKS = [
   { href: 'https://youtube.com/@myschoolitaly', label: 'YouTube', icon: '/youtube.svg' },
 ];
 
-const Footer = () => {
+const formatPhoneHref = (phone, phoneHref) => {
+  if (phoneHref) return phoneHref;
+  const digits = String(phone).replace(/[^\d+]/g, '');
+  if (digits.startsWith('+')) return `tel:${digits}`;
+  if (digits.length === 10) return `tel:+91${digits}`;
+  return `tel:${digits}`;
+};
+
+const formatWhatsappHref = (whatsapp, whatsappHref) => {
+  if (whatsappHref) return whatsappHref;
+  const digits = String(whatsapp).replace(/[^\d]/g, '');
+  if (digits.length === 10) return `https://wa.me/91${digits}`;
+  return `https://wa.me/${digits}`;
+};
+
+const Footer = ({
+  phone = '(+91) 70939 04680',
+  phoneHref,
+  whatsapp = '(+91) 70759 47070',
+  whatsappHref,
+  email = 'info@myschoolitaly.com',
+  emailHref,
+  address = 'Hitex, HiTech City, Hyderabad, 500084',
+  addressLabel = 'INDIA:',
+  italyAddress = 'Piazza Luigi Di Savoia 40, Bari 70121',
+}) => {
   const currentYear = new Date().getFullYear();
+  const actualPhoneHref = formatPhoneHref(phone, phoneHref);
+  const actualWhatsappHref = formatWhatsappHref(whatsapp, whatsappHref);
+  const actualEmailHref = emailHref || `mailto:${email}`;
 
   return (
     <footer className="bg-msi-purple text-white pt-16 overflow-hidden">
@@ -127,35 +155,37 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-6 !text-white">Contact us</h3>
 
             <ul className="space-y-3 text-sm !text-white">
-              <li className="flex items-start !text-white">
-                <Image src="/googleMaps.svg" alt="" width={16} height={16} className="mr-2 flex-shrink-0 mt-1" />
-                <span className="!text-white">
-                  <strong className="font-semibold !text-white">ITALY:</strong> Piazza Luigi Di Savoia 40, Bari 70121
-                </span>
-              </li>
+              {italyAddress && (
+                <li className="flex items-start !text-white">
+                  <Image src="/googleMaps.svg" alt="" width={16} height={16} className="mr-2 flex-shrink-0 mt-1" />
+                  <span className="!text-white">
+                    <strong className="font-semibold !text-white">ITALY:</strong> {italyAddress}
+                  </span>
+                </li>
+              )}
 
               <li className="flex items-start !text-white">
                 <Image src="/googleMaps.svg" alt="" width={16} height={16} className="mr-2 flex-shrink-0 mt-1" />
                 <span className="!text-white">
-                  <strong className="font-semibold !text-white">INDIA:</strong> Hitex, HiTech City, Hyderabad, 500084
+                  <strong className="font-semibold !text-white">{addressLabel}</strong> {address}
                 </span>
               </li>
               <li className="flex items-center !text-white">
                 <Phone className="w-4 h-4 mr-2 text-msi-orange flex-shrink-0" />
-                <a href="tel:+917093904680" className="!text-white hover:!text-msi-orange transition-colors font-normal">
-                  (+91) 70939 04680
+                <a href={actualPhoneHref} className="!text-white hover:!text-msi-orange transition-colors font-normal">
+                  {phone}
                 </a>
               </li>
               <li className="flex items-center !text-white">
                 <Image src="/gmail.svg" alt="" width={16} height={16} className="mr-2 flex-shrink-0" />
-                <a href="mailto:info@myschoolitaly.com" className="!text-white hover:!text-msi-orange transition-colors font-normal">
-                  info@myschoolitaly.com
+                <a href={actualEmailHref} className="!text-white hover:!text-msi-orange transition-colors font-normal">
+                  {email}
                 </a>
               </li>
               <li className="flex items-center !text-white">
                 <Image src="/whatsapp-icon.svg" alt="" width={16} height={16} className="mr-2 flex-shrink-0" />
-                <a href="https://wa.me/917075947070" target="_blank" rel="noopener noreferrer" className="!text-white hover:!text-msi-orange transition-colors font-normal">
-                  (+91) 70759 47070
+                <a href={actualWhatsappHref} target="_blank" rel="noopener noreferrer" className="!text-white hover:!text-msi-orange transition-colors font-normal">
+                  {whatsapp}
                 </a>
               </li>
             </ul>

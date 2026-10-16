@@ -84,6 +84,13 @@ export default function FranchiseForm({ variant = 'top' }) {
       if (data.success) {
         setSubmitStatus('success');
         setSubmitMessage(data.message || 'Thank you! We will get back to you soon.');
+        if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+          window.gtag('event', 'generate_lead', {
+            event_category: 'form',
+            event_label: 'Franchise Enquiry',
+            value: 1,
+          });
+        }
         setFormData(initialFormData);
       } else {
         setSubmitStatus('error');
