@@ -25,6 +25,26 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/MediaCoverage',
+        destination: '/media-coverage/',
+        permanent: true,
+      },
+      {
+        source: '/MediaCoverage/:path*',
+        destination: '/media-coverage/',
+        permanent: true,
+      },
+      {
+        source: '/mediacoverage',
+        destination: '/media-coverage/',
+        permanent: true,
+      },
+      {
+        source: '/mediacoverage/:path*',
+        destination: '/media-coverage/',
+        permanent: true,
+      },
+      {
         source: '/nep',
         destination: '/neuropi-way/',
         permanent: true,

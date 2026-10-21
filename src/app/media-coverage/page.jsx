@@ -1,7 +1,7 @@
 import TopBar from '../../components/layout/TopBar';
 import Header from '../../components/layout/Header';
 import Footer from '../../components/layout/Footer';
-import MediaCoveragePage from '../../components/MediaCoverage/MediaCoveragePage';
+import MediaCoveragePage from '../../components/media-coverage/MediaCoveragePage';
 
 export const metadata = {
   title: 'Media Coverage & Press Releases | My School ITALY',

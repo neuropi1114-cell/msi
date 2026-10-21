@@ -39,38 +39,81 @@ function getPlatformIcon(platform) {
   }
 }
 
+function PartnershipFlags() {
+  return (
+    <span className="inline-flex items-center gap-1.5 ml-2 align-middle not-italic">
+      <span
+        title="India"
+        className="inline-flex items-center justify-center w-6 h-4 rounded-xs overflow-hidden shadow-xs border border-gray-200"
+      >
+        <svg viewBox="0 0 640 480" className="w-full h-full">
+          <path fill="#f93" d="M0 0h640v160H0z" />
+          <path fill="#fff" d="M0 160h640v160H0z" />
+          <path fill="#128807" d="M0 320h640v160H0z" />
+          <circle cx="320" cy="240" r="56" fill="none" stroke="#008" strokeWidth="8" />
+          <circle cx="320" cy="240" r="14" fill="#008" />
+        </svg>
+      </span>
+      <span
+        title="European Union"
+        className="inline-flex items-center justify-center w-6 h-4 rounded-xs overflow-hidden shadow-xs border border-blue-900"
+      >
+        <svg viewBox="0 0 640 480" className="w-full h-full">
+          <rect width="640" height="480" fill="#003399" />
+          <g fill="#ffcc00">
+            <circle cx="320" cy="90" r="14" />
+            <circle cx="320" cy="390" r="14" />
+            <circle cx="170" cy="240" r="14" />
+            <circle cx="470" cy="240" r="14" />
+            <circle cx="214" cy="134" r="14" />
+            <circle cx="426" cy="134" r="14" />
+            <circle cx="214" cy="346" r="14" />
+            <circle cx="426" cy="346" r="14" />
+            <circle cx="134" cy="214" r="14" />
+            <circle cx="134" cy="266" r="14" />
+            <circle cx="506" cy="214" r="14" />
+            <circle cx="506" cy="266" r="14" />
+          </g>
+        </svg>
+      </span>
+    </span>
+  );
+}
+
 const timelineEvents = [
   {
-    id: 'ap-cm-delegation-2026',
+    id: 'meridian-curriculum-innovation-award-2026',
     year: '2026',
     date: '2026',
-    category: 'State Partnership & Leadership',
-    source: "Chief Minister's Office, Andhra Pradesh",
-    title: 'Empowering the Next Generation: MY School ITALY as Knowledge Partner for Andhra Pradesh 🇮🇳🇪🇺',
-    subtitle: 'High-Level Interaction with Hon’ble Chief Minister Shri N. Chandrababu Naidu',
+    category: 'Curriculum & Innovation Award',
+    source: 'Excellence in Early Education Awards 2026 (Meridian)',
+    title: 'Excellence in Early Education Award 2026 — Innovation for Preschool Curriculum',
+    subtitle: 'Founder & CEO Dr. Aperna Volluru & My School ITALY Hitex Felicitated Across Top Preschool Brands',
     summary:
-      'The leadership team of MY School ITALY delivered a comprehensive proposal presentation to the Hon’ble Chief Minister of Andhra Pradesh, Shri N. Chandrababu Naidu, at the Chief Minister’s Office in Vijayawada, positioning MY School ITALY as the strategic Knowledge Partner for early childhood education and neuroscience-informed preschool ecosystems across the state.',
+      'My School ITALY founder Dr. Aperna Volluru and the My School ITALY Hitex campus received the prestigious "Innovation for Preschool Curriculum" accolade at the Excellence in Early Education Awards 2026, competing alongside top preschool brands and being celebrated for pioneering neuroscience-backed early learning models.',
     highlights: [
-      'High-level leadership delegation at the Chief Minister’s Office in Vijayawada',
-      'Comprehensive proposal presentation reviewed directly with Hon’ble Chief Minister Shri N. Chandrababu Naidu',
-      'Strategic roadmap as Knowledge Partner for Andhra Pradesh in early childhood neuroscience and European pedagogical standards',
-      'Statewide transformation of early childhood learning, crèche infrastructure, and whole-child development',
+      'Honored with the "Innovation for Preschool Curriculum" award at the Excellence in Early Education Awards 2026',
+      'Recognized in competition with all top preschool brands across the region',
+      'Presented by Meridian Schools in celebration of outstanding contribution towards nurturing young minds',
+      'Validation of The NeuroPi Way — combining European pedagogical standards with cognitive early neuroscience',
     ],
-    image: '/images/media-coverage/cm-chandrababu-naidu-delegation.jpg',
+    image: '/images/media-coverage/innovation-in-curriculum-award.jpeg',
+    imageAspect: 'aspect-[16/10] md:aspect-[16/10]',
+    imageObjectPosition: 'object-cover object-center',
     links: [
       {
-        label: 'Explore The NeuroPi Way',
+        label: 'Explore Our Award-Winning Curriculum',
         url: '/neuropiway',
         primary: true,
       },
       {
-        label: 'Corporate & State Solutions',
-        url: '/corporatechildcare',
+        label: 'Visit MSI Hitex Campus',
+        url: '/hitex',
         primary: false,
       },
     ],
-    badgeColor: 'bg-[#FFC000]/25 text-[#734700] border-[#FFC000]/50',
-    type: 'partnership',
+    badgeColor: 'bg-[#ABCD52]/25 text-[#3f630e] border-[#ABCD52]/40',
+    type: 'award',
     isNeuroPi: true,
   },
   {
@@ -301,6 +344,42 @@ const timelineEvents = [
     type: 'award',
   },
   {
+    id: 'ap-cm-delegation-2025',
+    year: '2025',
+    date: 'March 24, 2025',
+    category: 'State Partnership & Leadership',
+    source: 'AP CM Office, Amaravati',
+    title: 'Empowering the Next Generation: MY School ITALY as Knowledge Partner for Andhra Pradesh',
+    showPartnershipFlags: true,
+    subtitle: 'MY School ITALY delegation interacting with Chief Minister Shri N. Chandrababu Naidu.',
+    summary:
+      'Our leadership team delivered a comprehensive proposal presentation to the Hon’ble Chief Minister of Andhra Pradesh, Shri N. Chandrababu Naidu, at the AP Chief Minister’s Office in Amaravati on March 24, 2025.',
+    highlights: [
+      'High-level leadership delegation at the AP Chief Minister’s Office in Amaravati on March 24, 2025',
+      'Comprehensive proposal presentation reviewed directly with Hon’ble Chief Minister Shri N. Chandrababu Naidu',
+      'Strategic roadmap as Knowledge Partner for Andhra Pradesh in early childhood neuroscience and European pedagogical standards',
+      'Statewide transformation of early childhood learning, crèche infrastructure, and whole-child development',
+    ],
+    image: '/images/media-coverage/cm-chandrababu-naidu-delegation.jpg',
+    imageAspect: 'aspect-square md:aspect-[4/3] lg:aspect-square',
+    imageObjectPosition: 'object-cover object-top',
+    links: [
+      {
+        label: 'Explore The NeuroPi Way',
+        url: '/neuropiway',
+        primary: true,
+      },
+      {
+        label: 'Corporate & State Solutions',
+        url: '/corporatechildcare',
+        primary: false,
+      },
+    ],
+    badgeColor: 'bg-[#FFC000]/25 text-[#734700] border-[#FFC000]/50',
+    type: 'partnership',
+    isNeuroPi: true,
+  },
+  {
     id: 'independence-day-2023',
     year: '2023',
     date: 'August 2023',
@@ -356,6 +435,54 @@ const timelineEvents = [
     badgeColor: 'bg-[#351c5a]/10 text-[#351c5a] border-[#351c5a]/25',
     type: 'video',
   },
+  {
+    id: 'european-business-awards-2019',
+    year: '2019',
+    date: 'December 2019',
+    category: 'European Business Awards & Global Honor',
+    source: 'European Business Awards, Warsaw, Poland',
+    title: 'European Business Awards 2019 — National Winner of ITALY (Poland)',
+    subtitle: 'My School ITALY Crowned National Winner of Italy at the European Business Awards Gala in Warsaw, Poland',
+    summary:
+      'At the prestigious European Business Awards in Warsaw, Poland, My School ITALY was crowned the National Winner of Italy. Founder Dr. Aperna Volluru and Global CEO M.N.R. Gupta represented the organization, receiving the official National Winner Gold Medal and certificate celebrating European excellence in early childhood education.',
+    highlights: [
+      'Crowned National Winner of ITALY at the European Business Awards 2019 grand gala in Warsaw, Poland',
+      'Global CEO M.N.R. Gupta presented with the official National Winner Gold Medal and honors citation',
+      'Founder & CEO Dr. Aperna Volluru honored on the European stage alongside top international enterprise leaders',
+      'Pedagogical showcase presented directly to European business dignitaries and international juries',
+    ],
+    image: '/images/media-coverage/eba-2019-national-winner-medal-box.jpeg',
+    imageAspect: 'aspect-[4/3] md:aspect-[4/3] lg:aspect-[4/3]',
+    imageObjectPosition: 'object-cover object-top',
+    gallery: [
+      {
+        src: '/images/media-coverage/eba-2019-national-winner-medal-box.jpeg',
+        caption: 'Global CEO M.N.R. Gupta with the European Business Awards National Winner Gold Medal',
+      },
+      {
+        src: '/images/media-coverage/european-business-awards-poland-2019.jpeg',
+        caption: 'Founder & CEO Dr. Aperna Volluru at the European Business Awards Backdrop in Warsaw, Poland',
+      },
+      {
+        src: '/images/media-coverage/eba-2019-national-winner-italy-certificate.jpeg',
+        caption: 'Global CEO M.N.R. Gupta presenting My School ITALY curriculum showcase to European dignitary',
+      },
+    ],
+    links: [
+      {
+        label: 'Watch EBA Feature',
+        url: 'https://www.youtube.com/watch?v=yF_yosN1t0s',
+        primary: true,
+      },
+      {
+        label: 'Explore Our European Roots',
+        url: '/about',
+        primary: false,
+      },
+    ],
+    badgeColor: 'bg-[#003399]/15 text-[#003399] border-[#003399]/30',
+    type: 'award',
+  },
 ];
 
 const pressImages = [
@@ -397,8 +524,9 @@ export default function MediaCoveragePage() {
     { id: 'all', label: 'All Milestones' },
     { id: 'neuropi', label: '🧠 NeuroPi Features' },
     { id: '2026', label: '2026 Features' },
-    { id: '2025', label: '2025 Conclave' },
+    { id: '2025', label: '2025 Milestones' },
     { id: '2023', label: '2023 Events' },
+    { id: '2019', label: '2019 European Awards' },
     { id: 'clippings', label: 'Print Press Archive (21)' },
   ];
 
@@ -408,6 +536,7 @@ export default function MediaCoveragePage() {
     if (activeFilter === '2026') return timelineEvents.filter((item) => item.year === '2026');
     if (activeFilter === '2025') return timelineEvents.filter((item) => item.year === '2025');
     if (activeFilter === '2023') return timelineEvents.filter((item) => item.year === '2023');
+    if (activeFilter === '2019') return timelineEvents.filter((item) => item.year === '2019');
     return [];
   }, [activeFilter]);
 
@@ -486,11 +615,10 @@ export default function MediaCoveragePage() {
               <button
                 key={tab.id}
                 onClick={() => setActiveFilter(tab.id)}
-                className={`whitespace-nowrap px-4 py-2 rounded-full text-xs md:text-sm font-semibold transition-all duration-200 cursor-pointer ${
-                  activeFilter === tab.id
+                className={`whitespace-nowrap px-4 py-2 rounded-full text-xs md:text-sm font-semibold transition-all duration-200 cursor-pointer ${activeFilter === tab.id
                     ? 'bg-msi-purple text-white shadow-md'
                     : 'bg-gray-100 text-gray-600 hover:bg-gray-200 hover:text-gray-900'
-                }`}
+                  }`}
               >
                 {tab.label}
               </button>
@@ -540,9 +668,8 @@ export default function MediaCoveragePage() {
 
                       {/* Content Card */}
                       <div
-                        className={`bg-white rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-xl border border-gray-100 transition-all duration-300 ${
-                          isEven ? 'lg:order-1 lg:mr-8' : 'lg:order-2 lg:ml-8'
-                        }`}
+                        className={`bg-white rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-xl border border-gray-100 transition-all duration-300 ${isEven ? 'lg:order-1 lg:mr-8' : 'lg:order-2 lg:ml-8'
+                          }`}
                       >
                         {/* Header Badges */}
                         <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
@@ -563,8 +690,9 @@ export default function MediaCoveragePage() {
                         </div>
 
                         {/* Title & Subtitle */}
-                        <h3 className="text-xl md:text-2xl font-bold text-msi-purple leading-snug mb-2 font-fredoka">
-                          {item.title}
+                        <h3 className="text-xl md:text-2xl font-bold text-msi-purple leading-snug mb-2 font-fredoka flex flex-wrap items-center">
+                          <span>{item.title}</span>
+                          {item.showPartnershipFlags && <PartnershipFlags />}
                         </h3>
                         {item.subtitle && (
                           <p className="text-xs md:text-sm font-semibold text-msi-orange mb-4">
@@ -603,11 +731,10 @@ export default function MediaCoveragePage() {
                                 href={link.url}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className={`inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs md:text-sm font-semibold transition-all duration-200 ${
-                                  link.primary
+                                className={`inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs md:text-sm font-semibold transition-all duration-200 ${link.primary
                                     ? 'bg-msi-purple text-white hover:bg-msi-purple-deep shadow-sm hover:shadow'
                                     : 'bg-gray-100 text-gray-800 hover:bg-gray-200'
-                                }`}
+                                  }`}
                               >
                                 {link.icon === 'share' ? (
                                   <Share2 className="w-3.5 h-3.5" />
@@ -660,9 +787,8 @@ export default function MediaCoveragePage() {
 
                       {/* Media / Visual Side */}
                       <div
-                        className={`${
-                          isEven ? 'lg:order-2 lg:ml-8' : 'lg:order-1 lg:mr-8'
-                        }`}
+                        className={`${isEven ? 'lg:order-2 lg:ml-8' : 'lg:order-1 lg:mr-8'
+                          }`}
                       >
                         {item.video ? (
                           <div className="relative aspect-video rounded-3xl overflow-hidden shadow-lg border border-gray-200 bg-black">
@@ -677,11 +803,11 @@ export default function MediaCoveragePage() {
                           </div>
                         ) : item.image ? (
                           <div className="relative group rounded-3xl overflow-hidden shadow-lg border border-gray-200 bg-white">
-                            <div className="relative overflow-hidden aspect-[4/3] md:aspect-[16/10]">
+                            <div className={`relative overflow-hidden ${item.imageAspect || 'aspect-[4/3] md:aspect-[16/10]'}`}>
                               <img
                                 src={item.image}
                                 alt={item.title}
-                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer"
+                                className={`w-full h-full ${item.imageObjectPosition || 'object-cover'} group-hover:scale-105 transition-transform duration-500 cursor-pointer`}
                                 loading="lazy"
                                 onClick={() => setSelectedImage({ src: item.image, alt: item.title })}
                               />
@@ -740,6 +866,34 @@ export default function MediaCoveragePage() {
                                     </a>
                                   </div>
                                 )}
+                              </div>
+                            )}
+
+                            {/* Event Photo Glimpses / Gallery */}
+                            {item.gallery && item.gallery.length > 0 && (
+                              <div className="p-4 bg-gray-50/90 border-t border-gray-100">
+                                <div className="text-[11px] font-bold uppercase tracking-wider text-gray-500 mb-2 flex items-center justify-between">
+                                  <span>Event Glimpses ({item.gallery.length} Photos)</span>
+                                  <span className="text-[10px] text-gray-400 font-normal">Click to enlarge</span>
+                                </div>
+                                <div className="grid grid-cols-3 gap-2">
+                                  {item.gallery.map((gImg, gIdx) => (
+                                    <div
+                                      key={gIdx}
+                                      className="group/thumb relative rounded-xl overflow-hidden border border-gray-200 shadow-2xs hover:shadow-md transition-all cursor-pointer aspect-square bg-gray-100"
+                                      onClick={() => setSelectedImage({ src: gImg.src, alt: gImg.caption || item.title })}
+                                    >
+                                      <img
+                                        src={gImg.src}
+                                        alt={gImg.caption || `Gallery ${gIdx + 1}`}
+                                        className="w-full h-full object-cover group-hover/thumb:scale-105 transition-transform duration-300"
+                                      />
+                                      <div className="absolute inset-0 bg-black/25 opacity-0 group-hover/thumb:opacity-100 transition-opacity flex items-center justify-center">
+                                        <Maximize2 className="w-4 h-4 text-white drop-shadow" />
+                                      </div>
+                                    </div>
+                                  ))}
+                                </div>
                               </div>
                             )}
                           </div>

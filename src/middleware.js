@@ -53,8 +53,9 @@ const PRESERVED_301_REDIRECTS = {
   '/avance2-msi/': '/avance-2/',
   '/🎃-spooktacular-halloween-celebration-at-myschoolitaly-hitex-👻': '/spooktacular-halloween-celebration-at-myschoolitaly-hitex/',
   '/🎃-spooktacular-halloween-celebration-at-myschoolitaly-hitex-👻/': '/spooktacular-halloween-celebration-at-myschoolitaly-hitex/',
-  '/blog/🎃-spooktacular-halloween-celebration-at-myschoolitaly-hitex-👻': '/spooktacular-halloween-celebration-at-myschoolitaly-hitex/',
   '/blog/🎃-spooktacular-halloween-celebration-at-myschoolitaly-hitex-👻/': '/spooktacular-halloween-celebration-at-myschoolitaly-hitex/',
+  '/mediacoverage': '/media-coverage/',
+  '/mediacoverage/': '/media-coverage/',
 };
 
 // Check if the URL is an old WordPress path that must return 410 Gone
@@ -135,9 +136,11 @@ export function middleware(request) {
   // A. Check preserved 301 redirects first so they are never 410'd
   const lowerPath = pathname.toLowerCase();
   if (PRESERVED_301_REDIRECTS[lowerPath]) {
-    url.host = 'www.myschoolitaly.com';
-    url.protocol = 'https:';
-    url.port = '';
+    if (!host.includes('localhost') && !host.includes('127.0.0.1')) {
+      url.host = 'www.myschoolitaly.com';
+      url.protocol = 'https:';
+      url.port = '';
+    }
     url.pathname = PRESERVED_301_REDIRECTS[lowerPath];
     url.search = '';
     return NextResponse.redirect(url, 301);
