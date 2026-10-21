@@ -38,7 +38,7 @@ const NAV_LINKS = [
   { href: '/corporatechildcare', label: 'Corporate Childcare' },
   { href: '/hyderabad', label: 'Hyderabad Hub' },
   { href: '/policy-framework', label: 'Policy Framework' },
-  { href: '/media-coverage', label: 'Media' },
+  { href: '/media-coverage', label: 'Media Coverage' },
   { href: '/blog', label: 'Blog' },
   { href: '/admissions', label: 'Enroll' },
   { href: '/contact-us', label: 'Contact Us' },

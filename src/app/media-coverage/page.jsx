@@ -1,25 +1,25 @@
 import TopBar from '../../components/layout/TopBar';
 import Header from '../../components/layout/Header';
 import Footer from '../../components/layout/Footer';
-import MediaCoveragePage from '../../components/media-coverage/MediaCoveragePage';
+import MediaCoveragePage from '../../components/MediaCoverage/MediaCoveragePage';
 
 export const metadata = {
-  title: 'Media Coverage',
-  description: 'Explore media coverage and press mentions featuring My School ITALY — neuroscience-based preschool and daycare recognised in leading publications for innovative early childhood education.',
+  title: 'Media Coverage & Press Releases | My School ITALY',
+  description: 'Explore media coverage, magazine cover stories, and press features for My School ITALY and Global CEO M.N.R. Gupta — including Prime Insights Magazine 2026, Global Times, TV5 news broadcasts, and press archives.',
   alternates: { canonical: '/media-coverage/' },
   openGraph: {
-    title: 'Media Coverage | My School ITALY',
-    description: 'Explore media coverage and press mentions featuring My School ITALY — neuroscience-based preschool and daycare recognised in leading publications for innovative early childhood education.',
+    title: 'Media Coverage & Press Releases | My School ITALY',
+    description: 'Explore media coverage, magazine cover stories, and press features for My School ITALY and Global CEO M.N.R. Gupta — including Prime Insights Magazine 2026, Global Times, TV5 news broadcasts, and press archives.',
     url: '/media-coverage/',
     siteName: 'My School ITALY',
     locale: 'en_US',
     type: 'website',
-    images: [{ url: '/images/hero/Slider_1-scaled.jpg.bv.webp', width: 1200, height: 630 }],
+    images: [{ url: '/images/media-coverage/prime-insights-my-school-italy-2026.webp', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Media Coverage | My School ITALY',
-    description: 'Media coverage and press mentions for My School ITALY.',
+    title: 'Media Coverage & Press Releases | My School ITALY',
+    description: 'Explore media coverage, magazine cover stories, and press features for My School ITALY — including Prime Insights 2026 and Global Times.',
   },
 };
 

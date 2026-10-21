@@ -22,6 +22,7 @@ const navLinks = [
       { name: 'Our Teachers', href: '/whyus/teachers' },
       { name: 'Safety & Emotional Wellbeing', href: '/whyus/safety-wellbeing' },
       { name: 'INSPIRE ME EAT — Nutrition & Food', href: '/whyus/inspire-me-eat' },
+      { name: 'Media Coverage', href: '/media-coverage' },
     ],
   },
   {
