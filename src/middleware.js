@@ -56,6 +56,15 @@ const PRESERVED_301_REDIRECTS = {
   '/blog/🎃-spooktacular-halloween-celebration-at-myschoolitaly-hitex-👻/': '/spooktacular-halloween-celebration-at-myschoolitaly-hitex/',
   '/mediacoverage': '/media-coverage/',
   '/mediacoverage/': '/media-coverage/',
+  // URL cleanup aliases
+  '/preschool-daycare-hyderabad': '/hyderabad/',
+  '/preschool-daycare-hyderabad/': '/hyderabad/',
+  '/corporate-childcare': '/corporatechildcare/',
+  '/corporate-childcare/': '/corporatechildcare/',
+  '/contact-us': '/contact/',
+  '/contact-us/': '/contact/',
+  '/hitex-msi': '/hitex/',
+  '/hitex-msi/': '/hitex/',
 };
 
 // Check if the URL is an old WordPress path that must return 410 Gone
@@ -130,13 +139,18 @@ function isOldWordPressUrl(pathname, searchParams) {
 export function middleware(request) {
   const url = request.nextUrl.clone();
   const host = request.headers.get('host') || '';
-  const proto = request.headers.get('x-forwarded-proto') || 'https';
+  const cleanHost = host.split(':')[0].toLowerCase();
+  const isLocalhost = cleanHost === 'localhost' || cleanHost === '127.0.0.1';
+  const forwardedProto = request.headers.get('x-forwarded-proto');
+  const proto = forwardedProto
+    ? forwardedProto.split(',')[0].trim().toLowerCase()
+    : (url.protocol ? url.protocol.replace(':', '').toLowerCase() : 'https');
   const pathname = url.pathname;
 
   // A. Check preserved 301 redirects first so they are never 410'd
   const lowerPath = pathname.toLowerCase();
   if (PRESERVED_301_REDIRECTS[lowerPath]) {
-    if (!host.includes('localhost') && !host.includes('127.0.0.1')) {
+    if (!isLocalhost) {
       url.host = 'www.myschoolitaly.com';
       url.protocol = 'https:';
       url.port = '';
@@ -153,8 +167,8 @@ export function middleware(request) {
 
   let shouldRedirect = false;
 
-  // C. Permanently redirect non-www (apex) to www with 301
-  if (host === 'myschoolitaly.com') {
+  // C. In production, permanently redirect non-www or non-canonical domains to www.myschoolitaly.com
+  if (!isLocalhost && cleanHost !== 'www.myschoolitaly.com') {
     url.host = 'www.myschoolitaly.com';
     url.protocol = 'https:';
     url.port = '';
@@ -162,8 +176,10 @@ export function middleware(request) {
   }
 
   // D. Permanently redirect HTTP to HTTPS in production
-  if (proto === 'http' && !host.includes('localhost') && !host.includes('127.0.0.1')) {
+  if (!isLocalhost && proto === 'http') {
     url.protocol = 'https:';
+    url.host = 'www.myschoolitaly.com';
+    url.port = '';
     shouldRedirect = true;
   }
 
@@ -179,6 +195,11 @@ export function middleware(request) {
   }
 
   if (shouldRedirect) {
+    if (!isLocalhost) {
+      url.protocol = 'https:';
+      url.host = 'www.myschoolitaly.com';
+      url.port = '';
+    }
     return NextResponse.redirect(url, 301);
   }
 

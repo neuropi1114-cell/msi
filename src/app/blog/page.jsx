@@ -28,11 +28,35 @@ export const metadata = {
 
 const posts = [
   {
+    id: 7,
+    title: 'Best Childcare Centres Near You in Hyderabad: A Parent’s Guide',
+    excerpt: 'Looking for the best childcare centres near you in Hyderabad? Discover safety protocols, caregiver ratios, neuroscience learning, and campus hubs in Hitex, Kondapur, and Kukatpally.',
+    date: 'October 22, 2026',
+    slug: '/best-childcare-centres-near-you-in-hyderabad-a-parents-guide/',
+    image: '/images/blog/top-childcare-centers-hyderabad-2.webp',
+  },
+  {
+    id: 6,
+    title: 'Best Preschool in Hyderabad: How to Choose for Your Child',
+    excerpt: 'A parent’s guide to choosing the best preschool in Hyderabad. Compare curriculum, safety standards, neuroscience learning, and campus locations in Kondapur, Hitex, and Madhapur.',
+    date: 'October 22, 2026',
+    slug: '/best-preschool-in-hyderabad-how-to-choose-for-your-child/',
+    image: '/images/blog/little-boy-solving-puzzle-with-brain-background-1-scaled.jpg.bv_resized_desktop.jpg.bv.webp',
+  },
+  {
+    id: 5,
+    title: 'Unveiling the Best Preschool in Hitech City, Hyderabad: The Grand Inauguration',
+    excerpt: 'Celebrate the grand inauguration of My School ITALY at HITEX, Hitech City Hyderabad. Discover our flagship European neuroscience preschool and baby crèche.',
+    date: 'October 22, 2026',
+    slug: '/unveiling-the-best-preschool-in-hitech-city-hyderabad-the-grand-inauguration/',
+    image: '/images/hitex/HITEX_1.png',
+  },
+  {
     id: 4,
     title: 'What to Expect from Top Childcare Centers in Hyderabad',
     excerpt: 'When parents search for top childcare centers in Hyderabad, they are looking for a nurturing environment where children can learn, grow, and thrive — a space that feels like a second home.',
     date: 'October 2025',
-    slug: '/what-to-expect-from-top-childcare-centers-in-hyderabad',
+    slug: '/what-to-expect-from-top-childcare-centers-in-hyderabad/',
     image: '/images/blog/top-childcare-centers-hyderabad-1.webp',
   },
   {
@@ -48,7 +72,7 @@ const posts = [
     title: 'Brain-Boosting Activities You Can Do at Home',
     excerpt: 'As parents, you play a powerful role in shaping your child\'s early brain development. Discover neuroscience-backed activities to support your child\'s development at home.',
     date: '2025',
-    slug: '/brain-boosting-activities-you-can-do-at-home',
+    slug: '/brain-boosting-activities-you-can-do-at-home/',
     image: '/images/blog/brain-boosting-activities-featured.jpg',
   },
   {
@@ -56,7 +80,7 @@ const posts = [
     title: 'What is Neuroscience-Based Early Childhood Education',
     excerpt: 'Early childhood is a critical period for brain development. Discover how neuroscience-based education uses brain science to design teaching methods for young children.',
     date: 'September 19, 2025',
-    slug: '/what-is-neuroscience-based-early-childhood-education',
+    slug: '/what-is-neuroscience-based-early-childhood-education/',
     image: '/images/blog/neuroscience-education-featured.jpg',
   },
 ];
