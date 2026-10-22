@@ -209,16 +209,16 @@ const Header = ({
             <a href="https://wa.me/917075947070" target="_blank" rel="noopener noreferrer" aria-label="MySchoolItaly WhatsApp" className="p-0.5 hover:opacity-80 transition-opacity">
               <img src="/whatsapp-icon.svg" alt="WhatsApp" className="w-4 h-4" />
             </a>
-            <a href="https://facebook.com/myschoolitaly" target="_blank" rel="noopener noreferrer" aria-label="MySchoolItaly Facebook" className="p-0.5 hover:opacity-80 transition-opacity">
+            <a href="https://www.facebook.com/myschoolitaly/" target="_blank" rel="noopener noreferrer" aria-label="MySchoolItaly Facebook" className="p-0.5 hover:opacity-80 transition-opacity">
               <img src="/facebook-icon.svg" alt="Facebook" className="w-4 h-4" />
             </a>
-            <a href="https://instagram.com/myschoolitaly" target="_blank" rel="noopener noreferrer" aria-label="MySchoolItaly Instagram" className="p-0.5 hover:opacity-80 transition-opacity">
+            <a href="https://www.instagram.com/myschoolitaly/" target="_blank" rel="noopener noreferrer" aria-label="MySchoolItaly Instagram" className="p-0.5 hover:opacity-80 transition-opacity">
               <img src="/instagram-icon.svg" alt="Instagram" className="w-4 h-4" />
             </a>
             <a href="https://linkedin.com/company/myschoolitaly" target="_blank" rel="noopener noreferrer" aria-label="MySchoolItaly LinkedIn" className="p-0.5 hover:opacity-80 transition-opacity">
               <img src="/linkedin.svg" alt="LinkedIn" className="w-4 h-4" />
             </a>
-            <a href="https://youtube.com/@myschoolitaly" target="_blank" rel="noopener noreferrer" aria-label="MySchoolItaly YouTube" className="p-0.5 hover:opacity-80 transition-opacity">
+            <a href="https://www.youtube.com/@myschoolitaly" target="_blank" rel="noopener noreferrer" aria-label="MySchoolItaly YouTube" className="p-0.5 hover:opacity-80 transition-opacity">
               <img src="/youtube.svg" alt="YouTube" className="w-4 h-4" />
             </a>
             <a href="https://neuropiconnect.com/" target="_blank" rel="noopener noreferrer" aria-label="Login" className="p-0.5 text-msi-purple hover:text-msi-green transition-colors flex items-center">

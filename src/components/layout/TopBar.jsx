@@ -61,16 +61,16 @@ const TopBar = ({
       </div>
       
       <div className="flex items-center space-x-3">
-        <a href="https://facebook.com/myschoolitaly" target="_blank" rel="noopener noreferrer" aria-label="MySchoolItaly Facebook">
+        <a href="https://www.facebook.com/myschoolitaly/" target="_blank" rel="noopener noreferrer" aria-label="MySchoolItaly Facebook">
           <img src="/facebook-icon.svg" alt="Facebook" className="w-4 h-4" />
         </a>
-        <a href="https://instagram.com/myschoolitaly" target="_blank" rel="noopener noreferrer" aria-label="MySchoolItaly Instagram">
+        <a href="https://www.instagram.com/myschoolitaly/" target="_blank" rel="noopener noreferrer" aria-label="MySchoolItaly Instagram">
           <img src="/instagram-icon.svg" alt="Instagram" className="w-4 h-4" />
         </a>
         <a href="https://linkedin.com/company/myschoolitaly" target="_blank" rel="noopener noreferrer" aria-label="MySchoolItaly LinkedIn">
           <img src="/linkedin.svg" alt="LinkedIn" className="w-4 h-4" />
         </a>
-        <a href="https://youtube.com/@myschoolitaly" target="_blank" rel="noopener noreferrer" aria-label="MySchoolItaly YouTube">
+        <a href="https://www.youtube.com/@myschoolitaly" target="_blank" rel="noopener noreferrer" aria-label="MySchoolItaly YouTube">
           <img src="/youtube.svg" alt="YouTube" className="w-4 h-4" />
         </a>
       </div>

@@ -6,51 +6,51 @@ import { Phone } from 'lucide-react';
 const FOOTER_LOGO = '/images/logo/The-Neuroscientific-European-Childcare-PDF_12-x-4-ft_Backside-1.png.bv_resized_desktop.png.bv.webp';
 
 const HYDERABAD_BRANCHES = [
-  { label: 'Hitex', href: '/hitex' },
-  { label: 'The Square', href: '/qcity' },
-  { label: 'Avance 1', href: '/avance' },
-  { label: 'Avance 2', href: '/avance-2' },
-  { label: 'Mindspace', href: '/mindspace' },
-  { label: 'Kavuri Hills', href: '/kavuri-hills' },
-  { label: 'Cyberabad Police Commissionerate', href: '/cyberabad-police-commissionerate' },
-  { label: 'Miyapur', href: '/miyapur' },
-  { label: 'Kukatpally', href: '/kukatpally' },
-  { label: 'Kondapur', href: '/kondapur' },
-  { label: 'Manikonda', href: '/manikonda' },
+  { label: 'Hitex', href: '/hitex/' },
+  { label: 'The Square', href: '/qcity/' },
+  { label: 'Avance 1', href: '/avance/' },
+  { label: 'Avance 2', href: '/avance-2/' },
+  { label: 'Mindspace', href: '/mindspace/' },
+  { label: 'Kavuri Hills', href: '/kavuri-hills/' },
+  { label: 'Cyberabad Police Commissionerate', href: '/cyberabad-police-commissionerate/' },
+  { label: 'Miyapur', href: '/miyapur/' },
+  { label: 'Kukatpally', href: '/kukatpally/' },
+  { label: 'Kondapur', href: '/kondapur/' },
+  { label: 'Manikonda', href: '/manikonda/' },
 ];
 
 const PAN_INDIA_BRANCHES = [
-  { label: 'Berhampur – Odisha', href: '/berhampur' },
-  { label: 'Tanuku – AP', href: '/contact?location=tanuku' },
-  { label: 'Tadepalligudem – AP', href: '/tadepalligudem' },
-  { label: 'Manpada – Thane', href: '/contact?location=manpada' },
-  { label: 'Balewadi – Pune', href: '/contact?location=balewadi' },
-  { label: 'Purna Nagar – Pune', href: '/purna-nagar' },
-  { label: 'Chakshu – Jaipur', href: '/contact?location=jaipur' },
-  { label: 'Noida – UP', href: '/contact?location=noida' },
+  { label: 'Berhampur – Odisha', href: '/berhampur/' },
+  { label: 'Tanuku – AP', href: '/contact/?location=tanuku' },
+  { label: 'Tadepalligudem – AP', href: '/tadepalligudem/' },
+  { label: 'Manpada – Thane', href: '/contact/?location=manpada' },
+  { label: 'Balewadi – Pune', href: '/contact/?location=balewadi' },
+  { label: 'Purna Nagar – Pune', href: '/purna-nagar/' },
+  { label: 'Chakshu – Jaipur', href: '/contact/?location=jaipur' },
+  { label: 'Noida – UP', href: '/contact/?location=noida' },
 ];
 
 const NAV_LINKS = [
   { href: '/', label: 'Home' },
   { href: '/why-msi/', label: 'Why Choose Us' },
-  { href: '/about', label: 'About Us' },
-  { href: '/programs', label: 'Programs' },
+  { href: '/about/', label: 'About Us' },
+  { href: '/programs/', label: 'Programs' },
   { href: '/neuropi-way/', label: 'The NeuroPi Way' },
-  { href: '/corporatechildcare', label: 'Corporate Childcare' },
-  { href: '/hyderabad', label: 'Hyderabad Hub' },
-  { href: '/policy-framework', label: 'Policy Framework' },
-  { href: '/media-coverage', label: 'Media Coverage' },
-  { href: '/blog', label: 'Blog' },
-  { href: '/admissions', label: 'Enroll' },
-  { href: '/contact', label: 'Contact Us' },
-  { href: '/contact', label: 'Book A Tour' },
+  { href: '/corporatechildcare/', label: 'Corporate Childcare' },
+  { href: '/hyderabad/', label: 'Hyderabad Hub' },
+  { href: '/policy-framework/', label: 'Policy Framework' },
+  { href: '/media-coverage/', label: 'Media Coverage' },
+  { href: '/blog/', label: 'Blog' },
+  { href: '/admissions/', label: 'Enroll' },
+  { href: '/contact/', label: 'Contact Us' },
+  { href: '/contact/', label: 'Book A Tour' },
 ];
 
 const SOCIAL_LINKS = [
-  { href: 'https://facebook.com/myschoolitaly', label: 'Facebook', icon: '/facebook-icon.svg' },
-  { href: 'https://instagram.com/myschoolitaly', label: 'Instagram', icon: '/instagram-icon.svg' },
+  { href: 'https://www.facebook.com/myschoolitaly/', label: 'Facebook', icon: '/facebook-icon.svg' },
+  { href: 'https://www.instagram.com/myschoolitaly/', label: 'Instagram', icon: '/instagram-icon.svg' },
   { href: 'https://linkedin.com/company/myschoolitaly', label: 'LinkedIn', icon: '/linkedin.svg' },
-  { href: 'https://youtube.com/@myschoolitaly', label: 'YouTube', icon: '/youtube.svg' },
+  { href: 'https://www.youtube.com/@myschoolitaly', label: 'YouTube', icon: '/youtube.svg' },
 ];
 
 const formatPhoneHref = (phone, phoneHref) => {

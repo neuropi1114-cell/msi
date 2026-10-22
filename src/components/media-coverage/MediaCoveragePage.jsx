@@ -108,7 +108,7 @@ const timelineEvents = [
       },
       {
         label: 'Visit MSI Hitex Campus',
-        url: '/hitex',
+        url: '/hitex/',
         primary: false,
       },
     ],
@@ -162,11 +162,6 @@ const timelineEvents = [
         platform: 'facebook',
       },
       {
-        label: 'X (Twitter) Broadcast',
-        url: 'https://x.com/Prime_Insights1/status/2080629328157819266',
-        platform: 'x',
-      },
-      {
         label: 'Instagram Reel',
         url: 'https://www.instagram.com/reel/DbLOrfPNGWD/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
         platform: 'instagram',
@@ -217,12 +212,6 @@ const timelineEvents = [
         url: 'https://primeinsights.in/my-school-italy/',
         primary: false,
       },
-      {
-        label: 'Google Share Link',
-        url: 'https://share.google/kGxehrj3GM45USWts',
-        primary: false,
-        icon: 'share',
-      },
     ],
     socialLinks: [
       {
@@ -244,11 +233,6 @@ const timelineEvents = [
         label: 'Facebook Feature',
         url: 'https://www.facebook.com/Primeinsightsmagazine/posts/pfbid0r3xzJ1YyjKLSKG7YUE4YMdCj56Y9fPZi8Pi9b3MWUJPsK8VL7caBJJkqawEoMhSEl',
         platform: 'facebook',
-      },
-      {
-        label: 'X (Twitter) Broadcast',
-        url: 'https://x.com/Prime_Insights1/status/2080611528815104476',
-        platform: 'x',
       },
       {
         label: 'Instagram Reel',
@@ -371,7 +355,7 @@ const timelineEvents = [
       },
       {
         label: 'Corporate & State Solutions',
-        url: '/corporatechildcare',
+        url: '/corporatechildcare/',
         primary: false,
       },
     ],
@@ -476,7 +460,7 @@ const timelineEvents = [
       },
       {
         label: 'Explore Our European Roots',
-        url: '/about',
+        url: '/about/',
         primary: false,
       },
     ],
