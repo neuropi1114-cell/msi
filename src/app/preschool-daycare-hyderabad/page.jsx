@@ -1,8 +1,5 @@
-import React from 'react';
-import HyderabadPage from '../hyderabad/page';
+import { redirect } from 'next/navigation';
 
-export { metadata } from '../hyderabad/page';
-
-export default function Page() {
-  return <HyderabadPage />;
+export default function PreschoolDaycareHyderabadRedirect() {
+  redirect('/hyderabad/');
 }

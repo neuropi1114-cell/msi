@@ -5,28 +5,97 @@ import Footer from '../../components/layout/Footer';
 import ContactUs from '../../components/common/ContactUs';
 import CloudHeader from '../../components/layout/CloudHeader';
 import SectionHeader from '../../components/common/SectionHeader';
+import CentreQuickInfo from '../../components/common/CentreQuickInfo';
 import JsonLd from '../../components/JsonLd';
 import CampusLocationModule from '../../components/common/CampusLocationModule';
 import { HYDERABAD_CAMPUSES } from '../../data/hyderabadCampuses';
+import { centreSchema } from '../../../lib/schema.js';
+
+const SITE_URL = 'https://www.myschoolitaly.com';
+const PAGE_URL = `${SITE_URL}/hyderabad/`;
+const SEO_TITLE = 'Preschool & Daycare Centres in Hyderabad | My School ITALY';
+const SEO_DESCRIPTION =
+  'Explore My School ITALY’s 11 neuroscience-informed preschool, baby crèche & daycare campus locations across Hyderabad. View map, addresses, and book a tour.';
 
 export const metadata = {
-  title: 'My School ITALY — Hyderabad Locations Map',
-  description: 'View all My School ITALY preschool, crèche, and daycare campus locations across Hyderabad on Google Maps.',
-  alternates: { canonical: '/hyderabad/' },
+  title: {
+    absolute: SEO_TITLE,
+  },
+  description: SEO_DESCRIPTION,
+  alternates: {
+    canonical: PAGE_URL,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      maxImagePreview: 'large',
+      maxSnippet: -1,
+      maxVideoPreview: -1,
+    },
+  },
+  openGraph: {
+    title: SEO_TITLE,
+    description: SEO_DESCRIPTION,
+    url: PAGE_URL,
+    siteName: 'My School ITALY',
+    locale: 'en_IN',
+    type: 'website',
+    images: [
+      {
+        url: `${SITE_URL}/images/cheerful-rainy-day.png`,
+        width: 1200,
+        height: 630,
+        alt: 'My School ITALY Hyderabad Locations Map',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: SEO_TITLE,
+    description: SEO_DESCRIPTION,
+    images: [`${SITE_URL}/images/cheerful-rainy-day.png`],
+  },
 };
 
-const hyderabadSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Organization',
-  name: 'My School ITALY — Hyderabad',
-  url: 'https://www.myschoolitaly.com/hyderabad/',
-  description: 'Neuroscience-informed early learning and daycare network in Hyderabad.',
-};
+const hyderabadStructuredData = centreSchema({
+  name: 'My School ITALY | Hyderabad Network',
+  alternateName: 'MSI Hyderabad Centres',
+  description: SEO_DESCRIPTION,
+  url: PAGE_URL,
+  telephone: '+917093904680',
+  image: '/images/cheerful-rainy-day.png',
+  address: {
+    streetAddress: 'Hitex Road, next to HITEX Exhibition Centre Gate, Shilpa Layout, Izzathnagar',
+    addressLocality: 'Hyderabad',
+    addressRegion: 'Telangana',
+    postalCode: '500084',
+    addressCountry: 'IN',
+  },
+  geo: {
+    latitude: 17.472992,
+    longitude: 78.313907,
+  },
+  hasMap: 'https://maps.google.com/?cid=13517112003780313980',
+  areaServed: [
+    'HITEX',
+    'Kondapur',
+    'Kukatpally',
+    'Mindspace',
+    'Gachibowli',
+    'Kavuri Hills',
+    'Miyapur',
+    'Financial District',
+    'Manikonda',
+  ],
+});
 
 export default function HyderabadPage() {
   return (
     <>
-      <JsonLd schema={hyderabadSchema} />
+      <JsonLd schema={hyderabadStructuredData} />
       <TopBar />
       <Header />
 
@@ -39,12 +108,27 @@ export default function HyderabadPage() {
         />
         <div data-nav-sentinel />
 
-        {/* 2. Section Header */}
+        {/* 2. Section Header with H1 */}
         <SectionHeader
-          title="MY SCHOOL ITALY — HYDERABAD"
-          subtitle="EXPLORE ALL LOCATIONS ON MAP"
-          description="Find a neuroscience-informed preschool, baby crèche & daycare nearest to your home or office."
+          titleTag="h1"
+          title="PRESCHOOL & DAYCARE CENTRES IN HYDERABAD"
+          subtitle="MY SCHOOL ITALY — 11 LOCATIONS ACROSS HYDERABAD"
+          description="Find a neuroscience-informed preschool, baby crèche & daycare nearest to your home or office. Explore interactive maps, drive-times, and campus details below."
           descriptionClassName="text-xl md:text-2xl font-normal"
+        />
+
+        {/* 2b. Centre Quick Info: Hub Address, Timings, Phone, Intro */}
+        <CentreQuickInfo
+          campusName="Hyderabad Network"
+          address="Hitex Road, next to HITEX Exhibition Centre Gate, Shilpa Layout, Izzathnagar, Hyderabad 500084 (Central Admissions)"
+          landmark="Adjacent to HITEX Exhibition Centre"
+          timings="Monday – Friday: 8:00 AM – 7:30 PM | Saturday: 8:30 AM – 2:00 PM"
+          phone="+91 70939 04680"
+          phoneTel="+917093904680"
+          intro="My School ITALY operates 11 neuroscience-informed preschool, baby crèche, and daycare centres across Hyderabad, including HITEX, Kondapur, Mindspace, Avance H04, Avance H06, Kavuri Hills, Kukatpally, Miyapur, Q-City (The Square), Manikonda, and Cyberabad Police Commissionerate."
+          catchmentAreas={['HITEX', 'Kondapur', 'Kukatpally', 'Mindspace', 'Gachibowli', 'Kavuri Hills', 'Miyapur', 'Financial District', 'Manikonda']}
+          directionsUrl="https://www.google.com/maps/search/?api=1&query=My+School+ITALY+Hyderabad"
+          tourHref="#enroll-hyderabad"
         />
 
         {/* 3. Google Maps Overview Iframe */}
@@ -70,7 +154,7 @@ export default function HyderabadPage() {
         <CampusLocationModule campuses={HYDERABAD_CAMPUSES} />
       </main>
 
-      {/* 4. Book Tour / Contact Form */}
+      {/* 5. Book Tour / Contact Form */}
       <div id="enroll-hyderabad">
         <ContactUs
           image="/images/whyus/Why_MSI_Enrol.png"
@@ -79,7 +163,7 @@ export default function HyderabadPage() {
         />
       </div>
 
-      {/* 5. Footer */}
+      {/* 6. Footer */}
       <Footer />
     </>
   );

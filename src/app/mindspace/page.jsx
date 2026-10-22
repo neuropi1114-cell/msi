@@ -5,63 +5,139 @@ import Footer from '../../components/layout/Footer';
 import ContactUs from '../../components/common/ContactUs';
 import CloudHeader from '../../components/layout/CloudHeader';
 import SectionHeader from '../../components/common/SectionHeader';
+import CentreQuickInfo from '../../components/common/CentreQuickInfo';
 import StorySection from '../../components/common/StorySection';
 import NepHero from '../../components/nep/NepHero';
 import DesignPhilosophy from '../../components/nep/DesignPhilosophy';
 import OneJourneySection from '../../components/programs/OneJourneySection';
 import CampusLocationModule from '../../components/common/CampusLocationModule';
 import JsonLd from '../../components/JsonLd';
+import { centreSchema } from '../../../lib/schema.js';
+
+const SITE_URL = 'https://www.myschoolitaly.com';
+const PAGE_URL = `${SITE_URL}/mindspace/`;
+const SEO_TITLE = 'Preschool & Daycare in Mindspace, Madhapur | My School ITALY';
+const SEO_DESCRIPTION =
+  'Neuroscience-informed preschool, daycare, and crèche opposite Westin Hotel, Raheja Mindspace Road, Madhapur, Hyderabad. Book a campus tour today.';
 
 export const metadata = {
-  title: 'My School ITALY — Mindspace | Preschool & Daycare Madhapur',
-  description: 'Neuroscience-informed preschool, daycare, and crèche opposite Westin Hotel, Raheja Mindspace Road, Madhapur, Hyderabad.',
-  alternates: { canonical: '/mindspace/' },
+  title: {
+    absolute: SEO_TITLE,
+  },
+  description: SEO_DESCRIPTION,
+  alternates: {
+    canonical: PAGE_URL,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      maxImagePreview: 'large',
+      maxSnippet: -1,
+      maxVideoPreview: -1,
+    },
+  },
+  openGraph: {
+    title: SEO_TITLE,
+    description: SEO_DESCRIPTION,
+    url: PAGE_URL,
+    siteName: 'My School ITALY',
+    locale: 'en_IN',
+    type: 'website',
+    images: [
+      {
+        url: `${SITE_URL}/images/mindspace/header.jpg`,
+        width: 1200,
+        height: 630,
+        alt: 'My School ITALY Mindspace Campus',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: SEO_TITLE,
+    description: SEO_DESCRIPTION,
+    images: [`${SITE_URL}/images/mindspace/header.jpg`],
+  },
 };
 
-const schemaData = {
-  '@context': 'https://schema.org',
-  '@type': 'ChildCare',
-  name: 'My School ITALY — Mindspace Campus',
-  description: 'Neuroscience-informed preschool and daycare opposite Westin Hotel, Mindspace, Madhapur.',
-  url: 'https://www.myschoolitaly.com/mindspace/',
+const mindspaceStructuredData = centreSchema({
+  name: 'My School ITALY | Mindspace',
+  alternateName: 'MSI Mindspace Campus (Madhapur)',
+  description: SEO_DESCRIPTION,
+  url: PAGE_URL,
   telephone: '+917093904680',
+  image: '/images/mindspace/header.jpg',
   address: {
-    '@type': 'PostalAddress',
     streetAddress: 'KTC Illumination, Mindspace Madhapur Road, opposite Westin Hotel, Vittal Rao Nagar',
     addressLocality: 'Madhapur, Hyderabad',
+    addressRegion: 'Telangana',
     postalCode: '500081',
     addressCountry: 'IN',
   },
-};
+  geo: {
+    latitude: 17.4435,
+    longitude: 78.3800,
+  },
+  hasMap: 'https://www.google.com/maps/search/?api=1&query=My+School+ITALY+Mindspace',
+  areaServed: [
+    'Mindspace',
+    'Madhapur',
+    'Vittal Rao Nagar',
+    'HITEC City',
+    'Raidurg',
+    'Kavuri Hills',
+  ],
+});
 
 export default function MindspacePage() {
   return (
     <>
-      <JsonLd schema={schemaData} />
+      <JsonLd schema={mindspaceStructuredData} />
       <TopBar />
       <Header />
 
       <main>
+        {/* 1. Cloud Header with Dedicated Mindspace Photo */}
         <CloudHeader
-          image="/images/hitex/HITEX_1.png"
+          image="/images/mindspace/header.jpg"
           imageClass="object-cover object-center"
           heightClass="w-full aspect-[2172/724] min-h-[220px] sm:min-h-[320px] md:min-h-[420px] max-h-[650px]"
         />
         <div data-nav-sentinel />
 
+        {/* 2. Section Header with H1 */}
         <SectionHeader
-          title="MY SCHOOL ITALY — MINDSPACE"
-          subtitle={null}
-          description="We Begin By Understanding The Child."
+          titleTag="h1"
+          title="PRESCHOOL & DAYCARE IN MINDSPACE, MADHAPUR"
+          subtitle="MY SCHOOL ITALY — MINDSPACE (OPPOSITE WESTIN HOTEL)"
+          description="We Begin By Understanding The Child. Neuroscience-informed early years and corporate childcare across from Raheja Mindspace IT Park & Inorbit Mall."
           descriptionClassName="text-xl md:text-2xl font-normal"
         />
 
+        {/* 2b. Centre Quick Info: Address, Timings, Phone, Short Intro */}
+        <CentreQuickInfo
+          campusName="Mindspace Campus"
+          address="KTC Illumination, Mindspace Madhapur Road, opposite Westin Hotel, Vittal Rao Nagar, Madhapur, Hyderabad 500081"
+          landmark="Opposite Westin Hotel, Mindspace Road"
+          timings="Monday – Friday: 8:00 AM – 7:30 PM | Saturday: 8:30 AM – 2:00 PM"
+          phone="+91 70939 04680"
+          phoneTel="+917093904680"
+          intro="Situated in KTC Illumination opposite The Westin on Mindspace Road, My School ITALY Mindspace provides corporate daycare, preschool, and infant care for tech professionals and families across Madhapur, HITEC City, Vittal Rao Nagar, and Raidurg."
+          catchmentAreas={['Vittal Rao Nagar', 'Mindspace IT Park', 'Madhapur', 'HITEC City', 'Kavuri Hills', 'Raidurg']}
+          directionsUrl="https://www.google.com/maps/dir/?api=1&destination=My+School+ITALY+%7C+Mind+Space"
+          tourHref="#enroll"
+        />
+
+        {/* 3. Story Section with Unique Mindspace Photo */}
         <div id="programs" className="scroll-mt-24">
           <StorySection
             containerClass="max-w-[1240px] mx-auto"
             imageWrapperClass="overflow-hidden rounded-2xl shadow-2xl border border-gray-100"
             imageClass="w-full h-auto object-cover scale-115 transform hover:scale-125 transition-transform duration-500"
-            imageSrc="/images/hitex/Hitex_3.png"
+            imageSrc="/images/mindspace/story.png"
             imageAlt="Children at My School ITALY Mindspace"
             eyebrow="A Complete Day For A Growing Child."
             title="PROGRAMS DESIGNED AROUND YOUR CHILD'S DAY"
@@ -70,32 +146,34 @@ export default function MindspacePage() {
             p2={
               <div className="space-y-3 mt-4 text-msi-purple">
                 <p>
-                  <strong className="text-msi-orange font-bold">Early Years:</strong> Baby Crèche • Ciao Baby • Toddler • Pre-Nursery • Nursery • K1 • K2
+                  <strong className="text-msi-orange font-bold">Early Years:</strong> Baby Crèche (From 45 Days) • Ciao Baby • Toddler • Pre-Nursery • Nursery • K1 • K2
                 </p>
                 <p>
-                  <strong className="text-msi-orange font-bold">Care:</strong> Daycare • Extended Daycare • Early Drop-Off • Late Pick-Up
+                  <strong className="text-msi-orange font-bold">Care:</strong> Daycare • Extended Daycare • Early Drop-Off • Late Pick-Up • Saturday Care
                 </p>
               </div>
             }
           />
         </div>
 
+        {/* 4. NepHero with Unique Mindspace Photo */}
         <NepHero
           eyebrow="We Begin By Understanding The Child."
           title="WHY FAMILIES CHOOSE MSI MINDSPACE?"
           titleColor="text-msi-yellow"
           subtitle="BECAUSE EVERY CHILD DESERVES TO BE KNOWN BEFORE THEY ARE TAUGHT."
           description="Located right across from Raheja Mindspace and Inorbit Mall, our Mindspace branch combines European early education principles with neuroscience-informed care."
-          bgImage="/images/hitex/Hitex_2.png"
+          bgImage="/images/mindspace/why-us.png"
           bgPosition="bg-cover bg-center"
           sectionClass="w-full aspect-[2172/724] max-h-[650px] py-8 md:py-12"
           readMoreHref="/why-msi"
         />
 
+        {/* 5. Design Philosophy with Unique Mindspace Photo */}
         <DesignPhilosophy
           topId="neuropi-way"
           bottomId="parents-journey"
-          image="/images/hitex/Hitex_4.png"
+          image="/images/mindspace/neuropi.png"
           eyebrow="Start With The Child • The NeuroPi Way™"
           title={<>WE DON'T BEGIN WITH THE LESSON.<br />WE BEGIN WITH THE CHILD.</>}
           titleClass="text-msi-orange font-linotte font-bold text-2xl md:text-3xl leading-tight uppercase mb-3"
@@ -103,9 +181,10 @@ export default function MindspacePage() {
           readMoreHref="/neuropi-way"
         />
 
+        {/* 6. OneJourneySection with Unique Mindspace Photo */}
         <OneJourneySection
-          imageSrc="/images/hitex/Hitex_5.png"
-          bgImageSrc="/images/hitex/Hitex_5.png"
+          imageSrc="/images/mindspace/parent-journey.png"
+          bgImageSrc="/images/mindspace/parent-journey.png"
           eyebrow="You Are Not Dropping Your Child At School. You Are Joining Their Journey."
           title="YOU ARE PART OF THE JOURNEY"
           titleColor="text-msi-orange font-linotte font-bold text-2xl md:text-3xl uppercase mb-4"
@@ -117,6 +196,7 @@ export default function MindspacePage() {
           </p>
         </OneJourneySection>
 
+        {/* 7. Campus Location Module */}
         <CampusLocationModule
           eyebrow="Find us in Madhapur / Mindspace, Hyderabad"
           campusName="My School ITALY — Mindspace"

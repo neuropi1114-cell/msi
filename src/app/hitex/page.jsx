@@ -17,7 +17,9 @@ import GridGallery from '../../components/common/GridGallery';
 import SectionScrollController from '../../components/common/SectionScrollController';
 import CampusLocationModule from '../../components/common/CampusLocationModule';
 import FaqSection from '../../components/common/FaqSection';
-import HitexStructuredData from '../../components/seo/HitexStructuredData';
+import JsonLd from '../../components/JsonLd';
+import CentreQuickInfo from '../../components/common/CentreQuickInfo';
+import { centreSchema } from '../../../lib/schema.js';
 
 import { centreVideos, whyUsGalleryImages } from '../whyus/whyusdata';
 
@@ -67,6 +69,28 @@ export const metadata = {
   },
 };
 
+const hitexStructuredData = centreSchema({
+  name: 'My School ITALY | Hitex',
+  alternateName: 'MSI Hitex Campus',
+  description: SEO_DESCRIPTION,
+  url: PAGE_URL,
+  telephone: '+917093904680',
+  image: '/images/hitex/HITEX_1.png',
+  address: {
+    streetAddress: 'Hitex Road, next to HITEX Exhibition Centre Gate, Shilpa Layout, Izzathnagar',
+    addressLocality: 'Hyderabad',
+    addressRegion: 'Telangana',
+    postalCode: '500084',
+    addressCountry: 'IN',
+  },
+  geo: {
+    latitude: 17.4766957,
+    longitude: 78.3705013,
+  },
+  hasMap: 'https://www.google.com/maps/search/?api=1&query=My+School+ITALY+Hitex',
+  areaServed: ['HITEX', 'Izzathnagar', 'Shilpa Layout', 'Kothaguda', 'Kondapur', 'Madhapur', 'HITEC City'],
+});
+
 import {
   hitexProgramsDrawer,
   hitexWhyUsDrawer,
@@ -78,7 +102,7 @@ import {
 export default function HitexPage({ activeSlug = null }) {
   return (
     <>
-      <HitexStructuredData />
+      <JsonLd schema={hitexStructuredData} />
       <TopBar />
       <Header />
       <SectionScrollController activeSlug={activeSlug} />
@@ -94,13 +118,27 @@ export default function HitexPage({ activeSlug = null }) {
         </CloudHeader>
         <div data-nav-sentinel />
 
-        {/* 2. Section Header */}
+        {/* 2. Section Header with H1 */}
         <SectionHeader
           titleTag="h1"
           title="PRESCHOOL & DAYCARE IN HITEX, HYDERABAD"
           subtitle="MY SCHOOL ITALY — HITEX"
           description="We Begin By Understanding The Child. Neuroscience-informed early years, daycare, and kindergarten near HITEX Exhibition Centre, Shilpa Layout & Izzathnagar."
           descriptionClassName="text-xl md:text-2xl font-normal"
+        />
+
+        {/* 2b. Centre Quick Info: Address, Timings, Phone, Short Intro */}
+        <CentreQuickInfo
+          campusName="HITEX Campus"
+          address="Hitex Road, next to HITEX Exhibition Centre Gate, Shilpa Layout, Izzathnagar, Hyderabad 500084"
+          landmark="Next to HITEX Exhibition Centre Gate"
+          timings="Monday – Friday: 8:00 AM – 7:30 PM | Saturday: 8:30 AM – 2:00 PM"
+          phone="+91 70939 04680"
+          phoneTel="+917093904680"
+          intro="Conveniently located on HITEX Road beside the HITEX Exhibition Centre, My School ITALY HITEX serves families from Izzathnagar, Shilpa Layout, Kothaguda, Kondapur, Hafeezpet, Madhapur, and the wider HITEC City corridor."
+          catchmentAreas={['Izzathnagar', 'Shilpa Layout', 'Kothaguda', 'Kondapur', 'Hafeezpet', 'Madhapur', 'HITEC City']}
+          directionsUrl="https://www.google.com/maps/dir/?api=1&destination=My+School+ITALY+%7C+Hitex"
+          tourHref="#enroll-hitex"
         />
 
         {/* 3. Story Section — Programs & Continuity */}

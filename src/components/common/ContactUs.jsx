@@ -416,7 +416,7 @@ export default function ContactUs({
                   />
                   <label htmlFor="agreePolicy" className="">
                     I have read and agree to the{' '}
-                    <a href="/privacy-policy">Privacy Policy.</a>
+                    <a href="/privacy-policy/">Privacy Policy.</a>
                   </label>
                 </div>
                 {errors.agreePolicy && <p>{errors.agreePolicy}</p>}

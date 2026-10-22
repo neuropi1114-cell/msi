@@ -1,4 +1,4 @@
-import { seoMetadataMap } from '../data/seo-metadata';
+import { seoMetadataMap } from '../data/seo-metadata.js';
 
 const DEFAULT_SITE_URL = 'https://www.myschoolitaly.com';
 const DEFAULT_IMAGE = '/images/hero/hero-slide-1.png';

@@ -1,12 +1,5 @@
-import ContactPage, { metadata as baseMetadata } from '../contact/page';
+import { redirect } from 'next/navigation';
 
-export const metadata = {
-  ...baseMetadata,
-  alternates: { canonical: '/contact-us/' },
-  openGraph: {
-    ...baseMetadata?.openGraph,
-    url: '/contact-us/',
-  },
-};
-
-export default ContactPage;
+export default function ContactUsRedirect() {
+  redirect('/contact/');
+}

@@ -5,63 +5,140 @@ import Footer from '../../components/layout/Footer';
 import ContactUs from '../../components/common/ContactUs';
 import CloudHeader from '../../components/layout/CloudHeader';
 import SectionHeader from '../../components/common/SectionHeader';
+import CentreQuickInfo from '../../components/common/CentreQuickInfo';
 import StorySection from '../../components/common/StorySection';
 import NepHero from '../../components/nep/NepHero';
 import DesignPhilosophy from '../../components/nep/DesignPhilosophy';
 import OneJourneySection from '../../components/programs/OneJourneySection';
 import CampusLocationModule from '../../components/common/CampusLocationModule';
 import JsonLd from '../../components/JsonLd';
+import { centreSchema } from '../../../lib/schema.js';
+
+const SITE_URL = 'https://www.myschoolitaly.com';
+const PAGE_URL = `${SITE_URL}/kukatpally/`;
+const SEO_TITLE = 'Preschool & Daycare in Kukatpally | My School ITALY';
+const SEO_DESCRIPTION =
+  'Neuroscience-informed preschool, daycare, and crèche in Gokul Plots, KPHB Phase 9, Kukatpally, Hyderabad. Book a campus tour today.';
 
 export const metadata = {
-  title: 'My School ITALY — Kukatpally | Preschool & Daycare KPHB',
-  description: 'Neuroscience-informed preschool, daycare, and crèche in Gokul Plots, KPHB Phase 9, Kukatpally, Hyderabad.',
-  alternates: { canonical: '/kukatpally/' },
+  title: {
+    absolute: SEO_TITLE,
+  },
+  description: SEO_DESCRIPTION,
+  alternates: {
+    canonical: PAGE_URL,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      maxImagePreview: 'large',
+      maxSnippet: -1,
+      maxVideoPreview: -1,
+    },
+  },
+  openGraph: {
+    title: SEO_TITLE,
+    description: SEO_DESCRIPTION,
+    url: PAGE_URL,
+    siteName: 'My School ITALY',
+    locale: 'en_IN',
+    type: 'website',
+    images: [
+      {
+        url: `${SITE_URL}/images/kukatpally/header.jpg`,
+        width: 1200,
+        height: 630,
+        alt: 'My School ITALY Kukatpally Campus',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: SEO_TITLE,
+    description: SEO_DESCRIPTION,
+    images: [`${SITE_URL}/images/kukatpally/header.jpg`],
+  },
 };
 
-const schemaData = {
-  '@context': 'https://schema.org',
-  '@type': 'ChildCare',
-  name: 'My School ITALY — Kukatpally',
-  description: 'Neuroscience-based early years education and daycare in Kukatpally, KPHB.',
-  url: 'https://www.myschoolitaly.com/kukatpally/',
+const kukatpallyStructuredData = centreSchema({
+  name: 'My School ITALY | Kukatpally',
+  alternateName: 'MSI Kukatpally Campus (KPHB Phase 9)',
+  description: SEO_DESCRIPTION,
+  url: PAGE_URL,
   telephone: '+917093904680',
+  image: '/images/kukatpally/header.jpg',
   address: {
-    '@type': 'PostalAddress',
     streetAddress: 'Gokul Plots, Venkata Ramana Colony, KPHB Phase 9 / Hafeezpet',
     addressLocality: 'Kukatpally, Hyderabad',
+    addressRegion: 'Telangana',
     postalCode: '500085',
     addressCountry: 'IN',
   },
-};
+  geo: {
+    latitude: 17.4889374,
+    longitude: 78.3613766,
+  },
+  hasMap: 'https://www.google.com/maps/search/?api=1&query=My+School+ITALY+Kukatpally',
+  areaServed: [
+    'Kukatpally',
+    'KPHB',
+    'Gokul Plots',
+    'Venkata Ramana Colony',
+    'Hafeezpet',
+    'Miyapur',
+    'Allwyn Colony',
+  ],
+});
 
 export default function KukatpallyPage() {
   return (
     <>
-      <JsonLd schema={schemaData} />
+      <JsonLd schema={kukatpallyStructuredData} />
       <TopBar />
       <Header />
 
       <main>
+        {/* 1. Cloud Header with Dedicated Kukatpally Photo */}
         <CloudHeader
-          image="/images/hitex/HITEX_1.png"
+          image="/images/kukatpally/header.jpg"
           imageClass="object-cover object-center"
           heightClass="w-full aspect-[2172/724] min-h-[220px] sm:min-h-[320px] md:min-h-[420px] max-h-[650px]"
         />
         <div data-nav-sentinel />
 
+        {/* 2. Section Header with H1 */}
         <SectionHeader
-          title="MY SCHOOL ITALY — KUKATPALLY"
-          subtitle={null}
-          description="We Begin By Understanding The Child."
+          titleTag="h1"
+          title="PRESCHOOL & DAYCARE IN KUKATPALLY"
+          subtitle="MY SCHOOL ITALY — KUKATPALLY (KPHB PHASE 9)"
+          description="We Begin By Understanding The Child. Neuroscience-informed early years, crèche, and daycare serving KPHB Phase 9, Gokul Plots, Hafeezpet, and Miyapur."
           descriptionClassName="text-xl md:text-2xl font-normal"
         />
 
+        {/* 2b. Centre Quick Info: Address, Timings, Phone, Short Intro */}
+        <CentreQuickInfo
+          campusName="Kukatpally Campus"
+          address="Gokul Plots, Venkata Ramana Colony, KPHB Phase 9 / Hafeezpet, Kukatpally, Hyderabad 500085"
+          landmark="Gokul Plots, Near KPHB Phase 9"
+          timings="Monday – Friday: 8:00 AM – 7:30 PM | Saturday: 8:30 AM – 2:00 PM"
+          phone="+91 70939 04680"
+          phoneTel="+917093904680"
+          intro="Located in Gokul Plots near KPHB Phase 9, My School ITALY Kukatpally brings European early-learning principles and neuroscience-based daycare to young families across Venkata Ramana Colony, Hafeezpet, Miyapur, and KPHB."
+          catchmentAreas={['Gokul Plots', 'KPHB Phase 9', 'Venkata Ramana Colony', 'Hafeezpet', 'Miyapur', 'Kondapur']}
+          directionsUrl="https://www.google.com/maps/dir/?api=1&destination=My+School+ITALY+%7C+Kukatpally"
+          tourHref="#enroll"
+        />
+
+        {/* 3. Story Section with Unique Kukatpally Photo */}
         <div id="programs" className="scroll-mt-24">
           <StorySection
             containerClass="max-w-[1240px] mx-auto"
             imageWrapperClass="overflow-hidden rounded-2xl shadow-2xl border border-gray-100"
             imageClass="w-full h-auto object-cover scale-115 transform hover:scale-125 transition-transform duration-500"
-            imageSrc="/images/hitex/Hitex_3.png"
+            imageSrc="/images/kukatpally/story.png"
             imageAlt="Children at My School ITALY Kukatpally"
             eyebrow="A Complete Day For A Growing Child."
             title="PROGRAMS DESIGNED AROUND YOUR CHILD'S DAY"
@@ -73,29 +150,31 @@ export default function KukatpallyPage() {
                   <strong className="text-msi-orange font-bold">Early Years:</strong> Baby Crèche • Ciao Baby • Toddler • Pre-Nursery • Nursery • K1 • K2
                 </p>
                 <p>
-                  <strong className="text-msi-orange font-bold">Care:</strong> Daycare • Extended Daycare • Early Drop-Off • Late Pick-Up
+                  <strong className="text-msi-orange font-bold">Care:</strong> Daycare • Extended Daycare • Early Drop-Off • Late Pick-Up • Saturday Care
                 </p>
               </div>
             }
           />
         </div>
 
+        {/* 4. NepHero with Unique Kukatpally Photo */}
         <NepHero
           eyebrow="We Begin By Understanding The Child."
           title="WHY FAMILIES CHOOSE MSI KUKATPALLY?"
           titleColor="text-msi-yellow"
           subtitle="BECAUSE EVERY CHILD DESERVES TO BE KNOWN BEFORE THEY ARE TAUGHT."
           description="Positioned in the vibrant KPHB corridor, MSI Kukatpally brings European early-learning principles and neuroscience understanding to young families."
-          bgImage="/images/hitex/Hitex_2.png"
+          bgImage="/images/kukatpally/why-us.png"
           bgPosition="bg-cover bg-center"
           sectionClass="w-full aspect-[2172/724] max-h-[650px] py-8 md:py-12"
           readMoreHref="/why-msi"
         />
 
+        {/* 5. Design Philosophy with Unique Kukatpally Photo */}
         <DesignPhilosophy
           topId="neuropi-way"
           bottomId="parents-journey"
-          image="/images/hitex/Hitex_4.png"
+          image="/images/kukatpally/neuropi.png"
           eyebrow="Start With The Child • The NeuroPi Way™"
           title={<>WE DON'T BEGIN WITH THE LESSON.<br />WE BEGIN WITH THE CHILD.</>}
           titleClass="text-msi-orange font-linotte font-bold text-2xl md:text-3xl leading-tight uppercase mb-3"
@@ -103,9 +182,10 @@ export default function KukatpallyPage() {
           readMoreHref="/neuropi-way"
         />
 
+        {/* 6. OneJourneySection with Unique Kukatpally Photo */}
         <OneJourneySection
-          imageSrc="/images/hitex/Hitex_5.png"
-          bgImageSrc="/images/hitex/Hitex_5.png"
+          imageSrc="/images/kukatpally/parent-journey.png"
+          bgImageSrc="/images/kukatpally/parent-journey.png"
           eyebrow="You Are Not Dropping Your Child At School. You Are Joining Their Journey."
           title="YOU ARE PART OF THE JOURNEY"
           titleColor="text-msi-orange font-linotte font-bold text-2xl md:text-3xl uppercase mb-4"
@@ -117,6 +197,7 @@ export default function KukatpallyPage() {
           </p>
         </OneJourneySection>
 
+        {/* 7. Campus Location Module */}
         <CampusLocationModule
           eyebrow="Find us in Kukatpally / KPHB, Hyderabad"
           campusName="My School ITALY — Kukatpally"

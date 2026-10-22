@@ -189,6 +189,36 @@ const nextConfig = {
         destination: '/spooktacular-halloween-celebration-at-myschoolitaly-hitex/',
         permanent: true,
       },
+      {
+        source: '/corporate-childcare',
+        destination: '/corporatechildcare/',
+        permanent: true,
+      },
+      {
+        source: '/corporate-childcare/:path*',
+        destination: '/corporatechildcare/',
+        permanent: true,
+      },
+      {
+        source: '/contact-us',
+        destination: '/contact/',
+        permanent: true,
+      },
+      {
+        source: '/contact-us/:path*',
+        destination: '/contact/',
+        permanent: true,
+      },
+      {
+        source: '/preschool-daycare-hyderabad',
+        destination: '/hyderabad/',
+        permanent: true,
+      },
+      {
+        source: '/preschool-daycare-hyderabad/:path*',
+        destination: '/hyderabad/',
+        permanent: true,
+      },
     ];
   },
 };

@@ -103,7 +103,7 @@ const timelineEvents = [
     links: [
       {
         label: 'Explore Our Award-Winning Curriculum',
-        url: '/neuropiway',
+        url: '/neuropi-way/',
         primary: true,
       },
       {
@@ -366,7 +366,7 @@ const timelineEvents = [
     links: [
       {
         label: 'Explore The NeuroPi Way',
-        url: '/neuropiway',
+        url: '/neuropi-way/',
         primary: true,
       },
       {
@@ -775,7 +775,7 @@ export default function MediaCoveragePage() {
                         {item.isNeuroPi && (
                           <div className="mt-4 pt-3 border-t border-dashed border-gray-100 flex items-center justify-between">
                             <Link
-                              href="/neuropiway"
+                              href="/neuropi-way/"
                               className="inline-flex items-center gap-1 text-xs font-bold text-msi-purple hover:text-msi-orange transition"
                             >
                               <Brain className="w-3.5 h-3.5 text-msi-orange" />

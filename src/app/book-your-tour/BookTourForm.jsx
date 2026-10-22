@@ -142,7 +142,7 @@ const BookTourForm = () => {
           <strong>
             I have read and agree to the{' '}
             <a
-              href="/privacy-policy"
+              href="/privacy-policy/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-msi-orange hover:underline"

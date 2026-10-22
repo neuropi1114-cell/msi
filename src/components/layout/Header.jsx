@@ -11,7 +11,7 @@ const emptySubscribe = () => () => { };
 const navLinks = [
   {
     name: 'WHY MSI',
-    href: '/whyus',
+    href: '/why-msi/',
     subLinks: [
       { name: 'Our Story', href: '/whyus/our-story' },
       { name: 'Our Philosophy', href: '/whyus/our-philosophy' },
@@ -47,9 +47,9 @@ const navLinks = [
   },
   {
     name: 'THE NEUROPI WAY',
-    href: '/neuropiway',
+    href: '/neuropi-way/',
     subLinks: [
-      { name: 'The NeuroPi Way', href: '/neuropiway' },
+      { name: 'The NeuroPi Way', href: '/neuropi-way/' },
       { name: 'Five Pillars', href: '/neuropiway/five-pillars' },
       { name: 'Learning the NeuroPi Way', href: '/neuropiway/learning-neuropi-way' },
       { name: 'Reimagining The learning', href: '/neuropiway/reimagining-learning' },
@@ -120,10 +120,10 @@ const Header = ({
 
   const isLinkActive = (linkHref) => {
     if (!pathname) return false;
-    if (linkHref === '/whyus') {
-      return pathname === '/whyus' || pathname === '/about' || pathname.startsWith('/whyus') || pathname.startsWith('/why-msi');
+    if (linkHref === '/whyus' || linkHref === '/why-msi/' || linkHref === '/why-msi') {
+      return pathname === '/whyus' || pathname === '/why-msi' || pathname === '/about' || pathname.startsWith('/whyus') || pathname.startsWith('/why-msi');
     }
-    if (linkHref === '/neuropiway') {
+    if (linkHref === '/neuropiway' || linkHref === '/neuropi-way/' || linkHref === '/neuropi-way') {
       return pathname === '/neuropiway' || pathname === '/neuropi-way' || pathname === '/nep' || pathname.startsWith('/neuropiway') || pathname.startsWith('/neuropi-way');
     }
     if (linkHref === '/corporatechildcare') {

@@ -24,7 +24,9 @@ export default function AboutFounderMessage({
                 A WELCOME FROM OUR FOUNDER
               </div>
               <div className="text-2xl sm:text-3xl lg:text-3xl font-bold tracking-tight text-msi-green not-italic leading-tight">
-                <h2>Dear Parents, Welcome to <br />My School ITALY.</h2>
+                <h1>
+                  <span className="sr-only">About Us — </span>Dear Parents, Welcome to <br />My School ITALY.
+                </h1>
               </div>
             </div>
 

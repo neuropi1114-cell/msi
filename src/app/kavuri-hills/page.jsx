@@ -5,63 +5,140 @@ import Footer from '../../components/layout/Footer';
 import ContactUs from '../../components/common/ContactUs';
 import CloudHeader from '../../components/layout/CloudHeader';
 import SectionHeader from '../../components/common/SectionHeader';
+import CentreQuickInfo from '../../components/common/CentreQuickInfo';
 import StorySection from '../../components/common/StorySection';
 import NepHero from '../../components/nep/NepHero';
 import DesignPhilosophy from '../../components/nep/DesignPhilosophy';
 import OneJourneySection from '../../components/programs/OneJourneySection';
 import CampusLocationModule from '../../components/common/CampusLocationModule';
 import JsonLd from '../../components/JsonLd';
+import { centreSchema } from '../../../lib/schema.js';
+
+const SITE_URL = 'https://www.myschoolitaly.com';
+const PAGE_URL = `${SITE_URL}/kavuri-hills/`;
+const SEO_TITLE = 'Preschool & Daycare in Kavuri Hills, Madhapur | My School ITALY';
+const SEO_DESCRIPTION =
+  'Neuroscience-informed preschool, daycare, and crèche in Kavuri Hills Phase 2, Doctor\'s Colony, Madhapur, Hyderabad. Book a campus tour today.';
 
 export const metadata = {
-  title: 'My School ITALY — Kavuri Hills | Preschool & Daycare Madhapur',
-  description: 'Neuroscience-informed preschool, daycare, and crèche in Kavuri Hills Phase 2, Doctor\'s Colony, Madhapur, Hyderabad.',
-  alternates: { canonical: '/kavuri-hills/' },
+  title: {
+    absolute: SEO_TITLE,
+  },
+  description: SEO_DESCRIPTION,
+  alternates: {
+    canonical: PAGE_URL,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      maxImagePreview: 'large',
+      maxSnippet: -1,
+      maxVideoPreview: -1,
+    },
+  },
+  openGraph: {
+    title: SEO_TITLE,
+    description: SEO_DESCRIPTION,
+    url: PAGE_URL,
+    siteName: 'My School ITALY',
+    locale: 'en_IN',
+    type: 'website',
+    images: [
+      {
+        url: `${SITE_URL}/images/kavuri-hills/header.jpg`,
+        width: 1200,
+        height: 630,
+        alt: 'My School ITALY Kavuri Hills Campus',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: SEO_TITLE,
+    description: SEO_DESCRIPTION,
+    images: [`${SITE_URL}/images/kavuri-hills/header.jpg`],
+  },
 };
 
-const schemaData = {
-  '@context': 'https://schema.org',
-  '@type': 'ChildCare',
-  name: 'My School ITALY — Kavuri Hills',
-  description: 'Neuroscience-based early childhood education and daycare in Kavuri Hills, Madhapur.',
-  url: 'https://www.myschoolitaly.com/kavuri-hills/',
+const kavuriHillsStructuredData = centreSchema({
+  name: 'My School ITALY | Kavuri Hills',
+  alternateName: 'MSI Kavuri Hills Campus (Doctor\'s Colony)',
+  description: SEO_DESCRIPTION,
+  url: PAGE_URL,
   telephone: '+917093904680',
+  image: '/images/kavuri-hills/header.jpg',
   address: {
-    '@type': 'PostalAddress',
     streetAddress: 'Kavuri Hills Phase 2 Road, Doctor\'s Colony',
     addressLocality: 'Madhapur, Hyderabad',
+    addressRegion: 'Telangana',
     postalCode: '500033',
     addressCountry: 'IN',
   },
-};
+  geo: {
+    latitude: 17.4360037,
+    longitude: 78.3740335,
+  },
+  hasMap: 'https://www.google.com/maps/search/?api=1&query=My+School+ITALY+Kavuri+Hills',
+  areaServed: [
+    'Kavuri Hills',
+    'Doctor\'s Colony',
+    'Madhapur',
+    'Jubilee Hills',
+    'Megha Hills',
+    'HITEC City',
+    'Durgam Cheruvu',
+  ],
+});
 
 export default function KavuriHillsPage() {
   return (
     <>
-      <JsonLd schema={schemaData} />
+      <JsonLd schema={kavuriHillsStructuredData} />
       <TopBar />
       <Header />
 
       <main>
+        {/* 1. Cloud Header with Dedicated Kavuri Hills Photo */}
         <CloudHeader
-          image="/images/hitex/HITEX_1.png"
+          image="/images/kavuri-hills/header.jpg"
           imageClass="object-cover object-center"
           heightClass="w-full aspect-[2172/724] min-h-[220px] sm:min-h-[320px] md:min-h-[420px] max-h-[650px]"
         />
         <div data-nav-sentinel />
 
+        {/* 2. Section Header with H1 */}
         <SectionHeader
-          title="MY SCHOOL ITALY — KAVURI HILLS"
-          subtitle={null}
-          description="We Begin By Understanding The Child."
+          titleTag="h1"
+          title="PRESCHOOL & DAYCARE IN KAVURI HILLS, MADHAPUR"
+          subtitle="MY SCHOOL ITALY — KAVURI HILLS (DOCTOR'S COLONY)"
+          description="We Begin By Understanding The Child. Neuroscience-informed early years, daycare, and baby crèche in Kavuri Hills Phase 2, Madhapur & Jubilee Hills."
           descriptionClassName="text-xl md:text-2xl font-normal"
         />
 
+        {/* 2b. Centre Quick Info: Address, Timings, Phone, Short Intro */}
+        <CentreQuickInfo
+          campusName="Kavuri Hills Campus"
+          address="Kavuri Hills Phase 2 Road, Doctor's Colony, Madhapur, Hyderabad 500033"
+          landmark="Doctor's Colony, Near Durgam Cheruvu Metro"
+          timings="Monday – Friday: 8:00 AM – 7:30 PM | Saturday: 8:30 AM – 2:00 PM"
+          phone="+91 70939 04680"
+          phoneTel="+917093904680"
+          intro="Nestled in Kavuri Hills Phase 2 near Doctor's Colony and Durgam Cheruvu, My School ITALY Kavuri Hills offers an intimate, neuroscience-backed early childhood education and premium daycare for families across Madhapur, Jubilee Hills, and HITEC City."
+          catchmentAreas={['Kavuri Hills', 'Doctor\'s Colony', 'Madhapur', 'Jubilee Hills', 'Megha Hills', 'HITEC City']}
+          directionsUrl="https://www.google.com/maps/dir/?api=1&destination=My+School+ITALY+%7C+Kavuri+Hills"
+          tourHref="#enroll"
+        />
+
+        {/* 3. Story Section with Unique Kavuri Hills Photo */}
         <div id="programs" className="scroll-mt-24">
           <StorySection
             containerClass="max-w-[1240px] mx-auto"
             imageWrapperClass="overflow-hidden rounded-2xl shadow-2xl border border-gray-100"
             imageClass="w-full h-auto object-cover scale-115 transform hover:scale-125 transition-transform duration-500"
-            imageSrc="/images/hitex/Hitex_3.png"
+            imageSrc="/images/kavuri-hills/story.png"
             imageAlt="Children at My School ITALY Kavuri Hills"
             eyebrow="A Complete Day For A Growing Child."
             title="PROGRAMS DESIGNED AROUND YOUR CHILD'S DAY"
@@ -70,32 +147,34 @@ export default function KavuriHillsPage() {
             p2={
               <div className="space-y-3 mt-4 text-msi-purple">
                 <p>
-                  <strong className="text-msi-orange font-bold">Early Years:</strong> Baby Crèche • Ciao Baby • Toddler • Pre-Nursery • Nursery • K1 • K2
+                  <strong className="text-msi-orange font-bold">Early Years:</strong> Baby Crèche (From 45 Days) • Ciao Baby • Toddler • Pre-Nursery • Nursery • K1 • K2
                 </p>
                 <p>
-                  <strong className="text-msi-orange font-bold">Care:</strong> Daycare • Extended Daycare • Early Drop-Off • Late Pick-Up
+                  <strong className="text-msi-orange font-bold">Care:</strong> Daycare • Extended Daycare • Early Drop-Off • Late Pick-Up • Saturday Care
                 </p>
               </div>
             }
           />
         </div>
 
+        {/* 4. NepHero with Unique Kavuri Hills Photo */}
         <NepHero
           eyebrow="We Begin By Understanding The Child."
           title="WHY FAMILIES CHOOSE MSI KAVURI HILLS?"
           titleColor="text-msi-yellow"
           subtitle="BECAUSE EVERY CHILD DESERVES TO BE KNOWN BEFORE THEY ARE TAUGHT."
           description="Nestled near Doctor's Colony and Durgam Cheruvu, MSI Kavuri Hills provides world-class neuroscience-backed early education and daycare."
-          bgImage="/images/hitex/Hitex_2.png"
+          bgImage="/images/kavuri-hills/why-us.png"
           bgPosition="bg-cover bg-center"
           sectionClass="w-full aspect-[2172/724] max-h-[650px] py-8 md:py-12"
           readMoreHref="/why-msi"
         />
 
+        {/* 5. Design Philosophy with Unique Kavuri Hills Photo */}
         <DesignPhilosophy
           topId="neuropi-way"
           bottomId="parents-journey"
-          image="/images/hitex/Hitex_4.png"
+          image="/images/kavuri-hills/neuropi.png"
           eyebrow="Start With The Child • The NeuroPi Way™"
           title={<>WE DON'T BEGIN WITH THE LESSON.<br />WE BEGIN WITH THE CHILD.</>}
           titleClass="text-msi-orange font-linotte font-bold text-2xl md:text-3xl leading-tight uppercase mb-3"
@@ -103,9 +182,10 @@ export default function KavuriHillsPage() {
           readMoreHref="/neuropi-way"
         />
 
+        {/* 6. OneJourneySection with Unique Kavuri Hills Photo */}
         <OneJourneySection
-          imageSrc="/images/hitex/Hitex_5.png"
-          bgImageSrc="/images/hitex/Hitex_5.png"
+          imageSrc="/images/kavuri-hills/parent-journey.png"
+          bgImageSrc="/images/kavuri-hills/parent-journey.png"
           eyebrow="You Are Not Dropping Your Child At School. You Are Joining Their Journey."
           title="YOU ARE PART OF THE JOURNEY"
           titleColor="text-msi-orange font-linotte font-bold text-2xl md:text-3xl uppercase mb-4"
@@ -117,6 +197,7 @@ export default function KavuriHillsPage() {
           </p>
         </OneJourneySection>
 
+        {/* 7. Campus Location Module */}
         <CampusLocationModule
           eyebrow="Find us in Madhapur, Hyderabad"
           campusName="My School ITALY — Kavuri Hills"

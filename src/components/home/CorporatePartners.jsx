@@ -44,7 +44,7 @@ export default function CorporatePartners({
             <div key={`${index}-clone`} className="mx-8 w-32 h-24 md:w-40 md:h-28 flex-shrink-0 flex items-center justify-center p-4 bg-white rounded-xl shadow-sm border border-gray-50 hover:shadow-md transition-shadow">
               <img
                 src={partner.image}
-                alt=""
+                alt={partner.alt || 'Corporate partner logo'}
                 className="max-w-full max-h-full object-contain transition-all duration-300"
                 loading="lazy"
               />

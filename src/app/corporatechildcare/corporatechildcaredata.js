@@ -4,7 +4,7 @@ import { CheckCircle2 } from 'lucide-react';
 
 import { buildPageMetadata } from '../../utils/seo';
 
-export const metadata = buildPageMetadata('/corporate-childcare/');
+export const metadata = buildPageMetadata('/corporatechildcare/');
 
 export const corporateChildcareDrawerBody = (
   <div className="space-y-6 leading-relaxed pt-2">

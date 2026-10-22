@@ -388,7 +388,7 @@ export default function TopChildcareCentersBlogPage() {
               </p>
               <div className="text-center pt-2">
                 <Link
-                  href="/contact-us"
+                  href="/contact"
                   className="inline-block bg-msi-orange text-white font-bold py-4 px-8 rounded-full hover:bg-msi-orange/90 transition-colors shadow-md text-lg"
                 >
                   Book A School Tour Today

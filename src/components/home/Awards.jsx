@@ -48,7 +48,7 @@ export default function Awards() {
                   <div key={`${index}-clone`} className="mx-8 w-40 h-32 flex-shrink-0 flex items-center justify-center bg-white rounded-lg">
                     <img 
                       src={award.image} 
-                      alt="" 
+                      alt={award.alt || 'Award logo'} 
                       className="max-w-full max-h-full object-contain transition-all duration-300"
                       loading="lazy"
                       onError={(e) => { e.target.onerror = null; e.target.src = '/images/logo/logo.png.bv.webp'; }} 

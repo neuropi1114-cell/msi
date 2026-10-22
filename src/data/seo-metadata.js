@@ -66,11 +66,11 @@ export const seoMetadataMap = {
     "cta": "Book a Tour at MSI HITEX",
     "notes": "Dedicated HITEX campus page featuring programs, NeuroPi Way, parent partnership, and corporate childcare."
   },
-  "/preschool-daycare-hyderabad/": {
+  "/hyderabad/": {
     "priority": "P0",
     "pagePurpose": "Hyderabad Locations Hub",
-    "recommendedUrl": "https://www.myschoolitaly.com/preschool-daycare-hyderabad/",
-    "canonical": "https://www.myschoolitaly.com/preschool-daycare-hyderabad/",
+    "recommendedUrl": "https://www.myschoolitaly.com/hyderabad/",
+    "canonical": "https://www.myschoolitaly.com/hyderabad/",
     "title": "Preschool & Daycare Centres in Hyderabad | My School ITALY",
     "description": "Find My School ITALY preschool, crèche and daycare centres across Hyderabad. Explore locations, programs, timings, infant care and extended childcare.",
     "h1": "Preschool, Crèche & Daycare Centres in Hyderabad",
@@ -632,11 +632,11 @@ export const seoMetadataMap = {
     "cta": "Book a Parent Visit",
     "notes": "Use as parent-support hub and   internal-link source."
   },
-  "/corporate-childcare/": {
+  "/corporatechildcare/": {
     "priority": "P0",
     "pagePurpose": "Corporate Childcare Hub",
-    "recommendedUrl": "https://www.myschoolitaly.com/corporate-childcare/",
-    "canonical": "https://www.myschoolitaly.com/corporate-childcare/",
+    "recommendedUrl": "https://www.myschoolitaly.com/corporatechildcare/",
+    "canonical": "https://www.myschoolitaly.com/corporatechildcare/",
     "title": "Corporate Crèche & Childcare Solutions in Hyderabad | MSI",
     "description": "Corporate crèche and childcare solutions for employers: on-campus, near-campus, subsidised, reserved-seat, extended-hours and multi-location models.",
     "h1": "Corporate Childcare & Crèche Solutions",

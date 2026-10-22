@@ -32,16 +32,17 @@ const PAN_INDIA_BRANCHES = [
 
 const NAV_LINKS = [
   { href: '/', label: 'Home' },
-  { href: '/whyus', label: 'Why Choose Us' },
+  { href: '/why-msi/', label: 'Why Choose Us' },
   { href: '/about', label: 'About Us' },
   { href: '/programs', label: 'Programs' },
+  { href: '/neuropi-way/', label: 'The NeuroPi Way' },
   { href: '/corporatechildcare', label: 'Corporate Childcare' },
   { href: '/hyderabad', label: 'Hyderabad Hub' },
   { href: '/policy-framework', label: 'Policy Framework' },
   { href: '/media-coverage', label: 'Media Coverage' },
   { href: '/blog', label: 'Blog' },
   { href: '/admissions', label: 'Enroll' },
-  { href: '/contact-us', label: 'Contact Us' },
+  { href: '/contact', label: 'Contact Us' },
   { href: '/contact', label: 'Book A Tour' },
 ];
 
@@ -161,7 +162,7 @@ const Footer = ({
             <ul className="space-y-3 text-sm !text-white">
               {italyAddress && (
                 <li className="flex items-start !text-white">
-                  <Image src="/googleMaps.svg" alt="" width={16} height={16} className="mr-2 flex-shrink-0 mt-1" />
+                  <Image src="/googleMaps.svg" alt="Google Maps location icon" width={16} height={16} className="mr-2 flex-shrink-0 mt-1" />
                   <span className="!text-white">
                     <strong className="font-semibold !text-white">ITALY:</strong> {italyAddress}
                   </span>
@@ -169,7 +170,7 @@ const Footer = ({
               )}
 
               <li className="flex items-start !text-white">
-                <Image src="/googleMaps.svg" alt="" width={16} height={16} className="mr-2 flex-shrink-0 mt-1" />
+                <Image src="/googleMaps.svg" alt="Google Maps location icon" width={16} height={16} className="mr-2 flex-shrink-0 mt-1" />
                 <span className="!text-white">
                   <strong className="font-semibold !text-white">{addressLabel}</strong> {address}
                 </span>
@@ -181,7 +182,7 @@ const Footer = ({
                 </a>
               </li>
               <li className="flex items-start !text-white">
-                <Image src="/gmail.svg" alt="" width={16} height={16} className="mr-2 flex-shrink-0 mt-1" />
+                <Image src="/gmail.svg" alt="Email icon" width={16} height={16} className="mr-2 flex-shrink-0 mt-1" />
                 <div className="flex flex-wrap items-center gap-x-1.5">
                   {emailList.map((item, idx) => (
                     <React.Fragment key={item}>
@@ -194,7 +195,7 @@ const Footer = ({
                 </div>
               </li>
               <li className="flex items-center !text-white">
-                <Image src="/whatsapp-icon.svg" alt="" width={16} height={16} className="mr-2 flex-shrink-0" />
+                <Image src="/whatsapp-icon.svg" alt="WhatsApp icon" width={16} height={16} className="mr-2 flex-shrink-0" />
                 <a href={actualWhatsappHref} target="_blank" rel="noopener noreferrer" className="!text-white hover:!text-msi-orange transition-colors font-normal">
                   {whatsapp}
                 </a>
@@ -212,7 +213,7 @@ const Footer = ({
                   aria-label={social.label}
                   className="w-9 h-9 rounded bg-msi-orange flex items-center justify-center transition-all hover:scale-110"
                 >
-                  <Image src={social.icon} alt="" width={16} height={16} className="w-4 h-4" />
+                  <Image src={social.icon} alt={`${social.label} icon`} width={16} height={16} className="w-4 h-4" />
                 </a>
               ))}
             </div>
@@ -256,7 +257,7 @@ const Footer = ({
           <span className="!text-white/80">&copy; 2002 &ndash; {currentYear} My School ITALY. All Rights Reserved.</span>
           <div className="flex items-center gap-2">
             <span className="!text-white/40">|</span>
-            <Link href="/privacy-policy" className="!text-msi-orange hover:underline transition-colors">
+            <Link href="/privacy-policy/" className="!text-msi-orange hover:underline transition-colors">
               Privacy Policy
             </Link>
             <span className="!text-white/40">|</span>

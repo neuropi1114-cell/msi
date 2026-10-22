@@ -80,7 +80,7 @@ export default function NotFound() {
             </Link>
 
             <Link
-              href="/contact-us"
+              href="/contact"
               className="p-4 rounded-2xl bg-white border border-purple-100 shadow-sm hover:shadow-md hover:border-msi-orange transition-all flex items-center gap-3 group"
             >
               <div className="w-10 h-10 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center group-hover:bg-msi-blue group-hover:text-white transition-colors">
