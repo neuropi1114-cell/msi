@@ -17,6 +17,8 @@
     { "id": 13, "image": "/images/logos/working-parents/hcl.png.bv_resized_ipad.png.bv.webp", "alt": "HCL" },
     { "id": 14, "image": "/images/logos/working-parents/oracle_logo.png.bv_resized_ipad.png.bv.webp", "alt": "Oracle" },
     { "id": 15, "image": "/images/logos/working-parents/Broadcom-Logo.jpg.bv.webp", "alt": "Broadcom" },
-    { "id": 16, "image": "/images/logos/working-parents/KWE-Logo.jpg.bv.webp", "alt": "KWE" }
+    { "id": 16, "image": "/images/logos/working-parents/KWE-Logo.jpg.bv.webp", "alt": "KWE" },
+    { "id": 17, "image": "/images/logos/working-parents/bank-of-singapore-logo.svg", "alt": "Bank of Singapore" },
+    { "id": 18, "image": "/images/logos/working-parents/bcg-com-logo.png", "alt": "BCG" }
   ]
 }

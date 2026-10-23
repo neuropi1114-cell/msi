@@ -73,7 +73,9 @@ export const workingParentsPartners = [
   { id: 72, image: "/images/corporate-parents/wellsfargo-com-logo.png", alt: "Wells Fargo" },
   { id: 73, image: "/images/corporate-parents/wiproinfra-com-logo.png", alt: "Wipro Infra" },
   { id: 74, image: "/images/corporate-parents/zorg-tech-logo.png", alt: "Zorg Tech" },
-  { id: 75, image: "/images/corporate-parents/zscaler-com-logo.png", alt: "Zscaler" }
+  { id: 75, image: "/images/corporate-parents/zscaler-com-logo.png", alt: "Zscaler" },
+  { id: 76, image: "/images/corporate-parents/bank-of-singapore-logo.svg", alt: "Bank of Singapore" },
+  { id: 77, image: "/images/corporate-parents/bcg-com-logo.png", alt: "BCG" }
 ];
 
 export const corporateChildcarePartners = [
@@ -101,5 +103,7 @@ export const corporateChildcarePartners = [
   { id: 22, image: "/images/corporate-tieup/optum-in-logo.png", alt: "Optum" },
   { id: 23, image: "/images/corporate-tieup/r1rcm-com-logo.png", alt: "R1 RCM" },
   { id: 24, image: "/images/corporate-tieup/religarehomeloans-com-logo.png", alt: "Religare Home Loans" },
-  { id: 25, image: "/images/corporate-tieup/techmahindra-mscloud-com-logo.png", alt: "Tech Mahindra" }
+  { id: 25, image: "/images/corporate-tieup/techmahindra-mscloud-com-logo.png", alt: "Tech Mahindra" },
+  { id: 26, image: "/images/corporate-tieup/bank-of-singapore-logo.svg", alt: "Bank of Singapore" },
+  { id: 27, image: "/images/corporate-tieup/bcg-com-logo.png", alt: "BCG" }
 ];
