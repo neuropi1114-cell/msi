@@ -104,3 +104,15 @@ Environment variables (set in Vercel → Project → Settings → Environment Va
 | `CHAT_MODEL` | optional | Default `openai/gpt-4o-mini`. |
 
 Without a key the widget still shows and replies with the school's contact details. Limits: 500 chars per message, last 12 messages, ~10 requests/minute per IP (best effort, per instance).
+
+### Call-request flow (admissions callback)
+
+After each answer the bot offers to arrange a call; it collects phone (Indian or +international), grade, date (no past dates) and time slot, then `POST /api/call-request/` validates server-side and notifies admissions via any configured channel:
+
+| Variable | Notes |
+| --- | --- |
+| `ADMISSIONS_WEBHOOK_URL` | Receives JSON `{text, content, phone, grade, date, time, page, submittedAt}` — works with Slack/Google Chat/Discord incoming webhooks, Zapier, Make, Google Apps Script. |
+| `RESEND_API_KEY` + `ADMISSIONS_EMAIL` | Email via Resend (comma-separate multiple addresses). |
+| `RESEND_FROM` | Optional verified sender, default `onboarding@resend.dev`. |
+
+If neither is set, requests are only written to the server logs (Vercel → Logs, search `[call-request]`). Time slots/grades are in `src/components/chat/callRequest.js`.
