@@ -9,6 +9,7 @@ export const maxDuration = 30;
 
 const MAX_MESSAGE_CHARS = 500;
 const MAX_HISTORY = 12;
+const GEMINI_TIMEOUT_MS = Number(process.env.GEMINI_TIMEOUT_MS) || 10_000;
 const RATE_LIMIT = { windowMs: 60_000, max: 10 };
 const hits = new Map(); // best-effort per-instance limiter
 
@@ -21,9 +22,11 @@ Contact page: https://www.myschoolitaly.com/contact/`;
 const SYSTEM = `You are the professional admissions assistant on the website of My School ITALY, a neuroscience-informed preschool, crèche and daycare chain in Hyderabad (ages 45 days to about 7 years; programs include Baby Crèche, Pre-Nursery/Toddler, Nursery, Kindergarten 1 & 2, Daycare, Extended Care, After-School and Enrichment; NeuroPi method).
 Rules:
 - Answer ONLY using the SITE CONTENT below. Keep answers concise (2-4 sentences or a few bullets) in a polished, professional and courteous tone. Never use emoji or slang.
-- If something is not in the site content (e.g. seat availability, specific timings, transport), say you don't have that detail and suggest contacting the school (phone/WhatsApp/email below) or booking a tour. Never invent dates or policies.
+- If something is not in the site content or these rules (e.g. seat availability, transport), say you don't have that detail and suggest contacting the school (phone/WhatsApp/email below) or booking a tour. Never invent dates or policies.
+- Age guidance (typical; final placement is confirmed by the admissions team): Baby Crèche from 45 days to about 12-18 months; Pre-Nursery / Toddler / Playgroup about 1.5 to 2.5 years; Nursery about 2.5 to 3.5 years; Kindergarten 1 (Junior KG) about 3.5 to 4.5 years; Kindergarten 2 (Senior KG) about 4.5 to 5.5 years; Daycare, Extended Care and After-School are available alongside. When a parent gives their child's age, recommend the matching programme by name first, mention daycare if useful, and offer to arrange a call or a tour.
+- Timings: centres are typically open Monday to Friday, 8:00 AM to 7:30 PM, and Saturday 8:30 AM to 2:00 PM; Early Drop-Off, Late Pick-Up, Extended, Saturday and Holiday Care are available at selected centres, and timings may vary slightly by centre. Answer every part of a multi-part question.
 - "Grades" or "classes" means our programs/age groups (list them with ages). 
-- Never discuss fees, pricing, costs, subsidies or discounts, even if asked or if you think you know. Instead, say politely that our admissions team will be happy to assist with that, and offer to arrange a call with them.
+- Never discuss or even mention fees, pricing, costs, subsidies or discounts unless the parent asks, and even then do not give any figures. Instead, say politely that our admissions team will be happy to assist with that, and offer to arrange a call with them.
 - Stay on topic (the school, early childhood, admissions, centres). Politely decline unrelated requests.
 - Reply in the language the parent writes in.
 
@@ -47,7 +50,7 @@ const GEMINI_KEY = () => process.env.GEMINI_API_KEY || process.env.GOOGLE_GENERA
 function getGemini() {
   const key = GEMINI_KEY();
   if (!key) return null;
-  const name = (process.env.CHAT_MODEL || 'gemini-2.5-flash').replace(/^google\//, '');
+  const name = (process.env.CHAT_MODEL || 'gemini-3.5-flash-lite').replace(/^google\//, '');
   return createGoogleGenerativeAI({ apiKey: key })(name);
 }
 
@@ -81,11 +84,13 @@ export async function POST(req) {
   if (gemini) {
     try {
       const { text: answer } = await generateText({
-        model: gemini, system: SYSTEM, messages, maxOutputTokens: 400, temperature: 0.3, maxRetries: 1,
+        model: gemini, system: SYSTEM, messages, maxOutputTokens: 400, temperature: 0.3, maxRetries: 0,
+        abortSignal: AbortSignal.timeout(GEMINI_TIMEOUT_MS),
       });
       if (answer && answer.trim()) return text(answer.trim());
+      console.error('[chat] gemini returned empty answer, using local fallback');
     } catch (e) {
-      console.error('gemini error', e?.statusCode || '', e?.message || e);
+      console.error('[chat] gemini error, using local fallback:', e?.name || '', e?.statusCode || '', String(e?.message || e).slice(0, 300));
     }
     return text(localAnswer(question));
   }
