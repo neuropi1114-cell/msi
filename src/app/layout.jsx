@@ -1,11 +1,11 @@
 import { Lato, Fredoka } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/react';
 import { GoogleAnalytics } from '@next/third-parties/google';
-import Script from 'next/script';
 import './globals.css';
 import JsonLd from '../components/JsonLd';
 import LocalStorageImageCache from '../components/common/LocalStorageImageCache';
 import AnalyticsListener from '../components/common/AnalyticsListener';
+import ChatWidget from '../components/chat/ChatWidget';
 
 const lato = Lato({
   subsets: ['latin'],
@@ -71,12 +71,8 @@ export default function RootLayout({ children }) {
         <JsonLd />
         <LocalStorageImageCache />
         {children}
+        <ChatWidget />
         <Analytics />
-        <Script
-          src="https://cdn.chatway.app/widget.js?id=23D3hS7Mt4QI"
-          strategy="lazyOnload"
-          defer
-        />
       </body>
     </html>
   );

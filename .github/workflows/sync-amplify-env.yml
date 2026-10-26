@@ -1,0 +1,101 @@
+name: Sync chatbot secrets to AWS Amplify
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      start_release:
+        description: Start an Amplify RELEASE build after syncing
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sync-amplify-env
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    env:
+      AWS_REGION: ${{ vars.AWS_REGION || secrets.AWS_REGION }}
+      AMPLIFY_APP_ID: ${{ vars.AMPLIFY_APP_ID || secrets.AMPLIFY_APP_ID }}
+      AMPLIFY_BRANCH: ${{ vars.AMPLIFY_BRANCH || secrets.AMPLIFY_BRANCH || github.event.repository.default_branch || 'main' }}
+    steps:
+      - name: Check configuration
+        env:
+          HAS_KEY: ${{ secrets.AWS_ACCESS_KEY_ID != '' }}
+          HAS_SECRET: ${{ secrets.AWS_SECRET_ACCESS_KEY != '' }}
+        run: |
+          missing=""
+          [ -n "$AWS_REGION" ] || missing="$missing AWS_REGION"
+          [ -n "$AMPLIFY_APP_ID" ] || missing="$missing AMPLIFY_APP_ID"
+          [ "$HAS_KEY" = "true" ] || missing="$missing AWS_ACCESS_KEY_ID"
+          [ "$HAS_SECRET" = "true" ] || missing="$missing AWS_SECRET_ACCESS_KEY"
+          if [ -n "$missing" ]; then
+            echo "::error::Missing GitHub secrets/variables:$missing"
+            exit 1
+          fi
+
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Merge chatbot secrets into Amplify branch environment
+        env:
+          GOOGLE_SHEETS_WEBHOOK_URL: ${{ secrets.GOOGLE_SHEETS_WEBHOOK_URL }}
+          GOOGLE_SHEETS_SECRET: ${{ secrets.GOOGLE_SHEETS_SECRET }}
+          ADMISSIONS_WEBHOOK_URL: ${{ secrets.ADMISSIONS_WEBHOOK_URL }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          ADMISSIONS_EMAIL: ${{ secrets.ADMISSIONS_EMAIL }}
+          RESEND_FROM: ${{ secrets.RESEND_FROM }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          AI_GATEWAY_API_KEY: ${{ secrets.AI_GATEWAY_API_KEY }}
+          CHAT_MODEL: ${{ secrets.CHAT_MODEL || vars.CHAT_MODEL }}
+        run: |
+          set -euo pipefail
+          umask 077
+          KEYS="GOOGLE_SHEETS_WEBHOOK_URL GOOGLE_SHEETS_SECRET ADMISSIONS_WEBHOOK_URL RESEND_API_KEY ADMISSIONS_EMAIL RESEND_FROM OPENAI_API_KEY AI_GATEWAY_API_KEY CHAT_MODEL"
+
+          # Only non-empty values; mask each one.
+          new='{}'
+          for k in $KEYS; do
+            v="${!k:-}"
+            if [ -n "$v" ]; then
+              echo "::add-mask::$v"
+              new=$(jq -c --arg k "$k" --arg v "$v" '. + {($k): $v}' <<<"$new")
+              echo "Will set: $k"
+            fi
+          done
+          if [ "$new" = '{}' ]; then
+            echo "No chatbot secrets set; nothing to sync."
+            exit 0
+          fi
+
+          # Existing branch variables (kept; ours override same keys only).
+          existing=$(aws amplify get-branch --app-id "$AMPLIFY_APP_ID" --branch-name "$AMPLIFY_BRANCH" \
+            --query 'branch.environmentVariables' --output json)
+          [ "$existing" = "null" ] && existing='{}'
+          # Mask existing values too, in case they are secrets.
+          jq -r 'to_entries[] | .value' <<<"$existing" | while IFS= read -r v; do
+            [ -n "$v" ] && echo "::add-mask::$v"
+          done
+
+          tmp="$RUNNER_TEMP/amplify-branch.json"
+          jq -n --arg app "$AMPLIFY_APP_ID" --arg br "$AMPLIFY_BRANCH" \
+            --argjson a "$existing" --argjson b "$new" \
+            '{appId: $app, branchName: $br, environmentVariables: ($a + $b)}' > "$tmp"
+          aws amplify update-branch --cli-input-json "file://$tmp" --query 'branch.branchName' --output text >/dev/null
+          rm -f "$tmp"
+          echo "Merged $(jq 'length' <<<"$new") variable(s) into $AMPLIFY_APP_ID/$AMPLIFY_BRANCH (existing kept)."
+
+      - name: Start Amplify release build
+        if: github.event_name == 'push' || inputs.start_release
+        run: |
+          aws amplify start-job --app-id "$AMPLIFY_APP_ID" --branch-name "$AMPLIFY_BRANCH" \
+            --job-type RELEASE --query 'jobSummary.jobId' --output text
