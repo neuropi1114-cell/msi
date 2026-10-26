@@ -2,9 +2,7 @@ import { validateRequest } from '../../../components/chat/callRequest';
 
 export const runtime = 'nodejs';
 
-// Server-only default (never imported by client code); env var overrides it.
-const SHEETS_URL = process.env.GOOGLE_SHEETS_WEBHOOK_URL ||
-  'https://script.google.com/macros/s/AKfycbySaOr1_fa1AlK5NzDLOUdnXLo9km0v6NwSSjJoijoSEVjHpsEqvmNBjL_cem48qnFPdQ/exec';
+const SHEETS_URL = process.env.GOOGLE_SHEETS_WEBHOOK_URL;
 
 const hits = new Map();
 function limited(ip) {

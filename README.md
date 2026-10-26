@@ -115,7 +115,7 @@ After each answer the bot offers to arrange a call; it collects phone (Indian or
 
 | Variable | Notes |
 | --- | --- |
-| `GOOGLE_SHEETS_WEBHOOK_URL` | Google Apps Script web app URL; appends each request to the `Admissions` sheet (free, see below). **Defaults to the school's deployed script URL in `src/app/api/call-request/route.js` (server-only)**; set this variable to override it. |
+| `GOOGLE_SHEETS_WEBHOOK_URL` | Google Apps Script web app URL; appends each request to the `Admissions` sheet (free, see below). Stored as a GitHub Actions secret and synced to Amplify (see below). |
 | `GOOGLE_SHEETS_SECRET` | Optional shared secret; must match `SHARED_SECRET` in the script. |
 | `ADMISSIONS_WEBHOOK_URL` | Receives JSON `{text, content, phone, grade, date, time, page, submittedAt}` — works with Slack/Google Chat/Discord incoming webhooks, Zapier, Make, Google Apps Script. |
 | `RESEND_API_KEY` + `ADMISSIONS_EMAIL` | Email via Resend (comma-separate multiple addresses). |
@@ -132,7 +132,25 @@ Any combination may be configured; the visitor sees an error only if every confi
 5. Click **Save**, then **Deploy > New deployment**. Choose type **Web app**.
 6. Set **Execute as: Me** and **Who has access: Anyone**, then click **Deploy** and authorise the requested permissions.
 7. Copy the **Web app URL** (ends with `/exec`).
-8. The school's web app URL is already set as the default in `src/app/api/call-request/route.js`, so no console step is needed. To use a different sheet, either change that default in GitHub, or in **AWS Amplify Console > the app > Hosting > Environment variables** add `GOOGLE_SHEETS_WEBHOOK_URL` (and `GOOGLE_SHEETS_SECRET` if you set one), then redeploy.
+8. Store the URL as the GitHub Actions secret `GOOGLE_SHEETS_WEBHOOK_URL` (and `GOOGLE_SHEETS_SECRET` if you set one). The workflow below copies it into Amplify.
+
+### Secrets via GitHub Actions (`.github/workflows/sync-amplify-env.yml`)
+
+On every push to `main`, or when run manually (Actions > "Sync chatbot secrets to AWS Amplify" > Run workflow), this workflow:
+- merges every **non-empty** chatbot secret into the Amplify branch's environment variables. Existing variables are kept, never wiped.
+- then starts an Amplify RELEASE build.
+
+`amplify.yml` then writes these variables into `.env.production` for the API routes.
+
+Add these in **GitHub > repo > Settings > Secrets and variables > Actions**:
+
+| Name | Type | Notes |
+| --- | --- | --- |
+| `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY` | secret | An IAM user with `amplify:GetBranch`, `amplify:UpdateBranch` and `amplify:StartJob` on the app, e.g. resource `arn:aws:amplify:<region>:<account>:apps/<appId>/*` |
+| `AWS_REGION` | variable or secret | The region the Amplify app is in, e.g. `ap-south-1` |
+| `AMPLIFY_APP_ID` | variable or secret | Amplify Console > the app > App settings > General: the **App ID** (like `d1a2b3c4d5e6f7`, also in the console URL `.../apps/<appId>/...`) |
+| `AMPLIFY_BRANCH` | variable (optional) | Defaults to the repo default branch (`main`) |
+| `GOOGLE_SHEETS_WEBHOOK_URL`, `GOOGLE_SHEETS_SECRET`, `ADMISSIONS_WEBHOOK_URL`, `RESEND_API_KEY`, `ADMISSIONS_EMAIL`, `RESEND_FROM`, `OPENAI_API_KEY`, `AI_GATEWAY_API_KEY`, `CHAT_MODEL` | secrets | All optional. Only the ones that are set get synced. |
 9. Submit a test call request from the chatbot; a row appears in the `Admissions` tab (headers are created automatically) with Status "New".
 
 If you edit the script later, use **Deploy > Manage deployments > Edit > New version** so the same URL keeps working.
