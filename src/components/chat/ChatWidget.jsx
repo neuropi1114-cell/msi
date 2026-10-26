@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { MessageCircle, X, Send } from 'lucide-react';
 import { usePathname } from 'next/navigation';
-import { GRADES, TIME_SLOTS, normalizePhone, todayISO, validateDate } from './callRequest';
+import { GRADES, availableSlots, fmtMinutes, parseTime, timeError, normalizePhone, todayISO, validateDate } from './callRequest';
 import { parseMarkdown } from './markdown';
 
 const MAX_CHARS = 500;
@@ -40,6 +40,7 @@ export default function ChatWidget() {
   const [input, setInput] = useState('');
   const [busy, setBusy] = useState(false);
   const [date, setDate] = useState('');
+  const [otherTime, setOtherTime] = useState('');
   const [gradeSel, setGradeSel] = useState('');
   const endRef = useRef(null);
   const msgsRef = useRef([]);
@@ -115,6 +116,7 @@ export default function ChatWidget() {
   }
 
   function submitDate() {
+    setOtherTime('');
     if (!date || date < todayISO() || !validateDate(date)) return push(bot('Please select a date from today onwards, within the next three months.', 'date'));
     push({ role: 'user', content: fmtDate(date) });
     setLead((l) => ({ ...l, date }));
@@ -122,18 +124,10 @@ export default function ChatWidget() {
     push(bot('Please select your preferred time.', 'time'));
   }
 
-  function availableSlots(d) {
-    if (d !== todayISO()) return TIME_SLOTS;
-    const now = new Date();
-    return TIME_SLOTS.filter((s) => {
-      const [hm, ap] = s.split(' '); let [h, m] = hm.split(':').map(Number);
-      if (ap === 'PM' && h !== 12) h += 12;
-      return h * 60 + m > now.getHours() * 60 + now.getMinutes() + 30;
-    });
-  }
-
   async function submitTime(time) {
-    if (!availableSlots(lead.date).includes(time)) return push(bot('Please select one of the available time slots.', 'time'));
+    const err = timeError(time, lead.date);
+    if (err) return push(bot(err, 'time'));
+    time = fmtMinutes(parseTime(time));
     push({ role: 'user', content: time });
     const req = { ...lead, time };
     setStage('submitting');
@@ -187,8 +181,20 @@ export default function ChatWidget() {
     );
     if (m.ui === 'time' && stage === 'time') {
       const slots = availableSlots(lead.date);
-      return slots.length ? <div className="flex flex-wrap gap-2 pt-2">{slots.map((s) => <Chip key={s} onClick={() => submitTime(s)}>{s}</Chip>)}</div>
-        : <div className="pt-2 text-xs">No slots left today. <button className="underline text-msi-blue" onClick={() => { setStage('date'); push(bot('Please select your preferred date for the call.', 'date')); }}>Pick another date</button></div>;
+      return slots.length ? (
+        <div className="pt-2 w-full max-w-[88%]">
+          <div className="flex flex-wrap gap-1.5 max-h-40 overflow-y-auto pr-1">
+            {slots.map((s) => <button key={s} type="button" onClick={() => submitTime(s)}
+              className="text-xs px-2 py-1 rounded-md border border-msi-blue text-msi-blue bg-white hover:bg-msi-blue hover:text-white transition">{s}</button>)}
+          </div>
+          <form className="flex gap-2 pt-2 items-center" onSubmit={(e) => { e.preventDefault(); if (otherTime) submitTime(otherTime); }}>
+            <span className="text-xs text-gray-600">Other time:</span>
+            <input type="time" min="08:00" max="20:00" step="300" value={otherTime} onChange={(e) => setOtherTime(e.target.value)}
+              className="text-sm border border-gray-300 rounded-lg px-2 py-1" aria-label="Other preferred time" />
+            <Chip type="submit" disabled={!otherTime}>Confirm</Chip>
+          </form>
+        </div>
+      ) : <div className="pt-2 text-xs">No time slots are left for today. Please choose another date. <button className="underline text-msi-blue" onClick={() => { setStage('date'); push(bot('Please select your preferred date for the call.', 'date')); }}>Pick another date</button></div>;
     }
     return null;
   }
