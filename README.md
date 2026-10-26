@@ -105,7 +105,8 @@ All variables are optional:
 | --- | --- | --- |
 | `AI_GATEWAY_API_KEY` | optional | AI Gateway key, only if you choose to use a paid LLM. |
 | `OPENAI_API_KEY` | optional | Used directly with OpenAI if no gateway key is set. |
-| `CHAT_MODEL` | optional | Default `openai/gpt-4o-mini`. |
+| `GEMINI_API_KEY` | optional (recommended, free) | Google Gemini key from https://aistudio.google.com/apikey (`GOOGLE_GENERATIVE_AI_API_KEY` also accepted). Takes priority over OpenAI/gateway. On any Gemini error or rate limit the bot falls back to the local engine. |
+| `CHAT_MODEL` | optional | Default `gemini-2.5-flash` when Gemini is used, otherwise `openai/gpt-4o-mini`. |
 
 **Free by default:** without any AI key, typed questions are answered by a built-in local engine (`src/components/chat/localEngine.js`): curated FAQ intents with typo-tolerant keyword matching, plus TF-IDF search over site content. No paid service is used. Fee/pricing questions are always redirected to the admissions team. Setting an AI key is optional and switches typed questions to the LLM. Limits: 500 chars per message, last 12 messages, ~10 requests/minute per IP (best effort, per instance).
 
@@ -150,7 +151,7 @@ Add these in **GitHub > repo > Settings > Secrets and variables > Actions**:
 | `AWS_REGION` | variable or secret | The region the Amplify app is in, e.g. `ap-south-1` |
 | `AMPLIFY_APP_ID` | variable or secret | Amplify Console > the app > App settings > General: the **App ID** (like `d1a2b3c4d5e6f7`, also in the console URL `.../apps/<appId>/...`) |
 | `AMPLIFY_BRANCH` | variable (optional) | Defaults to the repo default branch (`main`) |
-| `GOOGLE_SHEETS_WEBHOOK_URL`, `GOOGLE_SHEETS_SECRET`, `ADMISSIONS_WEBHOOK_URL`, `RESEND_API_KEY`, `ADMISSIONS_EMAIL`, `RESEND_FROM`, `OPENAI_API_KEY`, `AI_GATEWAY_API_KEY`, `CHAT_MODEL` | secrets | All optional. Only the ones that are set get synced. |
+| `GOOGLE_SHEETS_WEBHOOK_URL`, `GOOGLE_SHEETS_SECRET`, `ADMISSIONS_WEBHOOK_URL`, `RESEND_API_KEY`, `ADMISSIONS_EMAIL`, `RESEND_FROM`, `OPENAI_API_KEY`, `AI_GATEWAY_API_KEY`, `GEMINI_API_KEY`, `CHAT_MODEL` | secrets | All optional. Only the ones that are set get synced. |
 9. Submit a test call request from the chatbot; a row appears in the `Admissions` tab (headers are created automatically) with Status "New".
 
 If you edit the script later, use **Deploy > Manage deployments > Edit > New version** so the same URL keeps working.

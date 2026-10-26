@@ -11,6 +11,7 @@
     "postbuild": "next-sitemap"
   },
   "dependencies": {
+    "@ai-sdk/google": "^2",
     "@ai-sdk/openai": "^2",
     "@next/third-parties": "^16.4.2",
     "@vercel/analytics": "^2.0.1",
