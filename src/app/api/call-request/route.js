@@ -2,6 +2,10 @@ import { validateRequest } from '../../../components/chat/callRequest';
 
 export const runtime = 'nodejs';
 
+// Server-only default (never imported by client code); env var overrides it.
+const SHEETS_URL = process.env.GOOGLE_SHEETS_WEBHOOK_URL ||
+  'https://script.google.com/macros/s/AKfycbySaOr1_fa1AlK5NzDLOUdnXLo9km0v6NwSSjJoijoSEVjHpsEqvmNBjL_cem48qnFPdQ/exec';
+
 const hits = new Map();
 function limited(ip) {
   const now = Date.now();
@@ -23,9 +27,9 @@ export async function POST(req) {
   const text = `New call request (website chatbot)\nPhone: ${record.phone}\nGrade: ${record.grade}\nPreferred date: ${record.date}\nPreferred time: ${record.time}\nPage: ${record.page}\nSubmitted: ${record.submittedAt}`;
   const tasks = [];
 
-  if (process.env.GOOGLE_SHEETS_WEBHOOK_URL) {
+  if (SHEETS_URL) {
     // Apps Script web apps answer POST with a 302 to script.googleusercontent.com; follow it and check the JSON result.
-    tasks.push(fetch(process.env.GOOGLE_SHEETS_WEBHOOK_URL, {
+    tasks.push(fetch(SHEETS_URL, {
       method: 'POST', redirect: 'follow',
       headers: { 'Content-Type': 'text/plain;charset=utf-8' },
       body: JSON.stringify({ ...record, secret: process.env.GOOGLE_SHEETS_SECRET || '' }),

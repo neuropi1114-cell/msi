@@ -43,7 +43,7 @@ function limited(ip) {
 
 function getModel() {
   const name = process.env.CHAT_MODEL || 'openai/gpt-4o-mini';
-  if (process.env.AI_GATEWAY_API_KEY || process.env.VERCEL_OIDC_TOKEN) return name; // Vercel AI Gateway
+  if (process.env.AI_GATEWAY_API_KEY) return name; // AI Gateway (string model id)
   if (process.env.OPENAI_API_KEY) return createOpenAI({ apiKey: process.env.OPENAI_API_KEY })(name.replace(/^openai\//, ''));
   return null;
 }

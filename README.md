@@ -91,16 +91,20 @@ For inquiries, reach out at: neuropi1114@gmail.com
 
 ## AI chatbot
 
-A floating "Ask us anything" chat widget (`src/components/chat/ChatWidget.jsx`, mounted in `src/app/layout.jsx`) streams answers from `POST /api/chat/` (`src/app/api/chat/route.js`) via the Vercel AI SDK.
+A floating "Ask us anything" chat widget (`src/components/chat/ChatWidget.jsx`, mounted in `src/app/layout.jsx`) streams answers from `POST /api/chat/` (`src/app/api/chat/route.js`) via the open-source AI SDK (`ai` npm package) when an AI key is set; otherwise by the free local engine.
 
 Answers are grounded in site content: `scripts/build-chat-knowledge.mjs` extracts text from pages/data into `src/data/chat-knowledge.json` (runs automatically in `npm run build`). Unknown details (e.g. fees) are redirected to WhatsApp / phone / email.
 
-Environment variables (set in Vercel → Project → Settings → Environment Variables; never commit them):
+Hosting: AWS Amplify (connected to GitHub, Next.js SSR). Optional overrides go in **AWS Amplify Console > the app > Hosting > Environment variables**, followed by a redeploy.
+
+Note: Amplify does not expose console env vars to Next.js API routes at runtime, so `amplify.yml` writes the chatbot variables below into `.env.production` during the build. A change in the console only takes effect after a new deployment.
+
+All variables are optional:
 
 | Variable | Required | Notes |
 | --- | --- | --- |
-| `AI_GATEWAY_API_KEY` | one of these | Vercel AI Gateway key (preferred). On Vercel, OIDC auth also works without it. |
-| `OPENAI_API_KEY` | one of these | Used directly with OpenAI if no gateway key is set. |
+| `AI_GATEWAY_API_KEY` | optional | AI Gateway key, only if you choose to use a paid LLM. |
+| `OPENAI_API_KEY` | optional | Used directly with OpenAI if no gateway key is set. |
 | `CHAT_MODEL` | optional | Default `openai/gpt-4o-mini`. |
 
 **Free by default:** without any AI key, typed questions are answered by a built-in local engine (`src/components/chat/localEngine.js`): curated FAQ intents with typo-tolerant keyword matching, plus TF-IDF search over site content. No paid service is used. Fee/pricing questions are always redirected to the admissions team. Setting an AI key is optional and switches typed questions to the LLM. Limits: 500 chars per message, last 12 messages, ~10 requests/minute per IP (best effort, per instance).
@@ -111,13 +115,13 @@ After each answer the bot offers to arrange a call; it collects phone (Indian or
 
 | Variable | Notes |
 | --- | --- |
-| `GOOGLE_SHEETS_WEBHOOK_URL` | Google Apps Script web app URL; appends each request to the `Admissions` sheet (free, see below). |
+| `GOOGLE_SHEETS_WEBHOOK_URL` | Google Apps Script web app URL; appends each request to the `Admissions` sheet (free, see below). **Defaults to the school's deployed script URL in `src/app/api/call-request/route.js` (server-only)**; set this variable to override it. |
 | `GOOGLE_SHEETS_SECRET` | Optional shared secret; must match `SHARED_SECRET` in the script. |
 | `ADMISSIONS_WEBHOOK_URL` | Receives JSON `{text, content, phone, grade, date, time, page, submittedAt}` — works with Slack/Google Chat/Discord incoming webhooks, Zapier, Make, Google Apps Script. |
 | `RESEND_API_KEY` + `ADMISSIONS_EMAIL` | Email via Resend (comma-separate multiple addresses). |
 | `RESEND_FROM` | Optional verified sender, default `onboarding@resend.dev`. |
 
-Any combination may be configured; the visitor sees an error only if every configured channel fails. If none is set, requests are only written to the server logs (Vercel → Logs, search `[call-request]`). Time slots/grades are in `src/components/chat/callRequest.js`.
+Any combination may be configured; the visitor sees an error only if every configured channel fails. If none is set, requests are only written to the server logs (Amplify Console > the app > Hosting > Monitoring / CloudWatch logs, search `[call-request]`). Time slots/grades are in `src/components/chat/callRequest.js`.
 
 ### Saving call requests to Google Sheets (free)
 
@@ -128,7 +132,7 @@ Any combination may be configured; the visitor sees an error only if every confi
 5. Click **Save**, then **Deploy > New deployment**. Choose type **Web app**.
 6. Set **Execute as: Me** and **Who has access: Anyone**, then click **Deploy** and authorise the requested permissions.
 7. Copy the **Web app URL** (ends with `/exec`).
-8. In Vercel > Project > Settings > Environment Variables, add `GOOGLE_SHEETS_WEBHOOK_URL` = that URL (and `GOOGLE_SHEETS_SECRET` = the same secret, if set). Redeploy.
+8. The school's web app URL is already set as the default in `src/app/api/call-request/route.js`, so no console step is needed. To use a different sheet, either change that default in GitHub, or in **AWS Amplify Console > the app > Hosting > Environment variables** add `GOOGLE_SHEETS_WEBHOOK_URL` (and `GOOGLE_SHEETS_SECRET` if you set one), then redeploy.
 9. Submit a test call request from the chatbot; a row appears in the `Admissions` tab (headers are created automatically) with Status "New".
 
 If you edit the script later, use **Deploy > Manage deployments > Edit > New version** so the same URL keeps working.

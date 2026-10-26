@@ -1,0 +1,20 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - yarn install --frozen-lockfile
+    build:
+      commands:
+        # Amplify console env vars are not available to Next.js SSR/API routes at runtime;
+        # write the chatbot's server-side variables to .env.production before building.
+        - env | grep -E '^(GOOGLE_SHEETS_WEBHOOK_URL|GOOGLE_SHEETS_SECRET|ADMISSIONS_WEBHOOK_URL|RESEND_API_KEY|RESEND_FROM|ADMISSIONS_EMAIL|AI_GATEWAY_API_KEY|OPENAI_API_KEY|CHAT_MODEL)=' >> .env.production || true
+        - yarn build
+  artifacts:
+    baseDirectory: .next
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
+      - .next/cache/**/*
