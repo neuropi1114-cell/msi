@@ -93,6 +93,22 @@ function search(q) {
   }).filter((d) => d.score > 0.6).sort((a, b) => b.score - a.score).slice(0, 2);
 }
 
+function ageAnswer(q) {
+  const m = String(q).toLowerCase().match(/(\d+(?:\.\d+)?)\s*(?:-|\s)?\s*(years?|yrs?|yr|months?|mons?|mths?|days?)\b/);
+  if (!m) return null;
+  const n = parseFloat(m[1]); const u = m[2][0];
+  const months = u === 'd' ? n / 30 : u === 'm' ? n : n * 12;
+  if (months < 1.5) return 'Our Baby Crèche welcomes babies from 45 days of age. Our admissions team can advise on the right start date for your baby. Details: ' + SITE + '/programs/';
+  let p;
+  if (months < 18) p = 'Baby Crèche';
+  else if (months < 30) p = 'Pre-Nursery / Toddler (Playgroup)';
+  else if (months < 42) p = 'Nursery';
+  else if (months < 54) p = 'Kindergarten 1 (Junior KG)';
+  else if (months < 72) p = 'Kindergarten 2 (Senior KG)';
+  else return 'Our early-years programmes run up to Kindergarten 2, and we also offer After-School and Enrichment programmes for older children. Our admissions team will be glad to advise. Details: ' + SITE + '/programs/';
+  return `For a child of that age, our ${p} programme is usually the best fit. Full Daycare and Extended Care can be added if you need longer hours. Final placement is confirmed by our admissions team after understanding your child. Details: ${SITE}/programs/`;
+}
+
 export function localAnswer(question) {
   const q = String(question || '').slice(0, 500);
   const qn = norm(q);
@@ -101,6 +117,12 @@ export function localAnswer(question) {
 
   if (all.some((t) => FEE_WORDS.some((f) => tokMatch(t, f) && f.length >= 4 || t === f)))
     return 'Thank you for your interest. Our admissions team will be happy to assist you with that and share the details relevant to your child and preferred centre. I can arrange a call with them at a time convenient for you.';
+
+  const age = ageAnswer(q);
+  if (age) {
+    const wantsTime = /timing|time|hour|open|close|schedule/i.test(q);
+    return age + (wantsTime ? '\n\n' + INTENTS.find((i) => i.id === 'timings').a() : '');
+  }
 
   let best = null;
   for (const it of INTENTS) {
