@@ -88,3 +88,19 @@ The site is statically prerendered (SSG) with all SEO metadata baked into the HT
 ## Contact
 
 For inquiries, reach out at: neuropi1114@gmail.com
+
+## AI chatbot
+
+A floating "Ask us anything" chat widget (`src/components/chat/ChatWidget.jsx`, mounted in `src/app/layout.jsx`) streams answers from `POST /api/chat/` (`src/app/api/chat/route.js`) via the Vercel AI SDK.
+
+Answers are grounded in site content: `scripts/build-chat-knowledge.mjs` extracts text from pages/data into `src/data/chat-knowledge.json` (runs automatically in `npm run build`). Unknown details (e.g. fees) are redirected to WhatsApp / phone / email.
+
+Environment variables (set in Vercel → Project → Settings → Environment Variables; never commit them):
+
+| Variable | Required | Notes |
+| --- | --- | --- |
+| `AI_GATEWAY_API_KEY` | one of these | Vercel AI Gateway key (preferred). On Vercel, OIDC auth also works without it. |
+| `OPENAI_API_KEY` | one of these | Used directly with OpenAI if no gateway key is set. |
+| `CHAT_MODEL` | optional | Default `openai/gpt-4o-mini`. |
+
+Without a key the widget still shows and replies with the school's contact details. Limits: 500 chars per message, last 12 messages, ~10 requests/minute per IP (best effort, per instance).
