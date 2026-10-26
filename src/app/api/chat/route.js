@@ -1,6 +1,7 @@
 import { streamText } from 'ai';
 import { createOpenAI } from '@ai-sdk/openai';
 import knowledge from '../../../data/chat-knowledge.json';
+import { localAnswer } from '../../../components/chat/localEngine';
 
 export const runtime = 'nodejs';
 export const maxDuration = 30;
@@ -63,15 +64,14 @@ export async function POST(req) {
   if (!messages.length || messages.at(-1).role !== 'user') return text('Please type a question.', 400);
 
   const model = getModel();
-  if (!model) {
-    return text(`Our chat assistant isn't available right now. Please reach us on WhatsApp (https://wa.me/917075947070), call +91 70939 04680, or email info@myschoolitaly.com.`, 503);
-  }
+  const question = messages.at(-1).content;
+  if (!model) return text(localAnswer(question)); // free local engine (default)
 
   try {
     const result = streamText({ model, system: SYSTEM, messages, maxOutputTokens: 400, temperature: 0.3 });
     return result.toTextStreamResponse();
   } catch (e) {
     console.error('chat error', e);
-    return text('Sorry, something went wrong. Please contact us on WhatsApp: https://wa.me/917075947070', 500);
+    return text(localAnswer(question));
   }
 }

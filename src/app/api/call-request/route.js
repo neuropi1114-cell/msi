@@ -19,10 +19,22 @@ export async function POST(req) {
   const { data, error } = validateRequest(body);
   if (error) return Response.json({ ok: false, error }, { status: 400 });
 
-  const record = { ...data, page: String(body.page || '').slice(0, 200), submittedAt: new Date().toISOString() };
+  const record = { ...data, name: String(body.name || '').slice(0, 80), page: String(body.page || '').slice(0, 200), submittedAt: new Date().toISOString() };
   const text = `New call request (website chatbot)\nPhone: ${record.phone}\nGrade: ${record.grade}\nPreferred date: ${record.date}\nPreferred time: ${record.time}\nPage: ${record.page}\nSubmitted: ${record.submittedAt}`;
   const tasks = [];
 
+  if (process.env.GOOGLE_SHEETS_WEBHOOK_URL) {
+    // Apps Script web apps answer POST with a 302 to script.googleusercontent.com; follow it and check the JSON result.
+    tasks.push(fetch(process.env.GOOGLE_SHEETS_WEBHOOK_URL, {
+      method: 'POST', redirect: 'follow',
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify({ ...record, secret: process.env.GOOGLE_SHEETS_SECRET || '' }),
+      signal: AbortSignal.timeout(15000),
+    }).then(async (r) => {
+      const j = await r.json().catch(() => null);
+      if (!r.ok || !j?.ok) throw new Error('sheets ' + r.status + ' ' + (j?.error || 'bad response'));
+    }));
+  }
   if (process.env.ADMISSIONS_WEBHOOK_URL) {
     // JSON body works with Slack/Google Chat/Discord ("text"/"content") and generic webhooks (Zapier, Make, Apps Script).
     tasks.push(fetch(process.env.ADMISSIONS_WEBHOOK_URL, {
@@ -45,7 +57,7 @@ export async function POST(req) {
 
   console.log('[call-request]', JSON.stringify(record));
   if (!tasks.length) {
-    console.warn('[call-request] No ADMISSIONS_WEBHOOK_URL or RESEND_API_KEY+ADMISSIONS_EMAIL configured; request only logged.');
+    console.warn('[call-request] No GOOGLE_SHEETS_WEBHOOK_URL, ADMISSIONS_WEBHOOK_URL or RESEND_API_KEY+ADMISSIONS_EMAIL configured; request only logged.');
     return Response.json({ ok: true, delivered: false });
   }
   const results = await Promise.allSettled(tasks);
