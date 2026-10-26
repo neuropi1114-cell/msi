@@ -2,14 +2,15 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { MessageCircle, X, Send } from 'lucide-react';
+import { usePathname } from 'next/navigation';
 import { GRADES, TIME_SLOTS, normalizePhone, todayISO, validateDate } from './callRequest';
 
 const MAX_CHARS = 500;
-const WELCOME_SHORT = '👋 Welcome to MySchool Italy!';
-const WELCOME = "👋 Welcome to MySchool Italy!\n\nWe're happy to help you!\n\nI can assist you with school information, admissions, available grades, and scheduling a call.\n\nHow can I help you today?";
-const SUGGESTIONS = ['📚 What grades are available?', '🏫 How can I apply for admission?', '💰 What are the school fees?', '📞 Can I speak with an admission counsellor?'];
-const ASK_CALL = '📞 Would you like me to arrange a call with our admissions team?';
-const NO_THANKS = "😊 No problem! Feel free to ask me any questions about MySchool Italy. I'm here to help!";
+const WELCOME_SHORT = 'Welcome to My School ITALY. How may we assist you?';
+const WELCOME = 'Welcome to My School ITALY.\n\nI can assist you with information about our school, admissions, available programmes, and scheduling a call with our admissions team.\n\nHow may we assist you today?';
+const SUGGESTIONS = ['What grades are available?', 'How can I apply for admission?', 'What are the school fees?', 'Can I speak with an admissions counsellor?'];
+const ASK_CALL = 'Would you like us to arrange a call with our admissions team?';
+const NO_THANKS = "Certainly. Please feel free to ask any questions about My School ITALY.";
 
 function Linkify({ text }) {
   return text.split(/(https?:\/\/[^\s)]+)/g).map((part, i) =>
@@ -24,6 +25,7 @@ const Chip = ({ children, onClick, disabled }) => (
 );
 
 export default function ChatWidget() {
+  const pathname = usePathname();
   const [visible, setVisible] = useState(false);
   const [teaser, setTeaser] = useState(true);
   const [open, setOpen] = useState(false);
@@ -75,25 +77,25 @@ export default function ChatWidget() {
         setMessages([...history, { role: 'assistant', content: acc, chat: true }]);
       }
     } catch { /* fall through */ }
-    if (!acc) acc = 'Sorry, I could not answer that right now. Please reach us on WhatsApp: https://wa.me/917075947070';
+    if (!acc) acc = 'I am unable to answer that at the moment. Please reach us on WhatsApp: https://wa.me/917075947070';
     setMessages([...history, { role: 'assistant', content: acc, chat: true }, bot(ASK_CALL, 'askCall')]);
     setStage('askCall');
     setBusy(false);
   }
 
   function answerCall(yes) {
-    push({ role: 'user', content: yes ? '✅ Yes, Arrange a Call' : '❌ No, Thank You' });
-    if (yes) { setLead({}); setStage('phone'); push(bot('📱 Please enter your phone number.')); }
+    push({ role: 'user', content: yes ? 'Yes, arrange a call' : 'No, thank you' });
+    if (yes) { setLead({}); setStage('phone'); push(bot('Please enter your phone number.')); }
     else { setStage('chat'); push(bot(NO_THANKS, 'suggestions')); }
   }
 
   function submitPhone(v) {
     push({ role: 'user', content: v });
     const phone = normalizePhone(v);
-    if (!phone) return push(bot('⚠️ That doesn\'t look like a valid number. Please enter a 10-digit Indian mobile number (e.g. 98765 43210) or an international number starting with + and country code.'));
+    if (!phone) return push(bot('The number entered does not appear to be valid. Please enter a 10-digit Indian mobile number (e.g. 98765 43210) or an international number starting with + and country code.'));
     setLead((l) => ({ ...l, phone }));
     setStage('grade');
-    push(bot('📚 Which grade are you interested in?', 'grade'));
+    push(bot('Which grade or programme are you interested in?', 'grade'));
   }
 
   function submitGrade(v) {
@@ -103,15 +105,15 @@ export default function ChatWidget() {
     setLead((l) => ({ ...l, grade }));
     setStage('date');
     setDate('');
-    push(bot('📅 Please select your preferred date for the call.', 'date'));
+    push(bot('Please select your preferred date for the call.', 'date'));
   }
 
   function submitDate() {
-    if (!date || date < todayISO() || !validateDate(date)) return push(bot('⚠️ Please choose a date from today onwards (within the next 3 months).', 'date'));
+    if (!date || date < todayISO() || !validateDate(date)) return push(bot('Please select a date from today onwards, within the next three months.', 'date'));
     push({ role: 'user', content: fmtDate(date) });
     setLead((l) => ({ ...l, date }));
     setStage('time');
-    push(bot('⏰ Please select your preferred time.', 'time'));
+    push(bot('Please select your preferred time.', 'time'));
   }
 
   function availableSlots(d) {
@@ -125,7 +127,7 @@ export default function ChatWidget() {
   }
 
   async function submitTime(time) {
-    if (!availableSlots(lead.date).includes(time)) return push(bot('⚠️ Please pick one of the available time slots.', 'time'));
+    if (!availableSlots(lead.date).includes(time)) return push(bot('Please select one of the available time slots.', 'time'));
     push({ role: 'user', content: time });
     const req = { ...lead, time };
     setStage('submitting');
@@ -133,10 +135,10 @@ export default function ChatWidget() {
       const res = await fetch('/api/call-request/', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ ...req, page: window.location.pathname }) });
       const j = await res.json().catch(() => ({}));
       if (!res.ok || !j.ok) throw new Error(j.error || 'failed');
-      push(bot(`✅ Thank you! Your call request has been submitted successfully.\n\nYour Details:\n📱 Phone Number: ${req.phone}\n📚 Grade: ${req.grade}\n📅 Preferred Date: ${fmtDate(req.date)}\n⏰ Preferred Time: ${req.time}\n\nOur admissions team will contact you to confirm your appointment.`));
+      push(bot(`Thank you. Your call request has been submitted successfully.\n\nYour details:\nPhone number: ${req.phone}\nGrade: ${req.grade}\nPreferred date: ${fmtDate(req.date)}\nPreferred time: ${req.time}\n\nOur admissions team will contact you to confirm your appointment.`));
       setStage('chat');
     } catch {
-      push(bot('⚠️ Sorry, we couldn\'t submit your request right now. Please try another time slot, or reach us on WhatsApp: https://wa.me/917075947070 / call +91 70939 04680.', 'time'));
+      push(bot('We were unable to submit your request at this time. Please try another time slot, or reach us on WhatsApp: https://wa.me/917075947070 / call +91 70939 04680.', 'time'));
       setStage('time');
     }
   }
@@ -159,7 +161,7 @@ export default function ChatWidget() {
     if (i !== last || !m.ui) return null;
     if (m.ui === 'suggestions') return <div className="flex flex-wrap gap-2 pt-2">{SUGGESTIONS.map((s) => <Chip key={s} disabled={busy} onClick={() => ask(s)}>{s}</Chip>)}</div>;
     if (m.ui === 'askCall' && stage === 'askCall') return (
-      <div className="flex flex-wrap gap-2 pt-2"><Chip onClick={() => answerCall(true)}>✅ Yes, Arrange a Call</Chip><Chip onClick={() => answerCall(false)}>❌ No, Thank You</Chip></div>
+      <div className="flex flex-wrap gap-2 pt-2"><Chip onClick={() => answerCall(true)}>Yes, arrange a call</Chip><Chip onClick={() => answerCall(false)}>No, thank you</Chip></div>
     );
     if (m.ui === 'grade' && stage === 'grade') return <div className="flex flex-wrap gap-2 pt-2">{GRADES.map((g) => <Chip key={g} onClick={() => submitGrade(g)}>{g}</Chip>)}</div>;
     if (m.ui === 'date' && stage === 'date') return (
@@ -171,7 +173,7 @@ export default function ChatWidget() {
     if (m.ui === 'time' && stage === 'time') {
       const slots = availableSlots(lead.date);
       return slots.length ? <div className="flex flex-wrap gap-2 pt-2">{slots.map((s) => <Chip key={s} onClick={() => submitTime(s)}>{s}</Chip>)}</div>
-        : <div className="pt-2 text-xs">No slots left today. <button className="underline text-msi-blue" onClick={() => { setStage('date'); push(bot('📅 Please select your preferred date for the call.', 'date')); }}>Pick another date</button></div>;
+        : <div className="pt-2 text-xs">No slots left today. <button className="underline text-msi-blue" onClick={() => { setStage('date'); push(bot('Please select your preferred date for the call.', 'date')); }}>Pick another date</button></div>;
     }
     return null;
   }
@@ -179,7 +181,7 @@ export default function ChatWidget() {
   if (!visible) return null;
 
   return (
-    <div className="fixed bottom-4 right-4 z-[9999] font-lato flex flex-col items-end">
+    <div className={`fixed ${pathname === '/' ? 'bottom-20' : 'bottom-4'} right-4 z-[9999] font-lato flex flex-col items-end`}>
       {open ? (
         <div className="mb-3 flex flex-col w-[calc(100vw-2rem)] sm:w-[370px] h-[70vh] sm:h-[540px] max-h-[620px] bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden" role="dialog" aria-label="My School ITALY chat assistant">
           <div className="flex items-center justify-between px-4 py-3 bg-msi-purple text-white">

@@ -20,7 +20,7 @@ export async function POST(req) {
   if (error) return Response.json({ ok: false, error }, { status: 400 });
 
   const record = { ...data, page: String(body.page || '').slice(0, 200), submittedAt: new Date().toISOString() };
-  const text = `📞 New call request (website chatbot)\nPhone: ${record.phone}\nGrade: ${record.grade}\nPreferred date: ${record.date}\nPreferred time: ${record.time}\nPage: ${record.page}\nSubmitted: ${record.submittedAt}`;
+  const text = `New call request (website chatbot)\nPhone: ${record.phone}\nGrade: ${record.grade}\nPreferred date: ${record.date}\nPreferred time: ${record.time}\nPage: ${record.page}\nSubmitted: ${record.submittedAt}`;
   const tasks = [];
 
   if (process.env.ADMISSIONS_WEBHOOK_URL) {
