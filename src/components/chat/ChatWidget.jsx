@@ -20,8 +20,8 @@ function Linkify({ text }) {
   );
 }
 
-const Chip = ({ children, onClick, disabled }) => (
-  <button type="button" disabled={disabled} onClick={onClick} className="text-xs text-left border border-msi-orange text-msi-orange bg-white rounded-full px-3 py-1.5 hover:bg-msi-orange hover:text-white transition disabled:opacity-40">{children}</button>
+const Chip = ({ children, onClick, disabled, type = 'button' }) => (
+  <button type={type} disabled={disabled} onClick={onClick} className="text-xs text-left border border-msi-orange text-msi-orange bg-white rounded-full px-3 py-1.5 hover:bg-msi-orange hover:text-white transition disabled:opacity-40">{children}</button>
 );
 
 export default function ChatWidget() {
@@ -35,6 +35,7 @@ export default function ChatWidget() {
   const [input, setInput] = useState('');
   const [busy, setBusy] = useState(false);
   const [date, setDate] = useState('');
+  const [gradeSel, setGradeSel] = useState('');
   const endRef = useRef(null);
   const msgsRef = useRef([]);
   msgsRef.current = messages;
@@ -154,8 +155,8 @@ export default function ChatWidget() {
   }
 
   const last = messages.length - 1;
-  const placeholder = { phone: 'Enter phone number…', grade: 'Or type a grade…' }[stage] || 'Type your question…';
-  const inputDisabled = busy || ['date', 'time', 'submitting'].includes(stage);
+  const placeholder = { phone: 'Enter phone number…', grade: 'Select a grade / programme above' }[stage] || 'Type your question…';
+  const inputDisabled = busy || ['grade', 'date', 'time', 'submitting'].includes(stage);
 
   function renderUi(m, i) {
     if (i !== last || !m.ui) return null;
@@ -163,7 +164,16 @@ export default function ChatWidget() {
     if (m.ui === 'askCall' && stage === 'askCall') return (
       <div className="flex flex-wrap gap-2 pt-2"><Chip onClick={() => answerCall(true)}>Yes, arrange a call</Chip><Chip onClick={() => answerCall(false)}>No, thank you</Chip></div>
     );
-    if (m.ui === 'grade' && stage === 'grade') return <div className="flex flex-wrap gap-2 pt-2">{GRADES.map((g) => <Chip key={g} onClick={() => submitGrade(g)}>{g}</Chip>)}</div>;
+    if (m.ui === 'grade' && stage === 'grade') return (
+      <form className="flex gap-2 pt-2 items-center w-full max-w-[88%]" onSubmit={(e) => { e.preventDefault(); if (GRADES.includes(gradeSel)) { submitGrade(gradeSel); setGradeSel(''); } }}>
+        <select required value={gradeSel} onChange={(e) => setGradeSel(e.target.value)} aria-label="Grade / Programme"
+          className="flex-1 min-w-0 text-sm bg-white border border-gray-300 rounded-lg px-2 py-1.5 text-gray-800 focus:outline-none focus:border-msi-blue">
+          <option value="" disabled>Select grade / programme</option>
+          {GRADES.map((g) => <option key={g} value={g}>{g}</option>)}
+        </select>
+        <Chip type="submit" disabled={!gradeSel}>Continue</Chip>
+      </form>
+    );
     if (m.ui === 'date' && stage === 'date') return (
       <div className="flex gap-2 pt-2 items-center">
         <input type="date" min={todayISO()} value={date} onChange={(e) => setDate(e.target.value)} className="text-sm border border-gray-300 rounded-lg px-2 py-1" aria-label="Preferred date" />
