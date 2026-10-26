@@ -36,6 +36,8 @@ function extract(src) {
     .map((s) => s.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim())
     .filter((s) => /\s/.test(s) && /[a-zA-Z]{3}/.test(s))
     .filter((s) => !/[=\[\]{}]|\b(object|w|h|max|min|mb|mt|translate|shadow)-/.test(s))
+    // Keep fee/pricing content out of the chatbot entirely.
+    .filter((s) => !/\b(fees?|pric(e|es|ing)|costs?|discounts?|subsid(y|ies|ised|ized)|tuition|₹|INR|rupees?)\b/i.test(s))
     .filter((s) => !/^(use |import|export|https?:|\/|\.|#)|className|\b(px|py|text|bg|flex|grid|rounded|md|lg):?-/.test(s));
 }
 

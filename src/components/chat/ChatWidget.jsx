@@ -8,7 +8,7 @@ import { GRADES, TIME_SLOTS, normalizePhone, todayISO, validateDate } from './ca
 const MAX_CHARS = 500;
 const WELCOME_SHORT = 'Welcome to My School ITALY. How may we assist you?';
 const WELCOME = 'Welcome to My School ITALY.\n\nI can assist you with information about our school, admissions, available programmes, and scheduling a call with our admissions team.\n\nHow may we assist you today?';
-const SUGGESTIONS = ['What grades are available?', 'How can I apply for admission?', 'What are the school fees?', 'Can I speak with an admissions counsellor?'];
+const SUGGESTIONS = ['What grades are available?', 'How can I apply for admission?', 'Where are your centres located?', 'Can I speak with an admissions counsellor?'];
 const ASK_CALL = 'Would you like us to arrange a call with our admissions team?';
 const NO_THANKS = "Certainly. Please feel free to ask any questions about My School ITALY.";
 
