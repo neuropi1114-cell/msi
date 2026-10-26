@@ -1,4 +1,5 @@
-import { streamText } from 'ai';
+import { streamText, generateText } from 'ai';
+import { createGoogleGenerativeAI } from '@ai-sdk/google';
 import { createOpenAI } from '@ai-sdk/openai';
 import knowledge from '../../../data/chat-knowledge.json';
 import { localAnswer } from '../../../components/chat/localEngine';
@@ -41,6 +42,15 @@ function limited(ip) {
   return recent.length > RATE_LIMIT.max;
 }
 
+const GEMINI_KEY = () => process.env.GEMINI_API_KEY || process.env.GOOGLE_GENERATIVE_AI_API_KEY;
+
+function getGemini() {
+  const key = GEMINI_KEY();
+  if (!key) return null;
+  const name = (process.env.CHAT_MODEL || 'gemini-2.5-flash').replace(/^google\//, '');
+  return createGoogleGenerativeAI({ apiKey: key })(name);
+}
+
 function getModel() {
   const name = process.env.CHAT_MODEL || 'openai/gpt-4o-mini';
   if (process.env.AI_GATEWAY_API_KEY) return name; // AI Gateway (string model id)
@@ -63,8 +73,24 @@ export async function POST(req) {
     .map((m) => ({ role: m.role, content: m.content.slice(0, MAX_MESSAGE_CHARS) }));
   if (!messages.length || messages.at(-1).role !== 'user') return text('Please type a question.', 400);
 
-  const model = getModel();
   const question = messages.at(-1).content;
+
+  // Free Gemini path (preferred when a key is set). Non-streaming so any error or
+  // rate limit (429) is caught and we fall back to the local engine.
+  const gemini = getGemini();
+  if (gemini) {
+    try {
+      const { text: answer } = await generateText({
+        model: gemini, system: SYSTEM, messages, maxOutputTokens: 400, temperature: 0.3, maxRetries: 1,
+      });
+      if (answer && answer.trim()) return text(answer.trim());
+    } catch (e) {
+      console.error('gemini error', e?.statusCode || '', e?.message || e);
+    }
+    return text(localAnswer(question));
+  }
+
+  const model = getModel();
   if (!model) return text(localAnswer(question)); // free local engine (default)
 
   try {
