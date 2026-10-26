@@ -179,7 +179,7 @@ export default function ChatWidget() {
   if (!visible) return null;
 
   return (
-    <div className="fixed bottom-4 left-4 z-[9999] font-lato flex flex-col items-start">
+    <div className="fixed bottom-4 right-4 z-[9999] font-lato flex flex-col items-end">
       {open ? (
         <div className="mb-3 flex flex-col w-[calc(100vw-2rem)] sm:w-[370px] h-[70vh] sm:h-[540px] max-h-[620px] bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden" role="dialog" aria-label="My School ITALY chat assistant">
           <div className="flex items-center justify-between px-4 py-3 bg-msi-purple text-white">
@@ -210,11 +210,11 @@ export default function ChatWidget() {
         </div>
       ) : teaser && (
         <div className="mb-3 max-w-[calc(100vw-2rem)] sm:max-w-[300px] space-y-2">
-          <div className="relative bg-white shadow-lg rounded-2xl rounded-bl-sm px-4 py-2 text-sm font-semibold text-msi-purple">
+          <div className="relative bg-white shadow-lg rounded-2xl rounded-br-sm px-4 py-2 text-sm font-semibold text-msi-purple">
             <button onClick={() => openChat()} className="text-left">{WELCOME_SHORT}</button>
             <button onClick={() => setTeaser(false)} aria-label="Dismiss" className="absolute -top-2 -right-2 bg-white shadow rounded-full p-0.5 text-gray-500"><X size={12} /></button>
           </div>
-          <div className="flex flex-col items-start gap-1.5">
+          <div className="flex flex-col items-end gap-1.5">
             {SUGGESTIONS.map((s) => <Chip key={s} onClick={() => openChat(s)}>{s}</Chip>)}
           </div>
         </div>
