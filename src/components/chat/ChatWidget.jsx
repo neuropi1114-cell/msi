@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import { MessageCircle, X, Send } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 import { GRADES, TIME_SLOTS, normalizePhone, todayISO, validateDate } from './callRequest';
+import { parseMarkdown } from './markdown';
 
 const MAX_CHARS = 500;
 const WELCOME_SHORT = 'Welcome to My School ITALY. How may we assist you?';
@@ -12,12 +13,16 @@ const SUGGESTIONS = ['What grades are available?', 'How can I apply for admissio
 const ASK_CALL = 'Would you like us to arrange a call with our admissions team?';
 const NO_THANKS = "Certainly. Please feel free to ask any questions about My School ITALY.";
 
-function Linkify({ text }) {
-  return text.split(/(https?:\/\/[^\s)]+)/g).map((part, i) =>
-    /^https?:\/\//.test(part) ? (
-      <a key={i} href={part} target="_blank" rel="noopener noreferrer" className="underline text-msi-blue break-all">{part}</a>
-    ) : (<span key={i}>{part}</span>)
-  );
+function Inline({ tokens }) {
+  return tokens.map((t, i) => t.type === 'link' ? (
+    <a key={i} href={t.href} target="_blank" rel="noopener noreferrer" className="underline text-msi-blue break-all">{t.text}</a>
+  ) : t.type === 'bold' ? <strong key={i}>{t.text}</strong> : t.type === 'italic' ? <em key={i}>{t.text}</em> : <span key={i}>{t.text}</span>);
+}
+
+function Markdown({ text }) {
+  return parseMarkdown(text).map((b, i) => b.type === 'gap' ? <div key={i} className="h-2" /> : b.type === 'ul' ? (
+    <ul key={i} className="list-disc pl-5 space-y-0.5">{b.items.map((it, j) => <li key={j}><Inline tokens={it} /></li>)}</ul>
+  ) : (<div key={i}>{b.lines.map((l, j) => <div key={j}><Inline tokens={l} /></div>)}</div>));
 }
 
 const Chip = ({ children, onClick, disabled, type = 'button' }) => (
@@ -204,8 +209,8 @@ export default function ChatWidget() {
           <div className="flex-1 overflow-y-auto px-3 py-3 space-y-2 bg-msi-cream">
             {messages.map((m, i) => (
               <div key={i} className={`flex flex-col ${m.role === 'user' ? 'items-end' : 'items-start'}`}>
-                <div className={`max-w-[88%] whitespace-pre-wrap text-sm px-3 py-2 rounded-2xl ${m.role === 'user' ? 'bg-msi-blue text-white rounded-br-sm' : 'bg-white text-gray-800 shadow-sm rounded-bl-sm'}`}>
-                  {m.content ? <Linkify text={m.content} /> : <span className="animate-pulse">…</span>}
+                <div className={`max-w-[88%] ${m.role === 'user' ? 'whitespace-pre-wrap' : ''} text-sm px-3 py-2 rounded-2xl ${m.role === 'user' ? 'bg-msi-blue text-white rounded-br-sm' : 'bg-white text-gray-800 shadow-sm rounded-bl-sm'}`}>
+                  {m.content ? (m.role === 'user' ? <span>{m.content}</span> : <Markdown text={m.content} />) : <span className="animate-pulse">…</span>}
                 </div>
                 {renderUi(m, i)}
               </div>
