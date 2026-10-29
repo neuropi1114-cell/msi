@@ -1,6 +1,6 @@
 import { Lato, Fredoka } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/react';
-import { GoogleAnalytics } from '@next/third-parties/google';
+import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google';
 import './globals.css';
 import JsonLd from '../components/JsonLd';
 import LocalStorageImageCache from '../components/common/LocalStorageImageCache';
@@ -66,6 +66,7 @@ export default function RootLayout({ children }) {
         <link rel="manifest" href="/manifest.json" />
       </head>
       <body className="text-gray-800 bg-[#f7f9fc] min-h-screen font-lato" suppressHydrationWarning>
+        <GoogleTagManager gtmId="GTM-MZH4W7LP" />
         <GoogleAnalytics gaId="G-WFLXED7JMB" />
         <AnalyticsListener />
         <JsonLd />

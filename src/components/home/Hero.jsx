@@ -91,7 +91,7 @@ const Hero = () => {
       aria-label="Hero banner"
     >
       <h1 className="sr-only">
-        My School ITALY — Neuroscience-Based Preschool and Daycare
+        Preschool & Daycare in Hyderabad – My School ITALY
       </h1>
 
       {/* Grain overlay */}

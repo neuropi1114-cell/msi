@@ -9,7 +9,8 @@ import CentreQuickInfo from '../../components/common/CentreQuickInfo';
 import JsonLd from '../../components/JsonLd';
 import CampusLocationModule from '../../components/common/CampusLocationModule';
 import { HYDERABAD_CAMPUSES } from '../../data/hyderabadCampuses';
-import { centreSchema } from '../../../lib/schema.js';
+import { centreSchema, faqSchema } from '../../../lib/schema.js';
+import { HOMEPAGE_FAQS } from '../../data/faqs.js';
 
 const SITE_URL = 'https://www.myschoolitaly.com';
 const PAGE_URL = `${SITE_URL}/hyderabad/`;
@@ -173,7 +174,7 @@ const hyderabadCentresItemList = {
 export default function HyderabadPage() {
   return (
     <>
-      <JsonLd schema={[hyderabadStructuredData, hyderabadCentresItemList]} />
+      <JsonLd schema={[hyderabadStructuredData, hyderabadCentresItemList, faqSchema(HOMEPAGE_FAQS)]} />
       <TopBar />
       <Header />
 

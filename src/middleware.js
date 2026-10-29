@@ -65,6 +65,56 @@ const PRESERVED_301_REDIRECTS = {
   '/contact-us/': '/contact/',
   '/hitex-msi': '/hitex/',
   '/hitex-msi/': '/hitex/',
+
+  // Admissions & Registration aliases
+  '/enrol': '/admissions/',
+  '/enrol/': '/admissions/',
+  '/new-admission': '/admissions/',
+  '/new-admission/': '/admissions/',
+  '/registration-form': '/admissions/',
+  '/registration-form/': '/admissions/',
+  '/admission': '/admissions/',
+  '/admission/': '/admissions/',
+  '/admissions-form': '/admissions/',
+  '/admissions-form/': '/admissions/',
+  '/online-admission': '/admissions/',
+  '/online-admission/': '/admissions/',
+
+  // Pre-school & Educational Project
+  '/pre-school': '/programs/',
+  '/pre-school/': '/programs/',
+  '/pre-school/the-educational-project': '/neuropi-way/',
+  '/pre-school/the-educational-project/': '/neuropi-way/',
+  '/the-educational-project': '/neuropi-way/',
+  '/the-educational-project/': '/neuropi-way/',
+  '/educational-project': '/neuropi-way/',
+  '/educational-project/': '/neuropi-way/',
+
+  // Centres: Manpada & others
+  '/pre-school/centres/manpada': '/contact/?location=manpada',
+  '/pre-school/centres/manpada/': '/contact/?location=manpada',
+  '/manpada': '/contact/?location=manpada',
+  '/manpada/': '/contact/?location=manpada',
+  '/centres/manpada': '/contact/?location=manpada',
+  '/centres/manpada/': '/contact/?location=manpada',
+  '/pre-school/centres': '/hyderabad/',
+  '/pre-school/centres/': '/hyderabad/',
+  '/centres': '/hyderabad/',
+  '/centres/': '/hyderabad/',
+
+  // Media, Events & Fashion Show
+  '/kids-fashion-fusion-show-2024': '/media-coverage/',
+  '/kids-fashion-fusion-show-2024/': '/media-coverage/',
+  '/fashion-show': '/media-coverage/',
+  '/fashion-show/': '/media-coverage/',
+
+  // Legacy blog redirects
+  '/blog/1': '/spooktacular-halloween-celebration-at-myschoolitaly-hitex/',
+  '/blog/1/': '/spooktacular-halloween-celebration-at-myschoolitaly-hitex/',
+  '/blog/2': '/brain-boosting-activities-you-can-do-at-home/',
+  '/blog/2/': '/brain-boosting-activities-you-can-do-at-home/',
+  '/blog/3': '/what-is-neuroscience-based-early-childhood-education/',
+  '/blog/3/': '/what-is-neuroscience-based-early-childhood-education/',
 };
 
 // Check if the URL is an old WordPress path that must return 410 Gone
@@ -112,6 +162,16 @@ function isOldWordPressUrl(pathname, searchParams) {
     '/author',
     '/cart',
     '/checkout',
+    '/portfolio',
+    '/testimonial',
+    '/testimonials',
+    '/event',
+    '/events',
+    '/gallery',
+    '/sample-page',
+    '/service',
+    '/services',
+    '/attachment',
   ];
   for (const section of wpSections) {
     if (
@@ -157,6 +217,29 @@ export function middleware(request) {
     }
     url.pathname = PRESERVED_301_REDIRECTS[lowerPath];
     url.search = '';
+    return NextResponse.redirect(url, 301);
+  }
+
+  // Fallback for any other /pre-school/* legacy subpaths
+  if (lowerPath.startsWith('/pre-school')) {
+    if (!isLocalhost) {
+      url.host = 'www.myschoolitaly.com';
+      url.protocol = 'https:';
+      url.port = '';
+    }
+    if (lowerPath.startsWith('/pre-school/the-educational-project')) {
+      url.pathname = '/neuropi-way/';
+      url.search = '';
+    } else if (lowerPath.startsWith('/pre-school/centres/manpada')) {
+      url.pathname = '/contact/';
+      url.search = '?location=manpada';
+    } else if (lowerPath.startsWith('/pre-school/centres')) {
+      url.pathname = '/hyderabad/';
+      url.search = '';
+    } else {
+      url.pathname = '/programs/';
+      url.search = '';
+    }
     return NextResponse.redirect(url, 301);
   }
 

@@ -110,4 +110,25 @@ export function centreSchema({
   };
 }
 
+/**
+ * Generates Schema.org JSON-LD structured data for FAQPage rich results.
+ *
+ * @param {Array<{question: string, answer: string}>} faqs
+ * @returns {Object} Schema.org FAQPage object
+ */
+export function faqSchema(faqs = []) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question || faq.q,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer || faq.a,
+      },
+    })),
+  };
+}
+
 export default centreSchema;

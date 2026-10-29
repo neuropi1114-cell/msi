@@ -17,11 +17,17 @@ import GridGallery from '../../components/common/GridGallery';
 import SectionScrollController from '../../components/common/SectionScrollController';
 import CampusLocationModule from '../../components/common/CampusLocationModule';
 import JsonLd from '../../components/JsonLd';
+import { faqSchema } from '../../lib/schema.js';
+import { CENTRE_GENERIC_FAQS } from '../../data/faqs.js';
 
 import { buildPageMetadata } from '../../utils/seo';
 import { centreVideos } from '../whyus/whyusdata';
 
-export const metadata = buildPageMetadata('/qcity/');
+export const metadata = buildPageMetadata('/qcity/', {
+  title: 'Preschool & Daycare in Nanakramguda, Financial District (The Square) | My School ITALY',
+  description:
+    'Neuroscience-informed preschool, daycare, baby crèche and corporate childcare at The Square (Q-City), Nanakramguda, Financial District, Hyderabad. Book a campus tour today.',
+});
 
 const qcitySchema = {
   '@context': 'https://schema.org',
@@ -68,6 +74,7 @@ export default function QCityPage({ activeSlug = null }) {
   return (
     <>
       <JsonLd schema={qcitySchema} />
+      <JsonLd schema={faqSchema(CENTRE_GENERIC_FAQS('The Square (Q-City)', 'Nanakramguda / Financial District'))} />
       <TopBar />
       <Header />
       <SectionScrollController activeSlug={activeSlug} />
@@ -83,11 +90,12 @@ export default function QCityPage({ activeSlug = null }) {
         </CloudHeader>
         <div data-nav-sentinel />
 
-        {/* 2. Section Header */}
+        {/* 2. Section Header with H1 */}
         <SectionHeader
-          title="MY SCHOOL ITALY — THE SQUARE"
-          subtitle={null}
-          description="Beginning With Trust."
+          titleTag="h1"
+          title="PRESCHOOL & DAYCARE IN NANAKRAMGUDA (FINANCIAL DISTRICT)"
+          subtitle="MY SCHOOL ITALY — THE SQUARE (Q-CITY)"
+          description="Beginning With Trust. Neuroscience-informed early education, infant crèche & daycare in The Square Tech Park, serving Financial District, Nanakramguda, and Gachibowli."
           descriptionClassName="text-xl md:text-2xl font-normal"
         />
 
@@ -304,7 +312,14 @@ export default function QCityPage({ activeSlug = null }) {
       <div id="enroll-qcity">
         <ContactUs image="/images/whyus/Why_MSI_Enrol.png" title="BOOK A TOUR AT MSI THE SQUARE" buttonText="BOOK A TOUR AT MSI THE SQUARE" />
       </div>
-      <Footer />
+      <Footer
+        address="The Square Tech Park, Financial District, Nanakramguda, Hyderabad 500032"
+        addressLabel="THE SQUARE (Q-CITY) CAMPUS:"
+        phone="(+91) 70939 04680"
+        phoneHref="tel:+917093904680"
+        email="info@myschoolitaly.com"
+        italyAddress={null}
+      />
     </>
   );
 }

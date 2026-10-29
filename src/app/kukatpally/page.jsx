@@ -12,7 +12,8 @@ import DesignPhilosophy from '../../components/nep/DesignPhilosophy';
 import OneJourneySection from '../../components/programs/OneJourneySection';
 import CampusLocationModule from '../../components/common/CampusLocationModule';
 import JsonLd from '../../components/JsonLd';
-import { centreSchema } from '../../../lib/schema.js';
+import { centreSchema, faqSchema } from '../../../lib/schema.js';
+import { CENTRE_GENERIC_FAQS } from '../../data/faqs.js';
 
 const SITE_URL = 'https://www.myschoolitaly.com';
 const PAGE_URL = `${SITE_URL}/kukatpally/`;
@@ -97,6 +98,7 @@ export default function KukatpallyPage() {
   return (
     <>
       <JsonLd schema={kukatpallyStructuredData} />
+      <JsonLd schema={faqSchema(CENTRE_GENERIC_FAQS('Kukatpally Campus', 'Kukatpally, Hyderabad'))} />
       <TopBar />
       <Header />
 
@@ -221,7 +223,14 @@ export default function KukatpallyPage() {
       <div id="enroll">
         <ContactUs image="/images/whyus/Why_MSI_Enrol.png" title="BOOK A TOUR AT MSI KUKATPALLY" buttonText="BOOK A TOUR" />
       </div>
-      <Footer />
+      <Footer
+        address="Gokul Plots, Venkata Ramana Colony, KPHB Phase 9 / Hafeezpet, Kukatpally, Hyderabad 500085"
+        addressLabel="KUKATPALLY CAMPUS:"
+        phone="(+91) 70939 04680"
+        phoneHref="tel:+917093904680"
+        email="kukatpally@myschoolitaly.com"
+        italyAddress={null}
+      />
     </>
   );
 }

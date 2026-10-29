@@ -12,7 +12,8 @@ import DesignPhilosophy from '../../components/nep/DesignPhilosophy';
 import OneJourneySection from '../../components/programs/OneJourneySection';
 import CampusLocationModule from '../../components/common/CampusLocationModule';
 import JsonLd from '../../components/JsonLd';
-import { centreSchema } from '../../../lib/schema.js';
+import { centreSchema, faqSchema } from '../../../lib/schema.js';
+import { CENTRE_GENERIC_FAQS } from '../../data/faqs.js';
 
 const SITE_URL = 'https://www.myschoolitaly.com';
 const PAGE_URL = `${SITE_URL}/mindspace/`;
@@ -96,6 +97,7 @@ export default function MindspacePage() {
   return (
     <>
       <JsonLd schema={mindspaceStructuredData} />
+      <JsonLd schema={faqSchema(CENTRE_GENERIC_FAQS('Mindspace Campus', 'Madhapur / Mindspace, Hyderabad'))} />
       <TopBar />
       <Header />
 
@@ -220,7 +222,14 @@ export default function MindspacePage() {
       <div id="enroll">
         <ContactUs image="/images/whyus/Why_MSI_Enrol.png" title="BOOK A TOUR AT MSI MINDSPACE" buttonText="BOOK A TOUR" />
       </div>
-      <Footer />
+      <Footer
+        address="KTC Illumination, Mindspace Madhapur Road, opposite Westin Hotel, Vittal Rao Nagar, Madhapur, Hyderabad 500081"
+        addressLabel="MINDSPACE (MADHAPUR) CAMPUS:"
+        phone="(+91) 70939 04680"
+        phoneHref="tel:+917093904680"
+        email="mindspace@myschoolitaly.com"
+        italyAddress={null}
+      />
     </>
   );
 }

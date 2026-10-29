@@ -2,8 +2,9 @@
 // AI chatbot answers from real site content. Run: node scripts/build-chat-knowledge.mjs
 import fs from 'node:fs';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const SOURCES = [
   'src/app/about/page.jsx', 'src/app/admissions/page.jsx', 'src/app/contact/page.jsx',
   'src/app/programs', 'src/app/why-msi', 'src/app/ciao-baby/page.jsx',

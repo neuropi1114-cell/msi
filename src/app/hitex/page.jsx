@@ -19,7 +19,8 @@ import CampusLocationModule from '../../components/common/CampusLocationModule';
 import FaqSection from '../../components/common/FaqSection';
 import JsonLd from '../../components/JsonLd';
 import CentreQuickInfo from '../../components/common/CentreQuickInfo';
-import { centreSchema } from '../../../lib/schema.js';
+import { centreSchema, faqSchema } from '../../../lib/schema.js';
+import { CENTRE_GENERIC_FAQS } from '../../data/faqs.js';
 
 import { centreVideos, whyUsGalleryImages } from '../whyus/whyusdata';
 
@@ -103,6 +104,7 @@ export default function HitexPage({ activeSlug = null }) {
   return (
     <>
       <JsonLd schema={hitexStructuredData} />
+      <JsonLd schema={faqSchema(CENTRE_GENERIC_FAQS('Hitex Campus', 'HITEX, HiTech City, Hyderabad'))} />
       <TopBar />
       <Header />
       <SectionScrollController activeSlug={activeSlug} />
@@ -310,7 +312,14 @@ export default function HitexPage({ activeSlug = null }) {
       <div id="enroll-hitex">
         <ContactUs image="/images/whyus/Why_MSI_Enrol.png" title="BOOK A TOUR AT MSI HITEX" buttonText="BOOK A TOUR AT MSI HITEX" />
       </div>
-      <Footer />
+      <Footer
+        address="Hitex Road, next to HITEX Exhibition Centre Gate, Shilpa Layout, Izzathnagar, Hyderabad 500084"
+        addressLabel="HITEX CAMPUS:"
+        phone="(+91) 70939 04680"
+        phoneHref="tel:+917093904680"
+        email="hitex@myschoolitaly.com"
+        italyAddress={null}
+      />
     </>
   );
 }

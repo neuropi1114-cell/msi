@@ -12,7 +12,8 @@ import DesignPhilosophy from '../../components/nep/DesignPhilosophy';
 import OneJourneySection from '../../components/programs/OneJourneySection';
 import CampusLocationModule from '../../components/common/CampusLocationModule';
 import JsonLd from '../../components/JsonLd';
-import { centreSchema } from '../../../lib/schema.js';
+import { centreSchema, faqSchema } from '../../../lib/schema.js';
+import { CENTRE_GENERIC_FAQS } from '../../data/faqs.js';
 
 const SITE_URL = 'https://www.myschoolitaly.com';
 const PAGE_URL = `${SITE_URL}/kondapur/`;
@@ -97,6 +98,7 @@ export default function KondapurPage() {
   return (
     <>
       <JsonLd schema={kondapurStructuredData} />
+      <JsonLd schema={faqSchema(CENTRE_GENERIC_FAQS('Kondapur Campus', 'Kondapur, Hyderabad'))} />
       <TopBar />
       <Header />
 
@@ -202,7 +204,7 @@ export default function KondapurPage() {
           eyebrow="Find us in Kondapur, Hyderabad"
           campusName="My School ITALY — Kondapur"
           description="Situated at Sumadhura Horizon on Botanical Garden Road, our centre serves families from NCB Enclave, Kondapur, Kothaguda, Whitefields, and Gachibowli."
-          address="Sumadhura Horizon, Botanical Garden Road, Block I, NCB Enclave, Gachibowli, Hyderabad 500084"
+          address="Sumadhura Horizon, Botanical Garden Road, Block I, NCB Enclave, Kondapur, Hyderabad 500084"
           landmark="Sumadhura Horizon, Botanical Garden Road"
           distanceHeading="Drive-Time from Nearby Neighbourhoods"
           distanceBlock={[
@@ -221,7 +223,14 @@ export default function KondapurPage() {
       <div id="enroll">
         <ContactUs image="/images/whyus/Why_MSI_Enrol.png" title="BOOK A TOUR AT MSI KONDAPUR" buttonText="BOOK A TOUR" />
       </div>
-      <Footer />
+      <Footer
+        address="Sumadhura Horizon, Botanical Garden Road, Block I, NCB Enclave, Kondapur, Hyderabad 500084"
+        addressLabel="KONDAPUR CAMPUS:"
+        phone="(+91) 70939 04680"
+        phoneHref="tel:+917093904680"
+        email="kondapur@myschoolitaly.com"
+        italyAddress={null}
+      />
     </>
   );
 }

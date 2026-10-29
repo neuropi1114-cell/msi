@@ -5,7 +5,7 @@ export const kondapurCampusLocation = {
   slug: '/kondapur',
   zone: 'Madhapur & Kondapur',
   description: 'Situated at Sumadhura Horizon on Botanical Garden Road, our centre serves families from NCB Enclave, Kondapur, Kothaguda, Whitefields, and Gachibowli.',
-  address: 'Sumadhura Horizon, Botanical Garden Road, Block I, NCB Enclave, Gachibowli, Hyderabad 500084',
+  address: 'Sumadhura Horizon, Botanical Garden Road, Block I, NCB Enclave, Kondapur, Hyderabad 500084',
   landmark: 'Sumadhura Horizon, Botanical Garden Road',
   nearby: ['NCB Enclave', 'Botanical Garden Road', 'Kondapur', 'Kothaguda', 'Whitefields'],
   driveTimes: [

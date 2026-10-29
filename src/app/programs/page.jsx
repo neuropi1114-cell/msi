@@ -42,8 +42,9 @@ export default function ProgramsPage({ activeSlug = null }) {
         <div data-nav-sentinel />
 
         <SectionHeader
-          title="From 45 Days to the Growing Years"
-          subtitle="One Continuous Journey."
+          titleTag="h1"
+          title="PRESCHOOL & DAYCARE PROGRAMS IN HYDERABAD"
+          subtitle="From 45 Days to the Growing Years — One Continuous Journey."
           description={
             <>
               Through Baby Crèche, Toddler, Nursery, Kindergarten, Daycare,<br />

@@ -22,10 +22,14 @@ import Blogs from '../components/home/Blogs';
 import StepIntoADay from '../components/home/StepIntoADay';
 import Footer from '../components/layout/Footer';
 import ContactUs from '../components/common/ContactUs';
+import JsonLd from '../components/JsonLd';
+import { faqSchema } from '../lib/schema.js';
+import { HOMEPAGE_FAQS } from '../data/faqs.js';
 
 export default function HomePage() {
   return (
     <>
+      <JsonLd schema={faqSchema(HOMEPAGE_FAQS)} />
       {/* Third-party analytics script removed for local deployment */}
       <TopBar />
       <Header />

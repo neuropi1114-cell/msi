@@ -219,6 +219,111 @@ const nextConfig = {
         destination: '/hyderabad/',
         permanent: true,
       },
+      {
+        source: '/enrol',
+        destination: '/admissions/',
+        permanent: true,
+      },
+      {
+        source: '/enrol/:path*',
+        destination: '/admissions/',
+        permanent: true,
+      },
+      {
+        source: '/new-admission',
+        destination: '/admissions/',
+        permanent: true,
+      },
+      {
+        source: '/new-admission/:path*',
+        destination: '/admissions/',
+        permanent: true,
+      },
+      {
+        source: '/registration-form',
+        destination: '/admissions/',
+        permanent: true,
+      },
+      {
+        source: '/registration-form/:path*',
+        destination: '/admissions/',
+        permanent: true,
+      },
+      {
+        source: '/pre-school/the-educational-project',
+        destination: '/neuropi-way/',
+        permanent: true,
+      },
+      {
+        source: '/pre-school/the-educational-project/:path*',
+        destination: '/neuropi-way/',
+        permanent: true,
+      },
+      {
+        source: '/pre-school/centres/manpada',
+        destination: '/contact/?location=manpada',
+        permanent: true,
+      },
+      {
+        source: '/pre-school/centres/manpada/:path*',
+        destination: '/contact/?location=manpada',
+        permanent: true,
+      },
+      {
+        source: '/manpada',
+        destination: '/contact/?location=manpada',
+        permanent: true,
+      },
+      {
+        source: '/manpada/:path*',
+        destination: '/contact/?location=manpada',
+        permanent: true,
+      },
+      {
+        source: '/pre-school/centres',
+        destination: '/hyderabad/',
+        permanent: true,
+      },
+      {
+        source: '/pre-school/centres/:path*',
+        destination: '/hyderabad/',
+        permanent: true,
+      },
+      {
+        source: '/pre-school',
+        destination: '/programs/',
+        permanent: true,
+      },
+      {
+        source: '/pre-school/:path*',
+        destination: '/programs/',
+        permanent: true,
+      },
+      {
+        source: '/kids-fashion-fusion-show-2024',
+        destination: '/media-coverage/',
+        permanent: true,
+      },
+      {
+        source: '/kids-fashion-fusion-show-2024/:path*',
+        destination: '/media-coverage/',
+        permanent: true,
+      },
+      {
+        source: '/blog/1',
+        destination: '/spooktacular-halloween-celebration-at-myschoolitaly-hitex/',
+        permanent: true,
+      },
+      {
+        source: '/blog/2',
+        destination: '/brain-boosting-activities-you-can-do-at-home/',
+        permanent: true,
+      },
+      {
+        source: '/blog/3',
+        destination: '/what-is-neuroscience-based-early-childhood-education/',
+        permanent: true,
+      },
     ];
   },
 };
