@@ -5,7 +5,6 @@ Allow: /
 # Disallow internal and API routes
 Disallow: /api/
 Disallow: /admin/
-Disallow: /manifest.json
 
 # Sitemaps
 Sitemap: https://www.myschoolitaly.com/sitemap.xml
