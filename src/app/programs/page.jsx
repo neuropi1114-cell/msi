@@ -19,6 +19,9 @@ import HolidayProgramsSection from '../../components/programs/HolidayProgramsSec
 import SectionScrollController from '../../components/common/SectionScrollController';
 import Awards from '../../components/home/Awards';
 import GalleryStrip from '../../components/common/GalleryStrip';
+import JsonLd from '../../components/JsonLd';
+import { faqSchema } from '../../lib/schema.js';
+import { PROGRAMS_FAQS } from '../../data/faqs.js';
 import { metadata, programVideos, programGalleryImages } from './programsdata';
 
 const ContactUs = dynamic(() => import('../../components/common/ContactUs'), { ssr: true });
@@ -28,6 +31,7 @@ export { metadata };
 export default function ProgramsPage({ activeSlug = null }) {
   return (
     <>
+      <JsonLd schema={faqSchema(PROGRAMS_FAQS)} />
       <TopBar />
       <Header />
       <SectionScrollController activeSlug={activeSlug} />

@@ -53,3 +53,36 @@ export const CENTRE_GENERIC_FAQS = (campusName, areaName) => [
     answer: `You can schedule a tour by clicking "Book a Tour" on this page, calling us at (+91) 70939 04680, or connecting with us via WhatsApp at (+91) 70759 47070.`,
   },
 ];
+
+export const PROGRAMS_FAQS = [
+  {
+    question: 'What age groups and programs are offered at My School ITALY?',
+    answer:
+      'We provide complete early years education and childcare from 45 days up to 7 years old across our Baby Crèche, Toddler, Pre-Nursery, Nursery, Kindergarten (K1 & K2), Daycare, Extended Daycare, and Holiday Care programs.',
+  },
+  {
+    question: 'What are the operating timings for preschool and daycare programs?',
+    answer:
+      'Preschool programs operate during convenient morning sessions, while daycare and extended care run from 8:00 AM to 7:30 PM, Monday through Friday, with early drop-off, late pick-up, and Saturday care options.',
+  },
+  {
+    question: 'How is the neuroscience-based NeuroPi™ approach applied across programs?',
+    answer:
+      'The NeuroPi™ approach blends European early childhood pedagogy with neuroscience insights into early brain development. It focuses on sensory integration, natural curiosity, emotional security, and play-based foundational mastery instead of rote memorisation.',
+  },
+  {
+    question: 'What safety standards and caregiver ratios are maintained in crèche and daycare?',
+    answer:
+      'Our infant crèche and daycare maintain high caregiver-to-child ratios, strictly sanitised spaces, CCTV monitoring, child-safe ergonomic environments, and trained early years pediatric caregivers.',
+  },
+  {
+    question: 'Are meals and healthy nutrition included in the daycare program?',
+    answer:
+      'Yes, nutritionally balanced meals and snacks planned for growing children are prepared fresh and served under our INSPIRE ME EAT initiative at applicable centres.',
+  },
+  {
+    question: 'How can parents enroll or schedule a campus visit?',
+    answer:
+      'Parents can schedule an interactive campus tour via our website or by contacting the admissions desk directly at (+91) 70939 04680 or via WhatsApp at (+91) 70759 47070.',
+  },
+];

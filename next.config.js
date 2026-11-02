@@ -150,6 +150,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/avance-msi',
+        destination: '/avance/',
+        permanent: true,
+      },
+      {
+        source: '/avance-msi/:path*',
+        destination: '/avance/',
+        permanent: true,
+      },
+      {
         source: '/avance2-msi',
         destination: '/avance-2/',
         permanent: true,
@@ -157,6 +167,26 @@ const nextConfig = {
       {
         source: '/avance2-msi/:path*',
         destination: '/avance-2/',
+        permanent: true,
+      },
+      {
+        source: '/mindspace-msi',
+        destination: '/mindspace/',
+        permanent: true,
+      },
+      {
+        source: '/mindspace-msi/:path*',
+        destination: '/mindspace/',
+        permanent: true,
+      },
+      {
+        source: '/terms-and-conditions',
+        destination: '/terms/',
+        permanent: true,
+      },
+      {
+        source: '/terms-and-conditions/:path*',
+        destination: '/terms/',
         permanent: true,
       },
       {
