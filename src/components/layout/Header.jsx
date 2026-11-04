@@ -27,7 +27,7 @@ const navLinks = [
   },
   {
     name: 'PROGRAMS',
-    href: '/programs',
+    href: '/programs/',
     subLinks: [
       { name: 'Baby Crèche — 45 Days+', href: '/programs/baby-creche' },
       { name: 'Toddler / Playgroup', href: '/programs/toddler-playgroup' },
@@ -79,7 +79,7 @@ const navLinks = [
   },
   {
     name: 'CORPORATE CHILDCARE',
-    href: '/corporatechildcare',
+    href: '/corporatechildcare/',
     subLinks: [
       { name: 'Corporate Childcare Solutions', href: '/corporatechildcare/solutions' },
       { name: 'On-Campus Crèche', href: '/corporatechildcare/on-campus-creche' },
@@ -92,6 +92,24 @@ const navLinks = [
       { name: 'Our Corporate Experience', href: '/corporatechildcare/corporate-experience' },
       { name: 'Brochure', href: '/corporatechildcare/brochure' },
       { name: 'Partner With My School ITALY', href: '/corporatechildcare/partner' },
+    ],
+  },
+  {
+    name: 'HYDERABAD CENTRES',
+    href: '/hyderabad/',
+    subLinks: [
+      { name: 'Hyderabad Centres Hub', href: '/hyderabad/' },
+      { name: 'Hitex Campus', href: '/hitex/' },
+      { name: 'Kondapur Campus', href: '/kondapur/' },
+      { name: 'The Square (Q-City)', href: '/qcity/' },
+      { name: 'Kukatpally Campus', href: '/kukatpally/' },
+      { name: 'Mindspace Campus', href: '/mindspace/' },
+      { name: 'Avance H04 Campus', href: '/avance/' },
+      { name: 'Avance H06 Campus', href: '/avance-2/' },
+      { name: 'Kavuri Hills Campus', href: '/kavuri-hills/' },
+      { name: 'Miyapur Campus', href: '/miyapur/' },
+      { name: 'Manikonda Campus', href: '/manikonda/' },
+      { name: 'Cyberabad Police Commissionerate', href: '/cyberabad-police-commissionerate/' },
     ],
   },
 ];
@@ -126,7 +144,10 @@ const Header = ({
     if (linkHref === '/neuropiway' || linkHref === '/neuropi-way/' || linkHref === '/neuropi-way') {
       return pathname === '/neuropiway' || pathname === '/neuropi-way' || pathname === '/nep' || pathname.startsWith('/neuropiway') || pathname.startsWith('/neuropi-way');
     }
-    if (linkHref === '/corporatechildcare') {
+    if (linkHref === '/hyderabad' || linkHref === '/hyderabad/') {
+      return pathname === '/hyderabad' || pathname.startsWith('/hyderabad');
+    }
+    if (linkHref === '/corporatechildcare' || linkHref === '/corporatechildcare/') {
       return pathname === '/corporatechildcare' || pathname === '/corporate-childcare' || pathname.startsWith('/corporatechildcare') || pathname.startsWith('/corporate-childcare');
     }
     return pathname === linkHref || (linkHref !== '/' && pathname.startsWith(linkHref));

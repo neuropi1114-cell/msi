@@ -20,6 +20,7 @@ import VenturePhilanthropyCta from '../components/home/VenturePhilanthropyCta';
 import FeaturedIn from '../components/home/FeaturedIn';
 import Blogs from '../components/home/Blogs';
 import StepIntoADay from '../components/home/StepIntoADay';
+import CentresDirectory from '../components/home/CentresDirectory';
 import Footer from '../components/layout/Footer';
 import ContactUs from '../components/common/ContactUs';
 import JsonLd from '../components/JsonLd';
@@ -53,6 +54,7 @@ export default function HomePage() {
         <FeaturedIn />
         {/* <Team /> */}
         <VenturePhilanthropyCta />
+        <CentresDirectory />
 
 
         <ContactUs />

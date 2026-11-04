@@ -21,7 +21,7 @@ import PresentationSection from '../../components/common/PresentationSection';
 import Blogs from '../../components/home/Blogs';
 import SectionScrollController from '../../components/common/SectionScrollController';
 import {
-  metadata,
+
   corporateChildcareDrawerBody,
   corporateChildcareSolutionsDrawerBody,
   onCampusCrecheDrawerBody,
@@ -37,7 +37,9 @@ import {
   childcareWorksContent,
 } from './corporatechildcaredata';
 
-export { metadata };
+import { buildPageMetadata } from '../../utils/seo';
+
+export const metadata = buildPageMetadata('/corporatechildcare/');
 
 export default function CorporateChildcarePage({ activeSlug = null }) {
   return (

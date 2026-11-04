@@ -11,34 +11,61 @@ import DesignPhilosophy from '../../components/nep/DesignPhilosophy';
 import OneJourneySection from '../../components/programs/OneJourneySection';
 import CampusLocationModule from '../../components/common/CampusLocationModule';
 import JsonLd from '../../components/JsonLd';
+import { centreSchema } from '../../../lib/schema.js';
 
 export const metadata = {
-  title: 'My School ITALY — Tadepalligudem | Preschool & Daycare Andhra Pradesh',
-  description: 'Neuroscience-informed preschool, daycare, and crèche at Subbaraopeta, near Karri Satyavathi Nagar, Tadepalligudem, Andhra Pradesh.',
-  alternates: { canonical: '/tadepalligudem/' },
+  title: {
+    absolute: 'Preschool & Daycare in Tadepalligudem, Andhra Pradesh | My School ITALY',
+  },
+  description: 'Neuroscience-informed preschool, daycare, and crèche at Subbaraopeta, Tadepalligudem, Andhra Pradesh. Book a campus tour today.',
+  alternates: {
+    canonical: 'https://www.myschoolitaly.com/tadepalligudem/',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    title: 'Preschool & Daycare in Tadepalligudem, Andhra Pradesh | My School ITALY',
+    description: 'Neuroscience-informed preschool, daycare, and crèche at Subbaraopeta, Tadepalligudem, Andhra Pradesh. Book a campus tour today.',
+    url: 'https://www.myschoolitaly.com/tadepalligudem/',
+    siteName: 'My School ITALY',
+    locale: 'en_IN',
+    type: 'website',
+  },
 };
 
-const schemaData = {
-  '@context': 'https://schema.org',
-  '@type': 'ChildCare',
-  name: 'My School ITALY — Tadepalligudem Campus',
-  description: 'Neuroscience-informed preschool and daycare in Subbaraopeta, Tadepalligudem.',
+const tadepalligudemStructuredData = centreSchema({
+  name: 'My School ITALY | Tadepalligudem',
+  alternateName: 'MSI Tadepalligudem Campus',
+  description: 'Neuroscience-informed preschool, daycare, and crèche at Subbaraopeta, Tadepalligudem, Andhra Pradesh.',
   url: 'https://www.myschoolitaly.com/tadepalligudem/',
   telephone: '+917093904680',
+  image: '/images/hitex/HITEX_1.png',
   address: {
-    '@type': 'PostalAddress',
     streetAddress: 'D.No. 4-33, 4/A, Subbaraopeta, near Municipal Commissioner Quarters, Karri Satyavathi Nagar',
     addressLocality: 'Tadepalligudem',
     addressRegion: 'Andhra Pradesh',
     postalCode: '534101',
     addressCountry: 'IN',
   },
-};
+  geo: {
+    latitude: 16.8142784,
+    longitude: 81.5269784,
+  },
+  hasMap: 'https://www.google.com/maps/dir/?api=1&destination=My+School+ITALY+%7C+Tadepalligudem',
+  areaServed: [
+    'Tadepalligudem',
+    'Subbaraopeta',
+    'West Godavari',
+    'Andhra Pradesh',
+  ],
+});
 
 export default function TadepalligudemPage() {
   return (
     <>
-      <JsonLd schema={schemaData} />
+      <JsonLd schema={tadepalligudemStructuredData} />
       <TopBar />
       <Header />
 

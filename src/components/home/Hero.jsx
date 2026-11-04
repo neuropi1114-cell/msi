@@ -9,7 +9,7 @@ const slides = [
     bgPosition: 'bg-[center_-120px]',
     accentImage: '/images/hero/hero-slide-1-accent.png',
     title: 'Every child\'s brain is a world of wonder',
-    cta: { text: 'See how we do it', href: '/programs' },
+    cta: { text: 'See how we do it', href: '/programs/' },
   },
   {
     image: '/images/hero/hero-slide-2.png',
@@ -23,7 +23,7 @@ const slides = [
     bgPosition: 'bg-center',
     accentImage: '/images/hero/hero-slide-3-accent.png',
     title: 'Discovery starts with a single question',
-    cta: { text: 'Explore Program', href: '/parents' },
+    cta: { text: 'Explore Programs', href: '/programs/' },
   },
 ];
 

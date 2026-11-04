@@ -15,6 +15,24 @@ const nextConfig = {
           },
         ],
       },
+      {
+        source: '/_next/static/(.*)',
+        headers: [
+          {
+            key: 'X-Robots-Tag',
+            value: 'noindex, nofollow',
+          },
+        ],
+      },
+      {
+        source: '/manifest.json',
+        headers: [
+          {
+            key: 'X-Robots-Tag',
+            value: 'noindex, nofollow',
+          },
+        ],
+      },
     ];
   },
   async redirects() {

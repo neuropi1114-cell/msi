@@ -313,6 +313,16 @@ export function middleware(request) {
 
   let shouldRedirect = false;
 
+  // Explicit 301 for retired bhimavaram subdomain to main canonical site
+  if (cleanHost === 'bhimavaram.myschoolitaly.com') {
+    url.host = 'www.myschoolitaly.com';
+    url.pathname = '/';
+    url.search = '';
+    url.protocol = 'https:';
+    url.port = '';
+    return NextResponse.redirect(url, 301);
+  }
+
   // C. In production, permanently redirect non-www or non-canonical domains to www.myschoolitaly.com
   if (!isLocalhost && cleanHost !== 'www.myschoolitaly.com') {
     url.host = 'www.myschoolitaly.com';

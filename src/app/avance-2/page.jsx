@@ -11,33 +11,62 @@ import DesignPhilosophy from '../../components/nep/DesignPhilosophy';
 import OneJourneySection from '../../components/programs/OneJourneySection';
 import CampusLocationModule from '../../components/common/CampusLocationModule';
 import JsonLd from '../../components/JsonLd';
+import { centreSchema } from '../../../lib/schema.js';
 
 export const metadata = {
-  title: 'My School ITALY — aVance 2 (H06) | Corporate Daycare & Preschool HITEC City',
-  description: 'Neuroscience-informed corporate daycare, crèche, and preschool at aVance H06, HITEC City Phase 2, Phoenix Infocity, Hyderabad.',
-  alternates: { canonical: '/avance-2/' },
+  title: {
+    absolute: 'Preschool & Daycare in aVance 2 (H06), HITEC City, Hyderabad | My School ITALY',
+  },
+  description: 'Neuroscience-informed corporate daycare, crèche, and preschool at aVance H06, HITEC City corridor, Hyderabad. Book a campus tour today.',
+  alternates: {
+    canonical: 'https://www.myschoolitaly.com/avance-2/',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    title: 'Preschool & Daycare in aVance 2 (H06), HITEC City, Hyderabad | My School ITALY',
+    description: 'Neuroscience-informed corporate daycare, crèche, and preschool at aVance H06, HITEC City corridor, Hyderabad. Book a campus tour today.',
+    url: 'https://www.myschoolitaly.com/avance-2/',
+    siteName: 'My School ITALY',
+    locale: 'en_IN',
+    type: 'website',
+  },
 };
 
-const schemaData = {
-  '@context': 'https://schema.org',
-  '@type': 'ChildCare',
-  name: 'My School ITALY — aVance 2 Campus',
-  description: 'Corporate childcare, baby crèche, and preschool at aVance H06, HITEC City Phase 2.',
+const avance2StructuredData = centreSchema({
+  name: 'My School ITALY | aVance 2 (H06)',
+  alternateName: 'MSI aVance 2 Campus (HITEC City Phase 2)',
+  description: 'Neuroscience-informed corporate daycare, crèche, and preschool at aVance H06, HITEC City corridor, Hyderabad.',
   url: 'https://www.myschoolitaly.com/avance-2/',
   telephone: '+917093904680',
+  image: '/images/hitex/HITEX_1.png',
   address: {
-    '@type': 'PostalAddress',
     streetAddress: 'aVance Business Hub, Building H06, HITEC City Phase 2',
     addressLocality: 'Gachibowli, Hyderabad',
+    addressRegion: 'Telangana',
     postalCode: '500081',
     addressCountry: 'IN',
   },
-};
+  geo: {
+    latitude: 17.4485,
+    longitude: 78.3780,
+  },
+  hasMap: 'https://www.google.com/maps/dir/?api=1&destination=My+School+ITALY+%7C+aVance',
+  areaServed: [
+    'HITEC City',
+    'Gachibowli',
+    'Madhapur',
+    'Kondapur',
+    'Phoenix Infocity',
+  ],
+});
 
 export default function Avance2Page() {
   return (
     <>
-      <JsonLd schema={schemaData} />
+      <JsonLd schema={avance2StructuredData} />
       <TopBar />
       <Header />
 

@@ -17,7 +17,7 @@ import { CENTRE_GENERIC_FAQS } from '../../data/faqs.js';
 
 const SITE_URL = 'https://www.myschoolitaly.com';
 const PAGE_URL = `${SITE_URL}/kondapur/`;
-const SEO_TITLE = 'Preschool & Daycare in Kondapur | My School ITALY';
+const SEO_TITLE = 'Preschool & Daycare in Kondapur, Hyderabad | My School ITALY';
 const SEO_DESCRIPTION =
   'Neuroscience-informed preschool, daycare, and baby crèche at Sumadhura Horizon, Botanical Garden Road, Kondapur, Hyderabad. Book a campus tour today.';
 

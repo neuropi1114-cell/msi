@@ -15,11 +15,11 @@ import AboutLeadership from '../../components/about/AboutLeadership';
 export const metadata = {
   title: 'About Us',
   description: 'Discover the story behind My School ITALY — a neuroscience-based preschool founded by Dr. Jessy Costantino. Learn about our mission, values, and global network.',
-  alternates: { canonical: '/about/' },
+  alternates: { canonical: 'https://www.myschoolitaly.com/about/' },
   openGraph: {
     title: 'About Us | My School ITALY',
     description: 'Discover the story behind My School ITALY — a neuroscience-based preschool founded by Dr. Jessy Costantino. Learn about our mission, values, and global network.',
-    url: '/about/',
+    url: 'https://www.myschoolitaly.com/about/',
     siteName: 'My School ITALY',
     locale: 'en_US',
     type: 'website',

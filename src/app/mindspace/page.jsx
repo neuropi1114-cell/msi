@@ -17,7 +17,7 @@ import { CENTRE_GENERIC_FAQS } from '../../data/faqs.js';
 
 const SITE_URL = 'https://www.myschoolitaly.com';
 const PAGE_URL = `${SITE_URL}/mindspace/`;
-const SEO_TITLE = 'Preschool & Daycare in Mindspace, Madhapur | My School ITALY';
+const SEO_TITLE = 'Preschool & Daycare in Mindspace, Madhapur, Hyderabad | My School ITALY';
 const SEO_DESCRIPTION =
   'Neuroscience-informed preschool, daycare, and crèche opposite Westin Hotel, Raheja Mindspace Road, Madhapur, Hyderabad. Book a campus tour today.';
 

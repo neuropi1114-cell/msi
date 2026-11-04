@@ -21,7 +21,7 @@ export default function NeuroPiApproach({
       <div className="absolute inset-0 z-0 scale-105 filter blur-xl opacity-20">
         <Image
           src={bgImageSrc || imageSrc}
-          alt=""
+          alt={imageAlt || "NeuroPi early years educational approach background"}
           fill
           className="object-cover"
         />
@@ -103,7 +103,7 @@ export default function NeuroPiApproach({
             )}
 
             <div className="mt-4 flex items-center gap-2">
-              <img src="/images/gallery/bee.png" alt="" className="w-auto h-5" loading="lazy" />
+              <img src="/images/gallery/bee.png" alt="NeuroPi Mascot Bee" className="w-auto h-5" loading="lazy" />
             </div>
           </motion.div>
 

@@ -8,11 +8,11 @@ import ContactUs from '../../components/common/ContactUs';
 export const metadata = {
   title: 'Handbook',
   description: 'Welcome to My School ITALY\'s Handbook — your comprehensive guide to our neuroscience-based preschool programs, policies, philosophy, and family resources.',
-  alternates: { canonical: '/handbook/' },
+  alternates: { canonical: 'https://www.myschoolitaly.com/handbook/' },
   openGraph: {
     title: 'Handbook | My School ITALY',
     description: 'Welcome to My School ITALY\'s Handbook — your comprehensive guide to our neuroscience-based preschool programs, policies, philosophy, and family resources.',
-    url: '/handbook/',
+    url: 'https://www.myschoolitaly.com/handbook/',
     siteName: 'My School ITALY',
     locale: 'en_US',
     type: 'website',

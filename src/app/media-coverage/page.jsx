@@ -6,11 +6,11 @@ import MediaCoveragePage from '../../components/media-coverage/MediaCoveragePage
 export const metadata = {
   title: 'Media Coverage & Press Releases | My School ITALY',
   description: 'Explore media coverage, magazine cover stories, and press features for My School ITALY and Global CEO M.N.R. Gupta — including Prime Insights Magazine 2026, Global Times, TV5 news broadcasts, and press archives.',
-  alternates: { canonical: '/media-coverage/' },
+  alternates: { canonical: 'https://www.myschoolitaly.com/media-coverage/' },
   openGraph: {
     title: 'Media Coverage & Press Releases | My School ITALY',
     description: 'Explore media coverage, magazine cover stories, and press features for My School ITALY and Global CEO M.N.R. Gupta — including Prime Insights Magazine 2026, Global Times, TV5 news broadcasts, and press archives.',
-    url: '/media-coverage/',
+    url: 'https://www.myschoolitaly.com/media-coverage/',
     siteName: 'My School ITALY',
     locale: 'en_US',
     type: 'website',

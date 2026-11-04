@@ -17,7 +17,7 @@ import { CENTRE_GENERIC_FAQS } from '../../data/faqs.js';
 
 const SITE_URL = 'https://www.myschoolitaly.com';
 const PAGE_URL = `${SITE_URL}/kukatpally/`;
-const SEO_TITLE = 'Preschool & Daycare in Kukatpally | My School ITALY';
+const SEO_TITLE = 'Preschool & Daycare in Kukatpally, Hyderabad | My School ITALY';
 const SEO_DESCRIPTION =
   'Neuroscience-informed preschool, daycare, and crèche in Gokul Plots, KPHB Phase 9, Kukatpally, Hyderabad. Book a campus tour today.';
 

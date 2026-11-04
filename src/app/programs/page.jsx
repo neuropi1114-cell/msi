@@ -22,11 +22,12 @@ import GalleryStrip from '../../components/common/GalleryStrip';
 import JsonLd from '../../components/JsonLd';
 import { faqSchema } from '../../lib/schema.js';
 import { PROGRAMS_FAQS } from '../../data/faqs.js';
-import { metadata, programVideos, programGalleryImages } from './programsdata';
+import { buildPageMetadata } from '../../utils/seo';
+import { programVideos, programGalleryImages } from './programsdata';
 
 const ContactUs = dynamic(() => import('../../components/common/ContactUs'), { ssr: true });
 
-export { metadata };
+export const metadata = buildPageMetadata('/programs/');
 
 export default function ProgramsPage({ activeSlug = null }) {
   return (

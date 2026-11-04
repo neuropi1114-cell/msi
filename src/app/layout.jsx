@@ -29,7 +29,17 @@ export const metadata = {
   },
   description: 'My School ITALY is a neuroscience-based preschool & daycare for ages 45 days to 7 years. Our NeuroPi method nurtures young minds through play-based learning and emotional growth.',
   keywords: ['preschool', 'daycare', 'neuroscience', 'childcare', 'early childhood education', 'My School Italy', 'NeuroPi', 'play-based learning', 'brain development'],
-  robots: 'index, follow',
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      maxImagePreview: 'large',
+      maxSnippet: -1,
+      maxVideoPreview: -1,
+    },
+  },
   openGraph: {
     title: 'My School ITALY | Neuroscience-Based Preschool & Daycare',
     description: 'Rooted in the science of early brain development, our preschool chain blends neuroscience, play-based learning, and emotional intelligence.',
@@ -47,12 +57,6 @@ export const metadata = {
   icons: {
     icon: '/favicon.png',
   },
-  alternates: {
-    canonical: 'https://www.myschoolitaly.com/',
-    languages: {
-      en: 'https://www.myschoolitaly.com/',
-    },
-  },
   other: {
     'google-site-verification': '',
   },
@@ -66,6 +70,15 @@ export default function RootLayout({ children }) {
         <link rel="manifest" href="/manifest.json" />
       </head>
       <body className="text-gray-800 bg-[#f7f9fc] min-h-screen font-lato" suppressHydrationWarning>
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-MZH4W7LP"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
+        </noscript>
         <GoogleTagManager gtmId="GTM-MZH4W7LP" />
         <GoogleAnalytics gaId="G-WFLXED7JMB" />
         <AnalyticsListener />

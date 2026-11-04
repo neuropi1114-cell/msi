@@ -94,7 +94,7 @@ export default function AboutActivities({
               >
                 <div className="w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0 overflow-hidden">
                   {typeof activity.icon === 'string' ? (
-                    <img src={activity.icon} alt="" className="w-full h-full object-cover rounded-full" />
+                    <img src={activity.icon} alt={activity.title || "Activity icon"} className="w-full h-full object-cover rounded-full" />
                   ) : (
                     <div className="w-full h-full rounded-full flex items-center justify-center text-white bg-msi-orange p-2">
                       {activity.icon}
@@ -142,7 +142,7 @@ export default function AboutActivities({
               >
                 <div className="w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0 overflow-hidden">
                   {typeof activity.icon === 'string' ? (
-                    <img src={activity.icon} alt="" className="w-full h-full object-cover rounded-full" />
+                    <img src={activity.icon} alt={activity.title || "Activity icon"} className="w-full h-full object-cover rounded-full" />
                   ) : (
                     <div className="w-full h-full rounded-full flex items-center justify-center text-white bg-msi-orange p-2">
                       {activity.icon}

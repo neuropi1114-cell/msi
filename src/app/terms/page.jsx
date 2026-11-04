@@ -8,11 +8,11 @@ import Terms from '../../components/terms/Terms';
 export const metadata = {
   title: 'Terms and Conditions | My School ITALY',
   description: 'Read the terms and conditions governing access to and usage of My School ITALY website, products, and services.',
-  alternates: { canonical: '/terms/' },
+  alternates: { canonical: 'https://www.myschoolitaly.com/terms/' },
   openGraph: {
     title: 'Terms and Conditions | My School ITALY',
     description: 'Read the terms and conditions governing access to and usage of My School ITALY website, products, and services.',
-    url: '/terms/',
+    url: 'https://www.myschoolitaly.com/terms/',
     siteName: 'My School ITALY',
     locale: 'en_US',
     type: 'website',

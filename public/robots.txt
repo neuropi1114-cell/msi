@@ -2,9 +2,11 @@
 User-agent: *
 Allow: /
 
-# Disallow internal and API routes
+# Disallow internal, API, and build assets from being crawled as pages
 Disallow: /api/
 Disallow: /admin/
+Disallow: /_next/
+Disallow: /manifest.json
 
 # Sitemaps
 Sitemap: https://www.myschoolitaly.com/sitemap.xml

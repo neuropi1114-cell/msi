@@ -17,7 +17,7 @@ import { CENTRE_GENERIC_FAQS } from '../../data/faqs.js';
 
 const SITE_URL = 'https://www.myschoolitaly.com';
 const PAGE_URL = `${SITE_URL}/kavuri-hills/`;
-const SEO_TITLE = 'Preschool & Daycare in Kavuri Hills, Madhapur | My School ITALY';
+const SEO_TITLE = 'Preschool & Daycare in Kavuri Hills, Madhapur, Hyderabad | My School ITALY';
 const SEO_DESCRIPTION =
   'Neuroscience-informed preschool, daycare, and crèche in Kavuri Hills Phase 2, Doctor\'s Colony, Madhapur, Hyderabad. Book a campus tour today.';
 

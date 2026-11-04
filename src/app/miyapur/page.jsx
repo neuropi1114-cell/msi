@@ -11,33 +11,62 @@ import DesignPhilosophy from '../../components/nep/DesignPhilosophy';
 import OneJourneySection from '../../components/programs/OneJourneySection';
 import CampusLocationModule from '../../components/common/CampusLocationModule';
 import JsonLd from '../../components/JsonLd';
+import { centreSchema } from '../../../lib/schema.js';
 
 export const metadata = {
-  title: 'My School ITALY — Miyapur | Preschool & Daycare Miyapur',
-  description: 'Neuroscience-informed preschool, daycare, and crèche in Sri Aurobindo Colony, Miyapur, Hyderabad.',
-  alternates: { canonical: '/miyapur/' },
+  title: {
+    absolute: 'Preschool & Daycare in Miyapur, Hyderabad | My School ITALY',
+  },
+  description: 'Neuroscience-informed preschool, daycare, and crèche in Sri Aurobindo Colony, Miyapur, Hyderabad. Book a campus tour today.',
+  alternates: {
+    canonical: 'https://www.myschoolitaly.com/miyapur/',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    title: 'Preschool & Daycare in Miyapur, Hyderabad | My School ITALY',
+    description: 'Neuroscience-informed preschool, daycare, and crèche in Sri Aurobindo Colony, Miyapur, Hyderabad. Book a campus tour today.',
+    url: 'https://www.myschoolitaly.com/miyapur/',
+    siteName: 'My School ITALY',
+    locale: 'en_IN',
+    type: 'website',
+  },
 };
 
-const schemaData = {
-  '@context': 'https://schema.org',
-  '@type': 'ChildCare',
-  name: 'My School ITALY — Miyapur',
-  description: 'Neuroscience-based early years education and daycare in Miyapur, Hyderabad.',
+const miyapurStructuredData = centreSchema({
+  name: 'My School ITALY | Miyapur',
+  alternateName: 'MSI Miyapur Campus',
+  description: 'Neuroscience-informed preschool, daycare, and crèche in Sri Aurobindo Colony, Miyapur, Hyderabad.',
   url: 'https://www.myschoolitaly.com/miyapur/',
   telephone: '+917093904680',
+  image: '/images/hitex/HITEX_1.png',
   address: {
-    '@type': 'PostalAddress',
     streetAddress: 'Plot 26 & 27, Sri Rangapuram Colony / Sri Aurobindo Colony, near JP Nagar Road',
     addressLocality: 'Miyapur, Hyderabad',
+    addressRegion: 'Telangana',
     postalCode: '500049',
     addressCountry: 'IN',
   },
-};
+  geo: {
+    latitude: 17.4960,
+    longitude: 78.3600,
+  },
+  hasMap: 'https://www.google.com/maps/dir/?api=1&destination=My+School+Italy+Miyapur',
+  areaServed: [
+    'Miyapur',
+    'Sri Aurobindo Colony',
+    'JP Nagar',
+    'Allwyn X Roads',
+    'Hafeezpet',
+  ],
+});
 
 export default function MiyapurPage() {
   return (
     <>
-      <JsonLd schema={schemaData} />
+      <JsonLd schema={miyapurStructuredData} />
       <TopBar />
       <Header />
 

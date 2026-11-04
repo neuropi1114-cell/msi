@@ -11,33 +11,62 @@ import DesignPhilosophy from '../../components/nep/DesignPhilosophy';
 import OneJourneySection from '../../components/programs/OneJourneySection';
 import CampusLocationModule from '../../components/common/CampusLocationModule';
 import JsonLd from '../../components/JsonLd';
+import { centreSchema } from '../../../lib/schema.js';
 
 export const metadata = {
-  title: 'My School ITALY — Cyberabad Police Commissionerate | Preschool & Daycare Gachibowli',
-  description: 'Neuroscience-informed preschool, daycare, and crèche at Cyberabad Police Commissionerate, Gachibowli, Hyderabad.',
-  alternates: { canonical: '/cyberabad-police-commissionerate/' },
+  title: {
+    absolute: 'Preschool & Daycare in Cyberabad Police Commissionerate, Gachibowli, Hyderabad | My School ITALY',
+  },
+  description: 'Neuroscience-informed preschool, daycare, and crèche at Cyberabad Police Commissionerate, Gachibowli, Hyderabad. Book a campus tour today.',
+  alternates: {
+    canonical: 'https://www.myschoolitaly.com/cyberabad-police-commissionerate/',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    title: 'Preschool & Daycare in Cyberabad Police Commissionerate, Gachibowli, Hyderabad | My School ITALY',
+    description: 'Neuroscience-informed preschool, daycare, and crèche at Cyberabad Police Commissionerate, Gachibowli, Hyderabad. Book a campus tour today.',
+    url: 'https://www.myschoolitaly.com/cyberabad-police-commissionerate/',
+    siteName: 'My School ITALY',
+    locale: 'en_IN',
+    type: 'website',
+  },
 };
 
-const schemaData = {
-  '@context': 'https://schema.org',
-  '@type': 'ChildCare',
-  name: 'My School ITALY — Cyberabad Police Commissionerate',
-  description: 'Neuroscience-informed preschool, crèche, and daycare at Cyberabad Police Commissionerate, Gachibowli.',
+const cyberabadStructuredData = centreSchema({
+  name: 'My School ITALY | Cyberabad Police Commissionerate',
+  alternateName: 'MSI Cyberabad Commissionerate Campus',
+  description: 'Neuroscience-informed preschool, daycare, and crèche at Cyberabad Police Commissionerate, Gachibowli, Hyderabad.',
   url: 'https://www.myschoolitaly.com/cyberabad-police-commissionerate/',
   telephone: '+917093904680',
+  image: '/images/hitex/HITEX_1.png',
   address: {
-    '@type': 'PostalAddress',
     streetAddress: 'Old Mumbai Highway, next to CARE Hospital, Sri Shyam Nagar / Telecom Nagar Extension',
     addressLocality: 'Gachibowli, Hyderabad',
+    addressRegion: 'Telangana',
     postalCode: '500032',
     addressCountry: 'IN',
   },
-};
+  geo: {
+    latitude: 17.4260,
+    longitude: 78.3680,
+  },
+  hasMap: 'https://www.google.com/maps/dir/?api=1&destination=MY+SCHOOL+ITALY+%7C+Cyberabad+Police+Commissionerate',
+  areaServed: [
+    'Gachibowli',
+    'Telecom Nagar',
+    'DLF Cyber City',
+    'Bio Diversity Park',
+    'Raidurg',
+  ],
+});
 
 export default function CyberabadPoliceCommissioneratePage() {
   return (
     <>
-      <JsonLd schema={schemaData} />
+      <JsonLd schema={cyberabadStructuredData} />
       <TopBar />
       <Header />
 

@@ -6,17 +6,17 @@ import { Phone } from 'lucide-react';
 const FOOTER_LOGO = '/images/logo/The-Neuroscientific-European-Childcare-PDF_12-x-4-ft_Backside-1.png.bv_resized_desktop.png.bv.webp';
 
 const HYDERABAD_BRANCHES = [
-  { label: 'Hitex', href: '/hitex/' },
-  { label: 'The Square', href: '/qcity/' },
-  { label: 'Avance 1', href: '/avance/' },
-  { label: 'Avance 2', href: '/avance-2/' },
-  { label: 'Mindspace', href: '/mindspace/' },
-  { label: 'Kavuri Hills', href: '/kavuri-hills/' },
-  { label: 'Cyberabad Police Commissionerate', href: '/cyberabad-police-commissionerate/' },
-  { label: 'Miyapur', href: '/miyapur/' },
-  { label: 'Kukatpally', href: '/kukatpally/' },
-  { label: 'Kondapur', href: '/kondapur/' },
-  { label: 'Manikonda', href: '/manikonda/' },
+  { label: 'Hitex Preschool & Daycare', href: '/hitex/' },
+  { label: 'The Square (Q-City) Daycare & Crèche', href: '/qcity/' },
+  { label: 'Avance Business Hub 1 Preschool & Daycare', href: '/avance/' },
+  { label: 'Avance Business Hub 2 Preschool & Daycare', href: '/avance-2/' },
+  { label: 'Mindspace Preschool & Daycare', href: '/mindspace/' },
+  { label: 'Kavuri Hills (Madhapur) Preschool & Daycare', href: '/kavuri-hills/' },
+  { label: 'Cyberabad Police Commissionerate Childcare', href: '/cyberabad-police-commissionerate/' },
+  { label: 'Miyapur Preschool & Daycare', href: '/miyapur/' },
+  { label: 'Kukatpally Preschool & Daycare', href: '/kukatpally/' },
+  { label: 'Kondapur Preschool & Daycare', href: '/kondapur/' },
+  { label: 'Manikonda Preschool & Daycare', href: '/manikonda/' },
 ];
 
 const PAN_INDIA_BRANCHES = [
@@ -34,10 +34,10 @@ const NAV_LINKS = [
   { href: '/', label: 'Home' },
   { href: '/why-msi/', label: 'Why Choose Us' },
   { href: '/about/', label: 'About Us' },
-  { href: '/programs/', label: 'Programs' },
+  { href: '/programs/', label: 'Preschool & Daycare Programs' },
   { href: '/neuropi-way/', label: 'The NeuroPi Way' },
   { href: '/corporatechildcare/', label: 'Corporate Childcare' },
-  { href: '/hyderabad/', label: 'Hyderabad Hub' },
+  { href: '/hyderabad/', label: 'Hyderabad Preschool Centres' },
   { href: '/policy-framework/', label: 'Policy Framework' },
   { href: '/media-coverage/', label: 'Media Coverage' },
   { href: '/blog/', label: 'Blog' },

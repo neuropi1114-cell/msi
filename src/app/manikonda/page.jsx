@@ -11,33 +11,62 @@ import DesignPhilosophy from '../../components/nep/DesignPhilosophy';
 import OneJourneySection from '../../components/programs/OneJourneySection';
 import CampusLocationModule from '../../components/common/CampusLocationModule';
 import JsonLd from '../../components/JsonLd';
+import { centreSchema } from '../../../lib/schema.js';
 
 export const metadata = {
-  title: 'My School ITALY — Manikonda | Preschool & Daycare Puppalguda',
-  description: 'Neuroscience-informed preschool, daycare, and crèche in Matrusri Colony, Puppalguda, Manikonda, Hyderabad.',
-  alternates: { canonical: '/manikonda/' },
+  title: {
+    absolute: 'Preschool & Daycare in Manikonda, Puppalguda, Hyderabad | My School ITALY',
+  },
+  description: 'Neuroscience-informed preschool, daycare, and crèche in Matrusri Colony, Puppalguda, Manikonda, Hyderabad. Book a campus tour today.',
+  alternates: {
+    canonical: 'https://www.myschoolitaly.com/manikonda/',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    title: 'Preschool & Daycare in Manikonda, Puppalguda, Hyderabad | My School ITALY',
+    description: 'Neuroscience-informed preschool, daycare, and crèche in Matrusri Colony, Puppalguda, Manikonda, Hyderabad. Book a campus tour today.',
+    url: 'https://www.myschoolitaly.com/manikonda/',
+    siteName: 'My School ITALY',
+    locale: 'en_IN',
+    type: 'website',
+  },
 };
 
-const schemaData = {
-  '@context': 'https://schema.org',
-  '@type': 'ChildCare',
-  name: 'My School ITALY — Manikonda Campus',
-  description: 'Neuroscience-based early learning and daycare in Manikonda & Puppalguda.',
+const manikondaStructuredData = centreSchema({
+  name: 'My School ITALY | Manikonda',
+  alternateName: 'MSI Manikonda Campus (Puppalguda)',
+  description: 'Neuroscience-informed preschool, daycare, and crèche in Matrusri Colony, Puppalguda, Manikonda, Hyderabad.',
   url: 'https://www.myschoolitaly.com/manikonda/',
   telephone: '+917093904680',
+  image: '/images/hitex/HITEX_1.png',
   address: {
-    '@type': 'PostalAddress',
     streetAddress: 'Plot 28, Matrusri Colony, Puppalguda',
     addressLocality: 'Manikonda, Hyderabad',
+    addressRegion: 'Telangana',
     postalCode: '500089',
     addressCountry: 'IN',
   },
-};
+  geo: {
+    latitude: 17.4018,
+    longitude: 78.3897,
+  },
+  hasMap: 'https://www.google.com/maps/dir/?api=1&destination=My+School+ITALY+Manikonda',
+  areaServed: [
+    'Manikonda',
+    'Puppalguda',
+    'Lanco Hills',
+    'Narsingi',
+    'Khajaguda',
+  ],
+});
 
 export default function ManikondaPage() {
   return (
     <>
-      <JsonLd schema={schemaData} />
+      <JsonLd schema={manikondaStructuredData} />
       <TopBar />
       <Header />
 

@@ -374,10 +374,10 @@ export default function CampusLocationModule({
 
                         {c.slug && (
                           <Link
-                            href={c.slug}
+                            href={c.slug.endsWith('/') ? c.slug : `${c.slug}/`}
                             className="inline-flex items-center justify-center px-5 py-2.5 rounded-[12px] bg-msi-purple hover:bg-purple-900 text-white font-bold text-xs sm:text-sm uppercase tracking-wider shadow-xs transition-colors hover:scale-102"
                           >
-                            <span>Explore Campus</span>
+                            <span>Explore {c.name || 'Campus'}</span>
                           </Link>
                         )}
                       </div>
@@ -541,10 +541,10 @@ export default function CampusLocationModule({
 
               {slug && (
                 <Link
-                  href={slug}
+                  href={slug.endsWith('/') ? slug : `${slug}/`}
                   className="inline-flex items-center justify-center px-6 py-3 rounded-[12px] bg-msi-purple hover:bg-purple-900 text-white font-bold text-sm uppercase tracking-wider shadow-xs transition-colors hover:scale-102"
                 >
-                  <span>Explore Campus</span>
+                  <span>Explore {campusName || 'Campus'}</span>
                 </Link>
               )}
 

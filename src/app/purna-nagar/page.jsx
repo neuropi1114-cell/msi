@@ -11,35 +11,62 @@ import DesignPhilosophy from '../../components/nep/DesignPhilosophy';
 import OneJourneySection from '../../components/programs/OneJourneySection';
 import CampusLocationModule from '../../components/common/CampusLocationModule';
 import JsonLd from '../../components/JsonLd';
+import { centreSchema } from '../../../lib/schema.js';
 
 export const metadata = {
-  title: 'My School ITALY — Purna Nagar | Preschool & Daycare Pune',
-  description: 'Neuroscience-informed preschool, daycare, and crèche on Spine Road, Purnanagar, Chinchwad, Pune.',
-  alternates: { canonical: '/purna-nagar/' },
+  title: {
+    absolute: 'Preschool & Daycare in Purna Nagar, Pune | My School ITALY',
+  },
+  description: 'Neuroscience-informed preschool, daycare, and crèche on Spine Road, Purna Nagar, Chinchwad, Pune. Book a campus tour today.',
+  alternates: {
+    canonical: 'https://www.myschoolitaly.com/purna-nagar/',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    title: 'Preschool & Daycare in Purna Nagar, Pune | My School ITALY',
+    description: 'Neuroscience-informed preschool, daycare, and crèche on Spine Road, Purna Nagar, Chinchwad, Pune. Book a campus tour today.',
+    url: 'https://www.myschoolitaly.com/purna-nagar/',
+    siteName: 'My School ITALY',
+    locale: 'en_IN',
+    type: 'website',
+  },
 };
 
-const schemaData = {
-  '@context': 'https://schema.org',
-  '@type': 'ChildCare',
-  name: 'My School ITALY — Purna Nagar Campus',
-  description: 'Neuroscience-informed preschool and daycare on Spine Road, Purnanagar, Chinchwad, Pune.',
+const purnaNagarStructuredData = centreSchema({
+  name: 'My School ITALY | Purna Nagar',
+  alternateName: 'MSI Purna Nagar Campus (Chinchwad, Pune)',
+  description: 'Neuroscience-informed preschool, daycare, and crèche on Spine Road, Purna Nagar, Chinchwad, Pune.',
   url: 'https://www.myschoolitaly.com/purna-nagar/',
-  telephone: '+919766112231',
-  email: ['purnanagar@myschoolitaly.com', 'myschoolitaly7@gmail.com'],
+  telephone: '+917093904680',
+  image: '/images/hitex/HITEX_1.png',
   address: {
-    '@type': 'PostalAddress',
-    streetAddress: 'Privia Prestige, S.No. 26A & 46A, Spine Rd, next to Indian Oil Pump, Vitthal Nagar, Purnanagar, Chinchwad',
-    addressLocality: 'Pune',
+    streetAddress: 'Privia Prestige, S.No. 26A & 46A, Spine Rd, next to Indian Oil Pump, Vitthal Nagar, Purnanagar',
+    addressLocality: 'Chinchwad, Pune',
     addressRegion: 'Maharashtra',
     postalCode: '411019',
     addressCountry: 'IN',
   },
-};
+  geo: {
+    latitude: 18.6657,
+    longitude: 73.8122,
+  },
+  hasMap: 'https://www.google.com/maps/dir/?api=1&destination=My+School+ITALY+%7C+Purna+Nagar',
+  areaServed: [
+    'Purna Nagar',
+    'Chinchwad',
+    'Pimpri-Chinchwad',
+    'Spine Road',
+    'Pune',
+  ],
+});
 
 export default function PurnaNagarPage() {
   return (
     <>
-      <JsonLd schema={schemaData} />
+      <JsonLd schema={purnaNagarStructuredData} />
       <TopBar
         phone="(+91) 97661 12231"
         phoneHref="tel:+919766112231"

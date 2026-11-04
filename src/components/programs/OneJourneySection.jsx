@@ -52,7 +52,7 @@ export default function OneJourneySection({
           <div className="absolute inset-0 z-0 scale-105 filter blur-xl opacity-20">
             <Image
               src={bgImageSrc}
-              alt=""
+              alt={imageAlt || "Early learning and care journey background"}
               fill
               className="object-cover"
             />
@@ -129,7 +129,7 @@ export default function OneJourneySection({
 
               {showBeeIcon && (
                 <div className="mt-4 flex items-center gap-2">
-                  <img src="/images/gallery/bee.png" alt="" className="w-auto h-5" loading="lazy" />
+                  <img src="/images/gallery/bee.png" alt="NeuroPi Mascot Bee" className="w-auto h-5" loading="lazy" />
                 </div>
               )}
             </motion.div>

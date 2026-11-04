@@ -17,7 +17,7 @@ import GridGallery from '../../components/common/GridGallery';
 import SectionScrollController from '../../components/common/SectionScrollController';
 import CampusLocationModule from '../../components/common/CampusLocationModule';
 import JsonLd from '../../components/JsonLd';
-import { faqSchema } from '../../lib/schema.js';
+import { centreSchema, faqSchema } from '../../lib/schema.js';
 import { CENTRE_GENERIC_FAQS } from '../../data/faqs.js';
 
 import { buildPageMetadata } from '../../utils/seo';
@@ -29,34 +29,34 @@ export const metadata = buildPageMetadata('/qcity/', {
     'Neuroscience-informed preschool, daycare, baby crèche and corporate childcare at The Square (Q-City), Nanakramguda, Financial District, Hyderabad. Book a campus tour today.',
 });
 
-const qcitySchema = {
-  '@context': 'https://schema.org',
-  '@type': 'ChildCare',
-  name: 'My School ITALY — The Square Campus',
-  description: 'Neuroscience-informed preschool, baby crèche, daycare, and corporate childcare in The Square Tech Park, Gachibowli, Hyderabad.',
+const qcityStructuredData = centreSchema({
+  name: 'My School ITALY | The Square (Q-City)',
+  alternateName: 'MSI Financial District Campus',
+  description: 'Neuroscience-informed preschool, daycare, and crèche at The Square, Q City, Nanakramguda, Financial District, Hyderabad.',
   url: 'https://www.myschoolitaly.com/qcity/',
   telephone: '+917093904680',
+  image: '/images/hitex/HITEX_1.png',
   address: {
-    '@type': 'PostalAddress',
-    streetAddress: 'The Square Tech Park, Financial District, Nanakramguda',
-    addressLocality: 'Hyderabad',
+    streetAddress: 'The Square Tech Park, Wipro Circle Road, Nanakramguda, Financial District',
+    addressLocality: 'Gachibowli, Hyderabad',
+    addressRegion: 'Telangana',
     postalCode: '500032',
     addressCountry: 'IN',
   },
   geo: {
-    '@type': 'GeoCoordinates',
-    latitude: '17.427205',
-    longitude: '78.328553',
+    latitude: 17.4398,
+    longitude: 78.3478,
   },
-  openingHoursSpecification: [
-    {
-      '@type': 'OpeningHoursSpecification',
-      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-      opens: '08:00',
-      closes: '19:30',
-    },
+  hasMap: 'https://www.google.com/maps/dir/?api=1&destination=My+School+ITALY+%7C+Q+City',
+  areaServed: [
+    'Financial District',
+    'Nanakramguda',
+    'Gachibowli',
+    'Wipro Circle',
+    'Kokapet',
+    'Tellapur',
   ],
-};
+});
 
 import {
   qcityProgramsDrawer,
@@ -73,7 +73,7 @@ export default function QCityPage({ activeSlug = null }) {
 
   return (
     <>
-      <JsonLd schema={qcitySchema} />
+      <JsonLd schema={qcityStructuredData} />
       <JsonLd schema={faqSchema(CENTRE_GENERIC_FAQS('The Square (Q-City)', 'Nanakramguda / Financial District'))} />
       <TopBar />
       <Header />

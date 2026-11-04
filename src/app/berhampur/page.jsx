@@ -11,34 +11,61 @@ import DesignPhilosophy from '../../components/nep/DesignPhilosophy';
 import OneJourneySection from '../../components/programs/OneJourneySection';
 import CampusLocationModule from '../../components/common/CampusLocationModule';
 import JsonLd from '../../components/JsonLd';
+import { centreSchema } from '../../../lib/schema.js';
 
 export const metadata = {
-  title: 'My School ITALY — Berhampur / Brahmapur | Preschool & Daycare Odisha',
-  description: 'Neuroscience-informed preschool, daycare, and crèche at Tata Benz Square, Berhampur / Brahmapur, Odisha.',
-  alternates: { canonical: '/berhampur/' },
+  title: {
+    absolute: 'Preschool & Daycare in Berhampur, Odisha | My School ITALY',
+  },
+  description: 'Neuroscience-informed preschool, daycare, and crèche at Tata Benz Square, Berhampur, Odisha. Book a campus tour today.',
+  alternates: {
+    canonical: 'https://www.myschoolitaly.com/berhampur/',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    title: 'Preschool & Daycare in Berhampur, Odisha | My School ITALY',
+    description: 'Neuroscience-informed preschool, daycare, and crèche at Tata Benz Square, Berhampur, Odisha. Book a campus tour today.',
+    url: 'https://www.myschoolitaly.com/berhampur/',
+    siteName: 'My School ITALY',
+    locale: 'en_IN',
+    type: 'website',
+  },
 };
 
-const schemaData = {
-  '@context': 'https://schema.org',
-  '@type': 'ChildCare',
-  name: 'My School ITALY — Berhampur Campus',
-  description: 'Neuroscience-informed preschool and daycare at Tata Benz Square, Berhampur / Brahmapur, Odisha.',
+const berhampurStructuredData = centreSchema({
+  name: 'My School ITALY | Berhampur',
+  alternateName: 'MSI Berhampur Campus',
+  description: 'Neuroscience-informed preschool, daycare, and crèche at Tata Benz Square, Berhampur, Odisha.',
   url: 'https://www.myschoolitaly.com/berhampur/',
   telephone: '+917093904680',
+  image: '/images/hitex/HITEX_1.png',
   address: {
-    '@type': 'PostalAddress',
     streetAddress: 'Tata Benz Square',
-    addressLocality: 'Berhampur / Brahmapur',
+    addressLocality: 'Berhampur',
     addressRegion: 'Odisha',
     postalCode: '760001',
     addressCountry: 'IN',
   },
-};
+  geo: {
+    latitude: 19.3149629,
+    longitude: 84.7940911,
+  },
+  hasMap: 'https://www.google.com/maps/dir/?api=1&destination=My+School+ITALY+%7C+Berhampur',
+  areaServed: [
+    'Berhampur',
+    'Brahmapur',
+    'Ganjam',
+    'Odisha',
+  ],
+});
 
 export default function BerhampurPage() {
   return (
     <>
-      <JsonLd schema={schemaData} />
+      <JsonLd schema={berhampurStructuredData} />
       <TopBar />
       <Header />
 

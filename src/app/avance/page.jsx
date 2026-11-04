@@ -17,7 +17,7 @@ import { centreSchema } from '../../../lib/schema.js';
 
 const SITE_URL = 'https://www.myschoolitaly.com';
 const PAGE_URL = `${SITE_URL}/avance/`;
-const SEO_TITLE = 'Preschool & Daycare in Avance Hub, Gachibowli | My School ITALY';
+const SEO_TITLE = 'Preschool & Daycare in Avance Hub, Gachibowli, Hyderabad | My School ITALY';
 const SEO_DESCRIPTION =
   'Neuroscience-informed corporate daycare, crèche, and preschool at aVance H04, Phoenix Infocity, Gachibowli, Hyderabad. Book a campus tour today.';
 
