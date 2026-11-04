@@ -354,6 +354,47 @@ const nextConfig = {
         destination: '/what-is-neuroscience-based-early-childhood-education/',
         permanent: true,
       },
+      {
+        source: '/parent-toddler-club',
+        destination: '/programs/',
+        permanent: true,
+      },
+      {
+        source: '/parent-toddler-club/:path*',
+        destination: '/programs/',
+        permanent: true,
+      },
+      {
+        source: '/work-with-us',
+        destination: '/contact/',
+        permanent: true,
+      },
+      {
+        source: '/work-with-us/:path*',
+        destination: '/contact/',
+        permanent: true,
+      },
+      {
+        source: '/message-from-co-founder',
+        destination: '/the-educational-project/',
+        permanent: true,
+      },
+      {
+        source: '/message-from-co-founder/:path*',
+        destination: '/the-educational-project/',
+        permanent: true,
+      },
+      {
+        source: '/neuropi-pedagogy',
+        destination: '/the-educational-project/',
+        permanent: true,
+      },
+      {
+        source: '/neuropi-pedagogy/:path*',
+        destination: '/the-educational-project/',
+        permanent: true,
+      },
+
     ];
   },
 };

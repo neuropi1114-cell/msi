@@ -152,6 +152,7 @@ Add these in **GitHub > repo > Settings > Secrets and variables > Actions**:
 | `AMPLIFY_APP_ID` | variable or secret | Amplify Console > the app > App settings > General: the **App ID** (like `d1a2b3c4d5e6f7`, also in the console URL `.../apps/<appId>/...`) |
 | `AMPLIFY_BRANCH` | variable (optional) | Defaults to the repo default branch (`main`) |
 | `GOOGLE_SHEETS_WEBHOOK_URL`, `GOOGLE_SHEETS_SECRET`, `ADMISSIONS_WEBHOOK_URL`, `RESEND_API_KEY`, `ADMISSIONS_EMAIL`, `RESEND_FROM`, `OPENAI_API_KEY`, `AI_GATEWAY_API_KEY`, `GEMINI_API_KEY`, `CHAT_MODEL` | secrets | All optional. Only the ones that are set get synced. |
+| `CLOUDFRONT_DISTRIBUTION_ID` | variable or secret | Optional CloudFront distribution ID. If set, an invalidation (`/*`) is triggered after every deploy; otherwise the workflow attempts auto-discovery. |
 9. Submit a test call request from the chatbot; a row appears in the `Admissions` tab (headers are created automatically) with Status "New".
 
 If you edit the script later, use **Deploy > Manage deployments > Edit > New version** so the same URL keeps working.

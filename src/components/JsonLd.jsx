@@ -17,16 +17,12 @@ const globalOrganizationSchema = {
   },
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'Hitex Road, Madhapur',
     addressLocality: 'Hyderabad',
     addressRegion: 'Telangana',
-    postalCode: '500081',
     addressCountry: 'IN',
   },
   areaServed: [
-    { '@type': 'Country', name: 'Italy' },
-    { '@type': 'Country', name: 'United Arab Emirates' },
-    { '@type': 'Country', name: 'India' },
+    { '@type': 'AdministrativeArea', name: 'Hyderabad' },
   ],
   sameAs: [
     'https://facebook.com/myschoolitaly',

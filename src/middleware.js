@@ -121,7 +121,51 @@ const PRESERVED_301_REDIRECTS = {
   '/blog/2/': '/brain-boosting-activities-you-can-do-at-home/',
   '/blog/3': '/what-is-neuroscience-based-early-childhood-education/',
   '/blog/3/': '/what-is-neuroscience-based-early-childhood-education/',
+  // Live equivalent 301 redirects
+  '/parent-toddler-club': '/programs/',
+  '/parent-toddler-club/': '/programs/',
+  '/work-with-us': '/contact/',
+  '/work-with-us/': '/contact/',
+  '/message-from-co-founder': '/the-educational-project/',
+  '/message-from-co-founder/': '/the-educational-project/',
+  '/neuropi-pedagogy': '/the-educational-project/',
+  '/neuropi-pedagogy/': '/the-educational-project/',
+
 };
+
+// Explicitly retired URLs with no live equivalent that must return 410 Gone
+const EXPLICIT_410_PATHS = new Set([
+  '/how-to-choose-the-right-nursery-school-near-me-in-hyderabad',
+  '/affordable-and-reputable-play-schools-near-me-in-hyderabad',
+  '/safety-first-what-hyderabad-parents-should-know-about-infant-daycare-facilities',
+  '/bathukamma-in-preschool-cultivating-culture-and-fostering-creativity',
+  '/aperna-volluru',
+  '/noida-up',
+  '/grand-launch-pan-india-launch-of-msi-venture-philanthropy-at-the-lotus-feet-of-lord-venkateshwara-in-tirupati',
+  '/expression-of-interest-eoi',
+  '/why-daycare-near-me-in-hyderabad-is-a-great-choice-for-working-parents',
+  '/parent-teacher-collaboration',
+  '/unveiling-nature-preschool-a-revolutionary-approach-to-early-learning',
+  '/top-nursery-schools-near-me-in-hyderabad-where-learning-begins',
+  '/maneendra-kumar',
+  '/best-preschools-near-me-in-hyderabad-for-a-strong-foundation-in-early-education',
+  '/10-ways-that-neuroscience-can-change-education',
+  '/choosing-the-right-childcare-center-near-me-in-hyderabad-7-key-factors-to-consider',
+  '/spooktacular-halloween-celebration-in-preschool',
+  '/a-legacy-of-love-childrens-day-celebrations',
+  '/childcare-centers-near-me-questions-every-hyderabad-parent-should-ask',
+  '/top-5-things-to-know-before-choosing-best-preschools-in-hyderabad',
+  '/what-should-make-the-best-preschool-near-me-hyderabad-key-features-to-look-for',
+  '/carpe-diem-live',
+  '/chakshu-jaipur',
+  '/magical-wonderland-my-school-italy-opens-the-best-preschool-in-manpada',
+  '/finding-reliable-daycare-near-me-in-hyderabad-tips-and-recommendations',
+  '/enrolling-a-child-in-quality-daycare',
+  '/why-infant-daycare-is-crucial-in-early-development-hyderabad',
+  '/why-does-neuroscience-belong-in-classroom-practice',
+  '/location-map.html',
+  '/nature-preschool/unveiling-nature-preschool-a-revolutionary-approach-to-early-learning',
+]);
 
 // Check if the URL is an old WordPress path that must return 410 Gone
 function isOldWordPressUrl(pathname, searchParams) {
@@ -136,6 +180,19 @@ function isOldWordPressUrl(pathname, searchParams) {
   }
 
   const lowerPath = pathname.toLowerCase();
+  const trimmedPath = lowerPath.endsWith('/') && lowerPath.length > 1
+    ? lowerPath.slice(0, -1)
+    : lowerPath;
+
+  // 1b. Specific retired old pages/posts that have no live equivalent
+  if (EXPLICIT_410_PATHS.has(trimmedPath) || EXPLICIT_410_PATHS.has(lowerPath)) {
+    return true;
+  }
+  for (const gonePath of EXPLICIT_410_PATHS) {
+    if (trimmedPath.startsWith(`${gonePath}/`)) {
+      return true;
+    }
+  }
 
   // 2. Specific WordPress PHP endpoints
   if (

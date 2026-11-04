@@ -100,3 +100,19 @@ jobs:
         run: |
           aws amplify start-job --app-id "$AMPLIFY_APP_ID" --branch-name "$AMPLIFY_BRANCH" \
             --job-type RELEASE --query 'jobSummary.jobId' --output text
+      - name: Invalidate CloudFront cache
+        if: github.event_name == 'push' || inputs.start_release
+        env:
+          CLOUDFRONT_DISTRIBUTION_ID: ${{ vars.CLOUDFRONT_DISTRIBUTION_ID || secrets.CLOUDFRONT_DISTRIBUTION_ID }}
+        run: |
+          DIST_ID="$CLOUDFRONT_DISTRIBUTION_ID"
+          if [ -z "$DIST_ID" ]; then
+            echo "Searching for CloudFront distribution matching myschoolitaly.com..."
+            DIST_ID=$(aws cloudfront list-distributions --query "DistributionList.Items[?Aliases.Items!=null && (contains(Aliases.Items, 'www.myschoolitaly.com') || contains(Aliases.Items, 'myschoolitaly.com'))].Id | [0]" --output text 2>/dev/null || true)
+          fi
+          if [ -n "$DIST_ID" ] && [ "$DIST_ID" != "None" ] && [ "$DIST_ID" != "null" ]; then
+            echo "Creating CloudFront invalidation for distribution: $DIST_ID"
+            aws cloudfront create-invalidation --distribution-id "$DIST_ID" --paths "/*"
+          else
+            echo "No CloudFront distribution ID configured or found; skipping CloudFront invalidation."
+          fi

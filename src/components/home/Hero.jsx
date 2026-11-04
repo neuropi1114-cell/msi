@@ -90,10 +90,6 @@ const Hero = () => {
       className="relative h-[calc(100vh-60px)] md:h-[calc(100vh-116px)] min-h-[500px] max-h-[900px] w-full overflow-hidden bg-msi-charcoal"
       aria-label="Hero banner"
     >
-      <h1 className="sr-only">
-        Preschool & Daycare in Hyderabad – My School ITALY
-      </h1>
-
       {/* Grain overlay */}
       <div className="grain-overlay absolute inset-0 z-30 pointer-events-none" />
 
@@ -154,6 +150,11 @@ const Hero = () => {
             transition={{ duration: 0.6 }}
             className="max-w-3xl w-full bg-black/20 backdrop-blur-md rounded-2xl p-5 sm:p-6 md:p-8 border border-white/10 shadow-lg overflow-hidden mb-6 md:mb-8"
           >
+            {/* Primary visible H1 */}
+            <h1 className="text-msi-yellow text-xs sm:text-sm md:text-base font-bold tracking-wider uppercase mb-2 font-linotte">
+              Preschool &amp; Daycare in Hyderabad – My School ITALY
+            </h1>
+
             {/* Oversized display title */}
             <h2
               className="text-white mb-4 sm:mb-6 break-words"
