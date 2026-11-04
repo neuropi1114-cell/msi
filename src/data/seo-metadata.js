@@ -71,7 +71,7 @@ export const seoMetadataMap = {
     "pagePurpose": "Hyderabad Locations Hub",
     "recommendedUrl": "https://www.myschoolitaly.com/hyderabad/",
     "canonical": "https://www.myschoolitaly.com/hyderabad/",
-    "title": "Best Preschool & Daycare in Hyderabad | My School Italy",
+    "title": "Best Preschool & Daycare in Hyderabad | My School ITALY",
     "description": "Best preschool & daycare in Hyderabad across Hitex, Kondapur, Kukatpally, Madhapur & Gachibowli. Neuroscience-based early care. Book a campus tour today!",
     "h1": "Best Preschool & Daycare in Hyderabad",
     "primaryKeyword": "best preschool in Hyderabad",

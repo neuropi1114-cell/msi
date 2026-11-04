@@ -24,7 +24,7 @@ import { buildPageMetadata } from '../../utils/seo';
 import { centreVideos } from '../whyus/whyusdata';
 
 export const metadata = buildPageMetadata('/qcity/', {
-  title: 'Preschool & Daycare in Nanakramguda, Financial District (The Square) | My School ITALY',
+  title: 'Preschool & Daycare in Q City (The Square), Financial District, Hyderabad | My School ITALY',
   description:
     'Neuroscience-informed preschool, daycare, baby crèche and corporate childcare at The Square (Q-City), Nanakramguda, Financial District, Hyderabad. Book a campus tour today.',
 });

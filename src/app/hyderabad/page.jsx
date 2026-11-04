@@ -14,7 +14,7 @@ import { HOMEPAGE_FAQS } from '../../data/faqs.js';
 
 const SITE_URL = 'https://www.myschoolitaly.com';
 const PAGE_URL = `${SITE_URL}/hyderabad/`;
-const SEO_TITLE = 'Best Preschool & Daycare in Hyderabad | My School Italy';
+const SEO_TITLE = 'Best Preschool & Daycare in Hyderabad | My School ITALY';
 const SEO_DESCRIPTION =
   'Best preschool & daycare in Hyderabad across Hitex, Kondapur, Kukatpally, Madhapur & Gachibowli. Neuroscience-based early care. Book a campus tour today!';
 

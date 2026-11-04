@@ -21,13 +21,8 @@ const HYDERABAD_BRANCHES = [
 
 const PAN_INDIA_BRANCHES = [
   { label: 'Berhampur – Odisha', href: '/berhampur/' },
-  { label: 'Tanuku – AP', href: '/contact/?location=tanuku' },
-  { label: 'Tadepalligudem – AP', href: '/tadepalligudem/' },
-  { label: 'Manpada – Thane', href: '/contact/?location=manpada' },
-  { label: 'Balewadi – Pune', href: '/contact/?location=balewadi' },
-  { label: 'Purna Nagar – Pune', href: '/purna-nagar/' },
-  { label: 'Chakshu – Jaipur', href: '/contact/?location=jaipur' },
-  { label: 'Noida – UP', href: '/contact/?location=noida' },
+  { label: 'Tadepalligudem – Andhra Pradesh', href: '/tadepalligudem/' },
+  { label: 'Purna Nagar – Pune, Maharashtra', href: '/purna-nagar/' },
 ];
 
 const NAV_LINKS = [
@@ -75,9 +70,9 @@ const Footer = ({
   whatsappHref,
   email = 'info@myschoolitaly.com',
   emailHref,
-  address = 'Hitex, HiTech City, Hyderabad, 500084',
-  addressLabel = 'INDIA:',
-  italyAddress = 'Piazza Luigi Di Savoia 40, Bari 70121',
+  address = null,
+  addressLabel = null,
+  italyAddress = null,
 }) => {
   const currentYear = new Date().getFullYear();
   const actualPhoneHref = formatPhoneHref(phone, phoneHref);
@@ -110,7 +105,7 @@ const Footer = ({
         {/* Locations under tagline */}
         <div className="text-center mb-10">
           <h3 className="font-bold mb-2 text-sm tracking-wider uppercase">
-            <Link href="/hyderabad" className="text-msi-orange hover:text-amber-400 font-bold transition-colors">
+            <Link href="/hyderabad/" className="text-msi-orange hover:text-amber-400 font-bold transition-colors">
               HYDERABAD HUB
             </Link>
           </h3>
@@ -160,21 +155,36 @@ const Footer = ({
             <h3 className="text-xl font-bold mb-6 !text-white">Contact us</h3>
 
             <ul className="space-y-3 text-sm !text-white">
-              {italyAddress && (
+              
+
+              {address ? (
                 <li className="flex items-start !text-white">
                   <Image src="/googleMaps.svg" alt="Google Maps location icon" width={16} height={16} className="mr-2 flex-shrink-0 mt-1" />
                   <span className="!text-white">
-                    <strong className="font-semibold !text-white">ITALY:</strong> {italyAddress}
+                    {addressLabel && <strong className="font-semibold !text-white">{addressLabel} </strong>}
+                    {address}
                   </span>
                 </li>
+              ) : (
+                <li className="flex items-start !text-white">
+                  <Image src="/googleMaps.svg" alt="Google Maps location icon" width={16} height={16} className="mr-2 flex-shrink-0 mt-1" />
+                  <div className="space-y-1.5 text-xs sm:text-sm !text-white">
+                    <div>
+                      <strong className="font-semibold text-msi-orange">HITEX CAMPUS:</strong>{' '}
+                      <span className="!text-white/90">Hitex Road, next to HITEX Exhibition Centre Gate, Shilpa Layout, Izzathnagar, Hyderabad 500084</span>
+                    </div>
+                    <div>
+                      <strong className="font-semibold text-msi-orange">KONDAPUR CAMPUS:</strong>{' '}
+                      <span className="!text-white/90">Sumadhura Horizon, Botanical Garden Road, Kondapur, Hyderabad 500084</span>
+                    </div>
+                    <div className="pt-0.5">
+                      <Link href="/hyderabad/" className="text-xs text-amber-300 hover:text-white underline font-semibold transition-colors">
+                        View all 11 Hyderabad centre addresses &amp; maps &rarr;
+                      </Link>
+                    </div>
+                  </div>
+                </li>
               )}
-
-              <li className="flex items-start !text-white">
-                <Image src="/googleMaps.svg" alt="Google Maps location icon" width={16} height={16} className="mr-2 flex-shrink-0 mt-1" />
-                <span className="!text-white">
-                  <strong className="font-semibold !text-white">{addressLabel}</strong> {address}
-                </span>
-              </li>
               <li className="flex items-center !text-white">
                 <Phone className="w-4 h-4 mr-2 text-msi-orange flex-shrink-0" />
                 <a href={actualPhoneHref} className="!text-white hover:!text-msi-orange transition-colors font-normal">
