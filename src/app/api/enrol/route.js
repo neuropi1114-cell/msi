@@ -43,7 +43,8 @@ export async function POST(request) {
 
     console.log('Forwarding enrolment submission to CRM API:', crmPayload);
 
-    const crmResponse = await fetch('https://neuropi-crm-api.azurewebsites.net/api/SchoolEnrollment', {
+    const crmApiBaseUrl = (process.env.CRM_API_BASE_URL || 'https://np-crm-api.azurewebsites.net').replace(/\/+$/, '');
+    const crmResponse = await fetch(`${crmApiBaseUrl}/api/SchoolEnrollment`, {
       method: 'POST',
       headers: {
         'accept': '*/*',
