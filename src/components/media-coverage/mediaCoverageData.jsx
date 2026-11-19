@@ -82,6 +82,92 @@ export const filterTabs = [
 
 export const timelineEvents = [
   {
+    id: 'hearts-across-the-sea-premiere-2026',
+    year: '2026',
+    date: 'November 14, 2026',
+    category: 'Film Premiere & Press Coverage',
+    source: 'Eenadu, ETV, Zee Telugu News, M Staar TV, FRIDAYTALKS, Breaking Now, Maa Gulf',
+    title: "Animated Short Film 'Hearts Across the Sea' Premieres in Hyderabad",
+    subtitle: 'Legendary Writer K.V. Vijayendra Prasad Graces the Grand Premiere as Chief Guest',
+    summary:
+      "The grand premiere and press meet of the animated short film 'Hearts Across the Sea', produced by Ritzy Art House, was held on November 14 at Prasad Film Labs, Hyderabad. Story creator Dr. Aperna Volluru and director-producer Antonio Andrizzo were joined by Chief Guest K.V. Vijayendra Prasad, the storyteller behind Baahubali and RRR, who praised the film. The premiere was covered across Telugu print, TV and digital media.",
+    highlights: [
+      'Grand premiere and press meet at Prasad Film Labs, Hyderabad on November 14',
+      'Legendary writer K.V. Vijayendra Prasad (Baahubali, RRR) attended as Chief Guest and praised the film',
+      'Story by Dr. Aperna Volluru; directed and produced by Antonio Andrizzo; produced by Ritzy Art House',
+      'Covered by Eenadu, ETV, Zee Telugu News, M Staar TV, FRIDAYTALKS, Breaking Now and Maa Gulf (Dubai)',
+    ],
+    image: '/images/media-coverage/hearts-across-the-sea-breakingnow.jpg',
+    imageAspect: 'aspect-[16/9]',
+    imageObjectPosition: 'object-cover',
+    gallery: [
+      {
+        src: '/images/media-coverage/hearts-across-the-sea-breakingnow-group.jpg',
+        caption: 'Cast, crew and guests on stage at Prasad Film Labs after the premiere. Photo from Breaking Now.',
+      },
+      {
+        src: '/images/media-coverage/hearts-across-the-sea-breakingnow-guests.jpg',
+        caption: 'Chief Guest K.V. Vijayendra Prasad with other premiere guests outside the venue. Photo from Breaking Now.',
+      },
+      {
+        src: '/images/media-coverage/hearts-across-the-sea-breakingnow-arrival.jpg',
+        caption: 'Guests arriving at the Hyderabad premiere. Photo from Breaking Now.',
+      },
+      {
+        src: '/images/media-coverage/hearts-across-the-sea-maagulf.jpg',
+        caption: 'The premiere guests in front of the screen at Prasad Film Labs. Photo from Maa Gulf.',
+      },
+    ],
+    video: {
+      platform: 'youtube',
+      videoId: 'OmrivLpP1L4',
+    },
+    links: [
+      {
+        label: 'Watch Zee Telugu News Coverage',
+        url: 'https://www.youtube.com/watch?v=OmrivLpP1L4',
+        primary: true,
+      },
+      {
+        label: 'Read Eenadu Article',
+        url: 'https://www.eenadu.net/telugu-news/movies/general/0299/126208001',
+        primary: true,
+      },
+      {
+        label: 'ETV Coverage',
+        url: 'https://www.youtube.com/watch?v=iA7WvLSMLzg',
+        primary: false,
+      },
+      {
+        label: 'M Staar TV Coverage',
+        url: 'https://www.youtube.com/watch?v=Tdh6oLW9hEI',
+        primary: false,
+      },
+      {
+        label: 'FRIDAYTALKS Premiere & Press Meet',
+        url: 'https://www.youtube.com/watch?v=gqc-artZiec',
+        primary: false,
+      },
+      {
+        label: 'Premiere Highlights Video',
+        url: 'https://www.youtube.com/watch?v=u5t_r1ELY0o',
+        primary: false,
+      },
+      {
+        label: 'Breaking Now Article',
+        url: 'https://breakingnow.app/topnews/legendary-writer-k-v-vijayendra-prasad-graces-the-grand-premiere-of-animation-short-film-hearts-across-the-sea-in-hyderabad/',
+        primary: false,
+      },
+      {
+        label: 'Maa Gulf (Dubai) Coverage',
+        url: 'https://www.maagulf.com/view/123532/movienews/-hearts-across-the-sea-animated-short-film-premieres-grandly-in-hyderabad',
+        primary: false,
+      },
+    ],
+    badgeColor: 'bg-[#ABCD52]/20 text-[#496d13] border-[#ABCD52]/40',
+    type: 'video',
+  },
+  {
     id: 'meridian-curriculum-innovation-award-2026',
     year: '2026',
     date: '2026',
