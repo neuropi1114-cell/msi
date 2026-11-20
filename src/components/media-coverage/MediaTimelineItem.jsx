@@ -37,8 +37,9 @@ export default function MediaTimelineItem({ item, index, onSelectImage }) {
 
       {/* Content Card */}
       <div
-        className={`bg-white rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-xl border border-gray-100 transition-all duration-300 ${isEven ? 'lg:order-1 lg:mr-8' : 'lg:order-2 lg:ml-8'
-          }`}
+        className={`bg-white rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-xl border border-gray-100 transition-all duration-300 ${
+          isEven ? 'lg:order-1 lg:mr-8' : 'lg:order-2 lg:ml-8'
+        }`}
       >
         {/* Header Badges */}
         <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
@@ -101,10 +102,11 @@ export default function MediaTimelineItem({ item, index, onSelectImage }) {
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs md:text-sm font-semibold transition-all duration-200 ${link.primary
+                className={`inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs md:text-sm font-semibold transition-all duration-200 ${
+                  link.primary
                     ? 'bg-msi-purple text-white hover:bg-msi-purple-deep shadow-sm hover:shadow'
                     : 'bg-gray-100 text-gray-800 hover:bg-gray-200'
-                  }`}
+                }`}
               >
                 {link.icon === 'share' ? (
                   <Share2 className="w-3.5 h-3.5" />
@@ -157,64 +159,38 @@ export default function MediaTimelineItem({ item, index, onSelectImage }) {
 
       {/* Media / Visual Side */}
       <div
-        className={`${isEven ? 'lg:order-2 lg:ml-8' : 'lg:order-1 lg:mr-8'
-          } flex flex-col justify-center`}
+        className={`${
+          isEven ? 'lg:order-2 lg:ml-8' : 'lg:order-1 lg:mr-8'
+        } flex flex-col justify-center`}
       >
         {item.video ? (
-          <div className="space-y-4">
-            <div className="relative aspect-video rounded-3xl overflow-hidden shadow-lg border border-gray-200 bg-black">
-              <iframe
-                src={getVideoUrl(item.video)}
-                title={item.title}
-                className="absolute inset-0 w-full h-full"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                loading="lazy"
-              />
-            </div>
-            {item.gallery && item.gallery.length > 0 && (
-              <div className="p-4 bg-white rounded-3xl border border-gray-200 shadow-sm">
-                <div className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2.5">
-                  Event &amp; Premiere Gallery (Click to enlarge)
-                </div>
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
-                  {item.gallery.map((gImg, gIdx) => (
-                    <div
-                      key={gIdx}
-                      onClick={() =>
-                        onSelectImage({ src: gImg.src, alt: gImg.caption })
-                      }
-                      className="group/thumb relative rounded-xl overflow-hidden border border-gray-200 shadow-2xs hover:shadow-md transition-all cursor-pointer aspect-square bg-gray-100"
-                    >
-                      <img
-                        src={gImg.src}
-                        alt={gImg.caption}
-                        className="w-full h-full object-cover group-hover/thumb:scale-105 transition-transform duration-300"
-                        loading="lazy"
-                      />
-                      <div className="absolute inset-0 bg-black/40 opacity-0 group-hover/thumb:opacity-100 transition-opacity flex items-center justify-center text-white">
-                        <Maximize2 className="w-4 h-4" />
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
+          <div className="relative aspect-video rounded-3xl overflow-hidden shadow-lg border border-gray-200 bg-black">
+            <iframe
+              src={getVideoUrl(item.video)}
+              title={item.title}
+              className="absolute inset-0 w-full h-full"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              loading="lazy"
+            />
           </div>
         ) : item.image ? (
           <div
-            className={`relative group rounded-3xl overflow-hidden shadow-lg border border-gray-200 bg-white w-full ${item.imageAspect?.includes('3/4') ? 'max-w-md mx-auto' : ''
-              }`}
+            className={`relative group rounded-3xl overflow-hidden shadow-lg border border-gray-200 bg-white w-full ${
+              item.imageAspect?.includes('3/4') ? 'max-w-md mx-auto' : ''
+            }`}
           >
             <div
-              className={`relative overflow-hidden ${item.imageAspect || 'aspect-[4/3] md:aspect-[16/10]'
-                }`}
+              className={`relative overflow-hidden ${
+                item.imageAspect || 'aspect-[4/3] md:aspect-[16/10]'
+              }`}
             >
               <img
                 src={item.image}
                 alt={item.title}
-                className={`w-full h-full ${item.imageObjectPosition || 'object-contain'
-                  } group-hover:scale-105 transition-transform duration-500 cursor-pointer`}
+                className={`w-full h-full ${
+                  item.imageObjectPosition || 'object-contain'
+                } group-hover:scale-105 transition-transform duration-500 cursor-pointer`}
                 loading="lazy"
                 onClick={() => onSelectImage({ src: item.image, alt: item.title })}
               />
